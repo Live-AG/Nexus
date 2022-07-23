@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Загрузка данных XML</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<Page name="ПараметрыЗагрузки" id="78">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПараметрыЗагрузкиРасширеннаяПодсказка" id="79"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОсновное" id="74">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ВАЖНО: формат файла данных должен быть аналогичен, полученному при выгрузке данных из этой обработки</v8:content>
+								</v8:item>
+							</Title>
+							<Width>70</Width>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="75"/>
+							<ChildItems>
+								<CheckBoxField name="_ЗагружатьВРежимеОбменДанными" id="68">
+									<DataPath>_ЗагружатьВРежимеОбменДанными</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="_ЗагружатьВРежимеОбменДаннымиКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="_ЗагружатьВРежимеОбменДаннымиРасширеннаяПодсказка" id="70"/>
+								</CheckBoxField>
+								<CheckBoxField name="_ЗагружатьВТранзакции" id="19">
+									<DataPath>_ЗагружатьВТранзакции</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="_ЗагружатьВТранзакцииКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="_ЗагружатьВТранзакцииРасширеннаяПодсказка" id="21"/>
+								</CheckBoxField>
+								<CheckBoxField name="_ПродолжатьЗагрузкуПриОшибке" id="65">
+									<DataPath>_ПродолжатьЗагрузкуПриОшибке</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="_ПродолжатьЗагрузкуПриОшибкеКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="_ПродолжатьЗагрузкуПриОшибкеРасширеннаяПодсказка" id="67"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДополнительныеСвойства" id="63">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перечень свойств, которые будут установлены в Объект.ДополнительныеСвойства перед записью объекта</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаДополнительныеСвойстваРасширеннаяПодсказка" id="64"/>
+							<ChildItems>
+								<CheckBoxField name="_ИспользоватьДополнительныеСвойстваПриЗаписи" id="52">
+									<DataPath>_ИспользоватьДополнительныеСвойстваПриЗаписи</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="_ИспользоватьДополнительныеСвойстваПриЗаписиКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="_ИспользоватьДополнительныеСвойстваПриЗаписиРасширеннаяПодсказка" id="54"/>
+								</CheckBoxField>
+								<Table name="_ДополнительныеСвойства" id="30">
+									<Representation>List</Representation>
+									<MaxHeight>5</MaxHeight>
+									<HeightInTableRows>3</HeightInTableRows>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>_ДополнительныеСвойства</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="_ДополнительныеСвойстваКонтекстноеМеню" id="31"/>
+									<AutoCommandBar name="_ДополнительныеСвойстваКоманднаяПанель" id="32"/>
+									<ExtendedTooltip name="_ДополнительныеСвойстваРасширеннаяПодсказка" id="33"/>
+									<SearchStringAddition name="_ДополнительныеСвойстваСтрокаПоиска" id="34">
+										<AdditionSource>
+											<Item>_ДополнительныеСвойства</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="_ДополнительныеСвойстваСтрокаПоискаКонтекстноеМеню" id="35"/>
+										<ExtendedTooltip name="_ДополнительныеСвойстваСтрокаПоискаРасширеннаяПодсказка" id="36"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="_ДополнительныеСвойстваСостояниеПросмотра" id="37">
+										<AdditionSource>
+											<Item>_ДополнительныеСвойства</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="_ДополнительныеСвойстваСостояниеПросмотраКонтекстноеМеню" id="38"/>
+										<ExtendedTooltip name="_ДополнительныеСвойстваСостояниеПросмотраРасширеннаяПодсказка" id="39"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="_ДополнительныеСвойстваУправлениеПоиском" id="40">
+										<AdditionSource>
+											<Item>_ДополнительныеСвойства</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="_ДополнительныеСвойстваУправлениеПоискомКонтекстноеМеню" id="41"/>
+										<ExtendedTooltip name="_ДополнительныеСвойстваУправлениеПоискомРасширеннаяПодсказка" id="42"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="_ДополнительныеСвойстваКлюч" id="43">
+											<DataPath>_ДополнительныеСвойства.Ключ</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="_ДополнительныеСвойстваКлючКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="_ДополнительныеСвойстваКлючРасширеннаяПодсказка" id="45"/>
+										</InputField>
+										<InputField name="_ДополнительныеСвойстваЗначение" id="46">
+											<DataPath>_ДополнительныеСвойства.Значение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ClearButton>true</ClearButton>
+											<ContextMenu name="_ДополнительныеСвойстваЗначениеКонтекстноеМеню" id="47"/>
+											<ExtendedTooltip name="_ДополнительныеСвойстваЗначениеРасширеннаяПодсказка" id="48"/>
+											<Events>
+												<Event name="StartChoice">_ДополнительныеСвойстваЗначениеНачалоВыбора</Event>
+												<Event name="Clearing">_ДополнительныеСвойстваЗначениеОчистка</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПроцедура" id="58">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Алгоритм на языке 1С, выполняется перед записью Объекта после установки ДополнительныхСвойств (обращение к реквизитам через переменную пОбъект)</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПроцедураРасширеннаяПодсказка" id="59"/>
+							<ChildItems>
+								<CheckBoxField name="_ИспользоватьПроцедуруПередЗаписью" id="60">
+									<DataPath>_ИспользоватьПроцедуруПередЗаписью</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="_ИспользоватьПроцедуруПередЗаписьюКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="_ИспользоватьПроцедуруПередЗаписьюРасширеннаяПодсказка" id="62"/>
+								</CheckBoxField>
+								<TextDocumentField name="_ПроцедураПередЗаписью" id="55">
+									<DataPath>_ПроцедураПередЗаписью</DataPath>
+									<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+									<TitleLocation>None</TitleLocation>
+									<Height>5</Height>
+									<MaxHeight>5</MaxHeight>
+									<ContextMenu name="_ПроцедураПередЗаписьюКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="_ПроцедураПередЗаписьюРасширеннаяПодсказка" id="57"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ДанныеДляЗагрузки" id="80">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные для загрузки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные для загрузки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ДанныеДляЗагрузкиРасширеннаяПодсказка" id="81"/>
+					<ChildItems>
+						<InputField name="_ПутьКФайлуXML" id="1">
+							<DataPath>_ПутьКФайлуXML</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файл данных XML</v8:content>
+								</v8:item>
+							</Title>
+							<Width>30</Width>
+							<ChoiceButton>true</ChoiceButton>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="_ПутьКФайлуXMLКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="_ПутьКФайлуXMLРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">_ПутьКФайлуXMLПриИзменении</Event>
+								<Event name="StartChoice">_ПутьКФайлуXMLНачалоВыбора</Event>
+								<Event name="Opening">_ПутьКФайлуXMLОткрытие</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа1" id="88">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузка данных из строки</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="89"/>
+							<ChildItems>
+								<CheckBoxField name="_ЗагружатьДанныеБезИспользованияФайла" id="85">
+									<DataPath>_ЗагружатьДанныеБезИспользованияФайла</DataPath>
+									<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+									<TitleFont ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="_ЗагружатьДанныеБезИспользованияФайлаКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="_ЗагружатьДанныеБезИспользованияФайлаРасширеннаяПодсказка" id="87"/>
+								</CheckBoxField>
+								<TextDocumentField name="_ДанныеXML" id="82">
+									<DataPath>_ДанныеXML</DataPath>
+									<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+									<TitleFont ref="style:TextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="_ДанныеXMLКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="_ДанныеXMLРасширеннаяПодсказка" id="84"/>
+								</TextDocumentField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<CommandBar name="КоманднаяПанельФормы" id="4">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель формы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель формы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalLocation>Right</HorizontalLocation>
+			<ExtendedTooltip name="КоманднаяПанельФормыРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<Button name="_ЗагрузитьДанные" id="11">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>Form.Command._ЗагрузитьДанные</CommandName>
+					<ExtendedTooltip name="_ЗагрузитьДанныеРасширеннаяПодсказка" id="12"/>
+				</Button>
+				<Button name="Закрыть" id="22">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.StandardCommand.Close</CommandName>
+					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="23"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СДРОбъектУпр</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="_ПутьКФайлуXML" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу XML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>_ПутьКФайлуXML</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ЗагружатьВТранзакции" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать данные в транзакции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="_ДополнительныеСвойства" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные свойства (устанавилваются перед записью объекта)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Save>
+				<Field>_ДополнительныеСвойства</Field>
+			</Save>
+			<Columns>
+				<Column name="Ключ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Значение" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="_ПутьКФормам" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к формам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="_ИспользоватьДополнительныеСвойстваПриЗаписи" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить дополнительные свойства перед записью объекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>_ИспользоватьДополнительныеСвойстваПриЗаписи</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ПроцедураПередЗаписью" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм на языке 1С, выполняется перед записью Объекта после установки ДополнительныхСвойств (обращение к реквизитам через переменную пОбъект)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>_ПроцедураПередЗаписью</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ИспользоватьПроцедуруПередЗаписью" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить процедуру перед записью объекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>_ИспользоватьПроцедуруПередЗаписью</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ПродолжатьЗагрузкуПриОшибке" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продолжать загрузку при ошибке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>_ПродолжатьЗагрузкуПриОшибке</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ЗагружатьВРежимеОбменДанными" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать в режиме обмен данными</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="_ДанныеXML" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные XML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="_ЗагружатьДанныеБезИспользованияФайла" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать данные из строки XML ( файл данных не используется )</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="_ЗагрузитьДанные" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>_ЗагрузитьДанные</Action>
+		</Command>
+	</Commands>
+</Form>

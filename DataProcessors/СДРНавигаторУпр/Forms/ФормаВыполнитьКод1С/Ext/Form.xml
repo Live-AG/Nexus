@@ -1,0 +1,755 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Страницы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="Алгоритм" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Алгоритм</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Алгоритм</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<CommandBar name="КомандыДляАлгоритма" id="8">
+							<ExtendedTooltip name="КомандыДляАлгоритмаРасширеннаяПодсказка" id="9"/>
+							<ChildItems>
+								<ButtonGroup name="Группа2" id="94">
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="95"/>
+									<ChildItems>
+										<Button name="ВосстановитьЗначения" id="90">
+											<Type>CommandBarButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="ВосстановитьЗначенияРасширеннаяПодсказка" id="91"/>
+										</Button>
+										<Button name="СохранитьЗначения" id="92">
+											<Type>CommandBarButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.StandardCommand.SaveValues</CommandName>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="СохранитьЗначенияРасширеннаяПодсказка" id="93"/>
+										</Button>
+										<Button name="_ЗагрузитьИзФайла" id="98">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command._ЗагрузитьИзФайла</CommandName>
+											<ExtendedTooltip name="_ЗагрузитьИзФайлаРасширеннаяПодсказка" id="99"/>
+										</Button>
+										<Button name="_СохранитьВФайл" id="100">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command._СохранитьВФайл</CommandName>
+											<ExtendedTooltip name="_СохранитьВФайлРасширеннаяПодсказка" id="101"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<ButtonGroup name="Группа3" id="96">
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="97"/>
+									<ChildItems>
+										<Button name="_ВыполнитьАлгоритм" id="10">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command._ВыполнитьАлгоритм</CommandName>
+											<ExtendedTooltip name="_ВыполнитьАлгоритмРасширеннаяПодсказка" id="11"/>
+										</Button>
+										<Button name="_ПроверитьАлгоритм" id="12">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command._ПроверитьАлгоритм</CommandName>
+											<ExtendedTooltip name="_ПроверитьАлгоритмРасширеннаяПодсказка" id="13"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<Button name="_ПараметрыАлгоритма" id="30">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command._ПараметрыАлгоритма</CommandName>
+									<ExtendedTooltip name="_ПараметрыАлгоритмаРасширеннаяПодсказка" id="31"/>
+								</Button>
+								<Button name="_ОткрытьКонструкторФорматнойСтроки" id="74">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command._ОткрытьКонструкторФорматнойСтроки</CommandName>
+									<ExtendedTooltip name="_ОткрытьКонструкторФорматнойСтрокиРасширеннаяПодсказка" id="75"/>
+								</Button>
+								<Button name="_ВставитьУникальныйИдентификатор" id="80">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command._ВставитьУникальныйИдентификатор</CommandName>
+									<ExtendedTooltip name="_ВставитьУникальныйИдентификаторРасширеннаяПодсказка" id="81"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<TextDocumentField name="_Алгоритм" id="5">
+							<DataPath>_Алгоритм</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="_АлгоритмКонтекстноеМеню" id="6">
+								<ChildItems>
+									<ButtonGroup name="_АлгоритмКонтекстноеМенюГруппа1" id="72">
+										<ExtendedTooltip name="_АлгоритмКонтекстноеМенюГруппа1РасширеннаяПодсказка" id="73"/>
+										<ChildItems>
+											<Button name="_АлгоритмКонтекстноеМеню_ВыполнитьАлгоритм" id="76">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command._ВыполнитьАлгоритм</CommandName>
+												<ExtendedTooltip name="_АлгоритмКонтекстноеМеню_ВыполнитьАлгоритмРасширеннаяПодсказка" id="77"/>
+											</Button>
+											<Button name="_АлгоритмКонтекстноеМеню_ПроверитьАлгоритм" id="78">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command._ПроверитьАлгоритм</CommandName>
+												<ExtendedTooltip name="_АлгоритмКонтекстноеМеню_ПроверитьАлгоритмРасширеннаяПодсказка" id="79"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+									<ButtonGroup name="_АлгоритмКонтекстноеМенюГруппа2" id="84">
+										<ExtendedTooltip name="_АлгоритмКонтекстноеМенюГруппа2РасширеннаяПодсказка" id="85"/>
+										<ChildItems>
+											<Button name="_АлгоритмКонтекстноеМеню_ПрописныеБуквы" id="86">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command._ПрописныеБуквы</CommandName>
+												<ExtendedTooltip name="_АлгоритмКонтекстноеМеню_ПрописныеБуквыРасширеннаяПодсказка" id="87"/>
+											</Button>
+											<Button name="_АлгоритмКонтекстноеМеню_СтрочныеБуквы" id="88">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command._СтрочныеБуквы</CommandName>
+												<ExtendedTooltip name="_АлгоритмКонтекстноеМеню_СтрочныеБуквыРасширеннаяПодсказка" id="89"/>
+											</Button>
+											<Button name="_АлгоритмКонтекстноеМеню_ПараметрыАлгоритма" id="70">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command._ПараметрыАлгоритма</CommandName>
+												<ExtendedTooltip name="_АлгоритмКонтекстноеМеню_ПараметрыАлгоритмаРасширеннаяПодсказка" id="71"/>
+											</Button>
+											<Button name="_АлгоритмКонтекстноеМеню_ОткрытьКонструкторФорматнойСтроки" id="68">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command._ОткрытьКонструкторФорматнойСтроки</CommandName>
+												<ExtendedTooltip name="_АлгоритмКонтекстноеМеню_ОткрытьКонструкторФорматнойСтрокиРасширеннаяПодсказка" id="69"/>
+											</Button>
+											<Button name="_АлгоритмКонтекстноеМеню_ВставитьУникальныйИдентификатор" id="82">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command._ВставитьУникальныйИдентификатор</CommandName>
+												<ExtendedTooltip name="_АлгоритмКонтекстноеМеню_ВставитьУникальныйИдентификаторРасширеннаяПодсказка" id="83"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</ContextMenu>
+							<ExtendedTooltip name="_АлгоритмРасширеннаяПодсказка" id="7"/>
+						</TextDocumentField>
+						<UsualGroup name="Группа1" id="22">
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="23"/>
+							<ChildItems>
+								<CheckBoxField name="_ИспользоватьПопыткуДляАлгоритма" id="24">
+									<DataPath>_ИспользоватьПопыткуДляАлгоритма</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="_ИспользоватьПопыткуДляАлгоритмаКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="_ИспользоватьПопыткуДляАлгоритмаРасширеннаяПодсказка" id="26"/>
+								</CheckBoxField>
+								<CheckBoxField name="_ВыполнятьАлгоритмНаСервере" id="27">
+									<DataPath>_ВыполнятьАлгоритмНаСервере</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="_ВыполнятьАлгоритмНаСервереКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="_ВыполнятьАлгоритмНаСервереРасширеннаяПодсказка" id="29"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="Параметры" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<CommandBar name="КомандыДляПараметров" id="105">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команды для параметров</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Команды для параметров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КомандыДляПараметровРасширеннаяПодсказка" id="106"/>
+							<ChildItems>
+								<Button name="ВосстановитьЗначения1" id="107">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.StandardCommand.RestoreValues</CommandName>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ExtendedTooltip name="ВосстановитьЗначения1РасширеннаяПодсказка" id="108"/>
+								</Button>
+								<Button name="СохранитьЗначения1" id="109">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.StandardCommand.SaveValues</CommandName>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ExtendedTooltip name="СохранитьЗначения1РасширеннаяПодсказка" id="110"/>
+								</Button>
+								<Button name="_ЗагрузитьИзФайла1" id="111">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command._ЗагрузитьИзФайла</CommandName>
+									<ExtendedTooltip name="_ЗагрузитьИзФайла1РасширеннаяПодсказка" id="112"/>
+								</Button>
+								<Button name="_СохранитьВФайл1" id="113">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command._СохранитьВФайл</CommandName>
+									<ExtendedTooltip name="_СохранитьВФайл1РасширеннаяПодсказка" id="114"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+						<InputField name="мПланОбмена" id="19">
+							<DataPath>мПланОбмена</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мПланОбменаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="мПланОбменаРасширеннаяПодсказка" id="21"/>
+						</InputField>
+						<InputField name="мСправочник" id="32">
+							<DataPath>мСправочник</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мСправочникКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="мСправочникРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<InputField name="мДокумент" id="16">
+							<DataPath>мДокумент</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мДокументКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="мДокументРасширеннаяПодсказка" id="18"/>
+						</InputField>
+						<InputField name="мПеречисление" id="35">
+							<DataPath>мПеречисление</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мПеречислениеКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="мПеречислениеРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<InputField name="мПланВидовХарактеристик" id="50">
+							<DataPath>мПланВидовХарактеристик</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>План видов характеристик</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мПланВидовХарактеристикКонтекстноеМеню" id="51"/>
+							<ExtendedTooltip name="мПланВидовХарактеристикРасширеннаяПодсказка" id="52"/>
+						</InputField>
+						<InputField name="мПланВидовРасчета" id="47">
+							<DataPath>мПланВидовРасчета</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>План видов расчета</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мПланВидовРасчетаКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="мПланВидовРасчетаРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="мПланСчетов" id="41">
+							<DataPath>мПланСчетов</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мПланСчетовКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="мПланСчетовРасширеннаяПодсказка" id="43"/>
+						</InputField>
+						<InputField name="мБизнесПроцесс" id="44">
+							<DataPath>мБизнесПроцесс</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мБизнесПроцессКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="мБизнесПроцессРасширеннаяПодсказка" id="46"/>
+						</InputField>
+						<InputField name="мЗадача" id="53">
+							<DataPath>мЗадача</DataPath>
+							<ClearButton>true</ClearButton>
+							<ContextMenu name="мЗадачаКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="мЗадачаРасширеннаяПодсказка" id="55"/>
+						</InputField>
+						<InputField name="мСписокЗначений" id="56">
+							<DataPath>мСписокЗначений</DataPath>
+							<ContextMenu name="мСписокЗначенийКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="мСписокЗначенийРасширеннаяПодсказка" id="58"/>
+						</InputField>
+						<InputField name="мДатаВремя" id="59">
+							<DataPath>мДатаВремя</DataPath>
+							<Width>16</Width>
+							<ContextMenu name="мДатаВремяКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="мДатаВремяРасширеннаяПодсказка" id="61"/>
+						</InputField>
+						<InputField name="мДата" id="62">
+							<DataPath>мДата</DataPath>
+							<Width>16</Width>
+							<ContextMenu name="мДатаКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="мДатаРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<InputField name="мЧисло" id="65">
+							<DataPath>мЧисло</DataPath>
+							<Width>16</Width>
+							<ContextMenu name="мЧислоКонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="мЧислоРасширеннаяПодсказка" id="67"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СДРНавигаторУпр</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="_ОписаниеРазработки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание разработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПутьКФормам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к формам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="_Алгоритм" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>_Алгоритм</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мДокумент" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мДокумент</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мДокумент</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мПланОбмена" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мПланОбмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мПланОбмена</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ИспользоватьПопыткуДляАлгоритма" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать попытку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>_ИспользоватьПопыткуДляАлгоритма</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="_ВыполнятьАлгоритмНаСервере" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнять на сервере</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>_ВыполнятьАлгоритмНаСервере</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мСправочник" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мСправочник</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мСправочник</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мПеречисление" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мПеречисление</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мПеречисление</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мПланВидовХарактеристик" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мПланВидовХарактеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мПланВидовХарактеристик</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мПланСчетов" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мПланСчетов</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мПланСчетов</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мБизнесПроцесс" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мБизнесПроцесс</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мБизнесПроцесс</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мЗадача" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мЗадача</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мЗадача</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мПланВидовРасчета" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мПланВидовРасчета</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<Save>
+				<Field>мПланВидовРасчета</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мСписокЗначений" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мСписокЗначений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>мСписокЗначений</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мДата" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мДата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>мДата</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мДатаВремя" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мДатаВремя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+			<Save>
+				<Field>мДатаВремя</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="мЧисло" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>мЧисло</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>15</v8:Digits>
+					<v8:FractionDigits>5</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>мЧисло</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="_ВыполнитьАлгоритм" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить алгоритм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ВыполнитьАлгоритм</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ПроверитьАлгоритм" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить алгоритм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ПроверитьАлгоритм</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="_ПараметрыАлгоритма" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры алгоритма...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить параметр алгоритма...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ПараметрыАлгоритма</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="_ОткрытьКонструкторФорматнойСтроки" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор форматной строки...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор форматной строки...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>_ОткрытьКонструкторФорматнойСтроки</Action>
+		</Command>
+		<Command name="_ВставитьУникальныйИдентификатор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уникальный идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вставить уникальный идентификатор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>_ВставитьУникальныйИдентификатор</Action>
+		</Command>
+		<Command name="_ПрописныеБуквы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прописные буквы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прописные буквы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+U</Shortcut>
+			<Action>_ПрописныеБуквы</Action>
+		</Command>
+		<Command name="_СтрочныеБуквы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строчные буквы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строчные буквы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+L</Shortcut>
+			<Action>_СтрочныеБуквы</Action>
+		</Command>
+		<Command name="_СохранитьВФайл" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить параметры в файл...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить параметры в файл...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_СохранитьВФайл</Action>
+		</Command>
+		<Command name="_ЗагрузитьИзФайла" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить параметры из файла...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить параметры из файла...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>_ЗагрузитьИзФайла</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаКаталогВыгрузкиБаз" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог выгрузки баз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа каталог выгрузки баз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаКаталогВыгрузкиБазРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<InputField name="ПутьККаталогуВыгрузкиБаз" id="1">
+					<DataPath>НаборКонстант.ПутьККаталогуВыгрузкиБаз</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПутьККаталогуВыгрузкиБазКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПутьККаталогуВыгрузкиБазРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">ПутьККаталогуВыгрузкиБазНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="ОписаниеКонстантыКаталогуВыгрузкиБаз" id="6">
+					<Width>50</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:ПоясняющийТекст</TextColor>
+					<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к временному каталогу на &lt;u&gt;сервере&lt;/&gt;, в который будут выгружаться файлы &lt;b&gt;dt&lt;/&gt;. Пользователь от которого запущена служба сервера 1С должен иметь &lt;b&gt;полный доступ&lt;/&gt; к данному каталогу. Для каждой базы будет создан свой подкаталог и после завершений операции с будет удален.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОписаниеКонстантыКаталогуВыгрузкиБазКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ОписаниеКонстантыКаталогуВыгрузкиБазРасширеннаяПодсказка" id="8"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="НаборКонстант" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ПутьККаталогуВыгрузкиБаз</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

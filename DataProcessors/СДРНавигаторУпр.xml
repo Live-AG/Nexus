@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<DataProcessor uuid="03f6bec1-3b62-49db-8289-611df36b2a0e">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.СДРНавигаторУпр" category="Object">
+				<xr:TypeId>f5ed3bed-de24-4b6f-bb6b-4af649fb0ef2</xr:TypeId>
+				<xr:ValueId>13904858-74aa-46af-bb59-96290853374c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.СДРНавигаторУпр" category="Manager">
+				<xr:TypeId>75e012a8-bc47-4776-94f5-946a37494dbe</xr:TypeId>
+				<xr:ValueId>a0fb6c86-7de2-4ff8-93e7-f8f156960610</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СДРНавигаторУпр</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СДР: Навигатор по конфигурации</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.СДРНавигаторУпр.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ФормаОбъекта</Form>
+			<Form>ФормаСвойств</Form>
+			<Form>ФормаВыбораМасштабаОтображения</Form>
+			<Form>ФормаБлокировкиСеансов</Form>
+			<Form>ФормаЗапуска1С</Form>
+			<Form>ФормаПользовательИБ</Form>
+			<Form>ФормаОтображенияХЗ</Form>
+			<Form>ФормаВыбораОбъекта</Form>
+			<Form>ФормаРедакторДвижений</Form>
+			<Form>ФормаРедакторДвиженийДоп</Form>
+			<Form>ФормаВыгрузкаОбъектаXML</Form>
+			<Form>ФормаЗагрузкаXML</Form>
+			<Form>ФормаСпискаОбъектов</Form>
+			<Form>ФормаСпискаЗависимых</Form>
+			<Form>ФормаОтбораПоПодсистемам</Form>
+			<Form>ФормаВыполнитьКод1С</Form>
+			<Form>ФормаВыбораТипаОбъекта</Form>
+			<Form>ФормаОРазработке</Form>
+			<Template>МакетСервис</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

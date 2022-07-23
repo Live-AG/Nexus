@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Отбор по подсистемам</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<ScalingMode>Compact</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОсновная" id="29">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаДерево" id="1">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДеревоРасширеннаяПодсказка" id="2"/>
+					<ChildItems>
+						<Table name="_ДеревоПодсистем" id="7">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<SelectionMode>SingleRow</SelectionMode>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<DataPath>_ДеревоПодсистем</DataPath>
+							<ContextMenu name="_ДеревоПодсистемКонтекстноеМеню" id="8">
+								<ChildItems>
+									<Button name="_ДеревоПодсистемКонтекстноеМеню_ИсключитьПодсистемуИзОтбора" id="43">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command._ИсключитьПодсистемуИзОтбора</CommandName>
+										<ExtendedTooltip name="_ДеревоПодсистемКонтекстноеМеню_ИсключитьПодсистемуИзОтбораРасширеннаяПодсказка" id="44"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="_ДеревоПодсистемКоманднаяПанель" id="9">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="_ДеревоПодсистемРасширеннаяПодсказка" id="10"/>
+							<SearchStringAddition name="_ДеревоПодсистемСтрокаПоиска" id="11">
+								<AdditionSource>
+									<Item>_ДеревоПодсистем</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="_ДеревоПодсистемСтрокаПоискаКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="_ДеревоПодсистемСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="_ДеревоПодсистемСостояниеПросмотра" id="14">
+								<AdditionSource>
+									<Item>_ДеревоПодсистем</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="_ДеревоПодсистемСостояниеПросмотраКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="_ДеревоПодсистемСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="_ДеревоПодсистемУправлениеПоиском" id="17">
+								<AdditionSource>
+									<Item>_ДеревоПодсистем</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="_ДеревоПодсистемУправлениеПоискомКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="_ДеревоПодсистемУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<ColumnGroup name="_ДеревоПодсистемГруппа" id="35">
+									<Group>InCell</Group>
+									<ExtendedTooltip name="_ДеревоПодсистемГруппаРасширеннаяПодсказка" id="36"/>
+									<ChildItems>
+										<CheckBoxField name="_ДеревоПодсистемПометка" id="37">
+											<DataPath>_ДеревоПодсистем.Пометка</DataPath>
+											<EditMode>Directly</EditMode>
+											<ThreeState>true</ThreeState>
+											<ContextMenu name="_ДеревоПодсистемПометкаКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="_ДеревоПодсистемПометкаРасширеннаяПодсказка" id="39"/>
+											<Events>
+												<Event name="OnChange">_ДеревоПодсистемПометкаПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<InputField name="_ДеревоПодсистемИмя" id="40">
+											<DataPath>_ДеревоПодсистем.Имя</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="_ДеревоПодсистемИмяКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="_ДеревоПодсистемИмяРасширеннаяПодсказка" id="42"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКоманды" id="3">
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<Button name="_УстановитьОтбор" id="5">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command._УстановитьОтбор</CommandName>
+							<ExtendedTooltip name="_УстановитьОтборРасширеннаяПодсказка" id="6"/>
+						</Button>
+						<Button name="_ОтключитьОтбор" id="31">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command._ОтключитьОтбор</CommandName>
+							<ExtendedTooltip name="_ОтключитьОтборРасширеннаяПодсказка" id="32"/>
+						</Button>
+						<Button name="Закрыть" id="33">
+							<Type>UsualButton</Type>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отмена</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="34"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="Декорация1" id="45">
+			<TextColor>style:FieldSelectionBackColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для тонкой настройки используйте контекстное меню</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="46"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="47"/>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="_ДеревоПодсистем" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево подсистем</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Имя" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>256</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Синоним" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>512</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПолноеИмя" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полное имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>512</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Пометка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВключатьВОтбор" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включать в отбор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="_ОтборПоПодсистемам" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по подсистемам</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="_УстановитьОтбор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>_УстановитьОтбор</Action>
+		</Command>
+		<Command name="_ОтключитьОтбор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить отбор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>_ОтключитьОтбор</Action>
+		</Command>
+		<Command name="_ИсключитьПодсистемуИзОтбора" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить подсистему из отбора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить подсистему из отбора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>_ИсключитьПодсистемуИзОтбора</Action>
+		</Command>
+	</Commands>
+</Form>
