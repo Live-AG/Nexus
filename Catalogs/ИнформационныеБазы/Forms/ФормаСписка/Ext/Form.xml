@@ -80,12 +80,12 @@
 					<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="33"/>
 				</LabelField>
 				<LabelField name="Сервер1С" id="22">
-					<DataPath>Список.Сервер1С</DataPath>
+					<DataPath>~Список.Сервер1С</DataPath>
 					<ContextMenu name="Сервер1СКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="Сервер1СРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="ВладелецБазы" id="25">
-					<DataPath>Список.ВладелецБазы</DataPath>
+					<DataPath>~Список.ВладелецБазы</DataPath>
 					<ContextMenu name="ВладелецБазыКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="ВладелецБазыРасширеннаяПодсказка" id="27"/>
 				</LabelField>

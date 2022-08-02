@@ -29,6 +29,7 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаМонитора</Form>
+			<Form>ФормаМонитора1</Form>
 			<Template>МакетНеактивногоЭлемента</Template>
 			<Template>Макет</Template>
 		</ChildObjects>

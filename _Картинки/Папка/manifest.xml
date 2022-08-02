@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Picture>
+	<PictureVariant name="85.png" screenDensity="bldpi" glyphWidth="14" glyphHeight="14"/>
+	<PictureVariant name="100.png" screenDensity="ldpi" glyphWidth="16" glyphHeight="16"/>
+	<PictureVariant name="125.png" screenDensity="aldpi" glyphWidth="20" glyphHeight="20"/>
+	<PictureVariant name="150.png" screenDensity="mdpi" glyphWidth="24" glyphHeight="24"/>
+	<PictureVariant name="175.png" screenDensity="amdpi" glyphWidth="28" glyphHeight="28"/>
+	<PictureVariant name="200.png" screenDensity="hdpi" glyphWidth="32" glyphHeight="32"/>
+	<PictureVariant name="300.png" screenDensity="xdpi" glyphWidth="48" glyphHeight="48"/>
+	<PictureVariant name="400.png" screenDensity="udpi" glyphWidth="64" glyphHeight="64"/>
+	<PictureVariant name="Picture.png" interfaceVariant="version8_2" screenDensity="ldpi" glyphWidth="16" glyphHeight="16"/>
+	<PictureVariant name="Picture.png" interfaceVariant="version8_2_OrdinaryApp" screenDensity="ldpi" glyphWidth="16" glyphHeight="16"/>
+</Picture>

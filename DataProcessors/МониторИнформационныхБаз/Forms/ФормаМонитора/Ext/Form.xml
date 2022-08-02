@@ -82,7 +82,7 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаВертикальноеРазделениеРасширеннаяПодсказка" id="18"/>
 					<ChildItems>
-						<Table name="ДеревоЭлементовКластера" id="1">
+						<Table name="ТаблицаЭлементовКластера" id="1">
 							<Representation>Tree</Representation>
 							<CommandBarLocation>None</CommandBarLocation>
 							<ReadOnly>true</ReadOnly>
@@ -90,6 +90,7 @@
 							<ChangeRowOrder>false</ChangeRowOrder>
 							<Width>12</Width>
 							<Height>2</Height>
+							<RowSelectionMode>Row</RowSelectionMode>
 							<Header>false</Header>
 							<HorizontalLines>false</HorizontalLines>
 							<VerticalLines>false</VerticalLines>
@@ -97,37 +98,37 @@
 							<DataPath>ТаблицаЭлементовКластера</DataPath>
 							<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
 							<RowsPicture>
-								<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+								<xr:Ref>CommonPicture.Сервер</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</RowsPicture>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ДеревоЭлементовКластераКонтекстноеМеню" id="3"/>
-							<AutoCommandBar name="ДеревоЭлементовКластераКоманднаяПанель" id="2"/>
-							<ExtendedTooltip name="ДеревоЭлементовКластераРасширеннаяПодсказка" id="4"/>
-							<SearchStringAddition name="ДеревоЭлементовКластераСтрокаПоиска" id="5">
+							<ContextMenu name="ТаблицаЭлементовКластераКонтекстноеМеню" id="3"/>
+							<AutoCommandBar name="ТаблицаЭлементовКластераКоманднаяПанель" id="2"/>
+							<ExtendedTooltip name="ТаблицаЭлементовКластераРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ТаблицаЭлементовКластераСтрокаПоиска" id="5">
 								<AdditionSource>
-									<Item>ДеревоЭлементовКластера</Item>
+									<Item>ТаблицаЭлементовКластера</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ДеревоЭлементовКластераСтрокаПоискаКонтекстноеМеню" id="6"/>
-								<ExtendedTooltip name="ДеревоЭлементовКластераСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+								<ContextMenu name="ТаблицаЭлементовКластераСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ТаблицаЭлементовКластераСтрокаПоискаРасширеннаяПодсказка" id="7"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ДеревоЭлементовКластераСостояниеПросмотра" id="11">
+							<ViewStatusAddition name="ТаблицаЭлементовКластераСостояниеПросмотра" id="11">
 								<AdditionSource>
-									<Item>ДеревоЭлементовКластера</Item>
+									<Item>ТаблицаЭлементовКластера</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ДеревоЭлементовКластераСостояниеПросмотраКонтекстноеМеню" id="12"/>
-								<ExtendedTooltip name="ДеревоЭлементовКластераСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+								<ContextMenu name="ТаблицаЭлементовКластераСостояниеПросмотраКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТаблицаЭлементовКластераСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ДеревоЭлементовКластераУправлениеПоиском" id="8">
+							<SearchControlAddition name="ТаблицаЭлементовКластераУправлениеПоиском" id="8">
 								<AdditionSource>
-									<Item>ДеревоЭлементовКластера</Item>
+									<Item>ТаблицаЭлементовКластера</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ДеревоЭлементовКластераУправлениеПоискомКонтекстноеМеню" id="9"/>
-								<ExtendedTooltip name="ДеревоЭлементовКластераУправлениеПоискомРасширеннаяПодсказка" id="10"/>
+								<ContextMenu name="ТаблицаЭлементовКластераУправлениеПоискомКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ТаблицаЭлементовКластераУправлениеПоискомРасширеннаяПодсказка" id="10"/>
 							</SearchControlAddition>
 							<Events>
 								<Event name="Selection">ДеревоЭлементовКластераВыбор</Event>
@@ -161,7 +162,6 @@
 										</InputField>
 										<LabelField name="ДеревоЭлементовКластераПолеОписания" id="68">
 											<DataPath>ТаблицаЭлементовКластера.КраткоеОписание</DataPath>
-											<Enabled>false</Enabled>
 											<EditMode>EnterOnInput</EditMode>
 											<ShowInHeader>false</ShowInHeader>
 											<ShowInFooter>false</ShowInFooter>
@@ -180,10 +180,16 @@
 					<CommandBarLocation>None</CommandBarLocation>
 					<ChangeRowSet>false</ChangeRowSet>
 					<ChangeRowOrder>false</ChangeRowOrder>
+					<RowSelectionMode>Row</RowSelectionMode>
 					<Header>false</Header>
 					<VerticalLines>false</VerticalLines>
 					<EnableStartDrag>true</EnableStartDrag>
 					<DataPath>ТаблицаИнформационныхБаз</DataPath>
+					<RowPictureDataPath>ТаблицаИнформационныхБаз.ПолеГиперссылки</RowPictureDataPath>
+					<RowsPicture>
+						<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</RowsPicture>
 					<BorderColor>style:FormBackColor</BorderColor>
 					<AutoRefresh>false</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -228,34 +234,48 @@
 					<ChildItems>
 						<LabelField name="ТаблицаИнформационныхБазСсылка" id="53">
 							<DataPath>ТаблицаИнформационныхБаз.Ref</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
 							<EditMode>Directly</EditMode>
+							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="ТаблицаИнформационныхБазСсылкаКонтекстноеМеню" id="54"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазСсылкаРасширеннаяПодсказка" id="55"/>
 						</LabelField>
 						<LabelField name="ТаблицаИнформационныхБазНазначениеИБ" id="56">
 							<DataPath>ТаблицаИнформационныхБаз.НазначениеИБ</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
+							<ShowInFooter>false</ShowInFooter>
+							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="ТаблицаИнформационныхБазНазначениеИБКонтекстноеМеню" id="57"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазНазначениеИБРасширеннаяПодсказка" id="58"/>
 						</LabelField>
 						<LabelField name="ТаблицаИнформационныхБазКонфигурация" id="59">
 							<DataPath>ТаблицаИнформационныхБаз.Конфигурация</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
+							<ShowInFooter>false</ShowInFooter>
+							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="ТаблицаИнформационныхБазКонфигурацияКонтекстноеМеню" id="60"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазКонфигурацияРасширеннаяПодсказка" id="61"/>
 						</LabelField>
 						<PictureField name="ТаблицаИнформационныхБазПолеНастройка" id="65">
 							<DataPath>ТаблицаИнформационныхБаз.ПолеГиперссылки</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
 							<TitleLocation>None</TitleLocation>
 							<CellHyperlink>true</CellHyperlink>
+							<ShowInFooter>false</ShowInFooter>
 							<Hyperlink>true</Hyperlink>
 							<ValuesPicture>
-								<xr:Ref>StdPicture.Setting</xr:Ref>
+								<xr:Ref>CommonPicture.РазделАдминистрирование</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</ValuesPicture>
+							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="ТаблицаИнформационныхБазПолеНастройкаКонтекстноеМеню" id="66"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазПолеНастройкаРасширеннаяПодсказка" id="67"/>
 						</PictureField>
 						<LabelField name="ТаблицаИнформационныхБазПроект" id="62">
 							<DataPath>ТаблицаИнформационныхБаз.Проект</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
+							<ShowInFooter>false</ShowInFooter>
+							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="ТаблицаИнформационныхБазПроектКонтекстноеМеню" id="63"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазПроектРасширеннаяПодсказка" id="64"/>
 						</LabelField>
@@ -290,7 +310,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:CatalogRef.КластерСервераПриложений</v8:Type>
+						<v8:Type>cfg:CatalogRef.Серверы1С</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Состояние" id="5">
@@ -383,9 +403,9 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
+				<Field>~ТаблицаИнформационныхБаз.Сервер1С</Field>
 				<Field>ТаблицаИнформационныхБаз.Description</Field>
 				<Field>ТаблицаИнформационныхБаз.Owner</Field>
-				<Field>ТаблицаИнформационныхБаз.Сервер1С</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -397,24 +417,22 @@
 	СправочникИнформационныеБазы.Наименование,
 	СправочникИнформационныеБазы.НазначениеИБ,
 	СправочникИнформационныеБазы.СерверБД,
-	СправочникИнформационныеБазы.Сервер1С,
 	СправочникИнформационныеБазы.ИмяНаСервереБД,
 	СправочникИнформационныеБазы.ИмяНаСервере1С,
-	СправочникИнформационныеБазы.ВладелецБазы,
+	СправочникИнформационныеБазы.Ответственный,
 	СправочникИнформационныеБазы.ИдентификаторБазы,
 	СправочникИнформационныеБазы.ИмяАдминистратораИБ,
 	СправочникИнформационныеБазы.ПарольАдминистратораИБ,
-	СправочникИнформационныеБазы.Отисание,
 	СправочникИнформационныеБазы.ОписаниеВКластере,
 	СправочникИнформационныеБазы.Описание,
 	СправочникИнформационныеБазы.Проект,
 	СправочникИнформационныеБазы.Конфигурация,
-	СправочникИнформационныеБазы.ВерсияКонфигурации,
 	СправочникИнформационныеБазы.ХранилищеКонфигурации,
 	СправочникИнформационныеБазы.Доступ,
 	СправочникИнформационныеБазы.Предопределенный,
 	СправочникИнформационныеБазы.ИмяПредопределенныхДанных,
-	0 КАК ПолеГиперссылки
+	
+		0 КАК ПолеГиперссылки
 ИЗ
 	Справочник.ИнформационныеБазы КАК СправочникИнформационныеБазы</QueryText>
 				<MainTable>Catalog.ИнформационныеБазы</MainTable>
@@ -435,6 +453,17 @@
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
+		</Attribute>
+		<Attribute name="Переключатель" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключатель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

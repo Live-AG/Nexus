@@ -15,4 +15,7 @@
 	<Item name="ImportantColor">
 		<Color>web:LightBlue</Color>
 	</Item>
+	<Item name="StyleItem.ГиперссылкаЦвет">
+		<Color>#549AAE</Color>
+	</Item>
 </Style>

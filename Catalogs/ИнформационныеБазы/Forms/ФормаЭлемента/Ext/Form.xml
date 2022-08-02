@@ -55,27 +55,12 @@
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКонфигурацияРасширеннаяПодсказка" id="48"/>
-			<ChildItems>
-				<InputField name="Конфигурация" id="7">
-					<DataPath>Объект.Конфигурация</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="КонфигурацияКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="9"/>
-				</InputField>
-				<InputField name="ВерсияКонфигурации" id="49">
-					<DataPath>Объект.ВерсияКонфигурации</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Версия</v8:content>
-						</v8:item>
-					</Title>
-					<Width>5</Width>
-					<ContextMenu name="ВерсияКонфигурацииКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ВерсияКонфигурацииРасширеннаяПодсказка" id="51"/>
-				</InputField>
-			</ChildItems>
 		</UsualGroup>
+		<InputField name="ИдентификаторБазы" id="94">
+			<DataPath>Объект.ИдентификаторБазы</DataPath>
+			<ContextMenu name="ИдентификаторБазыКонтекстноеМеню" id="95"/>
+			<ExtendedTooltip name="ИдентификаторБазыРасширеннаяПодсказка" id="96"/>
+		</InputField>
 		<Pages name="ГруппаОсновныеСтраницы" id="55">
 			<Title>
 				<v8:item>
@@ -125,11 +110,6 @@
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаСУБДРасширеннаяПодсказка" id="62"/>
 							<ChildItems>
-								<InputField name="ИдентификаторБазы" id="94">
-									<DataPath>Объект.ИдентификаторБазы</DataPath>
-									<ContextMenu name="ИдентификаторБазыКонтекстноеМеню" id="95"/>
-									<ExtendedTooltip name="ИдентификаторБазыРасширеннаяПодсказка" id="96"/>
-								</InputField>
 								<InputField name="СерверБД" id="13">
 									<DataPath>Объект.СерверБД</DataPath>
 									<Title>
@@ -175,7 +155,7 @@
 							<ExtendedTooltip name="ГруппаСервер1СРасширеннаяПодсказка" id="64"/>
 							<ChildItems>
 								<InputField name="Сервер1С" id="16">
-									<DataPath>Объект.Сервер1С</DataPath>
+									<DataPath>Объект.Owner</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -199,6 +179,45 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДополнительно" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<InputField name="Конфигурация" id="7">
+							<DataPath>Объект.Конфигурация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КонфигурацияКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="НазначениеИБ" id="10">
+							<DataPath>Объект.НазначениеИБ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НазначениеИБКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Ответственный" id="38">
+							<DataPath>Объект.Ответственный</DataPath>
+							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="40"/>
+						</InputField>
+						<InputField name="Проект" id="35">
+							<DataPath>Объект.Проект</DataPath>
+							<ContextMenu name="ПроектКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="37"/>
+						</InputField>
 						<UsualGroup name="ГруппаХранилище" id="86">
 							<Title>
 								<v8:item>
@@ -231,39 +250,6 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-					</ChildItems>
-				</Page>
-				<Page name="ГруппаДополнительно" id="57">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дополнительно</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа дополнительно</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="58"/>
-					<ChildItems>
-						<InputField name="НазначениеИБ" id="10">
-							<DataPath>Объект.НазначениеИБ</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="НазначениеИБКонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="12"/>
-						</InputField>
-						<InputField name="Ответственный" id="38">
-							<DataPath>Объект.ВладелецБазы</DataPath>
-							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="39"/>
-							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="40"/>
-						</InputField>
-						<InputField name="Проект" id="35">
-							<DataPath>Объект.Проект</DataPath>
-							<ContextMenu name="ПроектКонтекстноеМеню" id="36"/>
-							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="37"/>
-						</InputField>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаДоступ" id="65">

@@ -68,6 +68,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПодключениеОбсуждений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВосстановлениеПаролей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ОбщиеПараметрыАутентификации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьККаталогуВыгрузкиБаз</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьФормуОбщихПараметровАутетнитификации</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

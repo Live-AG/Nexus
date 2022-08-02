@@ -223,6 +223,7 @@
 			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
+			<Subsystem>УправлениеСерверами</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВладелецФайловШрифт</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовВажнаяШрифт</StyleItem>
@@ -550,7 +551,6 @@
 			<CommonPicture>ЭлектронноеПисьмоИсходящее</CommonPicture>
 			<CommonPicture>ЯндексКарты</CommonPicture>
 			<CommonPicture>Сервер</CommonPicture>
-			<CommonPicture>Кластер</CommonPicture>
 			<CommonPicture>БазаДанных</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
@@ -878,6 +878,7 @@
 			<CommonModule>ШаблоныСообщенийСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыБСПNexus</CommonModule>
 			<CommonModule>АдминистрированиеИнформационныхБаз</CommonModule>
+			<CommonModule>АдминистрированиеСерверов</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>
@@ -1034,6 +1035,7 @@
 			<CommonCommand>СоздатьЗаметкуПоПредмету</CommonCommand>
 			<CommonCommand>УстановитьРасширениеДляРаботыС1СПредприятием</CommonCommand>
 			<CommonCommand>ФайлыВТоме</CommonCommand>
+			<CommonCommand>ОткрытьФормуОбщихПараметровАутетнитификации</CommonCommand>
 			<CommandGroup>Взаимодействия</CommandGroup>
 			<CommandGroup>Информация</CommandGroup>
 			<CommandGroup>Органайзер</CommandGroup>
@@ -1097,6 +1099,7 @@
 			<Constant>ХранитьФайлыВТомахНаДиске</Constant>
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<Constant>ПутьККаталогуВыгрузкиБаз</Constant>
+			<Constant>ОбщиеПараметрыАутентификации</Constant>
 			<CommonForm>АдреснаяКнига</CommonForm>
 			<CommonForm>Вопрос</CommonForm>
 			<CommonForm>ВопросОбУстановкеВнешнейКомпоненты</CommonForm>
@@ -1150,17 +1153,13 @@
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ФормаПоиска</CommonForm>
 			<CommonForm>ФормаНастройкиКаталогов</CommonForm>
-			<Catalog>ИнформационныеБазы</Catalog>
-			<Catalog>ВерсииФайлов</Catalog>
-			<Catalog>Конфигурации</Catalog>
-			<Catalog>ХранилищаКонфигураций</Catalog>
-			<Catalog>ПользователиИБ</Catalog>
-			<Catalog>ВнешниеПользователи</Catalog>
-			<Catalog>ВидыКонтактнойИнформации</Catalog>
-			<Catalog>СерверыБД</Catalog>
-			<Catalog>КластерСервераПриложений</Catalog>
+			<CommonForm>ФормаОбщихПараметровАутетнитификации</CommonForm>
 			<Catalog>ВариантыОтчетов</Catalog>
+			<Catalog>ВерсииПлатформы</Catalog>
 			<Catalog>ВерсииРасширений</Catalog>
+			<Catalog>ВерсииФайлов</Catalog>
+			<Catalog>ВидыКонтактнойИнформации</Catalog>
+			<Catalog>ВнешниеПользователи</Catalog>
 			<Catalog>ВстречаПрисоединенныеФайлы</Catalog>
 			<Catalog>ГруппыВнешнихПользователей</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>
@@ -1172,34 +1171,38 @@
 			<Catalog>ЗначенияСвойствОбъектовИерархия</Catalog>
 			<Catalog>ИдентификаторыОбъектовМетаданных</Catalog>
 			<Catalog>ИдентификаторыОбъектовРасширений</Catalog>
+			<Catalog>ИнформационныеБазы</Catalog>
 			<Catalog>Календари</Catalog>
+			<Catalog>Конфигурации</Catalog>
 			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
 			<Catalog>ПапкиФайлов</Catalog>
 			<Catalog>ПапкиЭлектронныхПисем</Catalog>
 			<Catalog>Пользователи</Catalog>
+			<Catalog>ПользователиИБ</Catalog>
 			<Catalog>ПользовательскиеНастройкиОтчетов</Catalog>
 			<Catalog>ПравилаОбработкиЭлектроннойПочты</Catalog>
 			<Catalog>ПредопределенныеВариантыОтчетов</Catalog>
 			<Catalog>ПредопределенныеВариантыОтчетовРасширений</Catalog>
+			<Catalog>Проекты</Catalog>
 			<Catalog>ПроизводственныеКалендари</Catalog>
 			<Catalog>РассылкиОтчетов</Catalog>
+			<Catalog>Серверы1С</Catalog>
+			<Catalog>СерверыБД</Catalog>
+			<Catalog>Скрипты</Catalog>
 			<Catalog>СообщениеSMSПрисоединенныеФайлы</Catalog>
 			<Catalog>СтраныМира</Catalog>
 			<Catalog>СтроковыеКонтактыВзаимодействий</Catalog>
+			<Catalog>Сценарии</Catalog>
 			<Catalog>ТелефонныйЗвонокПрисоединенныеФайлы</Catalog>
 			<Catalog>ТомаХраненияФайлов</Catalog>
 			<Catalog>УчетныеЗаписиСинхронизацииФайлов</Catalog>
 			<Catalog>УчетныеЗаписиЭлектроннойПочты</Catalog>
 			<Catalog>Файлы</Catalog>
+			<Catalog>ХранилищаКонфигураций</Catalog>
 			<Catalog>ШаблоныСообщений</Catalog>
 			<Catalog>ШаблоныСообщенийПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
-			<Catalog>Сценарии</Catalog>
-			<Catalog>Скрипты</Catalog>
-			<Catalog>Проекты</Catalog>
-			<Catalog>ВерсииПлатформы</Catalog>
-			<Catalog>ВерсииКонфигураций</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>
@@ -1258,6 +1261,7 @@
 			<Enum>ЦветаЗаметок</Enum>
 			<Enum>ЦветностиИзображения</Enum>
 			<Enum>СостоянияЭлементовКластера</Enum>
+			<Enum>ВидыОперационныхСистем</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>ОбъемНенужныхФайлов</Report>
