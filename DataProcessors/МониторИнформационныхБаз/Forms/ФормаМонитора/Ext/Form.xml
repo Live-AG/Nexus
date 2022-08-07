@@ -256,6 +256,14 @@
 							<ContextMenu name="ТаблицаИнформационныхБазКонфигурацияКонтекстноеМеню" id="60"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазКонфигурацияРасширеннаяПодсказка" id="61"/>
 						</LabelField>
+						<LabelField name="ТаблицаИнформационныхБазПроект" id="62">
+							<DataPath>ТаблицаИнформационныхБаз.Проект</DataPath>
+							<TitleBackColor>style:FormBackColor</TitleBackColor>
+							<ShowInFooter>false</ShowInFooter>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="ТаблицаИнформационныхБазПроектКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="ТаблицаИнформационныхБазПроектРасширеннаяПодсказка" id="64"/>
+						</LabelField>
 						<PictureField name="ТаблицаИнформационныхБазПолеНастройка" id="65">
 							<DataPath>ТаблицаИнформационныхБаз.ПолеГиперссылки</DataPath>
 							<TitleBackColor>style:FormBackColor</TitleBackColor>
@@ -271,14 +279,6 @@
 							<ContextMenu name="ТаблицаИнформационныхБазПолеНастройкаКонтекстноеМеню" id="66"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазПолеНастройкаРасширеннаяПодсказка" id="67"/>
 						</PictureField>
-						<LabelField name="ТаблицаИнформационныхБазПроект" id="62">
-							<DataPath>ТаблицаИнформационныхБаз.Проект</DataPath>
-							<TitleBackColor>style:FormBackColor</TitleBackColor>
-							<ShowInFooter>false</ShowInFooter>
-							<BorderColor>style:FormBackColor</BorderColor>
-							<ContextMenu name="ТаблицаИнформационныхБазПроектКонтекстноеМеню" id="63"/>
-							<ExtendedTooltip name="ТаблицаИнформационныхБазПроектРасширеннаяПодсказка" id="64"/>
-						</LabelField>
 					</ChildItems>
 				</Table>
 			</ChildItems>
@@ -310,7 +310,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Серверы1С</v8:Type>
+						<v8:Type>cfg:CatalogRef.Кластеры1С</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Состояние" id="5">

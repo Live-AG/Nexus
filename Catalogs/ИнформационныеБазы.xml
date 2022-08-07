@@ -39,7 +39,7 @@
 			<FoldersOnTop>true</FoldersOnTop>
 			<UseStandardCommands>true</UseStandardCommands>
 			<Owners>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Серверы1С</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Кластеры1С</xr:Item>
 			</Owners>
 			<SubordinationUse>ToItems</SubordinationUse>
 			<CodeLength>0</CodeLength>
@@ -208,7 +208,7 @@
 					<xr:Comment/>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:type="xr:DesignTimeRef">Catalog.Серверы1С.EmptyRef</xr:FillValue>
+					<xr:FillValue xsi:type="xr:DesignTimeRef">Catalog.Кластеры1С.EmptyRef</xr:FillValue>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>

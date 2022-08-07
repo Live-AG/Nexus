@@ -63,7 +63,7 @@ Function GetCluster(ConnectionSettings, ClusterSettings)
 	Clusters = AdministrationAgent.GetClusters();
 	For each Cluster in Clusters do
 		If Cluster.Name = ClusterSettings.Name Then
-			Try
+			Trysudo ./webinst -publish -apache24 -wsdir <ИМЯ ПУБЛИКАЦИИ> -dir /var/www/<ИМЯ ПУБЛИКАЦИИ> -connstr “Srvr=<ИМЯ СЕРВЕРА;Ref=<ИМЯ БАЗЫ>” -confpath /etc/apache2/apache2.conf
 				Cluster.Authenticate(ClusterSettings.User, ClusterSettings.Password);
 			Except
 				
@@ -81,3 +81,8 @@ Function GetAdministrationAgent(ConnectionSettings)
 	AdministrationAgent.Authenticate(ConnectionSettings.Login, ConnectionSettings.Password);
 	Return AdministrationAgent;
 EndFunction
+
+
+
+
+sudo ./webinst -publish -apache24 -wsdir Nexus -dir /var/www/Nexus -connstr "Srvr=192.168.31.139;Ref=TestDB3" -confpath /etc/apache2/apache2.conf

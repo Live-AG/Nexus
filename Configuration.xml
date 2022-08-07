@@ -552,6 +552,9 @@
 			<CommonPicture>ЯндексКарты</CommonPicture>
 			<CommonPicture>Сервер</CommonPicture>
 			<CommonPicture>БазаДанных</CommonPicture>
+			<CommonPicture>БазаЗаблокирована</CommonPicture>
+			<CommonPicture>БазаДобавить</CommonPicture>
+			<CommonPicture>СоздатьПодключения</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
@@ -1186,7 +1189,7 @@
 			<Catalog>Проекты</Catalog>
 			<Catalog>ПроизводственныеКалендари</Catalog>
 			<Catalog>РассылкиОтчетов</Catalog>
-			<Catalog>Серверы1С</Catalog>
+			<Catalog>Кластеры1С</Catalog>
 			<Catalog>СерверыБД</Catalog>
 			<Catalog>Скрипты</Catalog>
 			<Catalog>СообщениеSMSПрисоединенныеФайлы</Catalog>

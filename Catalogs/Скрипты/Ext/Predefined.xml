@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.13">
+	<Item id="bcb87ec4-15e1-4343-ae92-615fab03fa6b">
+		<Name>ИнформационнаяБаза</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Информационная база</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="6f4762d4-df64-461f-8411-e67c6b1c90d3">
+				<Name>ВыгрузитьБазуВФайл</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Выгрузить базу в файл</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d3675b6b-02a8-4b85-81c3-2e6dc3559f1d">
+				<Name>ЗагрузитьБазуИзФайла</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Загрузить базу из файла</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="30a19c02-33ce-4444-9734-af0e8f659817">
+				<Name>ОбезличитьИнформационнуюБазу</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Обезличить информационную базу</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="2d6f78fa-1848-4bef-87d2-dc1e9caf9501">
+				<Name>ОбрезатьИнформазионнуюБазу</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Обрезать информазионную базу</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="d2c16103-77fa-4169-8b27-8c5db02e3aba">
+		<Name>Сеансы</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>Сеансы</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="c8ed93fa-5103-4d63-b2bb-4ecf38e6105c">
+				<Name>БлокировкаНачалаСеансов</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Блокировка начала сеансов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="cd4e9c3a-92bb-439c-b57c-3c1d22dd1c73">
+				<Name>ЗавершениеСеансовПользователей</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Завершение сеансов пользователей</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>
