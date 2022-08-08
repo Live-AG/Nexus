@@ -341,11 +341,11 @@
 		<ChildObjects>
 			<Attribute uuid="f53dc3fb-84bb-402d-9a12-35480096882e">
 				<Properties>
-					<Name>НазначениеИБ</Name>
+					<Name>Назначение</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Назначение ИБ</v8:content>
+							<v8:content>Назначение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -949,6 +949,8 @@
 			</TabularSection>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
+			<Form>ФормаПросмотра</Form>
+			<Form>ФормаЗапускаПриложения</Form>
 			<Command uuid="41e9cf92-7865-4b9f-9d33-42df3adc8a22">
 				<Properties>
 					<Name>ЗапуститьПредприятие</Name>

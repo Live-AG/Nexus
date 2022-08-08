@@ -53,6 +53,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -82,98 +83,329 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаВертикальноеРазделениеРасширеннаяПодсказка" id="18"/>
 					<ChildItems>
-						<Table name="ТаблицаЭлементовКластера" id="1">
-							<Representation>Tree</Representation>
-							<CommandBarLocation>None</CommandBarLocation>
-							<ReadOnly>true</ReadOnly>
-							<ChangeRowSet>false</ChangeRowSet>
-							<ChangeRowOrder>false</ChangeRowOrder>
-							<Width>12</Width>
-							<Height>2</Height>
-							<RowSelectionMode>Row</RowSelectionMode>
-							<Header>false</Header>
-							<HorizontalLines>false</HorizontalLines>
-							<VerticalLines>false</VerticalLines>
-							<InitialTreeView>ExpandAllLevels</InitialTreeView>
-							<DataPath>ТаблицаЭлементовКластера</DataPath>
-							<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
-							<RowsPicture>
-								<xr:Ref>CommonPicture.Сервер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</RowsPicture>
-							<BorderColor>style:FormBackColor</BorderColor>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ТаблицаЭлементовКластераКонтекстноеМеню" id="3"/>
-							<AutoCommandBar name="ТаблицаЭлементовКластераКоманднаяПанель" id="2"/>
-							<ExtendedTooltip name="ТаблицаЭлементовКластераРасширеннаяПодсказка" id="4"/>
-							<SearchStringAddition name="ТаблицаЭлементовКластераСтрокаПоиска" id="5">
-								<AdditionSource>
-									<Item>ТаблицаЭлементовКластера</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ТаблицаЭлементовКластераСтрокаПоискаКонтекстноеМеню" id="6"/>
-								<ExtendedTooltip name="ТаблицаЭлементовКластераСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ТаблицаЭлементовКластераСостояниеПросмотра" id="11">
-								<AdditionSource>
-									<Item>ТаблицаЭлементовКластера</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ТаблицаЭлементовКластераСостояниеПросмотраКонтекстноеМеню" id="12"/>
-								<ExtendedTooltip name="ТаблицаЭлементовКластераСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ТаблицаЭлементовКластераУправлениеПоиском" id="8">
-								<AdditionSource>
-									<Item>ТаблицаЭлементовКластера</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ТаблицаЭлементовКластераУправлениеПоискомКонтекстноеМеню" id="9"/>
-								<ExtendedTooltip name="ТаблицаЭлементовКластераУправлениеПоискомРасширеннаяПодсказка" id="10"/>
-							</SearchControlAddition>
-							<Events>
-								<Event name="Selection">ДеревоЭлементовКластераВыбор</Event>
-								<Event name="OnActivateCell">ДеревоЭлементовКластераПриАктивизацииЯчейки</Event>
-							</Events>
+						<Pages name="ГруппаСтраницыОтборов" id="108">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страницы отборов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страницы отборов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="ГруппаСтраницыОтборовРасширеннаяПодсказка" id="109"/>
 							<ChildItems>
-								<ColumnGroup name="ДеревоЭлементовКластераГруппаВертикальная" id="71">
+								<Page name="ГруппаКластеры" id="110">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Дерево элементов кластера группа вертикальная</v8:content>
+											<v8:content>Группа кластеры</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Дерево элементов кластера группа вертикальная</v8:content>
+											<v8:content>Группа кластеры</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ДеревоЭлементовКластераГруппаВертикальнаяРасширеннаяПодсказка" id="72"/>
+									<ExtendedTooltip name="ГруппаКластерыРасширеннаяПодсказка" id="111"/>
 									<ChildItems>
-										<InputField name="ДеревоКластеровЭлементКластера" id="14">
-											<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
-											<HorizontalAlign>Left</HorizontalAlign>
-											<MaxHeight>2</MaxHeight>
-											<BorderColor>style:FieldBackColor</BorderColor>
-											<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
-											<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
-											<ContextMenu name="ДеревоКластеровЭлементКластераКонтекстноеМеню" id="15"/>
-											<ExtendedTooltip name="ДеревоКластеровЭлементКластераРасширеннаяПодсказка" id="16"/>
-										</InputField>
-										<LabelField name="ДеревоЭлементовКластераПолеОписания" id="68">
-											<DataPath>ТаблицаЭлементовКластера.КраткоеОписание</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ShowInHeader>false</ShowInHeader>
-											<ShowInFooter>false</ShowInFooter>
-											<TextColor>style:NavigationColor</TextColor>
-											<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-											<ContextMenu name="ДеревоЭлементовКластераПолеОписанияКонтекстноеМеню" id="69"/>
-											<ExtendedTooltip name="ДеревоЭлементовКластераПолеОписанияРасширеннаяПодсказка" id="70"/>
-										</LabelField>
+										<Table name="ТаблицаЭлементовКластера" id="1">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ReadOnly>true</ReadOnly>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<Width>12</Width>
+											<Height>2</Height>
+											<RowSelectionMode>Row</RowSelectionMode>
+											<Header>false</Header>
+											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+											<VerticalScrollBar>DontUse</VerticalScrollBar>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
+											<InitialTreeView>ExpandAllLevels</InitialTreeView>
+											<DataPath>ТаблицаЭлементовКластера</DataPath>
+											<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Ref>CommonPicture.Сервер</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</RowsPicture>
+											<BorderColor>style:FormBackColor</BorderColor>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>true</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="ТаблицаЭлементовКластераКонтекстноеМеню" id="3"/>
+											<AutoCommandBar name="ТаблицаЭлементовКластераКоманднаяПанель" id="2"/>
+											<ExtendedTooltip name="ТаблицаЭлементовКластераРасширеннаяПодсказка" id="4"/>
+											<SearchStringAddition name="ТаблицаЭлементовКластераСтрокаПоиска" id="5">
+												<AdditionSource>
+													<Item>ТаблицаЭлементовКластера</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаЭлементовКластераСтрокаПоискаКонтекстноеМеню" id="6"/>
+												<ExtendedTooltip name="ТаблицаЭлементовКластераСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ТаблицаЭлементовКластераСостояниеПросмотра" id="11">
+												<AdditionSource>
+													<Item>ТаблицаЭлементовКластера</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаЭлементовКластераСостояниеПросмотраКонтекстноеМеню" id="12"/>
+												<ExtendedTooltip name="ТаблицаЭлементовКластераСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ТаблицаЭлементовКластераУправлениеПоиском" id="8">
+												<AdditionSource>
+													<Item>ТаблицаЭлементовКластера</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаЭлементовКластераУправлениеПоискомКонтекстноеМеню" id="9"/>
+												<ExtendedTooltip name="ТаблицаЭлементовКластераУправлениеПоискомРасширеннаяПодсказка" id="10"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateCell">ТаблицаЭлементовКластераПриАктивизацииЯчейки</Event>
+											</Events>
+											<ChildItems>
+												<ColumnGroup name="ДеревоЭлементовКластераГруппаВертикальная" id="71">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дерево элементов кластера группа вертикальная</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Дерево элементов кластера группа вертикальная</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ДеревоЭлементовКластераГруппаВертикальнаяРасширеннаяПодсказка" id="72"/>
+													<ChildItems>
+														<InputField name="ДеревоКластеровЭлементКластера" id="14">
+															<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
+															<HorizontalAlign>Left</HorizontalAlign>
+															<MaxHeight>2</MaxHeight>
+															<BorderColor>style:FieldBackColor</BorderColor>
+															<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+															<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
+															<ContextMenu name="ДеревоКластеровЭлементКластераКонтекстноеМеню" id="15"/>
+															<ExtendedTooltip name="ДеревоКластеровЭлементКластераРасширеннаяПодсказка" id="16"/>
+														</InputField>
+														<LabelField name="ДеревоЭлементовКластераПолеОписания" id="68">
+															<DataPath>ТаблицаЭлементовКластера.КраткоеОписание</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ShowInHeader>false</ShowInHeader>
+															<ShowInFooter>false</ShowInFooter>
+															<TextColor>style:NavigationColor</TextColor>
+															<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+															<ContextMenu name="ДеревоЭлементовКластераПолеОписанияКонтекстноеМеню" id="69"/>
+															<ExtendedTooltip name="ДеревоЭлементовКластераПолеОписанияРасширеннаяПодсказка" id="70"/>
+														</LabelField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</Table>
 									</ChildItems>
-								</ColumnGroup>
+								</Page>
+								<Page name="ГруппаПроекты" id="112">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа проекты</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа проекты</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаПроектыРасширеннаяПодсказка" id="113"/>
+									<ChildItems>
+										<Table name="ТаблицаПроектов" id="84">
+											<Representation>List</Representation>
+											<CommandBarLocation>None</CommandBarLocation>
+											<ReadOnly>true</ReadOnly>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<RowSelectionMode>Row</RowSelectionMode>
+											<Header>false</Header>
+											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+											<VerticalScrollBar>DontUse</VerticalScrollBar>
+											<HorizontalLines>false</HorizontalLines>
+											<VerticalLines>false</VerticalLines>
+											<InitialTreeView>ExpandAllLevels</InitialTreeView>
+											<EnableStartDrag>true</EnableStartDrag>
+											<DataPath>ТаблицаПроектов</DataPath>
+											<RowPictureDataPath>ТаблицаПроектов.ИндексКартинки</RowPictureDataPath>
+											<RowsPicture>
+												<xr:Ref>CommonPicture.Проект</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</RowsPicture>
+											<BorderColor>style:FormBackColor</BorderColor>
+											<AutoRefresh>false</AutoRefresh>
+											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<Period>
+												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+											</Period>
+											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<TopLevelParent xsi:nil="true"/>
+											<ShowRoot>false</ShowRoot>
+											<AllowRootChoice>false</AllowRootChoice>
+											<UpdateOnDataChange>Auto</UpdateOnDataChange>
+											<ContextMenu name="ТаблицаПроектовКонтекстноеМеню" id="85"/>
+											<AutoCommandBar name="ТаблицаПроектовКоманднаяПанель" id="86"/>
+											<ExtendedTooltip name="ТаблицаПроектовРасширеннаяПодсказка" id="87"/>
+											<SearchStringAddition name="ТаблицаПроектовСтрокаПоиска" id="88">
+												<AdditionSource>
+													<Item>ТаблицаПроектов</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаПроектовСтрокаПоискаКонтекстноеМеню" id="89"/>
+												<ExtendedTooltip name="ТаблицаПроектовСтрокаПоискаРасширеннаяПодсказка" id="90"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ТаблицаПроектовСостояниеПросмотра" id="91">
+												<AdditionSource>
+													<Item>ТаблицаПроектов</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаПроектовСостояниеПросмотраКонтекстноеМеню" id="92"/>
+												<ExtendedTooltip name="ТаблицаПроектовСостояниеПросмотраРасширеннаяПодсказка" id="93"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ТаблицаПроектовУправлениеПоиском" id="94">
+												<AdditionSource>
+													<Item>ТаблицаПроектов</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ТаблицаПроектовУправлениеПоискомКонтекстноеМеню" id="95"/>
+												<ExtendedTooltip name="ТаблицаПроектовУправлениеПоискомРасширеннаяПодсказка" id="96"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="OnActivateCell">ТаблицаПроектовПриАктивизацииЯчейки</Event>
+											</Events>
+											<ChildItems>
+												<ColumnGroup name="ТаблицаПроектовГруппаВертикальная" id="103">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Таблица проектов группа вертикальная</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Таблица проектов группа вертикальная</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="ТаблицаПроектовГруппаВертикальнаяРасширеннаяПодсказка" id="104"/>
+													<ChildItems>
+														<LabelField name="ТаблицаПроектовНаименование" id="97">
+															<DataPath>ТаблицаПроектов.Наименование</DataPath>
+															<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+															<ContextMenu name="ТаблицаПроектовНаименованиеКонтекстноеМеню" id="98"/>
+															<ExtendedTooltip name="ТаблицаПроектовНаименованиеРасширеннаяПодсказка" id="99"/>
+														</LabelField>
+														<LabelField name="ТаблицаПроектовКонтрагент" id="100">
+															<DataPath>ТаблицаПроектов.Контрагент</DataPath>
+															<TextColor>style:NavigationColor</TextColor>
+															<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+															<ContextMenu name="ТаблицаПроектовКонтрагентКонтекстноеМеню" id="101"/>
+															<ExtendedTooltip name="ТаблицаПроектовКонтрагентРасширеннаяПодсказка" id="102"/>
+														</LabelField>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаПользователи" id="114">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пользователи</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа пользователи</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаПользователиРасширеннаяПодсказка" id="115"/>
+								</Page>
 							</ChildItems>
-						</Table>
+						</Pages>
+						<RadioButtonField name="ВидОтбора" id="105">
+							<DataPath>ВидОтбора</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Кластеры</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Кластеры</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Проекты</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Проекты</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Пользователи</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Пользователи</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<BackColor>style:FormBackColor</BackColor>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="ВидОтбораКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="ВидОтбораРасширеннаяПодсказка" id="107"/>
+							<Events>
+								<Event name="OnChange">ВидОтбораПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
 					</ChildItems>
 				</UsualGroup>
 				<Table name="ТаблицаИнформационныхБаз" id="37">
@@ -191,6 +423,9 @@
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</RowsPicture>
 					<BorderColor>style:FormBackColor</BorderColor>
+					<CommandSet>
+						<ExcludedCommand>Change</ExcludedCommand>
+					</CommandSet>
 					<AutoRefresh>false</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
 					<Period>
@@ -231,6 +466,9 @@
 						<ContextMenu name="ТаблицаИнформационныхБазУправлениеПоискомКонтекстноеМеню" id="48"/>
 						<ExtendedTooltip name="ТаблицаИнформационныхБазУправлениеПоискомРасширеннаяПодсказка" id="49"/>
 					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">ТаблицаИнформационныхБазВыбор</Event>
+					</Events>
 					<ChildItems>
 						<LabelField name="ТаблицаИнформационныхБазСсылка" id="53">
 							<DataPath>ТаблицаИнформационныхБаз.Ref</DataPath>
@@ -240,13 +478,13 @@
 							<ContextMenu name="ТаблицаИнформационныхБазСсылкаКонтекстноеМеню" id="54"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазСсылкаРасширеннаяПодсказка" id="55"/>
 						</LabelField>
-						<LabelField name="ТаблицаИнформационныхБазНазначениеИБ" id="56">
-							<DataPath>ТаблицаИнформационныхБаз.НазначениеИБ</DataPath>
+						<LabelField name="ТаблицаИнформационныхБазНазначение" id="56">
+							<DataPath>ТаблицаИнформационныхБаз.Назначение</DataPath>
 							<TitleBackColor>style:FormBackColor</TitleBackColor>
 							<ShowInFooter>false</ShowInFooter>
 							<BorderColor>style:FormBackColor</BorderColor>
-							<ContextMenu name="ТаблицаИнформационныхБазНазначениеИБКонтекстноеМеню" id="57"/>
-							<ExtendedTooltip name="ТаблицаИнформационныхБазНазначениеИБРасширеннаяПодсказка" id="58"/>
+							<ContextMenu name="ТаблицаИнформационныхБазНазначениеКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ТаблицаИнформационныхБазНазначениеРасширеннаяПодсказка" id="58"/>
 						</LabelField>
 						<LabelField name="ТаблицаИнформационныхБазКонфигурация" id="59">
 							<DataPath>ТаблицаИнформационныхБаз.Конфигурация</DataPath>
@@ -272,7 +510,7 @@
 							<ShowInFooter>false</ShowInFooter>
 							<Hyperlink>true</Hyperlink>
 							<ValuesPicture>
-								<xr:Ref>CommonPicture.РазделАдминистрирование</xr:Ref>
+								<xr:Ref>CommonPicture.Настройки</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</ValuesPicture>
 							<BorderColor>style:FormBackColor</BorderColor>
@@ -299,87 +537,41 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8:ValueTable</v8:Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
-			<Columns>
-				<Column name="ЭлементКластера" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Элемент кластера</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Кластеры1С</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Состояние" id="5">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Состояние</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>cfg:EnumRef.СостоянияЭлементовКластера</v8:Type>
-					</Type>
-				</Column>
-				<Column name="ИндексСостояния" id="6">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Индекс состояния</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>1</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Column>
-				<Column name="КэшОписанияЭлемента" id="8">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Кэш описания элемента</v8:content>
-						</v8:item>
-					</Title>
-					<Type/>
-				</Column>
-				<Column name="ИдентификаторКластера" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор кластера</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>36</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-				<Column name="КраткоеОписание" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Краткое описание</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-			</Columns>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Кластеры1С.Ссылка КАК ЭлементКластера,
+	Кластеры1С.ВерсияПлатформы КАК ВерсияПлатформы,
+	Кластеры1С.Описание КАК КраткоеОписание,
+	Кластеры1С.Защищен КАК Защищен,
+	Кластеры1С.Активен КАК Активен,
+	Кластеры1С.ИдентификаторКластера КАК ИдентификаторКластера,
+	0 КАК ИндексСостояния
+ИЗ
+	Справочник.Кластеры1С КАК Кластеры1С
+ГДЕ
+	НЕ Кластеры1С.ПометкаУдаления</QueryText>
+				<MainTable>Catalog.Кластеры1С</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
 		</Attribute>
 		<Attribute name="ПолеОписанияЭлемента" id="7">
 			<Title>
@@ -415,7 +607,7 @@
 	СправочникИнформационныеБазы.ПометкаУдаления,
 	СправочникИнформационныеБазы.Владелец,
 	СправочникИнформационныеБазы.Наименование,
-	СправочникИнформационныеБазы.НазначениеИБ,
+	СправочникИнформационныеБазы.Назначение,
 	СправочникИнформационныеБазы.СерверБД,
 	СправочникИнформационныеБазы.ИмяНаСервереБД,
 	СправочникИнформационныеБазы.ИмяНаСервере1С,
@@ -463,6 +655,67 @@
 			</Title>
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаПроектов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица проектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>ТаблицаПроектов.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникПроекты.Ссылка КАК Ссылка,
+	СправочникПроекты.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникПроекты.Код КАК Код,
+	СправочникПроекты.Наименование КАК Наименование,
+	СправочникПроекты.Предопределенный КАК Предопределенный,
+	СправочникПроекты.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	0 КАК ИндексКартинки,
+	СправочникПроекты.Контрагент КАК Контрагент
+ИЗ
+	Справочник.Проекты КАК СправочникПроекты</QueryText>
+				<MainTable>Catalog.Проекты</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВидОтбора" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>20</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>

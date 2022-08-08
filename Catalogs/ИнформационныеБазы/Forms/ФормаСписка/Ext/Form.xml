@@ -95,7 +95,7 @@
 					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="НазначениеИБ" id="34">
-					<DataPath>Список.НазначениеИБ</DataPath>
+					<DataPath>~Список.НазначениеИБ</DataPath>
 					<ContextMenu name="НазначениеИБКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="36"/>
 				</LabelField>

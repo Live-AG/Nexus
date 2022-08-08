@@ -203,7 +203,7 @@
 							<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="9"/>
 						</InputField>
 						<InputField name="НазначениеИБ" id="10">
-							<DataPath>Объект.НазначениеИБ</DataPath>
+							<DataPath>Объект.Назначение</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="НазначениеИБКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="12"/>

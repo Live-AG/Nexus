@@ -219,11 +219,12 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>УправлениеИБ</Subsystem>
+			<Subsystem>УправлениеИнформационнымиБазами</Subsystem>
 			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
-			<Subsystem>УправлениеСерверами</Subsystem>
+			<Subsystem>УправлениеКластерами</Subsystem>
+			<Subsystem>АдминистрированиеПользователей</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВладелецФайловШрифт</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовВажнаяШрифт</StyleItem>
@@ -553,8 +554,18 @@
 			<CommonPicture>Сервер</CommonPicture>
 			<CommonPicture>БазаДанных</CommonPicture>
 			<CommonPicture>БазаЗаблокирована</CommonPicture>
-			<CommonPicture>БазаДобавить</CommonPicture>
 			<CommonPicture>СоздатьПодключения</CommonPicture>
+			<CommonPicture>БазаДобавить</CommonPicture>
+			<CommonPicture>Настройки</CommonPicture>
+			<CommonPicture>ГлавноеМеню</CommonPicture>
+			<CommonPicture>Пользователи</CommonPicture>
+			<CommonPicture>Редактировать</CommonPicture>
+			<CommonPicture>ВыполнитьЗапуск</CommonPicture>
+			<CommonPicture>ВыполнитьСкрипт</CommonPicture>
+			<CommonPicture>Предприятие</CommonPicture>
+			<CommonPicture>Конфигуратор</CommonPicture>
+			<CommonPicture>ЯрлыкИнформационнйБазы</CommonPicture>
+			<CommonPicture>Проект</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>

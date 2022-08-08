@@ -19,7 +19,7 @@
 				</v8:item>
 			</Explanation>
 			<Picture>
-				<xr:Ref>CommonPicture.РазделАдминистрирование</xr:Ref>
+				<xr:Ref>CommonPicture.Настройки</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Content>
