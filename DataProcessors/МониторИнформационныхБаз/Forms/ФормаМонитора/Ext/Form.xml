@@ -136,6 +136,9 @@
 												<xr:LoadTransparent>true</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
+											<CommandSet>
+												<ExcludedCommand>Change</ExcludedCommand>
+											</CommandSet>
 											<AutoRefresh>false</AutoRefresh>
 											<AutoRefreshPeriod>60</AutoRefreshPeriod>
 											<Period>
@@ -257,6 +260,9 @@
 												<xr:LoadTransparent>true</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
+											<CommandSet>
+												<ExcludedCommand>Change</ExcludedCommand>
+											</CommandSet>
 											<AutoRefresh>false</AutoRefresh>
 											<AutoRefreshPeriod>60</AutoRefreshPeriod>
 											<Period>
@@ -510,7 +516,7 @@
 							<ShowInFooter>false</ShowInFooter>
 							<Hyperlink>true</Hyperlink>
 							<ValuesPicture>
-								<xr:Ref>CommonPicture.Настройки</xr:Ref>
+								<xr:Ref>StdPicture.Setting</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</ValuesPicture>
 							<BorderColor>style:FormBackColor</BorderColor>

@@ -37,6 +37,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаСерверАдминистрированияРасширеннаяПодсказка" id="26"/>
 			<ChildItems>
 				<InputField name="ПользовательСервераАдминистрирования" id="19">
@@ -79,6 +80,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаЦентральныйСерверКластераРасширеннаяПодсказка" id="28"/>
 			<ChildItems>
 				<InputField name="ПользовательЦентральногоСервер" id="22">
@@ -121,6 +123,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаАдминистраторСУБДРасширеннаяПодсказка" id="30"/>
 			<ChildItems>
 				<InputField name="ПользовательСУБД" id="1">
@@ -163,6 +166,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаАдминистраторИнформационнойБазыРасширеннаяПодсказка" id="32"/>
 			<ChildItems>
 				<InputField name="ПользовательИнформационнойБазы" id="16">

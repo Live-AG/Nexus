@@ -176,7 +176,7 @@
 							<ExtendedTooltip name="ЗащищенРасширеннаяПодсказка" id="25"/>
 						</CheckBoxField>
 						<InputField name="ВидОперационнойСистемы" id="109">
-							<DataPath>Объект.ВидОперационнойСистемы</DataPath>
+							<DataPath>1/0:7f0f23e5-d246-4c60-8b17-900eb70d440a</DataPath>
 							<ContextMenu name="ВидОперационнойСистемыКонтекстноеМеню" id="110"/>
 							<ExtendedTooltip name="ВидОперационнойСистемыРасширеннаяПодсказка" id="111"/>
 						</InputField>

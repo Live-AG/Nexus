@@ -7,98 +7,374 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<CheckBoxField name="ЗапуститьПодАдминистратором" id="5">
-			<DataPath>ЗапускОтИмениАдминистратора</DataPath>
-			<TitleLocation>Right</TitleLocation>
-			<CheckBoxType>Switcher</CheckBoxType>
-			<ContextMenu name="ЗапуститьПодАдминистраторомКонтекстноеМеню" id="6"/>
-			<ExtendedTooltip name="ЗапуститьПодАдминистраторомРасширеннаяПодсказка" id="7"/>
-		</CheckBoxField>
-		<UsualGroup name="ГруппаГоризонтальная" id="15">
+		<UsualGroup name="ГруппаАдминистрирования" id="22">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа горизонтальная</v8:content>
+					<v8:content>Группа администрирования</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа горизонтальная</v8:content>
+					<v8:content>Группа администрирования</v8:content>
 				</v8:item>
 			</ToolTip>
 			<HorizontalStretch>true</HorizontalStretch>
-			<HorizontalAlign>Center</HorizontalAlign>
+			<Group>AlwaysHorizontal</Group>
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="16"/>
+			<ExtendedTooltip name="ГруппаАдминистрированияРасширеннаяПодсказка" id="23"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаКнопок" id="8">
+				<Button name="ДополнительныеНастройки" id="24">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.ДополнительныеНастройки</CommandName>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ExtendedTooltip name="ДополнительныеНастройкиРасширеннаяПодсказка" id="25"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыНастроек" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы настроек</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы настроек</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыНастроекРасширеннаяПодсказка" id="16"/>
+		</Pages>
+		<UsualGroup name="ГруппаКнопок" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="9"/>
+			<ChildItems>
+				<CheckBoxField name="ЗапускОтИмениАдминистратора" id="5">
+					<DataPath>ЗапускОтИмениАдминистратора</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CheckBoxType>Switcher</CheckBoxType>
+					<ContextMenu name="ЗапускОтИмениАдминистратораКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ЗапускОтИмениАдминистратораРасширеннаяПодсказка" id="7"/>
+				</CheckBoxField>
+				<Button name="КомандаЗапуститьПредприятиеТонкий" id="17">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.КомандаЗапуститьПредприятиеТонкий</CommandName>
+					<ExtendedTooltip name="КомандаЗапуститьПредприятиеТонкийРасширеннаяПодсказка" id="18"/>
+				</Button>
+				<Button name="КомандаЗапуститьПредприятие" id="1">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.КомандаЗапуститьПредприятие</CommandName>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа кнопок</v8:content>
+							<v8:content>Толстый клиент</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КомандаЗапуститьПредприятиеРасширеннаяПодсказка" id="2"/>
+				</Button>
+				<Button name="КомандаЗапуститьКонфигуратор" id="3">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.КомандаЗапуститьКонфигуратор</CommandName>
+					<ExtendedTooltip name="КомандаЗапуститьКонфигураторРасширеннаяПодсказка" id="4"/>
+				</Button>
+				<Button name="КомандаСохранитьСсылкуВФайл" id="10">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<CommandName>Form.Command.КомандаСохранитьСсылкуВФайл</CommandName>
+					<ExtendedTooltip name="КомандаСохранитьСсылкуВФайлРасширеннаяПодсказка" id="11"/>
+				</Button>
+				<InputField name="СтрокаПодключения" id="19">
+					<DataPath>СтрокаПодключения</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>25</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+					<ContextMenu name="СтрокаПодключенияКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="СтрокаПодключенияРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаГоризонтальная" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальная</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа кнопок</v8:content>
+							<v8:content>Группа горизонтальная</v8:content>
 						</v8:item>
 					</ToolTip>
-					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-					<Group>Vertical</Group>
 					<Behavior>Usual</Behavior>
-					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="9"/>
+					<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="44"/>
 					<ChildItems>
-						<Button name="КомандаЗапуститьПредприятиеТонкий" id="17">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.КомандаЗапуститьПредприятиеТонкий</CommandName>
-							<ExtendedTooltip name="КомандаЗапуститьПредприятиеТонкийРасширеннаяПодсказка" id="18"/>
-						</Button>
-						<Button name="КомандаЗапуститьПредприятие" id="1">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.КомандаЗапуститьПредприятие</CommandName>
+						<UsualGroup name="ГруппаПараметры" id="48">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Толстый клиент</v8:content>
+									<v8:content>Группа параметры</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="КомандаЗапуститьПредприятиеРасширеннаяПодсказка" id="2"/>
-						</Button>
-						<Button name="КомандаЗапуститьКонфигуратор" id="3">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.КомандаЗапуститьКонфигуратор</CommandName>
-							<ExtendedTooltip name="КомандаЗапуститьКонфигураторРасширеннаяПодсказка" id="4"/>
-						</Button>
-						<Button name="КомандаСохранитьСсылкуВФайл" id="10">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.КомандаСохранитьСсылкуВФайл</CommandName>
-							<ExtendedTooltip name="КомандаСохранитьСсылкуВФайлРасширеннаяПодсказка" id="11"/>
-						</Button>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="49"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаВариантыАутентификации" id="26">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Варианты аутентификации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа варианты аутентификации</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаВариантыАутентификацииРасширеннаяПодсказка" id="27"/>
+									<ChildItems>
+										<RadioButtonField name="ВариантАутентификации" id="28">
+											<DataPath>ВариантАутентификации</DataPath>
+											<TitleTextColor>style:AccentColor</TitleTextColor>
+											<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+											<TitleLocation>None</TitleLocation>
+											<RadioButtonType>RadioButtons</RadioButtonType>
+											<ColumnsCount>1</ColumnsCount>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Запрашивать имя и пароль</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">0</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Выбирать автоматически</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">1</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Запуск от имени Администратора</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">2</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ВариантАутентификацииКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ВариантАутентификацииРасширеннаяПодсказка" id="30"/>
+										</RadioButtonField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДополнительныеПараметры" id="31">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дополнительные параметры запуска</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дополнительные параметры</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаДополнительныеПараметрыРасширеннаяПодсказка" id="32"/>
+									<ChildItems>
+										<InputField name="ДополнительныеПараметрыЗапуска" id="33">
+											<DataPath>ДополнительныеПараметрыЗапуска</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<MaxWidth>25</MaxWidth>
+											<ContextMenu name="ДополнительныеПараметрыЗапускаКонтекстноеМеню" id="34"/>
+											<ExtendedTooltip name="ДополнительныеПараметрыЗапускаРасширеннаяПодсказка" id="35"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаРазрядность" id="36">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Разрядность</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа разрядность</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаРазрядностьРасширеннаяПодсказка" id="37"/>
+									<ChildItems>
+										<InputField name="Разрядность" id="38">
+											<DataPath>Разрядность</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<MaxWidth>25</MaxWidth>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>32 (x86)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">x86</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Приоритет 32 (x86)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">x86_prt</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>64 (x86_64)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">x86_64</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Приоритет 64 (x86_64)</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">x86_64_prt</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="РазрядностьКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="РазрядностьРасширеннаяПодсказка" id="40"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<TextDocumentField name="ТекстФайлаЗапуска" id="45">
+							<DataPath>ТекстФайлаЗапуска</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="ТекстФайлаЗапускаКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ТекстФайлаЗапускаРасширеннаяПодсказка" id="47"/>
+						</TextDocumentField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="СтрокаПодключения" id="19">
-			<DataPath>СтрокаПодключения</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<TitleLocation>None</TitleLocation>
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<MaxWidth>25</MaxWidth>
-			<HorizontalStretch>true</HorizontalStretch>
-			<BorderColor>style:FormBackColor</BorderColor>
-			<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
-			<ContextMenu name="СтрокаПодключенияКонтекстноеМеню" id="20"/>
-			<ExtendedTooltip name="СтрокаПодключенияРасширеннаяПодсказка" id="21"/>
-		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="ЗапускОтИмениАдминистратора" id="2">
@@ -136,6 +412,74 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВариантАутентификации" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант аутентификации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныеПараметрыЗапуска" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные параметры запуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Разрядность" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрядность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>15</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьНастройки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстФайлаЗапуска" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст файла запуска</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/txtedt">d5p1:TextDocument</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -216,6 +560,26 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ДополнительныеНастройки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Setting</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДополнительныеНастройки</Action>
+			<Representation>Picture</Representation>
 		</Command>
 	</Commands>
 </Form>

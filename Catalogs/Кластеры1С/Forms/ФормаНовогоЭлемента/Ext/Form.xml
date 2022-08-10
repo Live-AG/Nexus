@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Параметры подключения к кластеру</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<CommandSet>
+		<ExcludedCommand>Help</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Center</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="РазделПодключенияАгента" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агент сервера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раздел подключения агента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="РазделПодключенияАгентаРасширеннаяПодсказка" id="31">
+				<Title formatted="true">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>&lt;fontsize 10&gt;Для этих целей служит &lt;/&gt;&lt;fontsize 10&gt;&lt;b&gt;Сервер администрирования кластера серверов&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;, который состоит из двух утилит: непосредственно самого сервера — программы &lt;/&gt;&lt;fontsize 10&gt;&lt;b&gt;ras.exe&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt; и  утилиты командной строки &lt;/&gt;&lt;fontsize 10&gt;&lt;b&gt;rac.exe&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;, которая обращаясь к запущенному прежде серверу ras позволяет выполнять различные операции с кластером серверов 1С:Предприятия.&lt;/&gt;
+&lt;fontsize 10&gt;Подробно про данный механизм можно прочитать в поставляемой вместе с платформой книге «Руководство администратора. Клиент-серверный вариант» (или, соответственно, &lt;/&gt;&lt;link https://its.1c.ru/db/v8321doc#bookmark:cs:TI000000256&gt;&lt;fontsize 10&gt;https://its.1c.ru/db/v8321doc#bookmark:cs:TI000000256&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;).&lt;/&gt;</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастроекПодключения" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры подключения к серверу администрирования</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настроек подключения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаНастроекПодключенияРасширеннаяПодсказка" id="27"/>
+					<ChildItems>
+						<InputField name="АдресСервераАдминистрирования" id="11">
+							<DataPath>АдресСервераАдминистрирования</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Адрес сервера администрирования</v8:content>
+								</v8:item>
+							</Title>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="АдресСервераАдминистрированияКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="АдресСервераАдминистрированияРасширеннаяПодсказка" id="13"/>
+						</InputField>
+						<InputField name="ПортСервераАдминистрирования" id="14">
+							<DataPath>ПортСервераАдминистрирования</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Порт сервера администрирования</v8:content>
+								</v8:item>
+							</Title>
+							<PasswordMode>false</PasswordMode>
+							<ContextMenu name="ПортСервераАдминистрированияКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ПортСервераАдминистрированияРасширеннаяПодсказка" id="16"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАвторизации" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администратор центрального сервера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа авторизации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаАвторизацииРасширеннаяПодсказка" id="2"/>
+					<ChildItems>
+						<InputField name="ПользовательЦентральногоСервера" id="6">
+							<DataPath>ПользовательСервераАдминистрирования</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="ПользовательЦентральногоСервераКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="ПользовательЦентральногоСервераРасширеннаяПодсказка" id="8"/>
+						</InputField>
+						<InputField name="ПарольЦентральногоСервера" id="3">
+							<DataPath>ПарольСервераАдминистрирования</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольЦентральногоСервераКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ПарольЦентральногоСервераРасширеннаяПодсказка" id="5"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="ПанельПодключенияАгента" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель подключения агента</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель подключения агента</v8:content>
+						</v8:item>
+					</ToolTip>
+					<VerticalStretch>true</VerticalStretch>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="ПанельПодключенияАгентаРасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<Button name="ПодключитьсяИЗакрыть" id="9">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.ПодключитьсяКАгенту</CommandName>
+							<BackColor>style:ImportantColor</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ExtendedTooltip name="ПодключитьсяИЗакрытьРасширеннаяПодсказка" id="10"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="РазделВыбораКластера" id="34">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раздел выбора кластера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="РазделВыбораКластераРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<UsualGroup name="ПанельВыбораКластера" id="55">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбор кластера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель выбора кластера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Collapsible</Behavior>
+					<ExtendedTooltip name="ПанельВыбораКластераРасширеннаяПодсказка" id="56"/>
+					<ChildItems>
+						<InputField name="СписокКластеров" id="105">
+							<DataPath>СписокКластеров</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кластер</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="СписокКластеровКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="СписокКластеровРасширеннаяПодсказка" id="107">
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>На центральном сервере зарегистрировано несколько кластеров. Выберите кластер.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</InputField>
+						<Button name="ВыбратьКластерИДалее" id="57">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ВыбратьКластер</CommandName>
+							<BackColor>style:ImportantColor</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ExtendedTooltip name="ВыбратьКластерИДалееРасширеннаяПодсказка" id="58"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="РазделПараметровКластера" id="61">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры кластера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раздел параметров кластера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="РазделПараметровКластераРасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНаименование" id="97">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа наименование</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа наименование</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНаименованиеРасширеннаяПодсказка" id="98"/>
+					<ChildItems>
+						<InputField name="Наименование" id="63">
+							<DataPath>Объект.Description</DataPath>
+							<Width>25</Width>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="65"/>
+						</InputField>
+						<CheckBoxField name="Защищен" id="78">
+							<DataPath>Объект.Защищен</DataPath>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ЗащищенКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ЗащищенРасширеннаяПодсказка" id="80"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПодключенияКластера" id="90">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры подключения к кластеру</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подключения кластера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаПодключенияКластераРасширеннаяПодсказка" id="91"/>
+					<ChildItems>
+						<InputField name="АдресКластера" id="66">
+							<DataPath>Объект.АдресКластера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя компьютера</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АдресКластераКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="АдресКластераРасширеннаяПодсказка" id="68"/>
+						</InputField>
+						<InputField name="ПортКластера" id="69">
+							<DataPath>Объект.ПортКластера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Порт</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПортКластераКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ПортКластераРасширеннаяПодсказка" id="71"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАдминистраторКластера" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администратор кластера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа администратор кластера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаАдминистраторКластераРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<InputField name="ИмяАдминистратораКластера" id="72">
+							<DataPath>Объект.ИмяАдминистратораКластера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ИмяАдминистратораКластераКонтекстноеМеню" id="73"/>
+							<ExtendedTooltip name="ИмяАдминистратораКластераРасширеннаяПодсказка" id="74"/>
+						</InputField>
+						<InputField name="ПарольАдминистратораКластера" id="75">
+							<DataPath>Объект.ПарольАдминистратораКластера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПарольАдминистратораКластераКонтекстноеМеню" id="76"/>
+							<ExtendedTooltip name="ПарольАдминистратораКластераРасширеннаяПодсказка" id="77"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Описание" id="87">
+					<DataPath>Объект.Описание</DataPath>
+					<Visible>false</Visible>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="89"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Button name="ПодключитьсяККластеру" id="132">
+			<Type>UsualButton</Type>
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<CommandName>Form.Command.ПодключитьсяККластеру</CommandName>
+			<BackColor>style:ImportantColor</BackColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			<ExtendedTooltip name="ПодключитьсяККластеруРасширеннаяПодсказка" id="133"/>
+		</Button>
+		<UsualGroup name="РазделИнформационныеБазы" id="108">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные базы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Раздел информационные базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ExtendedTooltip name="РазделИнформационныеБазыРасширеннаяПодсказка" id="109"/>
+			<ChildItems>
+				<Table name="ТаблицаБазКластера" id="110">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ТаблицаБазКластера</DataPath>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<SearchStringLocation>None</SearchStringLocation>
+					<ViewStatusLocation>None</ViewStatusLocation>
+					<SearchControlLocation>None</SearchControlLocation>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаБазКластераКонтекстноеМеню" id="111"/>
+					<AutoCommandBar name="ТаблицаБазКластераКоманднаяПанель" id="112"/>
+					<ExtendedTooltip name="ТаблицаБазКластераРасширеннаяПодсказка" id="113"/>
+					<SearchStringAddition name="ТаблицаБазКластераСтрокаПоиска" id="114">
+						<AdditionSource>
+							<Item>ТаблицаБазКластера</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаБазКластераСтрокаПоискаКонтекстноеМеню" id="115"/>
+						<ExtendedTooltip name="ТаблицаБазКластераСтрокаПоискаРасширеннаяПодсказка" id="116"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаБазКластераСостояниеПросмотра" id="117">
+						<AdditionSource>
+							<Item>ТаблицаБазКластера</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаБазКластераСостояниеПросмотраКонтекстноеМеню" id="118"/>
+						<ExtendedTooltip name="ТаблицаБазКластераСостояниеПросмотраРасширеннаяПодсказка" id="119"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаБазКластераУправлениеПоиском" id="120">
+						<AdditionSource>
+							<Item>ТаблицаБазКластера</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаБазКластераУправлениеПоискомКонтекстноеМеню" id="121"/>
+						<ExtendedTooltip name="ТаблицаБазКластераУправлениеПоискомРасширеннаяПодсказка" id="122"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="ТаблицаБазКластераПризнакСопоставления" id="129">
+							<DataPath>ТаблицаБазКластера.ПризнакСопоставления</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТаблицаБазКластераПризнакСопоставленияКонтекстноеМеню" id="130"/>
+							<ExtendedTooltip name="ТаблицаБазКластераПризнакСопоставленияРасширеннаяПодсказка" id="131"/>
+						</CheckBoxField>
+						<InputField name="ТаблицаБазКластераИмяБазы" id="123">
+							<DataPath>ТаблицаБазКластера.ИмяБазы</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТаблицаБазКластераИмяБазыКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ТаблицаБазКластераИмяБазыРасширеннаяПодсказка" id="125"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<CommandBar name="ПанельКластера" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель кластера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель кластера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="ПанельКластераРасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<Button name="Записать" id="101">
+							<Type>CommandBarButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.StandardCommand.Write</CommandName>
+							<ExtendedTooltip name="ЗаписатьРасширеннаяПодсказка" id="102"/>
+						</Button>
+						<Button name="Закрыть" id="103">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Close</CommandName>
+							<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="104"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПользовательСервераАдминистрирования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПарольСервераАдминистрирования" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПортСервераАдминистрирования" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порт сервера администрирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АдресСервераАдминистрирования" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес сервера администрирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="СписокСуществующихКластеров" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список существующих кластеров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокКластеров" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список кластеров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>v8:UUID</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="Объект" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogObject.Кластеры1С</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокБазКластера" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список баз кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СерверыКластера" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Серверы кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаБазКластера" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица баз кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяБазы" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя базы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="УникальныйИдентификатор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уникальный идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПризнакСопоставления" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Признак сопоставления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПодключитьсяКАгенту" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться к серверу администрирования</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодключитьсяКАгенту</Action>
+		</Command>
+		<Command name="ВыбратьКластер" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать кластер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьКластер</Action>
+		</Command>
+		<Command name="ПодключитьсяККластеру" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться к кластеру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодключитьсяККластеру</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>Catalog.ИнформационныеБазы.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>
