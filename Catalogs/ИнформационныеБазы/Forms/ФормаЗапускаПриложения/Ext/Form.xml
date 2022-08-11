@@ -73,6 +73,7 @@
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="9"/>
 			<ChildItems>
 				<CheckBoxField name="ЗапускОтИмениАдминистратора" id="5">
@@ -120,6 +121,7 @@
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MaxWidth>25</MaxWidth>
 					<HorizontalStretch>true</HorizontalStretch>
+					<TextColor>style:ГиперссылкаЦвет</TextColor>
 					<BorderColor>style:FormBackColor</BorderColor>
 					<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 					<ContextMenu name="СтрокаПодключенияКонтекстноеМеню" id="20"/>

@@ -205,15 +205,14 @@
 				</Page>
 			</ChildItems>
 		</Pages>
-		<InputField name="ИдентификаторКластера" id="106">
+		<LabelField name="ИдентификаторКластера" id="106">
 			<DataPath>Объект.ИдентификаторКластера</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<TextColor>style:ГиперссылкаЦвет</TextColor>
 			<BackColor>style:FormBackColor</BackColor>
-			<BorderColor>style:FormBackColor</BorderColor>
 			<ContextMenu name="ИдентификаторКластераКонтекстноеМеню" id="107"/>
 			<ExtendedTooltip name="ИдентификаторКластераРасширеннаяПодсказка" id="108"/>
-		</InputField>
+		</LabelField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

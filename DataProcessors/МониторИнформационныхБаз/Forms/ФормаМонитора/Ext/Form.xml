@@ -492,6 +492,11 @@
 							<ContextMenu name="ТаблицаИнформационныхБазНазначениеКонтекстноеМеню" id="57"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазНазначениеРасширеннаяПодсказка" id="58"/>
 						</LabelField>
+						<LabelField name="ТаблицаИнформационныхБазОтветственный" id="116">
+							<DataPath>ТаблицаИнформационныхБаз.Ответственный</DataPath>
+							<ContextMenu name="ТаблицаИнформационныхБазОтветственныйКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="ТаблицаИнформационныхБазОтветственныйРасширеннаяПодсказка" id="118"/>
+						</LabelField>
 						<LabelField name="ТаблицаИнформационныхБазКонфигурация" id="59">
 							<DataPath>ТаблицаИнформационныхБаз.Конфигурация</DataPath>
 							<TitleBackColor>style:FormBackColor</TitleBackColor>
@@ -499,14 +504,6 @@
 							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="ТаблицаИнформационныхБазКонфигурацияКонтекстноеМеню" id="60"/>
 							<ExtendedTooltip name="ТаблицаИнформационныхБазКонфигурацияРасширеннаяПодсказка" id="61"/>
-						</LabelField>
-						<LabelField name="ТаблицаИнформационныхБазПроект" id="62">
-							<DataPath>ТаблицаИнформационныхБаз.Проект</DataPath>
-							<TitleBackColor>style:FormBackColor</TitleBackColor>
-							<ShowInFooter>false</ShowInFooter>
-							<BorderColor>style:FormBackColor</BorderColor>
-							<ContextMenu name="ТаблицаИнформационныхБазПроектКонтекстноеМеню" id="63"/>
-							<ExtendedTooltip name="ТаблицаИнформационныхБазПроектРасширеннаяПодсказка" id="64"/>
 						</LabelField>
 						<PictureField name="ТаблицаИнформационныхБазПолеНастройка" id="65">
 							<DataPath>ТаблицаИнформационныхБаз.ПолеГиперссылки</DataPath>
