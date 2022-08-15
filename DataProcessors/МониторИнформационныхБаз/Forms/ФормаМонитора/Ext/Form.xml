@@ -198,16 +198,31 @@
 													</ToolTip>
 													<ExtendedTooltip name="ДеревоЭлементовКластераГруппаВертикальнаяРасширеннаяПодсказка" id="72"/>
 													<ChildItems>
-														<InputField name="ДеревоКластеровЭлементКластера" id="14">
-															<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
-															<HorizontalAlign>Left</HorizontalAlign>
-															<MaxHeight>2</MaxHeight>
-															<BorderColor>style:FieldBackColor</BorderColor>
-															<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
-															<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
-															<ContextMenu name="ДеревоКластеровЭлементКластераКонтекстноеМеню" id="15"/>
-															<ExtendedTooltip name="ДеревоКластеровЭлементКластераРасширеннаяПодсказка" id="16"/>
-														</InputField>
+														<ColumnGroup name="ТаблицаЭлементовКластераГруппа1" id="122">
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ТаблицаЭлементовКластераГруппа1РасширеннаяПодсказка" id="123"/>
+															<ChildItems>
+																<InputField name="ДеревоКластеровЭлементКластера" id="14">
+																	<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
+																	<HorizontalAlign>Left</HorizontalAlign>
+																	<MaxHeight>2</MaxHeight>
+																	<BorderColor>style:FieldBackColor</BorderColor>
+																	<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+																	<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
+																	<ContextMenu name="ДеревоКластеровЭлементКластераКонтекстноеМеню" id="15"/>
+																	<ExtendedTooltip name="ДеревоКластеровЭлементКластераРасширеннаяПодсказка" id="16"/>
+																</InputField>
+																<PictureField name="ТаблицаЭлементовКластераОжидание" id="119">
+																	<DataPath>ТаблицаЭлементовКластера.ИндексСостояния</DataPath>
+																	<ValuesPicture>
+																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</ValuesPicture>
+																	<ContextMenu name="ТаблицаЭлементовКластераОжиданиеКонтекстноеМеню" id="120"/>
+																	<ExtendedTooltip name="ТаблицаЭлементовКластераОжиданиеРасширеннаяПодсказка" id="121"/>
+																</PictureField>
+															</ChildItems>
+														</ColumnGroup>
 														<LabelField name="ДеревоЭлементовКластераПолеОписания" id="68">
 															<DataPath>ТаблицаЭлементовКластера.КраткоеОписание</DataPath>
 															<EditMode>EnterOnInput</EditMode>
@@ -477,7 +492,7 @@
 					</Events>
 					<ChildItems>
 						<LabelField name="ТаблицаИнформационныхБазСсылка" id="53">
-							<DataPath>ТаблицаИнформационныхБаз.Ref</DataPath>
+							<DataPath>ТаблицаИнформационныхБаз.Ссылка</DataPath>
 							<TitleBackColor>style:FormBackColor</TitleBackColor>
 							<EditMode>Directly</EditMode>
 							<BorderColor>style:FormBackColor</BorderColor>
@@ -552,7 +567,8 @@
 	Кластеры1С.Защищен КАК Защищен,
 	Кластеры1С.Активен КАК Активен,
 	Кластеры1С.ИдентификаторКластера КАК ИдентификаторКластера,
-	0 КАК ИндексСостояния
+	0 КАК ИндексСостояния,
+	Кластеры1С.ИдентификаторЗадания КАК ИдентификаторЗадания
 ИЗ
 	Справочник.Кластеры1С КАК Кластеры1С
 ГДЕ
@@ -568,6 +584,30 @@
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
 					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ИндексСостояния</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">ИдентификаторЗадания</dcsset:left>
+									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>Видимость</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+								</dcscor:item>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:use>false</dcscor:use>
+									<dcscor:parameter>Доступность</dcscor:parameter>
+									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
@@ -599,35 +639,33 @@
 			</Type>
 			<UseAlways>
 				<Field>~ТаблицаИнформационныхБаз.Сервер1С</Field>
-				<Field>ТаблицаИнформационныхБаз.Description</Field>
-				<Field>ТаблицаИнформационныхБаз.Owner</Field>
+				<Field>ТаблицаИнформационныхБаз.Владелец</Field>
+				<Field>ТаблицаИнформационныхБаз.Наименование</Field>
+				<Field>ТаблицаИнформационныхБаз.Статус</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	СправочникИнформационныеБазы.Ссылка,
-	СправочникИнформационныеБазы.ПометкаУдаления,
-	СправочникИнформационныеБазы.Владелец,
-	СправочникИнформационныеБазы.Наименование,
-	СправочникИнформационныеБазы.Назначение,
-	СправочникИнформационныеБазы.СерверБД,
-	СправочникИнформационныеБазы.ИмяНаСервереБД,
-	СправочникИнформационныеБазы.ИмяВКластере1С,
-	СправочникИнформационныеБазы.Ответственный,
-	СправочникИнформационныеБазы.ИдентификаторБазы,
-	СправочникИнформационныеБазы.ИмяАдминистратораИБ,
-	СправочникИнформационныеБазы.ПарольАдминистратораИБ,
-	СправочникИнформационныеБазы.ОписаниеВКластере,
-	СправочникИнформационныеБазы.Описание,
-	СправочникИнформационныеБазы.Проект,
-	СправочникИнформационныеБазы.Конфигурация,
-	СправочникИнформационныеБазы.ХранилищеКонфигурации,
-	СправочникИнформационныеБазы.Доступ,
-	СправочникИнформационныеБазы.Предопределенный,
-	СправочникИнформационныеБазы.ИмяПредопределенныхДанных,
-	
-		0 КАК ПолеГиперссылки
+	СправочникИнформационныеБазы.Ссылка КАК Ссылка,
+	СправочникИнформационныеБазы.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникИнформационныеБазы.Владелец КАК Владелец,
+	СправочникИнформационныеБазы.Наименование КАК Наименование,
+	СправочникИнформационныеБазы.Назначение КАК Назначение,
+	СправочникИнформационныеБазы.СерверБД КАК СерверБД,
+	СправочникИнформационныеБазы.БазаДанных КАК БазаДанных,
+	СправочникИнформационныеБазы.ИмяИБ КАК ИмяИБ,
+	СправочникИнформационныеБазы.Ответственный КАК Ответственный,
+	СправочникИнформационныеБазы.ИдентификаторБазы КАК ИдентификаторБазы,
+	СправочникИнформационныеБазы.ИмяАдминистратораИБ КАК ИмяАдминистратораИБ,
+	СправочникИнформационныеБазы.ПарольАдминистратораИБ КАК ПарольАдминистратораИБ,
+	СправочникИнформационныеБазы.ОписаниеВКластере КАК ОписаниеВКластере,
+	СправочникИнформационныеБазы.Описание КАК Описание,
+	СправочникИнформационныеБазы.Проект КАК Проект,
+	СправочникИнформационныеБазы.Конфигурация КАК Конфигурация,
+	СправочникИнформационныеБазы.ХранилищеКонфигурации КАК ХранилищеКонфигурации,
+	СправочникИнформационныеБазы.Статус КАК Статус,	
+	0 КАК ПолеГиперссылки
 ИЗ
 	Справочник.ИнформационныеБазы КАК СправочникИнформационныеБазы</QueryText>
 				<MainTable>Catalog.ИнформационныеБазы</MainTable>

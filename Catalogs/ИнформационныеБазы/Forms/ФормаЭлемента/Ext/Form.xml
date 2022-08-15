@@ -11,6 +11,9 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаЗаголовок" id="41">
 			<Title>
@@ -107,7 +110,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
-							<Representation>NormalSeparation</Representation>
+							<Representation>None</Representation>
 							<ExtendedTooltip name="ГруппаСУБДРасширеннаяПодсказка" id="62"/>
 							<ChildItems>
 								<InputField name="СерверБД" id="13">
@@ -122,8 +125,8 @@
 									<ContextMenu name="СерверБДКонтекстноеМеню" id="14"/>
 									<ExtendedTooltip name="СерверБДРасширеннаяПодсказка" id="15"/>
 								</InputField>
-								<InputField name="ИмяНаСервереБД" id="19">
-									<DataPath>Объект.ИмяНаСервереБД</DataPath>
+								<InputField name="БазаДанных" id="19">
+									<DataPath>Объект.БазаДанных</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -131,8 +134,8 @@
 										</v8:item>
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ИмяНаСервереБДКонтекстноеМеню" id="20"/>
-									<ExtendedTooltip name="ИмяНаСервереБДРасширеннаяПодсказка" id="21"/>
+									<ContextMenu name="БазаДанныхКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="БазаДанныхРасширеннаяПодсказка" id="21"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -151,10 +154,10 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
-							<Representation>NormalSeparation</Representation>
+							<Representation>None</Representation>
 							<ExtendedTooltip name="ГруппаСервер1СРасширеннаяПодсказка" id="64"/>
 							<ChildItems>
-								<InputField name="Сервер1С" id="16">
+								<InputField name="Владелец" id="16">
 									<DataPath>Объект.Owner</DataPath>
 									<Title>
 										<v8:item>
@@ -163,19 +166,71 @@
 										</v8:item>
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="Сервер1СКонтекстноеМеню" id="17"/>
-									<ExtendedTooltip name="Сервер1СРасширеннаяПодсказка" id="18"/>
+									<ContextMenu name="ВладелецКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="18"/>
 								</InputField>
-								<InputField name="ИмяНаСервере1С" id="91">
-									<DataPath>Объект.ИмяВКластере1С</DataPath>
+								<InputField name="ИмяИБ" id="91">
+									<DataPath>Объект.ИмяИБ</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Имя базы</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="ИмяНаСервере1СКонтекстноеМеню" id="92"/>
-									<ExtendedTooltip name="ИмяНаСервере1СРасширеннаяПодсказка" id="93"/>
+									<ContextMenu name="ИмяИБКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ИмяИБРасширеннаяПодсказка" id="93"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАдминистратор" id="100">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Администратор</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа администратор</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаАдминистраторРасширеннаяПодсказка" id="101">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Если не заполнено, будут использованы  параметры авторизации по умолчанию</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<ChildItems>
+								<InputField name="ИмяАдминистратораИБ" id="102">
+									<DataPath>Объект.ИмяАдминистратораИБ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИмяАдминистратораИБКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="ИмяАдминистратораИБРасширеннаяПодсказка" id="104"/>
+								</InputField>
+								<InputField name="ПарольАдминистратораИБ" id="105">
+									<DataPath>Объект.ПарольАдминистратораИБ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+									</Title>
+									<PasswordMode>true</PasswordMode>
+									<ContextMenu name="ПарольАдминистратораИБКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ПарольАдминистратораИБРасширеннаяПодсказка" id="107"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -218,13 +273,7 @@
 							<ContextMenu name="ПроектКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="37"/>
 						</InputField>
-						<UsualGroup name="ГруппаХранилище" id="86">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Хранилище конфигурации</v8:content>
-								</v8:item>
-							</Title>
+						<UsualGroup name="ГруппаИнструменты" id="86">
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -232,21 +281,25 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>NormalSeparation</Representation>
+							<Representation>None</Representation>
 							<ThroughAlign>Use</ThroughAlign>
-							<ExtendedTooltip name="ГруппаХранилищеРасширеннаяПодсказка" id="87"/>
+							<ExtendedTooltip name="ГруппаИнструментыРасширеннаяПодсказка" id="87"/>
 							<ChildItems>
 								<InputField name="ХранилищеКонфигурации" id="88">
 									<DataPath>Объект.ХранилищеКонфигурации</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Путь</v8:content>
+											<v8:content>Хранилище</v8:content>
 										</v8:item>
 									</Title>
 									<ContextMenu name="ХранилищеКонфигурацииКонтекстноеМеню" id="89"/>
 									<ExtendedTooltip name="ХранилищеКонфигурацииРасширеннаяПодсказка" id="90"/>
+								</InputField>
+								<InputField name="ВебСервер" id="97">
+									<DataPath>Объект.ВебСервер</DataPath>
+									<ContextMenu name="ВебСерверКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="99"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>

@@ -206,13 +206,6 @@
 								</Title>
 							</ExtendedTooltip>
 						</InputField>
-						<Button name="ВыбратьКластерИДалее" id="57">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ВыбратьКластер</CommandName>
-							<BackColor>style:ImportantColor</BackColor>
-							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-							<ExtendedTooltip name="ВыбратьКластерИДалееРасширеннаяПодсказка" id="58"/>
-						</Button>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -460,16 +453,12 @@
 					<HorizontalLocation>Right</HorizontalLocation>
 					<ExtendedTooltip name="ПанельКластераРасширеннаяПодсказка" id="100"/>
 					<ChildItems>
-						<Button name="Записать" id="101">
+						<Button name="ЗарегестрироватьБазы" id="134">
 							<Type>CommandBarButton</Type>
-							<DefaultButton>true</DefaultButton>
-							<CommandName>Form.StandardCommand.Write</CommandName>
-							<ExtendedTooltip name="ЗаписатьРасширеннаяПодсказка" id="102"/>
-						</Button>
-						<Button name="Закрыть" id="103">
-							<Type>CommandBarButton</Type>
-							<CommandName>Form.StandardCommand.Close</CommandName>
-							<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="104"/>
+							<CommandName>Form.Command.ЗарегистрироватьБазы</CommandName>
+							<BackColor>style:ImportantColor</BackColor>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+							<ExtendedTooltip name="ЗарегестрироватьБазыРасширеннаяПодсказка" id="135"/>
 						</Button>
 					</ChildItems>
 				</CommandBar>
@@ -709,6 +698,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПодключитьсяККластеру</Action>
+		</Command>
+		<Command name="ЗарегистрироватьБазы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать базы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарегистрировать базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗарегистрироватьБазы</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
