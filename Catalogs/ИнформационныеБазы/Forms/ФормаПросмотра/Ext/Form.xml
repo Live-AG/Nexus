@@ -92,7 +92,7 @@
 							<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="6"/>
 						</LabelField>
 						<LabelField name="ИмяНаСервере1С" id="16">
-							<DataPath>Объект.ИмяНаСервере1С</DataPath>
+							<DataPath>Объект.ИмяВКластере1С</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<TextColor>style:ГиперссылкаЦвет</TextColor>
 							<ContextMenu name="ИмяНаСервере1СКонтекстноеМеню" id="17"/>

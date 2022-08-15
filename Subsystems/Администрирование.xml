@@ -72,6 +72,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПутьККаталогуВыгрузкиБаз</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОткрытьФормуОбщихПараметровАутетнитификации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Скрипты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СДРНавигаторУпр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СДРОбъектУпр</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СДРКонсольЗапросовХ</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -167,7 +167,7 @@
 									<ExtendedTooltip name="Сервер1СРасширеннаяПодсказка" id="18"/>
 								</InputField>
 								<InputField name="ИмяНаСервере1С" id="91">
-									<DataPath>Объект.ИмяНаСервере1С</DataPath>
+									<DataPath>Объект.ИмяВКластере1С</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>

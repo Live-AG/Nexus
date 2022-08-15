@@ -523,6 +523,7 @@
 				<xr:Ref>CommonPicture.Конфигуратор</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>КомандаЗапуститьКонфигуратор</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="КомандаСохранитьСсылкуВФайл" id="3">
@@ -561,6 +562,7 @@
 				<xr:Ref>CommonPicture.Предприятие</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>КомандаЗапуститьПредприятиеТонкий</Action>
 			<Representation>TextPicture</Representation>
 		</Command>
 		<Command name="ДополнительныеНастройки" id="5">
