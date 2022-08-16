@@ -10,3 +10,6 @@ cd "C:\Program Files\1cv8\8.3.20.1613\bin"
 ibcmd infobase create --data="%tempdir%\fs-data" --db-path="%tempdir%\file-db\db-data" --load="%temletepath%"
 ibcmd infobase config import --data="%tempdir%\fs-data" --db-path="%tempdir%\file-db\db-data" %repository%
 ibcmd infobase config save --data="%tempdir%\fs-data" --db-path="%tempdir%\file-db\db-data" %tempdir%\1Cv8.cf
+
+
+"C:\Program Files\1cv8\8.3.20.1613\bin\1cv8.exe" DESIGNER /DumpConfigToFiles "G:\_Git\Nexus" -update

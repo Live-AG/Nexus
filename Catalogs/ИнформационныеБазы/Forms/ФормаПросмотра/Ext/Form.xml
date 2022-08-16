@@ -186,8 +186,19 @@
 									<ContextMenu name="ПроектКонтекстноеМеню" id="38"/>
 									<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="39"/>
 								</LabelField>
+								<CheckBoxField name="БлокировкаРегламентныхЗаданий" id="183">
+									<DataPath>БлокировкаРегламентныхЗаданий</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="БлокировкаРегламентныхЗаданийКонтекстноеМеню" id="184"/>
+									<ExtendedTooltip name="БлокировкаРегламентныхЗаданийРасширеннаяПодсказка" id="185"/>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="СистемаВзаимодействия" id="186">
+							<DataPath>СистемаВзаимодействия</DataPath>
+							<ContextMenu name="СистемаВзаимодействияКонтекстноеМеню" id="187"/>
+							<ExtendedTooltip name="СистемаВзаимодействияРасширеннаяПодсказка" id="188"/>
+						</InputField>
 						<UsualGroup name="ГруппаИнструменты" id="144">
 							<Title>
 								<v8:item>
@@ -222,11 +233,11 @@
 									<ContextMenu name="ВебСерверКонтекстноеМеню" id="149"/>
 									<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="150"/>
 								</LabelField>
-								<LabelField name="СостояниеЖурналаРегистрации" id="159">
-									<DataPath>СостояниеЖурналаРегистрации</DataPath>
+								<LabelField name="ЖурналРегистрации" id="159">
+									<DataPath>ЖурналРегистрации</DataPath>
 									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="СостояниеЖурналаРегистрацииКонтекстноеМеню" id="160"/>
-									<ExtendedTooltip name="СостояниеЖурналаРегистрацииРасширеннаяПодсказка" id="161"/>
+									<ContextMenu name="ЖурналРегистрацииКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ЖурналРегистрацииРасширеннаяПодсказка" id="161"/>
 								</LabelField>
 							</ChildItems>
 						</UsualGroup>
@@ -774,7 +785,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="СостояниеЖурналаРегистрации" id="9">
+		<Attribute name="ЖурналРегистрации" id="9">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -793,7 +804,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Блокировка регламентных заданий</v8:content>
+					<v8:content>Регламентные заданий</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -805,6 +816,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Текущая страница параметров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СистемаВзаимодействия" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Система взаимодействия</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
