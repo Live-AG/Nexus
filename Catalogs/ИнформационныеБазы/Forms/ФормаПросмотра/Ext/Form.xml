@@ -1,11 +1,76 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
-	<Group>AlwaysHorizontal</Group>
+	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>None</CommandBarLocation>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="170">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="171"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияБаза" id="172">
+					<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация база</v8:content>
+						</v8:item>
+					</Title>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<PictureSize>AutoSize</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияБазаКонтекстноеМеню" id="173"/>
+					<ExtendedTooltip name="ДекорацияБазаРасширеннаяПодсказка" id="174"/>
+				</PictureDecoration>
+				<LabelField name="Наименование" id="175">
+					<DataPath>Объект.Description</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="176"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="177"/>
+				</LabelField>
+				<LabelDecoration name="ДекорацияОтступ" id="180">
+					<Enabled>false</Enabled>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="181"/>
+					<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="182"/>
+				</LabelDecoration>
+				<Button name="КомандаРедактировать" id="178">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Height>1</Height>
+					<CommandName>Form.Command.КомандаРедактировать</CommandName>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<PictureLocation>Right</PictureLocation>
+					<ExtendedTooltip name="КомандаРедактироватьРасширеннаяПодсказка" id="179"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 		<Pages name="ГруппаПросмотра" id="65">
 			<Title>
 				<v8:item>
@@ -19,7 +84,8 @@
 					<v8:content>Группа просмотра</v8:content>
 				</v8:item>
 			</ToolTip>
-			<PagesRepresentation>TabsOnBottom</PagesRepresentation>
+			<HorizontalStretch>true</HorizontalStretch>
+			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="ГруппаПросмотраРасширеннаяПодсказка" id="66"/>
 			<ChildItems>
 				<Page name="ГруппаИнформация" id="67">
@@ -35,6 +101,7 @@
 							<v8:content>Группа информация</v8:content>
 						</v8:item>
 					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
 					<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="68"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаСостояние" id="112">
@@ -134,6 +201,7 @@
 									<v8:content>Группа инструменты</v8:content>
 								</v8:item>
 							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
@@ -175,6 +243,7 @@
 									<v8:content>Группа кластер</v8:content>
 								</v8:item>
 							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<ControlRepresentation>Picture</ControlRepresentation>
@@ -232,6 +301,7 @@
 									<v8:content>Группа СУБД</v8:content>
 								</v8:item>
 							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
@@ -263,7 +333,7 @@
 						</UsualGroup>
 					</ChildItems>
 				</Page>
-				<Page name="ГруппаСеансы" id="69">
+				<Page name="ГруппаСеансыСоединения" id="69">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -273,10 +343,10 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа сеансы</v8:content>
+							<v8:content>Группа сеансы соединения</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="ГруппаСеансыРасширеннаяПодсказка" id="70"/>
+					<ExtendedTooltip name="ГруппаСеансыСоединенияРасширеннаяПодсказка" id="70"/>
 					<ChildItems>
 						<Pages name="СтраницыСеансыСоединения" id="153">
 							<Title>
@@ -425,21 +495,6 @@
 						</Pages>
 					</ChildItems>
 				</Page>
-				<Page name="ГруппаСоединения" id="71">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Соединения</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа соединения</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ExtendedTooltip name="ГруппаСоединенияРасширеннаяПодсказка" id="72"/>
-				</Page>
 				<Page name="ГруппаПользователи" id="73">
 					<Title>
 						<v8:item>
@@ -528,6 +583,7 @@
 							<DataPath>ИсторияОпераций</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<SelectionShowMode>DontShow</SelectionShowMode>
+							<PointerType>Regular</PointerType>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="ИсторияОперацийКонтекстноеМеню" id="78"/>
 							<ExtendedTooltip name="ИсторияОперацийРасширеннаяПодсказка" id="79"/>
@@ -536,6 +592,72 @@
 				</Page>
 			</ChildItems>
 		</Pages>
+		<RadioButtonField name="ТекущаяСтраницаПараметров" id="167">
+			<DataPath>ТекущаяСтраницаПараметров</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<RadioButtonType>Tumbler</RadioButtonType>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Информация</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ГруппаИнформация</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сеансы / Соединения</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ГруппаСеансыСоединения</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Пользователи</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ГруппаПользователи</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>История</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ГруппаИстория</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<BorderColor>style:FormBackColor</BorderColor>
+			<ContextMenu name="ТекущаяСтраницаПараметровКонтекстноеМеню" id="168"/>
+			<ExtendedTooltip name="ТекущаяСтраницаПараметровРасширеннаяПодсказка" id="169"/>
+			<Events>
+				<Event name="OnChange">ТекущаяСтраницаПараметровПриИзменении</Event>
+			</Events>
+		</RadioButtonField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -678,5 +800,40 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ТекущаяСтраницаПараметров" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая страница параметров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="КомандаРедактировать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда редактировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда редактировать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Setting</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+		</Command>
+	</Commands>
 </Form>

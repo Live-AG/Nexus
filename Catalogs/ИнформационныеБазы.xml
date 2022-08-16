@@ -1080,9 +1080,9 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>ФормаПросмотра</Form>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
-			<Form>ФормаПросмотра</Form>
 			<Form>ФормаЗапускаПриложения</Form>
 			<Form>ФормаДополнительныхПараметровЗапуска</Form>
 			<Command uuid="41e9cf92-7865-4b9f-9d33-42df3adc8a22">
