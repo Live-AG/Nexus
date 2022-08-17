@@ -66,7 +66,7 @@
 					<ExtendedTooltip name="ГруппаНастроекПодключенияРасширеннаяПодсказка" id="27"/>
 					<ChildItems>
 						<InputField name="АдресСервераАдминистрирования" id="11">
-							<DataPath>АдресСервераАдминистрирования</DataPath>
+							<DataPath>Объект.АдресСервераАдминистрирования</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -79,7 +79,7 @@
 							<ExtendedTooltip name="АдресСервераАдминистрированияРасширеннаяПодсказка" id="13"/>
 						</InputField>
 						<InputField name="ПортСервераАдминистрирования" id="14">
-							<DataPath>ПортСервераАдминистрирования</DataPath>
+							<DataPath>Объект.ПортСервераАдминистрирования</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -111,14 +111,26 @@
 					<ExtendedTooltip name="ГруппаАвторизацииРасширеннаяПодсказка" id="2"/>
 					<ChildItems>
 						<InputField name="ПользовательЦентральногоСервера" id="6">
-							<DataPath>ПользовательСервераАдминистрирования</DataPath>
+							<DataPath>Объект.ПользовательСервераАдминистрирования</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Title>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<HorizontalStretch>true</HorizontalStretch>
 							<ContextMenu name="ПользовательЦентральногоСервераКонтекстноеМеню" id="7"/>
 							<ExtendedTooltip name="ПользовательЦентральногоСервераРасширеннаяПодсказка" id="8"/>
 						</InputField>
 						<InputField name="ПарольЦентральногоСервера" id="3">
-							<DataPath>ПарольСервераАдминистрирования</DataPath>
+							<DataPath>Объект.ПользовательСервераАдминистрирования</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<HorizontalStretch>true</HorizontalStretch>
 							<PasswordMode>true</PasswordMode>
@@ -353,16 +365,16 @@
 					<ContextMenu name="ОписаниеКонтекстноеМеню" id="88"/>
 					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="89"/>
 				</InputField>
+				<Button name="ПодключитьсяККластеру" id="132">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.ПодключитьсяККластеру</CommandName>
+					<BackColor>style:ImportantColor</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ПодключитьсяККластеруРасширеннаяПодсказка" id="133"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<Button name="ПодключитьсяККластеру" id="132">
-			<Type>UsualButton</Type>
-			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-			<CommandName>Form.Command.ПодключитьсяККластеру</CommandName>
-			<BackColor>style:ImportantColor</BackColor>
-			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-			<ExtendedTooltip name="ПодключитьсяККластеруРасширеннаяПодсказка" id="133"/>
-		</Button>
 		<UsualGroup name="РазделИнформационныеБазы" id="108">
 			<Title>
 				<v8:item>

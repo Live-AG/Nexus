@@ -62,6 +62,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="9ac26aea-0b64-4ef2-9530-3d6411e344a1">
+				<Properties>
+					<Name>Подключена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="5665ae80-9c9c-455a-8f52-7de292fe00d4">
 				<Properties>
 					<Name>Заблокирована</Name>

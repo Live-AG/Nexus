@@ -59,11 +59,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКонфигурацияРасширеннаяПодсказка" id="48"/>
 		</UsualGroup>
-		<InputField name="ИдентификаторБазы" id="94">
-			<DataPath>Объект.ИдентификаторБазы</DataPath>
-			<ContextMenu name="ИдентификаторБазыКонтекстноеМеню" id="95"/>
-			<ExtendedTooltip name="ИдентификаторБазыРасширеннаяПодсказка" id="96"/>
-		</InputField>
 		<Pages name="ГруппаОсновныеСтраницы" id="55">
 			<Title>
 				<v8:item>
@@ -393,6 +388,12 @@
 				</Page>
 			</ChildItems>
 		</Pages>
+		<InputField name="ИдентификаторБазы" id="94">
+			<DataPath>Объект.ИдентификаторБазы</DataPath>
+			<TextColor>style:ГиперссылкаЦвет</TextColor>
+			<ContextMenu name="ИдентификаторБазыКонтекстноеМеню" id="95"/>
+			<ExtendedTooltip name="ИдентификаторБазыРасширеннаяПодсказка" id="96"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

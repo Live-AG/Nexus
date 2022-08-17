@@ -25,6 +25,7 @@
 			</ToolTip>
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="171"/>
@@ -594,7 +595,6 @@
 							<DataPath>ИсторияОпераций</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<SelectionShowMode>DontShow</SelectionShowMode>
-							<PointerType>Regular</PointerType>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="ИсторияОперацийКонтекстноеМеню" id="78"/>
 							<ExtendedTooltip name="ИсторияОперацийРасширеннаяПодсказка" id="79"/>
