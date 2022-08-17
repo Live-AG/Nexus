@@ -22,50 +22,7 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаСерверАдминистрирования" id="25">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сервер администрирования</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа сервер администрирования</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<Behavior>Usual</Behavior>
-			<Representation>None</Representation>
-			<ExtendedTooltip name="ГруппаСерверАдминистрированияРасширеннаяПодсказка" id="26"/>
-			<ChildItems>
-				<InputField name="ПользовательСервераАдминистрирования" id="19">
-					<DataPath>ПользовательСервераАдминистрирования</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователь</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="ПользовательСервераАдминистрированияКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="ПользовательСервераАдминистрированияРасширеннаяПодсказка" id="21"/>
-				</InputField>
-				<InputField name="ПарольСервераАдминистрирования" id="7">
-					<DataPath>ПарольСервераАдминистрирования</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пароль</v8:content>
-						</v8:item>
-					</Title>
-					<PasswordMode>true</PasswordMode>
-					<ContextMenu name="ПарольСервераАдминистрированияКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="ПарольСервераАдминистрированияРасширеннаяПодсказка" id="9"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаЦентральныйСерверКластера" id="27">
+		<UsualGroup name="ГруппаАдминистраторЦентральногоСервера" id="27">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -75,13 +32,13 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа центральный сервер кластера</v8:content>
+					<v8:content>Группа администратор центрального сервера</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
-			<ExtendedTooltip name="ГруппаЦентральныйСерверКластераРасширеннаяПодсказка" id="28"/>
+			<ExtendedTooltip name="ГруппаАдминистраторЦентральногоСервераРасширеннаяПодсказка" id="28"/>
 			<ChildItems>
 				<InputField name="ПользовательЦентральногоСервер" id="22">
 					<DataPath>ПользовательЦентральногоСервер</DataPath>
@@ -105,6 +62,49 @@
 					<PasswordMode>true</PasswordMode>
 					<ContextMenu name="ПарольЦентральногоСервераКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ПарольЦентральногоСервераРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАдминистраторКластера" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администратор кластера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа администратор кластера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаАдминистраторКластераРасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<InputField name="ПользовательСервераАдминистрирования" id="19">
+					<DataPath>ИмяАдминистратораКластера</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПользовательСервераАдминистрированияКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПользовательСервераАдминистрированияРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ПарольСервераАдминистрирования" id="7">
+					<DataPath>ПарольАдминистратораКластера</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="ПарольСервераАдминистрированияКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПарольСервераАдминистрированияРасширеннаяПодсказка" id="9"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -226,11 +226,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПользовательСервераАдминистрирования" id="3">
+		<Attribute name="ИмяАдминистратораКластера" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пользователь сервера администрирования</v8:content>
+					<v8:content>Имя администратора кластера</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -241,11 +241,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПарольСервераАдминистрирования" id="4">
+		<Attribute name="ПарольАдминистратораКластера" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Пароль сервера администрирования</v8:content>
+					<v8:content>Пароль администратора кластера</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

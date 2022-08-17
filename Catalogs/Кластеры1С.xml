@@ -182,11 +182,11 @@
 			</Attribute>
 			<Attribute uuid="7628fa20-0893-4459-9df3-96433ca7c0a7">
 				<Properties>
-					<Name>ПользовательСервераАдминистрирования</Name>
+					<Name>ПользовательЦентральногоСервер</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователь сервера администрирования</v8:content>
+							<v8:content>Пользователь центрального сервер</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -226,11 +226,11 @@
 			</Attribute>
 			<Attribute uuid="ee45a7d5-dcd4-4c0b-ae87-5808dcb915d8">
 				<Properties>
-					<Name>ПарольСервераАдминистрирования</Name>
+					<Name>ПарольЦентральногоСервера</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пароль сервера администрирования</v8:content>
+							<v8:content>Пароль центрального сервера</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

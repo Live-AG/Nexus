@@ -18,4 +18,7 @@
 	<Item name="StyleItem.ГиперссылкаЦвет">
 		<Color>#549AAE</Color>
 	</Item>
+	<Item name="StyleItem.ФонУправляющегоПоля">
+		<Color>style:ЦветТекстаНевыбраннойКартинки</Color>
+	</Item>
 </Style>
