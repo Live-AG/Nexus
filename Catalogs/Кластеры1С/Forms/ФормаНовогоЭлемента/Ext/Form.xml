@@ -36,7 +36,7 @@
 					<v8:content>Страницы шагов</v8:content>
 				</v8:item>
 			</ToolTip>
-			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыШаговРасширеннаяПодсказка" id="153"/>
 			<ChildItems>
 				<Page name="СтраницаПодключенияАгента" id="30">
@@ -331,7 +331,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа наименование</v8:content>
+									<v8:content>Кластер</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
@@ -343,7 +343,6 @@
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНаименованиеРасширеннаяПодсказка" id="98"/>
 							<ChildItems>
 								<InputField name="Наименование" id="63">
@@ -367,6 +366,12 @@
 										</Title>
 									</ExtendedTooltip>
 								</CheckBoxField>
+								<InputField name="Описание" id="191">
+									<DataPath>Объект.Описание</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ОписаниеКонтекстноеМеню" id="192"/>
+									<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="193"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаПодключенияКластера" id="90">
