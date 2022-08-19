@@ -75,7 +75,7 @@
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="Конфигурация" id="31">
-					<DataPath>Список.Конфигурация</DataPath>
+					<DataPath>~Список.Конфигурация</DataPath>
 					<ContextMenu name="КонфигурацияКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="33"/>
 				</LabelField>

@@ -198,19 +198,31 @@
 													</ToolTip>
 													<ExtendedTooltip name="ДеревоЭлементовКластераГруппаВертикальнаяРасширеннаяПодсказка" id="72"/>
 													<ChildItems>
-														<ColumnGroup name="ТаблицаЭлементовКластераГруппа1" id="122">
+														<ColumnGroup name="ТаблицаЭлементовКластераГруппа" id="122">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица элементов кластера группа</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица элементов кластера группа</v8:content>
+																</v8:item>
+															</ToolTip>
 															<Group>Horizontal</Group>
-															<ExtendedTooltip name="ТаблицаЭлементовКластераГруппа1РасширеннаяПодсказка" id="123"/>
+															<ExtendedTooltip name="ТаблицаЭлементовКластераГруппаРасширеннаяПодсказка" id="123"/>
 															<ChildItems>
-																<InputField name="ДеревоКластеровЭлементКластера" id="14">
+																<InputField name="ТаблицаЭлементовКластераЭлементКластера" id="14">
 																	<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
 																	<HorizontalAlign>Left</HorizontalAlign>
 																	<MaxHeight>2</MaxHeight>
 																	<BorderColor>style:FieldBackColor</BorderColor>
 																	<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 																	<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
-																	<ContextMenu name="ДеревоКластеровЭлементКластераКонтекстноеМеню" id="15"/>
-																	<ExtendedTooltip name="ДеревоКластеровЭлементКластераРасширеннаяПодсказка" id="16"/>
+																	<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
+																	<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
 																</InputField>
 																<PictureField name="ТаблицаЭлементовКластераОжидание" id="119">
 																	<DataPath>ТаблицаЭлементовКластера.ИндексСостояния</DataPath>
@@ -223,15 +235,15 @@
 																</PictureField>
 															</ChildItems>
 														</ColumnGroup>
-														<LabelField name="ДеревоЭлементовКластераПолеОписания" id="68">
-															<DataPath>ТаблицаЭлементовКластера.КраткоеОписание</DataPath>
+														<LabelField name="ТаблицаЭлементовКластераПолеОписания" id="68">
+															<DataPath>ТаблицаЭлементовКластера.ИдентификаторЗадания</DataPath>
 															<EditMode>EnterOnInput</EditMode>
 															<ShowInHeader>false</ShowInHeader>
 															<ShowInFooter>false</ShowInFooter>
 															<TextColor>style:NavigationColor</TextColor>
 															<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-															<ContextMenu name="ДеревоЭлементовКластераПолеОписанияКонтекстноеМеню" id="69"/>
-															<ExtendedTooltip name="ДеревоЭлементовКластераПолеОписанияРасширеннаяПодсказка" id="70"/>
+															<ContextMenu name="ТаблицаЭлементовКластераПолеОписанияКонтекстноеМеню" id="69"/>
+															<ExtendedTooltip name="ТаблицаЭлементовКластераПолеОписанияРасширеннаяПодсказка" id="70"/>
 														</LabelField>
 													</ChildItems>
 												</ColumnGroup>
@@ -513,7 +525,7 @@
 							<ExtendedTooltip name="ТаблицаИнформационныхБазОтветственныйРасширеннаяПодсказка" id="118"/>
 						</LabelField>
 						<LabelField name="ТаблицаИнформационныхБазКонфигурация" id="59">
-							<DataPath>ТаблицаИнформационныхБаз.Конфигурация</DataPath>
+							<DataPath>~ТаблицаИнформационныхБаз.Конфигурация</DataPath>
 							<TitleBackColor>style:FormBackColor</TitleBackColor>
 							<ShowInFooter>false</ShowInFooter>
 							<BorderColor>style:FormBackColor</BorderColor>
@@ -557,6 +569,9 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>ТаблицаЭлементовКластера.ИндексСостояния</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
@@ -568,9 +583,11 @@
 	Кластеры1С.Активен КАК Активен,
 	Кластеры1С.ИдентификаторКластера КАК ИдентификаторКластера,
 	0 КАК ИндексСостояния,
-	Кластеры1С.ИдентификаторЗадания КАК ИдентификаторЗадания
+	ЕСТЬNULL(ТекущиеЗаданияОбъектов.ИдентификаторЗадания, НЕОПРЕДЕЛЕНО) КАК ИдентификаторЗадания
 ИЗ
 	Справочник.Кластеры1С КАК Кластеры1С
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТекущиеЗаданияОбъектов КАК ТекущиеЗаданияОбъектов
+		ПО Кластеры1С.Ссылка = ТекущиеЗаданияОбъектов.Объект
 ГДЕ
 	НЕ Кластеры1С.ПометкаУдаления</QueryText>
 				<MainTable>Catalog.Кластеры1С</MainTable>
@@ -662,7 +679,7 @@
 	СправочникИнформационныеБазы.ОписаниеВКластере КАК ОписаниеВКластере,
 	СправочникИнформационныеБазы.Описание КАК Описание,
 	СправочникИнформационныеБазы.Проект КАК Проект,
-	СправочникИнформационныеБазы.Конфигурация КАК Конфигурация,
+	СправочникИнформационныеБазы.ВерсияКонфигурации КАК ВерсияКонфигурации,
 	СправочникИнформационныеБазы.ХранилищеКонфигурации КАК ХранилищеКонфигурации,
 	СправочникИнформационныеБазы.Статус КАК Статус,	
 	0 КАК ПолеГиперссылки

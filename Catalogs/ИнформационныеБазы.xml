@@ -815,16 +815,16 @@
 			</Attribute>
 			<Attribute uuid="4234c6cd-2662-4071-9717-0d23cd24e425">
 				<Properties>
-					<Name>Конфигурация</Name>
+					<Name>ВерсияКонфигурации</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конфигурация</v8:content>
+							<v8:content>Версия конфигурации</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Конфигурации</v8:Type>
+						<v8:Type>cfg:CatalogRef.ВерсииКонфигураций</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

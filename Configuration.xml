@@ -1168,6 +1168,8 @@
 			<CommonForm>ФормаНастройкиКаталогов</CommonForm>
 			<CommonForm>ФормаОбщихПараметровАутетнитификации</CommonForm>
 			<Catalog>ВариантыОтчетов</Catalog>
+			<Catalog>ВебСерверы</Catalog>
+			<Catalog>ВерсииКонфигураций</Catalog>
 			<Catalog>ВерсииПлатформы</Catalog>
 			<Catalog>ВерсииРасширений</Catalog>
 			<Catalog>ВерсииФайлов</Catalog>
@@ -1186,6 +1188,7 @@
 			<Catalog>ИдентификаторыОбъектовРасширений</Catalog>
 			<Catalog>ИнформационныеБазы</Catalog>
 			<Catalog>Календари</Catalog>
+			<Catalog>Кластеры1С</Catalog>
 			<Catalog>Конфигурации</Catalog>
 			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
 			<Catalog>ПапкиФайлов</Catalog>
@@ -1199,7 +1202,6 @@
 			<Catalog>Проекты</Catalog>
 			<Catalog>ПроизводственныеКалендари</Catalog>
 			<Catalog>РассылкиОтчетов</Catalog>
-			<Catalog>Кластеры1С</Catalog>
 			<Catalog>СерверыБД</Catalog>
 			<Catalog>Скрипты</Catalog>
 			<Catalog>СообщениеSMSПрисоединенныеФайлы</Catalog>
@@ -1216,7 +1218,6 @@
 			<Catalog>ШаблоныСообщенийПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
-			<Catalog>ВебСерверы</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>
@@ -1365,6 +1366,7 @@
 			<InformationRegister>УдаляемыеОбъекты</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
+			<InformationRegister>ТекущиеЗаданияОбъектов</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>

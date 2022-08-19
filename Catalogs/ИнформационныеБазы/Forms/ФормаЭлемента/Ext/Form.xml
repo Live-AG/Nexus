@@ -247,7 +247,7 @@
 					<ExtendedTooltip name="ГруппаДополнительноРасширеннаяПодсказка" id="58"/>
 					<ChildItems>
 						<InputField name="Конфигурация" id="7">
-							<DataPath>Объект.Конфигурация</DataPath>
+							<DataPath>Объект.ВерсияКонфигурации</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="КонфигурацияКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="9"/>

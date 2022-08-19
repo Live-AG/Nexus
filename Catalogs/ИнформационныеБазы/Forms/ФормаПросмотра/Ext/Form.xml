@@ -133,7 +133,7 @@
 									<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="138"/>
 								</LabelField>
 								<LabelField name="Конфигурация" id="40">
-									<DataPath>Объект.Конфигурация</DataPath>
+									<DataPath>Объект.ВерсияКонфигурации</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<Hiperlink>true</Hiperlink>
 									<TextColor>style:ГиперссылкаЦвет</TextColor>
