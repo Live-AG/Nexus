@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Picture>
+	<PictureVariant name="b.gif" screenDensity="bldpi" glyphWidth="14" glyphHeight="14"/>
+	<PictureVariant name="l.gif" screenDensity="ldpi" glyphWidth="16" glyphHeight="16"/>
+	<PictureVariant name="a.gif" screenDensity="aldpi" glyphWidth="20" glyphHeight="20"/>
+	<PictureVariant name="m.gif" screenDensity="mdpi" glyphWidth="24" glyphHeight="24"/>
+	<PictureVariant name="a1.gif" screenDensity="amdpi" glyphWidth="28" glyphHeight="28"/>
+	<PictureVariant name="h.gif" screenDensity="hdpi" glyphWidth="32" glyphHeight="32"/>
+	<PictureVariant name="x.gif" screenDensity="xdpi" glyphWidth="48" glyphHeight="48"/>
+	<PictureVariant name="u.gif" screenDensity="udpi" glyphWidth="64" glyphHeight="64"/>
+	<PictureVariant name="l1.gif" screenDensity="ldpi" interfaceVariant="version8_2" glyphWidth="16" glyphHeight="16"/>
+</Picture>
