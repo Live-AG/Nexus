@@ -1085,6 +1085,7 @@
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЗапускаПриложения</Form>
 			<Form>ФормаДополнительныхПараметровЗапуска</Form>
+			<Form>ФормаСоединений</Form>
 			<Command uuid="41e9cf92-7865-4b9f-9d33-42df3adc8a22">
 				<Properties>
 					<Name>ЗапуститьПредприятие</Name>
@@ -1148,6 +1149,29 @@
 					</Synonym>
 					<Comment/>
 					<Group>CommandGroup.ВыполнитьДействия</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="1c9c9a8f-2ce0-4626-9334-375dd4adc679">
+				<Properties>
+					<Name>Соединения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соединения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelGoTo</Group>
 					<CommandParameterType>
 						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
 					</CommandParameterType>

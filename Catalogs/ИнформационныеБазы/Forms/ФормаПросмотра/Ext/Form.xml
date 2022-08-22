@@ -862,4 +862,15 @@
 			</Picture>
 		</Command>
 	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>Catalog.ИнформационныеБазы.StandardCommand.OpenByValue</Command>
+				<Type>Added</Type>
+				<Attribute>Объект.Owner</Attribute>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
 </Form>

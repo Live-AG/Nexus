@@ -533,8 +533,15 @@
 							<Header>false</Header>
 							<HorizontalLines>false</HorizontalLines>
 							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
 							<DataPath>СписокБаз</DataPath>
 							<RowPictureDataPath>СписокБаз.Picture</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</RowsPicture>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
 							<SearchStringLocation>None</SearchStringLocation>
@@ -576,14 +583,11 @@
 								<ExtendedTooltip name="СписокБазУправлениеПоискомРасширеннаяПодсказка" id="178"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<InputField name="СписокБазПредставление" id="188">
-									<DataPath>СписокБаз.Presentation</DataPath>
-									<Enabled>false</Enabled>
-									<ReadOnly>true</ReadOnly>
-									<SkipOnInput>true</SkipOnInput>
+								<InputField name="СписокБазЗначение" id="194">
+									<DataPath>СписокБаз.Value</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СписокБазПредставлениеКонтекстноеМеню" id="189"/>
-									<ExtendedTooltip name="СписокБазПредставлениеРасширеннаяПодсказка" id="190"/>
+									<ContextMenu name="СписокБазЗначениеКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="СписокБазЗначениеРасширеннаяПодсказка" id="196"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -658,6 +662,15 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="СтрукутараПараметров" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Струкутара параметров</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -742,6 +755,17 @@
 			<Item>
 				<Command>Catalog.ИнформационныеБазы.StandardCommand.OpenByValue</Command>
 				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.Объект</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>

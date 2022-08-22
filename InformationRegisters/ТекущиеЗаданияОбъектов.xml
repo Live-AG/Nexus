@@ -54,10 +54,30 @@
 			<FullTextSearch>DontUse</FullTextSearch>
 			<EnableTotalsSliceFirst>false</EnableTotalsSliceFirst>
 			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
-			<RecordPresentation/>
-			<ExtendedRecordPresentation/>
-			<ListPresentation/>
-			<ExtendedListPresentation/>
+			<RecordPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее задание объекта</v8:content>
+				</v8:item>
+			</RecordPresentation>
+			<ExtendedRecordPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее задание объекта</v8:content>
+				</v8:item>
+			</ExtendedRecordPresentation>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущие задания объектов</v8:content>
+				</v8:item>
+			</ListPresentation>
+			<ExtendedListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущие задания объекта</v8:content>
+				</v8:item>
+			</ExtendedListPresentation>
 			<Explanation/>
 			<DataHistory>DontUse</DataHistory>
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>

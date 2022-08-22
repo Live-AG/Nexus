@@ -223,39 +223,6 @@
 												</ColumnGroup>
 											</ChildItems>
 										</Table>
-										<UsualGroup name="ГруппаДобавитьКластер" id="124">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа добавить кластер</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа добавить кластер</v8:content>
-												</v8:item>
-											</ToolTip>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>true</VerticalStretch>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<GroupVerticalAlign>Center</GroupVerticalAlign>
-											<HorizontalAlign>Center</HorizontalAlign>
-											<VerticalAlign>Top</VerticalAlign>
-											<Behavior>Usual</Behavior>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаДобавитьКластерРасширеннаяПодсказка" id="125"/>
-											<ChildItems>
-												<Button name="ДобавитьКластер" id="128">
-													<Type>UsualButton</Type>
-													<CommandName>Form.Command.ДобавитьКластер</CommandName>
-													<TextColor>style:BorderColor</TextColor>
-													<ShapeRepresentation>None</ShapeRepresentation>
-													<ExtendedTooltip name="ДобавитьКластерРасширеннаяПодсказка" id="129"/>
-												</Button>
-											</ChildItems>
-										</UsualGroup>
 									</ChildItems>
 								</Page>
 								<Page name="ГруппаПроекты" id="112">
@@ -290,7 +257,7 @@
 											<DataPath>ТаблицаПроектов</DataPath>
 											<RowPictureDataPath>ТаблицаПроектов.ИндексКартинки</RowPictureDataPath>
 											<RowsPicture>
-												<xr:Ref>CommonPicture.Проект</xr:Ref>
+												<xr:Ref>CommonPicture.ПроектЖурнал</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
@@ -435,6 +402,19 @@
 											</v8:item>
 										</Presentation>
 										<Value xsi:type="xs:string">Пользователи</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Избранное</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Избранное</Value>
 									</xr:Value>
 								</xr:Item>
 							</ChoiceList>

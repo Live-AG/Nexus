@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
@@ -90,50 +91,6 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаПодключениеРасширеннаяПодсказка" id="44"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаСУБД" id="61">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>СУБД</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа СУБД</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ExtendedTooltip name="ГруппаСУБДРасширеннаяПодсказка" id="62"/>
-							<ChildItems>
-								<InputField name="СерверБД" id="13">
-									<DataPath>Объект.СерверБД</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Сервер</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СерверБДКонтекстноеМеню" id="14"/>
-									<ExtendedTooltip name="СерверБДРасширеннаяПодсказка" id="15"/>
-								</InputField>
-								<InputField name="БазаДанных" id="19">
-									<DataPath>Объект.БазаДанных</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Имя базы</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="БазаДанныхКонтекстноеМеню" id="20"/>
-									<ExtendedTooltip name="БазаДанныхРасширеннаяПодсказка" id="21"/>
-								</InputField>
-							</ChildItems>
-						</UsualGroup>
 						<UsualGroup name="ГруппаСервер1С" id="63">
 							<Title>
 								<v8:item>
@@ -147,33 +104,67 @@
 									<v8:content>Группа сервер1 С</v8:content>
 								</v8:item>
 							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
+							<BackColor>web:WhiteSmoke</BackColor>
 							<ExtendedTooltip name="ГруппаСервер1СРасширеннаяПодсказка" id="64"/>
 							<ChildItems>
-								<InputField name="Владелец" id="16">
-									<DataPath>Объект.Owner</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Сервер</v8:content>
-										</v8:item>
-									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ВладелецКонтекстноеМеню" id="17"/>
-									<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="18"/>
-								</InputField>
 								<InputField name="ИмяИБ" id="91">
 									<DataPath>Объект.ИмяИБ</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Имя базы</v8:content>
+											<v8:content>Имя</v8:content>
 										</v8:item>
 									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="ИмяИБКонтекстноеМеню" id="92"/>
 									<ExtendedTooltip name="ИмяИБРасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<InputField name="Владелец" id="16">
+									<DataPath>Объект.Owner</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="ВладелецКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="18"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСУБД" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>СУБД</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа СУБД</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<BackColor>web:WhiteSmoke</BackColor>
+							<ExtendedTooltip name="ГруппаСУБДРасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<InputField name="БазаДанных" id="19">
+									<DataPath>Объект.БазаДанных</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="БазаДанныхКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="БазаДанныхРасширеннаяПодсказка" id="21"/>
+								</InputField>
+								<InputField name="СерверБД" id="13">
+									<DataPath>Объект.СерверБД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ContextMenu name="СерверБДКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="СерверБДРасширеннаяПодсказка" id="15"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -191,9 +182,11 @@
 								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
+							<BackColor>web:WhiteSmoke</BackColor>
 							<ExtendedTooltip name="ГруппаАдминистраторРасширеннаяПодсказка" id="101">
 								<AutoMaxWidth>false</AutoMaxWidth>
 								<Title formatted="false">
@@ -212,6 +205,7 @@
 											<v8:content>Имя</v8:content>
 										</v8:item>
 									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<ContextMenu name="ИмяАдминистратораИБКонтекстноеМеню" id="103"/>
 									<ExtendedTooltip name="ИмяАдминистратораИБРасширеннаяПодсказка" id="104"/>
 								</InputField>
@@ -223,6 +217,7 @@
 											<v8:content>Пароль</v8:content>
 										</v8:item>
 									</Title>
+									<AutoMaxWidth>false</AutoMaxWidth>
 									<PasswordMode>true</PasswordMode>
 									<ContextMenu name="ПарольАдминистратораИБКонтекстноеМеню" id="106"/>
 									<ExtendedTooltip name="ПарольАдминистратораИБРасширеннаяПодсказка" id="107"/>
@@ -388,12 +383,6 @@
 				</Page>
 			</ChildItems>
 		</Pages>
-		<InputField name="ИдентификаторБазы" id="94">
-			<DataPath>Объект.ИдентификаторБазы</DataPath>
-			<TextColor>style:ГиперссылкаЦвет</TextColor>
-			<ContextMenu name="ИдентификаторБазыКонтекстноеМеню" id="95"/>
-			<ExtendedTooltip name="ИдентификаторБазыРасширеннаяПодсказка" id="96"/>
-		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -405,6 +394,16 @@
 		</Attribute>
 	</Attributes>
 	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.Объект</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
 		<CommandBar>
 			<Item>
 				<Command>Catalog.ИнформационныеБазы.Command.ЗапуститьПредприятие</Command>
