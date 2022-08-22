@@ -565,6 +565,14 @@
 			<CommonPicture>Конфигуратор</CommonPicture>
 			<CommonPicture>ЯрлыкИнформационнйБазы</CommonPicture>
 			<CommonPicture>Проект</CommonPicture>
+			<CommonPicture>ДлительнаяОперацияНабор</CommonPicture>
+			<CommonPicture>Предприятие_ЧБ</CommonPicture>
+			<CommonPicture>Конфигуратор_ЧБ</CommonPicture>
+			<CommonPicture>Конфигуратор_ЧБ1</CommonPicture>
+			<CommonPicture>ЯрлыкИнформационнйБазы_ЧБ</CommonPicture>
+			<CommonPicture>Сервер1</CommonPicture>
+			<CommonPicture>Проект1</CommonPicture>
+			<CommonPicture>СерверНабор</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>

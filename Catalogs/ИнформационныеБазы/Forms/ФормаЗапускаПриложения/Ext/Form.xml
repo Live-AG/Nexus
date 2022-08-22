@@ -12,6 +12,7 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаАдминистрирования" id="22">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -84,12 +85,6 @@
 					<ContextMenu name="ЗапускОтИмениАдминистратораКонтекстноеМеню" id="6"/>
 					<ExtendedTooltip name="ЗапускОтИмениАдминистратораРасширеннаяПодсказка" id="7"/>
 				</CheckBoxField>
-				<Button name="КомандаЗапуститьПредприятиеТонкий" id="17">
-					<Type>UsualButton</Type>
-					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-					<CommandName>Form.Command.КомандаЗапуститьПредприятиеТонкий</CommandName>
-					<ExtendedTooltip name="КомандаЗапуститьПредприятиеТонкийРасширеннаяПодсказка" id="18"/>
-				</Button>
 				<Button name="КомандаЗапуститьПредприятие" id="1">
 					<Type>UsualButton</Type>
 					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
@@ -97,7 +92,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Толстый клиент</v8:content>
+							<v8:content>Предприятие</v8:content>
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="КомандаЗапуститьПредприятиеРасширеннаяПодсказка" id="2"/>
@@ -130,6 +125,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаНастройки" id="41">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -500,7 +496,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Предприятие</xr:Ref>
+				<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗапуститьПредприятие</Action>
@@ -520,7 +516,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Конфигуратор</xr:Ref>
+				<xr:Ref>CommonPicture.Конфигуратор_ЧБ1</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗапуститьКонфигуратор</Action>
@@ -540,7 +536,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.ЯрлыкИнформационнйБазы</xr:Ref>
+				<xr:Ref>CommonPicture.ЯрлыкИнформационнйБазы_ЧБ</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Representation>TextPicture</Representation>
@@ -559,7 +555,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Предприятие</xr:Ref>
+				<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗапуститьПредприятиеТонкий</Action>

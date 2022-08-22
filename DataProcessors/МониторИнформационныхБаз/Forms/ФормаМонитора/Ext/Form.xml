@@ -122,6 +122,7 @@
 											<ChangeRowOrder>false</ChangeRowOrder>
 											<Width>12</Width>
 											<Height>2</Height>
+											<HeightControlVariant>UseContentHeight</HeightControlVariant>
 											<RowSelectionMode>Row</RowSelectionMode>
 											<Header>false</Header>
 											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
@@ -132,7 +133,7 @@
 											<DataPath>ТаблицаЭлементовКластера</DataPath>
 											<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
 											<RowsPicture>
-												<xr:Ref>CommonPicture.Сервер</xr:Ref>
+												<xr:Ref>CommonPicture.СерверНабор</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
@@ -198,45 +199,18 @@
 													</ToolTip>
 													<ExtendedTooltip name="ДеревоЭлементовКластераГруппаВертикальнаяРасширеннаяПодсказка" id="72"/>
 													<ChildItems>
-														<ColumnGroup name="ТаблицаЭлементовКластераГруппа" id="122">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Таблица элементов кластера группа</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Таблица элементов кластера группа</v8:content>
-																</v8:item>
-															</ToolTip>
-															<Group>Horizontal</Group>
-															<ExtendedTooltip name="ТаблицаЭлементовКластераГруппаРасширеннаяПодсказка" id="123"/>
-															<ChildItems>
-																<InputField name="ТаблицаЭлементовКластераЭлементКластера" id="14">
-																	<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
-																	<HorizontalAlign>Left</HorizontalAlign>
-																	<MaxHeight>2</MaxHeight>
-																	<BorderColor>style:FieldBackColor</BorderColor>
-																	<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
-																	<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
-																	<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
-																	<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
-																</InputField>
-																<PictureField name="ТаблицаЭлементовКластераОжидание" id="119">
-																	<DataPath>ТаблицаЭлементовКластера.ИндексСостояния</DataPath>
-																	<ValuesPicture>
-																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
-																	</ValuesPicture>
-																	<ContextMenu name="ТаблицаЭлементовКластераОжиданиеКонтекстноеМеню" id="120"/>
-																	<ExtendedTooltip name="ТаблицаЭлементовКластераОжиданиеРасширеннаяПодсказка" id="121"/>
-																</PictureField>
-															</ChildItems>
-														</ColumnGroup>
+														<InputField name="ТаблицаЭлементовКластераЭлементКластера" id="14">
+															<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
+															<HorizontalAlign>Left</HorizontalAlign>
+															<MaxHeight>2</MaxHeight>
+															<BorderColor>style:FieldBackColor</BorderColor>
+															<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+															<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
+															<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
+															<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
+														</InputField>
 														<LabelField name="ТаблицаЭлементовКластераПолеОписания" id="68">
-															<DataPath>ТаблицаЭлементовКластера.ИдентификаторЗадания</DataPath>
+															<DataPath>ТаблицаЭлементовКластера.КраткоеОписание</DataPath>
 															<EditMode>EnterOnInput</EditMode>
 															<ShowInHeader>false</ShowInHeader>
 															<ShowInFooter>false</ShowInFooter>
@@ -249,6 +223,39 @@
 												</ColumnGroup>
 											</ChildItems>
 										</Table>
+										<UsualGroup name="ГруппаДобавитьКластер" id="124">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа добавить кластер</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа добавить кластер</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Top</VerticalAlign>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаДобавитьКластерРасширеннаяПодсказка" id="125"/>
+											<ChildItems>
+												<Button name="ДобавитьКластер" id="128">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ДобавитьКластер</CommandName>
+													<TextColor>style:BorderColor</TextColor>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ДобавитьКластерРасширеннаяПодсказка" id="129"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 								<Page name="ГруппаПроекты" id="112">
@@ -570,7 +577,9 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
+				<Field>~ТаблицаЭлементовКластера.ИдентификаторЗадания</Field>
 				<Field>ТаблицаЭлементовКластера.ИндексСостояния</Field>
+				<Field>ТаблицаЭлементовКластера.КраткоеОписание</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -582,12 +591,16 @@
 	Кластеры1С.Защищен КАК Защищен,
 	Кластеры1С.Активен КАК Активен,
 	Кластеры1С.ИдентификаторКластера КАК ИдентификаторКластера,
-	0 КАК ИндексСостояния,
-	ЕСТЬNULL(ТекущиеЗаданияОбъектов.ИдентификаторЗадания, НЕОПРЕДЕЛЕНО) КАК ИдентификаторЗадания
+	
+	ВЫБОР
+		КОГДА ТекущиеЗаданияОбъектов.ИдентификаторЗадания ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ИндексСостояния
 ИЗ
 	Справочник.Кластеры1С КАК Кластеры1С
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТекущиеЗаданияОбъектов КАК ТекущиеЗаданияОбъектов
-		ПО Кластеры1С.Ссылка = ТекущиеЗаданияОбъектов.Объект
+		ПО (Кластеры1С.Ссылка = (ВЫРАЗИТЬ(ТекущиеЗаданияОбъектов.Объект КАК Справочник.Кластеры1С)))
 ГДЕ
 	НЕ Кластеры1С.ПометкаУдаления</QueryText>
 				<MainTable>Catalog.Кластеры1С</MainTable>
@@ -601,30 +614,6 @@
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
 					<dcsset:conditionalAppearance>
-						<dcsset:item>
-							<dcsset:selection>
-								<dcsset:item>
-									<dcsset:field>ИндексСостояния</dcsset:field>
-								</dcsset:item>
-							</dcsset:selection>
-							<dcsset:filter>
-								<dcsset:item xsi:type="dcsset:FilterItemComparison">
-									<dcsset:left xsi:type="dcscor:Field">ИдентификаторЗадания</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
-								</dcsset:item>
-							</dcsset:filter>
-							<dcsset:appearance>
-								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>Видимость</dcscor:parameter>
-									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
-								</dcscor:item>
-								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:use>false</dcscor:use>
-									<dcscor:parameter>Доступность</dcscor:parameter>
-									<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
-								</dcscor:item>
-							</dcsset:appearance>
-						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
@@ -810,6 +799,20 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ДобавитьКластер" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить кластер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить кластер</v8:content>
+				</v8:item>
+			</ToolTip>
 		</Command>
 	</Commands>
 </Form>
