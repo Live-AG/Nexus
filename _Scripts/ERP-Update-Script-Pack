@@ -1,0 +1,14 @@
+--version-filter
+
+
+rem -------------------------------- YARD ------------------------------------
+
+set verfilter=2\.5\.8\.267
+set appfilter="1С:ERP Управление предприятием 2"
+
+yard process --work-dir "C:\_yard" "C:\_yard\UHreleases.json" --app-filter %appfilter% --version-filter %verfilter%
+
+yard process --work-dir "C:\_yard" "C:\_yard\Universal.json" --app-filter "1С:ERP Управление предприятием 2" --version-filter 2\.5\.8\.267
+
+
+yard get

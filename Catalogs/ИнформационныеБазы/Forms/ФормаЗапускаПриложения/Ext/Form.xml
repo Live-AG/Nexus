@@ -11,6 +11,11 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="ДекорацияОтступ1" id="53">
+			<Enabled>false</Enabled>
+			<ContextMenu name="ДекорацияОтступ1КонтекстноеМеню" id="54"/>
+			<ExtendedTooltip name="ДекорацияОтступ1РасширеннаяПодсказка" id="55"/>
+		</LabelDecoration>
 		<UsualGroup name="ГруппаАдминистрирования" id="22">
 			<Visible>false</Visible>
 			<Title>
@@ -73,18 +78,11 @@
 			</ToolTip>
 			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 			<Group>Vertical</Group>
+			<VerticalSpacing>OneAndHalf</VerticalSpacing>
 			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="9"/>
 			<ChildItems>
-				<CheckBoxField name="ЗапускОтИмениАдминистратора" id="5">
-					<DataPath>ЗапускОтИмениАдминистратора</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-					<CheckBoxType>Switcher</CheckBoxType>
-					<ContextMenu name="ЗапускОтИмениАдминистратораКонтекстноеМеню" id="6"/>
-					<ExtendedTooltip name="ЗапускОтИмениАдминистратораРасширеннаяПодсказка" id="7"/>
-				</CheckBoxField>
 				<Button name="КомандаЗапуститьПредприятие" id="1">
 					<Type>UsualButton</Type>
 					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
@@ -111,6 +109,7 @@
 				</Button>
 				<InputField name="СтрокаПодключения" id="19">
 					<DataPath>СтрокаПодключения</DataPath>
+					<Visible>false</Visible>
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -124,6 +123,11 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<LabelDecoration name="ДекорацияОтступ" id="50">
+			<Enabled>false</Enabled>
+			<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="52"/>
+		</LabelDecoration>
 		<UsualGroup name="ГруппаНастройки" id="41">
 			<Visible>false</Visible>
 			<Title>
@@ -373,13 +377,21 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<CheckBoxField name="ЗапускОтИмениАдминистратора" id="5">
+			<DataPath>ЗапускОтИмениАдминистратора</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<CheckBoxType>Switcher</CheckBoxType>
+			<ContextMenu name="ЗапускОтИмениАдминистратораКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ЗапускОтИмениАдминистратораРасширеннаяПодсказка" id="7"/>
+		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="ЗапускОтИмениАдминистратора" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запуск от имени Администратора</v8:content>
+					<v8:content>Запуск от Администратора</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -496,7 +508,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
+				<xr:Ref>CommonPicture.Предприятие</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗапуститьПредприятие</Action>
@@ -516,7 +528,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Конфигуратор_ЧБ1</xr:Ref>
+				<xr:Ref>CommonPicture.Конфигуратор</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗапуститьКонфигуратор</Action>
@@ -536,7 +548,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.ЯрлыкИнформационнйБазы_ЧБ</xr:Ref>
+				<xr:Ref>CommonPicture.ЯрлыкИнформационнйБазы</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Representation>TextPicture</Representation>
