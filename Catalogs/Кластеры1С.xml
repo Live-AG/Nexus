@@ -676,11 +676,11 @@
 				<ChildObjects>
 					<Attribute uuid="aab3bf1b-da41-443f-894f-949d05274ab1">
 						<Properties>
-							<Name>ИмяСервера</Name>
+							<Name>Имя</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Имя сервера</v8:content>
+									<v8:content>Имя</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -759,20 +759,16 @@
 					</Attribute>
 					<Attribute uuid="18d7f29c-4716-414a-801f-2e76773a45e3">
 						<Properties>
-							<Name>ИдентификаторСервера</Name>
+							<Name>ИдентификаторРабочегоСервера</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Идентификатор сервера</v8:content>
+									<v8:content>Идентификатор рабочего сервера</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>10</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>v8:UUID</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -794,7 +790,7 @@
 							<LinkByType/>
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 							<Indexing>DontIndex</Indexing>
-							<FullTextSearch>Use</FullTextSearch>
+							<FullTextSearch>DontUse</FullTextSearch>
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>

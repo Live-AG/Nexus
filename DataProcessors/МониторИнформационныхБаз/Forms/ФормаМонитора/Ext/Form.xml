@@ -209,15 +209,15 @@
 															<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
 															<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
 														</InputField>
-														<LabelField name="ТаблицаЭлементовКластераПолеОписания" id="68">
-															<DataPath>ТаблицаЭлементовКластера.КраткоеОписание</DataPath>
+														<LabelField name="ТаблицаЭлементовКластераОписания" id="68">
+															<DataPath>ТаблицаЭлементовКластера.Описание</DataPath>
 															<EditMode>EnterOnInput</EditMode>
 															<ShowInHeader>false</ShowInHeader>
 															<ShowInFooter>false</ShowInFooter>
 															<TextColor>style:NavigationColor</TextColor>
 															<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-															<ContextMenu name="ТаблицаЭлементовКластераПолеОписанияКонтекстноеМеню" id="69"/>
-															<ExtendedTooltip name="ТаблицаЭлементовКластераПолеОписанияРасширеннаяПодсказка" id="70"/>
+															<ContextMenu name="ТаблицаЭлементовКластераОписанияКонтекстноеМеню" id="69"/>
+															<ExtendedTooltip name="ТаблицаЭлементовКластераОписанияРасширеннаяПодсказка" id="70"/>
 														</LabelField>
 													</ChildItems>
 												</ColumnGroup>
@@ -666,8 +666,8 @@
 			</Type>
 			<UseAlways>
 				<Field>~ТаблицаЭлементовКластера.ИдентификаторЗадания</Field>
+				<Field>~ТаблицаЭлементовКластера.КраткоеОписание</Field>
 				<Field>ТаблицаЭлементовКластера.ИндексСостояния</Field>
-				<Field>ТаблицаЭлементовКластера.КраткоеОписание</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -675,7 +675,7 @@
 				<QueryText>ВЫБРАТЬ
 	Кластеры1С.Ссылка КАК ЭлементКластера,
 	Кластеры1С.ВерсияПлатформы КАК ВерсияПлатформы,
-	Кластеры1С.Описание КАК КраткоеОписание,
+	Кластеры1С.Описание КАК Описание,
 	Кластеры1С.Защищен КАК Защищен,
 	Кластеры1С.Активен КАК Активен,
 	Кластеры1С.ИдентификаторКластера КАК ИдентификаторКластера,
