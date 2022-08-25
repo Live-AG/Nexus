@@ -520,60 +520,125 @@
 							<v8:content>Группа пользователи</v8:content>
 						</v8:item>
 					</ToolTip>
+					<VerticalSpacing>Double</VerticalSpacing>
 					<ExtendedTooltip name="ГруппаПользователиРасширеннаяПодсказка" id="74"/>
 					<ChildItems>
-						<Table name="Доступ" id="46">
-							<Representation>List</Representation>
-							<CommandBarLocation>None</CommandBarLocation>
-							<ChangeRowSet>false</ChangeRowSet>
-							<ChangeRowOrder>false</ChangeRowOrder>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.Доступ</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ДоступКонтекстноеМеню" id="47"/>
-							<AutoCommandBar name="ДоступКоманднаяПанель" id="48"/>
-							<ExtendedTooltip name="ДоступРасширеннаяПодсказка" id="49"/>
-							<SearchStringAddition name="ДоступСтрокаПоиска" id="50">
-								<AdditionSource>
-									<Item>Доступ</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ДоступСтрокаПоискаКонтекстноеМеню" id="51"/>
-								<ExtendedTooltip name="ДоступСтрокаПоискаРасширеннаяПодсказка" id="52"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ДоступСостояниеПросмотра" id="53">
-								<AdditionSource>
-									<Item>Доступ</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ДоступСостояниеПросмотраКонтекстноеМеню" id="54"/>
-								<ExtendedTooltip name="ДоступСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ДоступУправлениеПоиском" id="56">
-								<AdditionSource>
-									<Item>Доступ</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ДоступУправлениеПоискомКонтекстноеМеню" id="57"/>
-								<ExtendedTooltip name="ДоступУправлениеПоискомРасширеннаяПодсказка" id="58"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<LabelField name="ДоступНомерСтроки" id="59">
-									<DataPath>Объект.Доступ.LineNumber</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДоступНомерСтрокиКонтекстноеМеню" id="60"/>
-									<ExtendedTooltip name="ДоступНомерСтрокиРасширеннаяПодсказка" id="61"/>
-								</LabelField>
-								<InputField name="ДоступПользовательГруппа" id="62">
-									<DataPath>Объект.Доступ.ПользовательГруппа</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДоступПользовательГруппаКонтекстноеМеню" id="63"/>
-									<ExtendedTooltip name="ДоступПользовательГруппаРасширеннаяПодсказка" id="64"/>
-								</InputField>
-							</ChildItems>
-						</Table>
+						<PictureDecoration name="Декорация9" id="216">
+							<Width>5</Width>
+							<MaxWidth>15</MaxWidth>
+							<Height>2</Height>
+							<MaxHeight>15</MaxHeight>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тестло</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
+							<Hyperlink>true</Hyperlink>
+							<PictureSize>Proportionally</PictureSize>
+							<Zoomable>true</Zoomable>
+							<Picture>
+								<xr:Ref>CommonPicture.ВыполнитьСценарий</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация9КонтекстноеМеню" id="217"/>
+							<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="218">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Запуситить скрипт</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</PictureDecoration>
+						<PictureDecoration name="Декорация8" id="213">
+							<Width>5</Width>
+							<MaxWidth>15</MaxWidth>
+							<Height>2</Height>
+							<MaxHeight>15</MaxHeight>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тестло</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
+							<Hyperlink>true</Hyperlink>
+							<PictureSize>Proportionally</PictureSize>
+							<Zoomable>true</Zoomable>
+							<Picture>
+								<xr:Ref>CommonPicture.ВыполнитьСценарий</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация8КонтекстноеМеню" id="214"/>
+							<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="215">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Запуситить скрипт</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</PictureDecoration>
+						<PictureDecoration name="Декорация7" id="210">
+							<Width>5</Width>
+							<MaxWidth>15</MaxWidth>
+							<Height>2</Height>
+							<MaxHeight>15</MaxHeight>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тестло</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
+							<Hyperlink>true</Hyperlink>
+							<PictureSize>Proportionally</PictureSize>
+							<Zoomable>true</Zoomable>
+							<Picture>
+								<xr:Ref>CommonPicture.ВыполнитьСценарий</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация7КонтекстноеМеню" id="211"/>
+							<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="212">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Запуситить скрипт</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</PictureDecoration>
+						<PictureDecoration name="Декорация6" id="207">
+							<Width>5</Width>
+							<MaxWidth>15</MaxWidth>
+							<Height>2</Height>
+							<MaxHeight>15</MaxHeight>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Тестло</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
+							<Hyperlink>true</Hyperlink>
+							<PictureSize>Proportionally</PictureSize>
+							<Zoomable>true</Zoomable>
+							<Picture>
+								<xr:Ref>CommonPicture.ВыполнитьСценарий</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация6КонтекстноеМеню" id="208"/>
+							<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="209">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Запуситить скрипт</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</PictureDecoration>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаИстория" id="75">

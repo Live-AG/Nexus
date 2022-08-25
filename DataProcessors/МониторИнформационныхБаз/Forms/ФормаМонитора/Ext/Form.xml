@@ -140,8 +140,8 @@
 											<CommandSet>
 												<ExcludedCommand>Change</ExcludedCommand>
 											</CommandSet>
-											<AutoRefresh>false</AutoRefresh>
-											<AutoRefreshPeriod>60</AutoRefreshPeriod>
+											<AutoRefresh>true</AutoRefresh>
+											<AutoRefreshPeriod>120</AutoRefreshPeriod>
 											<Period>
 												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
 												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
@@ -153,7 +153,15 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
-											<ContextMenu name="ТаблицаЭлементовКластераКонтекстноеМеню" id="3"/>
+											<ContextMenu name="ТаблицаЭлементовКластераКонтекстноеМеню" id="3">
+												<ChildItems>
+													<Button name="Тест_ПересоздатьКластер" id="136">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.Тест_ПересоздатьКластер</CommandName>
+														<ExtendedTooltip name="Тест_ПересоздатьКластерРасширеннаяПодсказка" id="137"/>
+													</Button>
+												</ChildItems>
+											</ContextMenu>
 											<AutoCommandBar name="ТаблицаЭлементовКластераКоманднаяПанель" id="2"/>
 											<ExtendedTooltip name="ТаблицаЭлементовКластераРасширеннаяПодсказка" id="4"/>
 											<SearchStringAddition name="ТаблицаЭлементовКластераСтрокаПоиска" id="5">
@@ -478,7 +486,7 @@
 										<ExcludedCommand>Change</ExcludedCommand>
 									</CommandSet>
 									<AutoRefresh>false</AutoRefresh>
-									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<AutoRefreshPeriod>120</AutoRefreshPeriod>
 									<Period>
 										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
 										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
@@ -853,6 +861,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="АктивныФоновыеЗадания" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активны фоновые задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОбновитьДеревоКластеров" id="1">
@@ -901,6 +920,21 @@
 					<v8:content>Добавить кластер</v8:content>
 				</v8:item>
 			</ToolTip>
+		</Command>
+		<Command name="Тест_ПересоздатьКластер" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест пересоздать кластер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест пересоздать кластер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Тест_ПересоздатьКластер</Action>
 		</Command>
 	</Commands>
 </Form>

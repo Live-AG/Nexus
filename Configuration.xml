@@ -572,6 +572,8 @@
 			<CommonPicture>ЯрлыкИнформационнйБазы_ЧБ</CommonPicture>
 			<CommonPicture>Проект1</CommonPicture>
 			<CommonPicture>СерверНабор</CommonPicture>
+			<CommonPicture>Информация33</CommonPicture>
+			<CommonPicture>ВыполнитьСценарий</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
