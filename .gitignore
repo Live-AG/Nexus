@@ -1,8 +1,10 @@
 DeployWork.bat
 DeployHome.bat
 DeployMacbook.bat
-.DS_Store
+
 .DS_Store?
+.DS_Store
+**/.DS_Store
 ._*
 .Spotlight-V100
 .Trashes
