@@ -599,11 +599,11 @@
 			</Attribute>
 			<Attribute uuid="e3c7dda4-d044-4960-9035-be06d9647a78">
 				<Properties>
-					<Name>ИмяАдминистратораИБ</Name>
+					<Name>ИмяПользователяИБ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имя администратора ИБ</v8:content>
+							<v8:content>Имя пользователя ИБ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -643,11 +643,11 @@
 			</Attribute>
 			<Attribute uuid="7cf7f686-a6df-4038-a5bd-3c18ee33f47a">
 				<Properties>
-					<Name>ПарольАдминистратораИБ</Name>
+					<Name>ПарольПользователяИБ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пароль администратора ИБ</v8:content>
+							<v8:content>Пароль пользователя ИБ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

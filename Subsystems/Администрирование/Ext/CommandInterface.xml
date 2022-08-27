@@ -497,7 +497,7 @@
 		<Command name="Constant.ОбщиеПараметрыАутентификации.StandardCommand.Open">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
-		<Command name="Constant.ПутьККаталогуВыгрузкиБаз.StandardCommand.Open">
+		<Command name="Constant.КаталогВыгрузкиБазWindows.StandardCommand.Open">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 		<Command name="CommonCommand.ОткрытьФормуОбщихПараметровАутетнитификации">

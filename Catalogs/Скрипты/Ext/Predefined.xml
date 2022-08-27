@@ -18,6 +18,18 @@
 				<Description>Загрузить базу из файла</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
+			<Item id="f5bbdd99-773a-4889-923e-cafa0771e2b7">
+				<Name>ЗапуститьКонфигуратор</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Запустить конфигуратор</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="c6c04087-8acb-49f3-b1aa-e4f777b1caae">
+				<Name>ЗапуститьПредприятие</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Запустить предприятие</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
 			<Item id="30a19c02-33ce-4444-9734-af0e8f659817">
 				<Name>ОбезличитьИнформационнуюБазу</Name>
 				<Code xsi:type="xs:decimal">0</Code>
@@ -45,9 +57,29 @@
 				<IsFolder>false</IsFolder>
 			</Item>
 			<Item id="cd4e9c3a-92bb-439c-b57c-3c1d22dd1c73">
-				<Name>ЗавершениеСеансовПользователей</Name>
+				<Name>ЗавершениеСеансовВсехПользователей</Name>
 				<Code xsi:type="xs:decimal">0</Code>
-				<Description>Завершение сеансов пользователей</Description>
+				<Description>Завершение сеансов всех пользователей</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="60fb7fee-835f-46b6-91e5-2f4774b6dbc0">
+				<Name>ЗавершитьСеансПользователя</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Завершить сеанс пользователя</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="d63747e0-d56d-4371-ace4-ca82d80b4ff2">
+		<Name>СУБД</Name>
+		<Code xsi:type="xs:decimal">0</Code>
+		<Description>СУБД</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="a108397c-9bbd-4942-a4b6-24121b00ce29">
+				<Name>СоздатьРезервнуюКопию</Name>
+				<Code xsi:type="xs:decimal">0</Code>
+				<Description>Создать резервную копию</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
 		</ChildItems>

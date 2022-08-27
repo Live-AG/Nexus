@@ -225,6 +225,7 @@
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
 			<Subsystem>УправлениеКластерами</Subsystem>
 			<Subsystem>АдминистрированиеПользователей</Subsystem>
+			<Subsystem>РаботаСоСкриптами</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВладелецФайловШрифт</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовВажнаяШрифт</StyleItem>
@@ -1120,7 +1121,9 @@
 			<Constant>УчетнаяЗаписьДляВосстановленияПароля</Constant>
 			<Constant>ХранитьФайлыВТомахНаДиске</Constant>
 			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
-			<Constant>ПутьККаталогуВыгрузкиБаз</Constant>
+			<Constant>КаталогВыгрузкиБазWindows</Constant>
+			<Constant>КаталогВыгрузкиБазLinux</Constant>
+			<Constant>КаталогШаблоновКонфигураций</Constant>
 			<Constant>ОбщиеПараметрыАутентификации</Constant>
 			<CommonForm>АдреснаяКнига</CommonForm>
 			<CommonForm>Вопрос</CommonForm>
@@ -1287,6 +1290,7 @@
 			<Enum>СостоянияЭлементовКластера</Enum>
 			<Enum>ВидыОперационныхСистем</Enum>
 			<Enum>СтатусыИнформационнойБазы</Enum>
+			<Enum>МестаИсполненияСкрипта</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>ОбъемНенужныхФайлов</Report>

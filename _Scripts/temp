@@ -1,0 +1,1 @@
+%1cestart% DESIGNER /S%ibServerName%\%ibServerName% /N%ibUser% /P%ibUserPasswordr% /WA+ /AppArch x86_64_prt /RunModeManagedApplication

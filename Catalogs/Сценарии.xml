@@ -151,6 +151,32 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<TabularSection uuid="e3b928be-c388-4ed9-b697-2217bd9eeeee">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.Сценарии.ПараметрыКонтекста" category="TabularSection">
+						<xr:TypeId>afbcf271-8c27-4bd3-a5fb-e574229d5a25</xr:TypeId>
+						<xr:ValueId>8cd64fdc-31f3-4e4e-b57f-c4745655d61d</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.Сценарии.ПараметрыКонтекста" category="TabularSectionRow">
+						<xr:TypeId>49e49419-bdda-4eed-8cf4-fd2c5167ec49</xr:TypeId>
+						<xr:ValueId>b3321af4-24c0-45c5-8b3c-55ab2c310348</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ПараметрыКонтекста</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры контекста</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<Use>ForItem</Use>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

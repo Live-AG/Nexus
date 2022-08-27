@@ -198,7 +198,7 @@
 							</ExtendedTooltip>
 							<ChildItems>
 								<InputField name="ИмяАдминистратораИБ" id="102">
-									<DataPath>Объект.ИмяАдминистратораИБ</DataPath>
+									<DataPath>Объект.ИмяПользователяИБ</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -210,7 +210,7 @@
 									<ExtendedTooltip name="ИмяАдминистратораИБРасширеннаяПодсказка" id="104"/>
 								</InputField>
 								<InputField name="ПарольАдминистратораИБ" id="105">
-									<DataPath>Объект.ПарольАдминистратораИБ</DataPath>
+									<DataPath>Объект.ПарольПользователяИБ</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>

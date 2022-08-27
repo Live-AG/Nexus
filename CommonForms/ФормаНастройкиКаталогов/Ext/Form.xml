@@ -15,33 +15,67 @@
 					<v8:content>Группа каталог выгрузки баз</v8:content>
 				</v8:item>
 			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
 			<ExtendedTooltip name="ГруппаКаталогВыгрузкиБазРасширеннаяПодсказка" id="5"/>
 			<ChildItems>
-				<InputField name="ПутьККаталогуВыгрузкиБаз" id="1">
-					<DataPath>НаборКонстант.ПутьККаталогуВыгрузкиБаз</DataPath>
+				<InputField name="КаталогВыгрузкиБазWindows" id="6">
+					<DataPath>НаборКонстант.КаталогВыгрузкиБазWindows</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь для Windows</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КаталогВыгрузкиБазWindowsКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КаталогВыгрузкиБазWindowsРасширеннаяПодсказка" id="8"/>
+				</InputField>
+				<InputField name="КаталогВыгрузкиБазLinux" id="9">
+					<DataPath>НаборКонстант.КаталогВыгрузкиБазLinux</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь для Linux</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КаталогВыгрузкиБазLinuxКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="КаталогВыгрузкиБазLinuxРасширеннаяПодсказка" id="11"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКаталогШаблоновКонфигураций" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог шаблонов конфигураций</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа каталог выгрузки баз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаКаталогШаблоновКонфигурацийРасширеннаяПодсказка" id="13"/>
+			<ChildItems>
+				<InputField name="КаталогШаблоновКонфигураций" id="14">
+					<DataPath>НаборКонстант.КаталогШаблоновКонфигураций</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Путь</v8:content>
 						</v8:item>
 					</Title>
-					<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
-					<HorizontalStretch>true</HorizontalStretch>
-					<ContextMenu name="ПутьККаталогуВыгрузкиБазКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="ПутьККаталогуВыгрузкиБазРасширеннаяПодсказка" id="3">
-						<Title formatted="true">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>&lt;fontsize 10&gt;&lt;i&gt;&lt;color #807a59&gt;Путь к временному каталогу на &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;i&gt;&lt;color #807a59&gt;&lt;u&gt;сервере&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;i&gt;&lt;color #807a59&gt;, в который будут выгружаться файлы &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;b&gt;&lt;i&gt;&lt;color #807a59&gt;dt&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;i&gt;&lt;color #807a59&gt;. Пользователь от которого запущена служба сервера 1С должен иметь &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;b&gt;&lt;i&gt;&lt;color #807a59&gt;полный доступ&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;i&gt;&lt;color #807a59&gt; к данному каталогу. Для каждой базы будет создан свой подкаталог и после завершений операции с будет удален.&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
-							</v8:item>
-						</Title>
-					</ExtendedTooltip>
-					<Events>
-						<Event name="StartChoice">ПутьККаталогуВыгрузкиБазНачалоВыбора</Event>
-					</Events>
+					<ContextMenu name="КаталогШаблоновКонфигурацийКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КаталогШаблоновКонфигурацийРасширеннаяПодсказка" id="16"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -59,7 +93,9 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>НаборКонстант.ПутьККаталогуВыгрузкиБаз</Field>
+				<Field>НаборКонстант.КаталогВыгрузкиБазLinux</Field>
+				<Field>НаборКонстант.КаталогВыгрузкиБазWindows</Field>
+				<Field>НаборКонстант.КаталогШаблоновКонфигураций</Field>
 			</UseAlways>
 		</Attribute>
 	</Attributes>
