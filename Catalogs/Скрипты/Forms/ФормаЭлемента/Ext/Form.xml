@@ -3,6 +3,9 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаНаименованиеГруппа" id="34">
 			<Title>
@@ -79,7 +82,7 @@
 					<v8:content>Группа вертикальная</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
+			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -163,7 +166,9 @@
 					<ChildItems>
 						<InputField name="ПеременныеПараметр" id="26">
 							<DataPath>Объект.Переменные.Параметр</DataPath>
+							<ReadOnly>true</ReadOnly>
 							<EditMode>EnterOnInput</EditMode>
+							<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
 							<ContextMenu name="ПеременныеПараметрКонтекстноеМеню" id="27"/>
 							<ExtendedTooltip name="ПеременныеПараметрРасширеннаяПодсказка" id="28"/>
 						</InputField>
@@ -213,6 +218,7 @@
 					<v8:content>Прочитать параметры</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>ПрочитатьПараметры</Action>
 		</Command>
 	</Commands>
 </Form>
