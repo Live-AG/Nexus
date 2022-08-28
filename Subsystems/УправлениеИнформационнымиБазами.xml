@@ -20,6 +20,8 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнформационныеБазы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СерверыБД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПользовательИТС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПарольИТС</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

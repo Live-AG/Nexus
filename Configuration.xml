@@ -226,6 +226,7 @@
 			<Subsystem>УправлениеКластерами</Subsystem>
 			<Subsystem>АдминистрированиеПользователей</Subsystem>
 			<Subsystem>РаботаСоСкриптами</Subsystem>
+			<Subsystem>УчетПроектныхДанных</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВладелецФайловШрифт</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовВажнаяШрифт</StyleItem>
@@ -575,6 +576,7 @@
 			<CommonPicture>СерверНабор</CommonPicture>
 			<CommonPicture>Информация33</CommonPicture>
 			<CommonPicture>ВыполнитьСценарий</CommonPicture>
+			<CommonPicture>РаботаСоСкриптами</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
@@ -1001,6 +1003,7 @@
 			<FunctionalOption>СтандартныеПодсистемыВЛокальномРежиме</FunctionalOption>
 			<FunctionalOption>СтандартныеПодсистемыВМоделиСервиса</FunctionalOption>
 			<FunctionalOption>ХранитьФайлыВТомахНаДиске</FunctionalOption>
+			<FunctionalOption>ИспользоватьПроекты</FunctionalOption>
 			<FunctionalOptionsParameter>ДополнительныеОтчетыИОбработкиОбъектНазначения</FunctionalOptionsParameter>
 			<FunctionalOptionsParameter>ДополнительныеОтчетыИОбработкиТипФормы</FunctionalOptionsParameter>
 			<FunctionalOptionsParameter>ТипВерсионируемогоОбъекта</FunctionalOptionsParameter>
@@ -1064,6 +1067,7 @@
 			<CommandGroup>Органайзер</CommandGroup>
 			<CommandGroup>Справочники</CommandGroup>
 			<CommandGroup>ВыполнитьДействия</CommandGroup>
+			<CommandGroup>СДР</CommandGroup>
 			<Constant>АдресПубликацииИнформационнойБазыВИнтернете</Constant>
 			<Constant>ЗапрещатьЗагрузкуФайловПоРасширению</Constant>
 			<Constant>ДетализироватьОбновлениеИБВЖурналеРегистрации</Constant>
@@ -1125,6 +1129,9 @@
 			<Constant>КаталогВыгрузкиБазLinux</Constant>
 			<Constant>КаталогШаблоновКонфигураций</Constant>
 			<Constant>ОбщиеПараметрыАутентификации</Constant>
+			<Constant>ИспользоватьПроекты</Constant>
+			<Constant>ПользовательИТС</Constant>
+			<Constant>ПарольИТС</Constant>
 			<CommonForm>АдреснаяКнига</CommonForm>
 			<CommonForm>Вопрос</CommonForm>
 			<CommonForm>ВопросОбУстановкеВнешнейКомпоненты</CommonForm>
@@ -1190,6 +1197,7 @@
 			<Catalog>ВстречаПрисоединенныеФайлы</Catalog>
 			<Catalog>ГруппыВнешнихПользователей</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>
+			<Catalog>ДополниетельныеЗначенияКонтекста</Catalog>
 			<Catalog>ДополнительныеОтчетыИОбработки</Catalog>
 			<Catalog>ЗакладкиВзаимодействий</Catalog>
 			<Catalog>Заметки</Catalog>
@@ -1219,7 +1227,6 @@
 			<Catalog>СообщениеSMSПрисоединенныеФайлы</Catalog>
 			<Catalog>СтраныМира</Catalog>
 			<Catalog>СтроковыеКонтактыВзаимодействий</Catalog>
-			<Catalog>Сценарии</Catalog>
 			<Catalog>ТелефонныйЗвонокПрисоединенныеФайлы</Catalog>
 			<Catalog>ТомаХраненияФайлов</Catalog>
 			<Catalog>УчетныеЗаписиСинхронизацииФайлов</Catalog>
@@ -1228,6 +1235,7 @@
 			<Catalog>ХранилищаКонфигураций</Catalog>
 			<Catalog>ШаблоныСообщений</Catalog>
 			<Catalog>ШаблоныСообщенийПрисоединенныеФайлы</Catalog>
+			<Catalog>ШаблоныСценариев</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
 			<Document>Встреча</Document>
@@ -1236,6 +1244,7 @@
 			<Document>ТелефонныйЗвонок</Document>
 			<Document>ЭлектронноеПисьмоВходящее</Document>
 			<Document>ЭлектронноеПисьмоИсходящее</Document>
+			<Document>ВыполнениеСценария</Document>
 			<DocumentJournal>Взаимодействия</DocumentJournal>
 			<Enum>НазначенияИБ</Enum>
 			<Enum>ТипыСУБД</Enum>
@@ -1323,6 +1332,7 @@
 			<DataProcessor>Сканирование</DataProcessor>
 			<DataProcessor>ТекущиеДела</DataProcessor>
 			<DataProcessor>УдалениеПомеченныхОбъектов</DataProcessor>
+			<DataProcessor>ПанельАдминистрированияNexus</DataProcessor>
 			<DataProcessor>МониторИнформационныхБаз</DataProcessor>
 			<DataProcessor>СДРНавигаторУпр</DataProcessor>
 			<DataProcessor>СДРОбъектУпр</DataProcessor>
@@ -1381,6 +1391,7 @@
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
 			<InformationRegister>ТекущиеЗаданияОбъектов</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
+			<ChartOfCharacteristicTypes>КонтекстВыполненияСкрипта</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

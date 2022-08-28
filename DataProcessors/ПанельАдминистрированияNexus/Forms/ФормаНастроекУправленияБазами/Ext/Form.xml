@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ОписаниеРаздела" id="78">
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>78</MaxWidth>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки параметров подключения к кластерам по умолчанию, подключения к ИТС и использования проектов</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalAlign>Top</VerticalAlign>
+			<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="79"/>
+			<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="80"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаПараметрыИТС" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись ИТС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки каталогов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПараметрыИТСРасширеннаяПодсказка" id="55"/>
+			<ChildItems>
+				<InputField name="ПользовательИТС" id="69">
+					<DataPath>НаборКонстант.ПользовательИТС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПользовательИТСКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ПользовательИТСРасширеннаяПодсказка" id="71"/>
+					<Events>
+						<Event name="OnChange">ПользовательИТСПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПарольИТС" id="72">
+					<DataPath>НаборКонстант.ПарольИТС</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<PasswordMode>true</PasswordMode>
+					<ContextMenu name="ПарольИТСКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ПарольИТСРасширеннаяПодсказка" id="74"/>
+					<Events>
+						<Event name="OnChange">ПарольИТСПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИспользованиеПроектов" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа каталог выгрузки баз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаИспользованиеПроектовРасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьПроекты" id="75">
+					<DataPath>НаборКонстант.ИспользоватьПроекты</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьПроектыКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ИспользоватьПроектыРасширеннаяПодсказка" id="77"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьПроектыПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройкиКаталогов" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки каталогов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки каталогов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНастройкиКаталоговРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКаталогВыгрузкиБаз" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог выгрузки баз</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа каталог выгрузки баз</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаКаталогВыгрузкиБазРасширеннаяПодсказка" id="40"/>
+					<ChildItems>
+						<InputField name="КаталогВыгрузкиБазWindows" id="41">
+							<DataPath>НаборКонстант.КаталогВыгрузкиБазWindows</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Путь для Windows</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КаталогВыгрузкиБазWindowsКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="КаталогВыгрузкиБазWindowsРасширеннаяПодсказка" id="43"/>
+							<Events>
+								<Event name="OnChange">КаталогВыгрузкиБазWindowsПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="КаталогВыгрузкиБазLinux" id="44">
+							<DataPath>НаборКонстант.КаталогВыгрузкиБазLinux</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Путь для Linux</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КаталогВыгрузкиБазLinuxКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="КаталогВыгрузкиБазLinuxРасширеннаяПодсказка" id="46"/>
+							<Events>
+								<Event name="OnChange">КаталогВыгрузкиБазLinuxПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКаталогШаблоновКонфигураций" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог шаблонов конфигураций</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа каталог выгрузки баз</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаКаталогШаблоновКонфигурацийРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="КаталогШаблоновКонфигураций" id="49">
+							<DataPath>НаборКонстант.КаталогШаблоновКонфигураций</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Путь</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КаталогШаблоновКонфигурацийКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="КаталогШаблоновКонфигурацийРасширеннаяПодсказка" id="51"/>
+							<Events>
+								<Event name="OnChange">КаталогШаблоновКонфигурацийПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметрыАутентификации" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры аутентификации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры аутентификации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПараметрыАутентификацииРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаАдминистраторЦентральногоСервера" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Центральный сервер кластера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа администратор центрального сервера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаАдминистраторЦентральногоСервераРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<InputField name="ПользовательЦентральногоСервер" id="22">
+							<DataPath>ПользовательЦентральногоСервер</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПользовательЦентральногоСерверКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ПользовательЦентральногоСерверРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="OnChange">ПользовательЦентральногоСерверПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПарольЦентральногоСервера" id="13">
+							<DataPath>ПарольЦентральногоСервера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольЦентральногоСервераКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ПарольЦентральногоСервераРасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="OnChange">ПарольЦентральногоСервераПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАдминистраторКластера" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администратор кластера</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа администратор кластера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаАдминистраторКластераРасширеннаяПодсказка" id="26"/>
+					<ChildItems>
+						<InputField name="ПользовательСервераАдминистрирования" id="19">
+							<DataPath>ИмяАдминистратораКластера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПользовательСервераАдминистрированияКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПользовательСервераАдминистрированияРасширеннаяПодсказка" id="21"/>
+							<Events>
+								<Event name="OnChange">ПользовательСервераАдминистрированияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПарольСервераАдминистрирования" id="7">
+							<DataPath>ПарольАдминистратораКластера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольСервераАдминистрированияКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ПарольСервераАдминистрированияРасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="OnChange">ПарольСервераАдминистрированияПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАдминистраторСУБД" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администратор СУБД</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа администратор СУБД</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаАдминистраторСУБДРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<InputField name="ПользовательСУБД" id="1">
+							<DataPath>ПользовательСУБД</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПользовательСУБДКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПользовательСУБДРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">ПользовательСУБДПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПарольСУБД" id="10">
+							<DataPath>ПарольСУБД</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольСУБДКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПарольСУБДРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">ПарольСУБДПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаАдминистраторИнформационнойБазы" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администратор информационной базы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа администратор информационной базы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаАдминистраторИнформационнойБазыРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<InputField name="ПользовательИнформационнойБазы" id="16">
+							<DataPath>ПользовательИБ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пользователь</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПользовательИнформационнойБазыКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПользовательИнформационнойБазыРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">ПользовательИнформационнойБазыПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ПарольИнформационнойБазы" id="4">
+							<DataPath>ПарольИБ</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольИнформационнойБазыКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ПарольИнформационнойБазыРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">ПарольИнформационнойБазыПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПользовательЦентральногоСервер" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь центрального сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольЦентральногоСервера" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль центрального сервера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяАдминистратораКластера" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя администратора кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольАдминистратораКластера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль администратора кластера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательИБ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольИБ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПользовательСУБД" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользователь СУБД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольСУБД" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль СУБД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаборКонстант" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Набор констант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:ConstantsSet</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.КаталогВыгрузкиБазLinux</Field>
+				<Field>НаборКонстант.КаталогВыгрузкиБазWindows</Field>
+				<Field>НаборКонстант.КаталогШаблоновКонфигураций</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

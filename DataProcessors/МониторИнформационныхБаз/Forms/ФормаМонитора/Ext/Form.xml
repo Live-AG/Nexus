@@ -367,73 +367,98 @@
 								</Page>
 							</ChildItems>
 						</Pages>
-						<RadioButtonField name="ВидОтбора" id="105">
-							<DataPath>ВидОтбора</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-							<RadioButtonType>Tumbler</RadioButtonType>
-							<ChoiceList>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Кластеры</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">Кластеры</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Проекты</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">Проекты</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Пользователи</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">Пользователи</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Избранное</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">Избранное</Value>
-									</xr:Value>
-								</xr:Item>
-							</ChoiceList>
-							<BackColor>style:FormBackColor</BackColor>
-							<BorderColor>style:FormBackColor</BorderColor>
-							<ContextMenu name="ВидОтбораКонтекстноеМеню" id="106"/>
-							<ExtendedTooltip name="ВидОтбораРасширеннаяПодсказка" id="107"/>
-							<Events>
-								<Event name="OnChange">ВидОтбораПриИзменении</Event>
-							</Events>
-						</RadioButtonField>
+						<UsualGroup name="ГруппаВидыОтбора" id="140">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа виды отбора</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа виды отбора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВидыОтбораРасширеннаяПодсказка" id="141"/>
+							<ChildItems>
+								<Button name="КомандаПроекты" id="138">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.КомандаПроекты</CommandName>
+									<ExtendedTooltip name="КомандаПроектыРасширеннаяПодсказка" id="139"/>
+								</Button>
+								<RadioButtonField name="ВидОтбора" id="105">
+									<DataPath>ВидОтбора</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Кластеры</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Кластеры</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Проекты</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Проекты</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Пользователи</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Пользователи</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Избранное</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Избранное</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<BackColor>style:FormBackColor</BackColor>
+									<BorderColor>style:FormBackColor</BorderColor>
+									<ContextMenu name="ВидОтбораКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ВидОтбораРасширеннаяПодсказка" id="107"/>
+									<Events>
+										<Event name="OnChange">ВидОтбораПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<Pages name="СтраницыИнформацииКластера" id="119">
@@ -935,6 +960,24 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Тест_ПересоздатьКластер</Action>
+		</Command>
+		<Command name="КомандаПроекты" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда проекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПроекты</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПроекты</Item>
+			</FunctionalOptions>
 		</Command>
 	</Commands>
 </Form>

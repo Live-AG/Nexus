@@ -13,10 +13,17 @@
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
-			<Picture/>
+			<Picture>
+				<xr:Ref>CommonPicture.РаботаСоСкриптами</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Скрипты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.МестаИсполненияСкрипта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныСценариев</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыполнениеСценария</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.КонтекстВыполненияСкрипта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополниетельныеЗначенияКонтекста</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

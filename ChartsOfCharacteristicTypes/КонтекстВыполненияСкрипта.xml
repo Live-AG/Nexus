@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<ChartOfCharacteristicTypes uuid="16099bce-5997-43ea-86a3-d8c844287e69">
+		<InternalInfo>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesObject.КонтекстВыполненияСкрипта" category="Object">
+				<xr:TypeId>caf32645-1150-4853-8f68-ad3baf1b012e</xr:TypeId>
+				<xr:ValueId>60318a9a-1851-41d2-a9e7-6388d28e9f3c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesRef.КонтекстВыполненияСкрипта" category="Ref">
+				<xr:TypeId>1203076f-f461-42ee-bf0c-6a8e27a21b48</xr:TypeId>
+				<xr:ValueId>dfe7ba43-09d0-42f7-9294-5bf96422ab52</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesSelection.КонтекстВыполненияСкрипта" category="Selection">
+				<xr:TypeId>b0e18f6f-566e-411c-9fe8-b1150aa4b80f</xr:TypeId>
+				<xr:ValueId>d4fed0dd-911f-499b-a697-a1d0a3f34aec</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesList.КонтекстВыполненияСкрипта" category="List">
+				<xr:TypeId>c6269dde-98ca-42fc-9277-1aefabf28a03</xr:TypeId>
+				<xr:ValueId>a68d2d64-ac81-44b8-891b-be163172ac5a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="Characteristic.КонтекстВыполненияСкрипта" category="Characteristic">
+				<xr:TypeId>a87dfe01-d6eb-4b4b-bd78-1862952b0ff3</xr:TypeId>
+				<xr:ValueId>b110a6da-cd4b-4f83-8a0a-14403a188ce4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesManager.КонтекстВыполненияСкрипта" category="Manager">
+				<xr:TypeId>98ededf7-4719-4b02-b0bb-638b9f2ec746</xr:TypeId>
+				<xr:ValueId>b31dc8a8-23c8-4e3c-b04b-ed25cf5a7baa</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтекстВыполненияСкрипта</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контекст выполнения скрипта</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<CharacteristicExtValues>Catalog.ДополниетельныеЗначенияКонтекста</CharacteristicExtValues>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВерсииКонфигураций</v8:Type>
+				<v8:Type>xs:boolean</v8:Type>
+				<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+				<v8:Type>cfg:CatalogRef.Файлы</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:Type>cfg:CatalogRef.ПользователиИБ</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДополниетельныеЗначенияКонтекста</v8:Type>
+				<v8:Type>cfg:CatalogRef.ВебСерверы</v8:Type>
+				<v8:Type>cfg:CatalogRef.ХранилищаКонфигураций</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>250</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Hierarchical>false</Hierarchical>
+			<FoldersOnTop>true</FoldersOnTop>
+			<CodeLength>9</CodeLength>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<DescriptionLength>25</DescriptionLength>
+			<CodeSeries>WholeCharacteristicKind</CodeSeries>
+			<CheckUnique>true</CheckUnique>
+			<Autonumbering>true</Autonumbering>
+			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<Characteristics/>
+			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
+			<EditType>InDialog</EditType>
+			<QuickChoice>false</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<InputByString>
+				<xr:Field>ChartOfCharacteristicTypes.КонтекстВыполненияСкрипта.StandardAttribute.Description</xr:Field>
+				<xr:Field>ChartOfCharacteristicTypes.КонтекстВыполненияСкрипта.StandardAttribute.Code</xr:Field>
+			</InputByString>
+			<CreateOnInput>DontUse</CreateOnInput>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DefaultObjectForm/>
+			<DefaultFolderForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<DefaultFolderChoiceForm/>
+			<AuxiliaryObjectForm/>
+			<AuxiliaryFolderForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<AuxiliaryFolderChoiceForm/>
+			<BasedOn/>
+			<DataLockFields/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>Use</FullTextSearch>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+		</Properties>
+		<ChildObjects/>
+	</ChartOfCharacteristicTypes>
+</MetaDataObject>

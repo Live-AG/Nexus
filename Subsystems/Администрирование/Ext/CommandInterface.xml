@@ -261,6 +261,41 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Constant.КаталогВыгрузкиБазWindows.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ОткрытьФормуОбщихПараметровАутетнитификации">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.КаталогВыгрузкиБазLinux.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.ИспользоватьПроекты.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СДРКонсольЗапросовХ.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СДРНавигаторУпр.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.СДРОбъектУпр.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
 	</CommandsVisibility>
 	<CommandsPlacement>
 		<Command name="Catalog.Пользователи.StandardCommand.OpenList">
@@ -313,6 +348,18 @@
 		</Command>
 		<Command name="CommonCommand.ПанельОтчетовАдминистрирование">
 			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.СДРКонсольЗапросовХ.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СДР</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.СДРНавигаторУпр.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СДР</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.СДРОбъектУпр.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СДР</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
 	</CommandsPlacement>
@@ -387,6 +434,9 @@
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 		<Command name="Catalog.ШаблоныСообщений.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПанельАдминистрированияNexus.Command.НастройкиУправленияБазами">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 		<Command name="DataProcessor.АктивныеПользователи.Command.АктивныеПользователи">
@@ -503,6 +553,21 @@
 		<Command name="CommonCommand.ОткрытьФормуОбщихПараметровАутетнитификации">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
+		<Command name="Constant.КаталогВыгрузкиБазLinux.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Constant.ИспользоватьПроекты.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СДРКонсольЗапросовХ.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СДР</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СДРНавигаторУпр.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СДР</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СДРОбъектУпр.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СДР</CommandGroup>
+		</Command>
 	</CommandsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelImportant</Group>
@@ -510,5 +575,6 @@
 		<Group>NavigationPanelSeeAlso</Group>
 		<Group>ActionsPanelReports</Group>
 		<Group>ActionsPanelTools</Group>
+		<Group>CommandGroup.СДР</Group>
 	</GroupsOrder>
 </CommandInterface>

@@ -4,6 +4,8 @@
 		<Subsystem>Subsystem.УправлениеКластерами</Subsystem>
 		<Subsystem>Subsystem.УправлениеИнформационнымиБазами</Subsystem>
 		<Subsystem>Subsystem.АдминистрированиеПользователей</Subsystem>
+		<Subsystem>Subsystem.УчетПроектныхДанных</Subsystem>
+		<Subsystem>Subsystem.РаботаСоСкриптами</Subsystem>
 		<Subsystem>Subsystem.Администрирование</Subsystem>
 	</SubsystemsOrder>
 </CommandInterface>
