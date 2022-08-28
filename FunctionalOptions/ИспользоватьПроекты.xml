@@ -14,6 +14,7 @@
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
 				<xr:Object>Catalog.Проекты</xr:Object>
+				<xr:Object>Catalog.ИнформационныеБазы.Attribute.Проект</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

@@ -11,6 +11,54 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="56">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="57"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияБаза" id="61">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация база</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<Picture>
+						<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияБазаКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ДекорацияБазаРасширеннаяПодсказка" id="63"/>
+				</PictureDecoration>
+				<LabelField name="ИнформационнаяБазаНаименование" id="58">
+					<DataPath>ИнформационнаяБаза.Description</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>None</TitleLocation>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<Width>15</Width>
+					<MaxWidth>20</MaxWidth>
+					<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+					<ContextMenu name="ИнформационнаяБазаНаименованиеКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ИнформационнаяБазаНаименованиеРасширеннаяПодсказка" id="60"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
 		<LabelDecoration name="ДекорацияОтступ1" id="53">
 			<Enabled>false</Enabled>
 			<ContextMenu name="ДекорацияОтступ1КонтекстноеМеню" id="54"/>

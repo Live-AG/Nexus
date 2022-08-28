@@ -100,92 +100,178 @@
 					<ContextMenu name="ТекстСкриптаКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ТекстСкриптаРасширеннаяПодсказка" id="9"/>
 				</TextDocumentField>
-				<Table name="Переменные" id="10">
-					<Representation>List</Representation>
-					<ChangeRowOrder>false</ChangeRowOrder>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>Объект.Переменные</DataPath>
-					<CommandSet>
-						<ExcludedCommand>CancelSearch</ExcludedCommand>
-						<ExcludedCommand>Change</ExcludedCommand>
-						<ExcludedCommand>Copy</ExcludedCommand>
-						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-						<ExcludedCommand>EndEdit</ExcludedCommand>
-						<ExcludedCommand>Find</ExcludedCommand>
-						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
-						<ExcludedCommand>MoveDown</ExcludedCommand>
-						<ExcludedCommand>MoveUp</ExcludedCommand>
-						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
-						<ExcludedCommand>SelectAll</ExcludedCommand>
-						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-						<ExcludedCommand>SortListAsc</ExcludedCommand>
-						<ExcludedCommand>SortListDesc</ExcludedCommand>
-					</CommandSet>
-					<SearchStringLocation>None</SearchStringLocation>
-					<ViewStatusLocation>None</ViewStatusLocation>
-					<SearchControlLocation>None</SearchControlLocation>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="ПеременныеКонтекстноеМеню" id="11"/>
-					<AutoCommandBar name="ПеременныеКоманднаяПанель" id="12">
-						<ChildItems>
-							<Button name="ПеременныеПрочитатьПараметры" id="45">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ПрочитатьПараметры</CommandName>
-								<ExtendedTooltip name="ПеременныеПрочитатьПараметрыРасширеннаяПодсказка" id="46"/>
-							</Button>
-						</ChildItems>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ПеременныеРасширеннаяПодсказка" id="13"/>
-					<SearchStringAddition name="ПеременныеСтрокаПоиска" id="14">
-						<AdditionSource>
-							<Item>Переменные</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ПеременныеСтрокаПоискаКонтекстноеМеню" id="15"/>
-						<ExtendedTooltip name="ПеременныеСтрокаПоискаРасширеннаяПодсказка" id="16"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ПеременныеСостояниеПросмотра" id="17">
-						<AdditionSource>
-							<Item>Переменные</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ПеременныеСостояниеПросмотраКонтекстноеМеню" id="18"/>
-						<ExtendedTooltip name="ПеременныеСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ПеременныеУправлениеПоиском" id="20">
-						<AdditionSource>
-							<Item>Переменные</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ПеременныеУправлениеПоискомКонтекстноеМеню" id="21"/>
-						<ExtendedTooltip name="ПеременныеУправлениеПоискомРасширеннаяПодсказка" id="22"/>
-					</SearchControlAddition>
+				<UsualGroup name="ГруппаГоризонтальная" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальная</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа горизонтальная</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="70"/>
 					<ChildItems>
-						<InputField name="ПеременныеПараметр" id="26">
-							<DataPath>Объект.Переменные.Параметр</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-							<ContextMenu name="ПеременныеПараметрКонтекстноеМеню" id="27"/>
-							<ExtendedTooltip name="ПеременныеПараметрРасширеннаяПодсказка" id="28"/>
-						</InputField>
-						<InputField name="ПеременныеПеременнаяКонтекста" id="42">
-							<DataPath>Объект.Переменные.ПеременнаяКонтекста</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Переменная</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ПеременныеПеременнаяКонтекстаКонтекстноеМеню" id="43"/>
-							<ExtendedTooltip name="ПеременныеПеременнаяКонтекстаРасширеннаяПодсказка" id="44"/>
-						</InputField>
+						<Table name="КонтекстВыполнения" id="47">
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Width>20</Width>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+							<VerticalScrollBar>DontUse</VerticalScrollBar>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.КонтекстВыполнения</DataPath>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КонтекстВыполненияКонтекстноеМеню" id="48"/>
+							<AutoCommandBar name="КонтекстВыполненияКоманднаяПанель" id="49"/>
+							<ExtendedTooltip name="КонтекстВыполненияРасширеннаяПодсказка" id="50"/>
+							<SearchStringAddition name="КонтекстВыполненияСтрокаПоиска" id="51">
+								<AdditionSource>
+									<Item>КонтекстВыполнения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтекстВыполненияСтрокаПоискаКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="КонтекстВыполненияСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КонтекстВыполненияСостояниеПросмотра" id="54">
+								<AdditionSource>
+									<Item>КонтекстВыполнения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтекстВыполненияСостояниеПросмотраКонтекстноеМеню" id="55"/>
+								<ExtendedTooltip name="КонтекстВыполненияСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КонтекстВыполненияУправлениеПоиском" id="57">
+								<AdditionSource>
+									<Item>КонтекстВыполнения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КонтекстВыполненияУправлениеПоискомКонтекстноеМеню" id="58"/>
+								<ExtendedTooltip name="КонтекстВыполненияУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="КонтекстВыполненияИспользование" id="63">
+									<DataPath>Объект.КонтекстВыполнения.Использование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ShowInHeader>false</ShowInHeader>
+									<ShowInFooter>false</ShowInFooter>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КонтекстВыполненияИспользованиеКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="КонтекстВыполненияИспользованиеРасширеннаяПодсказка" id="65"/>
+								</CheckBoxField>
+								<InputField name="КонтекстВыполненияЭлементКонтекста" id="66">
+									<DataPath>Объект.КонтекстВыполнения.ЭлементКонтекста</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КонтекстВыполненияЭлементКонтекстаКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="КонтекстВыполненияЭлементКонтекстаРасширеннаяПодсказка" id="68"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="Переменные" id="10">
+							<Representation>List</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Переменные</DataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+							</CommandSet>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПеременныеКонтекстноеМеню" id="11"/>
+							<AutoCommandBar name="ПеременныеКоманднаяПанель" id="12">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ПеременныеПрочитатьПараметры" id="45">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПрочитатьПараметры</CommandName>
+										<ExtendedTooltip name="ПеременныеПрочитатьПараметрыРасширеннаяПодсказка" id="46"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПеременныеРасширеннаяПодсказка" id="13"/>
+							<SearchStringAddition name="ПеременныеСтрокаПоиска" id="14">
+								<AdditionSource>
+									<Item>Переменные</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПеременныеСтрокаПоискаКонтекстноеМеню" id="15"/>
+								<ExtendedTooltip name="ПеременныеСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПеременныеСостояниеПросмотра" id="17">
+								<AdditionSource>
+									<Item>Переменные</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПеременныеСостояниеПросмотраКонтекстноеМеню" id="18"/>
+								<ExtendedTooltip name="ПеременныеСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПеременныеУправлениеПоиском" id="20">
+								<AdditionSource>
+									<Item>Переменные</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПеременныеУправлениеПоискомКонтекстноеМеню" id="21"/>
+								<ExtendedTooltip name="ПеременныеУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ПеременныеПараметр" id="26">
+									<DataPath>Объект.Переменные.Параметр</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+									<ContextMenu name="ПеременныеПараметрКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ПеременныеПараметрРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ПеременныеПеременнаяКонтекста" id="42">
+									<DataPath>Объект.Переменные.ПеременнаяКонтекста</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Переменная</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПеременныеПеременнаяКонтекстаКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="ПеременныеПеременнаяКонтекстаРасширеннаяПодсказка" id="44"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
-				</Table>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<InputField name="Описание" id="36">
