@@ -1,20 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
-	<Title>
-		<v8:item>
-			<v8:lang>ru</v8:lang>
-			<v8:content>Информационные базы 1С</v8:content>
-		</v8:item>
-	</Title>
 	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаОбновитьДеревоКластеров" id="33">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ОбновитьДеревоКластеров</CommandName>
-				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаОбновитьДеревоКластеровРасширеннаяПодсказка" id="34"/>
-			</Button>
 			<Button name="ФормаНастройкаСписка" id="78">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Item.ТаблицаИнформационныхБаз.StandardCommand.ListSettings</CommandName>
@@ -114,6 +103,49 @@
 									</ToolTip>
 									<ExtendedTooltip name="ГруппаКластерыРасширеннаяПодсказка" id="111"/>
 									<ChildItems>
+										<UsualGroup name="ГруппаЗаголовокКластеры" id="142">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа заголовок кластеры</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа заголовок кластеры</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalSpacing>Double</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЗаголовокКластерыРасширеннаяПодсказка" id="143"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияКластеры" id="144">
+													<TextColor>style:AccentColor</TextColor>
+													<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Кластеры</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияКластерыКонтекстноеМеню" id="145"/>
+													<ExtendedTooltip name="ДекорацияКластерыРасширеннаяПодсказка" id="146"/>
+												</LabelDecoration>
+												<Button name="ДобавитьКластер" id="149">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ДобавитьКластер</CommandName>
+													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Picture>
+														<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ДобавитьКластерРасширеннаяПодсказка" id="150"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
 										<Table name="ТаблицаЭлементовКластера" id="1">
 											<Representation>List</Representation>
 											<CommandBarLocation>None</CommandBarLocation>
@@ -159,6 +191,12 @@
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.Тест_ПересоздатьКластер</CommandName>
 														<ExtendedTooltip name="Тест_ПересоздатьКластерРасширеннаяПодсказка" id="137"/>
+													</Button>
+													<Button name="ФормаОбновитьДеревоКластеров" id="33">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ОбновитьДеревоКластеров</CommandName>
+														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+														<ExtendedTooltip name="ФормаОбновитьДеревоКластеровРасширеннаяПодсказка" id="34"/>
 													</Button>
 												</ChildItems>
 											</ContextMenu>
@@ -492,10 +530,60 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаИнформационныеБазыРасширеннаяПодсказка" id="122"/>
 							<ChildItems>
+								<UsualGroup name="ГруппаЗаголовокИнформационныеБазы" id="151">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа заголовок кластеры</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа заголовок кластеры</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalSpacing>Double</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗаголовокИнформационныеБазыРасширеннаяПодсказка" id="152"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияКластеры1" id="153">
+											<TextColor>style:AccentColor</TextColor>
+											<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Информационные базы</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияКластеры1КонтекстноеМеню" id="154"/>
+											<ExtendedTooltip name="ДекорацияКластеры1РасширеннаяПодсказка" id="155"/>
+										</LabelDecoration>
+										<Button name="ДобавитьКластер1" id="156">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ДобавитьКластер</CommandName>
+											<TextColor>style:ЦветПустойГиперссылки</TextColor>
+											<Picture>
+												<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Добавить базу</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ДобавитьКластер1РасширеннаяПодсказка" id="157"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 								<Table name="ТаблицаИнформационныхБаз" id="37">
 									<CommandBarLocation>None</CommandBarLocation>
 									<ChangeRowSet>false</ChangeRowSet>
 									<ChangeRowOrder>false</ChangeRowOrder>
+									<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 									<RowSelectionMode>Row</RowSelectionMode>
 									<Header>false</Header>
 									<VerticalLines>false</VerticalLines>
@@ -557,7 +645,9 @@
 										<LabelField name="ТаблицаИнформационныхБазСсылка" id="53">
 											<DataPath>ТаблицаИнформационныхБаз.Ссылка</DataPath>
 											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<VerticalAlign>Center</VerticalAlign>
 											<EditMode>Directly</EditMode>
+											<Height>2</Height>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<ContextMenu name="ТаблицаИнформационныхБазСсылкаКонтекстноеМеню" id="54"/>
 											<ExtendedTooltip name="ТаблицаИнформационныхБазСсылкаРасширеннаяПодсказка" id="55"/>
@@ -565,20 +655,26 @@
 										<LabelField name="ТаблицаИнформационныхБазНазначение" id="56">
 											<DataPath>ТаблицаИнформационныхБаз.Назначение</DataPath>
 											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<VerticalAlign>Center</VerticalAlign>
 											<ShowInFooter>false</ShowInFooter>
+											<Height>2</Height>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<ContextMenu name="ТаблицаИнформационныхБазНазначениеКонтекстноеМеню" id="57"/>
 											<ExtendedTooltip name="ТаблицаИнформационныхБазНазначениеРасширеннаяПодсказка" id="58"/>
 										</LabelField>
 										<LabelField name="ТаблицаИнформационныхБазОтветственный" id="116">
 											<DataPath>ТаблицаИнформационныхБаз.Ответственный</DataPath>
+											<VerticalAlign>Center</VerticalAlign>
+											<Height>2</Height>
 											<ContextMenu name="ТаблицаИнформационныхБазОтветственныйКонтекстноеМеню" id="117"/>
 											<ExtendedTooltip name="ТаблицаИнформационныхБазОтветственныйРасширеннаяПодсказка" id="118"/>
 										</LabelField>
 										<LabelField name="ТаблицаИнформационныхБазКонфигурация" id="59">
 											<DataPath>~ТаблицаИнформационныхБаз.Конфигурация</DataPath>
 											<TitleBackColor>style:FormBackColor</TitleBackColor>
+											<VerticalAlign>Center</VerticalAlign>
 											<ShowInFooter>false</ShowInFooter>
+											<Height>2</Height>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<ContextMenu name="ТаблицаИнформационныхБазКонфигурацияКонтекстноеМеню" id="60"/>
 											<ExtendedTooltip name="ТаблицаИнформационныхБазКонфигурацияРасширеннаяПодсказка" id="61"/>
@@ -589,6 +685,7 @@
 											<TitleLocation>None</TitleLocation>
 											<CellHyperlink>true</CellHyperlink>
 											<ShowInFooter>false</ShowInFooter>
+											<Height>2</Height>
 											<Hyperlink>true</Hyperlink>
 											<ValuesPicture>
 												<xr:Ref>StdPicture.Setting</xr:Ref>

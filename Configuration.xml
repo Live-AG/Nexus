@@ -577,6 +577,7 @@
 			<CommonPicture>Информация33</CommonPicture>
 			<CommonPicture>ВыполнитьСценарий</CommonPicture>
 			<CommonPicture>РаботаСоСкриптами</CommonPicture>
+			<CommonPicture>ДобавитьНовыйЭлемент</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>

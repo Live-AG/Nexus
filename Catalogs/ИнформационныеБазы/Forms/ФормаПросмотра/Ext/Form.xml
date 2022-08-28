@@ -109,7 +109,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа состояние</v8:content>
+									<v8:content>Общие сведения</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
@@ -118,231 +118,388 @@
 									<v8:content>Группа состояние</v8:content>
 								</v8:item>
 							</ToolTip>
-							<HorizontalStretch>true</HorizontalStretch>
+							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
+							<VerticalSpacing>OneAndHalf</VerticalSpacing>
+							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="113"/>
 							<ChildItems>
-								<LabelField name="Состояние" id="136">
-									<DataPath>Состояние</DataPath>
-									<TextColor>style:FieldSelectionBackColor</TextColor>
-									<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
-									<ContextMenu name="СостояниеКонтекстноеМеню" id="137"/>
-									<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="138"/>
-								</LabelField>
-								<LabelField name="Конфигурация" id="40">
-									<DataPath>Объект.ВерсияКонфигурации</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Hiperlink>true</Hiperlink>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="КонфигурацияКонтекстноеМеню" id="41"/>
-									<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="42"/>
-								</LabelField>
-								<LabelField name="ДатаСоздания" id="133">
-									<DataPath>Объект.ДатаСоздания</DataPath>
-									<Format>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ДФ=dd.MM.yyyy</v8:content>
-										</v8:item>
-									</Format>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="134"/>
-									<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="135"/>
-								</LabelField>
-								<LabelField name="ДатаПоследнегоИспользования" id="130">
-									<DataPath>ДатаПоследнегоИспользования</DataPath>
-									<Format>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ДФ='дд.ММ.гггг (ЧЧ:мм)'</v8:content>
-										</v8:item>
-									</Format>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="ДатаПоследнегоИспользованияКонтекстноеМеню" id="131"/>
-									<ExtendedTooltip name="ДатаПоследнегоИспользованияРасширеннаяПодсказка" id="132"/>
-								</LabelField>
-								<LabelField name="НазначениеИБ" id="7">
-									<DataPath>Объект.Назначение</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="НазначениеИБКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="9"/>
-								</LabelField>
-								<LabelField name="Ответственный" id="19">
-									<DataPath>Объект.Ответственный</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Hiperlink>true</Hiperlink>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="ОтветственныйКонтекстноеМеню" id="20"/>
-									<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="21"/>
-								</LabelField>
-								<LabelField name="Проект" id="37">
-									<DataPath>Объект.Проект</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Hiperlink>true</Hiperlink>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="ПроектКонтекстноеМеню" id="38"/>
-									<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="39"/>
-								</LabelField>
-								<CheckBoxField name="БлокировкаРегламентныхЗаданий" id="183">
-									<DataPath>БлокировкаРегламентныхЗаданий</DataPath>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="БлокировкаРегламентныхЗаданийКонтекстноеМеню" id="184"/>
-									<ExtendedTooltip name="БлокировкаРегламентныхЗаданийРасширеннаяПодсказка" id="185"/>
-								</CheckBoxField>
-							</ChildItems>
-						</UsualGroup>
-						<InputField name="СистемаВзаимодействия" id="186">
-							<DataPath>СистемаВзаимодействия</DataPath>
-							<ContextMenu name="СистемаВзаимодействияКонтекстноеМеню" id="187"/>
-							<ExtendedTooltip name="СистемаВзаимодействияРасширеннаяПодсказка" id="188"/>
-						</InputField>
-						<UsualGroup name="ГруппаИнструменты" id="144">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Инструменты</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа инструменты</v8:content>
-								</v8:item>
-							</ToolTip>
-							<HorizontalStretch>true</HorizontalStretch>
-							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаИнструментыРасширеннаяПодсказка" id="145"/>
-							<ChildItems>
-								<LabelField name="ХранилищеКонфигурации" id="43">
-									<DataPath>Объект.ХранилищеКонфигурации</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Hiperlink>true</Hiperlink>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="ХранилищеКонфигурацииКонтекстноеМеню" id="44"/>
-									<ExtendedTooltip name="ХранилищеКонфигурацииРасширеннаяПодсказка" id="45"/>
-								</LabelField>
-								<LabelField name="ВебСервер" id="148">
-									<DataPath>Объект.ВебСервер</DataPath>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="ВебСерверКонтекстноеМеню" id="149"/>
-									<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="150"/>
-								</LabelField>
-								<LabelField name="ЖурналРегистрации" id="159">
-									<DataPath>ЖурналРегистрации</DataPath>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="ЖурналРегистрацииКонтекстноеМеню" id="160"/>
-									<ExtendedTooltip name="ЖурналРегистрацииРасширеннаяПодсказка" id="161"/>
-								</LabelField>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаКластер" id="142">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Кластер 1С</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа кластер</v8:content>
-								</v8:item>
-							</ToolTip>
-							<HorizontalStretch>true</HorizontalStretch>
-							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
-							<ControlRepresentation>Picture</ControlRepresentation>
-							<Representation>None</Representation>
-							<BackColor>web:WhiteSmoke</BackColor>
-							<AssociatedTableElementId xsi:type="xs:string">ТаблицаСеансов</AssociatedTableElementId>
-							<ExtendedTooltip name="ГруппаКластерРасширеннаяПодсказка" id="143"/>
-							<ChildItems>
-								<LabelField name="ИмяДБ" id="16">
-									<DataPath>Объект.ИмяИБ</DataPath>
+								<UsualGroup name="ГруппаСостоянияГоризонтально" id="226">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Имя</v8:content>
+											<v8:content>Группа состояния горизонтально</v8:content>
 										</v8:item>
 									</Title>
-									<EditMode>EnterOnInput</EditMode>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="ИмяДБКонтекстноеМеню" id="17"/>
-									<ExtendedTooltip name="ИмяДБРасширеннаяПодсказка" id="18"/>
-								</LabelField>
-								<LabelField name="Кластер1С" id="4">
-									<DataPath>Объект.Owner</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Hiperlink>true</Hiperlink>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="Кластер1СКонтекстноеМеню" id="5"/>
-									<ExtendedTooltip name="Кластер1СРасширеннаяПодсказка" id="6"/>
-								</LabelField>
-								<LabelField name="ОписаниеВКластере" id="162">
-									<DataPath>Объект.ОписаниеВКластере</DataPath>
-									<Title>
+									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Описание</v8:content>
+											<v8:content>Группа состояния горизонтально</v8:content>
 										</v8:item>
-									</Title>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<Font ref="style:NormalTextFont" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-									<ContextMenu name="ОписаниеВКластереКонтекстноеМеню" id="163"/>
-									<ExtendedTooltip name="ОписаниеВКластереРасширеннаяПодсказка" id="164"/>
-								</LabelField>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСостоянияГоризонтальноРасширеннаяПодсказка" id="227"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСостояниеЛево" id="219">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа состояние лево</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа состояние лево</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>45</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеЛевоРасширеннаяПодсказка" id="220"/>
+											<ChildItems>
+												<LabelField name="Конфигурация" id="40">
+													<DataPath>Объект.ВерсияКонфигурации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Конфигурация</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="КонфигурацияКонтекстноеМеню" id="41"/>
+													<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="42"/>
+												</LabelField>
+												<LabelField name="Состояние" id="136">
+													<DataPath>Состояние</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<Width>10</Width>
+													<MaxWidth>10</MaxWidth>
+													<ContextMenu name="СостояниеКонтекстноеМеню" id="137"/>
+													<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="138"/>
+												</LabelField>
+												<LabelField name="ДатаСоздания" id="133">
+													<DataPath>Объект.ДатаСоздания</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ДФ=dd.MM.yyyy</v8:content>
+														</v8:item>
+													</Format>
+													<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="134"/>
+													<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="135"/>
+												</LabelField>
+												<LabelField name="ДатаПоследнегоИспользования" id="130">
+													<DataPath>ДатаПоследнегоИспользования</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ДФ='дд.ММ.гггг (ЧЧ:мм)'</v8:content>
+														</v8:item>
+													</Format>
+													<ContextMenu name="ДатаПоследнегоИспользованияКонтекстноеМеню" id="131"/>
+													<ExtendedTooltip name="ДатаПоследнегоИспользованияРасширеннаяПодсказка" id="132"/>
+												</LabelField>
+												<LabelField name="БлокировкаРегламентныхЗаданий" id="183">
+													<DataPath>БлокировкаРегламентныхЗаданий</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>БЛ=Выключены; БИ=Включены</v8:content>
+														</v8:item>
+													</Format>
+													<ContextMenu name="БлокировкаРегламентныхЗаданийКонтекстноеМеню" id="184"/>
+													<ExtendedTooltip name="БлокировкаРегламентныхЗаданийРасширеннаяПодсказка" id="185"/>
+												</LabelField>
+												<LabelField name="ОбъемБазы" id="230">
+													<DataPath>ОбъемБазы</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<ContextMenu name="ОбъемБазыКонтекстноеМеню" id="231"/>
+													<ExtendedTooltip name="ОбъемБазыРасширеннаяПодсказка" id="232"/>
+												</LabelField>
+												<LabelField name="ПоследнийБэкап" id="233">
+													<DataPath>ПоследнийБэкап</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ДФ=dd.MM.yyyy</v8:content>
+														</v8:item>
+													</Format>
+													<ContextMenu name="ПоследнийБэкапКонтекстноеМеню" id="234"/>
+													<ExtendedTooltip name="ПоследнийБэкапРасширеннаяПодсказка" id="235"/>
+												</LabelField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаСостояниеПраво" id="221">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа состояние право</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа состояние право</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>45</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеПравоРасширеннаяПодсказка" id="222"/>
+											<ChildItems>
+												<LabelField name="НазначениеИБ" id="7">
+													<DataPath>Объект.Назначение</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="НазначениеИБКонтекстноеМеню" id="8"/>
+													<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="9"/>
+												</LabelField>
+												<LabelField name="Ответственный" id="19">
+													<DataPath>Объект.Ответственный</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОтветственныйКонтекстноеМеню" id="20"/>
+													<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="21"/>
+												</LabelField>
+												<LabelField name="Проект" id="37">
+													<DataPath>Объект.Проект</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ПроектКонтекстноеМеню" id="38"/>
+													<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="39"/>
+												</LabelField>
+												<LabelField name="ВебСервер" id="148">
+													<DataPath>Объект.ВебСервер</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<TextColor>style:ГиперссылкаЦвет</TextColor>
+													<ContextMenu name="ВебСерверКонтекстноеМеню" id="149"/>
+													<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="150"/>
+												</LabelField>
+												<LabelField name="ХранилищеКонфигурации" id="43">
+													<DataPath>Объект.ХранилищеКонфигурации</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Хранилище</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<EditMode>EnterOnInput</EditMode>
+													<Hiperlink>true</Hiperlink>
+													<TextColor>style:ГиперссылкаЦвет</TextColor>
+													<ContextMenu name="ХранилищеКонфигурацииКонтекстноеМеню" id="44"/>
+													<ExtendedTooltip name="ХранилищеКонфигурацииРасширеннаяПодсказка" id="45"/>
+												</LabelField>
+												<LabelField name="СистемаВзаимодействия" id="186">
+													<DataPath>СистемаВзаимодействия</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>БЛ=Отключена; БИ=Подключена</v8:content>
+														</v8:item>
+													</Format>
+													<ContextMenu name="СистемаВзаимодействияКонтекстноеМеню" id="187"/>
+													<ExtendedTooltip name="СистемаВзаимодействияРасширеннаяПодсказка" id="188"/>
+												</LabelField>
+												<LabelField name="ЖурналРегистрации" id="159">
+													<DataPath>ЖурналРегистрации</DataPath>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<TextColor>style:ГиперссылкаЦвет</TextColor>
+													<ContextMenu name="ЖурналРегистрацииКонтекстноеМеню" id="160"/>
+													<ExtendedTooltip name="ЖурналРегистрацииРасширеннаяПодсказка" id="161"/>
+												</LabelField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаСУБД" id="146">
+						<UsualGroup name="ГруппаПодключение" id="144">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>СУБД</v8:content>
+									<v8:content>Подключение</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа СУБД</v8:content>
+									<v8:content>Группа подключение</v8:content>
 								</v8:item>
 							</ToolTip>
-							<HorizontalStretch>true</HorizontalStretch>
-							<Group>Vertical</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<BackColor>web:WhiteSmoke</BackColor>
-							<ExtendedTooltip name="ГруппаСУБДРасширеннаяПодсказка" id="147"/>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПодключениеРасширеннаяПодсказка" id="145"/>
 							<ChildItems>
-								<LabelField name="БазаДанных" id="13">
-									<DataPath>Объект.БазаДанных</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="БазаДанныхКонтекстноеМеню" id="14"/>
-									<ExtendedTooltip name="БазаДанныхРасширеннаяПодсказка" id="15"/>
-								</LabelField>
-								<LabelField name="СерверБД" id="10">
-									<DataPath>Объект.СерверБД</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<Hiperlink>true</Hiperlink>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="СерверБДКонтекстноеМеню" id="11"/>
-									<ExtendedTooltip name="СерверБДРасширеннаяПодсказка" id="12"/>
-								</LabelField>
-								<LabelField name="СерверБДТипСУБД" id="139">
-									<DataPath>Объект.СерверБД.ТипСУБД</DataPath>
-									<TextColor>style:ГиперссылкаЦвет</TextColor>
-									<ContextMenu name="СерверБДТипСУБДКонтекстноеМеню" id="140"/>
-									<ExtendedTooltip name="СерверБДТипСУБДРасширеннаяПодсказка" id="141"/>
-								</LabelField>
+								<UsualGroup name="ГруппаКластер" id="142">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Кластер 1С</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кластер</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>45</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<ControlRepresentation>Picture</ControlRepresentation>
+									<Representation>None</Representation>
+									<BackColor>web:WhiteSmoke</BackColor>
+									<AssociatedTableElementId xsi:type="xs:string">ТаблицаСеансов</AssociatedTableElementId>
+									<ExtendedTooltip name="ГруппаКластерРасширеннаяПодсказка" id="143"/>
+									<ChildItems>
+										<LabelField name="ИмяДБ" id="16">
+											<DataPath>Объект.ИмяИБ</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+											<EditMode>EnterOnInput</EditMode>
+											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<ContextMenu name="ИмяДБКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ИмяДБРасширеннаяПодсказка" id="18"/>
+										</LabelField>
+										<LabelField name="Кластер1С" id="4">
+											<DataPath>Объект.Owner</DataPath>
+											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+											<EditMode>EnterOnInput</EditMode>
+											<Hiperlink>true</Hiperlink>
+											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<ContextMenu name="Кластер1СКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="Кластер1СРасширеннаяПодсказка" id="6"/>
+										</LabelField>
+										<LabelField name="ОписаниеВКластере" id="162">
+											<DataPath>Объект.ОписаниеВКластере</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Описание</v8:content>
+												</v8:item>
+											</Title>
+											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<ContextMenu name="ОписаниеВКластереКонтекстноеМеню" id="163"/>
+											<ExtendedTooltip name="ОписаниеВКластереРасширеннаяПодсказка" id="164"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаСУБД" id="146">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>СУБД</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа СУБД</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>45</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<BackColor>web:WhiteSmoke</BackColor>
+									<ExtendedTooltip name="ГруппаСУБДРасширеннаяПодсказка" id="147"/>
+									<ChildItems>
+										<LabelField name="БазаДанных" id="13">
+											<DataPath>Объект.БазаДанных</DataPath>
+											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>20</Width>
+											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<ContextMenu name="БазаДанныхКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="БазаДанныхРасширеннаяПодсказка" id="15"/>
+										</LabelField>
+										<LabelField name="СерверБД" id="10">
+											<DataPath>Объект.СерверБД</DataPath>
+											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+											<EditMode>EnterOnInput</EditMode>
+											<Hiperlink>true</Hiperlink>
+											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<ContextMenu name="СерверБДКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="СерверБДРасширеннаяПодсказка" id="12"/>
+										</LabelField>
+										<LabelField name="СерверБДТипСУБД" id="139">
+											<DataPath>Объект.СерверБД.ТипСУБД</DataPath>
+											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<ContextMenu name="СерверБДТипСУБДКонтекстноеМеню" id="140"/>
+											<ExtendedTooltip name="СерверБДТипСУБДРасширеннаяПодсказка" id="141"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ГруппаДинамикаАктивности" id="228">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа динамика активности</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа динамика активности</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаДинамикаАктивностиРасширеннаяПодсказка" id="229"/>
+						</UsualGroup>
+						<SpreadSheetDocumentField name="СводнаяИнформация" id="223">
+							<DataPath>СводнаяИнформация</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleLocation>None</TitleLocation>
+							<VerticalScrollBar>false</VerticalScrollBar>
+							<HorizontalScrollBar>false</HorizontalScrollBar>
+							<SelectionShowMode>DontShow</SelectionShowMode>
+							<PointerType>Regular</PointerType>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<ContextMenu name="СводнаяИнформацияКонтекстноеМеню" id="224"/>
+							<ExtendedTooltip name="СводнаяИнформацияРасширеннаяПодсказка" id="225"/>
+						</SpreadSheetDocumentField>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаСеансыСоединения" id="69">
@@ -520,125 +677,273 @@
 							<v8:content>Группа пользователи</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
 					<VerticalSpacing>Double</VerticalSpacing>
 					<ExtendedTooltip name="ГруппаПользователиРасширеннаяПодсказка" id="74"/>
 					<ChildItems>
-						<PictureDecoration name="Декорация9" id="216">
-							<Width>5</Width>
-							<MaxWidth>15</MaxWidth>
-							<Height>2</Height>
-							<MaxHeight>15</MaxHeight>
-							<Title formatted="false">
+						<UsualGroup name="ГруппаЛево" id="260">
+							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Тестло</v8:content>
+									<v8:content>Группа лево</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
-							<Hyperlink>true</Hyperlink>
-							<PictureSize>Proportionally</PictureSize>
-							<Zoomable>true</Zoomable>
-							<Picture>
-								<xr:Ref>CommonPicture.ВыполнитьСценарий</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="Декорация9КонтекстноеМеню" id="217"/>
-							<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="218">
-								<Title formatted="false">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Запуситить скрипт</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
-						</PictureDecoration>
-						<PictureDecoration name="Декорация8" id="213">
-							<Width>5</Width>
-							<MaxWidth>15</MaxWidth>
-							<Height>2</Height>
-							<MaxHeight>15</MaxHeight>
-							<Title formatted="false">
+							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Тестло</v8:content>
+									<v8:content>Группа лево</v8:content>
 								</v8:item>
-							</Title>
-							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
-							<Hyperlink>true</Hyperlink>
-							<PictureSize>Proportionally</PictureSize>
-							<Zoomable>true</Zoomable>
-							<Picture>
-								<xr:Ref>CommonPicture.ВыполнитьСценарий</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="Декорация8КонтекстноеМеню" id="214"/>
-							<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="215">
-								<Title formatted="false">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Запуситить скрипт</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
-						</PictureDecoration>
-						<PictureDecoration name="Декорация7" id="210">
-							<Width>5</Width>
-							<MaxWidth>15</MaxWidth>
-							<Height>2</Height>
-							<MaxHeight>15</MaxHeight>
-							<Title formatted="false">
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="261"/>
+							<ChildItems>
+								<UsualGroup name="Группа2" id="244">
+									<Width>30</Width>
+									<Height>4</Height>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="245"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация3" id="246">
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация3КонтекстноеМеню" id="247"/>
+											<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="248"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация4" id="249">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить загрузку конфигурации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="Декорация4КонтекстноеМеню" id="250"/>
+											<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="251" DisplayImportance="VeryHigh">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа3" id="252">
+									<Width>30</Width>
+									<Height>4</Height>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="253"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация5" id="254">
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.Конфигуратор_ЧБ</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация5КонтекстноеМеню" id="255"/>
+											<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="256"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация6" id="257">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить загрузку конфигурации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="Декорация6КонтекстноеМеню" id="258"/>
+											<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="259">
+												<AutoMaxHeight>false</AutoMaxHeight>
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа1" id="236">
+									<Width>30</Width>
+									<Height>4</Height>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="237"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация1" id="238">
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.Конфигуратор_ЧБ1</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="239"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="240"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация2" id="241">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить загрузку конфигурации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="242"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="243" DisplayImportance="VeryHigh">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПраво" id="262">
+							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Тестло</v8:content>
+									<v8:content>Группа лево</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
-							<Hyperlink>true</Hyperlink>
-							<PictureSize>Proportionally</PictureSize>
-							<Zoomable>true</Zoomable>
-							<Picture>
-								<xr:Ref>CommonPicture.ВыполнитьСценарий</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="Декорация7КонтекстноеМеню" id="211"/>
-							<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="212">
-								<Title formatted="false">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Запуситить скрипт</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
-						</PictureDecoration>
-						<PictureDecoration name="Декорация6" id="207">
-							<Width>5</Width>
-							<MaxWidth>15</MaxWidth>
-							<Height>2</Height>
-							<MaxHeight>15</MaxHeight>
-							<Title formatted="false">
+							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Тестло</v8:content>
+									<v8:content>Группа лево</v8:content>
 								</v8:item>
-							</Title>
-							<ToolTipRepresentation>ShowAuto</ToolTipRepresentation>
-							<Hyperlink>true</Hyperlink>
-							<PictureSize>Proportionally</PictureSize>
-							<Zoomable>true</Zoomable>
-							<Picture>
-								<xr:Ref>CommonPicture.ВыполнитьСценарий</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ContextMenu name="Декорация6КонтекстноеМеню" id="208"/>
-							<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="209">
-								<Title formatted="false">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Запуситить скрипт</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
-						</PictureDecoration>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="263"/>
+							<ChildItems>
+								<UsualGroup name="Группа4" id="264">
+									<Width>30</Width>
+									<Height>4</Height>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="265"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация7" id="266">
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.Проект1</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация7КонтекстноеМеню" id="267"/>
+											<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="268"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация8" id="269">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить загрузку конфигурации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="Декорация8КонтекстноеМеню" id="270"/>
+											<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="271" DisplayImportance="VeryHigh">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа5" id="272">
+									<Width>30</Width>
+									<Height>4</Height>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="273"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация9" id="274">
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.БазаЗаблокирована</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация9КонтекстноеМеню" id="275"/>
+											<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="276"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация10" id="277">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить загрузку конфигурации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="Декорация10КонтекстноеМеню" id="278"/>
+											<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="279" DisplayImportance="VeryHigh">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа6" id="280">
+									<Width>30</Width>
+									<Height>4</Height>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<Behavior>Usual</Behavior>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="281"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация11" id="282">
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>CommonPicture.БазаДобавить</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="Декорация11КонтекстноеМеню" id="283"/>
+											<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="284"/>
+										</PictureDecoration>
+										<LabelDecoration name="Декорация12" id="285">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выполнить загрузку конфигурации</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="Декорация12КонтекстноеМеню" id="286"/>
+											<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="287" DisplayImportance="VeryHigh">
+												<Title formatted="true">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаИстория" id="75">
@@ -845,7 +1150,7 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>25</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
@@ -869,7 +1174,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Регламентные заданий</v8:content>
+					<v8:content>Регламентные задания</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -899,11 +1204,86 @@
 				</v8:item>
 			</Title>
 			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СводнаяИнформация" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сводная информация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+			<Settings xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:SpreadsheetDocument">
+				<mxl:languageSettings>
+					<mxl:currentLanguage>ru</mxl:currentLanguage>
+					<mxl:defaultLanguage>ru</mxl:defaultLanguage>
+					<mxl:languageInfo>
+						<mxl:id>ru</mxl:id>
+						<mxl:code>Русский</mxl:code>
+						<mxl:description>Русский</mxl:description>
+					</mxl:languageInfo>
+				</mxl:languageSettings>
+				<mxl:columns>
+					<mxl:size>9</mxl:size>
+				</mxl:columns>
+				<mxl:rowsItem>
+					<mxl:index>0</mxl:index>
+					<mxl:indexTo>10</mxl:indexTo>
+					<mxl:row>
+						<mxl:empty>true</mxl:empty>
+					</mxl:row>
+				</mxl:rowsItem>
+				<mxl:rowsItem>
+					<mxl:index>11</mxl:index>
+					<mxl:row>
+						<mxl:c>
+							<mxl:i>8</mxl:i>
+							<mxl:c>
+								<mxl:f>0</mxl:f>
+								<mxl:tl/>
+							</mxl:c>
+						</mxl:c>
+					</mxl:row>
+				</mxl:rowsItem>
+				<mxl:defaultFormatIndex>1</mxl:defaultFormatIndex>
+				<mxl:height>12</mxl:height>
+				<mxl:vgRows>12</mxl:vgRows>
+				<mxl:format>
+					<mxl:width>72</mxl:width>
+				</mxl:format>
+			</Settings>
+		</Attribute>
+		<Attribute name="ОбъемБазы" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объем базы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
+					<v8:Length>25</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоследнийБэкап" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последний бэкап</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -926,6 +1306,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 		</Command>
+		<Command name="Команда1" id="2"/>
 	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
@@ -935,6 +1316,37 @@
 				<Attribute>Объект.Owner</Attribute>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.Объект</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>4</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ИнформационныеБазы.Command.Действия</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>3</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ИнформационныеБазы.Command.Соединения</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>2</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
 			</Item>
 		</NavigationPanel>
 	</CommandInterface>

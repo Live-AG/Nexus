@@ -986,7 +986,7 @@
 					<Type>
 						<v8:Type>xs:dateTime</v8:Type>
 						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
+							<v8:DateFractions>Date</v8:DateFractions>
 						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
@@ -1086,6 +1086,8 @@
 			<Form>ФормаЗапускаПриложения</Form>
 			<Form>ФормаДополнительныхПараметровЗапуска</Form>
 			<Form>ФормаСоединений</Form>
+			<Form>ФормаДействия</Form>
+			<Template>МакетСводнойИнформации</Template>
 			<Command uuid="41e9cf92-7865-4b9f-9d33-42df3adc8a22">
 				<Properties>
 					<Name>ЗапуститьПредприятие</Name>
@@ -1168,6 +1170,29 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Соединения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelGoTo</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="1c0bd0c2-53f8-43ad-95b1-3c78c9bd9850">
+				<Properties>
+					<Name>Действия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действия</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

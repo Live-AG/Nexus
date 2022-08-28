@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаПользователи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действия с информационной базой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользователи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаПользователиРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛево" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="5">
+							<Width>30</Width>
+							<Height>4</Height>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="6"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация3" id="7">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация3КонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="9"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация4" id="10">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнить загрузку конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация4КонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="12" DisplayImportance="VeryHigh">
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа3" id="13">
+							<Width>30</Width>
+							<Height>4</Height>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="14"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация5" id="15">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.Конфигуратор_ЧБ</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация5КонтекстноеМеню" id="16"/>
+									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="17"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация6" id="18">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнить загрузку конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация6КонтекстноеМеню" id="19"/>
+									<ExtendedTooltip name="Декорация6РасширеннаяПодсказка" id="20">
+										<AutoMaxHeight>false</AutoMaxHeight>
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="21">
+							<Width>30</Width>
+							<Height>4</Height>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="22"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация1" id="23">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.Конфигуратор_ЧБ1</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="25"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация2" id="26">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнить загрузку конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="28" DisplayImportance="VeryHigh">
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПраво" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<UsualGroup name="Группа4" id="31">
+							<Width>30</Width>
+							<Height>4</Height>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="32"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация7" id="33">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.Проект1</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация7КонтекстноеМеню" id="34"/>
+									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="35"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация8" id="36">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнить загрузку конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация8КонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="38" DisplayImportance="VeryHigh">
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа5" id="39">
+							<Width>30</Width>
+							<Height>4</Height>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация9" id="41">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.БазаЗаблокирована</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация9КонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="43"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация10" id="44">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнить загрузку конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация10КонтекстноеМеню" id="45"/>
+									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="46" DisplayImportance="VeryHigh">
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа6" id="47">
+							<Width>30</Width>
+							<Height>4</Height>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="48"/>
+							<ChildItems>
+								<PictureDecoration name="Декорация11" id="49">
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.БазаДобавить</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="Декорация11КонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="51"/>
+								</PictureDecoration>
+								<LabelDecoration name="Декорация12" id="52">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выполнить загрузку конфигурации</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="Декорация12КонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="54" DisplayImportance="VeryHigh">
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>По материалам курса по «1С:Конвертация данных» После прохождения курса Вы научитесь : -Переносить начальные остатки -Настраивать обмены между разными базами</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ИнформационныеБазы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
