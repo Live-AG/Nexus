@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>None</CommandBarLocation>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
@@ -118,10 +117,10 @@
 									<v8:content>Группа состояние</v8:content>
 								</v8:item>
 							</ToolTip>
-							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
 							<VerticalSpacing>OneAndHalf</VerticalSpacing>
 							<Behavior>Usual</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="113"/>
 							<ChildItems>
@@ -156,8 +155,6 @@
 													<v8:content>Группа состояние лево</v8:content>
 												</v8:item>
 											</ToolTip>
-											<Width>45</Width>
-											<HorizontalStretch>false</HorizontalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
@@ -172,26 +169,29 @@
 															<v8:content>Конфигурация</v8:content>
 														</v8:item>
 													</Title>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<EditMode>EnterOnInput</EditMode>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="КонфигурацияКонтекстноеМеню" id="41"/>
 													<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="42"/>
 												</LabelField>
 												<LabelField name="Состояние" id="136">
 													<DataPath>Состояние</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<Width>10</Width>
 													<MaxWidth>10</MaxWidth>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="СостояниеКонтекстноеМеню" id="137"/>
 													<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="138"/>
 												</LabelField>
 												<LabelField name="ДатаСоздания" id="133">
 													<DataPath>Объект.ДатаСоздания</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<Format>
 														<v8:item>
@@ -199,13 +199,14 @@
 															<v8:content>ДФ=dd.MM.yyyy</v8:content>
 														</v8:item>
 													</Format>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="134"/>
 													<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="135"/>
 												</LabelField>
 												<LabelField name="ДатаПоследнегоИспользования" id="130">
 													<DataPath>ДатаПоследнегоИспользования</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<Format>
 														<v8:item>
@@ -213,13 +214,14 @@
 															<v8:content>ДФ='дд.ММ.гггг (ЧЧ:мм)'</v8:content>
 														</v8:item>
 													</Format>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ДатаПоследнегоИспользованияКонтекстноеМеню" id="131"/>
 													<ExtendedTooltip name="ДатаПоследнегоИспользованияРасширеннаяПодсказка" id="132"/>
 												</LabelField>
 												<LabelField name="БлокировкаРегламентныхЗаданий" id="183">
 													<DataPath>БлокировкаРегламентныхЗаданий</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<Format>
 														<v8:item>
@@ -227,21 +229,23 @@
 															<v8:content>БЛ=Выключены; БИ=Включены</v8:content>
 														</v8:item>
 													</Format>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="БлокировкаРегламентныхЗаданийКонтекстноеМеню" id="184"/>
 													<ExtendedTooltip name="БлокировкаРегламентныхЗаданийРасширеннаяПодсказка" id="185"/>
 												</LabelField>
 												<LabelField name="ОбъемБазы" id="230">
 													<DataPath>ОбъемБазы</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ОбъемБазыКонтекстноеМеню" id="231"/>
 													<ExtendedTooltip name="ОбъемБазыРасширеннаяПодсказка" id="232"/>
 												</LabelField>
 												<LabelField name="ПоследнийБэкап" id="233">
 													<DataPath>ПоследнийБэкап</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<Format>
 														<v8:item>
@@ -249,7 +253,7 @@
 															<v8:content>ДФ=dd.MM.yyyy</v8:content>
 														</v8:item>
 													</Format>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ПоследнийБэкапКонтекстноеМеню" id="234"/>
 													<ExtendedTooltip name="ПоследнийБэкапРасширеннаяПодсказка" id="235"/>
 												</LabelField>
@@ -268,8 +272,6 @@
 													<v8:content>Группа состояние право</v8:content>
 												</v8:item>
 											</ToolTip>
-											<Width>45</Width>
-											<HorizontalStretch>false</HorizontalStretch>
 											<Group>Vertical</Group>
 											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
@@ -278,36 +280,40 @@
 											<ChildItems>
 												<LabelField name="НазначениеИБ" id="7">
 													<DataPath>Объект.Назначение</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<EditMode>EnterOnInput</EditMode>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="НазначениеИБКонтекстноеМеню" id="8"/>
 													<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="9"/>
 												</LabelField>
 												<LabelField name="Ответственный" id="19">
 													<DataPath>Объект.Ответственный</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<EditMode>EnterOnInput</EditMode>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ОтветственныйКонтекстноеМеню" id="20"/>
 													<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="21"/>
 												</LabelField>
 												<LabelField name="Проект" id="37">
 													<DataPath>Объект.Проект</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<EditMode>EnterOnInput</EditMode>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ПроектКонтекстноеМеню" id="38"/>
 													<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="39"/>
 												</LabelField>
 												<LabelField name="ВебСервер" id="148">
 													<DataPath>Объект.ВебСервер</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ВебСерверКонтекстноеМеню" id="149"/>
 													<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="150"/>
 												</LabelField>
@@ -319,17 +325,19 @@
 															<v8:content>Хранилище</v8:content>
 														</v8:item>
 													</Title>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<EditMode>EnterOnInput</EditMode>
 													<Hiperlink>true</Hiperlink>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ХранилищеКонфигурацииКонтекстноеМеню" id="44"/>
 													<ExtendedTooltip name="ХранилищеКонфигурацииРасширеннаяПодсказка" id="45"/>
 												</LabelField>
 												<LabelField name="СистемаВзаимодействия" id="186">
 													<DataPath>СистемаВзаимодействия</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
 													<Format>
 														<v8:item>
@@ -337,15 +345,16 @@
 															<v8:content>БЛ=Отключена; БИ=Подключена</v8:content>
 														</v8:item>
 													</Format>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="СистемаВзаимодействияКонтекстноеМеню" id="187"/>
 													<ExtendedTooltip name="СистемаВзаимодействияРасширеннаяПодсказка" id="188"/>
 												</LabelField>
 												<LabelField name="ЖурналРегистрации" id="159">
 													<DataPath>ЖурналРегистрации</DataPath>
-													<TitleFont ref="style:NormalTextFont" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
-													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ЖурналРегистрацииКонтекстноеМеню" id="160"/>
 													<ExtendedTooltip name="ЖурналРегистрацииРасширеннаяПодсказка" id="161"/>
 												</LabelField>
@@ -387,8 +396,6 @@
 											<v8:content>Группа кластер</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Width>45</Width>
-									<HorizontalStretch>false</HorizontalStretch>
 									<Group>Vertical</Group>
 									<Behavior>Usual</Behavior>
 									<ControlRepresentation>Picture</ControlRepresentation>
@@ -448,8 +455,6 @@
 											<v8:content>Группа СУБД</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Width>45</Width>
-									<HorizontalStretch>false</HorizontalStretch>
 									<Group>Vertical</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
