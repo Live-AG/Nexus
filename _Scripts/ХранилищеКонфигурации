@@ -1,0 +1,4 @@
+/ConfigurationRepositoryReport
+
+"C:\Program Files\1cv8\8.3.20.1674\bin\1cv8.exe" DESIGNER /S"lng-srv-1c-uh\gnph_uh_test_oko" /N"Jenkins" /P"123" /ConfigurationRepositoryF "tcp://spb-srv-1crepo.spb.gen.int:5542/uh_oko" /ConfigurationRepositoryReport "C:\Temp1c\Report.mxl" /ConfigurationRepositoryN "Jenkins" /ConfigurationRepositoryP "123" -force /DisableStartupDialogs /DisableStartupMessages /Out "C:\Temp1c\Log_3_1_16_11.txt"
+

@@ -121,6 +121,7 @@
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
 							<VerticalSpacing>OneAndHalf</VerticalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="113"/>
 							<ChildItems>
@@ -358,6 +359,7 @@
 							</ToolTip>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаПодключениеРасширеннаяПодсказка" id="145"/>
 							<ChildItems>
@@ -495,7 +497,6 @@
 							<VerticalScrollBar>false</VerticalScrollBar>
 							<HorizontalScrollBar>false</HorizontalScrollBar>
 							<SelectionShowMode>DontShow</SelectionShowMode>
-							<PointerType>Regular</PointerType>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<ContextMenu name="СводнаяИнформацияКонтекстноеМеню" id="224"/>
 							<ExtendedTooltip name="СводнаяИнформацияРасширеннаяПодсказка" id="225"/>

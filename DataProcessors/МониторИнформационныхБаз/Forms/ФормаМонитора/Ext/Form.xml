@@ -133,6 +133,9 @@
 													</Title>
 													<ContextMenu name="ДекорацияКластерыКонтекстноеМеню" id="145"/>
 													<ExtendedTooltip name="ДекорацияКластерыРасширеннаяПодсказка" id="146"/>
+													<Events>
+														<Event name="Click">ДобавитьКластер</Event>
+													</Events>
 												</LabelDecoration>
 												<Button name="ДобавитьКластер" id="149">
 													<Type>Hyperlink</Type>
@@ -153,8 +156,6 @@
 											<ChangeRowSet>false</ChangeRowSet>
 											<ChangeRowOrder>false</ChangeRowOrder>
 											<Width>12</Width>
-											<Height>2</Height>
-											<HeightControlVariant>UseContentHeight</HeightControlVariant>
 											<RowSelectionMode>Row</RowSelectionMode>
 											<Header>false</Header>
 											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
@@ -1042,6 +1043,7 @@
 					<v8:content>Добавить кластер</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>ДобавитьКластер</Action>
 		</Command>
 		<Command name="Тест_ПересоздатьКластер" id="4">
 			<Title>
