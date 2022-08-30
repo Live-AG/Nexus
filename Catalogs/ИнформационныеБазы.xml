@@ -1086,8 +1086,8 @@
 			<Form>ФормаЗапускаПриложения</Form>
 			<Form>ФормаДополнительныхПараметровЗапуска</Form>
 			<Form>ФормаСоединений</Form>
-			<Form>ФормаДействия</Form>
-			<Template>МакетСводнойИнформации</Template>
+			<Form>ФормаУправление</Form>
+			<Template>МакетПоказателей</Template>
 			<Command uuid="41e9cf92-7865-4b9f-9d33-42df3adc8a22">
 				<Properties>
 					<Name>ЗапуститьПредприятие</Name>
@@ -1188,11 +1188,11 @@
 			</Command>
 			<Command uuid="1c0bd0c2-53f8-43ad-95b1-3c78c9bd9850">
 				<Properties>
-					<Name>Действия</Name>
+					<Name>Управление</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Действия</v8:content>
+							<v8:content>Управление</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
