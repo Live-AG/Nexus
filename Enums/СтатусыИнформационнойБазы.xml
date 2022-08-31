@@ -38,7 +38,7 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="3255438e-9200-453c-93a5-60c695522be7">
+			<EnumValue uuid="007399e0-a3e3-4b37-a34f-ed7af3c95e30">
 				<Properties>
 					<Name>ВПодготовке</Name>
 					<Synonym>
@@ -50,37 +50,25 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="007399e0-a3e3-4b37-a34f-ed7af3c95e30">
+			<EnumValue uuid="10569923-87d2-4790-ab8f-09bb64900b12">
 				<Properties>
-					<Name>Зарегистрирована</Name>
+					<Name>Отключена</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Зарегистрирована</v8:content>
+							<v8:content>Отключена</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="9ac26aea-0b64-4ef2-9530-3d6411e344a1">
+			<EnumValue uuid="a8a2950b-7938-4aa4-ad6c-c6314bb581f5">
 				<Properties>
-					<Name>Подключена</Name>
+					<Name>Активна</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Подключена</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="5665ae80-9c9c-455a-8f52-7de292fe00d4">
-				<Properties>
-					<Name>Заблокирована</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Заблокирована</v8:content>
+							<v8:content>Активна</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
