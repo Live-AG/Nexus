@@ -185,7 +185,7 @@
 											<ExtendedTooltip name="ГруппаСостояниеЛевоРасширеннаяПодсказка" id="220"/>
 											<ChildItems>
 												<LabelField name="Конфигурация" id="40">
-													<DataPath>Объект.ВерсияКонфигурации</DataPath>
+													<DataPath>Конфигурация</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -201,13 +201,17 @@
 															<v8:content>&lt;Заполнить подсказку&gt;</v8:content>
 														</v8:item>
 													</ToolTip>
+													<VerticalAlign>Bottom</VerticalAlign>
 													<EditMode>EnterOnInput</EditMode>
 													<HorizontalStretch>true</HorizontalStretch>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="КонфигурацияКонтекстноеМеню" id="41"/>
 													<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="42"/>
+													<Events>
+														<Event name="Click">КонфигурацияНажатие</Event>
+													</Events>
 												</LabelField>
 												<LabelField name="ДатаСоздания" id="299">
 													<DataPath>Объект.ДатаСоздания</DataPath>
@@ -228,7 +232,7 @@
 													</Format>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="300"/>
 													<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="301"/>
 												</LabelField>
@@ -252,7 +256,7 @@
 													</Format>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="ИспользуетсяПоКонтекстноеМеню" id="134"/>
 													<ExtendedTooltip name="ИспользуетсяПоРасширеннаяПодсказка" id="135"/>
 												</LabelField>
@@ -269,7 +273,7 @@
 													</ToolTip>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="ОбъемБазыКонтекстноеМеню" id="231"/>
 													<ExtendedTooltip name="ОбъемБазыРасширеннаяПодсказка" id="232"/>
 												</LabelField>
@@ -287,7 +291,7 @@
 													<HorizontalAlign>Left</HorizontalAlign>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="КоличествоАктивныхСеансовКонтекстноеМеню" id="339"/>
 													<ExtendedTooltip name="КоличествоАктивныхСеансовРасширеннаяПодсказка" id="340"/>
 												</LabelField>
@@ -378,7 +382,7 @@
 													<EditMode>EnterOnInput</EditMode>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="НазначениеИБКонтекстноеМеню" id="8"/>
 													<ExtendedTooltip name="НазначениеИБРасширеннаяПодсказка" id="9"/>
 												</LabelField>
@@ -396,13 +400,12 @@
 													<EditMode>EnterOnInput</EditMode>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="ОтветственныйКонтекстноеМеню" id="20"/>
 													<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="21"/>
 												</LabelField>
 												<LabelField name="Проект" id="37">
 													<DataPath>Объект.Проект</DataPath>
-													<Enabled>false</Enabled>
 													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
 													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<TitleLocation>Top</TitleLocation>
@@ -415,7 +418,7 @@
 													<EditMode>EnterOnInput</EditMode>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="ПроектКонтекстноеМеню" id="38"/>
 													<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="39"/>
 												</LabelField>
@@ -432,7 +435,7 @@
 													</ToolTip>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="ВебСерверКонтекстноеМеню" id="149"/>
 													<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="150"/>
 												</LabelField>
@@ -456,7 +459,7 @@
 													<EditMode>EnterOnInput</EditMode>
 													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 													<ContextMenu name="ХранилищеКонфигурацииКонтекстноеМеню" id="44"/>
 													<ExtendedTooltip name="ХранилищеКонфигурацииРасширеннаяПодсказка" id="45"/>
 												</LabelField>
@@ -679,23 +682,20 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+						<LabelDecoration name="ДекорацияОтступСправа" id="341">
+							<Enabled>false</Enabled>
+							<Width>1</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>    </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОтступСправаКонтекстноеМеню" id="342"/>
+							<ExtendedTooltip name="ДекорацияОтступСправаРасширеннаяПодсказка" id="343"/>
+						</LabelDecoration>
 					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="ГруппаДинамикаАктивности" id="228">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа динамика активности</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа динамика активности</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Behavior>Usual</Behavior>
-					<ExtendedTooltip name="ГруппаДинамикаАктивностиРасширеннаяПодсказка" id="229"/>
 				</UsualGroup>
 				<SpreadSheetDocumentField name="СводнаяИнформация" id="223">
 					<DataPath>СводнаяИнформация</DataPath>
@@ -704,7 +704,6 @@
 					<VerticalScrollBar>false</VerticalScrollBar>
 					<HorizontalScrollBar>false</HorizontalScrollBar>
 					<SelectionShowMode>DontShow</SelectionShowMode>
-					<PointerType>Regular</PointerType>
 					<BorderColor>style:FormBackColor</BorderColor>
 					<ContextMenu name="СводнаяИнформацияКонтекстноеМеню" id="224">
 						<Autofill>false</Autofill>
@@ -963,6 +962,43 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="Конфигурация" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Конфигурация</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ВерсияКонфигурации</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветПустойГиперссылки</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:ЦветПустойГиперссылки</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="КомандаРедактировать" id="1">

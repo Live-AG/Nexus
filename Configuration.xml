@@ -1392,6 +1392,7 @@
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
 			<InformationRegister>ТекущиеЗаданияОбъектов</InformationRegister>
+			<InformationRegister>СтатистикаИспользованияИнформационныхБаз</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>КонтекстВыполненияСкрипта</ChartOfCharacteristicTypes>
 		</ChildObjects>
