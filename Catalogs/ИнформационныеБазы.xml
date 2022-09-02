@@ -1131,6 +1131,7 @@
 			<Form>ФормаСоединений</Form>
 			<Form>ФормаУправление</Form>
 			<Template>МакетПоказателей</Template>
+			<Template>МакетКомпановкиДиаграммыПоказателей</Template>
 			<Command uuid="41e9cf92-7865-4b9f-9d33-42df3adc8a22">
 				<Properties>
 					<Name>ЗапуститьПредприятие</Name>

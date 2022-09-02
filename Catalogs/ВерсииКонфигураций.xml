@@ -305,7 +305,7 @@
 			<DefaultObjectForm/>
 			<DefaultFolderForm/>
 			<DefaultListForm>Catalog.ВерсииКонфигураций.Form.ФормаСписка</DefaultListForm>
-			<DefaultChoiceForm/>
+			<DefaultChoiceForm>Catalog.ВерсииКонфигураций.Form.ФормаВыбора</DefaultChoiceForm>
 			<DefaultFolderChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryFolderForm/>
@@ -330,6 +330,7 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаСписка</Form>
+			<Form>ФормаВыбора</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
