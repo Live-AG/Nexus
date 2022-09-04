@@ -498,8 +498,8 @@
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаДополнительныхПараметровЗапуска.Form" id="72c37715-2cfd-464e-a590-b7a8b011ddf8.0" configVersion="9a406d530f95a0458a09d9e6ef621d8000000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаЗапускаПриложения" id="2dbd65aa-e2e2-4fe7-af65-174663e8dc42" configVersion="53436d2b70bf2b4191707de081da72f400000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаЗапускаПриложения.Form" id="2dbd65aa-e2e2-4fe7-af65-174663e8dc42.0" configVersion="af3c6453c7d5ac458008d7b1a26ee75d00000000"/>
-		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра" id="2f521524-4858-4d61-a789-0803b6953def" configVersion="42d7839a3f426d4ca36e88cb30b37b2500000000"/>
-		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра.Form" id="2f521524-4858-4d61-a789-0803b6953def.0" configVersion="8b5d41058f397148a57deec3d3776eb000000000"/>
+		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра" id="2f521524-4858-4d61-a789-0803b6953def" configVersion="1fd77b90bbc2e54282766fdcbba43ff700000000"/>
+		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра.Form" id="2f521524-4858-4d61-a789-0803b6953def.0" configVersion="ccfa199bc1962b4ab873459b15d0523400000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСоединений" id="4b04e1d5-df46-4b89-80b7-cab73834a770" configVersion="e910a18e81101242bc153d623fd8869f00000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСоединений.Form" id="4b04e1d5-df46-4b89-80b7-cab73834a770.0" configVersion="fe0066fee3a91d44b3a40051687062f200000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСписка" id="b5eff2fb-7e25-4441-ae15-c3a00ca0aebc" configVersion="53ca312454613144986de71bf9ab835900000000"/>
@@ -1556,8 +1556,8 @@
 		<Metadata name="CommonForm.ФормаПоиска" id="61789ea5-aad2-4b3b-a1c7-3ff7409379eb" configVersion="b68bd5c4f4c3864db0c0128a17b4f65c00000000"/>
 		<Metadata name="CommonForm.ФормаПоиска.Form" id="61789ea5-aad2-4b3b-a1c7-3ff7409379eb.0" configVersion="644c47cef70ece49b16c336b6feb11ce00000000"/>
 		<Metadata name="CommonForm.ФормаПоиска.Help" id="61789ea5-aad2-4b3b-a1c7-3ff7409379eb.1" configVersion="a20e05567478c948ab7a2c0774fc23be00000000"/>
-		<Metadata name="CommonModule.АдминистрированиеИнформационныхБаз" id="3e665db9-cb8a-495c-81d5-1b47cab894d0" configVersion="28d23438a2ff3b4f8675a0bd7693cb5c00000000"/>
-		<Metadata name="CommonModule.АдминистрированиеИнформационныхБаз.Module" id="3e665db9-cb8a-495c-81d5-1b47cab894d0.0" configVersion="aecd5bf77acce8439d91694b644791bd00000000"/>
+		<Metadata name="CommonModule.АдминистрированиеИнформационныхБаз" id="3e665db9-cb8a-495c-81d5-1b47cab894d0" configVersion="79d79ecc244d9a44a9c6352b09f43b3800000000"/>
+		<Metadata name="CommonModule.АдминистрированиеИнформационныхБаз.Module" id="3e665db9-cb8a-495c-81d5-1b47cab894d0.0" configVersion="b8af7df4313ce74c90887caf48de8df300000000"/>
 		<Metadata name="CommonModule.АдминистрированиеКластера" id="fa548f02-82e0-4897-89e8-0618ebf16919" configVersion="bb6c219e0c02754dafa6180f7e9806ca00000000"/>
 		<Metadata name="CommonModule.АдминистрированиеКластера.Module" id="fa548f02-82e0-4897-89e8-0618ebf16919.0" configVersion="7577699091321d4b8fd0ceb99acb131b00000000"/>
 		<Metadata name="CommonModule.АдминистрированиеКластераCOM" id="8c28a5b0-517f-48fe-9bde-5e611c319413" configVersion="ed467c5a7ef90046b4e24c40c12abb8700000000"/>

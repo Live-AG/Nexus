@@ -1028,6 +1028,7 @@
 				<xr:Ref>StdPicture.Setting</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
+			<Action>КомандаРедактировать</Action>
 		</Command>
 		<Command name="Команда1" id="2"/>
 	</Commands>
