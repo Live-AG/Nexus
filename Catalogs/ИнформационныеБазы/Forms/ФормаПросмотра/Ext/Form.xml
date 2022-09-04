@@ -701,14 +701,24 @@
 					<DataPath>СводнаяИнформация</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<TitleLocation>None</TitleLocation>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<MaxWidth>150</MaxWidth>
 					<VerticalScrollBar>false</VerticalScrollBar>
 					<HorizontalScrollBar>false</HorizontalScrollBar>
 					<SelectionShowMode>DontShow</SelectionShowMode>
+					<DrawingSelectionShowMode>DontShow</DrawingSelectionShowMode>
 					<BorderColor>style:FormBackColor</BorderColor>
 					<ContextMenu name="СводнаяИнформацияКонтекстноеМеню" id="224">
 						<Autofill>false</Autofill>
 					</ContextMenu>
-					<ExtendedTooltip name="СводнаяИнформацияРасширеннаяПодсказка" id="225"/>
+					<ExtendedTooltip name="СводнаяИнформацияРасширеннаяПодсказка" id="225">
+						<Title formatted="true">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>График отображает количество активных сеансом на момент времени</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
 				</SpreadSheetDocumentField>
 			</ChildItems>
 		</UsualGroup>

@@ -9,18 +9,55 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоАктивныхСеансов</dataPath>
 			<field>КоличествоАктивныхСеансов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активные сеансы</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоСпящихСеансов</dataPath>
 			<field>КоличествоСпящихСеансов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Спящие сеансы</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоФоновыхЗаданий</dataPath>
 			<field>КоличествоФоновыхЗаданий</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фоновых задания</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Период</dataPath>
 			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Шрифт</dcscor:parameter>
+					<dcscor:value xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ='dd.MM.yy (HH:mm)'</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
@@ -29,24 +66,35 @@
 	СтатистикаИспользованияИнформационныхБаз.КоличествоФоновыхЗаданий КАК КоличествоФоновыхЗаданий,
 	СтатистикаИспользованияИнформационныхБаз.Период КАК Период
 ИЗ
-	РегистрСведений.СтатистикаИспользованияИнформационныхБаз КАК СтатистикаИспользованияИнформационныхБаз</query>
+	РегистрСведений.СтатистикаИспользованияИнформационныхБаз КАК СтатистикаИспользованияИнформационныхБаз
+ГДЕ
+	СтатистикаИспользованияИнформационныхБаз.ИнформационнаяБаза = &amp;ИнформационнаяБаза</query>
 	</dataSet>
+	<totalField>
+		<dataPath>КоличествоАктивныхСеансов</dataPath>
+		<expression>Сумма(КоличествоАктивныхСеансов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоСпящихСеансов</dataPath>
+		<expression>Сумма(КоличествоСпящихСеансов)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоФоновыхЗаданий</dataPath>
+		<expression>Сумма(КоличествоФоновыхЗаданий)</expression>
+	</totalField>
 	<parameter>
-		<name>Период</name>
+		<name>ИнформационнаяБаза</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Период</v8:content>
+				<v8:content>Информационная база</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ИнформационныеБазы</v8:Type>
 		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>false</useRestriction>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -54,29 +102,21 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ПогруженныйОбъем</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Погружено</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
+					<dcsset:field>КоличествоАктивныхСеансов</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ПлановыйОбъем</dcsset:field>
-					<dcsset:lwsTitle>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Каргоплан</v8:content>
-						</v8:item>
-					</dcsset:lwsTitle>
+					<dcsset:field>КоличествоСпящихСеансов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоФоновыхЗаданий</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
-					<dcscor:value xsi:type="v8ui:ChartType">Bar</dcscor:value>
+					<dcscor:value xsi:type="v8ui:ChartType">Area</dcscor:value>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
 						<dcscor:parameter>ТипДиаграммы.ВидПодписей</dcscor:parameter>
 						<dcscor:value xsi:type="v8ui:ChartLabelType">SeriesValue</dcscor:value>
 					</dcscor:item>
@@ -87,7 +127,7 @@
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ТипДиаграммы.РасположениеЛегенды</dcscor:parameter>
-						<dcscor:value xsi:type="dcsset:DataCompositionChartLegendPlacement">None</dcscor:value>
+						<dcscor:value xsi:type="dcsset:DataCompositionChartLegendPlacement">Bottom</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:use>false</dcscor:use>
@@ -95,14 +135,21 @@
 						<dcscor:value xsi:type="dcsset:DataCompositionResourcesPlacementInChart">Points</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:use>false</dcscor:use>
 						<dcscor:parameter>ТипДиаграммы.РежимСглаживания</dcscor:parameter>
 						<dcscor:value xmlns:d7p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d7p1:ChartSplineMode">SmoothCurve</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы.НатяжениеСглаживания</dcscor:parameter>
+						<dcscor:value xsi:type="xs:decimal">50</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:use>false</dcscor:use>
 						<dcscor:parameter>ТипДиаграммы.РежимПолупрозрачности</dcscor:parameter>
 						<dcscor:value xmlns:d7p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d7p1:ChartSemitransparencyMode">Use</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы.ОсьЗначений</dcscor:parameter>
+						<dcscor:value xmlns:d7p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d7p1:ChartAxis"/>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ТипДиаграммы.ИсточникЗначенийОсиТочек</dcscor:parameter>
@@ -111,6 +158,49 @@
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ТипДиаграммы.СерияНаОсиТочек</dcscor:parameter>
 						<dcscor:value xsi:type="dcscor:Field"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы.ШкалаТочек</dcscor:parameter>
+						<dcscor:value xmlns:d7p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d7p1:ChartScale">
+							<d7p1:titleArea>
+								<d7p1:font kind="AutoFont"/>
+								<d7p1:textColor>auto</d7p1:textColor>
+								<d7p1:backColor>auto</d7p1:backColor>
+								<d7p1:border width="1">
+									<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+								</d7p1:border>
+								<d7p1:borderColor>auto</d7p1:borderColor>
+							</d7p1:titleArea>
+							<d7p1:labelFont ref="style:TextFont" height="8" kind="StyleItem"/>
+							<d7p1:labelColor>style:ЦветПустойГиперссылки</d7p1:labelColor>
+							<d7p1:labelFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='dd.MM.yy (HH:mm)'</v8:content>
+								</v8:item>
+							</d7p1:labelFormat>
+							<d7p1:scaleStep>5</d7p1:scaleStep>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы.ШкалаЗначений</dcscor:parameter>
+						<dcscor:value xmlns:d7p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d7p1:ChartScale">
+							<d7p1:titleArea>
+								<d7p1:font kind="AutoFont"/>
+								<d7p1:textColor>auto</d7p1:textColor>
+								<d7p1:backColor>auto</d7p1:backColor>
+								<d7p1:border width="1">
+									<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+								</d7p1:border>
+								<d7p1:borderColor>auto</d7p1:borderColor>
+							</d7p1:titleArea>
+							<d7p1:gridLine width="1" gap="false">
+								<v8ui:style xsi:type="v8ui:ChartLineType">Dotted</v8ui:style>
+							</d7p1:gridLine>
+							<d7p1:labelFont ref="style:TextFont" height="8" kind="StyleItem"/>
+							<d7p1:labelColor>style:ЦветПустойГиперссылки</d7p1:labelColor>
+							<d7p1:scaleStep>1</d7p1:scaleStep>
+						</dcscor:value>
 					</dcscor:item>
 					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 						<dcscor:parameter>ТипДиаграммы.ОписаниеПалитрыЦветов</dcscor:parameter>
@@ -132,9 +222,9 @@
 				<dcsset:point>
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Судно</dcsset:field>
+							<dcsset:field>Период</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionType>Hour</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>

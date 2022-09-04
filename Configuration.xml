@@ -974,6 +974,7 @@
 			<ScheduledJob>СлияниеИндексаППД</ScheduledJob>
 			<ScheduledJob>УдалениеПомеченных</ScheduledJob>
 			<ScheduledJob>УдалениеУстаревшихПараметровРаботыВерсийРасширений</ScheduledJob>
+			<ScheduledJob>СборДанныхИспользованияИБ</ScheduledJob>
 			<SettingsStorage>ХранилищеВариантовОтчетов</SettingsStorage>
 			<FunctionalOption>ВариантыВерсионированияОбъектов</FunctionalOption>
 			<FunctionalOption>ИспользоватьВерсионированиеОбъекта</FunctionalOption>
