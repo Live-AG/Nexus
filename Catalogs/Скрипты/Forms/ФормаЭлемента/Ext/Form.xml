@@ -119,6 +119,7 @@
 					<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="70"/>
 					<ChildItems>
 						<Table name="КонтекстВыполнения" id="47">
+							<Representation>List</Representation>
 							<CommandBarLocation>None</CommandBarLocation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
@@ -132,7 +133,7 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.КонтекстВыполнения</DataPath>
+							<DataPath>КонтекстВыполнения</DataPath>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
@@ -166,20 +167,18 @@
 								<ExtendedTooltip name="КонтекстВыполненияУправлениеПоискомРасширеннаяПодсказка" id="59"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<CheckBoxField name="КонтекстВыполненияИспользование" id="63">
-									<DataPath>Объект.КонтекстВыполнения.Использование</DataPath>
+								<CheckBoxField name="КонтекстВыполненияИспользование" id="71">
+									<DataPath>КонтекстВыполнения.Использование</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ShowInHeader>false</ShowInHeader>
-									<ShowInFooter>false</ShowInFooter>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="КонтекстВыполненияИспользованиеКонтекстноеМеню" id="64"/>
-									<ExtendedTooltip name="КонтекстВыполненияИспользованиеРасширеннаяПодсказка" id="65"/>
+									<ContextMenu name="КонтекстВыполненияИспользованиеКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="КонтекстВыполненияИспользованиеРасширеннаяПодсказка" id="73"/>
 								</CheckBoxField>
-								<InputField name="КонтекстВыполненияЭлементКонтекста" id="66">
-									<DataPath>Объект.КонтекстВыполнения.ЭлементКонтекста</DataPath>
+								<InputField name="КонтекстВыполненияЭлементКонтекста" id="74">
+									<DataPath>КонтекстВыполнения.ЭлементКонтекста</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="КонтекстВыполненияЭлементКонтекстаКонтекстноеМеню" id="67"/>
-									<ExtendedTooltip name="КонтекстВыполненияЭлементКонтекстаРасширеннаяПодсказка" id="68"/>
+									<ContextMenu name="КонтекстВыполненияЭлементКонтекстаКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="КонтекстВыполненияЭлементКонтекстаРасширеннаяПодсказка" id="76"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -288,6 +287,41 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КонтекстВыполнения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контекст выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Использование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭлементКонтекста" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент контекста</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КонтекстВыполненияСкрипта</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>

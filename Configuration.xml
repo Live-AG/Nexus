@@ -906,6 +906,7 @@
 			<CommonModule>АдминистрированиеИнформационныхБаз</CommonModule>
 			<CommonModule>АдминистрированиеСерверов</CommonModule>
 			<CommonModule>РегламентныеЗаданияПолученияДанных</CommonModule>
+			<CommonModule>РаботаСоСкриптамиСервер</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>
