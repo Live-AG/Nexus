@@ -152,7 +152,6 @@
 										<Table name="ТаблицаЭлементовКластера" id="1">
 											<Representation>List</Representation>
 											<CommandBarLocation>None</CommandBarLocation>
-											<ReadOnly>true</ReadOnly>
 											<ChangeRowSet>false</ChangeRowSet>
 											<ChangeRowOrder>false</ChangeRowOrder>
 											<Width>12</Width>
@@ -290,7 +289,6 @@
 										<Table name="ТаблицаПроектов" id="84">
 											<Representation>List</Representation>
 											<CommandBarLocation>None</CommandBarLocation>
-											<ReadOnly>true</ReadOnly>
 											<ChangeRowSet>false</ChangeRowSet>
 											<ChangeRowOrder>false</ChangeRowOrder>
 											<RowSelectionMode>Row</RowSelectionMode>

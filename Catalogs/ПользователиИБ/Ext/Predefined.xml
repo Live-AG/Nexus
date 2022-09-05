@@ -7,9 +7,9 @@
 		<IsFolder>false</IsFolder>
 	</Item>
 	<Item id="f7f7f221-faf0-4bdc-8c3b-5cfd41fa6195">
-		<Name>Суперпользователь</Name>
+		<Name>Администратор</Name>
 		<Code>000000001</Code>
-		<Description>Суперпользователь</Description>
+		<Description>Администратор</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
 </PredefinedData>

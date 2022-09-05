@@ -21,6 +21,7 @@
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
 			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПользователиРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаЛево" id="3">
