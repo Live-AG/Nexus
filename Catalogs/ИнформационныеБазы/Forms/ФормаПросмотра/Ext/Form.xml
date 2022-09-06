@@ -573,6 +573,9 @@
 															<CheckBoxType>Switcher</CheckBoxType>
 															<ContextMenu name="БлокировкаРегламентныхЗаданийКонтекстноеМеню" id="184"/>
 															<ExtendedTooltip name="БлокировкаРегламентныхЗаданийРасширеннаяПодсказка" id="185"/>
+															<Events>
+																<Event name="OnChange">БлокировкаРегламентныхЗаданийПриИзменении</Event>
+															</Events>
 														</CheckBoxField>
 														<LabelDecoration name="ДекорацияФиксацияВысоты_2" id="368">
 															<Enabled>false</Enabled>
