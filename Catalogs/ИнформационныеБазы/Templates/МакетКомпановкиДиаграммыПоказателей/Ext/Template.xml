@@ -68,7 +68,8 @@
 ИЗ
 	РегистрСведений.СтатистикаИспользованияИнформационныхБаз КАК СтатистикаИспользованияИнформационныхБаз
 ГДЕ
-	СтатистикаИспользованияИнформационныхБаз.ИнформационнаяБаза = &amp;ИнформационнаяБаза</query>
+	СтатистикаИспользованияИнформационныхБаз.ИнформационнаяБаза = &amp;ИнформационнаяБаза
+	И СтатистикаИспользованияИнформационныхБаз.Период МЕЖДУ ДОБАВИТЬКДАТЕ(&amp;Период, ЧАС, -24) И &amp;Период</query>
 	</dataSet>
 	<totalField>
 		<dataPath>КоличествоАктивныхСеансов</dataPath>
@@ -95,6 +96,25 @@
 		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДата()</expression>
+		<availableAsField>false</availableAsField>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -224,7 +244,7 @@
 						<dcsset:item xsi:type="dcsset:GroupItemField">
 							<dcsset:field>Период</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>Hour</dcsset:periodAdditionType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
