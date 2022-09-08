@@ -78,6 +78,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьПроекты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьПроекты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияNexus</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗакрепленныеЭлементы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

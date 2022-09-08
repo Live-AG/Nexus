@@ -1396,6 +1396,7 @@
 			<InformationRegister>УдалитьХранимыеФайлыВерсий</InformationRegister>
 			<InformationRegister>ТекущиеЗаданияОбъектов</InformationRegister>
 			<InformationRegister>СтатистикаИспользованияИнформационныхБаз</InformationRegister>
+			<InformationRegister>ЗакрепленныеЭлементы</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>КонтекстВыполненияСкрипта</ChartOfCharacteristicTypes>
 		</ChildObjects>

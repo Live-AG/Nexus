@@ -245,16 +245,45 @@
 													</ToolTip>
 													<ExtendedTooltip name="ДеревоЭлементовКластераГруппаВертикальнаяРасширеннаяПодсказка" id="72"/>
 													<ChildItems>
-														<InputField name="ТаблицаЭлементовКластераЭлементКластера" id="14">
-															<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
-															<HorizontalAlign>Left</HorizontalAlign>
-															<MaxHeight>2</MaxHeight>
-															<BorderColor>style:FieldBackColor</BorderColor>
-															<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-															<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
-															<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
-															<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
-														</InputField>
+														<ColumnGroup name="ТаблицаЭлементовКластераГруппаЭлемент" id="158">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица элементов кластера группа элемент</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица элементов кластера группа элемент</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ТаблицаЭлементовКластераГруппаЭлементРасширеннаяПодсказка" id="159"/>
+															<ChildItems>
+																<InputField name="ТаблицаЭлементовКластераЭлементКластера" id="14">
+																	<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
+																	<HorizontalAlign>Left</HorizontalAlign>
+																	<MaxHeight>2</MaxHeight>
+																	<BorderColor>style:FieldBackColor</BorderColor>
+																	<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+																	<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
+																	<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
+																	<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
+																</InputField>
+																<PictureField name="ТаблицаЭлементовКластераКартинкаЗакрепить" id="160">
+																	<DataPath>ТаблицаЭлементовКластера.ПолеУпорядочивания</DataPath>
+																	<HorizontalAlign>Right</HorizontalAlign>
+																	<Width>1</Width>
+																	<ValuesPicture>
+																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</ValuesPicture>
+																	<ContextMenu name="ТаблицаЭлементовКластераКартинкаЗакрепитьКонтекстноеМеню" id="161"/>
+																	<ExtendedTooltip name="ТаблицаЭлементовКластераКартинкаЗакрепитьРасширеннаяПодсказка" id="162"/>
+																</PictureField>
+															</ChildItems>
+														</ColumnGroup>
 														<LabelField name="ТаблицаЭлементовКластераОписания" id="68">
 															<DataPath>ТаблицаЭлементовКластера.Описание</DataPath>
 															<EditMode>EnterOnInput</EditMode>
@@ -291,6 +320,7 @@
 											<CommandBarLocation>None</CommandBarLocation>
 											<ChangeRowSet>false</ChangeRowSet>
 											<ChangeRowOrder>false</ChangeRowOrder>
+											<Width>12</Width>
 											<RowSelectionMode>Row</RowSelectionMode>
 											<Header>false</Header>
 											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
@@ -368,12 +398,40 @@
 													</ToolTip>
 													<ExtendedTooltip name="ТаблицаПроектовГруппаВертикальнаяРасширеннаяПодсказка" id="104"/>
 													<ChildItems>
-														<LabelField name="ТаблицаПроектовНаименование" id="97">
-															<DataPath>ТаблицаПроектов.Наименование</DataPath>
-															<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
-															<ContextMenu name="ТаблицаПроектовНаименованиеКонтекстноеМеню" id="98"/>
-															<ExtendedTooltip name="ТаблицаПроектовНаименованиеРасширеннаяПодсказка" id="99"/>
-														</LabelField>
+														<ColumnGroup name="ТаблицаПроектовГруппаЭлемент" id="163">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица проектов группа элемент</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица проектов группа элемент</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="ТаблицаПроектовГруппаЭлементРасширеннаяПодсказка" id="164"/>
+															<ChildItems>
+																<LabelField name="ТаблицаПроектовСсылка" id="168">
+																	<DataPath>ТаблицаПроектов.Ссылка</DataPath>
+																	<ContextMenu name="ТаблицаПроектовСсылкаКонтекстноеМеню" id="169"/>
+																	<ExtendedTooltip name="ТаблицаПроектовСсылкаРасширеннаяПодсказка" id="170"/>
+																</LabelField>
+																<PictureField name="ТаблицаПроектовКартинкаЗакрепить" id="165">
+																	<DataPath>ТаблицаПроектов.ПолеУпорядочивания</DataPath>
+																	<HorizontalAlign>Right</HorizontalAlign>
+																	<Width>1</Width>
+																	<ValuesPicture>
+																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</ValuesPicture>
+																	<ContextMenu name="ТаблицаПроектовКартинкаЗакрепитьКонтекстноеМеню" id="166"/>
+																	<ExtendedTooltip name="ТаблицаПроектовКартинкаЗакрепитьРасширеннаяПодсказка" id="167"/>
+																</PictureField>
+															</ChildItems>
+														</ColumnGroup>
 														<LabelField name="ТаблицаПроектовКонтрагент" id="100">
 															<DataPath>ТаблицаПроектов.Контрагент</DataPath>
 															<TextColor>style:NavigationColor</TextColor>
@@ -548,7 +606,7 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗаголовокИнформационныеБазыРасширеннаяПодсказка" id="152"/>
 									<ChildItems>
-										<LabelDecoration name="ДекорацияКластеры1" id="153">
+										<LabelDecoration name="ДекорацияИнформационныеБазы" id="153">
 											<TextColor>style:AccentColor</TextColor>
 											<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 											<Title formatted="false">
@@ -557,12 +615,12 @@
 													<v8:content>Информационные базы</v8:content>
 												</v8:item>
 											</Title>
-											<ContextMenu name="ДекорацияКластеры1КонтекстноеМеню" id="154"/>
-											<ExtendedTooltip name="ДекорацияКластеры1РасширеннаяПодсказка" id="155"/>
+											<ContextMenu name="ДекорацияИнформационныеБазыКонтекстноеМеню" id="154"/>
+											<ExtendedTooltip name="ДекорацияИнформационныеБазыРасширеннаяПодсказка" id="155"/>
 										</LabelDecoration>
-										<Button name="ДобавитьКластер1" id="156">
+										<Button name="ДобавитьБазу" id="156">
 											<Type>Hyperlink</Type>
-											<CommandName>Form.Command.ДобавитьКластер</CommandName>
+											<CommandName>Form.Command.ДобавитьБазу</CommandName>
 											<TextColor>style:ЦветПустойГиперссылки</TextColor>
 											<Picture>
 												<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
@@ -574,7 +632,7 @@
 													<v8:content>Добавить базу</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="ДобавитьКластер1РасширеннаяПодсказка" id="157"/>
+											<ExtendedTooltip name="ДобавитьБазуРасширеннаяПодсказка" id="157"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
@@ -802,24 +860,45 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
+	ЗакрепленныеЭлементы.ЭлементЗакрепления КАК ЭлементЗакрепления
+ПОМЕСТИТЬ ВТ_ЗакрепленныеЭлементы
+ИЗ
+	РегистрСведений.ЗакрепленныеЭлементы КАК ЗакрепленныеЭлементы
+ГДЕ
+	ЗакрепленныеЭлементы.Пользователь = &amp;ТекущийПользователь
+	И ЗакрепленныеЭлементы.ЭлементЗакрепления ССЫЛКА Справочник.Кластеры1С
+
+ИНДЕКСИРОВАТЬ ПО
+	ЭлементЗакрепления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
 	Кластеры1С.Ссылка КАК ЭлементКластера,
 	Кластеры1С.ВерсияПлатформы КАК ВерсияПлатформы,
 	Кластеры1С.Описание КАК Описание,
 	Кластеры1С.Защищен КАК Защищен,
 	Кластеры1С.Активен КАК Активен,
 	Кластеры1С.ИдентификаторКластера КАК ИдентификаторКластера,
-	
 	ВЫБОР
 		КОГДА ТекущиеЗаданияОбъектов.ИдентификаторЗадания ЕСТЬ NULL
 			ТОГДА 1
 		ИНАЧЕ 0
-	КОНЕЦ КАК ИндексСостояния
+	КОНЕЦ КАК ИндексСостояния,
+	ВЫБОР
+		КОГДА ВТ_ЗакрепленныеЭлементы.ЭлементЗакрепления ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПолеУпорядочивания
 ИЗ
 	Справочник.Кластеры1С КАК Кластеры1С
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТекущиеЗаданияОбъектов КАК ТекущиеЗаданияОбъектов
 		ПО (Кластеры1С.Ссылка = (ВЫРАЗИТЬ(ТекущиеЗаданияОбъектов.Объект КАК Справочник.Кластеры1С)))
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗакрепленныеЭлементы КАК ВТ_ЗакрепленныеЭлементы
+		ПО Кластеры1С.Ссылка = ВТ_ЗакрепленныеЭлементы.ЭлементЗакрепления
 ГДЕ
-	НЕ Кластеры1С.ПометкаУдаления</QueryText>
+	НЕ Кластеры1С.ПометкаУдаления
+</QueryText>
 				<MainTable>Catalog.Кластеры1С</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -827,6 +906,10 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПолеУпорядочивания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
@@ -938,6 +1021,17 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
+	ЗакрепленныеЭлементы.ЭлементЗакрепления КАК ЭлементЗакрепления
+ПОМЕСТИТЬ ВТ_ЗакрепленныеЭлементы
+ИЗ
+	РегистрСведений.ЗакрепленныеЭлементы КАК ЗакрепленныеЭлементы
+ГДЕ
+	ЗакрепленныеЭлементы.Пользователь = &amp;ТекущийПользователь
+	И ЗакрепленныеЭлементы.ЭлементЗакрепления ССЫЛКА Справочник.Проекты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
 	СправочникПроекты.Ссылка КАК Ссылка,
 	СправочникПроекты.ПометкаУдаления КАК ПометкаУдаления,
 	СправочникПроекты.Код КАК Код,
@@ -945,9 +1039,16 @@
 	СправочникПроекты.Предопределенный КАК Предопределенный,
 	СправочникПроекты.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
 	0 КАК ИндексКартинки,
-	СправочникПроекты.Контрагент КАК Контрагент
+	СправочникПроекты.Контрагент КАК Контрагент,
+	ВЫБОР
+		КОГДА ВТ_ЗакрепленныеЭлементы.ЭлементЗакрепления ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ПолеУпорядочивания
 ИЗ
-	Справочник.Проекты КАК СправочникПроекты</QueryText>
+	Справочник.Проекты КАК СправочникПроекты
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗакрепленныеЭлементы КАК ВТ_ЗакрепленныеЭлементы
+		ПО СправочникПроекты.Ссылка = ВТ_ЗакрепленныеЭлементы.ЭлементЗакрепления</QueryText>
 				<MainTable>Catalog.Проекты</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -955,6 +1056,10 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПолеУпорядочивания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
@@ -1075,6 +1180,40 @@
 			<FunctionalOptions>
 				<Item>FunctionalOption.ИспользоватьПроекты</Item>
 			</FunctionalOptions>
+		</Command>
+		<Command name="ДобавитьБазу" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить базу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьБазу</Action>
+		</Command>
+		<Command name="КомандаЗакрепитьКластер" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда закрепить кластер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда закрепить кластер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Закрепить</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗакрепитьКластер</Action>
 		</Command>
 	</Commands>
 </Form>
