@@ -27,16 +27,6 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>КоличествоФоновыхЗаданий</dataPath>
-			<field>КоличествоФоновыхЗаданий</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Фоновых задания</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Период</dataPath>
 			<field>Период</field>
 			<role>
@@ -63,13 +53,12 @@
 		<query>ВЫБРАТЬ
 	СтатистикаИспользованияИнформационныхБаз.КоличествоАктивныхСеансов КАК КоличествоАктивныхСеансов,
 	СтатистикаИспользованияИнформационныхБаз.КоличествоСпящихСеансов КАК КоличествоСпящихСеансов,
-	СтатистикаИспользованияИнформационныхБаз.КоличествоФоновыхЗаданий КАК КоличествоФоновыхЗаданий,
-	СтатистикаИспользованияИнформационныхБаз.Период КАК Период
+	СтатистикаИспользованияИнформационныхБаз.ПериодДанных КАК Период
 ИЗ
 	РегистрСведений.СтатистикаИспользованияИнформационныхБаз КАК СтатистикаИспользованияИнформационныхБаз
 ГДЕ
 	СтатистикаИспользованияИнформационныхБаз.ИнформационнаяБаза = &amp;ИнформационнаяБаза
-	И СтатистикаИспользованияИнформационныхБаз.Период МЕЖДУ ДОБАВИТЬКДАТЕ(&amp;Период, ЧАС, -24) И &amp;Период</query>
+	И СтатистикаИспользованияИнформационныхБаз.ПериодДанных МЕЖДУ ДОБАВИТЬКДАТЕ(&amp;Период, ЧАС, -24) И &amp;Период</query>
 	</dataSet>
 	<totalField>
 		<dataPath>КоличествоАктивныхСеансов</dataPath>
@@ -78,10 +67,6 @@
 	<totalField>
 		<dataPath>КоличествоСпящихСеансов</dataPath>
 		<expression>Сумма(КоличествоСпящихСеансов)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>КоличествоФоновыхЗаданий</dataPath>
-		<expression>Сумма(КоличествоФоновыхЗаданий)</expression>
 	</totalField>
 	<parameter>
 		<name>ИнформационнаяБаза</name>
@@ -126,9 +111,6 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>КоличествоСпящихСеансов</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>КоличествоФоновыхЗаданий</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:outputParameters>

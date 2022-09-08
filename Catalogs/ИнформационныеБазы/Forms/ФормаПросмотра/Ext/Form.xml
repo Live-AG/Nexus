@@ -204,7 +204,6 @@
 													<ExtendedTooltip name="ГруппаКонфигурацияРасширеннаяПодсказка" id="394"/>
 													<ChildItems>
 														<PictureDecoration name="ДекорацияКонфигурация" id="395">
-															<Visible>false</Visible>
 															<Width>2</Width>
 															<Title formatted="false">
 																<v8:item>
@@ -359,17 +358,55 @@
 													<Representation>None</Representation>
 													<ExtendedTooltip name="ГруппаОбъемБазыРасширеннаяПодсказка" id="383"/>
 													<ChildItems>
-														<PictureDecoration name="ДекорацияОбъемБазы" id="384">
-															<Width>2</Width>
-															<GroupVerticalAlign>Center</GroupVerticalAlign>
-															<PictureSize>AutoSize</PictureSize>
-															<Picture>
-																<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																<xr:LoadTransparent>true</xr:LoadTransparent>
-															</Picture>
-															<ContextMenu name="ДекорацияОбъемБазыКонтекстноеМеню" id="385"/>
-															<ExtendedTooltip name="ДекорацияОбъемБазыРасширеннаяПодсказка" id="386"/>
-														</PictureDecoration>
+														<UsualGroup name="ГруппаОбъемБазы_ПолучениеДанных" id="409">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа объем базы получение данных</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа объем базы получение данных</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаОбъемБазы_ПолучениеДанныхРасширеннаяПодсказка" id="410"/>
+															<ChildItems>
+																<PictureDecoration name="ПолучениеДанныхКартинка_1" id="384">
+																	<Width>2</Width>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Получение данных картинка 1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<PictureSize>AutoSize</PictureSize>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПолучениеДанныхКартинка_1КонтекстноеМеню" id="385"/>
+																	<ExtendedTooltip name="ПолучениеДанныхКартинка_1РасширеннаяПодсказка" id="386"/>
+																</PictureDecoration>
+																<LabelDecoration name="ПолучениеДанныхНадпись_1" id="411">
+																	<TextColor>style:ГиперссылкаЦвет</TextColor>
+																	<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Получение данных...</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ПолучениеДанныхНадпись_1КонтекстноеМеню" id="412"/>
+																	<ExtendedTooltip name="ПолучениеДанныхНадпись_1РасширеннаяПодсказка" id="413"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
 														<LabelField name="ОбъемБазы" id="230">
 															<DataPath>ОбъемБазы</DataPath>
 															<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
@@ -421,17 +458,55 @@
 													<Representation>None</Representation>
 													<ExtendedTooltip name="ГруппаКоличествоАктивныхСеансовРасширеннаяПодсказка" id="372"/>
 													<ChildItems>
-														<PictureDecoration name="ДекорацияКоличествоАктивныхСеансов" id="373">
-															<Width>2</Width>
-															<GroupVerticalAlign>Center</GroupVerticalAlign>
-															<PictureSize>AutoSize</PictureSize>
-															<Picture>
-																<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																<xr:LoadTransparent>true</xr:LoadTransparent>
-															</Picture>
-															<ContextMenu name="ДекорацияКоличествоАктивныхСеансовКонтекстноеМеню" id="374"/>
-															<ExtendedTooltip name="ДекорацияКоличествоАктивныхСеансовРасширеннаяПодсказка" id="375"/>
-														</PictureDecoration>
+														<UsualGroup name="ГруппаКоличествоАктивныхСеансов_ПолучениеДанных" id="414">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа объем базы получение данных</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа объем базы получение данных</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаКоличествоАктивныхСеансов_ПолучениеДанныхРасширеннаяПодсказка" id="415"/>
+															<ChildItems>
+																<PictureDecoration name="ПолучениеДанныхКартинка_2" id="416">
+																	<Width>2</Width>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Получение данных картинка 1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<PictureSize>AutoSize</PictureSize>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПолучениеДанныхКартинка_2КонтекстноеМеню" id="417"/>
+																	<ExtendedTooltip name="ПолучениеДанныхКартинка_2РасширеннаяПодсказка" id="418"/>
+																</PictureDecoration>
+																<LabelDecoration name="ПолучениеДанныхНадпись_2" id="419">
+																	<TextColor>style:ГиперссылкаЦвет</TextColor>
+																	<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Получение данных...</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ПолучениеДанныхНадпись_2КонтекстноеМеню" id="420"/>
+																	<ExtendedTooltip name="ПолучениеДанныхНадпись_2РасширеннаяПодсказка" id="421"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
 														<LabelField name="КоличествоАктивныхСеансов" id="338">
 															<DataPath>КоличествоАктивныхСеансов</DataPath>
 															<Title>
@@ -489,17 +564,55 @@
 													<Representation>None</Representation>
 													<ExtendedTooltip name="ГруппаБлокировкаНачалаСеансовРасширеннаяПодсказка" id="322"/>
 													<ChildItems>
-														<PictureDecoration name="ДекорацияБлокировкаНачалаСеансов" id="354">
-															<Width>2</Width>
-															<GroupVerticalAlign>Center</GroupVerticalAlign>
-															<PictureSize>AutoSize</PictureSize>
-															<Picture>
-																<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																<xr:LoadTransparent>true</xr:LoadTransparent>
-															</Picture>
-															<ContextMenu name="ДекорацияБлокировкаНачалаСеансовКонтекстноеМеню" id="355"/>
-															<ExtendedTooltip name="ДекорацияБлокировкаНачалаСеансовРасширеннаяПодсказка" id="356"/>
-														</PictureDecoration>
+														<UsualGroup name="ГруппаБлокировкаНачалаСеансов_ПолучениеДанных" id="422">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа объем базы получение данных</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа объем базы получение данных</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБлокировкаНачалаСеансов_ПолучениеДанныхРасширеннаяПодсказка" id="423"/>
+															<ChildItems>
+																<PictureDecoration name="ПолучениеДанныхКартинка_3" id="424">
+																	<Width>2</Width>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Получение данных картинка 1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<PictureSize>AutoSize</PictureSize>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПолучениеДанныхКартинка_3КонтекстноеМеню" id="425"/>
+																	<ExtendedTooltip name="ПолучениеДанныхКартинка_3РасширеннаяПодсказка" id="426"/>
+																</PictureDecoration>
+																<LabelDecoration name="ПолучениеДанныхНадпись_3" id="427">
+																	<TextColor>style:ГиперссылкаЦвет</TextColor>
+																	<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Получение данных...</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ПолучениеДанныхНадпись_3КонтекстноеМеню" id="428"/>
+																	<ExtendedTooltip name="ПолучениеДанныхНадпись_3РасширеннаяПодсказка" id="429"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
 														<CheckBoxField name="БлокировкаНачалаСеансов" id="335">
 															<DataPath>БлокировкаНачалаСеансов</DataPath>
 															<Title>
@@ -548,17 +661,55 @@
 													<Representation>None</Representation>
 													<ExtendedTooltip name="ГруппаБлокировкаРегламентныхЗаданийРасширеннаяПодсказка" id="361"/>
 													<ChildItems>
-														<PictureDecoration name="ДекорацияБлокировкаРегламентныхЗаданий" id="362">
-															<Width>2</Width>
-															<GroupVerticalAlign>Center</GroupVerticalAlign>
-															<PictureSize>AutoSize</PictureSize>
-															<Picture>
-																<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																<xr:LoadTransparent>true</xr:LoadTransparent>
-															</Picture>
-															<ContextMenu name="ДекорацияБлокировкаРегламентныхЗаданийКонтекстноеМеню" id="363"/>
-															<ExtendedTooltip name="ДекорацияБлокировкаРегламентныхЗаданийРасширеннаяПодсказка" id="364"/>
-														</PictureDecoration>
+														<UsualGroup name="ГруппаБлокировкаРегламентныхЗаданий_ПолучениеДанных" id="430">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа объем базы получение данных</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа объем базы получение данных</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаБлокировкаРегламентныхЗаданий_ПолучениеДанныхРасширеннаяПодсказка" id="431"/>
+															<ChildItems>
+																<PictureDecoration name="ПолучениеДанныхКартинка_4" id="432">
+																	<Width>2</Width>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Получение данных картинка 1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<PictureSize>AutoSize</PictureSize>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ПолучениеДанныхКартинка_4КонтекстноеМеню" id="433"/>
+																	<ExtendedTooltip name="ПолучениеДанныхКартинка_4РасширеннаяПодсказка" id="434"/>
+																</PictureDecoration>
+																<LabelDecoration name="ПолучениеДанныхНадпись_4" id="435">
+																	<TextColor>style:ГиперссылкаЦвет</TextColor>
+																	<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Получение данных...</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ПолучениеДанныхНадпись_4КонтекстноеМеню" id="436"/>
+																	<ExtendedTooltip name="ПолучениеДанныхНадпись_4РасширеннаяПодсказка" id="437"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
 														<CheckBoxField name="БлокировкаРегламентныхЗаданий" id="183">
 															<DataPath>БлокировкаРегламентныхЗаданий</DataPath>
 															<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
@@ -824,6 +975,7 @@
 															<ExtendedTooltip name="ДекорацияАдминистраторПредупреждениеРасширеннаяПодсказка" id="350"/>
 														</PictureDecoration>
 														<LabelDecoration name="ДекорацияАдминистраторНадпись" id="351">
+															<HorizontalStretch>true</HorizontalStretch>
 															<TextColor>style:ЦветПустойГиперссылки</TextColor>
 															<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
 															<Title formatted="false">
@@ -835,6 +987,20 @@
 															<ContextMenu name="ДекорацияАдминистраторНадписьКонтекстноеМеню" id="352"/>
 															<ExtendedTooltip name="ДекорацияАдминистраторНадписьРасширеннаяПодсказка" id="353"/>
 														</LabelDecoration>
+														<PictureDecoration name="Декорация1" id="438">
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<Hyperlink>true</Hyperlink>
+															<PictureSize>ByFontSize</PictureSize>
+															<Picture>
+																<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="Декорация1КонтекстноеМеню" id="439"/>
+															<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="440"/>
+															<Events>
+																<Event name="Click">Декорация1Нажатие</Event>
+															</Events>
+														</PictureDecoration>
 													</ChildItems>
 												</UsualGroup>
 												<LabelDecoration name="Декорация15" id="304">
@@ -902,8 +1068,9 @@
 											<ContextMenu name="Декорация13КонтекстноеМеню" id="291"/>
 											<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="292"/>
 										</LabelDecoration>
-										<LabelField name="ИмяДБ" id="16">
+										<InputField name="ИмяДБ" id="16">
 											<DataPath>Объект.ИмяИБ</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -912,21 +1079,30 @@
 											</Title>
 											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 											<EditMode>EnterOnInput</EditMode>
+											<ChoiceButton>false</ChoiceButton>
+											<OpenButton>false</OpenButton>
 											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<BackColor>web:WhiteSmoke</BackColor>
+											<BorderColor>web:WhiteSmoke</BorderColor>
 											<ContextMenu name="ИмяДБКонтекстноеМеню" id="17"/>
 											<ExtendedTooltip name="ИмяДБРасширеннаяПодсказка" id="18"/>
-										</LabelField>
-										<LabelField name="Кластер1С" id="4">
+										</InputField>
+										<InputField name="Кластер1С" id="4">
 											<DataPath>Объект.Owner</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 											<EditMode>EnterOnInput</EditMode>
-											<Hiperlink>true</Hiperlink>
+											<ChoiceButton>false</ChoiceButton>
+											<OpenButton>false</OpenButton>
 											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<BackColor>web:WhiteSmoke</BackColor>
+											<BorderColor>web:WhiteSmoke</BorderColor>
 											<ContextMenu name="Кластер1СКонтекстноеМеню" id="5"/>
 											<ExtendedTooltip name="Кластер1СРасширеннаяПодсказка" id="6"/>
-										</LabelField>
-										<LabelField name="ОписаниеВКластере" id="162">
+										</InputField>
+										<InputField name="ОписаниеВКластере" id="162">
 											<DataPath>Объект.ОписаниеВКластере</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -934,10 +1110,14 @@
 												</v8:item>
 											</Title>
 											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+											<ChoiceButton>false</ChoiceButton>
+											<OpenButton>false</OpenButton>
 											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<BackColor>web:WhiteSmoke</BackColor>
+											<BorderColor>web:WhiteSmoke</BorderColor>
 											<ContextMenu name="ОписаниеВКластереКонтекстноеМеню" id="163"/>
 											<ExtendedTooltip name="ОписаниеВКластереРасширеннаяПодсказка" id="164"/>
-										</LabelField>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаСУБД" id="146">
@@ -964,24 +1144,33 @@
 											<ContextMenu name="Декорация14КонтекстноеМеню" id="294"/>
 											<ExtendedTooltip name="Декорация14РасширеннаяПодсказка" id="295"/>
 										</LabelDecoration>
-										<LabelField name="БазаДанных" id="13">
+										<InputField name="БазаДанных" id="13">
 											<DataPath>Объект.БазаДанных</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 											<EditMode>EnterOnInput</EditMode>
 											<Width>20</Width>
+											<ChoiceButton>false</ChoiceButton>
+											<OpenButton>false</OpenButton>
 											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<BackColor>web:WhiteSmoke</BackColor>
+											<BorderColor>web:WhiteSmoke</BorderColor>
 											<ContextMenu name="БазаДанныхКонтекстноеМеню" id="14"/>
 											<ExtendedTooltip name="БазаДанныхРасширеннаяПодсказка" id="15"/>
-										</LabelField>
-										<LabelField name="СерверБД" id="10">
+										</InputField>
+										<InputField name="СерверБД" id="10">
 											<DataPath>Объект.СерверБД</DataPath>
+											<ReadOnly>true</ReadOnly>
 											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 											<EditMode>EnterOnInput</EditMode>
-											<Hiperlink>true</Hiperlink>
+											<ChoiceButton>false</ChoiceButton>
+											<OpenButton>false</OpenButton>
 											<TextColor>style:ГиперссылкаЦвет</TextColor>
+											<BackColor>web:WhiteSmoke</BackColor>
+											<BorderColor>web:WhiteSmoke</BorderColor>
 											<ContextMenu name="СерверБДКонтекстноеМеню" id="11"/>
 											<ExtendedTooltip name="СерверБДРасширеннаяПодсказка" id="12"/>
-										</LabelField>
+										</InputField>
 										<LabelField name="СерверБДТипСУБД" id="139">
 											<DataPath>Объект.СерверБД.ТипСУБД</DataPath>
 											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
