@@ -13,9 +13,6 @@ ibcmd infobase config save --data="%tempdir%\fs-data" --db-path="%tempdir%\file-
 
 # Загрузка базы из репозитория
 "C:\Program Files\1cv8\common\1cestart.exe" DESIGNER /F"G:\1C_Bases\Union_3" /N"Администратор" /LoadConfigFromFiles "G:\_Git\Nexus" -NoCheck /UpdateDBCfg /DisableStartupDialogs /DisableStartupMessages
-
-
-
 # Выгрузка базы в репозиторий
 "C:\Program Files\1cv8\common\1cestart.exe" DESIGNER /F"G:\1C_Bases\Union_3" /N"Администратор" /DumpConfigToFiles "G:\_Git\Nexus" -update /DisableStartupDialogs /DisableStartupMessages
 
@@ -24,7 +21,6 @@ ibcmd infobase config save --data="%tempdir%\fs-data" --db-path="%tempdir%\file-
 
 ## Загрузка из репозитория
     "C:\Program Files\1cv8\common\1cestart.exe" DESIGNER /F"G:\1C_Bases\Union_3" /N"Администратор" /LoadConfigFromFiles "G:\_Git\MainBase_Archive\src" -Extension АрхивГазпромСеры -NoCheck /UpdateDBCfg /DisableStartupDialogs /DisableStartupMessages
-    
 ## Выгрузка в репозиторий
 "C:\Program Files\1cv8\common\1cestart.exe" DESIGNER /F"G:\1C_Bases\Union_3" /N"Администратор" /DumpConfigToFiles "G:\_Git\MainBase_Archive\src" -Extension АрхивГазпромСеры -update /DisableStartupDialogs /DisableStartupMessages
 
