@@ -921,6 +921,7 @@
 									<Group>Vertical</Group>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
 									<BackColor>web:WhiteSmoke</BackColor>
 									<ExtendedTooltip name="ГруппаАдминистраторРасширеннаяПодсказка" id="303"/>
 									<ChildItems>
@@ -937,55 +938,42 @@
 													<v8:content>Группа администратор отступ</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>Vertical</Group>
 											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаАдминистраторОтступРасширеннаяПодсказка" id="345"/>
 											<ChildItems>
-												<UsualGroup name="ГруппаАдминистрированиеДекорация" id="346">
+												<UsualGroup name="ГруппаЗаголовокАвторизации" id="446">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Группа администрирование декорация</v8:content>
+															<v8:content>Группа заголовок авторизации</v8:content>
 														</v8:item>
 													</Title>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Группа администрирование декорация</v8:content>
+															<v8:content>Группа заголовок авторизации</v8:content>
 														</v8:item>
 													</ToolTip>
 													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаАдминистрированиеДекорацияРасширеннаяПодсказка" id="347"/>
+													<ExtendedTooltip name="ГруппаЗаголовокАвторизацииРасширеннаяПодсказка" id="447"/>
 													<ChildItems>
-														<PictureDecoration name="ДекорацияАдминистраторПредупреждение" id="348">
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Декорация администратор предупреждение</v8:content>
-																</v8:item>
-															</Title>
-															<Picture>
-																<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
-																<xr:LoadTransparent>true</xr:LoadTransparent>
-															</Picture>
-															<ContextMenu name="ДекорацияАдминистраторПредупреждениеКонтекстноеМеню" id="349"/>
-															<ExtendedTooltip name="ДекорацияАдминистраторПредупреждениеРасширеннаяПодсказка" id="350"/>
-														</PictureDecoration>
-														<LabelDecoration name="ДекорацияАдминистраторНадпись" id="351">
+														<LabelDecoration name="ДекорацияАдминистраторЗаголовок" id="448">
 															<HorizontalStretch>true</HorizontalStretch>
-															<TextColor>style:ЦветПустойГиперссылки</TextColor>
+															<TextColor>style:AccentColor</TextColor>
 															<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
 															<Title formatted="false">
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Авторизация не пройдена</v8:content>
+																	<v8:content>Администратор:</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="ДекорацияАдминистраторНадписьКонтекстноеМеню" id="352"/>
-															<ExtendedTooltip name="ДекорацияАдминистраторНадписьРасширеннаяПодсказка" id="353"/>
+															<ContextMenu name="ДекорацияАдминистраторЗаголовокКонтекстноеМеню" id="449"/>
+															<ExtendedTooltip name="ДекорацияАдминистраторЗаголовокРасширеннаяПодсказка" id="450"/>
 														</LabelDecoration>
 														<Button name="ОткрытьФормуАвторизации" id="441">
 															<Type>UsualButton</Type>
@@ -995,6 +983,18 @@
 														</Button>
 													</ChildItems>
 												</UsualGroup>
+												<LabelDecoration name="Декорация15" id="443">
+													<Enabled>false</Enabled>
+													<Font ref="style:NormalTextFont" height="5" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content> </v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация15КонтекстноеМеню" id="444"/>
+													<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="445"/>
+												</LabelDecoration>
 											</ChildItems>
 										</UsualGroup>
 										<LabelField name="ИмяПользователяИБ" id="307">
@@ -1027,6 +1027,53 @@
 											<ContextMenu name="ПарольПользователяИБКонтекстноеМеню" id="311"/>
 											<ExtendedTooltip name="ПарольПользователяИБРасширеннаяПодсказка" id="312"/>
 										</LabelField>
+										<UsualGroup name="ГруппаАдминистрированиеДекорация" id="346">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа администрирование декорация</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа администрирование декорация</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаАдминистрированиеДекорацияРасширеннаяПодсказка" id="347"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияАдминистраторПредупреждение" id="348">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация администратор предупреждение</v8:content>
+														</v8:item>
+													</Title>
+													<Picture>
+														<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияАдминистраторПредупреждениеКонтекстноеМеню" id="349"/>
+													<ExtendedTooltip name="ДекорацияАдминистраторПредупреждениеРасширеннаяПодсказка" id="350"/>
+												</PictureDecoration>
+												<LabelDecoration name="ДекорацияАдминистраторНадпись" id="351">
+													<HorizontalStretch>true</HorizontalStretch>
+													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Авторизация не пройдена</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияАдминистраторНадписьКонтекстноеМеню" id="352"/>
+													<ExtendedTooltip name="ДекорацияАдминистраторНадписьРасширеннаяПодсказка" id="353"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаКластер" id="142">
