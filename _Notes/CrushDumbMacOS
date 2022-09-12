@@ -1,0 +1,896 @@
+-------------------------------------
+Translated Report (Full Report Below)
+-------------------------------------
+
+Process:               1cv8c [99510]
+Path:                  /opt/1cv8/*/1cv8c
+Identifier:            1cv8c
+Version:               ???
+Code Type:             X86-64 (Translated)
+Parent Process:        launchd [1]
+User ID:               501
+
+Date/Time:             2022-09-13 00:32:21.7753 +0300
+OS Version:            macOS 12.0.1 (21A559)
+Report Version:        12
+Anonymous UUID:        BB29AC1E-A81B-996A-B862-9799530063B8
+
+Sleep/Wake UUID:       31463753-7DEA-4689-B560-358760C7DC2E
+
+Time Awake Since Boot: 330000 seconds
+Time Since Wake:       2224 seconds
+
+System Integrity Protection: enabled
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_CRASH (SIGABRT)
+Exception Codes:       0x0000000000000000, 0x0000000000000000
+Exception Note:        EXC_CORPSE_NOTIFY
+
+Application Specific Information:
+abort() called
+Pure virtual function called!
+
+
+Kernel Triage:
+VM - pmap_enter failed with resource shortage
+VM - pmap_enter failed with resource shortage
+VM - pmap_enter failed with resource shortage
+VM - pmap_enter failed with resource shortage
+VM - pmap_enter failed with resource shortage
+
+
+Thread 0 Crashed::  Dispatch queue: com.apple.main-thread
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca57112 __pthread_kill + 10
+2   libsystem_c.dylib             	    0x7ff81c9d9d10 abort + 123
+3   libc++abi.dylib               	    0x7ff81ca4a0b2 abort_message + 241
+4   libc++abi.dylib               	    0x7ff81ca49ae2 __cxa_pure_virtual + 18
+5   frame.dylib                   	       0x11925c0ed 0x118cf5000 + 5665005
+6   frame.dylib                   	       0x11915f34a 0x118cf5000 + 4629322
+7   frame.dylib                   	       0x11915f2a0 0x118cf5000 + 4629152
+8   frame.dylib                   	       0x11922a124 0x118cf5000 + 5460260
+9   frame.dylib                   	       0x119a66047 0x118cf5000 + 14094407
+10  frame.dylib                   	       0x119a80643 0x118cf5000 + 14202435
+11  frame.dylib                   	       0x119a904be 0x118cf5000 + 14267582
+12  frame.dylib                   	       0x119a91520 0x118cf5000 + 14271776
+13  frame.dylib                   	       0x119b7451c 0x118cf5000 + 15201564
+14  frame.dylib                   	       0x119b792bc 0x118cf5000 + 15221436
+15  uiproxywx.dylib               	       0x1097230bc 0x109707000 + 114876
+16  uiproxywx.dylib               	       0x109723105 0x109707000 + 114949
+17  uiproxywx.dylib               	       0x10973a746 0x109707000 + 210758
+18  libwx_osx_cocoau-3.0.dylib    	       0x10ce8bafc wxEvtHandler::SafelyProcessEvent(wxEvent&) + 12
+19  libwx_osx_cocoau-3.0.dylib    	       0x10d0298fc wxWindowBase::SendIdleEvents(wxIdleEvent&) + 92
+20  libwx_osx_cocoau-3.0.dylib    	       0x10cf61dad wxAppBase::ProcessIdle() + 237
+21  libwx_osx_cocoau-3.0.dylib    	       0x10cedc02a wxApp::ProcessIdle() + 26
+22  libwx_osx_cocoau-3.0.dylib    	       0x10ce709ec wxCFEventLoop::OSXCommonModeObserverCallBack(__CFRunLoopObserver*, int, void*) + 92
+23  CoreFoundation                	    0x7ff81cb52ef8 __CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__ + 23
+24  CoreFoundation                	    0x7ff81cb52d94 __CFRunLoopDoObservers + 543
+25  CoreFoundation                	    0x7ff81cb52366 __CFRunLoopRun + 1160
+26  CoreFoundation                	    0x7ff81cb51809 CFRunLoopRunSpecific + 567
+27  HIToolbox                     	    0x7ff825bbe3e1 RunCurrentEventLoopInMode + 292
+28  HIToolbox                     	    0x7ff825bbe137 ReceiveNextEventCommon + 587
+29  HIToolbox                     	    0x7ff825bbded5 _BlockUntilNextEventMatchingListInModeWithFilter + 70
+30  AppKit                        	    0x7ff81f4a38f0 _DPSNextEvent + 886
+31  AppKit                        	    0x7ff81f4a1f5c -[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1411
+32  AppKit                        	    0x7ff81f494359 -[NSApplication run] + 586
+33  libwx_osx_cocoau-3.0.dylib    	       0x10cf3b29f wxGUIEventLoop::OSXDoRun() + 207
+34  libwx_osx_cocoau-3.0.dylib    	       0x10ce71091 wxCFEventLoop::DoRun() + 49
+35  libwx_osx_cocoau-3.0.dylib    	       0x10cde1d35 wxEventLoopBase::Run() + 165
+36  uiproxywx.dylib               	       0x10972308e 0x109707000 + 114830
+37  frame.dylib                   	       0x119b733ce 0x118cf5000 + 15197134
+38  mngcln.dylib                  	       0x12d32fb4a 0x12d295000 + 633674
+39  mngcln.dylib                  	       0x12d32eef3 0x12d295000 + 630515
+40  1cv8c                         	       0x10071f65c 0x100715000 + 42588
+41  1cv8c                         	       0x100728dc0 0x100715000 + 81344
+42  core83.dylib                  	       0x10a11f23e core::Process::doStart() + 78
+43  1cv8c                         	       0x100728989 0x100715000 + 80265
+44  1cv8c                         	       0x100728aa2 0x100715000 + 80546
+45  coreui83.dylib                	       0x1094a0c1b MyApp::onRun(int, char**) + 587
+46  uiproxywx.dylib               	       0x10971adb5 0x109707000 + 81333
+47  libwx_osx_cocoau-3.0.dylib    	       0x10ce07571 wxEntry(int&, wchar_t**) + 145
+48  uiproxywx.dylib               	       0x10971ac28 0x109707000 + 80936
+49  coreui83.dylib                	       0x1094a0d5e MyApp::run(int, char**) + 62
+50  1cv8c                         	       0x100728a05 0x100715000 + 80389
+51  dyld                          	       0x200b744fe start + 462
+52  dyld                          	       0x200b6f000 ???
+
+Thread 1:: com.apple.rosetta.exceptionserver
+0   runtime                       	    0x7ff7ffe348e4 0x7ff7ffe30000 + 18660
+1   runtime                       	    0x7ff7ffe41928 0x7ff7ffe30000 + 71976
+2   runtime                       	    0x7ff7ffe430a4 0x7ff7ffe30000 + 77988
+
+Thread 2:: com.apple.NSEventThread
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca50aba mach_msg_trap + 10
+2   CoreFoundation                	    0x7ff81cb53d51 __CFRunLoopServiceMachPort + 319
+3   CoreFoundation                	    0x7ff81cb5240f __CFRunLoopRun + 1329
+4   CoreFoundation                	    0x7ff81cb51809 CFRunLoopRunSpecific + 567
+5   AppKit                        	    0x7ff81f611cec _NSEventThread + 132
+6   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 3:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   libc++.1.dylib                	    0x7ff81c9ecf53 std::__1::condition_variable::__do_timed_wait(std::__1::unique_lock<std::__1::mutex>&, std::__1::chrono::time_point<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1l, 1000000000l> > >) + 93
+3   core83.dylib                  	       0x109e2edf5 0x109d47000 + 949749
+4   core83.dylib                  	       0x109f1411e 0x109d47000 + 1888542
+5   core83.dylib                  	       0x109f13fd0 0x109d47000 + 1888208
+6   core83.dylib                  	       0x109f147de 0x109d47000 + 1890270
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 4:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   core83.dylib                  	       0x10a1221b8 core::ISemaphoreOneTimeImpl::wait(int) + 200
+3   techsys.dylib                 	       0x11241a5b9 0x1123e5000 + 218553
+4   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+5   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+6   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 5:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   core83.dylib                  	       0x10a1221b8 core::ISemaphoreOneTimeImpl::wait(int) + 200
+3   backbas.dylib                 	       0x11c04615a 0x11bd70000 + 2974042
+4   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+5   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+6   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 6:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca571ae poll + 10
+2   backbas.dylib                 	       0x11c042ea8 0x11bd70000 + 2961064
+3   1cv8c                         	       0x100728dc0 0x100715000 + 81344
+4   core83.dylib                  	       0x10a11c1b8 core::Thread::threadMain() + 40
+5   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+6   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+7   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 7:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   core83.dylib                  	       0x10a122018 core::ISemaphoreBaseImpl::wait(int) + 200
+3   core83.dylib                  	       0x109f11c45 0x109d47000 + 1879109
+4   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+5   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 8:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca533da __semwait_signal + 10
+2   core83.dylib                  	       0x10a121cd5 0x109d47000 + 4041941
+3   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+4   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 9:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   rtrsrvc.dylib                 	       0x11d413639 0x11d3f4000 + 128569
+3   rscalls.dylib                 	       0x13148e8cc 0x131484000 + 43212
+4   rscalls.dylib                 	       0x1314afc4f 0x131484000 + 179279
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 10:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   rtrsrvc.dylib                 	       0x11d41ef0a 0x11d3f4000 + 175882
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 11:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   rtrsrvc.dylib                 	       0x11d41ef0a 0x11d3f4000 + 175882
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 12:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   rtrsrvc.dylib                 	       0x11d41ef0a 0x11d3f4000 + 175882
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 13:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   rtrsrvc.dylib                 	       0x11d41ef0a 0x11d3f4000 + 175882
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 14:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   rtrsrvc.dylib                 	       0x11d41ef0a 0x11d3f4000 + 175882
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 15:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca5545e kevent + 10
+2   rtrsrvc.dylib                 	       0x11d41ee19 0x11d3f4000 + 175641
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 16:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   rtrsrvc.dylib                 	       0x11d41ef0a 0x11d3f4000 + 175882
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 17:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   rtrsrvc.dylib                 	       0x11d41ef0a 0x11d3f4000 + 175882
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 18:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca5545e kevent + 10
+2   rtrsrvc.dylib                 	       0x11d41ee19 0x11d3f4000 + 175641
+3   rtrsrvc.dylib                 	       0x11d41ea12 0x11d3f4000 + 174610
+4   rtrsrvc.dylib                 	       0x11d421262 0x11d3f4000 + 184930
+5   core83.dylib                  	       0x10a11c1c3 core::Thread::threadMain() + 51
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 19:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   core83.dylib                  	       0x10a122018 core::ISemaphoreBaseImpl::wait(int) + 200
+3   backbas.dylib                 	       0x11bfbb6c8 0x11bd70000 + 2406088
+4   1cv8c                         	       0x100728dc0 0x100715000 + 81344
+5   core83.dylib                  	       0x10a11c1b8 core::Thread::threadMain() + 40
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 20:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   libc++.1.dylib                	    0x7ff81c9ecec2 std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) + 18
+3   vrsbase.dylib                 	       0x13258afab 0x1324cd000 + 778155
+4   vrsbase.dylib                 	       0x13258ae1f 0x1324cd000 + 777759
+5   1cv8c                         	       0x100728dc0 0x100715000 + 81344
+6   core83.dylib                  	       0x10a11c1b8 core::Thread::threadMain() + 40
+7   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+8   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+9   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 21:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   core83.dylib                  	       0x10a122018 core::ISemaphoreBaseImpl::wait(int) + 200
+3   backend.dylib                 	       0x13688a6bc 0x135e76000 + 10569404
+4   backbas.dylib                 	       0x11be6e560 0x11bd70000 + 1041760
+5   1cv8c                         	       0x100728dc0 0x100715000 + 81344
+6   core83.dylib                  	       0x10a11c1b8 core::Thread::threadMain() + 40
+7   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+8   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+9   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 22:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca53506 __psynch_cvwait + 10
+2   libc++.1.dylib                	    0x7ff81c9ecf53 std::__1::condition_variable::__do_timed_wait(std::__1::unique_lock<std::__1::mutex>&, std::__1::chrono::time_point<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1l, 1000000000l> > >) + 93
+3   core83.dylib                  	       0x109e2edf5 0x109d47000 + 949749
+4   core83.dylib                  	       0x109f1411e 0x109d47000 + 1888542
+5   core83.dylib                  	       0x109f13fd0 0x109d47000 + 1888208
+6   core83.dylib                  	       0x109f147de 0x109d47000 + 1890270
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 23:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   core83.dylib                  	       0x10a122018 core::ISemaphoreBaseImpl::wait(int) + 200
+3   core83.dylib                  	       0x109f11c45 0x109d47000 + 1879109
+4   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+5   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 24:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   core83.dylib                  	       0x10a122018 core::ISemaphoreBaseImpl::wait(int) + 200
+3   mngcln.dylib                  	       0x12d3c7f89 0x12d295000 + 1257353
+4   1cv8c                         	       0x100728dc0 0x100715000 + 81344
+5   core83.dylib                  	       0x10a11c1b8 core::Thread::threadMain() + 40
+6   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+7   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+8   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 25:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   core83.dylib                  	       0x10a122018 core::ISemaphoreBaseImpl::wait(int) + 200
+3   core83.dylib                  	       0x109f11c45 0x109d47000 + 1879109
+4   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+5   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 26:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca5545e kevent + 10
+2   mngui.dylib                   	       0x12e44fe09 0x12e2b2000 + 1695241
+3   mngui.dylib                   	       0x12e44fa02 0x12e2b2000 + 1694210
+4   mngui.dylib                   	       0x12ed9c750 0x12e2b2000 + 11446096
+5   1cv8c                         	       0x100728dc0 0x100715000 + 81344
+6   core83.dylib                  	       0x10a11c1b8 core::Thread::threadMain() + 40
+7   core83.dylib                  	       0x109f11c15 0x109d47000 + 1879061
+8   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+9   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 27:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca533da __semwait_signal + 10
+2   core83.dylib                  	       0x10a121cd5 0x109d47000 + 4041941
+3   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+4   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 28:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca533da __semwait_signal + 10
+2   core83.dylib                  	       0x10a121cd5 0x109d47000 + 4041941
+3   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+4   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 29:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca74f66 sem_wait + 10
+2   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+3   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 30:
+0   runtime                       	    0x7ff7ffe52814 0x7ff7ffe30000 + 141332
+
+Thread 31:
+0   runtime                       	    0x7ff7ffe52814 0x7ff7ffe30000 + 141332
+
+Thread 32:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca533da __semwait_signal + 10
+2   core83.dylib                  	       0x10a121cd5 0x109d47000 + 4041941
+3   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+4   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 33:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca533da __semwait_signal + 10
+2   core83.dylib                  	       0x10a121cd5 0x109d47000 + 4041941
+3   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+4   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 34:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca533da __semwait_signal + 10
+2   core83.dylib                  	       0x10a121cd5 0x109d47000 + 4041941
+3   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+4   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 35:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca533da __semwait_signal + 10
+2   core83.dylib                  	       0x10a121cd5 0x109d47000 + 4041941
+3   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+4   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+Thread 36:
+0   ???                           	    0x7ff8acf12940 ???
+1   libsystem_kernel.dylib        	    0x7ff81ca533da __semwait_signal + 10
+2   core83.dylib                  	       0x10a121cd5 0x109d47000 + 4041941
+3   libsystem_pthread.dylib       	    0x7ff81ca8d514 _pthread_start + 125
+4   libsystem_pthread.dylib       	    0x7ff81ca8902f thread_start + 15
+
+
+Thread 0 crashed with X86 Thread State (64-bit):
+  rax: 0x0000000000000000  rbx: 0x0000000000000000  rcx: 0x0000000000000000  rdx: 0x0000000000000000
+  rdi: 0x00007ff85e2548a0  rsi: 0x0000000000000003  rbp: 0x00007ff81ca4dbb6  rsp: 0x00000003053300b0
+   r8: 0x0000000200be7600   r9: 0x00007ff81ca4dbb6  r10: 0x0000000000000000  r11: 0x00007ff85e230750
+  r12: 0x0000000000000103  r13: 0x0000003000000008  r14: 0x0000000000000006  r15: 0x0000000000000016
+  rip: <unavailable>       rfl: 0x0000000000000283
+ tmp0: 0xffffffffffffffff tmp1: 0x00007ff8acf12914 tmp2: 0x00007ff81ca57108
+
+
+Binary Images:
+               0x0 - 0xffffffffffffffff ??? (*) <00000000-0000-0000-0000-000000000000> ???
+    0x7ff81ca50000 -     0x7ff81ca86fff libsystem_kernel.dylib (*) <12bd6f13-c452-35ee-9069-51befef29f1a> /usr/lib/system/libsystem_kernel.dylib
+    0x7ff81c958000 -     0x7ff81c9e0fff libsystem_c.dylib (*) <991f58b7-b4c0-3c3a-84a8-c9c571de5a27> /usr/lib/system/libsystem_c.dylib
+    0x7ff81ca3a000 -     0x7ff81ca4ffff libc++abi.dylib (*) <a851e310-475a-3c94-b547-8eb5ae90191a> /usr/lib/libc++abi.dylib
+       0x118cf5000 -        0x11a024fff frame.dylib (*) <9fec5e4e-f05b-38ef-a156-acd0a619c633> /opt/1cv8/*/frame.dylib
+       0x109707000 -        0x109785fff uiproxywx.dylib (*) <1e9361cf-5742-3fea-a21f-fb328ed9cb46> /opt/1cv8/*/uiproxywx.dylib
+       0x10cdaa000 -        0x10d440fff libwx_osx_cocoau-3.0.dylib (*) <e60f5732-f38d-32bd-b6ab-4d169fb2de8e> /opt/1cv8/*/libwx_osx_cocoau-3.0.dylib
+    0x7ff81cad4000 -     0x7ff81cfd4fff com.apple.CoreFoundation (6.9) <afcc752e-074d-340f-890c-263efd2da77f> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+    0x7ff825b8f000 -     0x7ff825e86fff com.apple.HIToolbox (2.1.1) <4163a93f-bf71-3219-80ed-6f65e9266b81> /System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+    0x7ff81f465000 -     0x7ff8202f1fff com.apple.AppKit (6.9) <dd0028a3-78e3-3a8a-a51b-ddd68123adef> /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+       0x12d295000 -        0x12d5f1fff mngcln.dylib (*) <b4475b55-bae4-3ae2-b5ad-783983c56816> /opt/1cv8/*/mngcln.dylib
+       0x100715000 -        0x1008aefff 1cv8c (*) <e7cc3ce2-8a3d-3462-b9db-1cd00e19799e> /opt/1cv8/*/1cv8c
+       0x109d47000 -        0x10a25cfff core83.dylib (*) <c9886105-6ddb-3c98-a771-bcf41f65a547> /opt/1cv8/*/core83.dylib
+       0x109464000 -        0x1095f5fff coreui83.dylib (*) <9ed5e783-382f-3e04-9930-9185e4c3c56e> /opt/1cv8/*/coreui83.dylib
+       0x200b6f000 -        0x200bdafff dyld (*) <1a6ae033-9438-33c0-8077-988fd885250a> /usr/lib/dyld
+    0x7ff7ffe30000 -     0x7ff7ffe5ffff runtime (*) <9f5d65be-d8d0-3979-bb05-e651a67e785c> /usr/libexec/rosetta/runtime
+    0x7ff81ca87000 -     0x7ff81ca92fff libsystem_pthread.dylib (*) <29a2750e-f31b-3630-8761-242a6bc3e99e> /usr/lib/system/libsystem_pthread.dylib
+    0x7ff81c9e1000 -     0x7ff81ca39fff libc++.1.dylib (*) <91a6d960-2646-34e2-a81e-4e34e3697a92> /usr/lib/libc++.1.dylib
+       0x1123e5000 -        0x112469fff techsys.dylib (*) <a6b3f098-4987-3497-9812-6b2151c999d7> /opt/1cv8/*/techsys.dylib
+       0x11bd70000 -        0x11c693fff backbas.dylib (*) <f3475d2e-eba7-30ec-ace0-ed0693fa0eaa> /opt/1cv8/*/backbas.dylib
+       0x11d3f4000 -        0x11d985fff rtrsrvc.dylib (*) <5b0d1735-7547-3e4a-a577-1dad004a9a1d> /opt/1cv8/*/rtrsrvc.dylib
+       0x131484000 -        0x1314f5fff rscalls.dylib (*) <248ef903-1734-3ea7-8f42-7ad744976af4> /opt/1cv8/*/rscalls.dylib
+       0x1324cd000 -        0x132a19fff vrsbase.dylib (*) <d54433f5-f80e-359a-834f-95cde5c49115> /opt/1cv8/*/vrsbase.dylib
+       0x135e76000 -        0x137f94fff backend.dylib (*) <fa4093da-d869-3453-8e10-a2f7ebaf78af> /opt/1cv8/*/backend.dylib
+       0x12e2b2000 -        0x12f149fff mngui.dylib (*) <419dffd5-daf9-397f-908f-c53f84cbd674> /opt/1cv8/*/mngui.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=1.4G resident=0K(0%) swapped_out_or_unallocated=1.4G(100%)
+Writable regions: Total=2.3G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=2.3G(100%)
+
+                                VIRTUAL   REGION 
+REGION TYPE                        SIZE    COUNT (non-coalesced) 
+===========                     =======  ======= 
+Accelerate framework               512K        4 
+Activity Tracing                   256K        1 
+CG backing stores                 2176K        4 
+CG image                           472K       16 
+ColorSync                          232K       26 
+CoreAnimation                    110.5M       12 
+CoreGraphics                        12K        2 
+CoreUI image data                  668K        5 
+Foundation                          16K        1 
+Kernel Alloc Once                    8K        1 
+MALLOC                           865.3M      115 
+MALLOC guard page                  192K       10 
+MALLOC_MEDIUM (reserved)         904.0M        8         reserved VM address space (unallocated)
+MALLOC_NANO (reserved)           256.0M        1         reserved VM address space (unallocated)
+Rosetta Arena                     4096K        2 
+Rosetta Generic                   1456K      361 
+Rosetta IndirectBranch            4096K        1 
+Rosetta JIT                      128.0M        1 
+Rosetta Return Stack               700K       70 
+Rosetta Thread Context             700K       70 
+STACK GUARD                          8K        2 
+Stack                             36.8M       36 
+Stack Guard                       56.1M       34 
+VM_ALLOCATE                       25.3M     2341 
+VM_ALLOCATE (reserved)            2176K       42         reserved VM address space (unallocated)
+__DATA                            54.4M      514 
+__DATA_CONST                      16.1M      196 
+__DATA_DIRTY                       640K      110 
+__FONT_DATA                          4K        1 
+__LINKEDIT                       717.3M      118 
+__OBJC_RO                         81.6M        1 
+__OBJC_RW                         3120K        2 
+__TEXT                           680.3M      458 
+__UNICODE                          588K        1 
+dyld private memory               1056K        3 
+mapped file                        5.5G      905 
+shared memory                      812K       15 
+unshared pmap                     7728K        5 
+===========                     =======  ======= 
+TOTAL                              9.3G     5495 
+TOTAL, minus reserved VM space     8.2G     5495 
+
+
+
+-----------
+Full Report
+-----------
+
+{"app_name":"1cv8c","timestamp":"2022-09-13 00:32:27.00 +0300","app_version":"","slice_uuid":"e7cc3ce2-8a3d-3462-b9db-1cd00e19799e","build_version":"","platform":1,"share_with_app_devs":0,"is_first_party":1,"bug_type":"309","os_version":"macOS 12.0.1 (21A559)","incident_id":"9C7CA2AB-3BF6-4DBA-9549-F553D30FBB6B","name":"1cv8c"}
+{
+  "uptime" : 330000,
+  "procLaunch" : "2022-09-13 00:25:12.7419 +0300",
+  "procRole" : "Foreground",
+  "version" : 2,
+  "userID" : 501,
+  "deployVersion" : 210,
+  "modelCode" : "MacBookPro17,1",
+  "procStartAbsTime" : 7972799264633,
+  "coalitionID" : 47617,
+  "osVersion" : {
+    "train" : "macOS 12.0.1",
+    "build" : "21A559",
+    "releaseType" : "User"
+  },
+  "captureTime" : "2022-09-13 00:32:21.7753 +0300",
+  "incident" : "9C7CA2AB-3BF6-4DBA-9549-F553D30FBB6B",
+  "bug_type" : "309",
+  "pid" : 99510,
+  "procExitAbsTime" : 7983094926013,
+  "translated" : true,
+  "cpuType" : "X86-64",
+  "procName" : "1cv8c",
+  "procPath" : "\/opt\/1cv8\/*\/1cv8c",
+  "parentProc" : "launchd",
+  "parentPid" : 1,
+  "coalitionName" : "com.1c.v8.apps.1cv8c",
+  "crashReporterKey" : "BB29AC1E-A81B-996A-B862-9799530063B8",
+  "wakeTime" : 2224,
+  "sleepWakeUUID" : "31463753-7DEA-4689-B560-358760C7DC2E",
+  "sip" : "enabled",
+  "isCorpse" : 1,
+  "exception" : {"codes":"0x0000000000000000, 0x0000000000000000","rawCodes":[0,0],"type":"EXC_CRASH","signal":"SIGABRT"},
+  "ktriageinfo" : "VM - pmap_enter failed with resource shortage\nVM - pmap_enter failed with resource shortage\nVM - pmap_enter failed with resource shortage\nVM - pmap_enter failed with resource shortage\nVM - pmap_enter failed with resource shortage\n",
+  "asi" : {"libc++abi.dylib":["Pure virtual function called!"],"libsystem_c.dylib":["abort() called"]},
+  "extMods" : {"caller":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"system":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"targeted":{"thread_create":0,"thread_set_state":0,"task_for_pid":0},"warnings":0},
+  "faultingThread" : 0,
+  "threads" : [{"triggered":true,"id":3440998,"threadState":{"flavor":"x86_THREAD_STATE","rbp":{"value":140703609183158},"r12":{"value":259},"rosetta":{"tmp2":{"value":140703609221384},"tmp1":{"value":140706030102804},"tmp0":{"value":18446744073709551615}},"rbx":{"value":0},"r8":{"value":8602416640,"symbolLocation":0,"symbol":"_main_thread"},"r15":{"value":22},"r10":{"value":0},"rdx":{"value":0},"rdi":{"value":140704708118688,"symbolLocation":0,"symbol":"__stderrp"},"r9":{"value":140703609183158},"r13":{"value":206158430216},"rflags":{"value":643},"rax":{"value":0},"rsp":{"value":12972130480},"r11":{"value":140704707970896,"symbolLocation":448,"symbol":"__sFX"},"rcx":{"value":0},"r14":{"value":6},"rsi":{"value":3}},"queue":"com.apple.main-thread","frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":28946,"symbol":"__pthread_kill","symbolLocation":10,"imageIndex":1},{"imageOffset":531728,"symbol":"abort","symbolLocation":123,"imageIndex":2},{"imageOffset":65714,"symbol":"abort_message","symbolLocation":241,"imageIndex":3},{"imageOffset":64226,"symbol":"__cxa_pure_virtual","symbolLocation":18,"imageIndex":3},{"imageOffset":5665005,"imageIndex":4},{"imageOffset":4629322,"imageIndex":4},{"imageOffset":4629152,"imageIndex":4},{"imageOffset":5460260,"imageIndex":4},{"imageOffset":14094407,"imageIndex":4},{"imageOffset":14202435,"imageIndex":4},{"imageOffset":14267582,"imageIndex":4},{"imageOffset":14271776,"imageIndex":4},{"imageOffset":15201564,"imageIndex":4},{"imageOffset":15221436,"imageIndex":4},{"imageOffset":114876,"imageIndex":5},{"imageOffset":114949,"imageIndex":5},{"imageOffset":210758,"imageIndex":5},{"imageOffset":924412,"symbol":"wxEvtHandler::SafelyProcessEvent(wxEvent&)","symbolLocation":12,"imageIndex":6},{"imageOffset":2619644,"symbol":"wxWindowBase::SendIdleEvents(wxIdleEvent&)","symbolLocation":92,"imageIndex":6},{"imageOffset":1801645,"symbol":"wxAppBase::ProcessIdle()","symbolLocation":237,"imageIndex":6},{"imageOffset":1253418,"symbol":"wxApp::ProcessIdle()","symbolLocation":26,"imageIndex":6},{"imageOffset":813548,"symbol":"wxCFEventLoop::OSXCommonModeObserverCallBack(__CFRunLoopObserver*, int, void*)","symbolLocation":92,"imageIndex":6},{"imageOffset":519928,"symbol":"__CFRUNLOOP_IS_CALLING_OUT_TO_AN_OBSERVER_CALLBACK_FUNCTION__","symbolLocation":23,"imageIndex":7},{"imageOffset":519572,"symbol":"__CFRunLoopDoObservers","symbolLocation":543,"imageIndex":7},{"imageOffset":516966,"symbol":"__CFRunLoopRun","symbolLocation":1160,"imageIndex":7},{"imageOffset":514057,"symbol":"CFRunLoopRunSpecific","symbolLocation":567,"imageIndex":7},{"imageOffset":193505,"symbol":"RunCurrentEventLoopInMode","symbolLocation":292,"imageIndex":8},{"imageOffset":192823,"symbol":"ReceiveNextEventCommon","symbolLocation":587,"imageIndex":8},{"imageOffset":192213,"symbol":"_BlockUntilNextEventMatchingListInModeWithFilter","symbolLocation":70,"imageIndex":8},{"imageOffset":256240,"symbol":"_DPSNextEvent","symbolLocation":886,"imageIndex":9},{"imageOffset":249692,"symbol":"-[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]","symbolLocation":1411,"imageIndex":9},{"imageOffset":193369,"symbol":"-[NSApplication run]","symbolLocation":586,"imageIndex":9},{"imageOffset":1643167,"symbol":"wxGUIEventLoop::OSXDoRun()","symbolLocation":207,"imageIndex":6},{"imageOffset":815249,"symbol":"wxCFEventLoop::DoRun()","symbolLocation":49,"imageIndex":6},{"imageOffset":228661,"symbol":"wxEventLoopBase::Run()","symbolLocation":165,"imageIndex":6},{"imageOffset":114830,"imageIndex":5},{"imageOffset":15197134,"imageIndex":4},{"imageOffset":633674,"imageIndex":10},{"imageOffset":630515,"imageIndex":10},{"imageOffset":42588,"imageIndex":11},{"imageOffset":81344,"imageIndex":11},{"imageOffset":4031038,"symbol":"core::Process::doStart()","symbolLocation":78,"imageIndex":12},{"imageOffset":80265,"imageIndex":11},{"imageOffset":80546,"imageIndex":11},{"imageOffset":248859,"symbol":"MyApp::onRun(int, char**)","symbolLocation":587,"imageIndex":13},{"imageOffset":81333,"imageIndex":5},{"imageOffset":382321,"symbol":"wxEntry(int&, wchar_t**)","symbolLocation":145,"imageIndex":6},{"imageOffset":80936,"imageIndex":5},{"imageOffset":249182,"symbol":"MyApp::run(int, char**)","symbolLocation":62,"imageIndex":13},{"imageOffset":80389,"imageIndex":11},{"imageOffset":21758,"symbol":"start","symbolLocation":462,"imageIndex":14},{"imageOffset":0,"imageIndex":14}]},{"id":3440999,"name":"com.apple.rosetta.exceptionserver","frames":[{"imageOffset":18660,"imageIndex":15},{"imageOffset":71976,"imageIndex":15},{"imageOffset":77988,"imageIndex":15}]},{"id":3441028,"name":"com.apple.NSEventThread","frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":2746,"symbol":"mach_msg_trap","symbolLocation":10,"imageIndex":1},{"imageOffset":523601,"symbol":"__CFRunLoopServiceMachPort","symbolLocation":319,"imageIndex":7},{"imageOffset":517135,"symbol":"__CFRunLoopRun","symbolLocation":1329,"imageIndex":7},{"imageOffset":514057,"symbol":"CFRunLoopRunSpecific","symbolLocation":567,"imageIndex":7},{"imageOffset":1756396,"symbol":"_NSEventThread","symbolLocation":132,"imageIndex":9},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441214,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":48979,"symbol":"std::__1::condition_variable::__do_timed_wait(std::__1::unique_lock<std::__1::mutex>&, std::__1::chrono::time_point<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1l, 1000000000l> > >)","symbolLocation":93,"imageIndex":17},{"imageOffset":949749,"imageIndex":12},{"imageOffset":1888542,"imageIndex":12},{"imageOffset":1888208,"imageIndex":12},{"imageOffset":1890270,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441215,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":4043192,"symbol":"core::ISemaphoreOneTimeImpl::wait(int)","symbolLocation":200,"imageIndex":12},{"imageOffset":218553,"imageIndex":18},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441377,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":4043192,"symbol":"core::ISemaphoreOneTimeImpl::wait(int)","symbolLocation":200,"imageIndex":12},{"imageOffset":2974042,"imageIndex":19},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441379,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":29102,"symbol":"poll","symbolLocation":10,"imageIndex":1},{"imageOffset":2961064,"imageIndex":19},{"imageOffset":81344,"imageIndex":11},{"imageOffset":4018616,"symbol":"core::Thread::threadMain()","symbolLocation":40,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441380,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":4042776,"symbol":"core::ISemaphoreBaseImpl::wait(int)","symbolLocation":200,"imageIndex":12},{"imageOffset":1879109,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441381,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13274,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":1},{"imageOffset":4041941,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441625,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":128569,"imageIndex":20},{"imageOffset":43212,"imageIndex":21},{"imageOffset":179279,"imageIndex":21},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441626,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":175882,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441627,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":175882,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441628,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":175882,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441629,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":175882,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441630,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":175882,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441631,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":21598,"symbol":"kevent","symbolLocation":10,"imageIndex":1},{"imageOffset":175641,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441632,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":175882,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441633,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":175882,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441634,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":21598,"symbol":"kevent","symbolLocation":10,"imageIndex":1},{"imageOffset":175641,"imageIndex":20},{"imageOffset":174610,"imageIndex":20},{"imageOffset":184930,"imageIndex":20},{"imageOffset":4018627,"symbol":"core::Thread::threadMain()","symbolLocation":51,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441643,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":4042776,"symbol":"core::ISemaphoreBaseImpl::wait(int)","symbolLocation":200,"imageIndex":12},{"imageOffset":2406088,"imageIndex":19},{"imageOffset":81344,"imageIndex":11},{"imageOffset":4018616,"symbol":"core::Thread::threadMain()","symbolLocation":40,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441645,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":48834,"symbol":"std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&)","symbolLocation":18,"imageIndex":17},{"imageOffset":778155,"imageIndex":22},{"imageOffset":777759,"imageIndex":22},{"imageOffset":81344,"imageIndex":11},{"imageOffset":4018616,"symbol":"core::Thread::threadMain()","symbolLocation":40,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441772,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":4042776,"symbol":"core::ISemaphoreBaseImpl::wait(int)","symbolLocation":200,"imageIndex":12},{"imageOffset":10569404,"imageIndex":23},{"imageOffset":1041760,"imageIndex":19},{"imageOffset":81344,"imageIndex":11},{"imageOffset":4018616,"symbol":"core::Thread::threadMain()","symbolLocation":40,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441774,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13574,"symbol":"__psynch_cvwait","symbolLocation":10,"imageIndex":1},{"imageOffset":48979,"symbol":"std::__1::condition_variable::__do_timed_wait(std::__1::unique_lock<std::__1::mutex>&, std::__1::chrono::time_point<std::__1::chrono::system_clock, std::__1::chrono::duration<long long, std::__1::ratio<1l, 1000000000l> > >)","symbolLocation":93,"imageIndex":17},{"imageOffset":949749,"imageIndex":12},{"imageOffset":1888542,"imageIndex":12},{"imageOffset":1888208,"imageIndex":12},{"imageOffset":1890270,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441775,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":4042776,"symbol":"core::ISemaphoreBaseImpl::wait(int)","symbolLocation":200,"imageIndex":12},{"imageOffset":1879109,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3441871,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":4042776,"symbol":"core::ISemaphoreBaseImpl::wait(int)","symbolLocation":200,"imageIndex":12},{"imageOffset":1257353,"imageIndex":10},{"imageOffset":81344,"imageIndex":11},{"imageOffset":4018616,"symbol":"core::Thread::threadMain()","symbolLocation":40,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3442014,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":4042776,"symbol":"core::ISemaphoreBaseImpl::wait(int)","symbolLocation":200,"imageIndex":12},{"imageOffset":1879109,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3442019,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":21598,"symbol":"kevent","symbolLocation":10,"imageIndex":1},{"imageOffset":1695241,"imageIndex":24},{"imageOffset":1694210,"imageIndex":24},{"imageOffset":11446096,"imageIndex":24},{"imageOffset":81344,"imageIndex":11},{"imageOffset":4018616,"symbol":"core::Thread::threadMain()","symbolLocation":40,"imageIndex":12},{"imageOffset":1879061,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3442126,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13274,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":1},{"imageOffset":4041941,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3446240,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13274,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":1},{"imageOffset":4041941,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3446275,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":151398,"symbol":"sem_wait","symbolLocation":10,"imageIndex":1},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3446410,"frames":[{"imageOffset":141332,"imageIndex":15}]},{"id":3446440,"frames":[{"imageOffset":141332,"imageIndex":15}]},{"id":3446499,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13274,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":1},{"imageOffset":4041941,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3446500,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13274,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":1},{"imageOffset":4041941,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3446504,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13274,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":1},{"imageOffset":4041941,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3446526,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13274,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":1},{"imageOffset":4041941,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]},{"id":3446540,"frames":[{"imageOffset":140706030102848,"imageIndex":0},{"imageOffset":13274,"symbol":"__semwait_signal","symbolLocation":10,"imageIndex":1},{"imageOffset":4041941,"imageIndex":12},{"imageOffset":25876,"symbol":"_pthread_start","symbolLocation":125,"imageIndex":16},{"imageOffset":8239,"symbol":"thread_start","symbolLocation":15,"imageIndex":16}]}],
+  "usedImages" : [
+  {
+    "size" : 0,
+    "source" : "A",
+    "base" : 0,
+    "uuid" : "00000000-0000-0000-0000-000000000000"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703609192448,
+    "size" : 225280,
+    "uuid" : "12bd6f13-c452-35ee-9069-51befef29f1a",
+    "path" : "\/usr\/lib\/system\/libsystem_kernel.dylib",
+    "name" : "libsystem_kernel.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703608176640,
+    "size" : 561152,
+    "uuid" : "991f58b7-b4c0-3c3a-84a8-c9c571de5a27",
+    "path" : "\/usr\/lib\/system\/libsystem_c.dylib",
+    "name" : "libsystem_c.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703609102336,
+    "size" : 90112,
+    "uuid" : "a851e310-475a-3c94-b547-8eb5ae90191a",
+    "path" : "\/usr\/lib\/libc++abi.dylib",
+    "name" : "libc++abi.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4711206912,
+    "size" : 20119552,
+    "uuid" : "9fec5e4e-f05b-38ef-a156-acd0a619c633",
+    "path" : "\/opt\/1cv8\/*\/frame.dylib",
+    "name" : "frame.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4453330944,
+    "size" : 520192,
+    "uuid" : "1e9361cf-5742-3fea-a21f-fb328ed9cb46",
+    "path" : "\/opt\/1cv8\/*\/uiproxywx.dylib",
+    "name" : "uiproxywx.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4510621696,
+    "size" : 6909952,
+    "uuid" : "e60f5732-f38d-32bd-b6ab-4d169fb2de8e",
+    "path" : "\/opt\/1cv8\/*\/libwx_osx_cocoau-3.0.dylib",
+    "name" : "libwx_osx_cocoau-3.0.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703609733120,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.CoreFoundation",
+    "size" : 5246976,
+    "uuid" : "afcc752e-074d-340f-890c-263efd2da77f",
+    "path" : "\/System\/Library\/Frameworks\/CoreFoundation.framework\/Versions\/A\/CoreFoundation",
+    "name" : "CoreFoundation",
+    "CFBundleVersion" : "1855.105"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703761494016,
+    "CFBundleShortVersionString" : "2.1.1",
+    "CFBundleIdentifier" : "com.apple.HIToolbox",
+    "size" : 3112960,
+    "uuid" : "4163a93f-bf71-3219-80ed-6f65e9266b81",
+    "path" : "\/System\/Library\/Frameworks\/Carbon.framework\/Versions\/A\/Frameworks\/HIToolbox.framework\/Versions\/A\/HIToolbox",
+    "name" : "HIToolbox"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703653318656,
+    "CFBundleShortVersionString" : "6.9",
+    "CFBundleIdentifier" : "com.apple.AppKit",
+    "size" : 15257600,
+    "uuid" : "dd0028a3-78e3-3a8a-a51b-ddd68123adef",
+    "path" : "\/System\/Library\/Frameworks\/AppKit.framework\/Versions\/C\/AppKit",
+    "name" : "AppKit",
+    "CFBundleVersion" : "2113"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 5052649472,
+    "size" : 3526656,
+    "uuid" : "b4475b55-bae4-3ae2-b5ad-783983c56816",
+    "path" : "\/opt\/1cv8\/*\/mngcln.dylib",
+    "name" : "mngcln.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4302393344,
+    "size" : 1679360,
+    "uuid" : "e7cc3ce2-8a3d-3462-b9db-1cd00e19799e",
+    "path" : "\/opt\/1cv8\/*\/1cv8c",
+    "name" : "1cv8c"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4459884544,
+    "size" : 5332992,
+    "uuid" : "c9886105-6ddb-3c98-a771-bcf41f65a547",
+    "path" : "\/opt\/1cv8\/*\/core83.dylib",
+    "name" : "core83.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4450566144,
+    "size" : 1646592,
+    "uuid" : "9ed5e783-382f-3e04-9930-9185e4c3c56e",
+    "path" : "\/opt\/1cv8\/*\/coreui83.dylib",
+    "name" : "coreui83.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 8601923584,
+    "size" : 442368,
+    "uuid" : "1a6ae033-9438-33c0-8077-988fd885250a",
+    "path" : "\/usr\/lib\/dyld",
+    "name" : "dyld"
+  },
+  {
+    "source" : "P",
+    "arch" : "arm64",
+    "base" : 140703126716416,
+    "size" : 196608,
+    "uuid" : "9f5d65be-d8d0-3979-bb05-e651a67e785c",
+    "path" : "\/usr\/libexec\/rosetta\/runtime",
+    "name" : "runtime"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703609417728,
+    "size" : 49152,
+    "uuid" : "29a2750e-f31b-3630-8761-242a6bc3e99e",
+    "path" : "\/usr\/lib\/system\/libsystem_pthread.dylib",
+    "name" : "libsystem_pthread.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 140703608737792,
+    "size" : 364544,
+    "uuid" : "91a6d960-2646-34e2-a81e-4e34e3697a92",
+    "path" : "\/usr\/lib\/libc++.1.dylib",
+    "name" : "libc++.1.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4601040896,
+    "size" : 544768,
+    "uuid" : "a6b3f098-4987-3497-9812-6b2151c999d7",
+    "path" : "\/opt\/1cv8\/*\/techsys.dylib",
+    "name" : "techsys.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4762042368,
+    "size" : 9584640,
+    "uuid" : "f3475d2e-eba7-30ec-ace0-ed0693fa0eaa",
+    "path" : "\/opt\/1cv8\/*\/backbas.dylib",
+    "name" : "backbas.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 4785651712,
+    "size" : 5840896,
+    "uuid" : "5b0d1735-7547-3e4a-a577-1dad004a9a1d",
+    "path" : "\/opt\/1cv8\/*\/rtrsrvc.dylib",
+    "name" : "rtrsrvc.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 5121785856,
+    "size" : 466944,
+    "uuid" : "248ef903-1734-3ea7-8f42-7ad744976af4",
+    "path" : "\/opt\/1cv8\/*\/rscalls.dylib",
+    "name" : "rscalls.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 5138862080,
+    "size" : 5558272,
+    "uuid" : "d54433f5-f80e-359a-834f-95cde5c49115",
+    "path" : "\/opt\/1cv8\/*\/vrsbase.dylib",
+    "name" : "vrsbase.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 5199323136,
+    "size" : 34729984,
+    "uuid" : "fa4093da-d869-3453-8e10-a2f7ebaf78af",
+    "path" : "\/opt\/1cv8\/*\/backend.dylib",
+    "name" : "backend.dylib"
+  },
+  {
+    "source" : "P",
+    "arch" : "x86_64",
+    "base" : 5069545472,
+    "size" : 15302656,
+    "uuid" : "419dffd5-daf9-397f-908f-c53f84cbd674",
+    "path" : "\/opt\/1cv8\/*\/mngui.dylib",
+    "name" : "mngui.dylib"
+  }
+],
+  "sharedCache" : {
+  "base" : 140703606177792,
+  "size" : 15215640576,
+  "uuid" : "b5084610-afe4-3485-bade-628c4468b057"
+},
+  "vmSummary" : "ReadOnly portion of Libraries: Total=1.4G resident=0K(0%) swapped_out_or_unallocated=1.4G(100%)\nWritable regions: Total=2.3G written=0K(0%) resident=0K(0%) swapped_out=0K(0%) unallocated=2.3G(100%)\n\n                                VIRTUAL   REGION \nREGION TYPE                        SIZE    COUNT (non-coalesced) \n===========                     =======  ======= \nAccelerate framework               512K        4 \nActivity Tracing                   256K        1 \nCG backing stores                 2176K        4 \nCG image                           472K       16 \nColorSync                          232K       26 \nCoreAnimation                    110.5M       12 \nCoreGraphics                        12K        2 \nCoreUI image data                  668K        5 \nFoundation                          16K        1 \nKernel Alloc Once                    8K        1 \nMALLOC                           865.3M      115 \nMALLOC guard page                  192K       10 \nMALLOC_MEDIUM (reserved)         904.0M        8         reserved VM address space (unallocated)\nMALLOC_NANO (reserved)           256.0M        1         reserved VM address space (unallocated)\nRosetta Arena                     4096K        2 \nRosetta Generic                   1456K      361 \nRosetta IndirectBranch            4096K        1 \nRosetta JIT                      128.0M        1 \nRosetta Return Stack               700K       70 \nRosetta Thread Context             700K       70 \nSTACK GUARD                          8K        2 \nStack                             36.8M       36 \nStack Guard                       56.1M       34 \nVM_ALLOCATE                       25.3M     2341 \nVM_ALLOCATE (reserved)            2176K       42         reserved VM address space (unallocated)\n__DATA                            54.4M      514 \n__DATA_CONST                      16.1M      196 \n__DATA_DIRTY                       640K      110 \n__FONT_DATA                          4K        1 \n__LINKEDIT                       717.3M      118 \n__OBJC_RO                         81.6M        1 \n__OBJC_RW                         3120K        2 \n__TEXT                           680.3M      458 \n__UNICODE                          588K        1 \ndyld private memory               1056K        3 \nmapped file                        5.5G      905 \nshared memory                      812K       15 \nunshared pmap                     7728K        5 \n===========                     =======  ======= \nTOTAL                              9.3G     5495 \nTOTAL, minus reserved VM space     8.2G     5495 \n",
+  "legacyInfo" : {
+  "threadTriggered" : {
+    "queue" : "com.apple.main-thread"
+  }
+},
+  "trialInfo" : {
+  "rollouts" : [
+    {
+      "rolloutId" : "60da5e84ab0ca017dace9abf",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000008
+    },
+    {
+      "rolloutId" : "607844aa04477260f58a8077",
+      "factorPackIds" : {
+        "SIRI_MORPHUN_ASSETS" : "6103050cbfe6dc472e1c982a"
+      },
+      "deploymentId" : 240000066
+    },
+    {
+      "rolloutId" : "5fb4245a1bbfe8005e33a1e1",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000015
+    },
+    {
+      "rolloutId" : "601d9415f79519000ccd4b69",
+      "factorPackIds" : {
+        "SIRI_TEXT_TO_SPEECH" : "61ef3bd729647d394933a0a6"
+      },
+      "deploymentId" : 240000416
+    },
+    {
+      "rolloutId" : "602ad4dac86151000cf27e46",
+      "factorPackIds" : {
+        "SIRI_DICTATION_ASSETS" : "61ae8d06da72d16a4beb762e"
+      },
+      "deploymentId" : 240000305
+    },
+    {
+      "rolloutId" : "60186475825c62000ccf5450",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000026
+    },
+    {
+      "rolloutId" : "5ffde50ce2aacd000d47a95f",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000198
+    },
+    {
+      "rolloutId" : "5fc94383418129005b4e9ae0",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000454
+    },
+    {
+      "rolloutId" : "60f8ddccefea4203d95cbeef",
+      "factorPackIds" : {
+
+      },
+      "deploymentId" : 240000020
+    }
+  ],
+  "experiments" : [
+
+  ]
+}
+}
+
+Model: MacBookPro17,1, BootROM 7429.41.5, proc 8:4:4 processors, 16 GB, SMC 
+Graphics: Apple M1, Apple M1, Built-In
+Display: Color LCD, 2560 x 1600 Retina, Main, MirrorOff, Online
+Memory Module: LPDDR4
+AirPort: Wi-Fi, wl0: Sep 13 2021 21:06:59 version 18.20.310.14.7.8.119 FWID 01-9d72ee4a
+Bluetooth: Version (null), 0 services, 0 devices, 0 incoming serial ports
+Network Service: Wi-Fi, AirPort, en0
+USB Device: USB31Bus
+USB Device: USB31Bus
+Thunderbolt Bus: MacBook Pro, Apple Inc.
+Thunderbolt Bus: MacBook Pro, Apple Inc.

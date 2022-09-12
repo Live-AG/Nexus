@@ -1191,6 +1191,7 @@
 			<CommonForm>ФормаПоиска</CommonForm>
 			<CommonForm>ФормаНастройкиКаталогов</CommonForm>
 			<CommonForm>ФормаОбщихПараметровАутетнитификации</CommonForm>
+			<CommonForm>ФормаАвторизации</CommonForm>
 			<Catalog>ВариантыОтчетов</Catalog>
 			<Catalog>ВебСерверы</Catalog>
 			<Catalog>ВерсииКонфигураций</Catalog>

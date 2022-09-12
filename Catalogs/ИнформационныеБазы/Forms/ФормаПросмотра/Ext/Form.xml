@@ -987,27 +987,14 @@
 															<ContextMenu name="ДекорацияАдминистраторНадписьКонтекстноеМеню" id="352"/>
 															<ExtendedTooltip name="ДекорацияАдминистраторНадписьРасширеннаяПодсказка" id="353"/>
 														</LabelDecoration>
-														<PictureDecoration name="Декорация1" id="438">
-															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-															<Hyperlink>true</Hyperlink>
-															<PictureSize>ByFontSize</PictureSize>
-															<Picture>
-																<xr:Ref>CommonPicture.Редактировать</xr:Ref>
-																<xr:LoadTransparent>true</xr:LoadTransparent>
-															</Picture>
-															<ContextMenu name="Декорация1КонтекстноеМеню" id="439"/>
-															<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="440"/>
-															<Events>
-																<Event name="Click">Декорация1Нажатие</Event>
-															</Events>
-														</PictureDecoration>
+														<Button name="ОткрытьФормуАвторизации" id="441">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.ОткрытьФормуАвторизации</CommandName>
+															<ShapeRepresentation>None</ShapeRepresentation>
+															<ExtendedTooltip name="ОткрытьФормуАвторизацииРасширеннаяПодсказка" id="442"/>
+														</Button>
 													</ChildItems>
 												</UsualGroup>
-												<LabelDecoration name="Декорация15" id="304">
-													<Font ref="style:NormalTextFont" height="10" kind="StyleItem"/>
-													<ContextMenu name="Декорация15КонтекстноеМеню" id="305"/>
-													<ExtendedTooltip name="Декорация15РасширеннаяПодсказка" id="306"/>
-												</LabelDecoration>
 											</ChildItems>
 										</UsualGroup>
 										<LabelField name="ИмяПользователяИБ" id="307">
@@ -1530,7 +1517,26 @@
 			</Picture>
 			<Action>КомандаРедактировать</Action>
 		</Command>
-		<Command name="Команда1" id="2"/>
+		<Command name="ОткрытьФормуАвторизации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму авторизации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть форму авторизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьФормуАвторизации</Action>
+			<Representation>Picture</Representation>
+		</Command>
 	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
