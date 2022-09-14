@@ -198,6 +198,11 @@
 														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 														<ExtendedTooltip name="ФормаОбновитьДеревоКластеровРасширеннаяПодсказка" id="34"/>
 													</Button>
+													<Button name="Тест_ОбновитьРегистрациюБаз" id="171">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.Тест_ОбновитьРегистрациюБаз</CommandName>
+														<ExtendedTooltip name="Тест_ОбновитьРегистрациюБазРасширеннаяПодсказка" id="172"/>
+													</Button>
 												</ChildItems>
 											</ContextMenu>
 											<AutoCommandBar name="ТаблицаЭлементовКластераКоманднаяПанель" id="2"/>
@@ -1214,6 +1219,25 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗакрепитьКластер</Action>
+		</Command>
+		<Command name="Тест_ОбновитьРегистрациюБаз" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест обновить регистрацию баз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тест обновить регистрацию баз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СоздатьПодключения</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Тест_ОбновитьРегистрациюБаз</Action>
 		</Command>
 	</Commands>
 </Form>

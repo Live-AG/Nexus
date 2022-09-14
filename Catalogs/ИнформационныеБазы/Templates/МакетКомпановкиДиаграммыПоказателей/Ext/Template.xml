@@ -43,7 +43,7 @@
 					<dcscor:value xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ДФ='dd.MM.yy (HH:mm)'</v8:content>
+							<v8:content>ДФ=HH:mm</v8:content>
 						</v8:item>
 					</dcscor:value>
 				</dcscor:item>

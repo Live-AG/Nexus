@@ -14,7 +14,7 @@
 			<Description>Свертка регистров сбора статистики</Description>
 			<Key/>
 			<Use>true</Use>
-			<Predefined>false</Predefined>
+			<Predefined>true</Predefined>
 			<RestartCountOnFailure>3</RestartCountOnFailure>
 			<RestartIntervalOnFailure>10</RestartIntervalOnFailure>
 		</Properties>
