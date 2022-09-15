@@ -798,6 +798,7 @@
 			</TabularSection>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаНовогоЭлемента</Form>
+			<Form>ФормаПросмотра</Form>
 			<Template>МакетСводнойИнформации</Template>
 		</ChildObjects>
 	</Catalog>

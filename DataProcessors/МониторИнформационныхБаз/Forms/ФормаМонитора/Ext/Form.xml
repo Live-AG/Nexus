@@ -1072,7 +1072,7 @@
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
+				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЗакрепленныеЭлементы.ЭлементЗакрепления КАК ЭлементЗакрепления,
 	ЗакрепленныеЭлементы.НомерВГруппе КАК НомерВГруппе
@@ -1087,33 +1087,25 @@
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
 	СправочникПроекты.Ссылка КАК Проект,
-	СправочникПроекты.ПометкаУдаления КАК ПометкаУдаления,
 	СправочникПроекты.Наименование КАК Наименование,
-	СправочникПроекты.Предопределенный КАК Предопределенный,
-	СправочникПроекты.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
-	0 КАК ИндексКартинки,
+	ВЫБОР
+		КОГДА СправочникПроекты.Предопределенный
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ИндексКартинки,
 	СправочникПроекты.Контрагент КАК Контрагент,
-	ЕСТЬNULL(ВТ_ЗакрепленныеЭлементы.НомерВГруппе, 100) КАК ПолеУпорядочивания
+	ВЫБОР
+		КОГДА СправочникПроекты.Предопределенный
+			ТОГДА 101
+		ИНАЧЕ ЕСТЬNULL(ВТ_ЗакрепленныеЭлементы.НомерВГруппе, 100)
+	КОНЕЦ КАК ПолеУпорядочивания
 ИЗ
 	Справочник.Проекты КАК СправочникПроекты
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗакрепленныеЭлементы КАК ВТ_ЗакрепленныеЭлементы
-		ПО СправочникПроекты.Ссылка = ВТ_ЗакрепленныеЭлементы.ЭлементЗакрепления
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка),
-	Null,
-	Null,
-	Null,
-	Null,
-	1,
-	Null,
-	101
-</QueryText>
+		ПО СправочникПроекты.Ссылка = ВТ_ЗакрепленныеЭлементы.ЭлементЗакрепления</QueryText>
+				<MainTable>Catalog.Проекты</MainTable>
 				<ListSettings>
 					<dcsset:filter>
-						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
@@ -1134,7 +1126,8 @@
 							<dcsset:filter>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
 									<dcsset:left xsi:type="dcscor:Field">Проект</dcsset:left>
-									<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Проекты.НеЗаполнен</dcsset:right>
 								</dcsset:item>
 							</dcsset:filter>
 							<dcsset:appearance>
