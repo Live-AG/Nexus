@@ -41,7 +41,7 @@
 					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
 					<Picture>
 						<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
 					<ContextMenu name="ДекорацияБазаКонтекстноеМеню" id="62"/>
 					<ExtendedTooltip name="ДекорацияБазаРасширеннаяПодсказка" id="63"/>
@@ -557,7 +557,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Предприятие</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗапуститьПредприятие</Action>
 			<Representation>TextPicture</Representation>
@@ -577,7 +577,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Конфигуратор</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗапуститьКонфигуратор</Action>
 			<Representation>TextPicture</Representation>
@@ -597,7 +597,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ЯрлыкИнформационнйБазы</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Representation>TextPicture</Representation>
 		</Command>

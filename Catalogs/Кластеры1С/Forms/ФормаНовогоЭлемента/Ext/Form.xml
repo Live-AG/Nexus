@@ -540,7 +540,7 @@
 							<RowPictureDataPath>СписокБаз.Picture</RowPictureDataPath>
 							<RowsPicture>
 								<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</RowsPicture>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<ToolTipRepresentation>ShowTop</ToolTipRepresentation>
@@ -662,6 +662,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="СтрукутараПараметров" id="2">
 			<Title>

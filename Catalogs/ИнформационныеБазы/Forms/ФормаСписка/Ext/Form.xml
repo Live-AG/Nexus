@@ -137,9 +137,6 @@
 				<Command>Catalog.ИнформационныеБазы.Command.ЗапуститьПредприятие</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.ВыполнитьДействия</CommandGroup>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
 			</Item>
 		</CommandBar>
 	</CommandInterface>

@@ -534,6 +534,7 @@
 			<Save>
 				<Field>мСписокЗначений</Field>
 			</Save>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="мДата" id="17">
 			<Title>

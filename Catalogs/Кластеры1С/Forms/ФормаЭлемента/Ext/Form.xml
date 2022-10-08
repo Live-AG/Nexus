@@ -265,7 +265,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.СоздатьПодключения</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ВыполнитьПодключение</Action>
 			<Representation>TextPicture</Representation>

@@ -53,7 +53,7 @@
 									<Hyperlink>true</Hyperlink>
 									<Picture>
 										<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="Декорация3КонтекстноеМеню" id="8"/>
 									<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="9"/>
@@ -70,7 +70,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<Hyperlink>true</Hyperlink>
 									<ContextMenu name="Декорация4КонтекстноеМеню" id="11"/>
-									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="12" DisplayImportance="VeryHigh">
+									<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="12">
 										<Title formatted="true">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -92,7 +92,7 @@
 									<Hyperlink>true</Hyperlink>
 									<Picture>
 										<xr:Ref>CommonPicture.Конфигуратор_ЧБ</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="Декорация5КонтекстноеМеню" id="16"/>
 									<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="17"/>
@@ -132,7 +132,7 @@
 									<Hyperlink>true</Hyperlink>
 									<Picture>
 										<xr:Ref>CommonPicture.Конфигуратор_ЧБ1</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="Декорация1КонтекстноеМеню" id="24"/>
 									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="25"/>
@@ -149,7 +149,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<Hyperlink>true</Hyperlink>
 									<ContextMenu name="Декорация2КонтекстноеМеню" id="27"/>
-									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="28" DisplayImportance="VeryHigh">
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="28">
 										<Title formatted="true">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -191,7 +191,7 @@
 									<Hyperlink>true</Hyperlink>
 									<Picture>
 										<xr:Ref>CommonPicture.Проект1</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="Декорация7КонтекстноеМеню" id="34"/>
 									<ExtendedTooltip name="Декорация7РасширеннаяПодсказка" id="35"/>
@@ -208,7 +208,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<Hyperlink>true</Hyperlink>
 									<ContextMenu name="Декорация8КонтекстноеМеню" id="37"/>
-									<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="38" DisplayImportance="VeryHigh">
+									<ExtendedTooltip name="Декорация8РасширеннаяПодсказка" id="38">
 										<Title formatted="true">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -230,7 +230,7 @@
 									<Hyperlink>true</Hyperlink>
 									<Picture>
 										<xr:Ref>CommonPicture.БазаЗаблокирована</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="Декорация9КонтекстноеМеню" id="42"/>
 									<ExtendedTooltip name="Декорация9РасширеннаяПодсказка" id="43"/>
@@ -247,7 +247,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<Hyperlink>true</Hyperlink>
 									<ContextMenu name="Декорация10КонтекстноеМеню" id="45"/>
-									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="46" DisplayImportance="VeryHigh">
+									<ExtendedTooltip name="Декорация10РасширеннаяПодсказка" id="46">
 										<Title formatted="true">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -269,7 +269,7 @@
 									<Hyperlink>true</Hyperlink>
 									<Picture>
 										<xr:Ref>CommonPicture.БазаДобавить</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="Декорация11КонтекстноеМеню" id="50"/>
 									<ExtendedTooltip name="Декорация11РасширеннаяПодсказка" id="51"/>
@@ -286,7 +286,7 @@
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<Hyperlink>true</Hyperlink>
 									<ContextMenu name="Декорация12КонтекстноеМеню" id="53"/>
-									<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="54" DisplayImportance="VeryHigh">
+									<ExtendedTooltip name="Декорация12РасширеннаяПодсказка" id="54">
 										<Title formatted="true">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
