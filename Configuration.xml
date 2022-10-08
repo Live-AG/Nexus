@@ -578,6 +578,7 @@
 			<CommonPicture>ВыполнитьСценарий</CommonPicture>
 			<CommonPicture>РаботаСоСкриптами</CommonPicture>
 			<CommonPicture>ДобавитьНовыйЭлемент</CommonPicture>
+			<CommonPicture>СерверНаборСтатический</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>

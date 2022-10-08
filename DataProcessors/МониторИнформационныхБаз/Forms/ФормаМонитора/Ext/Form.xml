@@ -166,7 +166,7 @@
 											<DataPath>ТаблицаЭлементовКластера</DataPath>
 											<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
 											<RowsPicture>
-												<xr:Ref>CommonPicture.СерверНабор</xr:Ref>
+												<xr:Ref>CommonPicture.СерверНаборСтатический</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
@@ -187,6 +187,7 @@
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
 											<ContextMenu name="ТаблицаЭлементовКластераКонтекстноеМеню" id="3">
+												<Autofill>false</Autofill>
 												<ChildItems>
 													<Button name="Тест_ПересоздатьКластер" id="136">
 														<Type>CommandBarButton</Type>
@@ -203,6 +204,21 @@
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.Тест_ОбновитьРегистрациюБаз</CommandName>
 														<ExtendedTooltip name="Тест_ОбновитьРегистрациюБазРасширеннаяПодсказка" id="172"/>
+													</Button>
+													<Button name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлемент" id="180">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
+														<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="181"/>
+													</Button>
+													<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверх" id="186">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
+														<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="187"/>
+													</Button>
+													<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВниз" id="188">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
+														<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="189"/>
 													</Button>
 												</ChildItems>
 											</ContextMenu>
@@ -278,7 +294,7 @@
 																	<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
 																</InputField>
 																<PictureField name="ТаблицаЭлементовКластераКартинкаЗакрепить" id="160">
-																	<DataPath>ТаблицаЭлементовКластера.ПолеУпорядочивания</DataPath>
+																	<DataPath>ТаблицаЭлементовКластера.ИндексКартинкиЗакрепить</DataPath>
 																	<HorizontalAlign>Right</HorizontalAlign>
 																	<FixingInTable>Right</FixingInTable>
 																	<ValuesPicture>
@@ -401,7 +417,26 @@
 											<ShowRoot>false</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
-											<ContextMenu name="ТаблицаПроектовКонтекстноеМеню" id="85"/>
+											<ContextMenu name="ТаблицаПроектовКонтекстноеМеню" id="85">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="ТаблицаПроектовКонтекстноеМенюЗакрепитьТекущийЭлемент" id="182">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
+														<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="183"/>
+													</Button>
+													<Button name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВверх" id="192">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
+														<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="193"/>
+													</Button>
+													<Button name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВниз" id="190">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
+														<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="191"/>
+													</Button>
+												</ChildItems>
+											</ContextMenu>
 											<AutoCommandBar name="ТаблицаПроектовКоманднаяПанель" id="86"/>
 											<ExtendedTooltip name="ТаблицаПроектовРасширеннаяПодсказка" id="87"/>
 											<SearchStringAddition name="ТаблицаПроектовСтрокаПоиска" id="88">
@@ -473,7 +508,7 @@
 																	<ExtendedTooltip name="ТаблицаПроектовПроектРасширеннаяПодсказка" id="170"/>
 																</InputField>
 																<PictureField name="ТаблицаПроектовКартинкаЗакрепить" id="165">
-																	<DataPath>ТаблицаПроектов.ПолеУпорядочивания</DataPath>
+																	<DataPath>ТаблицаПроектов.ИндексКартинкиЗакрепить</DataPath>
 																	<HorizontalAlign>Right</HorizontalAlign>
 																	<FixingInTable>Right</FixingInTable>
 																	<ValuesPicture>
@@ -498,20 +533,20 @@
 										</Table>
 									</ChildItems>
 								</Page>
-								<Page name="ГруппаПользователи" id="114">
+								<Page name="ГруппаИзбранное" id="114">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа пользователи</v8:content>
+											<v8:content>Группа избранное</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа пользователи</v8:content>
+											<v8:content>Группа избранное</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаПользователиРасширеннаяПодсказка" id="115"/>
+									<ExtendedTooltip name="ГруппаИзбранноеРасширеннаяПодсказка" id="115"/>
 								</Page>
 							</ChildItems>
 						</Pages>
@@ -528,83 +563,39 @@
 									<v8:content>Группа виды отбора</v8:content>
 								</v8:item>
 							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>OneAndHalf</HorizontalSpacing>
+							<HorizontalAlign>Center</HorizontalAlign>
 							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВидыОтбораРасширеннаяПодсказка" id="141"/>
 							<ChildItems>
+								<Button name="КомандаКластеры" id="194">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаКластеры</CommandName>
+									<TextColor>style:ГиперссылкаЦвет</TextColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="КомандаКластерыРасширеннаяПодсказка" id="195"/>
+								</Button>
 								<Button name="КомандаПроекты" id="138">
-									<Type>Hyperlink</Type>
+									<Type>UsualButton</Type>
 									<CommandName>Form.Command.КомандаПроекты</CommandName>
+									<TextColor>style:ГиперссылкаЦвет</TextColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<ShapeRepresentation>None</ShapeRepresentation>
 									<ExtendedTooltip name="КомандаПроектыРасширеннаяПодсказка" id="139"/>
 								</Button>
-								<RadioButtonField name="ВидОтбора" id="105">
-									<DataPath>ВидОтбора</DataPath>
-									<TitleLocation>None</TitleLocation>
-									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-									<RadioButtonType>Tumbler</RadioButtonType>
-									<ChoiceList>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Кластеры</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">Кластеры</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Проекты</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">Проекты</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Пользователи</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">Пользователи</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Избранное</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xs:string">Избранное</Value>
-											</xr:Value>
-										</xr:Item>
-									</ChoiceList>
-									<BackColor>style:FormBackColor</BackColor>
-									<BorderColor>style:FormBackColor</BorderColor>
-									<ContextMenu name="ВидОтбораКонтекстноеМеню" id="106"/>
-									<ExtendedTooltip name="ВидОтбораРасширеннаяПодсказка" id="107"/>
-									<Events>
-										<Event name="OnChange">ВидОтбораПриИзменении</Event>
-									</Events>
-								</RadioButtonField>
+								<Button name="КомандаИзбранное" id="196">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаИзбранное</CommandName>
+									<TextColor>style:ГиперссылкаЦвет</TextColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="КомандаИзбранноеРасширеннаяПодсказка" id="197"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -721,7 +712,15 @@
 									<ShowRoot>true</ShowRoot>
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
-									<ContextMenu name="ТаблицаИнформационныхБазКонтекстноеМеню" id="38"/>
+									<ContextMenu name="ТаблицаИнформационныхБазКонтекстноеМеню" id="38">
+										<ChildItems>
+											<Button name="ТаблицаИнформационныхБазКонтекстноеМенюЗакрепитьИнформационнуюБазу" id="184">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗакрепитьИнформационнуюБазу</CommandName>
+												<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюЗакрепитьИнформационнуюБазуРасширеннаяПодсказка" id="185"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
 									<AutoCommandBar name="ТаблицаИнформационныхБазКоманднаяПанель" id="39"/>
 									<ExtendedTooltip name="ТаблицаИнформационныхБазРасширеннаяПодсказка" id="40"/>
 									<SearchStringAddition name="ТаблицаИнформационныхБазСтрокаПоиска" id="41">
@@ -929,6 +928,20 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
+	ТекущиеЗаданияОбъектов.ИсточникЗадания КАК ИсточникЗадания,
+	ТекущиеЗаданияОбъектов.ИдентификаторЗадания КАК ИдентификаторЗадания
+ПОМЕСТИТЬ ВТ_ЗаданияОбъектов
+ИЗ
+	РегистрСведений.ТекущиеЗаданияОбъектов КАК ТекущиеЗаданияОбъектов
+ГДЕ
+	ТекущиеЗаданияОбъектов.ИсточникЗадания ССЫЛКА Справочник.Кластеры1С
+
+ИНДЕКСИРОВАТЬ ПО
+	ИсточникЗадания
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
 	Кластеры1С.Ссылка КАК ЭлементКластера,
 	Кластеры1С.ВерсияПлатформы КАК ВерсияПлатформы,
 	Кластеры1С.Описание КАК Описание,
@@ -936,22 +949,30 @@
 	Кластеры1С.Активен КАК Активен,
 	Кластеры1С.ИдентификаторКластера КАК ИдентификаторКластера,
 	ВЫБОР
-		КОГДА ТекущиеЗаданияОбъектов.ИдентификаторЗадания ЕСТЬ NULL
+		КОГДА ВТ_ЗаданияОбъектов.ИдентификаторЗадания ЕСТЬ NULL
 			ТОГДА 1
 		ИНАЧЕ 0
 	КОНЕЦ КАК ИндексСостояния,
-	ЕСТЬNULL(ВТ_ЗакрепленныеЭлементы.НомерВГруппе, 100) КАК ПолеУпорядочивания
+	ЕСТЬNULL(ВТ_ЗакрепленныеЭлементы.НомерВГруппе, 100) КАК ПолеУпорядочивания,
+	ВЫБОР
+		КОГДА ВТ_ЗакрепленныеЭлементы.НомерВГруппе ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ИндексКартинкиЗакрепить
 ИЗ
 	Справочник.Кластеры1С КАК Кластеры1С
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТекущиеЗаданияОбъектов КАК ТекущиеЗаданияОбъектов
-		ПО (Кластеры1С.Ссылка = (ВЫРАЗИТЬ(ТекущиеЗаданияОбъектов.Объект КАК Справочник.Кластеры1С)))
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗаданияОбъектов КАК ВТ_ЗаданияОбъектов
+		ПО Кластеры1С.Ссылка = ВТ_ЗаданияОбъектов.ИсточникЗадания
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗакрепленныеЭлементы КАК ВТ_ЗакрепленныеЭлементы
-		ПО Кластеры1С.Ссылка = ВТ_ЗакрепленныеЭлементы.ЭлементЗакрепления
-ГДЕ
-	НЕ Кластеры1С.ПометкаУдаления</QueryText>
+		ПО Кластеры1С.Ссылка = ВТ_ЗакрепленныеЭлементы.ЭлементЗакрепления</QueryText>
 				<MainTable>Catalog.Кластеры1С</MainTable>
 				<ListSettings>
 					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ЭлементКластера.ПометкаУдаления</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
@@ -1089,10 +1110,15 @@
 	СправочникПроекты.Ссылка КАК Проект,
 	СправочникПроекты.Наименование КАК Наименование,
 	ВЫБОР
-		КОГДА СправочникПроекты.Предопределенный
+		КОГДА СправочникПроекты.Предопределенный 
 			ТОГДА 1
 		ИНАЧЕ 0
 	КОНЕЦ КАК ИндексКартинки,
+	ВЫБОР
+		КОГДА ВТ_ЗакрепленныеЭлементы.НомерВГруппе ЕСТЬ NULL
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК ИндексКартинкиЗакрепить,
 	СправочникПроекты.Контрагент КАК Контрагент,
 	ВЫБОР
 		КОГДА СправочникПроекты.Предопределенный
@@ -1137,12 +1163,7 @@
 								</dcscor:item>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 									<dcscor:parameter>Текст</dcscor:parameter>
-									<dcscor:value xsi:type="v8:LocalStringType">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;Не заполнено&gt;</v8:content>
-										</v8:item>
-									</dcscor:value>
+									<dcscor:value xsi:type="xs:string">&lt;Не заполнено&gt;</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
@@ -1330,6 +1351,104 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьПроект</Action>
+		</Command>
+		<Command name="ЗакрепитьТекущийЭлемент" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрепить текущий элемент</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрепить текущий элемент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрепитьТекущийЭлемент</Action>
+		</Command>
+		<Command name="ЗакрепитьИнформационнуюБазу" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрепить информационную базу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрепить информационную базу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрепитьИнформационнуюБазу</Action>
+		</Command>
+		<Command name="ПереместитьЗакрепленноеВверх" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить вверх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить закрепленное вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СтрелкаВверх</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереместитьЗакрепленноеВверх</Action>
+		</Command>
+		<Command name="ПереместитьЗакрепленноеВниз" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить вниз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переместить закрепленное вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СтрелкаВниз</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПереместитьЗакрепленноеВниз</Action>
+		</Command>
+		<Command name="КомандаКластеры" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кластеры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда кластеры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаКластеры</Action>
+		</Command>
+		<Command name="КомандаИзбранное" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Избранное</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда избранное</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаИзбранное</Action>
 		</Command>
 	</Commands>
 </Form>

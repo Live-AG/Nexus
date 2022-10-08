@@ -1741,7 +1741,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.Объект</Command>
+				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.ИсточникЗадания</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>4</Index>

@@ -396,7 +396,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.Объект</Command>
+				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.ИсточникЗадания</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

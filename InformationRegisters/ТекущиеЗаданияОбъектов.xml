@@ -125,11 +125,11 @@
 			</Resource>
 			<Dimension uuid="cb5f3b05-db3b-4644-9fe9-206badc4e928">
 				<Properties>
-					<Name>Объект</Name>
+					<Name>ИсточникЗадания</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
+							<v8:content>Источник задания</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
