@@ -143,7 +143,7 @@
 													<TextColor>style:ЦветПустойГиперссылки</TextColor>
 													<Picture>
 														<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ExtendedTooltip name="ДобавитьКластерРасширеннаяПодсказка" id="150"/>
 												</Button>
@@ -166,8 +166,13 @@
 											<DataPath>ТаблицаЭлементовКластера</DataPath>
 											<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
 											<RowsPicture>
+<<<<<<< HEAD
 												<xr:Ref>CommonPicture.СерверНаборСтатический</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
+=======
+												<xr:Ref>CommonPicture.СерверНабор</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+>>>>>>> d33452b0f9739f6e822d333ef8d3ceca40709c25
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<CommandSet>
@@ -299,7 +304,7 @@
 																	<FixingInTable>Right</FixingInTable>
 																	<ValuesPicture>
 																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
 																	</ValuesPicture>
 																	<ContextMenu name="ТаблицаЭлементовКластераКартинкаЗакрепитьКонтекстноеМеню" id="161"/>
 																	<ExtendedTooltip name="ТаблицаЭлементовКластераКартинкаЗакрепитьРасширеннаяПодсказка" id="162"/>
@@ -377,7 +382,7 @@
 													<TextColor>style:ЦветПустойГиперссылки</TextColor>
 													<Picture>
 														<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ExtendedTooltip name="ДобавитьПроектРасширеннаяПодсказка" id="179"/>
 												</Button>
@@ -401,7 +406,7 @@
 											<RowPictureDataPath>ТаблицаПроектов.ИндексКартинки</RowPictureDataPath>
 											<RowsPicture>
 												<xr:Ref>CommonPicture.ПроектЖурнал</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<AutoRefresh>false</AutoRefresh>
@@ -513,7 +518,7 @@
 																	<FixingInTable>Right</FixingInTable>
 																	<ValuesPicture>
 																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
 																	</ValuesPicture>
 																	<ContextMenu name="ТаблицаПроектовКартинкаЗакрепитьКонтекстноеМеню" id="166"/>
 																	<ExtendedTooltip name="ТаблицаПроектовКартинкаЗакрепитьРасширеннаяПодсказка" id="167"/>
@@ -668,7 +673,7 @@
 											<TextColor>style:ЦветПустойГиперссылки</TextColor>
 											<Picture>
 												<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<Title>
 												<v8:item>
@@ -693,7 +698,7 @@
 									<RowPictureDataPath>ТаблицаИнформационныхБаз.ПолеГиперссылки</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<BorderColor>style:FormBackColor</BorderColor>
 									<CommandSet>
@@ -798,7 +803,7 @@
 											<Hyperlink>true</Hyperlink>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.ВыполнитьЗапуск</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<ContextMenu name="ТаблицаИнформационныхБазПолеНастройкаКонтекстноеМеню" id="66"/>
@@ -860,7 +865,7 @@
 											<GroupVerticalAlign>Center</GroupVerticalAlign>
 											<Picture>
 												<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<ContextMenu name="ДекорацияОжиданиеКонтекстноеМеню" id="129"/>
 											<ExtendedTooltip name="ДекорацияОжиданиеРасширеннаяПодсказка" id="130"/>
@@ -1075,6 +1080,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="ТаблицаПроектов" id="5">
 			<Title>
@@ -1314,7 +1320,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗакрепитьКластер</Action>
 		</Command>
@@ -1333,7 +1339,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.СоздатьПодключения</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>Тест_ОбновитьРегистрациюБаз</Action>
 		</Command>
