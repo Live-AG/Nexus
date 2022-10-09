@@ -267,7 +267,6 @@
 											<HorizontalLines>false</HorizontalLines>
 											<VerticalLines>false</VerticalLines>
 											<InitialTreeView>ExpandAllLevels</InitialTreeView>
-											<EnableStartDrag>true</EnableStartDrag>
 											<DataPath>ТаблицаЭлементовКластера</DataPath>
 											<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
 											<RowsPicture>
@@ -455,7 +454,6 @@
 											<HorizontalLines>false</HorizontalLines>
 											<VerticalLines>false</VerticalLines>
 											<InitialTreeView>ExpandAllLevels</InitialTreeView>
-											<EnableStartDrag>true</EnableStartDrag>
 											<DataPath>ТаблицаПроектов</DataPath>
 											<RowPictureDataPath>ТаблицаПроектов.ИндексКартинки</RowPictureDataPath>
 											<RowsPicture>
@@ -608,23 +606,25 @@
 									<ExtendedTooltip name="ГруппаИзбранноеРасширеннаяПодсказка" id="115"/>
 									<ChildItems>
 										<Table name="ТаблицаИзбранного" id="198">
+											<Representation>List</Representation>
 											<CommandBarLocation>None</CommandBarLocation>
 											<ChangeRowSet>false</ChangeRowSet>
 											<ChangeRowOrder>false</ChangeRowOrder>
 											<RowSelectionMode>Row</RowSelectionMode>
 											<Header>false</Header>
+											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+											<VerticalScrollBar>DontUse</VerticalScrollBar>
 											<HorizontalLines>false</HorizontalLines>
 											<VerticalLines>false</VerticalLines>
-											<EnableStartDrag>true</EnableStartDrag>
+											<InitialTreeView>ExpandAllLevels</InitialTreeView>
+											<EnableDrag>true</EnableDrag>
 											<DataPath>ТаблицаИзбранного</DataPath>
 											<RowPictureDataPath>ТаблицаИзбранного.ИндексКартинки</RowPictureDataPath>
 											<RowsPicture>
-												<xr:Ref>CommonPicture.ИзбранноеГруппы</xr:Ref>
+												<xr:Ref>CommonPicture.ИзбранноеНабор</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
-											<SearchStringLocation>None</SearchStringLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<AutoRefresh>false</AutoRefresh>
 											<AutoRefreshPeriod>60</AutoRefreshPeriod>
 											<Period>
@@ -635,7 +635,7 @@
 											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 											<RestoreCurrentRow>false</RestoreCurrentRow>
 											<TopLevelParent xsi:nil="true"/>
-											<ShowRoot>true</ShowRoot>
+											<ShowRoot>false</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
 											<ContextMenu name="ТаблицаИзбранногоКонтекстноеМеню" id="199">
@@ -685,7 +685,9 @@
 												<ExtendedTooltip name="ТаблицаИзбранногоУправлениеПоискомРасширеннаяПодсказка" id="210"/>
 											</SearchControlAddition>
 											<Events>
+												<Event name="DragCheck">ТаблицаИзбранногоПроверкаПеретаскивания</Event>
 												<Event name="OnActivateRow">ТаблицаИзбранногоПриАктивизацииСтроки</Event>
+												<Event name="Drag">ТаблицаИзбранногоПеретаскивание</Event>
 											</Events>
 											<ChildItems>
 												<ColumnGroup name="ТаблицаИзбранногоВертикальная" id="226">
@@ -719,12 +721,14 @@
 															<Group>Horizontal</Group>
 															<ExtendedTooltip name="ТаблицаИзбранногоГруппаГоризонтальноеРасширеннаяПодсказка" id="229"/>
 															<ChildItems>
-																<LabelField name="ТаблицаИзбранногоГруппаИзбранного" id="223">
+																<InputField name="ТаблицаИзбранногоГруппаИзбранного" id="223">
 																	<DataPath>ТаблицаИзбранного.ГруппаИзбранных</DataPath>
+																	<BorderColor>style:FieldBackColor</BorderColor>
 																	<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+																	<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
 																	<ContextMenu name="ТаблицаИзбранногоГруппаИзбранногоКонтекстноеМеню" id="224"/>
 																	<ExtendedTooltip name="ТаблицаИзбранногоГруппаИзбранногоРасширеннаяПодсказка" id="225"/>
-																</LabelField>
+																</InputField>
 																<PictureField name="ТаблицаИзбранногоКартинкаЗакрепить" id="214">
 																	<DataPath>ТаблицаИзбранного.ИндексКартинкиЗакрепить</DataPath>
 																	<HorizontalAlign>Right</HorizontalAlign>
@@ -904,6 +908,7 @@
 									</SearchControlAddition>
 									<Events>
 										<Event name="Selection">ТаблицаИнформационныхБазВыбор</Event>
+										<Event name="DragStart">ТаблицаИнформационныхБазНачалоПеретаскивания</Event>
 									</Events>
 									<ChildItems>
 										<LabelField name="ТаблицаИнформационныхБазСсылка" id="53">
@@ -1344,6 +1349,7 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+			<SavedData>true</SavedData>
 		</Attribute>
 		<Attribute name="АктивныФоновыеЗадания" id="8">
 			<Title>
@@ -1389,6 +1395,9 @@
 	ВЫРАЗИТЬ(ГруппыИзбранного.Описание КАК СТРОКА(25)) КАК Описание,
 	ВЫБОР
 		КОГДА ГруппыИзбранного.Ссылка = ЗНАЧЕНИЕ(Справочник.ГруппыИзбранного.НеИзбранные)
+			ТОГДА 3
+		КОГДА ГруппыИзбранного.Ссылка = ЗНАЧЕНИЕ(Справочник.ГруппыИзбранного.МоиБазы)
+				ИЛИ ГруппыИзбранного.Ссылка = ЗНАЧЕНИЕ(Справочник.ГруппыИзбранного.ЧастоИспользуемые)
 			ТОГДА 1
 		ИНАЧЕ 0
 	КОНЕЦ КАК ИндексКартинки,
