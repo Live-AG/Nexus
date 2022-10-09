@@ -40,7 +40,7 @@
 					<PictureSize>AutoSize</PictureSize>
 					<Picture>
 						<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<ContextMenu name="ДекорацияБазаКонтекстноеМеню" id="173"/>
 					<ExtendedTooltip name="ДекорацияБазаРасширеннаяПодсказка" id="174"/>
@@ -226,7 +226,7 @@
 																	<GroupVerticalAlign>Center</GroupVerticalAlign>
 																	<Picture>
 																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
 																	<ContextMenu name="ДекорацияВерсияКонфигурацииПустаяКонтекстноеМеню" id="486"/>
 																	<ExtendedTooltip name="ДекорацияВерсияКонфигурацииПустаяРасширеннаяПодсказка" id="487"/>
@@ -242,9 +242,6 @@
 																	<Hyperlink>true</Hyperlink>
 																	<ContextMenu name="ДекорацияВерсияКонфигурацииНеЗаполненоКонтекстноеМеню" id="489"/>
 																	<ExtendedTooltip name="ДекорацияВерсияКонфигурацииНеЗаполненоРасширеннаяПодсказка" id="490"/>
-																	<Events>
-																		<Event name="Click">ДекорацияВерсияКонфигурацииНеЗаполненоНажатие</Event>
-																	</Events>
 																</LabelDecoration>
 															</ChildItems>
 														</UsualGroup>
@@ -318,7 +315,7 @@
 													<Format>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>ДФ=dd.MM.yyyy; ДП=Бессрочно</v8:content>
+															<v8:content>ДФ='dd.MM.yyyy "(осталось 9 дн)"'</v8:content>
 														</v8:item>
 													</Format>
 													<Hiperlink>true</Hiperlink>
@@ -376,7 +373,7 @@
 																	<PictureSize>AutoSize</PictureSize>
 																	<Picture>
 																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
 																	<ContextMenu name="ПолучениеДанныхКартинка_1КонтекстноеМеню" id="385"/>
 																	<ExtendedTooltip name="ПолучениеДанныхКартинка_1РасширеннаяПодсказка" id="386"/>
@@ -476,7 +473,7 @@
 																	<PictureSize>AutoSize</PictureSize>
 																	<Picture>
 																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
 																	<ContextMenu name="ПолучениеДанныхКартинка_2КонтекстноеМеню" id="417"/>
 																	<ExtendedTooltip name="ПолучениеДанныхКартинка_2РасширеннаяПодсказка" id="418"/>
@@ -582,7 +579,7 @@
 																	<PictureSize>AutoSize</PictureSize>
 																	<Picture>
 																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
 																	<ContextMenu name="ПолучениеДанныхКартинка_3КонтекстноеМеню" id="425"/>
 																	<ExtendedTooltip name="ПолучениеДанныхКартинка_3РасширеннаяПодсказка" id="426"/>
@@ -679,7 +676,7 @@
 																	<PictureSize>AutoSize</PictureSize>
 																	<Picture>
 																		<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
 																	<ContextMenu name="ПолучениеДанныхКартинка_4КонтекстноеМеню" id="433"/>
 																	<ExtendedTooltip name="ПолучениеДанныхКартинка_4РасширеннаяПодсказка" id="434"/>
@@ -802,7 +799,7 @@
 																	<GroupVerticalAlign>Center</GroupVerticalAlign>
 																	<Picture>
 																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
 																	<ContextMenu name="ДекорацияНазначениеПустаяКонтекстноеМеню" id="456"/>
 																	<ExtendedTooltip name="ДекорацияНазначениеПустаяРасширеннаяПодсказка" id="457"/>
@@ -896,7 +893,7 @@
 																	<GroupVerticalAlign>Center</GroupVerticalAlign>
 																	<Picture>
 																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
 																	<ContextMenu name="ДекорацияНазначениеИБПустая1КонтекстноеМеню" id="472"/>
 																	<ExtendedTooltip name="ДекорацияНазначениеИБПустая1РасширеннаяПодсказка" id="473"/>
@@ -1200,7 +1197,7 @@
 													</Title>
 													<Picture>
 														<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
-														<xr:LoadTransparent>false</xr:LoadTransparent>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
 													</Picture>
 													<ContextMenu name="ДекорацияАдминистраторПредупреждениеКонтекстноеМеню" id="349"/>
 													<ExtendedTooltip name="ДекорацияАдминистраторПредупреждениеРасширеннаяПодсказка" id="350"/>
@@ -1240,6 +1237,7 @@
 									<ControlRepresentation>Picture</ControlRepresentation>
 									<Representation>None</Representation>
 									<BackColor>web:WhiteSmoke</BackColor>
+									<AssociatedTableElementId xsi:type="xs:string">80:02023637-7868-4a5f-8576-835a76e0c9ba</AssociatedTableElementId>
 									<ExtendedTooltip name="ГруппаКластерРасширеннаяПодсказка" id="143"/>
 									<ChildItems>
 										<LabelDecoration name="Декорация13" id="290">
@@ -1724,7 +1722,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Редактировать</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ОткрытьФормуАвторизации</Action>
 			<Representation>Picture</Representation>
@@ -1757,12 +1755,18 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>3</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
 			</Item>
 			<Item>
 				<Command>Catalog.ИнформационныеБазы.Command.Пользователи</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>2</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
 			</Item>
 		</NavigationPanel>
 	</CommandInterface>

@@ -15,7 +15,7 @@
 			<Explanation/>
 			<Picture>
 				<xr:Ref>CommonPicture.ПроектЖурнал</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>

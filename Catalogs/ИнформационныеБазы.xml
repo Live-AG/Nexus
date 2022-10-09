@@ -1177,7 +1177,6 @@
 			<Form>ФормаУправление</Form>
 			<Form>ФормаСобытий</Form>
 			<Form>ФормаНовойБазы</Form>
-			<Form>ФормаПолученияКонфигурации</Form>
 			<Template>МакетПоказателей</Template>
 			<Template>МакетКомпановкиДиаграммыПоказателей</Template>
 			<Command uuid="41e9cf92-7865-4b9f-9d33-42df3adc8a22">

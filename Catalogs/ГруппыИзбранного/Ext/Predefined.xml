@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.13">
+	<Item id="62bb220f-9f63-47e1-bdc8-bf11f4dbb70a">
+		<Name>НеИзбранные</Name>
+		<Code/>
+		<Description>&lt;Не избранные&gt;</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f9c908cd-03d4-4925-8369-c30dbb100053">
+		<Name>МоиБазы</Name>
+		<Code/>
+		<Description>Мои базы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="cd19a9b1-307f-4803-a9e4-42704504bd7c">
+		<Name>ЧастоИспользуемые</Name>
+		<Code/>
+		<Description>Часто используемые</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

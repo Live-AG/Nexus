@@ -15,7 +15,7 @@
 			<Explanation/>
 			<Picture>
 				<xr:Ref>CommonPicture.РаботаСоСкриптами</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Скрипты</xr:Item>

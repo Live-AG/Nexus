@@ -161,6 +161,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
+						<v8:Type>cfg:CatalogRef.ГруппыИзбранного</v8:Type>
 						<v8:Type>cfg:CatalogRef.Кластеры1С</v8:Type>
 						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
 						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
