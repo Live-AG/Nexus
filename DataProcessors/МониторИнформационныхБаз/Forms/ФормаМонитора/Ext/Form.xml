@@ -47,12 +47,6 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаГоризонтальная" id="35">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа1</v8:content>
-				</v8:item>
-			</Title>
 			<Group>AlwaysHorizontal</Group>
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
@@ -60,12 +54,6 @@
 			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="36"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаВертикальноеРазделение" id="17">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа1</v8:content>
-						</v8:item>
-					</Title>
 					<Width>50</Width>
 					<Group>Vertical</Group>
 					<Behavior>Usual</Behavior>
@@ -393,7 +381,6 @@
 																	<MaxHeight>2</MaxHeight>
 																	<BorderColor>style:FieldBackColor</BorderColor>
 																	<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-																	<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
 																	<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
 																	<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
 																</InputField>
@@ -560,7 +547,6 @@
 																	<HorizontalAlign>Left</HorizontalAlign>
 																	<BorderColor>style:FieldBackColor</BorderColor>
 																	<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
-																	<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
 																	<ContextMenu name="ТаблицаПроектовПроектКонтекстноеМеню" id="169"/>
 																	<ExtendedTooltip name="ТаблицаПроектовПроектРасширеннаяПодсказка" id="170"/>
 																</InputField>
@@ -725,7 +711,6 @@
 																	<DataPath>ТаблицаИзбранного.ГруппаИзбранных</DataPath>
 																	<BorderColor>style:FieldBackColor</BorderColor>
 																	<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
-																	<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
 																	<ContextMenu name="ТаблицаИзбранногоГруппаИзбранногоКонтекстноеМеню" id="224"/>
 																	<ExtendedTooltip name="ТаблицаИзбранногоГруппаИзбранногоРасширеннаяПодсказка" id="225"/>
 																</InputField>
@@ -744,8 +729,9 @@
 														</ColumnGroup>
 														<LabelField name="ТаблицаИзбранногоОписание" id="217">
 															<DataPath>ТаблицаИзбранного.Описание</DataPath>
-															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>25</MaxWidth>
+															<TextColor>style:NavigationColor</TextColor>
+															<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
 															<ContextMenu name="ТаблицаИзбранногоОписаниеКонтекстноеМеню" id="218"/>
 															<ExtendedTooltip name="ТаблицаИзбранногоОписаниеРасширеннаяПодсказка" id="219"/>
 														</LabelField>
@@ -843,7 +829,6 @@
 									<CommandBarLocation>None</CommandBarLocation>
 									<ChangeRowSet>false</ChangeRowSet>
 									<ChangeRowOrder>false</ChangeRowOrder>
-									<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 									<RowSelectionMode>Row</RowSelectionMode>
 									<Header>false</Header>
 									<VerticalLines>false</VerticalLines>

@@ -216,20 +216,14 @@
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаВерсияКонфигурацииПустаяРасширеннаяПодсказка" id="484"/>
 															<ChildItems>
-																<PictureDecoration name="ДекорацияВерсияКонфигурацииПустая" id="485">
-																	<Title formatted="false">
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Декорация конфигурация пустая</v8:content>
-																		</v8:item>
-																	</Title>
+																<PictureDecoration name="ДекорацияВерсияКонфигурацииВнимание" id="485">
 																	<GroupVerticalAlign>Center</GroupVerticalAlign>
 																	<Picture>
 																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
 																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
-																	<ContextMenu name="ДекорацияВерсияКонфигурацииПустаяКонтекстноеМеню" id="486"/>
-																	<ExtendedTooltip name="ДекорацияВерсияКонфигурацииПустаяРасширеннаяПодсказка" id="487"/>
+																	<ContextMenu name="ДекорацияВерсияКонфигурацииВниманиеКонтекстноеМеню" id="486"/>
+																	<ExtendedTooltip name="ДекорацияВерсияКонфигурацииВниманиеРасширеннаяПодсказка" id="487"/>
 																</PictureDecoration>
 																<LabelDecoration name="ДекорацияВерсияКонфигурацииНеЗаполнено" id="488">
 																	<TextColor>style:ЦветПустойГиперссылки</TextColor>
@@ -789,20 +783,14 @@
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаНазначениеПустаяРасширеннаяПодсказка" id="454"/>
 															<ChildItems>
-																<PictureDecoration name="ДекорацияНазначениеПустая" id="455">
-																	<Title formatted="false">
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Декорация конфигурация пустая</v8:content>
-																		</v8:item>
-																	</Title>
+																<PictureDecoration name="ДекорацияНазначениеВнимание" id="455">
 																	<GroupVerticalAlign>Center</GroupVerticalAlign>
 																	<Picture>
 																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
 																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
-																	<ContextMenu name="ДекорацияНазначениеПустаяКонтекстноеМеню" id="456"/>
-																	<ExtendedTooltip name="ДекорацияНазначениеПустаяРасширеннаяПодсказка" id="457"/>
+																	<ContextMenu name="ДекорацияНазначениеВниманиеКонтекстноеМеню" id="456"/>
+																	<ExtendedTooltip name="ДекорацияНазначениеВниманиеРасширеннаяПодсказка" id="457"/>
 																</PictureDecoration>
 																<LabelDecoration name="ДекорацияНазначениеНеЗаполнено" id="464">
 																	<TextColor>style:ЦветПустойГиперссылки</TextColor>
@@ -815,6 +803,9 @@
 																	<Hyperlink>true</Hyperlink>
 																	<ContextMenu name="ДекорацияНазначениеНеЗаполненоКонтекстноеМеню" id="465"/>
 																	<ExtendedTooltip name="ДекорацияНазначениеНеЗаполненоРасширеннаяПодсказка" id="466"/>
+																	<Events>
+																		<Event name="Click">ДекорацияНазначениеНеЗаполненоНажатие</Event>
+																	</Events>
 																</LabelDecoration>
 															</ChildItems>
 														</UsualGroup>
@@ -883,11 +874,11 @@
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаОтветственныйПустаяРасширеннаяПодсказка" id="470"/>
 															<ChildItems>
-																<PictureDecoration name="ДекорацияНазначениеИБПустая1" id="471">
+																<PictureDecoration name="ДекорацияОтветственныйВнимание" id="471">
 																	<Title formatted="false">
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Декорация конфигурация пустая</v8:content>
+																			<v8:content>Декорация ответственный внимание</v8:content>
 																		</v8:item>
 																	</Title>
 																	<GroupVerticalAlign>Center</GroupVerticalAlign>
@@ -895,10 +886,10 @@
 																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
 																		<xr:LoadTransparent>true</xr:LoadTransparent>
 																	</Picture>
-																	<ContextMenu name="ДекорацияНазначениеИБПустая1КонтекстноеМеню" id="472"/>
-																	<ExtendedTooltip name="ДекорацияНазначениеИБПустая1РасширеннаяПодсказка" id="473"/>
+																	<ContextMenu name="ДекорацияОтветственныйВниманиеКонтекстноеМеню" id="472"/>
+																	<ExtendedTooltip name="ДекорацияОтветственныйВниманиеРасширеннаяПодсказка" id="473"/>
 																</PictureDecoration>
-																<LabelDecoration name="ДекорацияНазначениеИБНеЗаполнено1" id="474">
+																<LabelDecoration name="ДекорацияОтветственныйНеЗаполнено" id="474">
 																	<TextColor>style:ЦветПустойГиперссылки</TextColor>
 																	<Title formatted="false">
 																		<v8:item>
@@ -907,8 +898,11 @@
 																		</v8:item>
 																	</Title>
 																	<Hyperlink>true</Hyperlink>
-																	<ContextMenu name="ДекорацияНазначениеИБНеЗаполнено1КонтекстноеМеню" id="475"/>
-																	<ExtendedTooltip name="ДекорацияНазначениеИБНеЗаполнено1РасширеннаяПодсказка" id="476"/>
+																	<ContextMenu name="ДекорацияОтветственныйНеЗаполненоКонтекстноеМеню" id="475"/>
+																	<ExtendedTooltip name="ДекорацияОтветственныйНеЗаполненоРасширеннаяПодсказка" id="476"/>
+																	<Events>
+																		<Event name="Click">ДекорацияОтветственныйНеЗаполненоНажатие</Event>
+																	</Events>
 																</LabelDecoration>
 															</ChildItems>
 														</UsualGroup>
@@ -944,65 +938,303 @@
 														</LabelDecoration>
 													</ChildItems>
 												</UsualGroup>
-												<LabelField name="Проект" id="37">
-													<DataPath>Объект.Проект</DataPath>
-													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
-													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
-													<TitleLocation>Top</TitleLocation>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>&lt;Заполнить подсказку&gt;</v8:content>
-														</v8:item>
-													</ToolTip>
-													<EditMode>EnterOnInput</EditMode>
-													<Hiperlink>true</Hiperlink>
-													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
-													<ContextMenu name="ПроектКонтекстноеМеню" id="38"/>
-													<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="39"/>
-												</LabelField>
-												<LabelField name="ВебСервер" id="148">
-													<DataPath>Объект.ВебСервер</DataPath>
-													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
-													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
-													<TitleLocation>Top</TitleLocation>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>&lt;Заполнить подсказку&gt;</v8:content>
-														</v8:item>
-													</ToolTip>
-													<Hiperlink>true</Hiperlink>
-													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
-													<ContextMenu name="ВебСерверКонтекстноеМеню" id="149"/>
-													<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="150"/>
-												</LabelField>
-												<LabelField name="ХранилищеКонфигурации" id="43">
-													<DataPath>Объект.ХранилищеКонфигурации</DataPath>
+												<UsualGroup name="ГруппаПроект" id="494">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Хранилище</v8:content>
+															<v8:content>Проект:</v8:content>
 														</v8:item>
 													</Title>
 													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
 													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
-													<TitleLocation>Top</TitleLocation>
 													<ToolTip>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>&lt;Заполнить подсказку&gt;</v8:content>
+															<v8:content>Группа период жизни</v8:content>
 														</v8:item>
 													</ToolTip>
-													<EditMode>EnterOnInput</EditMode>
-													<Hiperlink>true</Hiperlink>
-													<TextColor>style:ГиперссылкаЦвет</TextColor>
-													<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
-													<ContextMenu name="ХранилищеКонфигурацииКонтекстноеМеню" id="44"/>
-													<ExtendedTooltip name="ХранилищеКонфигурацииРасширеннаяПодсказка" id="45"/>
-												</LabelField>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаПроектРасширеннаяПодсказка" id="495"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаПроектПустая" id="496">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа конфигурация пустая</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаПроектПустаяРасширеннаяПодсказка" id="497"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияПроектВнимание" id="498">
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияПроектВниманиеКонтекстноеМеню" id="499"/>
+																	<ExtendedTooltip name="ДекорацияПроектВниманиеРасширеннаяПодсказка" id="500"/>
+																</PictureDecoration>
+																<LabelDecoration name="ДекорацияПроектНеЗаполнено" id="501">
+																	<TextColor>style:ЦветПустойГиперссылки</TextColor>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>&lt;Не заполнено&gt;</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ДекорацияПроектНеЗаполненоКонтекстноеМеню" id="502"/>
+																	<ExtendedTooltip name="ДекорацияПроектНеЗаполненоРасширеннаяПодсказка" id="503"/>
+																	<Events>
+																		<Event name="Click">ДекорацияПроектНеЗаполненоНажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<LabelField name="Проект" id="37">
+															<DataPath>Объект.Проект</DataPath>
+															<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+															<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;Заполнить подсказку&gt;</v8:content>
+																</v8:item>
+															</ToolTip>
+															<EditMode>EnterOnInput</EditMode>
+															<Hiperlink>true</Hiperlink>
+															<TextColor>style:ГиперссылкаЦвет</TextColor>
+															<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+															<ContextMenu name="ПроектКонтекстноеМеню" id="38"/>
+															<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="39"/>
+														</LabelField>
+														<LabelDecoration name="ДекорацияФиксацияВысоты_8" id="507">
+															<Enabled>false</Enabled>
+															<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content> </v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияФиксацияВысоты_8КонтекстноеМеню" id="508"/>
+															<ExtendedTooltip name="ДекорацияФиксацияВысоты_8РасширеннаяПодсказка" id="509"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВебСервер" id="510">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Веб сервер:</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа период жизни</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаВебСерверРасширеннаяПодсказка" id="511"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаВебСерверПустая" id="512">
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа конфигурация пустая</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаВебСерверПустаяРасширеннаяПодсказка" id="513"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияВебСерверВнимание" id="514">
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация веб сервер внимание</v8:content>
+																		</v8:item>
+																	</Title>
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияВебСерверВниманиеКонтекстноеМеню" id="515"/>
+																	<ExtendedTooltip name="ДекорацияВебСерверВниманиеРасширеннаяПодсказка" id="516"/>
+																</PictureDecoration>
+																<LabelDecoration name="ДекорацияВебСерверНеЗаполнено" id="517">
+																	<TextColor>style:ЦветПустойГиперссылки</TextColor>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>&lt;Не заполнено&gt;</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ДекорацияВебСерверНеЗаполненоКонтекстноеМеню" id="518"/>
+																	<ExtendedTooltip name="ДекорацияВебСерверНеЗаполненоРасширеннаяПодсказка" id="519"/>
+																	<Events>
+																		<Event name="Click">ДекорацияВебСерверНеЗаполненоНажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<LabelField name="ВебСервер" id="148">
+															<DataPath>Объект.ВебСервер</DataPath>
+															<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+															<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;Заполнить подсказку&gt;</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Hiperlink>true</Hiperlink>
+															<TextColor>style:ГиперссылкаЦвет</TextColor>
+															<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+															<ContextMenu name="ВебСерверКонтекстноеМеню" id="149"/>
+															<ExtendedTooltip name="ВебСерверРасширеннаяПодсказка" id="150"/>
+														</LabelField>
+														<LabelDecoration name="ДекорацияФиксацияВысоты_9" id="523">
+															<Enabled>false</Enabled>
+															<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content> </v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияФиксацияВысоты_9КонтекстноеМеню" id="524"/>
+															<ExtendedTooltip name="ДекорацияФиксацияВысоты_9РасширеннаяПодсказка" id="525"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаХранилищеКонфигурации" id="526">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Хранилище конфигурации:</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа период жизни</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ExtendedTooltip name="ГруппаХранилищеКонфигурацииРасширеннаяПодсказка" id="527"/>
+													<ChildItems>
+														<UsualGroup name="ГруппаХранилищеКонфигурацииПустая" id="528">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа хранилище конфигурации пустая</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа конфигурация пустая</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаХранилищеКонфигурацииПустаяРасширеннаяПодсказка" id="529"/>
+															<ChildItems>
+																<PictureDecoration name="ДекорацияХранилищеКонфигурацииВнимание" id="530">
+																	<Font bold="true" kind="AutoFont"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация веб сервер внимание</v8:content>
+																		</v8:item>
+																	</Title>
+																	<GroupVerticalAlign>Center</GroupVerticalAlign>
+																	<Picture>
+																		<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияХранилищеКонфигурацииВниманиеКонтекстноеМеню" id="531"/>
+																	<ExtendedTooltip name="ДекорацияХранилищеКонфигурацииВниманиеРасширеннаяПодсказка" id="532"/>
+																</PictureDecoration>
+																<LabelDecoration name="ДекорацияХранилищеКонфигурацииНеЗаполнено" id="533">
+																	<TextColor>style:ЦветПустойГиперссылки</TextColor>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>&lt;Не заполнено&gt;</v8:content>
+																		</v8:item>
+																	</Title>
+																	<Hyperlink>true</Hyperlink>
+																	<ContextMenu name="ДекорацияХранилищеКонфигурацииНеЗаполненоКонтекстноеМеню" id="534"/>
+																	<ExtendedTooltip name="ДекорацияХранилищеКонфигурацииНеЗаполненоРасширеннаяПодсказка" id="535"/>
+																	<Events>
+																		<Event name="Click">ДекорацияХранилищеКонфигурацииНеЗаполненоНажатие</Event>
+																	</Events>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<LabelField name="ХранилищеКонфигурации" id="43">
+															<DataPath>Объект.ХранилищеКонфигурации</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Хранилище</v8:content>
+																</v8:item>
+															</Title>
+															<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+															<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+															<TitleLocation>None</TitleLocation>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;Заполнить подсказку&gt;</v8:content>
+																</v8:item>
+															</ToolTip>
+															<EditMode>EnterOnInput</EditMode>
+															<Hiperlink>true</Hiperlink>
+															<TextColor>style:ГиперссылкаЦвет</TextColor>
+															<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+															<ContextMenu name="ХранилищеКонфигурацииКонтекстноеМеню" id="44"/>
+															<ExtendedTooltip name="ХранилищеКонфигурацииРасширеннаяПодсказка" id="45"/>
+														</LabelField>
+														<LabelDecoration name="ДекорацияФиксацияВысоты_10" id="539">
+															<Enabled>false</Enabled>
+															<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content> </v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияФиксацияВысоты_10КонтекстноеМеню" id="540"/>
+															<ExtendedTooltip name="ДекорацияФиксацияВысоты_10РасширеннаяПодсказка" id="541"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
 												<LabelField name="ЖурналРегистрации" id="159">
 													<DataPath>ЖурналРегистрации</DataPath>
 													<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
@@ -1764,6 +1996,36 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>2</Index>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ЗакрепленныеЭлементы.StandardCommand.OpenByValue.ЭлементЗакрепления</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>5</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ЗначенияИзбранных.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>6</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.СтатистикаИспользованияИнформационныхБаз.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>7</Index>
+				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
 				</Visible>
