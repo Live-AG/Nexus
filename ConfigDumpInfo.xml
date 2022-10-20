@@ -894,7 +894,7 @@
 			<Metadata name="Catalog.СерверыБД.Attribute.ТипСУБД" id="99f56efc-7559-42a2-849e-8106bf383eb4"/>
 			<Metadata name="Catalog.СерверыБД.Attribute.ПарольАдминистратораСУБД" id="e7305f42-1991-40e9-82fa-733e4e98dfa4"/>
 		</Metadata>
-		<Metadata name="Catalog.Скрипты" id="cef6b2d0-c187-4d38-b60e-9b2b431ef032" configVersion="b8a72b98c8e63548aca94e42477d2f6000000000">
+		<Metadata name="Catalog.Скрипты" id="cef6b2d0-c187-4d38-b60e-9b2b431ef032" configVersion="2bc99275507add4fb61a4b6a01a5534800000000">
 			<Metadata name="Catalog.Скрипты.Attribute.Описание" id="0884cfb5-954e-43a9-a957-7cd9f84e6d42"/>
 			<Metadata name="Catalog.Скрипты.TabularSection.КонтекстВыполнения" id="32db6a88-8c8c-4b68-974d-f4bfc9ca0982"/>
 			<Metadata name="Catalog.Скрипты.TabularSection.КонтекстВыполнения.Attribute.ЭлементКонтекста" id="75951cc2-d43d-4e23-9d7b-98cc28dde96f"/>
@@ -904,8 +904,10 @@
 			<Metadata name="Catalog.Скрипты.TabularSection.Переменные.Attribute.ПеременнаяКонтекста" id="f8584fec-6f92-4a8e-af9f-17459543127c"/>
 			<Metadata name="Catalog.Скрипты.TabularSection.Переменные" id="f92eb6a2-b5a8-434d-a988-008a9ec203a8"/>
 		</Metadata>
-		<Metadata name="Catalog.Скрипты.Form.ФормаЭлемента" id="61405024-20e1-4c0a-b4c1-69167b5ebbf8" configVersion="724402304a74d44db0d19528a8f69b1c00000000"/>
-		<Metadata name="Catalog.Скрипты.Form.ФормаЭлемента.Form" id="61405024-20e1-4c0a-b4c1-69167b5ebbf8.0" configVersion="4e2376b778254649bebb583a98cd0a3900000000"/>
+		<Metadata name="Catalog.Скрипты.Form.ФормаРезультатаПроверки" id="ada8d322-9cdd-487c-8af9-4403c72318d8" configVersion="4dd76c9baf0b0547939bba853247059a00000000"/>
+		<Metadata name="Catalog.Скрипты.Form.ФормаРезультатаПроверки.Form" id="ada8d322-9cdd-487c-8af9-4403c72318d8.0" configVersion="de3d02405d4e9641ae74289a98fa8c2400000000"/>
+		<Metadata name="Catalog.Скрипты.Form.ФормаЭлемента" id="61405024-20e1-4c0a-b4c1-69167b5ebbf8" configVersion="d0979ef8d7349b4682a48c8d4f73b2d400000000"/>
+		<Metadata name="Catalog.Скрипты.Form.ФормаЭлемента.Form" id="61405024-20e1-4c0a-b4c1-69167b5ebbf8.0" configVersion="4cad3f9545b5ee4299bf17c9b2d3954300000000"/>
 		<Metadata name="Catalog.Скрипты.Predefined" id="cef6b2d0-c187-4d38-b60e-9b2b431ef032.1c" configVersion="699655dd42ea8149ae6012f1c235682800000000"/>
 		<Metadata name="Catalog.Скрипты.Template.СтандартныеПеременные" id="baf7c207-2d5f-42e2-892c-b687bfac6f1d" configVersion="9f9670899986084683187c6efd46150100000000"/>
 		<Metadata name="Catalog.Скрипты.Template.СтандартныеПеременные.Template" id="baf7c207-2d5f-42e2-892c-b687bfac6f1d.0" configVersion="b6da1a6cf0d65d4b88d5e9ea432694b300000000"/>

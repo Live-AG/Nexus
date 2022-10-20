@@ -639,6 +639,7 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаЭлемента</Form>
+			<Form>ФормаРезультатаПроверки</Form>
 			<Template>СтандартныеПеременные</Template>
 		</ChildObjects>
 	</Catalog>
