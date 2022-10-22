@@ -101,8 +101,8 @@
 					<TitleLocation>None</TitleLocation>
 					<EditMode>EnterOnInput</EditMode>
 					<Height>5</Height>
-					<TextColor>style:ЦветТекстаНевыбраннойКартинки</TextColor>
-					<BackColor>style:FieldTextColor</BackColor>
+					<TextColor>style:ЦветТекстаТерминала</TextColor>
+					<BackColor>style:ЦветФонаТерминала</BackColor>
 					<BorderColor>style:FormBackColor</BorderColor>
 					<Font ref="style:NormalTextFont" faceName="Input" kind="StyleItem"/>
 					<ContextMenu name="ТекстСкриптаКонтекстноеМеню" id="8"/>

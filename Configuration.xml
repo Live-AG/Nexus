@@ -281,6 +281,8 @@
 			<StyleItem>ЦветФонаОтрицательногоЗначения</StyleItem>
 			<StyleItem>ЦветФонаПоложительногоЗначения</StyleItem>
 			<StyleItem>ЦветФонаПредупреждения</StyleItem>
+			<StyleItem>ЦветТекстаТерминала</StyleItem>
+			<StyleItem>ЦветФонаТерминала</StyleItem>
 			<Style>ТемныйСтиль</Style>
 			<CommonPicture>ВидыНавигацииПоВзаимодействиямОтПредметовВзаимодействий</CommonPicture>
 			<CommonPicture>ВидыНавигацииПоВзаимодействиямОтКонтактов</CommonPicture>

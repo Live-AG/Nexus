@@ -515,8 +515,8 @@
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаНовойБазы.Form" id="450a9064-82b4-44bc-81c6-4027e9538a2d.0" configVersion="4adcbf4cbfdec64a9a9217142f24a27400000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПользователей" id="4b04e1d5-df46-4b89-80b7-cab73834a770" configVersion="7d5d469d243d06478c8748710bf4a29400000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПользователей.Form" id="4b04e1d5-df46-4b89-80b7-cab73834a770.0" configVersion="7b07cdee43c0e6438642d4d72dbe8e8100000000"/>
-		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра" id="2f521524-4858-4d61-a789-0803b6953def" configVersion="1c3f308669cc994b999508b35137089f00000000"/>
-		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра.Form" id="2f521524-4858-4d61-a789-0803b6953def.0" configVersion="593e04ac47510940bf6b96d17dad327c00000000"/>
+		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра" id="2f521524-4858-4d61-a789-0803b6953def" configVersion="f7de47e37eea9d43a1369067ef8781c400000000"/>
+		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра.Form" id="2f521524-4858-4d61-a789-0803b6953def.0" configVersion="38dd1ca9013fff4989f381de54e2858d00000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСобытий" id="e55f3be8-07a4-4c40-b0e6-9d84375fd72f" configVersion="a3da4ab08191394483f0aadb458dcff700000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСобытий.Form" id="e55f3be8-07a4-4c40-b0e6-9d84375fd72f.0" configVersion="b6c12600d8ec2a4292467b76627de18300000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСписка" id="b5eff2fb-7e25-4441-ae15-c3a00ca0aebc" configVersion="f7f981dd5e54894cb7c5e08f525ec09200000000"/>
@@ -904,10 +904,10 @@
 			<Metadata name="Catalog.Скрипты.TabularSection.Переменные.Attribute.ПеременнаяКонтекста" id="f8584fec-6f92-4a8e-af9f-17459543127c"/>
 			<Metadata name="Catalog.Скрипты.TabularSection.Переменные" id="f92eb6a2-b5a8-434d-a988-008a9ec203a8"/>
 		</Metadata>
-		<Metadata name="Catalog.Скрипты.Form.ФормаРезультатаПроверки" id="ada8d322-9cdd-487c-8af9-4403c72318d8" configVersion="4dd76c9baf0b0547939bba853247059a00000000"/>
-		<Metadata name="Catalog.Скрипты.Form.ФормаРезультатаПроверки.Form" id="ada8d322-9cdd-487c-8af9-4403c72318d8.0" configVersion="de3d02405d4e9641ae74289a98fa8c2400000000"/>
-		<Metadata name="Catalog.Скрипты.Form.ФормаЭлемента" id="61405024-20e1-4c0a-b4c1-69167b5ebbf8" configVersion="d0979ef8d7349b4682a48c8d4f73b2d400000000"/>
-		<Metadata name="Catalog.Скрипты.Form.ФормаЭлемента.Form" id="61405024-20e1-4c0a-b4c1-69167b5ebbf8.0" configVersion="4cad3f9545b5ee4299bf17c9b2d3954300000000"/>
+		<Metadata name="Catalog.Скрипты.Form.ФормаРезультатаПроверки" id="ada8d322-9cdd-487c-8af9-4403c72318d8" configVersion="21f828654df6f34586ed42723ddf567900000000"/>
+		<Metadata name="Catalog.Скрипты.Form.ФормаРезультатаПроверки.Form" id="ada8d322-9cdd-487c-8af9-4403c72318d8.0" configVersion="3fa398e719d54b4e93cda84cfd5bc69b00000000"/>
+		<Metadata name="Catalog.Скрипты.Form.ФормаЭлемента" id="61405024-20e1-4c0a-b4c1-69167b5ebbf8" configVersion="cfabc4e660d4fd42a3c9ce5a0f559afc00000000"/>
+		<Metadata name="Catalog.Скрипты.Form.ФормаЭлемента.Form" id="61405024-20e1-4c0a-b4c1-69167b5ebbf8.0" configVersion="d8dbeb877e85e54d8fe3d7d1f97f56a200000000"/>
 		<Metadata name="Catalog.Скрипты.Predefined" id="cef6b2d0-c187-4d38-b60e-9b2b431ef032.1c" configVersion="699655dd42ea8149ae6012f1c235682800000000"/>
 		<Metadata name="Catalog.Скрипты.Template.СтандартныеПеременные" id="baf7c207-2d5f-42e2-892c-b687bfac6f1d" configVersion="9f9670899986084683187c6efd46150100000000"/>
 		<Metadata name="Catalog.Скрипты.Template.СтандартныеПеременные.Template" id="baf7c207-2d5f-42e2-892c-b687bfac6f1d.0" configVersion="b6da1a6cf0d65d4b88d5e9ea432694b300000000"/>
@@ -2692,7 +2692,7 @@
 		<Metadata name="CommonTemplate.КомпонентаTWAIN.Template" id="6f3c5b90-b030-4267-a973-33d12c2c7680.0" configVersion="2af6887bf199ad4e9675aa91c9ce027200000000"/>
 		<Metadata name="CommonTemplate.ПолучениеДереваОбработчиковОбновления" id="88b879b7-1bb3-4478-b569-35bdb5c56939" configVersion="b4fe29dbc42cab478cd85a15f4878df400000000"/>
 		<Metadata name="CommonTemplate.ПолучениеДереваОбработчиковОбновления.Template" id="88b879b7-1bb3-4478-b569-35bdb5c56939.0" configVersion="ab484d4d5424eb42ab997ee6db5daecf00000000"/>
-		<Metadata name="Configuration.Nexus" id="c05b4078-b8f9-42bf-be22-e94cf30948eb" configVersion="7d8d0a2a6742b64d9bc8473aa5d53f7c00000000"/>
+		<Metadata name="Configuration.Nexus" id="c05b4078-b8f9-42bf-be22-e94cf30948eb" configVersion="3516d975956bf646b50b2632d67540a700000000"/>
 		<Metadata name="Configuration.Nexus.ClientApplicationInterface" id="775853de-c908-47f3-82fb-d85daa547b81.b" configVersion="30d36f6c0c524d4cb41d17b86cc3d74000000000"/>
 		<Metadata name="Configuration.Nexus.CommandInterface" id="775853de-c908-47f3-82fb-d85daa547b81.a" configVersion="21c4c732d1a11947ab6b31b45dcbf1eb00000000"/>
 		<Metadata name="Configuration.Nexus.ExternalConnectionModule" id="775853de-c908-47f3-82fb-d85daa547b81.5" configVersion="37926077200ef74c9fd31b8411700faf00000000"/>
@@ -5114,10 +5114,12 @@
 		<Metadata name="StyleItem.ЦветТекстаНевыбраннойКартинки" id="61e246f4-fe19-4377-8f69-fd1cb90e3f88" configVersion="dc6553e8efdffb47a28dcadc1ae5861900000000"/>
 		<Metadata name="StyleItem.ЦветТекстаОтрицательногоЗначения" id="05c9e6c3-3e1c-4311-99ac-ec4d59a37205" configVersion="14d94f03278bfa48b52a9c42753fd51e00000000"/>
 		<Metadata name="StyleItem.ЦветТекстаПоложительногоЗначения" id="d437805b-42a9-439d-aef8-abbebe280b69" configVersion="8cabe3f7502f1043b46f95adfa9ee1ad00000000"/>
+		<Metadata name="StyleItem.ЦветТекстаТерминала" id="cfd4a6fb-2c29-49b1-9152-279b5a26ef38" configVersion="e43bbe04fa2b3b4baf1d1b7b90e07d8200000000"/>
 		<Metadata name="StyleItem.ЦветФонаВнимание" id="b33ccec0-a085-4e91-a26d-c262775d92e8" configVersion="fb647581a135334883daa57ed14ffa6100000000"/>
 		<Metadata name="StyleItem.ЦветФонаОтрицательногоЗначения" id="8adeeac2-d2d0-4d90-b7cb-c7871da477d5" configVersion="cd116bff6bb6f843a9ade7e600f4815e00000000"/>
 		<Metadata name="StyleItem.ЦветФонаПоложительногоЗначения" id="9e082d71-175a-4e80-8cca-6b538d3240eb" configVersion="72f75ad7b1a9b442be4118b42c47303300000000"/>
 		<Metadata name="StyleItem.ЦветФонаПредупреждения" id="b8c4aff0-a36d-4be9-9a5e-b0873d83ff15" configVersion="66cfbedf3d75e945a044707e7abcf8f200000000"/>
+		<Metadata name="StyleItem.ЦветФонаТерминала" id="96615816-464c-4204-af8a-4e0e3dbeb4e1" configVersion="304cb7c8d95de44b8768157cd17e797200000000"/>
 		<Metadata name="Subsystem.Администрирование" id="9233322b-dfdb-4c66-91fe-1299292d40a5" configVersion="700915cd02346c48a3f2462dbd703c3000000000"/>
 		<Metadata name="Subsystem.Администрирование.CommandInterface" id="9233322b-dfdb-4c66-91fe-1299292d40a5.1" configVersion="c3fe3f521453064d9b8b34bb47155a5100000000"/>
 		<Metadata name="Subsystem.АдминистрированиеПользователей" id="a64663f9-7a8f-4c1c-9e6a-9996da6f75f8" configVersion="280461a42361254490f4b7dfae2430e900000000"/>
