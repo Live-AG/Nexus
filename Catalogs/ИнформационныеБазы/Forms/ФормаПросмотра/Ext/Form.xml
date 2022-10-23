@@ -509,6 +509,9 @@
 															<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 															<ContextMenu name="КоличествоАктивныхСеансовКонтекстноеМеню" id="339"/>
 															<ExtendedTooltip name="КоличествоАктивныхСеансовРасширеннаяПодсказка" id="340"/>
+															<Events>
+																<Event name="Click">КоличествоАктивныхСеансовНажатие</Event>
+															</Events>
 														</LabelField>
 														<LabelDecoration name="ДекорацияФиксацияВысоты_3" id="379">
 															<Enabled>false</Enabled>
@@ -2014,7 +2017,7 @@
 				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.ИсточникЗадания</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
-				<Index>4</Index>
+				<Index>5</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
@@ -2024,7 +2027,7 @@
 				<Command>Catalog.ИнформационныеБазы.Command.Управление</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
-				<Index>3</Index>
+				<Index>4</Index>
 				<Visible>
 					<xr:Common>false</xr:Common>
 				</Visible>
@@ -2033,23 +2036,13 @@
 				<Command>Catalog.ИнформационныеБазы.Command.Пользователи</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
-				<Index>2</Index>
+				<Index>3</Index>
 				<Visible>
 					<xr:Common>false</xr:Common>
 				</Visible>
 			</Item>
 			<Item>
 				<Command>InformationRegister.ЗакрепленныеЭлементы.StandardCommand.OpenByValue.ЭлементЗакрепления</Command>
-				<Type>Auto</Type>
-				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
-				<Index>5</Index>
-				<DefaultVisible>false</DefaultVisible>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
-			</Item>
-			<Item>
-				<Command>InformationRegister.ЗначенияИзбранных.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>6</Index>
@@ -2059,10 +2052,30 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>InformationRegister.СтатистикаИспользованияИнформационныхБаз.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Command>InformationRegister.ЗначенияИзбранных.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>7</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.СтатистикаИспользованияИнформационныхБаз.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>8</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ПользователиИнформационныхБаз.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>9</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>

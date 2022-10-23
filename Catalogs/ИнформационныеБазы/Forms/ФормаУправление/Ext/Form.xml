@@ -190,7 +190,7 @@
 								<PictureDecoration name="Декорация7" id="33">
 									<Hyperlink>true</Hyperlink>
 									<Picture>
-										<xr:Ref>CommonPicture.Проект1</xr:Ref>
+										<xr:Ref>0:73090465-d840-4e3b-8393-cdd4cd74e841</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="Декорация7КонтекстноеМеню" id="34"/>

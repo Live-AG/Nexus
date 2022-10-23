@@ -252,7 +252,7 @@
 					<xr:Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Полное имя</v8:content>
+							<v8:content>Имя пользователя</v8:content>
 						</v8:item>
 					</xr:Synonym>
 					<xr:Comment/>
@@ -370,11 +370,11 @@
 			</Attribute>
 			<Attribute uuid="52e5da09-e586-428a-bd89-653271a71b9d">
 				<Properties>
-					<Name>ИмяПользователя</Name>
+					<Name>ПолноеИмя</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имя пользователя</v8:content>
+							<v8:content>Полное имя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
