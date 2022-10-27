@@ -40,7 +40,7 @@
 		<ChildObjects>
 			<EnumValue uuid="585f004d-bd02-4338-8ebc-649ec98dad2a">
 				<Properties>
-					<Name>MSSQL</Name>
+					<Name>MSSQLServer</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

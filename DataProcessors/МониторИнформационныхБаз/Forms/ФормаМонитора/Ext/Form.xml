@@ -789,6 +789,7 @@
 											<v8:content>Группа заголовок кластеры</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
 									<HorizontalSpacing>Double</HorizontalSpacing>
 									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
@@ -823,6 +824,30 @@
 											</Title>
 											<ExtendedTooltip name="ДобавитьБазуРасширеннаяПодсказка" id="157"/>
 										</Button>
+										<LabelDecoration name="ДекорацияОтступ" id="256">
+											<Enabled>false</Enabled>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="257"/>
+											<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="258"/>
+										</LabelDecoration>
+										<SearchStringAddition name="ПоискВСпискеБаз" id="253">
+											<AdditionSource>
+												<Item>ТаблицаИнформационныхБаз</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поиск в списке баз</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<Width>25</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ContextMenu name="ПоискВСпискеБазКонтекстноеМеню" id="254"/>
+											<ExtendedTooltip name="ПоискВСпискеБазРасширеннаяПодсказка" id="255"/>
+										</SearchStringAddition>
 									</ChildItems>
 								</UsualGroup>
 								<Table name="ТаблицаИнформационныхБаз" id="37">

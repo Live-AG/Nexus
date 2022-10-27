@@ -41,6 +41,7 @@
 			<CharacteristicExtValues>Catalog.ДополниетельныеЗначенияКонтекста</CharacteristicExtValues>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ВерсииКонфигураций</v8:Type>
+				<v8:Type>cfg:CatalogRef.СерверыБД</v8:Type>
 				<v8:Type>xs:boolean</v8:Type>
 				<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
 				<v8:Type>cfg:CatalogRef.Файлы</v8:Type>

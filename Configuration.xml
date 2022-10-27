@@ -202,10 +202,20 @@
 			<MobileApplicationURLs/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
 			<DefaultInterface/>
-			<DefaultStyle>Style.ТемныйСтиль</DefaultStyle>
+			<DefaultStyle>Style.СерыйСтиль</DefaultStyle>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
-			<BriefInformation/>
-			<DetailedInformation/>
+			<BriefInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Nexus</v8:content>
+				</v8:item>
+			</BriefInformation>
+			<DetailedInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>"Одна База, чтоб править всеми..."</v8:content>
+				</v8:item>
+			</DetailedInformation>
 			<Copyright/>
 			<VendorInformationAddress/>
 			<ConfigurationInformationAddress/>
@@ -283,7 +293,7 @@
 			<StyleItem>ЦветФонаПредупреждения</StyleItem>
 			<StyleItem>ЦветТекстаТерминала</StyleItem>
 			<StyleItem>ЦветФонаТерминала</StyleItem>
-			<Style>ТемныйСтиль</Style>
+			<Style>СерыйСтиль</Style>
 			<CommonPicture>ВидыНавигацииПоВзаимодействиямОтПредметовВзаимодействий</CommonPicture>
 			<CommonPicture>ВидыНавигацииПоВзаимодействиямОтКонтактов</CommonPicture>
 			<CommonPicture>ВариантыОтчетовДоступныеВсемПользователям</CommonPicture>
@@ -585,6 +595,7 @@
 			<CommonPicture>ОбновитьДанные</CommonPicture>
 			<CommonPicture>СпящийСеанс</CommonPicture>
 			<CommonPicture>СпящийСеансНабор</CommonPicture>
+			<CommonPicture>ВидыСеансовНабор</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
@@ -912,6 +923,7 @@
 			<CommonModule>ОбновлениеИнформационнойБазыБСПNexus</CommonModule>
 			<CommonModule>АдминистрированиеИнформационныхБаз</CommonModule>
 			<CommonModule>АдминистрированиеСерверов</CommonModule>
+			<CommonModule>АдминистрированиеСеансов</CommonModule>
 			<CommonModule>РегламентныеЗаданияПолученияДанных</CommonModule>
 			<CommonModule>РаботаСоСкриптамиСервер</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
