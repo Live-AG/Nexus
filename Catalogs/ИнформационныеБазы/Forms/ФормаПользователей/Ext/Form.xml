@@ -136,18 +136,21 @@
 				<InputField name="ТаблицаПользователейИмяПользователя" id="14">
 					<DataPath>ТаблицаПользователей.ИмяПользователя</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<Width>35</Width>
 					<ContextMenu name="ТаблицаПользователейИмяПользователяКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="ТаблицаПользователейИмяПользователяРасширеннаяПодсказка" id="16"/>
 				</InputField>
 				<InputField name="ТаблицаПользователейВремяНачала" id="17">
 					<DataPath>ТаблицаПользователей.ВремяНачала</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<Width>20</Width>
 					<ContextMenu name="ТаблицаПользователейВремяНачалаКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ТаблицаПользователейВремяНачалаРасширеннаяПодсказка" id="19"/>
 				</InputField>
 				<InputField name="ТаблицаПользователейВремяПоследнейАктивности" id="20">
 					<DataPath>ТаблицаПользователей.ВремяПоследнейАктивности</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<Width>20</Width>
 					<ContextMenu name="ТаблицаПользователейВремяПоследнейАктивностиКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="ТаблицаПользователейВремяПоследнейАктивностиРасширеннаяПодсказка" id="22"/>
 				</InputField>

@@ -60,8 +60,16 @@
 					<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="181"/>
 					<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="182"/>
 				</LabelDecoration>
+				<Button name="КомандаОбновить" id="542">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.КомандаОбновить</CommandName>
+					<ShapeRepresentation>None</ShapeRepresentation>
+					<ExtendedTooltip name="КомандаОбновитьРасширеннаяПодсказка" id="543"/>
+				</Button>
 				<Button name="КомандаРедактировать" id="178">
 					<Type>UsualButton</Type>
+					<Visible>false</Visible>
 					<Representation>Picture</Representation>
 					<Height>1</Height>
 					<CommandName>Form.Command.КомандаРедактировать</CommandName>
@@ -1999,6 +2007,26 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаИзменитьПроект</Action>
+		</Command>
+		<Command name="КомандаОбновить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.ОбновитьДанные</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОбновить</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
