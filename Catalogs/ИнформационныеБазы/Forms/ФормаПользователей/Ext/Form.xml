@@ -27,6 +27,20 @@
 			<HorizontalLocation>Right</HorizontalLocation>
 			<ExtendedTooltip name="ГруппаОбновитьРасширеннаяПодсказка" id="44"/>
 			<ChildItems>
+				<SearchStringAddition name="ПоискПользователя" id="53">
+					<AdditionSource>
+						<Item>ТаблицаПользователей</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ПоискПользователяКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ПоискПользователяРасширеннаяПодсказка" id="55"/>
+				</SearchStringAddition>
 				<Popup name="ГруппаДействия" id="51">
 					<Title>
 						<v8:item>
@@ -75,13 +89,10 @@
 			<CommandBarLocation>None</CommandBarLocation>
 			<ReadOnly>true</ReadOnly>
 			<ChangeRowSet>false</ChangeRowSet>
-			<ChangeRowOrder>false</ChangeRowOrder>
 			<RowSelectionMode>Row</RowSelectionMode>
 			<Header>false</Header>
 			<VerticalLines>false</VerticalLines>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
 			<DataPath>ТаблицаПользователей</DataPath>
 			<RowPictureDataPath>ТаблицаПользователей.ИндексКартинки</RowPictureDataPath>
 			<RowsPicture>
@@ -100,6 +111,21 @@
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ЗавершитьСеанс</CommandName>
 						<ExtendedTooltip name="ТаблицаПользователейЗавершитьСеансРасширеннаяПодсказка" id="42"/>
+					</Button>
+					<Button name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоВозрастанию" id="56">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.SortListAsc</CommandName>
+						<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="57"/>
+					</Button>
+					<Button name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоУбыванию" id="58">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.SortListDesc</CommandName>
+						<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="59"/>
+					</Button>
+					<Button name="ТаблицаПользователейКонтекстноеМенюПоискПоТекущемуЗначению" id="60">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.FindByCurrentValue</CommandName>
+						<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюПоискПоТекущемуЗначениюРасширеннаяПодсказка" id="61"/>
 					</Button>
 				</ChildItems>
 			</ContextMenu>
@@ -178,22 +204,6 @@
 					<ContextMenu name="ТаблицаПользователейИмяТекущегоСервисаКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ТаблицаПользователейИмяТекущегоСервисаРасширеннаяПодсказка" id="31"/>
 				</InputField>
-				<InputField name="ТаблицаПользователейСоединениеСУБД" id="35">
-					<DataPath>ТаблицаПользователей.СоединениеСУБД</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТаблицаПользователейСоединениеСУБДКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="ТаблицаПользователейСоединениеСУБДРасширеннаяПодсказка" id="37"/>
-				</InputField>
-				<PictureField name="ТаблицаПользователейСпящийСеанс" id="38">
-					<DataPath>ТаблицаПользователей.СпящийСеанс</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ValuesPicture>
-						<xr:Ref>CommonPicture.СпящийСеансНабор</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
-					</ValuesPicture>
-					<ContextMenu name="ТаблицаПользователейСпящийСеансКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="ТаблицаПользователейСпящийСеансРасширеннаяПодсказка" id="40"/>
-				</PictureField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

@@ -1363,6 +1363,7 @@
 			<DataProcessor>СДРНавигаторУпр</DataProcessor>
 			<DataProcessor>СДРОбъектУпр</DataProcessor>
 			<DataProcessor>СДРКонсольЗапросовХ</DataProcessor>
+			<DataProcessor>ИмпортИзActiveDirectory</DataProcessor>
 			<InformationRegister>СоответствиеПользователейИБ</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>

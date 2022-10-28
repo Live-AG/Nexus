@@ -859,7 +859,7 @@
 									<VerticalLines>false</VerticalLines>
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>ТаблицаИнформационныхБаз</DataPath>
-									<RowPictureDataPath>ТаблицаИнформационныхБаз.ПолеГиперссылки</RowPictureDataPath>
+									<RowPictureDataPath>ТаблицаИнформационныхБаз.ИндексКартинки</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -959,7 +959,7 @@
 											<ExtendedTooltip name="ТаблицаИнформационныхБазКонфигурацияРасширеннаяПодсказка" id="61"/>
 										</LabelField>
 										<PictureField name="ТаблицаИнформационныхБазПолеНастройка" id="65">
-											<DataPath>ТаблицаИнформационныхБаз.ПолеГиперссылки</DataPath>
+											<DataPath>ТаблицаИнформационныхБаз.ИндексКартинки</DataPath>
 											<TitleBackColor>style:FormBackColor</TitleBackColor>
 											<TitleLocation>None</TitleLocation>
 											<CellHyperlink>true</CellHyperlink>
@@ -1211,9 +1211,15 @@
 	СправочникИнформационныеБазы.Проект КАК Проект,
 	СправочникИнформационныеБазы.ВерсияКонфигурации КАК ВерсияКонфигурации,
 	СправочникИнформационныеБазы.ХранилищеКонфигурации КАК ХранилищеКонфигурации,
-	СправочникИнформационныеБазы.Статус КАК Статус,	
-	0 КАК ПолеГиперссылки
-	
+	СправочникИнформационныеБазы.Статус КАК Статус,
+	ВЫБОР
+		КОГДА СправочникИнформационныеБазы.Назначение = ЗНАЧЕНИЕ(Перечисление.НазначенияИБ.Рабочая)
+			ТОГДА 0
+		КОГДА СправочникИнформационныеБазы.Ответственный = &amp;ТекущийПользовательИБ
+			ТОГДА 1
+		ИНАЧЕ 2
+	КОНЕЦ КАК ПолеУпорядочивания,
+	0 КАК ИндексКартинки
 ИЗ
 	Справочник.ИнформационныеБазы КАК СправочникИнформационныеБазы</QueryText>
 				<MainTable>Catalog.ИнформационныеБазы</MainTable>
@@ -1223,6 +1229,10 @@
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПолеУпорядочивания</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>

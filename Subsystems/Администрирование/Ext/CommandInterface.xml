@@ -439,6 +439,9 @@
 		<Command name="DataProcessor.ПанельАдминистрированияNexus.Command.НастройкиУправленияБазами">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
+		<Command name="InformationRegister.ЗакрепленныеЭлементы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
 		<Command name="DataProcessor.АктивныеПользователи.Command.АктивныеПользователи">
 			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
 		</Command>
@@ -557,6 +560,9 @@
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 		<Command name="Constant.ИспользоватьПроекты.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ИмпортИзActiveDirectory.StandardCommand.Open">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
 		<Command name="DataProcessor.СДРКонсольЗапросовХ.StandardCommand.Open">
