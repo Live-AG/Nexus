@@ -45,14 +45,94 @@
 					<ContextMenu name="ДекорацияБазаКонтекстноеМеню" id="173"/>
 					<ExtendedTooltip name="ДекорацияБазаРасширеннаяПодсказка" id="174"/>
 				</PictureDecoration>
-				<LabelField name="Наименование" id="175">
-					<DataPath>Объект.Description</DataPath>
-					<TitleLocation>None</TitleLocation>
+				<UsualGroup name="ГруппаПросмотраЗаголовка" id="546">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа просмотра заголовка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа просмотра заголовка</v8:content>
+						</v8:item>
+					</ToolTip>
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
-					<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="176"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="177"/>
-				</LabelField>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПросмотраЗаголовкаРасширеннаяПодсказка" id="547"/>
+					<ChildItems>
+						<LabelField name="Наименование" id="175">
+							<DataPath>Объект.Description</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="176"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="177"/>
+						</LabelField>
+						<LabelField name="Описание" id="548">
+							<DataPath>Объект.Описание</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HorizontalStretch>true</HorizontalStretch>
+							<TextColor>style:ЦветПустойГиперссылки</TextColor>
+							<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="549"/>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="550"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРедактированияЗаголовка" id="544">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа редактирования заголовка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа редактирования заголовка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРедактированияЗаголовкаРасширеннаяПодсказка" id="545"/>
+					<ChildItems>
+						<InputField name="НаименованиеРедактирование" id="551">
+							<DataPath>Объект.Description</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="НаименованиеРедактированиеКонтекстноеМеню" id="552"/>
+							<ExtendedTooltip name="НаименованиеРедактированиеРасширеннаяПодсказка" id="553"/>
+						</InputField>
+						<InputField name="ОписаниеРедактирование" id="554">
+							<DataPath>Объект.Описание</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ОписаниеРедактированиеКонтекстноеМеню" id="555"/>
+							<ExtendedTooltip name="ОписаниеРедактированиеРасширеннаяПодсказка" id="556"/>
+						</InputField>
+						<Button name="ЗаголовокОк" id="559">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаголовокОк</CommandName>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ExtendedTooltip name="ЗаголовокОкРасширеннаяПодсказка" id="560"/>
+						</Button>
+						<Button name="ЗаголовокОтмена" id="561">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаголовокОтмена</CommandName>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ExtendedTooltip name="ЗаголовокОтменаРасширеннаяПодсказка" id="562"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 				<LabelDecoration name="ДекорацияОтступ" id="180">
 					<Enabled>false</Enabled>
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -60,23 +140,65 @@
 					<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="181"/>
 					<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="182"/>
 				</LabelDecoration>
-				<Button name="КомандаОбновить" id="542">
-					<Type>UsualButton</Type>
-					<Representation>Picture</Representation>
-					<CommandName>Form.Command.КомандаОбновить</CommandName>
-					<ShapeRepresentation>None</ShapeRepresentation>
-					<ExtendedTooltip name="КомандаОбновитьРасширеннаяПодсказка" id="543"/>
-				</Button>
-				<Button name="КомандаРедактировать" id="178">
-					<Type>UsualButton</Type>
-					<Visible>false</Visible>
-					<Representation>Picture</Representation>
-					<Height>1</Height>
-					<CommandName>Form.Command.КомандаРедактировать</CommandName>
-					<ShapeRepresentation>None</ShapeRepresentation>
-					<PictureLocation>Right</PictureLocation>
-					<ExtendedTooltip name="КомандаРедактироватьРасширеннаяПодсказка" id="179"/>
-				</Button>
+				<CommandBar name="ПанельЗаголовка" id="563">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель заголовка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель заголовка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<ExtendedTooltip name="ПанельЗаголовкаРасширеннаяПодсказка" id="564"/>
+					<ChildItems>
+						<Popup name="ГруппаДействий" id="565">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа действий</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа действий</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>StdPicture.Setting</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>Picture</Representation>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ExtendedTooltip name="ГруппаДействийРасширеннаяПодсказка" id="566"/>
+							<ChildItems>
+								<Button name="КомандаОбновить" id="542">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<SkipOnInput>true</SkipOnInput>
+									<CommandName>Form.Command.КомандаОбновить</CommandName>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="КомандаОбновитьРасширеннаяПодсказка" id="543"/>
+								</Button>
+								<Button name="РедактироватьЗаголовок" id="557">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<SkipOnInput>true</SkipOnInput>
+									<CommandName>Form.Command.РедактироватьЗаголовок</CommandName>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="РедактироватьЗаголовокРасширеннаяПодсказка" id="558"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаИнформация" id="67">
@@ -1931,17 +2053,17 @@
 		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
-		<Command name="КомандаРедактировать" id="1">
+		<Command name="КомандаРедактироватьЗаголовок" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда редактировать</v8:content>
+					<v8:content>Редактировать заголовок</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда редактировать</v8:content>
+					<v8:content>Команда редактировать заголовок</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -2012,7 +2134,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда обновить</v8:content>
+					<v8:content>Обновить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -2027,6 +2149,65 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаОбновить</Action>
+		</Command>
+		<Command name="РедактироватьЗаголовок" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактировать заголовок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РедактироватьЗаголовок</Action>
+		</Command>
+		<Command name="ЗаголовокОк" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок ок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок ок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ТипБулево</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаголовокОк</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗаголовокОтмена" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КонтактнаяИнформацияНеактуально</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаголовокОтмена</Action>
+			<Representation>Picture</Representation>
 		</Command>
 	</Commands>
 	<CommandInterface>
