@@ -596,6 +596,9 @@
 			<CommonPicture>СпящийСеанс</CommonPicture>
 			<CommonPicture>СпящийСеансНабор</CommonPicture>
 			<CommonPicture>ВидыСеансовНабор</CommonPicture>
+			<CommonPicture>КартинкаОк</CommonPicture>
+			<CommonPicture>КартинкаОтмена</CommonPicture>
+			<CommonPicture>ИзменитьЗаготовок</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>

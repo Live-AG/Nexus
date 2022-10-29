@@ -8,6 +8,7 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -84,128 +85,235 @@
 				</Popup>
 			</ChildItems>
 		</CommandBar>
-		<Table name="ТаблицаПользователей" id="1">
-			<Representation>List</Representation>
-			<CommandBarLocation>None</CommandBarLocation>
-			<ReadOnly>true</ReadOnly>
-			<ChangeRowSet>false</ChangeRowSet>
-			<RowSelectionMode>Row</RowSelectionMode>
-			<Header>false</Header>
-			<VerticalLines>false</VerticalLines>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<DataPath>ТаблицаПользователей</DataPath>
-			<RowPictureDataPath>ТаблицаПользователей.ИндексКартинки</RowPictureDataPath>
-			<RowsPicture>
-				<xr:Ref>CommonPicture.ВидыСеансовНабор</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</RowsPicture>
-			<BorderColor>style:FormBackColor</BorderColor>
-			<SearchStringLocation>None</SearchStringLocation>
-			<ViewStatusLocation>None</ViewStatusLocation>
-			<SearchControlLocation>None</SearchControlLocation>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ТаблицаПользователейКонтекстноеМеню" id="2">
-				<Autofill>false</Autofill>
-				<ChildItems>
-					<Button name="ТаблицаПользователейЗавершитьСеанс" id="41">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ЗавершитьСеанс</CommandName>
-						<ExtendedTooltip name="ТаблицаПользователейЗавершитьСеансРасширеннаяПодсказка" id="42"/>
-					</Button>
-					<Button name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоВозрастанию" id="56">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.SortListAsc</CommandName>
-						<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="57"/>
-					</Button>
-					<Button name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоУбыванию" id="58">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.SortListDesc</CommandName>
-						<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="59"/>
-					</Button>
-					<Button name="ТаблицаПользователейКонтекстноеМенюПоискПоТекущемуЗначению" id="60">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.FindByCurrentValue</CommandName>
-						<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюПоискПоТекущемуЗначениюРасширеннаяПодсказка" id="61"/>
-					</Button>
-				</ChildItems>
-			</ContextMenu>
-			<AutoCommandBar name="ТаблицаПользователейКоманднаяПанель" id="3"/>
-			<ExtendedTooltip name="ТаблицаПользователейРасширеннаяПодсказка" id="4"/>
-			<SearchStringAddition name="ТаблицаПользователейСтрокаПоиска" id="5">
-				<AdditionSource>
-					<Item>ТаблицаПользователей</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ТаблицаПользователейСтрокаПоискаКонтекстноеМеню" id="6"/>
-				<ExtendedTooltip name="ТаблицаПользователейСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ТаблицаПользователейСостояниеПросмотра" id="8">
-				<AdditionSource>
-					<Item>ТаблицаПользователей</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ТаблицаПользователейСостояниеПросмотраКонтекстноеМеню" id="9"/>
-				<ExtendedTooltip name="ТаблицаПользователейСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ТаблицаПользователейУправлениеПоиском" id="11">
-				<AdditionSource>
-					<Item>ТаблицаПользователей</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ТаблицаПользователейУправлениеПоискомКонтекстноеМеню" id="12"/>
-				<ExtendedTooltip name="ТаблицаПользователейУправлениеПоискомРасширеннаяПодсказка" id="13"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="Selection">ТаблицаСоединенийВыбор</Event>
-			</Events>
+		<Pages name="СтраницыПользователей" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы пользователей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыПользователейРасширеннаяПодсказка" id="63"/>
 			<ChildItems>
-				<InputField name="ТаблицаПользователейИмяПользователя" id="14">
-					<DataPath>ТаблицаПользователей.ИмяПользователя</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>25</Width>
-					<ContextMenu name="ТаблицаПользователейИмяПользователяКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ТаблицаПользователейИмяПользователяРасширеннаяПодсказка" id="16"/>
-				</InputField>
-				<InputField name="ТаблицаПользователейВремяНачала" id="17">
-					<DataPath>ТаблицаПользователей.ВремяНачала</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>20</Width>
-					<ContextMenu name="ТаблицаПользователейВремяНачалаКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="ТаблицаПользователейВремяНачалаРасширеннаяПодсказка" id="19"/>
-				</InputField>
-				<InputField name="ТаблицаПользователейВремяПоследнейАктивности" id="20">
-					<DataPath>ТаблицаПользователей.ВремяПоследнейАктивности</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<Width>20</Width>
-					<ContextMenu name="ТаблицаПользователейВремяПоследнейАктивностиКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="ТаблицаПользователейВремяПоследнейАктивностиРасширеннаяПодсказка" id="22"/>
-				</InputField>
-				<InputField name="ТаблицаПользователейIPАдресКлиента" id="32">
-					<DataPath>ТаблицаПользователей.IPАдресКлиента</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТаблицаПользователейIPАдресКлиентаКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ТаблицаПользователейIPАдресКлиентаРасширеннаяПодсказка" id="34"/>
-				</InputField>
-				<InputField name="ТаблицаПользователейИмяКомпьютера" id="23">
-					<DataPath>ТаблицаПользователей.ИмяКомпьютера</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТаблицаПользователейИмяКомпьютераКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="ТаблицаПользователейИмяКомпьютераРасширеннаяПодсказка" id="25"/>
-				</InputField>
-				<InputField name="ТаблицаПользователейИмяПриложения" id="26">
-					<DataPath>ТаблицаПользователей.ИмяПриложения</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТаблицаПользователейИмяПриложенияКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ТаблицаПользователейИмяПриложенияРасширеннаяПодсказка" id="28"/>
-				</InputField>
-				<InputField name="ТаблицаПользователейИмяТекущегоСервиса" id="29">
-					<DataPath>ТаблицаПользователей.ИмяТекущегоСервиса</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТаблицаПользователейИмяТекущегоСервисаКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="ТаблицаПользователейИмяТекущегоСервисаРасширеннаяПодсказка" id="31"/>
-				</InputField>
+				<Page name="СтраницаПользователи" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница пользователи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница пользователи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПользователиРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<Table name="ТаблицаПользователей" id="1">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Header>false</Header>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>ТаблицаПользователей</DataPath>
+							<RowPictureDataPath>ТаблицаПользователей.ИндексКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.ВидыСеансовНабор</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</RowsPicture>
+							<BorderColor>style:FormBackColor</BorderColor>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаПользователейКонтекстноеМеню" id="2">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаПользователейЗавершитьСеанс" id="41">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗавершитьСеанс</CommandName>
+										<ExtendedTooltip name="ТаблицаПользователейЗавершитьСеансРасширеннаяПодсказка" id="42"/>
+									</Button>
+									<Button name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоВозрастанию" id="56">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.SortListAsc</CommandName>
+										<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоВозрастаниюРасширеннаяПодсказка" id="57"/>
+									</Button>
+									<Button name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоУбыванию" id="58">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.SortListDesc</CommandName>
+										<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюСортироватьСписокПоУбываниюРасширеннаяПодсказка" id="59"/>
+									</Button>
+									<Button name="ТаблицаПользователейКонтекстноеМенюПоискПоТекущемуЗначению" id="60">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ТаблицаПользователей.StandardCommand.FindByCurrentValue</CommandName>
+										<ExtendedTooltip name="ТаблицаПользователейКонтекстноеМенюПоискПоТекущемуЗначениюРасширеннаяПодсказка" id="61"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ТаблицаПользователейКоманднаяПанель" id="3"/>
+							<ExtendedTooltip name="ТаблицаПользователейРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ТаблицаПользователейСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ТаблицаПользователей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПользователейСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ТаблицаПользователейСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаПользователейСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ТаблицаПользователей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПользователейСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ТаблицаПользователейСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаПользователейУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ТаблицаПользователей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаПользователейУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ТаблицаПользователейУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ТаблицаСоединенийВыбор</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТаблицаПользователейИмяПользователя" id="14">
+									<DataPath>ТаблицаПользователей.ИмяПользователя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>25</Width>
+									<ContextMenu name="ТаблицаПользователейИмяПользователяКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ТаблицаПользователейИмяПользователяРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ТаблицаПользователейВремяНачала" id="17">
+									<DataPath>ТаблицаПользователей.ВремяНачала</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<ContextMenu name="ТаблицаПользователейВремяНачалаКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ТаблицаПользователейВремяНачалаРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="ТаблицаПользователейВремяПоследнейАктивности" id="20">
+									<DataPath>ТаблицаПользователей.ВремяПоследнейАктивности</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<ContextMenu name="ТаблицаПользователейВремяПоследнейАктивностиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ТаблицаПользователейВремяПоследнейАктивностиРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ТаблицаПользователейIPАдресКлиента" id="32">
+									<DataPath>ТаблицаПользователей.IPАдресКлиента</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПользователейIPАдресКлиентаКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ТаблицаПользователейIPАдресКлиентаРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ТаблицаПользователейИмяКомпьютера" id="23">
+									<DataPath>ТаблицаПользователей.ИмяКомпьютера</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПользователейИмяКомпьютераКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ТаблицаПользователейИмяКомпьютераРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ТаблицаПользователейИмяПриложения" id="26">
+									<DataPath>ТаблицаПользователей.ИмяПриложения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПользователейИмяПриложенияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ТаблицаПользователейИмяПриложенияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ТаблицаПользователейИмяТекущегоСервиса" id="29">
+									<DataPath>ТаблицаПользователей.ИмяТекущегоСервиса</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаПользователейИмяТекущегоСервисаКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ТаблицаПользователейИмяТекущегоСервисаРасширеннаяПодсказка" id="31"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаОжидание" id="66">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ожидание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница ожидание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ExtendedTooltip name="СтраницаОжиданиеРасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтображениеОжидания" id="68">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отображение ожидания</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отображение ожидания</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтображениеОжиданияРасширеннаяПодсказка" id="69"/>
+							<ChildItems>
+								<PictureDecoration name="ДекорацияОжидание" id="70">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Picture>
+										<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияОжиданиеКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="ДекорацияОжиданиеРасширеннаяПодсказка" id="72"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьОжидания" id="73">
+									<TextColor>style:ЦветПустойГиперссылки</TextColor>
+									<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получение списка пользователей</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьОжиданияКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="НадписьОжиданияРасширеннаяПодсказка" id="75"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</Table>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

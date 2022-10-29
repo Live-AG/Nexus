@@ -28,6 +28,19 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="171"/>
 			<ChildItems>
+				<LabelDecoration name="ДекорацияОтступСлева1" id="567">
+					<Enabled>false</Enabled>
+					<Width>1</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>    </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияОтступСлева1КонтекстноеМеню" id="568"/>
+					<ExtendedTooltip name="ДекорацияОтступСлева1РасширеннаяПодсказка" id="569"/>
+				</LabelDecoration>
 				<PictureDecoration name="ДекорацияБаза" id="172">
 					<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
 					<Title formatted="false">
@@ -59,7 +72,8 @@
 						</v8:item>
 					</ToolTip>
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
-					<Group>AlwaysHorizontal</Group>
+					<Group>Vertical</Group>
+					<VerticalSpacing>None</VerticalSpacing>
 					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -68,7 +82,10 @@
 						<LabelField name="Наименование" id="175">
 							<DataPath>Объект.Description</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<VerticalAlign>Bottom</VerticalAlign>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Width>25</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
 							<ContextMenu name="НаименованиеКонтекстноеМеню" id="176"/>
@@ -77,10 +94,12 @@
 						<LabelField name="Описание" id="548">
 							<DataPath>Объект.Описание</DataPath>
 							<TitleLocation>None</TitleLocation>
-							<HorizontalAlign>Center</HorizontalAlign>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<VerticalAlign>Top</VerticalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
 							<HorizontalStretch>true</HorizontalStretch>
 							<TextColor>style:ЦветПустойГиперссылки</TextColor>
-							<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+							<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 							<ContextMenu name="ОписаниеКонтекстноеМеню" id="549"/>
 							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="550"/>
 						</LabelField>
@@ -110,23 +129,27 @@
 						<InputField name="НаименованиеРедактирование" id="551">
 							<DataPath>Объект.Description</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
 							<ContextMenu name="НаименованиеРедактированиеКонтекстноеМеню" id="552"/>
 							<ExtendedTooltip name="НаименованиеРедактированиеРасширеннаяПодсказка" id="553"/>
 						</InputField>
 						<InputField name="ОписаниеРедактирование" id="554">
 							<DataPath>Объект.Описание</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
 							<ContextMenu name="ОписаниеРедактированиеКонтекстноеМеню" id="555"/>
 							<ExtendedTooltip name="ОписаниеРедактированиеРасширеннаяПодсказка" id="556"/>
 						</InputField>
 						<Button name="ЗаголовокОк" id="559">
 							<Type>UsualButton</Type>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
 							<CommandName>Form.Command.ЗаголовокОк</CommandName>
 							<ShapeRepresentation>None</ShapeRepresentation>
 							<ExtendedTooltip name="ЗаголовокОкРасширеннаяПодсказка" id="560"/>
 						</Button>
 						<Button name="ЗаголовокОтмена" id="561">
 							<Type>UsualButton</Type>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
 							<CommandName>Form.Command.ЗаголовокОтмена</CommandName>
 							<ShapeRepresentation>None</ShapeRepresentation>
 							<ExtendedTooltip name="ЗаголовокОтменаРасширеннаяПодсказка" id="562"/>
@@ -136,7 +159,8 @@
 				<LabelDecoration name="ДекорацияОтступ" id="180">
 					<Enabled>false</Enabled>
 					<AutoMaxWidth>false</AutoMaxWidth>
-					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Font ref="style:NormalTextFont" height="23" kind="StyleItem"/>
 					<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="181"/>
 					<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="182"/>
 				</LabelDecoration>
@@ -155,7 +179,7 @@
 					</ToolTip>
 					<HorizontalStretch>false</HorizontalStretch>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<GroupVerticalAlign>Top</GroupVerticalAlign>
 					<ExtendedTooltip name="ПанельЗаголовкаРасширеннаяПодсказка" id="564"/>
 					<ChildItems>
 						<Popup name="ГруппаДействий" id="565">
@@ -179,14 +203,6 @@
 							<ShapeRepresentation>None</ShapeRepresentation>
 							<ExtendedTooltip name="ГруппаДействийРасширеннаяПодсказка" id="566"/>
 							<ChildItems>
-								<Button name="КомандаОбновить" id="542">
-									<Type>CommandBarButton</Type>
-									<Representation>Picture</Representation>
-									<SkipOnInput>true</SkipOnInput>
-									<CommandName>Form.Command.КомандаОбновить</CommandName>
-									<ShapeRepresentation>None</ShapeRepresentation>
-									<ExtendedTooltip name="КомандаОбновитьРасширеннаяПодсказка" id="543"/>
-								</Button>
 								<Button name="РедактироватьЗаголовок" id="557">
 									<Type>CommandBarButton</Type>
 									<Representation>Picture</Representation>
@@ -194,6 +210,14 @@
 									<CommandName>Form.Command.РедактироватьЗаголовок</CommandName>
 									<ShapeRepresentation>None</ShapeRepresentation>
 									<ExtendedTooltip name="РедактироватьЗаголовокРасширеннаяПодсказка" id="558"/>
+								</Button>
+								<Button name="КомандаОбновить" id="542">
+									<Type>CommandBarButton</Type>
+									<Representation>Picture</Representation>
+									<SkipOnInput>true</SkipOnInput>
+									<CommandName>Form.Command.КомандаОбновить</CommandName>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="КомандаОбновитьРасширеннаяПодсказка" id="543"/>
 								</Button>
 							</ChildItems>
 						</Popup>
@@ -2154,7 +2178,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Редактировать заголовок</v8:content>
+					<v8:content>Переименовать</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -2164,7 +2188,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Редактировать</xr:Ref>
+				<xr:Ref>CommonPicture.ИзменитьЗаготовок</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>РедактироватьЗаголовок</Action>
@@ -2173,17 +2197,17 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заголовок ок</v8:content>
+					<v8:content>ОК</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заголовок ок</v8:content>
+					<v8:content>ОК</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.ТипБулево</xr:Ref>
+				<xr:Ref>CommonPicture.КартинкаОк</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗаголовокОк</Action>
@@ -2193,17 +2217,17 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заголовок отмена</v8:content>
+					<v8:content>Отмена</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заголовок отмена</v8:content>
+					<v8:content>Отмена</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.КонтактнаяИнформацияНеактуально</xr:Ref>
+				<xr:Ref>CommonPicture.КартинкаОтмена</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗаголовокОтмена</Action>
