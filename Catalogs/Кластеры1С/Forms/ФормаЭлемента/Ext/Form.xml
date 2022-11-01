@@ -115,6 +115,48 @@
 							<Representation>None</Representation>
 							<ExtendedTooltip name="ГруппаАутентификацияРасширеннаяПодсказка" id="80"/>
 							<ChildItems>
+								<InputField name="ПользовательЦентральногоСервер" id="114">
+									<DataPath>Объект.ПользовательЦентральногоСервер</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пользователь</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПользовательЦентральногоСерверКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="ПользовательЦентральногоСерверРасширеннаяПодсказка" id="116"/>
+								</InputField>
+								<InputField name="ПарольЦентральногоСервера" id="117">
+									<DataPath>Объект.ПарольЦентральногоСервера</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Пароль</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ПарольЦентральногоСервераКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="ПарольЦентральногоСервераРасширеннаяПодсказка" id="119"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаАдминистратораКластера" id="112">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Администратор кластера</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа администратора кластера</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаАдминистратораКластераРасширеннаяПодсказка" id="113"/>
+							<ChildItems>
 								<InputField name="ИмяАдминистратораКластера" id="81">
 									<DataPath>Объект.ИмяАдминистратораКластера</DataPath>
 									<Title>

@@ -39,6 +39,7 @@
 							<v8:content>Поиск пользователя</v8:content>
 						</v8:item>
 					</Title>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 					<ContextMenu name="ПоискПользователяКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="ПоискПользователяРасширеннаяПодсказка" id="55"/>
 				</SearchStringAddition>
