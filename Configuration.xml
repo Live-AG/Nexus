@@ -1424,6 +1424,7 @@
 			<InformationRegister>ЗакрепленныеЭлементы</InformationRegister>
 			<InformationRegister>ЗначенияИзбранных</InformationRegister>
 			<InformationRegister>ПользователиИнформационныхБаз</InformationRegister>
+			<InformationRegister>СеансыПользователей</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>КонтекстВыполненияСкрипта</ChartOfCharacteristicTypes>
 		</ChildObjects>
