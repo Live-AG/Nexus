@@ -587,20 +587,20 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="da42b422-143d-4f88-a3b3-dbaecafaaf0c">
+			<Attribute uuid="345914de-367b-4e55-8c8c-34e6625df27c">
 				<Properties>
-					<Name>ИмяПользователя</Name>
+					<Name>ИмяКомпьютера</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имя пользователя</v8:content>
+							<v8:content>Имя компьютера</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>100</v8:Length>
+							<v8:Length>50</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -630,20 +630,20 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="345914de-367b-4e55-8c8c-34e6625df27c">
+			<Attribute uuid="da42b422-143d-4f88-a3b3-dbaecafaaf0c">
 				<Properties>
-					<Name>ИмяКомпьютера</Name>
+					<Name>IPАдресКлиента</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имя компьютера</v8:content>
+							<v8:content>IP адрес клиента</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
+							<v8:Length>15</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
