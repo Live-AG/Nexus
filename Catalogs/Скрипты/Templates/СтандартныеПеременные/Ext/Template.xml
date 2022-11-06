@@ -27,7 +27,12 @@
 	<rowsItem>
 		<index>0</index>
 		<row>
-			<empty>true</empty>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -39,18 +44,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>agnServerName</v8:content>
+							<v8:content>АдресСервераАдминистрирования</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>АдресСервераАдминистрирования</v8:content>
+							<v8:content>agnServerName</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -66,18 +71,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>agnServerPort</v8:content>
+							<v8:content>ПортСервераАдминистрирования</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПортСервераАдминистрирования</v8:content>
+							<v8:content>agnServerPort</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -93,18 +98,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>agnServerUser</v8:content>
+							<v8:content>ПользовательЦентральногоСервер</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПользовательЦентральногоСервер</v8:content>
+							<v8:content>agnServerUser</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -120,18 +125,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>agnServerUserPassword</v8:content>
+							<v8:content>ПарольЦентральногоСервера</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПарольЦентральногоСервера</v8:content>
+							<v8:content>agnServerUserPassword</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -141,7 +146,12 @@
 	<rowsItem>
 		<index>5</index>
 		<row>
-			<empty>true</empty>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -153,18 +163,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>dbServerName</v8:content>
+							<v8:content>СерверБД</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>СерверБД</v8:content>
+							<v8:content>dbServerName</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -180,18 +190,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>dbName</v8:content>
+							<v8:content>БазаДанных</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>БазаДанных</v8:content>
+							<v8:content>dbName</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -207,18 +217,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>dbUser</v8:content>
+							<v8:content>ИмяАдминистратораСУБД</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяАдминистратораСУБД</v8:content>
+							<v8:content>dbUser</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -234,18 +244,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>dbUserPassword</v8:content>
+							<v8:content>ПарольАдминистратораСУБД</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПарольАдминистратораСУБД</v8:content>
+							<v8:content>dbUserPassword</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -256,8 +266,9 @@
 		<index>10</index>
 		<row>
 			<c>
+				<i>1</i>
 				<c>
-					<f>0</f>
+					<f>2</f>
 				</c>
 			</c>
 		</row>
@@ -271,18 +282,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ibServerName</v8:content>
+							<v8:content>АдресКластера</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>АдресКластера</v8:content>
+							<v8:content>ibServerName</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -298,18 +309,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ibServerPort</v8:content>
+							<v8:content>ПортКластера</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПортКластера</v8:content>
+							<v8:content>ibServerPort</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -325,18 +336,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ibName</v8:content>
+							<v8:content>ИмяИБ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяИБ</v8:content>
+							<v8:content>ibName</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -352,18 +363,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ibUser</v8:content>
+							<v8:content>ИмяПользователяИБ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПользователяИБ</v8:content>
+							<v8:content>ibUser</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -379,18 +390,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ibUserPassword</v8:content>
+							<v8:content>ПарольПользователяИБ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПарольПользователяИБ</v8:content>
+							<v8:content>ibUserPassword</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -400,7 +411,12 @@
 	<rowsItem>
 		<index>16</index>
 		<row>
-			<empty>true</empty>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -412,18 +428,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>crPath</v8:content>
+							<v8:content>ПутьКХранилищуКонфигурации</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПутьКХранилищуКонфигурации</v8:content>
+							<v8:content>crPath</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -439,18 +455,18 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>crUser</v8:content>
+							<v8:content>ИмяПользователяХК</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>2</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяПользователяХК</v8:content>
+							<v8:content>crUser</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -466,18 +482,83 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>crUserPassword</v8:content>
+							<v8:content>ПарольПользователяХК</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>crUserPassword</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>20</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>2</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>21</index>
+		<row>
+			<c>
+				<c>
 					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПарольПользователяХК</v8:content>
+							<v8:content>ПутьКФайлуПрограммы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PrgPath</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>22</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РежимЗапускаПриложения</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PrgMode</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -486,13 +567,13 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>3</defaultFormatIndex>
-	<height>21</height>
-	<vgRows>21</vgRows>
-	<format>
-		<width>168</width>
-	</format>
+	<height>23</height>
+	<vgRows>23</vgRows>
 	<format>
 		<width>243</width>
+	</format>
+	<format>
+		<width>168</width>
 	</format>
 	<format>
 		<width>72</width>

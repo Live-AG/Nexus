@@ -31,4 +31,13 @@
 		</Type>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="2e16abdc-4c7e-4802-9c82-e5f9dc653140">
+		<Name>ХранилищеКонфигурации</Name>
+		<Code>000000004</Code>
+		<Description>Хранилище конфигурации</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ХранилищаКонфигураций</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>
