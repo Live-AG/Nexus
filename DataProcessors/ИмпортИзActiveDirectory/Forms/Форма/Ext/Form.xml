@@ -290,7 +290,15 @@
 											<ViewStatusLocation>None</ViewStatusLocation>
 											<SearchControlLocation>None</SearchControlLocation>
 											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="УчеткиКонтекстноеМеню" id="33"/>
+											<ContextMenu name="УчеткиКонтекстноеМеню" id="33">
+												<ChildItems>
+													<Button name="УчеткиКонтекстноеМенюВывестиСписок" id="255">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Item.Учетки.StandardCommand.OutputList</CommandName>
+														<ExtendedTooltip name="УчеткиКонтекстноеМенюВывестиСписокРасширеннаяПодсказка" id="256"/>
+													</Button>
+												</ChildItems>
+											</ContextMenu>
 											<AutoCommandBar name="УчеткиКоманднаяПанель" id="34">
 												<Autofill>false</Autofill>
 												<ChildItems>
