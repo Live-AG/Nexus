@@ -1224,6 +1224,7 @@
 			<Catalog>ВнешниеПользователи</Catalog>
 			<Catalog>ВстречаПрисоединенныеФайлы</Catalog>
 			<Catalog>ГруппыВнешнихПользователей</Catalog>
+			<Catalog>ГруппыИзбранного</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>
 			<Catalog>ДополниетельныеЗначенияКонтекста</Catalog>
 			<Catalog>ДополнительныеОтчетыИОбработки</Catalog>
@@ -1266,7 +1267,6 @@
 			<Catalog>ШаблоныСценариев</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
-			<Catalog>ГруппыИзбранного</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>
@@ -1329,6 +1329,7 @@
 			<Enum>ВидыОперационныхСистем</Enum>
 			<Enum>СтатусыИнформационнойБазы</Enum>
 			<Enum>МестаИсполненияСкрипта</Enum>
+			<Enum>ВидыРегистрируемыхСобытий</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>ОбъемНенужныхФайлов</Report>
@@ -1425,6 +1426,7 @@
 			<InformationRegister>ЗначенияИзбранных</InformationRegister>
 			<InformationRegister>ПользователиИнформационныхБаз</InformationRegister>
 			<InformationRegister>СеансыПользователей</InformationRegister>
+			<InformationRegister>СобытияИнформационныхБаз</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>КонтекстВыполненияСкрипта</ChartOfCharacteristicTypes>
 		</ChildObjects>

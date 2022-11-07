@@ -203,6 +203,11 @@
 							<ShapeRepresentation>None</ShapeRepresentation>
 							<ExtendedTooltip name="ГруппаДействийРасширеннаяПодсказка" id="566"/>
 							<ChildItems>
+								<Button name="уд_Отладка" id="570">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.уд_Отладка</CommandName>
+									<ExtendedTooltip name="уд_ОтладкаРасширеннаяПодсказка" id="571"/>
+								</Button>
 								<Button name="РедактироватьЗаголовок" id="557">
 									<Type>CommandBarButton</Type>
 									<Representation>Picture</Representation>
@@ -2038,17 +2043,6 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="Конфигурация" id="8">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Конфигурация</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8ui:FormattedString</v8:Type>
-			</Type>
-		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -2232,6 +2226,21 @@
 			</Picture>
 			<Action>ЗаголовокОтмена</Action>
 			<Representation>Picture</Representation>
+		</Command>
+		<Command name="уд_Отладка" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уд отладка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уд отладка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>уд_Отладка</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
