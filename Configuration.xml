@@ -929,6 +929,7 @@
 			<CommonModule>АдминистрированиеСеансов</CommonModule>
 			<CommonModule>РегламентныеЗаданияПолученияДанных</CommonModule>
 			<CommonModule>РаботаСоСкриптамиСервер</CommonModule>
+			<CommonModule>РаботаСоСкриптамиКлиентСервер</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>
@@ -1224,7 +1225,6 @@
 			<Catalog>ВнешниеПользователи</Catalog>
 			<Catalog>ВстречаПрисоединенныеФайлы</Catalog>
 			<Catalog>ГруппыВнешнихПользователей</Catalog>
-			<Catalog>ГруппыИзбранного</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>
 			<Catalog>ДополниетельныеЗначенияКонтекста</Catalog>
 			<Catalog>ДополнительныеОтчетыИОбработки</Catalog>
@@ -1267,6 +1267,7 @@
 			<Catalog>ШаблоныСценариев</Catalog>
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
+			<Catalog>ГруппыИзбранного</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>

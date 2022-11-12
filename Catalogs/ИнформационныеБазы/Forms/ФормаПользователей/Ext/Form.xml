@@ -122,7 +122,6 @@
 							<CommandBarLocation>None</CommandBarLocation>
 							<ReadOnly>true</ReadOnly>
 							<ChangeRowSet>false</ChangeRowSet>
-							<RowSelectionMode>Row</RowSelectionMode>
 							<Header>false</Header>
 							<VerticalLines>false</VerticalLines>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -606,7 +605,7 @@
 			<dcsset:item>
 				<dcsset:selection>
 					<dcsset:item>
-						<dcsset:field>ТаблицаПользователейИмяПользователя</dcsset:field>
+						<dcsset:field>ТаблицаПользователей</dcsset:field>
 					</dcsset:item>
 				</dcsset:selection>
 				<dcsset:filter>
