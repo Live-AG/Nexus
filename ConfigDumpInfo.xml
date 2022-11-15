@@ -722,7 +722,7 @@
 		<Metadata name="Catalog.Пользователи.Help" id="579baaa4-6493-4d99-8744-6399757295c7.1" configVersion="bd9f18653e091b4a9e9225c4150589d300000000"/>
 		<Metadata name="Catalog.Пользователи.ManagerModule" id="579baaa4-6493-4d99-8744-6399757295c7.3" configVersion="00f4b5b25235fc42abf59acd014d294900000000"/>
 		<Metadata name="Catalog.Пользователи.ObjectModule" id="579baaa4-6493-4d99-8744-6399757295c7.0" configVersion="4348fe0409402b439fd77849c1c0048300000000"/>
-		<Metadata name="Catalog.ПользователиИБ" id="ded83dc4-a4dc-4692-867d-09ee045f9db1" configVersion="7759d5c992a7c840aac2e4ed4057549100000000">
+		<Metadata name="Catalog.ПользователиИБ" id="ded83dc4-a4dc-4692-867d-09ee045f9db1" configVersion="0a81844ef037234abdabb538634c1e5800000000">
 			<Metadata name="Catalog.ПользователиИБ.Attribute.Должность" id="0b50b596-687b-482b-bfc6-32bc01e7ef7c"/>
 			<Metadata name="Catalog.ПользователиИБ.Attribute.Телефон" id="2a189620-6892-43bb-b1ed-9b8446506768"/>
 			<Metadata name="Catalog.ПользователиИБ.Attribute.Активный" id="38746b6b-256b-4897-81d3-dd71f849ee57"/>
@@ -734,10 +734,10 @@
 			<Metadata name="Catalog.ПользователиИБ.Attribute.Организация" id="b96fecca-0656-4c68-a2a3-3e39e4b5314a"/>
 			<Metadata name="Catalog.ПользователиИБ.Attribute.ИмяВДомене" id="d4f2a145-20c5-4152-9422-5987cd6f4dca"/>
 		</Metadata>
-		<Metadata name="Catalog.ПользователиИБ.Form.ФормаВыбора" id="2debb8d7-f126-4eec-b190-f77404614a89" configVersion="ed3d519aa6d07c4e8baaa02100adf7ec00000000"/>
-		<Metadata name="Catalog.ПользователиИБ.Form.ФормаВыбора.Form" id="2debb8d7-f126-4eec-b190-f77404614a89.0" configVersion="0e0128984dbb11429bae03f2ce764ab900000000"/>
-		<Metadata name="Catalog.ПользователиИБ.Form.ФормаСписка" id="810250df-fd97-4b1a-8d23-aedf798b30e5" configVersion="e1c34d628713d54c85686499f6b9d3f500000000"/>
-		<Metadata name="Catalog.ПользователиИБ.Form.ФормаСписка.Form" id="810250df-fd97-4b1a-8d23-aedf798b30e5.0" configVersion="a78e94d15f6bdf43aef6d81176870ea600000000"/>
+		<Metadata name="Catalog.ПользователиИБ.Form.ФормаВыбора" id="2debb8d7-f126-4eec-b190-f77404614a89" configVersion="a107e740fe5f9a4ea429ca3216302a0e00000000"/>
+		<Metadata name="Catalog.ПользователиИБ.Form.ФормаВыбора.Form" id="2debb8d7-f126-4eec-b190-f77404614a89.0" configVersion="16fe0d2ee49b2f47ba438bc007eaff8100000000"/>
+		<Metadata name="Catalog.ПользователиИБ.Form.ФормаСписка" id="810250df-fd97-4b1a-8d23-aedf798b30e5" configVersion="3c6f7f3ddca9be4dbc76a9e10691621400000000"/>
+		<Metadata name="Catalog.ПользователиИБ.Form.ФормаСписка.Form" id="810250df-fd97-4b1a-8d23-aedf798b30e5.0" configVersion="d36302d69e884c4583f2f7b652b84a9800000000"/>
 		<Metadata name="Catalog.ПользователиИБ.Predefined" id="ded83dc4-a4dc-4692-867d-09ee045f9db1.1c" configVersion="8d6ad23014ddc74a913a01811745172000000000"/>
 		<Metadata name="Catalog.ПользовательскиеНастройкиОтчетов" id="5eb4ca7f-027a-4860-a167-e6b424527e7a" configVersion="130704eca4a99348b874bd7ba35eae3000000000">
 			<Metadata name="Catalog.ПользовательскиеНастройкиОтчетов.Attribute.Пользователь" id="6871015f-d959-4a77-a091-a23cb4ebd8f9"/>
@@ -1932,6 +1932,8 @@
 		<Metadata name="CommonModule.РаботаСАдресамиКлиент.Module" id="909e56e3-981f-430b-b775-18c70b3549e7.0" configVersion="14374d3bf511554fa2ad5a87a9d3b9d900000000"/>
 		<Metadata name="CommonModule.РаботаСАдресамиКлиентСервер" id="e613a6aa-82cb-40fd-8f28-0a74fe21e6a6" configVersion="d69a87b6275ea442bb3a0872349d965300000000"/>
 		<Metadata name="CommonModule.РаботаСАдресамиКлиентСервер.Module" id="e613a6aa-82cb-40fd-8f28-0a74fe21e6a6.0" configVersion="36d645ca48e66f4495fcf558388ed36100000000"/>
+		<Metadata name="CommonModule.РаботаСБуферомОбменаКлиентСервер" id="7f24b736-8809-4bf7-b043-995370c507a8" configVersion="7907e6d5344e624caa5aab2fa0be126400000000"/>
+		<Metadata name="CommonModule.РаботаСБуферомОбменаКлиентСервер.Module" id="7f24b736-8809-4bf7-b043-995370c507a8.0" configVersion="876d9a3fed4d8340bf7fd4ceecf351ac00000000"/>
 		<Metadata name="CommonModule.РаботаСПочтовымиСообщениями" id="1ea750ae-5ec4-43c5-b34f-fd28999d41d7" configVersion="020145ff421ca44c8884e7beeaea6f9000000000"/>
 		<Metadata name="CommonModule.РаботаСПочтовымиСообщениями.Module" id="1ea750ae-5ec4-43c5-b34f-fd28999d41d7.0" configVersion="194bf401238eeb4db31d44917267014000000000"/>
 		<Metadata name="CommonModule.РаботаСПочтовымиСообщениямиВызовСервера" id="4678c704-933a-45ef-9d41-89b8f39016bb" configVersion="1e765640b06d0047913e0340e1828c3e00000000"/>
@@ -2728,7 +2730,7 @@
 		<Metadata name="CommonTemplate.КомпонентаTWAIN.Template" id="6f3c5b90-b030-4267-a973-33d12c2c7680.0" configVersion="8b40c8e284c1d349bff7bc133e363bb500000000"/>
 		<Metadata name="CommonTemplate.ПолучениеДереваОбработчиковОбновления" id="88b879b7-1bb3-4478-b569-35bdb5c56939" configVersion="47c8a9fb39069d4594e7705197b7810000000000"/>
 		<Metadata name="CommonTemplate.ПолучениеДереваОбработчиковОбновления.Template" id="88b879b7-1bb3-4478-b569-35bdb5c56939.0" configVersion="7d9c6b14aa6edb458b15a230c09cdeda00000000"/>
-		<Metadata name="Configuration.Nexus" id="c05b4078-b8f9-42bf-be22-e94cf30948eb" configVersion="0783a82f1a9fd94587971fd806f1659200000000"/>
+		<Metadata name="Configuration.Nexus" id="c05b4078-b8f9-42bf-be22-e94cf30948eb" configVersion="3595baa92f1ac34d88c94f7b07828c3a00000000"/>
 		<Metadata name="Configuration.Nexus.ClientApplicationInterface" id="775853de-c908-47f3-82fb-d85daa547b81.b" configVersion="6dcb8aba24013f479616547a294b358200000000"/>
 		<Metadata name="Configuration.Nexus.CommandInterface" id="775853de-c908-47f3-82fb-d85daa547b81.a" configVersion="dcd2822838601b4197f75af4a9ca067d00000000"/>
 		<Metadata name="Configuration.Nexus.ExternalConnectionModule" id="775853de-c908-47f3-82fb-d85daa547b81.5" configVersion="95db896b416590498ae8df21e3b8d1bb00000000"/>
