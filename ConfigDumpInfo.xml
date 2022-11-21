@@ -3956,10 +3956,11 @@
 			<Metadata name="Enum.МестаИсполненияСкрипта.EnumValue.НаКлиенте" id="82fe5241-f75a-4c9e-8943-6d7e5cf0a1e1"/>
 			<Metadata name="Enum.МестаИсполненияСкрипта.EnumValue.НаСервере" id="ff2d56fc-4ff7-4ade-9e50-6b25d0ae1a32"/>
 		</Metadata>
-		<Metadata name="Enum.НазначенияИБ" id="13c04d3b-72d7-4a88-ba28-a65f7f24a301" configVersion="8e137b3d0eddeb44948d9c6f8154cc1e00000000">
+		<Metadata name="Enum.НазначенияИБ" id="13c04d3b-72d7-4a88-ba28-a65f7f24a301" configVersion="d05786de384f2f44b6423057771aef9b00000000">
 			<Metadata name="Enum.НазначенияИБ.EnumValue.Тестовая" id="61b97cd2-7376-4f26-9855-cb22953cfc8f"/>
 			<Metadata name="Enum.НазначенияИБ.EnumValue.Рабочая" id="b4adcebf-5cb8-4c9a-af8b-55a1d6f50bc8"/>
 			<Metadata name="Enum.НазначенияИБ.EnumValue.Проектная" id="bfac9eac-ec99-4af4-ac08-1637f6d0a33c"/>
+			<Metadata name="Enum.НазначенияИБ.EnumValue.Архивная" id="cbb87db5-4ce6-4cd5-8a0a-5c1cee7597de"/>
 			<Metadata name="Enum.НазначенияИБ.EnumValue.Разработка" id="d1121fcd-9674-4a32-88a8-6cd07afe9485"/>
 		</Metadata>
 		<Metadata name="Enum.ПериодОчисткиФайлов" id="a0861dd3-ced5-485e-8719-0ad0bc3adc0d" configVersion="33de64c86468264cb608694a399901ab00000000">

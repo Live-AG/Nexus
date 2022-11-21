@@ -50,6 +50,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="cbb87db5-4ce6-4cd5-8a0a-5c1cee7597de">
+				<Properties>
+					<Name>Архивная</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Архивная</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="d1121fcd-9674-4a32-88a8-6cd07afe9485">
 				<Properties>
 					<Name>Разработка</Name>
