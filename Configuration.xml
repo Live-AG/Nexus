@@ -599,6 +599,7 @@
 			<CommonPicture>КартинкаОк</CommonPicture>
 			<CommonPicture>КартинкаОтмена</CommonPicture>
 			<CommonPicture>ИзменитьЗаготовок</CommonPicture>
+			<CommonPicture>СкопироватьВБуфер</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
