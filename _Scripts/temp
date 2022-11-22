@@ -1,1 +1,3 @@
 %1cestart% DESIGNER /S%ibServerName%\%ibServerName% /N%ibUser% /P%ibUserPasswordr% /WA+ /AppArch x86_64_prt /RunModeManagedApplication
+
+"C:\Program Files\1cv8\8.3.20.1674\bin\1cv8.exe" DESIGNER /S"lng-srv-1c-test:4541\gnph_utp"  /RestoreIB "L:\Служба информационно-управляющих систем\Общая\1С\УТП VSS.dt" -JobsCount 2
