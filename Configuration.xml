@@ -600,6 +600,7 @@
 			<CommonPicture>КартинкаОтмена</CommonPicture>
 			<CommonPicture>ИзменитьЗаготовок</CommonPicture>
 			<CommonPicture>СкопироватьВБуфер</CommonPicture>
+			<CommonPicture>Поделиться</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>

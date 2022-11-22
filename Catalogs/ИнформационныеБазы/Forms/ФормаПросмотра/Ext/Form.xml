@@ -1652,6 +1652,7 @@
 													<v8:content>Группа кластер имя ДБ</v8:content>
 												</v8:item>
 											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
 											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
@@ -1659,7 +1660,6 @@
 											<ChildItems>
 												<LabelField name="ИмяДБ" id="16">
 													<DataPath>Объект.ИмяИБ</DataPath>
-													<ReadOnly>true</ReadOnly>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1668,6 +1668,7 @@
 													</Title>
 													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
 													<EditMode>EnterOnInput</EditMode>
+													<Hiperlink>true</Hiperlink>
 													<TextColor>style:ГиперссылкаЦвет</TextColor>
 													<BackColor>web:WhiteSmoke</BackColor>
 													<ContextMenu name="ИмяДБКонтекстноеМеню" id="17"/>
@@ -1680,6 +1681,11 @@
 															<v8:content>Декорация имя ДБКопировать</v8:content>
 														</v8:item>
 													</Title>
+													<Hyperlink>true</Hyperlink>
+													<Picture>
+														<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
 													<ContextMenu name="ДекорацияИмяДБКопироватьКонтекстноеМеню" id="575"/>
 													<ExtendedTooltip name="ДекорацияИмяДБКопироватьРасширеннаяПодсказка" id="576"/>
 												</PictureDecoration>
