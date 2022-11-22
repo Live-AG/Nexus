@@ -26,6 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПользователиИнформационныхБаз</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СобытияИнформационныхБаз</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ХранилищаКонфигураций</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыВебСерверов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

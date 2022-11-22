@@ -1639,25 +1639,52 @@
 											<ContextMenu name="Декорация13КонтекстноеМеню" id="291"/>
 											<ExtendedTooltip name="Декорация13РасширеннаяПодсказка" id="292"/>
 										</LabelDecoration>
-										<InputField name="ИмяДБ" id="16">
-											<DataPath>Объект.ИмяИБ</DataPath>
-											<ReadOnly>true</ReadOnly>
+										<UsualGroup name="ГруппаКластерИмяДБ" id="572">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Имя</v8:content>
+													<v8:content>Группа кластер имя ДБ</v8:content>
 												</v8:item>
 											</Title>
-											<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
-											<EditMode>EnterOnInput</EditMode>
-											<ChoiceButton>false</ChoiceButton>
-											<OpenButton>false</OpenButton>
-											<TextColor>style:ГиперссылкаЦвет</TextColor>
-											<BackColor>web:WhiteSmoke</BackColor>
-											<BorderColor>web:WhiteSmoke</BorderColor>
-											<ContextMenu name="ИмяДБКонтекстноеМеню" id="17"/>
-											<ExtendedTooltip name="ИмяДБРасширеннаяПодсказка" id="18"/>
-										</InputField>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кластер имя ДБ</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаКластерИмяДБРасширеннаяПодсказка" id="573"/>
+											<ChildItems>
+												<LabelField name="ИмяДБ" id="16">
+													<DataPath>Объект.ИмяИБ</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя</v8:content>
+														</v8:item>
+													</Title>
+													<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+													<EditMode>EnterOnInput</EditMode>
+													<TextColor>style:ГиперссылкаЦвет</TextColor>
+													<BackColor>web:WhiteSmoke</BackColor>
+													<ContextMenu name="ИмяДБКонтекстноеМеню" id="17"/>
+													<ExtendedTooltip name="ИмяДБРасширеннаяПодсказка" id="18"/>
+												</LabelField>
+												<PictureDecoration name="ДекорацияИмяДБКопировать" id="574">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация имя ДБКопировать</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияИмяДБКопироватьКонтекстноеМеню" id="575"/>
+													<ExtendedTooltip name="ДекорацияИмяДБКопироватьРасширеннаяПодсказка" id="576"/>
+												</PictureDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<InputField name="Кластер1С" id="4">
 											<DataPath>Объект.Owner</DataPath>
 											<ReadOnly>true</ReadOnly>
