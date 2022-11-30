@@ -15,7 +15,7 @@
 			<Explanation/>
 			<Picture>
 				<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИнформационныеБазы</xr:Item>

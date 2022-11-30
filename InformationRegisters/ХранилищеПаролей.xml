@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
-	<InformationRegister uuid="6a6def83-4866-409a-b383-8b6a2341c497">
+	<InformationRegister uuid="41e79bd9-d165-44a3-b76d-a342b659a429">
 		<InternalInfo>
-			<xr:GeneratedType name="InformationRegisterRecord.СобытияИнформационныхБаз" category="Record">
-				<xr:TypeId>d16e0f1b-b01b-4550-aeca-5db08b3cbcfa</xr:TypeId>
-				<xr:ValueId>deaeefa3-cf7f-49bc-a342-9bf3f4e052f1</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecord.ХранилищеПаролей" category="Record">
+				<xr:TypeId>eb10dc2d-3c70-4d2e-86d1-b30e885c98ba</xr:TypeId>
+				<xr:ValueId>451e8796-9c79-435a-808f-ae27421f9d1c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterManager.СобытияИнформационныхБаз" category="Manager">
-				<xr:TypeId>1eb17e09-42c1-416e-b3d5-30e7c51575b4</xr:TypeId>
-				<xr:ValueId>d068a3d5-9eab-4eec-8cac-3c123604aeec</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterManager.ХранилищеПаролей" category="Manager">
+				<xr:TypeId>8a1de268-d994-42a4-9f0e-71c5f2f28871</xr:TypeId>
+				<xr:ValueId>2861ba2e-5dfe-49ec-8176-03aa452a2d66</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterSelection.СобытияИнформационныхБаз" category="Selection">
-				<xr:TypeId>ffb7b59f-3a51-44db-9efc-c793d702ea45</xr:TypeId>
-				<xr:ValueId>2f7e179d-5cc5-4275-9e35-dfa683cb52c9</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterSelection.ХранилищеПаролей" category="Selection">
+				<xr:TypeId>c85ae569-34ad-450d-802c-751a388a2e6f</xr:TypeId>
+				<xr:ValueId>a9e413d4-6bab-4311-a35f-21aa23eadf5d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterList.СобытияИнформационныхБаз" category="List">
-				<xr:TypeId>2e2ba997-f6e0-4135-ba90-8726a68a314d</xr:TypeId>
-				<xr:ValueId>9331bda1-f3f6-4831-9b36-05ce59551c53</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterList.ХранилищеПаролей" category="List">
+				<xr:TypeId>dcfbf596-fb96-4bfa-8045-564eac19690d</xr:TypeId>
+				<xr:ValueId>c5dd9033-cfb5-4bda-989e-127d45349175</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordSet.СобытияИнформационныхБаз" category="RecordSet">
-				<xr:TypeId>ef29b333-4b16-46e1-bfe3-0582b0fd7ca2</xr:TypeId>
-				<xr:ValueId>b28c9af2-2c64-4a76-b4b6-36640529da41</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ХранилищеПаролей" category="RecordSet">
+				<xr:TypeId>fcc3c08a-ecb8-4548-beaf-3c9006b2081e</xr:TypeId>
+				<xr:ValueId>d8eb487e-f2f9-4a8c-a742-209857fb04aa</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordKey.СобытияИнформационныхБаз" category="RecordKey">
-				<xr:TypeId>4036b84f-7522-48fc-a1d1-0853397787e1</xr:TypeId>
-				<xr:ValueId>d88758d2-436c-43dc-9153-3d87ee6d4537</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ХранилищеПаролей" category="RecordKey">
+				<xr:TypeId>2459db61-aae9-4710-8d7b-ec9db2e57125</xr:TypeId>
+				<xr:ValueId>387ee5dc-c890-4e1a-a916-7ddfa5b46450</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="InformationRegisterRecordManager.СобытияИнформационныхБаз" category="RecordManager">
-				<xr:TypeId>27e871a6-54fd-4413-b1d3-f170093086ed</xr:TypeId>
-				<xr:ValueId>68187db1-b057-4281-9b30-6a6f7b4e157a</xr:ValueId>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ХранилищеПаролей" category="RecordManager">
+				<xr:TypeId>51374974-fd55-4206-bbe3-e252b7276a7b</xr:TypeId>
+				<xr:ValueId>98af932c-614d-41f8-aab0-b47d84df0d1f</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>СобытияИнформационныхБаз</Name>
+			<Name>ХранилищеПаролей</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>События информационных баз</v8:content>
+					<v8:content>Хранилище паролей</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -46,9 +46,9 @@
 			<DefaultListForm/>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
-			<InformationRegisterPeriodicity>Second</InformationRegisterPeriodicity>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>
-			<MainFilterOnPeriod>true</MainFilterOnPeriod>
+			<MainFilterOnPeriod>false</MainFilterOnPeriod>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>DontUse</FullTextSearch>
@@ -64,137 +64,20 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="9008284d-461c-48f4-9c65-0d7f7e68ebc2">
+			<Resource uuid="65f8b9e9-dc23-4af0-ac20-5dff8e949298">
 				<Properties>
-					<Name>ВидСобытия</Name>
+					<Name>ИмяПользователя</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вид события</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:EnumRef.ВидыРегистрируемыхСобытий</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Resource>
-			<Resource uuid="c54d41af-fa32-4acd-a2b5-9eb8b392b008">
-				<Properties>
-					<Name>Контекст</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Контекст</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>v8:ValueStorage</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Resource>
-			<Resource uuid="2f23c510-64b4-4eaf-b3d5-d7daf139549f">
-				<Properties>
-					<Name>Результат</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Результат</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>v8:ValueStorage</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Resource>
-			<Attribute uuid="09f00f87-3492-4f1f-895a-ac5cf9028008">
-				<Properties>
-					<Name>Описание</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Описание</v8:content>
+							<v8:content>Имя пользователя</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
-							<v8:Length>250</v8:Length>
+							<v8:Length>50</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
@@ -209,7 +92,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
+					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -223,19 +106,23 @@
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Attribute>
-			<Attribute uuid="3e758849-227a-464c-876b-f1ccc936b035">
+			</Resource>
+			<Resource uuid="949787d5-a2a2-4d35-b45c-0e9c9aa39a07">
 				<Properties>
-					<Name>УспешноеВыполнение</Name>
+					<Name>Пароль</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Успешное выполнение</v8:content>
+							<v8:content>Пароль</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -262,19 +149,19 @@
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
-			</Attribute>
-			<Dimension uuid="5bdae8a9-914f-4fc9-9ae2-9475f158d791">
+			</Resource>
+			<Dimension uuid="070447c1-f512-462e-aab4-0cc61dc74e7b">
 				<Properties>
-					<Name>ИнформационнаяБаза</Name>
+					<Name>ПользовательИБ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Информационная база</v8:content>
+							<v8:content>Пользователь ИБ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+						<v8:Type>cfg:CatalogRef.ПользователиИБ</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -300,6 +187,49 @@
 					<Master>true</Master>
 					<MainFilter>true</MainFilter>
 					<DenyIncompleteValues>true</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="73724ace-2a1f-4598-bef7-c5ef4d3b6259">
+				<Properties>
+					<Name>ОбъектДоступа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект доступа</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+						<v8:Type>cfg:CatalogRef.ХранилищаКонфигураций</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>

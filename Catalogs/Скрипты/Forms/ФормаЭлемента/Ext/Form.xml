@@ -363,7 +363,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ВыполнитьЗапуск</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ВыполнитьСкрипт</Action>
 		</Command>

@@ -129,7 +129,7 @@
 							<RowPictureDataPath>ТаблицаПользователей.ИндексКартинки</RowPictureDataPath>
 							<RowsPicture>
 								<xr:Ref>CommonPicture.ВидыСеансовНабор</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</RowsPicture>
 							<BorderColor>style:FormBackColor</BorderColor>
 							<SearchStringLocation>None</SearchStringLocation>
@@ -291,7 +291,7 @@
 									<GroupVerticalAlign>Center</GroupVerticalAlign>
 									<Picture>
 										<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</Picture>
 									<ContextMenu name="ДекорацияОжиданиеКонтекстноеМеню" id="71"/>
 									<ExtendedTooltip name="ДекорацияОжиданиеРасширеннаяПодсказка" id="72"/>
@@ -640,7 +640,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.РазрывСоединения</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗавершитьСеанс</Action>
 		</Command>
@@ -660,7 +660,7 @@
 			<Shortcut>F5</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.ОбновитьДанные</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>Обновить</Action>
 			<Representation>TextPicture</Representation>
@@ -680,7 +680,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.РазрывСоединения</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗавершитьВсеСеансы</Action>
 			<Representation>TextPicture</Representation>
@@ -700,7 +700,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.СпящийСеанс</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗавершитьСпящиеСеансы</Action>
 			<Representation>TextPicture</Representation>

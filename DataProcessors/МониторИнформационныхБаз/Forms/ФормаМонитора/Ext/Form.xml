@@ -6,22 +6,22 @@
 		<ChildItems>
 			<Button name="ФормаНастройкаСписка" id="78">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Item.ТаблицаИнформационныхБаз.StandardCommand.ListSettings</CommandName>
+				<CommandName>0</CommandName>
 				<ExtendedTooltip name="ФормаНастройкаСпискаРасширеннаяПодсказка" id="79"/>
 			</Button>
 			<Button name="ФормаЗагрузитьНастройкиДинамическогоСписка" id="80">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Item.ТаблицаИнформационныхБаз.StandardCommand.LoadDynamicListSettings</CommandName>
+				<CommandName>0</CommandName>
 				<ExtendedTooltip name="ФормаЗагрузитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="81"/>
 			</Button>
 			<Button name="ФормаСохранитьНастройкиДинамическогоСписка" id="82">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Item.ТаблицаИнформационныхБаз.StandardCommand.SaveDynamicListSettings</CommandName>
+				<CommandName>0</CommandName>
 				<ExtendedTooltip name="ФормаСохранитьНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="83"/>
 			</Button>
 			<Button name="ФормаНайти" id="73">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Item.ТаблицаИнформационныхБаз.StandardCommand.Find</CommandName>
+				<CommandName>0</CommandName>
 				<ExtendedTooltip name="ФормаНайтиРасширеннаяПодсказка" id="74"/>
 			</Button>
 			<SearchStringAddition name="ПоискБазы" id="75">
@@ -146,7 +146,7 @@
 													<TextColor>style:ЦветПустойГиперссылки</TextColor>
 													<Picture>
 														<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ExtendedTooltip name="ДобавитьКластерРасширеннаяПодсказка" id="150"/>
 												</Button>
@@ -174,7 +174,7 @@
 													<TextColor>style:ЦветПустойГиперссылки</TextColor>
 													<Picture>
 														<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ExtendedTooltip name="ДобавитьПроектРасширеннаяПодсказка" id="179"/>
 												</Button>
@@ -202,7 +202,7 @@
 													<TextColor>style:ЦветПустойГиперссылки</TextColor>
 													<Picture>
 														<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<ExtendedTooltip name="ДобавитьИзбранноеРасширеннаяПодсказка" id="236"/>
 												</Button>
@@ -260,7 +260,7 @@
 											<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
 											<RowsPicture>
 												<xr:Ref>CommonPicture.СерверНаборСтатический</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<CommandSet>
@@ -391,7 +391,7 @@
 																	<FixingInTable>Right</FixingInTable>
 																	<ValuesPicture>
 																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
 																	</ValuesPicture>
 																	<ContextMenu name="ТаблицаЭлементовКластераКартинкаЗакрепитьКонтекстноеМеню" id="161"/>
 																	<ExtendedTooltip name="ТаблицаЭлементовКластераКартинкаЗакрепитьРасширеннаяПодсказка" id="162"/>
@@ -446,7 +446,7 @@
 											<RowPictureDataPath>ТаблицаПроектов.ИндексКартинки</RowPictureDataPath>
 											<RowsPicture>
 												<xr:Ref>CommonPicture.ПроектЖурнал</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<AutoRefresh>false</AutoRefresh>
@@ -557,7 +557,7 @@
 																	<FixingInTable>Right</FixingInTable>
 																	<ValuesPicture>
 																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
 																	</ValuesPicture>
 																	<ContextMenu name="ТаблицаПроектовКартинкаЗакрепитьКонтекстноеМеню" id="166"/>
 																	<ExtendedTooltip name="ТаблицаПроектовКартинкаЗакрепитьРасширеннаяПодсказка" id="167"/>
@@ -609,7 +609,7 @@
 											<RowPictureDataPath>ТаблицаИзбранного.ИндексКартинки</RowPictureDataPath>
 											<RowsPicture>
 												<xr:Ref>CommonPicture.ИзбранноеНабор</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<AutoRefresh>false</AutoRefresh>
@@ -625,7 +625,7 @@
 											<ShowRoot>false</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
-											<ContextMenu name="ТаблицаИзбранногоКонтекстноеМеню" id="199" DisplayImportance="VeryHigh">
+											<ContextMenu name="ТаблицаИзбранногоКонтекстноеМеню" id="199">
 												<Autofill>false</Autofill>
 												<ChildItems>
 													<Button name="ТаблицаИзбранногоКонтекстноеМенюЗакрепитьТекущийЭлемент" id="243">
@@ -721,7 +721,7 @@
 																	<FixingInTable>Right</FixingInTable>
 																	<ValuesPicture>
 																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
 																	</ValuesPicture>
 																	<ContextMenu name="ТаблицаИзбранногоКартинкаЗакрепитьКонтекстноеМеню" id="215"/>
 																	<ExtendedTooltip name="ТаблицаИзбранногоКартинкаЗакрепитьРасширеннаяПодсказка" id="216"/>
@@ -815,7 +815,7 @@
 											<TextColor>style:ЦветПустойГиперссылки</TextColor>
 											<Picture>
 												<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<Title>
 												<v8:item>
@@ -863,12 +863,9 @@
 									<RowPictureDataPath>ТаблицаИнформационныхБаз.ИндексКартинки</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<BorderColor>style:FormBackColor</BorderColor>
-									<CommandSet>
-										<ExcludedCommand>Change</ExcludedCommand>
-									</CommandSet>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>120</AutoRefreshPeriod>
 									<Period>
@@ -953,7 +950,7 @@
 											</ButtonGroup>
 											<Button name="ТаблицаИнформационныхБазКонтекстноеМенюПоледитьсяИБ" id="265">
 												<Type>CommandBarButton</Type>
-												<CommandName>Form.Command.ПоледитьсяИБ</CommandName>
+												<CommandName>Form.Command.ПодедитьсяИБ</CommandName>
 												<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюПоледитьсяИБРасширеннаяПодсказка" id="266"/>
 											</Button>
 										</ChildItems>
@@ -1037,7 +1034,7 @@
 											<Hyperlink>true</Hyperlink>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.ВыполнитьЗапуск</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
 											<ContextMenu name="ТаблицаИнформационныхБазПолеНастройкаКонтекстноеМеню" id="66"/>
@@ -1099,7 +1096,7 @@
 											<GroupVerticalAlign>Center</GroupVerticalAlign>
 											<Picture>
 												<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
 											<ContextMenu name="ДекорацияОжиданиеКонтекстноеМеню" id="129"/>
 											<ExtendedTooltip name="ДекорацияОжиданиеРасширеннаяПодсказка" id="130"/>
@@ -1324,6 +1321,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="ТаблицаПроектов" id="5">
 			<Title>
@@ -1708,7 +1706,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>КомандаЗакрепитьКластер</Action>
 		</Command>
@@ -1727,7 +1725,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.СоздатьПодключения</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>Тест_ОбновитьРегистрациюБаз</Action>
 		</Command>
@@ -1791,7 +1789,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.СтрелкаВверх</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ПереместитьЗакрепленноеВверх</Action>
 		</Command>
@@ -1810,7 +1808,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.СтрелкаВниз</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ПереместитьЗакрепленноеВниз</Action>
 		</Command>
@@ -1874,7 +1872,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗапуститьПредприятие</Action>
 		</Command>
@@ -1893,11 +1891,11 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Конфигуратор_ЧБ</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗапуститьКонфигуратор</Action>
 		</Command>
-		<Command name="ПоледитьсяИБ" id="19">
+		<Command name="ПодедитьсяИБ" id="19">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1912,9 +1910,9 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Поделиться</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
-			<Action>ПоледитьсяИБ</Action>
+			<Action>ПодедитьсяИБ</Action>
 		</Command>
 		<Command name="НастройкаЗапускаИБ" id="20">
 			<Title>

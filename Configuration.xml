@@ -930,9 +930,9 @@
 			<CommonModule>АдминистрированиеСерверов</CommonModule>
 			<CommonModule>АдминистрированиеСеансов</CommonModule>
 			<CommonModule>РегламентныеЗаданияПолученияДанных</CommonModule>
-			<CommonModule>РаботаСоСкриптамиСервер</CommonModule>
-			<CommonModule>РаботаСоСкриптамиКлиентСервер</CommonModule>
 			<CommonModule>РаботаСБуферомОбменаКлиентСервер</CommonModule>
+			<CommonModule>РаботаСоСкриптамиСервер</CommonModule>
+			<CommonModule>РаботаСоСкриптамиКлиент</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>
@@ -1335,6 +1335,7 @@
 			<Enum>МестаИсполненияСкрипта</Enum>
 			<Enum>ВидыРегистрируемыхСобытий</Enum>
 			<Enum>ТипыВебСерверов</Enum>
+			<Enum>ПриложениеЗапускаСкрипта</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>ОбъемНенужныхФайлов</Report>
@@ -1432,6 +1433,7 @@
 			<InformationRegister>ПользователиИнформационныхБаз</InformationRegister>
 			<InformationRegister>СеансыПользователей</InformationRegister>
 			<InformationRegister>СобытияИнформационныхБаз</InformationRegister>
+			<InformationRegister>ХранилищеПаролей</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>КонтекстВыполненияСкрипта</ChartOfCharacteristicTypes>
 		</ChildObjects>
