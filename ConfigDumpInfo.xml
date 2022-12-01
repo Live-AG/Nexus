@@ -527,10 +527,10 @@
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаЗапускаПриложения.Form" id="2dbd65aa-e2e2-4fe7-af65-174663e8dc42.0" configVersion="8af9469d76f5384a8fd179aa8f408bfc00000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаНовойБазы" id="450a9064-82b4-44bc-81c6-4027e9538a2d" configVersion="62daa3096fc3fa4bab1e26ef34b360e700000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаНовойБазы.Form" id="450a9064-82b4-44bc-81c6-4027e9538a2d.0" configVersion="bf2b7d15bd8cb74a81555a6bffe48fa500000000"/>
-		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПользователей" id="4b04e1d5-df46-4b89-80b7-cab73834a770" configVersion="0a1be2fb8342824b9a4cd6f748b0bc7100000000"/>
-		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПользователей.Form" id="4b04e1d5-df46-4b89-80b7-cab73834a770.0" configVersion="38eec2a9ad28a244bd43097055770f1d00000000"/>
-		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра" id="2f521524-4858-4d61-a789-0803b6953def" configVersion="40403ba4adf9984b9f362bb05f98c1e000000000"/>
-		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра.Form" id="2f521524-4858-4d61-a789-0803b6953def.0" configVersion="d6dc839855f66349864815bfe2d39c1100000000"/>
+		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПользователей" id="4b04e1d5-df46-4b89-80b7-cab73834a770" configVersion="12246813b2bdfd4f9f4997723b5be14b00000000"/>
+		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПользователей.Form" id="4b04e1d5-df46-4b89-80b7-cab73834a770.0" configVersion="7a086ff28e9a7a4a9bfca21f80430aeb00000000"/>
+		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра" id="2f521524-4858-4d61-a789-0803b6953def" configVersion="17da58e19b607343916f5ea88052bbee00000000"/>
+		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаПросмотра.Form" id="2f521524-4858-4d61-a789-0803b6953def.0" configVersion="d9c306cc1e302c45930d1834917e34f600000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСобытий" id="e55f3be8-07a4-4c40-b0e6-9d84375fd72f" configVersion="5cd7bc0bccd04a41a925f6b84575e33500000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСобытий.Form" id="e55f3be8-07a4-4c40-b0e6-9d84375fd72f.0" configVersion="bb795ab2bd7b7f4698f59866038c64de00000000"/>
 		<Metadata name="Catalog.ИнформационныеБазы.Form.ФормаСписка" id="b5eff2fb-7e25-4441-ae15-c3a00ca0aebc" configVersion="852cdc7fa7e78845b417cd1c91a0f08300000000"/>
