@@ -905,6 +905,7 @@
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаПросмотраФотографии</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

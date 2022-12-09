@@ -235,7 +235,8 @@
 								<InputField name="Описание" id="40">
 									<DataPath>Объект.Описание</DataPath>
 									<AutoMaxWidth>false</AutoMaxWidth>
-									<MultiLine>true</MultiLine>
+									<ExtendedEdit>true</ExtendedEdit>
+									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="ОписаниеКонтекстноеМеню" id="41"/>
 									<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="42"/>
 								</InputField>
@@ -258,42 +259,6 @@
 					</ToolTip>
 					<ExtendedTooltip name="СтраницаПросмотраРасширеннаяПодсказка" id="62"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаЗаголовка" id="65">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа заголовка</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа заголовка</v8:content>
-								</v8:item>
-							</ToolTip>
-							<HorizontalStretch>true</HorizontalStretch>
-							<Group>AlwaysHorizontal</Group>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаЗаголовкаРасширеннаяПодсказка" id="66"/>
-							<ChildItems>
-								<LabelField name="ПолноеИмяПросмотр" id="67">
-									<DataPath>Объект.ПолноеИмя</DataPath>
-									<TitleLocation>None</TitleLocation>
-									<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-									<ContextMenu name="ПолноеИмяПросмотрКонтекстноеМеню" id="68"/>
-									<ExtendedTooltip name="ПолноеИмяПросмотрРасширеннаяПодсказка" id="69"/>
-								</LabelField>
-								<Button name="ФормаРедактироватьРеквизиты" id="45">
-									<Type>UsualButton</Type>
-									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-									<CommandName>Form.Command.РедактироватьРеквизиты</CommandName>
-									<ShapeRepresentation>None</ShapeRepresentation>
-									<ExtendedTooltip name="ФормаРедактироватьРеквизитыРасширеннаяПодсказка" id="46"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
 						<UsualGroup name="ГруппаФотографияИИмя" id="106">
 							<Title>
 								<v8:item>
@@ -316,6 +281,7 @@
 								<HTMLDocumentField name="АдресФотографии" id="119">
 									<DataPath>АдресФотографии</DataPath>
 									<Enabled>false</Enabled>
+									<ReadOnly>true</ReadOnly>
 									<SkipOnInput>true</SkipOnInput>
 									<TitleLocation>None</TitleLocation>
 									<Width>12</Width>
@@ -323,11 +289,12 @@
 									<Height>6</Height>
 									<AutoMaxHeight>false</AutoMaxHeight>
 									<MaxHeight>3</MaxHeight>
-									<HorizontalStretch>false</HorizontalStretch>
-									<VerticalStretch>false</VerticalStretch>
 									<BorderColor>style:FormBackColor</BorderColor>
 									<ContextMenu name="АдресФотографииКонтекстноеМеню" id="120"/>
 									<ExtendedTooltip name="АдресФотографииРасширеннаяПодсказка" id="121"/>
+									<Events>
+										<Event name="OnClick">АдресФотографииПриНажатии</Event>
+									</Events>
 								</HTMLDocumentField>
 								<UsualGroup name="ГруппаЗаголовокПраво" id="108">
 									<Title>
@@ -349,6 +316,42 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗаголовокПравоРасширеннаяПодсказка" id="109"/>
 									<ChildItems>
+										<UsualGroup name="ГруппаЗаголовка" id="65">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа заголовка</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа заголовка</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЗаголовкаРасширеннаяПодсказка" id="66"/>
+											<ChildItems>
+												<LabelField name="ПолноеИмяПросмотр" id="67">
+													<DataPath>Объект.ПолноеИмя</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ContextMenu name="ПолноеИмяПросмотрКонтекстноеМеню" id="68"/>
+													<ExtendedTooltip name="ПолноеИмяПросмотрРасширеннаяПодсказка" id="69"/>
+												</LabelField>
+												<Button name="ФормаРедактироватьРеквизиты" id="45">
+													<Type>UsualButton</Type>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<CommandName>Form.Command.РедактироватьРеквизиты</CommandName>
+													<ShapeRepresentation>None</ShapeRepresentation>
+													<ExtendedTooltip name="ФормаРедактироватьРеквизитыРасширеннаяПодсказка" id="46"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
 										<LabelField name="НаименованиеПросмотр" id="70">
 											<DataPath>Объект.Description</DataPath>
 											<TitleLocation>None</TitleLocation>
@@ -380,19 +383,25 @@
 											<ChildItems>
 												<LabelField name="ДолжностьПросмотр" id="83">
 													<DataPath>Объект.Должность</DataPath>
+													<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<TitleLocation>None</TitleLocation>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ДолжностьПросмотрКонтекстноеМеню" id="84"/>
 													<ExtendedTooltip name="ДолжностьПросмотрРасширеннаяПодсказка" id="85"/>
 												</LabelField>
 												<LabelField name="ПодразделениеПросмотр" id="86">
 													<DataPath>Объект.Подразделение</DataPath>
+													<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<TitleLocation>None</TitleLocation>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ПодразделениеПросмотрКонтекстноеМеню" id="87"/>
 													<ExtendedTooltip name="ПодразделениеПросмотрРасширеннаяПодсказка" id="88"/>
 												</LabelField>
 												<LabelField name="ОрганизацияПросмотр" id="89">
 													<DataPath>Объект.Организация</DataPath>
+													<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<TitleLocation>None</TitleLocation>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ОрганизацияПросмотрКонтекстноеМеню" id="90"/>
 													<ExtendedTooltip name="ОрганизацияПросмотрРасширеннаяПодсказка" id="91"/>
 												</LabelField>
@@ -411,7 +420,7 @@
 													<v8:content>Группа контактная информация</v8:content>
 												</v8:item>
 											</ToolTip>
-											<Group>AlwaysHorizontal</Group>
+											<Group>Vertical</Group>
 											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
@@ -419,7 +428,9 @@
 											<ChildItems>
 												<LabelField name="ПочтаПросмотр" id="94">
 													<DataPath>Объект.Почта</DataPath>
+													<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<Hiperlink>true</Hiperlink>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ПочтаПросмотрКонтекстноеМеню" id="95"/>
 													<ExtendedTooltip name="ПочтаПросмотрРасширеннаяПодсказка" id="96"/>
 													<Events>
@@ -428,7 +439,9 @@
 												</LabelField>
 												<LabelField name="ТелефонПросмотр" id="97">
 													<DataPath>Объект.Телефон</DataPath>
+													<TitleFont ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<Hiperlink>true</Hiperlink>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 													<ContextMenu name="ТелефонПросмотрКонтекстноеМеню" id="98"/>
 													<ExtendedTooltip name="ТелефонПросмотрРасширеннаяПодсказка" id="99"/>
 													<Events>
