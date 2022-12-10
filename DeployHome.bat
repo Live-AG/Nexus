@@ -13,8 +13,8 @@ ibcmd infobase config save --data="%tempdir%\fs-data" --db-path="%tempdir%\file-
 
 rem Загрузка базы из репозитория
 git pull
-"C:\Program Files\1cv8\common\1cestart.exe" DESIGNER /F"G:\1C_Bases\Union_3" /N"Администратор" /LoadConfigFromFiles "G:\_Git\Nexus" -NoCheck /UpdateDBCfg /DisableStartupDialogs /DisableStartupMessages
+"C:\Program Files\1cv8\8.3.20.1613\bin\1cv8.exe" DESIGNER /F"G:\1C_Bases\Nexus" /N"Администратор" /LoadConfigFromFiles "G:\_Git\Nexus" -NoCheck /UpdateDBCfg /DisableStartupDialogs /DisableStartupMessages
 
 rem Выгрузка базы в репозиторий
-"C:\Program Files\1cv8\common\1cestart.exe" DESIGNER /F"G:\1C_Bases\Union_3" /N"Администратор" /DumpConfigToFiles "G:\_Git\Nexus" -update /DisableStartupDialogs /DisableStartupMessages
+"C:\Program Files\1cv8\8.3.20.1613\bin\1cv8.exe" DESIGNER /F"G:\1C_Bases\Nexus" /N"Администратор" /DumpConfigToFiles "G:\_Git\Nexus" -update /DisableStartupDialogs /DisableStartupMessages
 git push

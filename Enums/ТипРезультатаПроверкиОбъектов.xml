@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<Enum uuid="5b65417b-fe46-4b2c-a3d3-1774203194e8">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипРезультатаПроверкиОбъектов" category="Ref">
+				<xr:TypeId>faecfa9d-5123-4e60-92cd-e90dfcc6cd8c</xr:TypeId>
+				<xr:ValueId>8680aa1e-2cf5-466f-bf24-602b526611ec</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипРезультатаПроверкиОбъектов" category="Manager">
+				<xr:TypeId>624e633e-e653-46e7-b715-45da71533a36</xr:TypeId>
+				<xr:ValueId>8a82e843-345c-4665-adfa-acdd3d4b5a78</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипРезультатаПроверкиОбъектов" category="List">
+				<xr:TypeId>524504de-ab5c-404b-8acf-121b27e9a6ab</xr:TypeId>
+				<xr:ValueId>9fed2838-952c-4227-92d9-3d83e5f80c5a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипРезультатаПроверкиОбъектов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип результата проверки объектов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="4cd2174d-1e46-4884-a519-15c3a568dee9">
+				<Properties>
+					<Name>Информация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5221f30b-5a3f-4b10-9579-8f00f99ac4a1">
+				<Properties>
+					<Name>Предупреждение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предупреждение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2ad97230-59d9-48b9-9952-1a9ef6cf4695">
+				<Properties>
+					<Name>Ошибка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

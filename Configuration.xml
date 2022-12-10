@@ -237,6 +237,7 @@
 			<Subsystem>АдминистрированиеПользователей</Subsystem>
 			<Subsystem>РаботаСоСкриптами</Subsystem>
 			<Subsystem>УчетПроектныхДанных</Subsystem>
+			<Subsystem>МониторингСистем</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>ВладелецФайловШрифт</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовВажнаяШрифт</StyleItem>
@@ -1271,6 +1272,7 @@
 			<Catalog>ЭлектронноеПисьмоВходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронноеПисьмоИсходящееПрисоединенныеФайлы</Catalog>
 			<Catalog>ГруппыИзбранного</Catalog>
+			<Catalog>ПравилаПроверкиОбъектов</Catalog>
 			<Document>Встреча</Document>
 			<Document>ЗапланированноеВзаимодействие</Document>
 			<Document>СообщениеSMS</Document>
@@ -1336,6 +1338,7 @@
 			<Enum>ВидыРегистрируемыхСобытий</Enum>
 			<Enum>ТипыВебСерверов</Enum>
 			<Enum>ПриложениеЗапускаСкрипта</Enum>
+			<Enum>ТипРезультатаПроверкиОбъектов</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализЖурналаРегистрации</Report>
 			<Report>ОбъемНенужныхФайлов</Report>
@@ -1434,6 +1437,7 @@
 			<InformationRegister>СеансыПользователей</InformationRegister>
 			<InformationRegister>СобытияИнформационныхБаз</InformationRegister>
 			<InformationRegister>ХранилищеПаролей</InformationRegister>
+			<InformationRegister>ПроверкиОбъектов</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>КонтекстВыполненияСкрипта</ChartOfCharacteristicTypes>
 		</ChildObjects>

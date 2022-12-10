@@ -1800,7 +1800,7 @@
 																	</Title>
 																	<Picture>
 																		<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																		<xr:LoadTransparent>false</xr:LoadTransparent>
 																	</Picture>
 																	<ContextMenu name="ИмяДБВБуферКонтекстноеМеню" id="593"/>
 																	<ExtendedTooltip name="ИмяДБВБуферРасширеннаяПодсказка" id="594"/>
