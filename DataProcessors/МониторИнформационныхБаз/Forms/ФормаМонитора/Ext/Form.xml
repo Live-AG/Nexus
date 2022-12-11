@@ -47,20 +47,42 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаГоризонтальная" id="35">
-			<Group>AlwaysHorizontal</Group>
+		<UsualGroup name="ГруппаВертикальная" id="275">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вертикальная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа вертикальная</v8:content>
+				</v8:item>
+			</ToolTip>
 			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="36"/>
+			<ExtendedTooltip name="ГруппаВертикальнаяРасширеннаяПодсказка" id="276"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаВертикальноеРазделение" id="17">
-					<Width>50</Width>
-					<Group>Vertical</Group>
+				<UsualGroup name="ГруппаВертикальнаяПанель" id="277">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вертикальная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа вертикальная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
 					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаВертикальноеРазделениеРасширеннаяПодсказка" id="18"/>
+					<ExtendedTooltip name="ГруппаВертикальнаяПанельРасширеннаяПодсказка" id="278"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаВидыОтбора" id="140">
 							<Title>
@@ -75,7 +97,8 @@
 									<v8:content>Группа виды отбора</v8:content>
 								</v8:item>
 							</ToolTip>
-							<HorizontalStretch>true</HorizontalStretch>
+							<Width>45</Width>
+							<HorizontalStretch>false</HorizontalStretch>
 							<Group>AlwaysHorizontal</Group>
 							<Behavior>Usual</Behavior>
 							<ShowTitle>false</ShowTitle>
@@ -136,7 +159,6 @@
 													<v8:content>Группа добавить кластер</v8:content>
 												</v8:item>
 											</ToolTip>
-											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаДобавитьКластерРасширеннаяПодсказка" id="248"/>
 											<ChildItems>
 												<Button name="ДобавитьКластер" id="149">
@@ -208,65 +230,715 @@
 												</Button>
 											</ChildItems>
 										</Page>
+										<Page name="ГруппаВсеБазы" id="285">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа все базы</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа все базы</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаВсеБазыРасширеннаяПодсказка" id="286"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияОтступ5" id="287">
+													<Enabled>false</Enabled>
+													<ContextMenu name="ДекорацияОтступ5КонтекстноеМеню" id="288"/>
+													<ExtendedTooltip name="ДекорацияОтступ5РасширеннаяПодсказка" id="289"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
 									</ChildItems>
 								</Pages>
 							</ChildItems>
 						</UsualGroup>
-						<Pages name="ГруппаСтраницыОтборов" id="108">
+						<UsualGroup name="ГруппаЗаголовокИнформационныеБазы" id="151">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа страницы отборов</v8:content>
+									<v8:content>Группа заголовок кластеры</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа страницы отборов</v8:content>
+									<v8:content>Группа заголовок кластеры</v8:content>
 								</v8:item>
 							</ToolTip>
-							<PagesRepresentation>None</PagesRepresentation>
-							<ExtendedTooltip name="ГруппаСтраницыОтборовРасширеннаяПодсказка" id="109"/>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>AlwaysHorizontal</Group>
+							<HorizontalSpacing>Double</HorizontalSpacing>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаголовокИнформационныеБазыРасширеннаяПодсказка" id="152"/>
 							<ChildItems>
-								<Page name="ГруппаКластеры" id="110">
+								<Button name="КомандаИнформационныеБазы" id="273">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.КомандаИнформационныеБазы</CommandName>
+									<TextColor>style:AccentColor</TextColor>
+									<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+									<ShapeRepresentation>None</ShapeRepresentation>
+									<ExtendedTooltip name="КомандаИнформационныеБазыРасширеннаяПодсказка" id="274"/>
+								</Button>
+								<LabelDecoration name="ДекорацияИнформационныеБазы" id="153">
+									<Visible>false</Visible>
+									<TextColor>style:AccentColor</TextColor>
+									<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Информационные базы</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияИнформационныеБазыКонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ДекорацияИнформационныеБазыРасширеннаяПодсказка" id="155"/>
+								</LabelDecoration>
+								<Button name="ДобавитьБазу" id="156">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ДобавитьБазу</CommandName>
+									<TextColor>style:ЦветПустойГиперссылки</TextColor>
+									<Picture>
+										<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа кластеры</v8:content>
+											<v8:content>Добавить базу</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДобавитьБазуРасширеннаяПодсказка" id="157"/>
+								</Button>
+								<LabelDecoration name="ДекорацияОтступ" id="256">
+									<Enabled>false</Enabled>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="257"/>
+									<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="258"/>
+								</LabelDecoration>
+								<SearchStringAddition name="ПоискВСпискеБаз" id="253">
+									<AdditionSource>
+										<Item>ТаблицаИнформационныхБаз</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поиск в списке баз</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Width>25</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ПоискВСпискеБазКонтекстноеМеню" id="254"/>
+									<ExtendedTooltip name="ПоискВСпискеБазРасширеннаяПодсказка" id="255"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаГоризонтальная" id="35">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВертикальноеРазделение" id="17">
+							<Width>45</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВертикальноеРазделениеРасширеннаяПодсказка" id="18"/>
+							<ChildItems>
+								<Pages name="ГруппаСтраницыОтборов" id="108">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа страницы отборов</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа кластеры</v8:content>
+											<v8:content>Группа страницы отборов</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаКластерыРасширеннаяПодсказка" id="111"/>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="ГруппаСтраницыОтборовРасширеннаяПодсказка" id="109"/>
 									<ChildItems>
-										<Table name="ТаблицаЭлементовКластера" id="1">
-											<Representation>List</Representation>
+										<Page name="ГруппаКластеры" id="110">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кластеры</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кластеры</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаКластерыРасширеннаяПодсказка" id="111"/>
+											<ChildItems>
+												<Table name="ТаблицаЭлементовКластера" id="1">
+													<Representation>List</Representation>
+													<CommandBarLocation>None</CommandBarLocation>
+													<ChangeRowSet>false</ChangeRowSet>
+													<ChangeRowOrder>false</ChangeRowOrder>
+													<Width>12</Width>
+													<RowSelectionMode>Row</RowSelectionMode>
+													<Header>false</Header>
+													<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+													<VerticalScrollBar>DontUse</VerticalScrollBar>
+													<HorizontalLines>false</HorizontalLines>
+													<VerticalLines>false</VerticalLines>
+													<InitialTreeView>ExpandAllLevels</InitialTreeView>
+													<DataPath>ТаблицаЭлементовКластера</DataPath>
+													<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
+													<RowsPicture>
+														<xr:Ref>CommonPicture.СерверНаборСтатический</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</RowsPicture>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<CommandSet>
+														<ExcludedCommand>Change</ExcludedCommand>
+													</CommandSet>
+													<AutoRefresh>true</AutoRefresh>
+													<AutoRefreshPeriod>120</AutoRefreshPeriod>
+													<Period>
+														<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+														<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+														<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+													</Period>
+													<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+													<RestoreCurrentRow>false</RestoreCurrentRow>
+													<TopLevelParent xsi:nil="true"/>
+													<ShowRoot>true</ShowRoot>
+													<AllowRootChoice>false</AllowRootChoice>
+													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<ContextMenu name="ТаблицаЭлементовКластераКонтекстноеМеню" id="3">
+														<Autofill>false</Autofill>
+														<ChildItems>
+															<Button name="Тест_ПересоздатьКластер" id="136">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.Тест_ПересоздатьКластер</CommandName>
+																<ExtendedTooltip name="Тест_ПересоздатьКластерРасширеннаяПодсказка" id="137"/>
+															</Button>
+															<Button name="ФормаОбновитьДеревоКластеров" id="33">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ОбновитьДеревоКластеров</CommandName>
+																<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+																<ExtendedTooltip name="ФормаОбновитьДеревоКластеровРасширеннаяПодсказка" id="34"/>
+															</Button>
+															<Button name="Тест_ОбновитьРегистрациюБаз" id="171">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.Тест_ОбновитьРегистрациюБаз</CommandName>
+																<ExtendedTooltip name="Тест_ОбновитьРегистрациюБазРасширеннаяПодсказка" id="172"/>
+															</Button>
+															<Button name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлемент" id="180">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
+																<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="181"/>
+															</Button>
+															<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверх" id="186">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
+																<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="187"/>
+															</Button>
+															<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВниз" id="188">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
+																<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="189"/>
+															</Button>
+														</ChildItems>
+													</ContextMenu>
+													<AutoCommandBar name="ТаблицаЭлементовКластераКоманднаяПанель" id="2"/>
+													<ExtendedTooltip name="ТаблицаЭлементовКластераРасширеннаяПодсказка" id="4"/>
+													<SearchStringAddition name="ТаблицаЭлементовКластераСтрокаПоиска" id="5">
+														<AdditionSource>
+															<Item>ТаблицаЭлементовКластера</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаЭлементовКластераСтрокаПоискаКонтекстноеМеню" id="6"/>
+														<ExtendedTooltip name="ТаблицаЭлементовКластераСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ТаблицаЭлементовКластераСостояниеПросмотра" id="11">
+														<AdditionSource>
+															<Item>ТаблицаЭлементовКластера</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаЭлементовКластераСостояниеПросмотраКонтекстноеМеню" id="12"/>
+														<ExtendedTooltip name="ТаблицаЭлементовКластераСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ТаблицаЭлементовКластераУправлениеПоиском" id="8">
+														<AdditionSource>
+															<Item>ТаблицаЭлементовКластера</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаЭлементовКластераУправлениеПоискомКонтекстноеМеню" id="9"/>
+														<ExtendedTooltip name="ТаблицаЭлементовКластераУправлениеПоискомРасширеннаяПодсказка" id="10"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="OnActivateCell">ТаблицаЭлементовКластераПриАктивизацииЯчейки</Event>
+													</Events>
+													<ChildItems>
+														<ColumnGroup name="ДеревоЭлементовКластераГруппаВертикальная" id="71">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Дерево элементов кластера группа вертикальная</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Дерево элементов кластера группа вертикальная</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ДеревоЭлементовКластераГруппаВертикальнаяРасширеннаяПодсказка" id="72"/>
+															<ChildItems>
+																<ColumnGroup name="ТаблицаЭлементовКластераГруппаЭлемент" id="158">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Таблица элементов кластера группа элемент</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Таблица элементов кластера группа элемент</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Horizontal</Group>
+																	<ExtendedTooltip name="ТаблицаЭлементовКластераГруппаЭлементРасширеннаяПодсказка" id="159"/>
+																	<ChildItems>
+																		<InputField name="ТаблицаЭлементовКластераЭлементКластера" id="14">
+																			<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
+																			<HorizontalAlign>Left</HorizontalAlign>
+																			<MaxHeight>2</MaxHeight>
+																			<BorderColor>style:FieldBackColor</BorderColor>
+																			<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+																			<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
+																			<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
+																		</InputField>
+																		<PictureField name="ТаблицаЭлементовКластераКартинкаЗакрепить" id="160">
+																			<DataPath>ТаблицаЭлементовКластера.ИндексКартинкиЗакрепить</DataPath>
+																			<HorizontalAlign>Right</HorizontalAlign>
+																			<FixingInTable>Right</FixingInTable>
+																			<ValuesPicture>
+																				<xr:Ref>CommonPicture.Закрепить</xr:Ref>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</ValuesPicture>
+																			<ContextMenu name="ТаблицаЭлементовКластераКартинкаЗакрепитьКонтекстноеМеню" id="161"/>
+																			<ExtendedTooltip name="ТаблицаЭлементовКластераКартинкаЗакрепитьРасширеннаяПодсказка" id="162"/>
+																		</PictureField>
+																	</ChildItems>
+																</ColumnGroup>
+																<LabelField name="ТаблицаЭлементовКластераОписания" id="68">
+																	<DataPath>ТаблицаЭлементовКластера.Описание</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ShowInHeader>false</ShowInHeader>
+																	<ShowInFooter>false</ShowInFooter>
+																	<TextColor>style:NavigationColor</TextColor>
+																	<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+																	<ContextMenu name="ТаблицаЭлементовКластераОписанияКонтекстноеМеню" id="69"/>
+																	<ExtendedTooltip name="ТаблицаЭлементовКластераОписанияРасширеннаяПодсказка" id="70"/>
+																</LabelField>
+															</ChildItems>
+														</ColumnGroup>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаПроекты" id="112">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проекты</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа проекты</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаПроектыРасширеннаяПодсказка" id="113"/>
+											<ChildItems>
+												<Table name="ТаблицаПроектов" id="84">
+													<Representation>List</Representation>
+													<CommandBarLocation>None</CommandBarLocation>
+													<ChangeRowSet>false</ChangeRowSet>
+													<ChangeRowOrder>false</ChangeRowOrder>
+													<Width>12</Width>
+													<RowSelectionMode>Row</RowSelectionMode>
+													<Header>false</Header>
+													<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+													<VerticalScrollBar>DontUse</VerticalScrollBar>
+													<HorizontalLines>false</HorizontalLines>
+													<VerticalLines>false</VerticalLines>
+													<InitialTreeView>ExpandAllLevels</InitialTreeView>
+													<DataPath>ТаблицаПроектов</DataPath>
+													<RowPictureDataPath>ТаблицаПроектов.ИндексКартинки</RowPictureDataPath>
+													<RowsPicture>
+														<xr:Ref>CommonPicture.ПроектЖурнал</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</RowsPicture>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<AutoRefresh>false</AutoRefresh>
+													<AutoRefreshPeriod>60</AutoRefreshPeriod>
+													<Period>
+														<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+														<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+														<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+													</Period>
+													<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+													<RestoreCurrentRow>false</RestoreCurrentRow>
+													<TopLevelParent xsi:nil="true"/>
+													<ShowRoot>false</ShowRoot>
+													<AllowRootChoice>false</AllowRootChoice>
+													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<ContextMenu name="ТаблицаПроектовКонтекстноеМеню" id="85">
+														<Autofill>false</Autofill>
+														<ChildItems>
+															<Button name="ТаблицаПроектовКонтекстноеМенюЗакрепитьТекущийЭлемент" id="182">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
+																<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="183"/>
+															</Button>
+															<Button name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВверх" id="192">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
+																<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="193"/>
+															</Button>
+															<Button name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВниз" id="190">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
+																<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="191"/>
+															</Button>
+														</ChildItems>
+													</ContextMenu>
+													<AutoCommandBar name="ТаблицаПроектовКоманднаяПанель" id="86"/>
+													<ExtendedTooltip name="ТаблицаПроектовРасширеннаяПодсказка" id="87"/>
+													<SearchStringAddition name="ТаблицаПроектовСтрокаПоиска" id="88">
+														<AdditionSource>
+															<Item>ТаблицаПроектов</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаПроектовСтрокаПоискаКонтекстноеМеню" id="89"/>
+														<ExtendedTooltip name="ТаблицаПроектовСтрокаПоискаРасширеннаяПодсказка" id="90"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ТаблицаПроектовСостояниеПросмотра" id="91">
+														<AdditionSource>
+															<Item>ТаблицаПроектов</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаПроектовСостояниеПросмотраКонтекстноеМеню" id="92"/>
+														<ExtendedTooltip name="ТаблицаПроектовСостояниеПросмотраРасширеннаяПодсказка" id="93"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ТаблицаПроектовУправлениеПоиском" id="94">
+														<AdditionSource>
+															<Item>ТаблицаПроектов</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаПроектовУправлениеПоискомКонтекстноеМеню" id="95"/>
+														<ExtendedTooltip name="ТаблицаПроектовУправлениеПоискомРасширеннаяПодсказка" id="96"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="OnActivateCell">ТаблицаПроектовПриАктивизацииЯчейки</Event>
+													</Events>
+													<ChildItems>
+														<ColumnGroup name="ТаблицаПроектовГруппаВертикальная" id="103">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица проектов группа вертикальная</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица проектов группа вертикальная</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ТаблицаПроектовГруппаВертикальнаяРасширеннаяПодсказка" id="104"/>
+															<ChildItems>
+																<ColumnGroup name="ТаблицаПроектовГруппаЭлемент" id="163">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Таблица проектов группа элемент</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Таблица проектов группа элемент</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Horizontal</Group>
+																	<ExtendedTooltip name="ТаблицаПроектовГруппаЭлементРасширеннаяПодсказка" id="164"/>
+																	<ChildItems>
+																		<InputField name="ТаблицаПроектовПроект" id="168">
+																			<DataPath>ТаблицаПроектов.Проект</DataPath>
+																			<HorizontalAlign>Left</HorizontalAlign>
+																			<BorderColor>style:FieldBackColor</BorderColor>
+																			<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+																			<ContextMenu name="ТаблицаПроектовПроектКонтекстноеМеню" id="169"/>
+																			<ExtendedTooltip name="ТаблицаПроектовПроектРасширеннаяПодсказка" id="170"/>
+																		</InputField>
+																		<PictureField name="ТаблицаПроектовКартинкаЗакрепить" id="165">
+																			<DataPath>ТаблицаПроектов.ИндексКартинкиЗакрепить</DataPath>
+																			<HorizontalAlign>Right</HorizontalAlign>
+																			<FixingInTable>Right</FixingInTable>
+																			<ValuesPicture>
+																				<xr:Ref>CommonPicture.Закрепить</xr:Ref>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</ValuesPicture>
+																			<ContextMenu name="ТаблицаПроектовКартинкаЗакрепитьКонтекстноеМеню" id="166"/>
+																			<ExtendedTooltip name="ТаблицаПроектовКартинкаЗакрепитьРасширеннаяПодсказка" id="167"/>
+																		</PictureField>
+																	</ChildItems>
+																</ColumnGroup>
+																<LabelField name="ТаблицаПроектовКонтрагент" id="100">
+																	<DataPath>ТаблицаПроектов.Контрагент</DataPath>
+																	<TextColor>style:NavigationColor</TextColor>
+																	<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+																	<ContextMenu name="ТаблицаПроектовКонтрагентКонтекстноеМеню" id="101"/>
+																	<ExtendedTooltip name="ТаблицаПроектовКонтрагентРасширеннаяПодсказка" id="102"/>
+																</LabelField>
+															</ChildItems>
+														</ColumnGroup>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаИзбранное" id="114">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа избранное</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа избранное</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаИзбранноеРасширеннаяПодсказка" id="115"/>
+											<ChildItems>
+												<Table name="ТаблицаИзбранного" id="198">
+													<Representation>List</Representation>
+													<CommandBarLocation>None</CommandBarLocation>
+													<ChangeRowSet>false</ChangeRowSet>
+													<ChangeRowOrder>false</ChangeRowOrder>
+													<RowSelectionMode>Row</RowSelectionMode>
+													<Header>false</Header>
+													<HorizontalScrollBar>DontUse</HorizontalScrollBar>
+													<VerticalScrollBar>DontUse</VerticalScrollBar>
+													<HorizontalLines>false</HorizontalLines>
+													<VerticalLines>false</VerticalLines>
+													<InitialTreeView>ExpandAllLevels</InitialTreeView>
+													<EnableDrag>true</EnableDrag>
+													<DataPath>ТаблицаИзбранного</DataPath>
+													<RowPictureDataPath>ТаблицаИзбранного.ИндексКартинки</RowPictureDataPath>
+													<RowsPicture>
+														<xr:Ref>CommonPicture.ИзбранноеНабор</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</RowsPicture>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<AutoRefresh>false</AutoRefresh>
+													<AutoRefreshPeriod>60</AutoRefreshPeriod>
+													<Period>
+														<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+														<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+														<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+													</Period>
+													<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+													<RestoreCurrentRow>false</RestoreCurrentRow>
+													<TopLevelParent xsi:nil="true"/>
+													<ShowRoot>false</ShowRoot>
+													<AllowRootChoice>false</AllowRootChoice>
+													<UpdateOnDataChange>Auto</UpdateOnDataChange>
+													<ContextMenu name="ТаблицаИзбранногоКонтекстноеМеню" id="199">
+														<Autofill>false</Autofill>
+														<ChildItems>
+															<Button name="ТаблицаИзбранногоКонтекстноеМенюЗакрепитьТекущийЭлемент" id="243">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
+																<ExtendedTooltip name="ТаблицаИзбранногоКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="244"/>
+															</Button>
+															<Button name="ТаблицаИзбранногоКонтекстноеМенюПереместитьЗакрепленноеВверх" id="241">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
+																<ExtendedTooltip name="ТаблицаИзбранногоКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="242"/>
+															</Button>
+															<Button name="ТаблицаИзбранногоКонтекстноеМенюПереместитьЗакрепленноеВниз" id="239">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
+																<ExtendedTooltip name="ТаблицаИзбранногоКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="240"/>
+															</Button>
+														</ChildItems>
+													</ContextMenu>
+													<AutoCommandBar name="ТаблицаИзбранногоКоманднаяПанель" id="200"/>
+													<ExtendedTooltip name="ТаблицаИзбранногоРасширеннаяПодсказка" id="201"/>
+													<SearchStringAddition name="ТаблицаИзбранногоСтрокаПоиска" id="202">
+														<AdditionSource>
+															<Item>ТаблицаИзбранного</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаИзбранногоСтрокаПоискаКонтекстноеМеню" id="203"/>
+														<ExtendedTooltip name="ТаблицаИзбранногоСтрокаПоискаРасширеннаяПодсказка" id="204"/>
+													</SearchStringAddition>
+													<ViewStatusAddition name="ТаблицаИзбранногоСостояниеПросмотра" id="205">
+														<AdditionSource>
+															<Item>ТаблицаИзбранного</Item>
+															<Type>ViewStatusRepresentation</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаИзбранногоСостояниеПросмотраКонтекстноеМеню" id="206"/>
+														<ExtendedTooltip name="ТаблицаИзбранногоСостояниеПросмотраРасширеннаяПодсказка" id="207"/>
+													</ViewStatusAddition>
+													<SearchControlAddition name="ТаблицаИзбранногоУправлениеПоиском" id="208">
+														<AdditionSource>
+															<Item>ТаблицаИзбранного</Item>
+															<Type>SearchControl</Type>
+														</AdditionSource>
+														<ContextMenu name="ТаблицаИзбранногоУправлениеПоискомКонтекстноеМеню" id="209"/>
+														<ExtendedTooltip name="ТаблицаИзбранногоУправлениеПоискомРасширеннаяПодсказка" id="210"/>
+													</SearchControlAddition>
+													<Events>
+														<Event name="DragCheck">ТаблицаИзбранногоПроверкаПеретаскивания</Event>
+														<Event name="OnActivateRow">ТаблицаИзбранногоПриАктивизацииСтроки</Event>
+														<Event name="Drag">ТаблицаИзбранногоПеретаскивание</Event>
+													</Events>
+													<ChildItems>
+														<ColumnGroup name="ТаблицаИзбранногоВертикальная" id="226">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица избранного вертикальная</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Таблица избранного вертикальная</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ТаблицаИзбранногоВертикальнаяРасширеннаяПодсказка" id="227"/>
+															<ChildItems>
+																<ColumnGroup name="ТаблицаИзбранногоГруппаГоризонтальное" id="228">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Таблица избранного группа горизонтальное</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Таблица избранного группа горизонтальное</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Group>Horizontal</Group>
+																	<ExtendedTooltip name="ТаблицаИзбранногоГруппаГоризонтальноеРасширеннаяПодсказка" id="229"/>
+																	<ChildItems>
+																		<InputField name="ТаблицаИзбранногоГруппаИзбранного" id="223">
+																			<DataPath>ТаблицаИзбранного.ГруппаИзбранных</DataPath>
+																			<BorderColor>style:FieldBackColor</BorderColor>
+																			<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
+																			<ContextMenu name="ТаблицаИзбранногоГруппаИзбранногоКонтекстноеМеню" id="224"/>
+																			<ExtendedTooltip name="ТаблицаИзбранногоГруппаИзбранногоРасширеннаяПодсказка" id="225"/>
+																		</InputField>
+																		<PictureField name="ТаблицаИзбранногоКартинкаЗакрепить" id="214">
+																			<DataPath>ТаблицаИзбранного.ИндексКартинкиЗакрепить</DataPath>
+																			<HorizontalAlign>Right</HorizontalAlign>
+																			<FixingInTable>Right</FixingInTable>
+																			<ValuesPicture>
+																				<xr:Ref>CommonPicture.Закрепить</xr:Ref>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
+																			</ValuesPicture>
+																			<ContextMenu name="ТаблицаИзбранногоКартинкаЗакрепитьКонтекстноеМеню" id="215"/>
+																			<ExtendedTooltip name="ТаблицаИзбранногоКартинкаЗакрепитьРасширеннаяПодсказка" id="216"/>
+																		</PictureField>
+																	</ChildItems>
+																</ColumnGroup>
+																<LabelField name="ТаблицаИзбранногоОписание" id="217">
+																	<DataPath>ТаблицаИзбранного.Описание</DataPath>
+																	<MaxWidth>25</MaxWidth>
+																	<TextColor>style:NavigationColor</TextColor>
+																	<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
+																	<ContextMenu name="ТаблицаИзбранногоОписаниеКонтекстноеМеню" id="218"/>
+																	<ExtendedTooltip name="ТаблицаИзбранногоОписаниеРасширеннаяПодсказка" id="219"/>
+																</LabelField>
+															</ChildItems>
+														</ColumnGroup>
+													</ChildItems>
+												</Table>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+						<Pages name="СтраницыИнформационныхБаз" id="119">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы информационных баз</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы информационных баз</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыИнформационныхБазРасширеннаяПодсказка" id="120"/>
+							<ChildItems>
+								<Page name="СтраницаИнформационныеБазы" id="121">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница информационные базы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница информационные базы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СтраницаИнформационныеБазыРасширеннаяПодсказка" id="122"/>
+									<ChildItems>
+										<Table name="ТаблицаИнформационныхБаз" id="37">
 											<CommandBarLocation>None</CommandBarLocation>
 											<ChangeRowSet>false</ChangeRowSet>
 											<ChangeRowOrder>false</ChangeRowOrder>
-											<Width>12</Width>
 											<RowSelectionMode>Row</RowSelectionMode>
 											<Header>false</Header>
-											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
-											<VerticalScrollBar>DontUse</VerticalScrollBar>
-											<HorizontalLines>false</HorizontalLines>
 											<VerticalLines>false</VerticalLines>
-											<InitialTreeView>ExpandAllLevels</InitialTreeView>
-											<DataPath>ТаблицаЭлементовКластера</DataPath>
-											<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
+											<EnableStartDrag>true</EnableStartDrag>
+											<DataPath>ТаблицаИнформационныхБаз</DataPath>
+											<RowPictureDataPath>ТаблицаИнформационныхБаз.ИндексКартинки</RowPictureDataPath>
 											<RowsPicture>
-												<xr:Ref>CommonPicture.СерверНаборСтатический</xr:Ref>
+												<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</RowsPicture>
 											<BorderColor>style:FormBackColor</BorderColor>
-											<CommandSet>
-												<ExcludedCommand>Change</ExcludedCommand>
-											</CommandSet>
-											<AutoRefresh>true</AutoRefresh>
+											<AutoRefresh>false</AutoRefresh>
 											<AutoRefreshPeriod>120</AutoRefreshPeriod>
 											<Period>
 												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
@@ -279,846 +951,259 @@
 											<ShowRoot>true</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
-											<ContextMenu name="ТаблицаЭлементовКластераКонтекстноеМеню" id="3">
+											<ContextMenu name="ТаблицаИнформационныхБазКонтекстноеМеню" id="38">
 												<Autofill>false</Autofill>
 												<ChildItems>
-													<Button name="Тест_ПересоздатьКластер" id="136">
+													<ButtonGroup name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаЗапуск" id="269">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Таблица информационных баз контекстное меню группа запуск</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Таблица информационных баз контекстное меню группа запуск</v8:content>
+															</v8:item>
+														</ToolTip>
+														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаЗапускРасширеннаяПодсказка" id="270"/>
+														<ChildItems>
+															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьПредприятие" id="259">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ЗапуститьПредприятие</CommandName>
+																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьПредприятиеРасширеннаяПодсказка" id="260"/>
+															</Button>
+															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьКонфигуратор" id="261">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.ЗапуститьКонфигуратор</CommandName>
+																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьКонфигураторРасширеннаяПодсказка" id="262"/>
+															</Button>
+															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюНастройкаЗапускаИБ" id="267">
+																<Type>CommandBarButton</Type>
+																<CommandName>Form.Command.НастройкаЗапускаИБ</CommandName>
+																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюНастройкаЗапускаИБРасширеннаяПодсказка" id="268"/>
+															</Button>
+														</ChildItems>
+													</ButtonGroup>
+													<Popup name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаИзбранное" id="263">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Добавить в избранное</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Таблица информационных баз контекстное меню группа избранное</v8:content>
+															</v8:item>
+														</ToolTip>
+														<Picture>
+															<xr:Ref>StdPicture.Favorites</xr:Ref>
+															<xr:LoadTransparent>true</xr:LoadTransparent>
+														</Picture>
+														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаИзбранноеРасширеннаяПодсказка" id="264"/>
+													</Popup>
+													<ButtonGroup name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаПоделиться" id="271">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Таблица информационных баз контекстное меню группа поделиться</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Таблица информационных баз контекстное меню группа поделиться</v8:content>
+															</v8:item>
+														</ToolTip>
+														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаПоделитьсяРасширеннаяПодсказка" id="272"/>
+													</ButtonGroup>
+													<Button name="ТаблицаИнформационныхБазКонтекстноеМенюПоледитьсяИБ" id="265">
 														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.Тест_ПересоздатьКластер</CommandName>
-														<ExtendedTooltip name="Тест_ПересоздатьКластерРасширеннаяПодсказка" id="137"/>
-													</Button>
-													<Button name="ФормаОбновитьДеревоКластеров" id="33">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ОбновитьДеревоКластеров</CommandName>
-														<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-														<ExtendedTooltip name="ФормаОбновитьДеревоКластеровРасширеннаяПодсказка" id="34"/>
-													</Button>
-													<Button name="Тест_ОбновитьРегистрациюБаз" id="171">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.Тест_ОбновитьРегистрациюБаз</CommandName>
-														<ExtendedTooltip name="Тест_ОбновитьРегистрациюБазРасширеннаяПодсказка" id="172"/>
-													</Button>
-													<Button name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлемент" id="180">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
-														<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="181"/>
-													</Button>
-													<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверх" id="186">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
-														<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="187"/>
-													</Button>
-													<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВниз" id="188">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
-														<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="189"/>
+														<CommandName>Form.Command.ПодедитьсяИБ</CommandName>
+														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюПоледитьсяИБРасширеннаяПодсказка" id="266"/>
 													</Button>
 												</ChildItems>
 											</ContextMenu>
-											<AutoCommandBar name="ТаблицаЭлементовКластераКоманднаяПанель" id="2"/>
-											<ExtendedTooltip name="ТаблицаЭлементовКластераРасширеннаяПодсказка" id="4"/>
-											<SearchStringAddition name="ТаблицаЭлементовКластераСтрокаПоиска" id="5">
+											<AutoCommandBar name="ТаблицаИнформационныхБазКоманднаяПанель" id="39"/>
+											<ExtendedTooltip name="ТаблицаИнформационныхБазРасширеннаяПодсказка" id="40"/>
+											<SearchStringAddition name="ТаблицаИнформационныхБазСтрокаПоиска" id="41">
 												<AdditionSource>
-													<Item>ТаблицаЭлементовКластера</Item>
+													<Item>ТаблицаИнформационныхБаз</Item>
 													<Type>SearchStringRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="ТаблицаЭлементовКластераСтрокаПоискаКонтекстноеМеню" id="6"/>
-												<ExtendedTooltip name="ТаблицаЭлементовКластераСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+												<ContextMenu name="ТаблицаИнформационныхБазСтрокаПоискаКонтекстноеМеню" id="42"/>
+												<ExtendedTooltip name="ТаблицаИнформационныхБазСтрокаПоискаРасширеннаяПодсказка" id="43"/>
 											</SearchStringAddition>
-											<ViewStatusAddition name="ТаблицаЭлементовКластераСостояниеПросмотра" id="11">
+											<ViewStatusAddition name="ТаблицаИнформационныхБазСостояниеПросмотра" id="44">
 												<AdditionSource>
-													<Item>ТаблицаЭлементовКластера</Item>
+													<Item>ТаблицаИнформационныхБаз</Item>
 													<Type>ViewStatusRepresentation</Type>
 												</AdditionSource>
-												<ContextMenu name="ТаблицаЭлементовКластераСостояниеПросмотраКонтекстноеМеню" id="12"/>
-												<ExtendedTooltip name="ТаблицаЭлементовКластераСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+												<ContextMenu name="ТаблицаИнформационныхБазСостояниеПросмотраКонтекстноеМеню" id="45"/>
+												<ExtendedTooltip name="ТаблицаИнформационныхБазСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
 											</ViewStatusAddition>
-											<SearchControlAddition name="ТаблицаЭлементовКластераУправлениеПоиском" id="8">
+											<SearchControlAddition name="ТаблицаИнформационныхБазУправлениеПоиском" id="47">
 												<AdditionSource>
-													<Item>ТаблицаЭлементовКластера</Item>
+													<Item>ТаблицаИнформационныхБаз</Item>
 													<Type>SearchControl</Type>
 												</AdditionSource>
-												<ContextMenu name="ТаблицаЭлементовКластераУправлениеПоискомКонтекстноеМеню" id="9"/>
-												<ExtendedTooltip name="ТаблицаЭлементовКластераУправлениеПоискомРасширеннаяПодсказка" id="10"/>
+												<ContextMenu name="ТаблицаИнформационныхБазУправлениеПоискомКонтекстноеМеню" id="48"/>
+												<ExtendedTooltip name="ТаблицаИнформационныхБазУправлениеПоискомРасширеннаяПодсказка" id="49"/>
 											</SearchControlAddition>
 											<Events>
-												<Event name="OnActivateCell">ТаблицаЭлементовКластераПриАктивизацииЯчейки</Event>
+												<Event name="Selection">ТаблицаИнформационныхБазВыбор</Event>
+												<Event name="OnActivateRow">ТаблицаИнформационныхБазПриАктивизацииСтроки</Event>
+												<Event name="DragStart">ТаблицаИнформационныхБазНачалоПеретаскивания</Event>
 											</Events>
 											<ChildItems>
-												<ColumnGroup name="ДеревоЭлементовКластераГруппаВертикальная" id="71">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Дерево элементов кластера группа вертикальная</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Дерево элементов кластера группа вертикальная</v8:content>
-														</v8:item>
-													</ToolTip>
-													<ExtendedTooltip name="ДеревоЭлементовКластераГруппаВертикальнаяРасширеннаяПодсказка" id="72"/>
-													<ChildItems>
-														<ColumnGroup name="ТаблицаЭлементовКластераГруппаЭлемент" id="158">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Таблица элементов кластера группа элемент</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Таблица элементов кластера группа элемент</v8:content>
-																</v8:item>
-															</ToolTip>
-															<Group>Horizontal</Group>
-															<ExtendedTooltip name="ТаблицаЭлементовКластераГруппаЭлементРасширеннаяПодсказка" id="159"/>
-															<ChildItems>
-																<InputField name="ТаблицаЭлементовКластераЭлементКластера" id="14">
-																	<DataPath>ТаблицаЭлементовКластера.ЭлементКластера</DataPath>
-																	<HorizontalAlign>Left</HorizontalAlign>
-																	<MaxHeight>2</MaxHeight>
-																	<BorderColor>style:FieldBackColor</BorderColor>
-																	<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-																	<ContextMenu name="ТаблицаЭлементовКластераЭлементКластераКонтекстноеМеню" id="15"/>
-																	<ExtendedTooltip name="ТаблицаЭлементовКластераЭлементКластераРасширеннаяПодсказка" id="16"/>
-																</InputField>
-																<PictureField name="ТаблицаЭлементовКластераКартинкаЗакрепить" id="160">
-																	<DataPath>ТаблицаЭлементовКластера.ИндексКартинкиЗакрепить</DataPath>
-																	<HorizontalAlign>Right</HorizontalAlign>
-																	<FixingInTable>Right</FixingInTable>
-																	<ValuesPicture>
-																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
-																	</ValuesPicture>
-																	<ContextMenu name="ТаблицаЭлементовКластераКартинкаЗакрепитьКонтекстноеМеню" id="161"/>
-																	<ExtendedTooltip name="ТаблицаЭлементовКластераКартинкаЗакрепитьРасширеннаяПодсказка" id="162"/>
-																</PictureField>
-															</ChildItems>
-														</ColumnGroup>
-														<LabelField name="ТаблицаЭлементовКластераОписания" id="68">
-															<DataPath>ТаблицаЭлементовКластера.Описание</DataPath>
-															<EditMode>EnterOnInput</EditMode>
-															<ShowInHeader>false</ShowInHeader>
-															<ShowInFooter>false</ShowInFooter>
-															<TextColor>style:NavigationColor</TextColor>
-															<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-															<ContextMenu name="ТаблицаЭлементовКластераОписанияКонтекстноеМеню" id="69"/>
-															<ExtendedTooltip name="ТаблицаЭлементовКластераОписанияРасширеннаяПодсказка" id="70"/>
-														</LabelField>
-													</ChildItems>
-												</ColumnGroup>
+												<LabelField name="ТаблицаИнформационныхБазСсылка" id="53">
+													<DataPath>ТаблицаИнформационныхБаз.Ссылка</DataPath>
+													<TitleBackColor>style:FormBackColor</TitleBackColor>
+													<VerticalAlign>Center</VerticalAlign>
+													<EditMode>Directly</EditMode>
+													<Height>2</Height>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<ContextMenu name="ТаблицаИнформационныхБазСсылкаКонтекстноеМеню" id="54"/>
+													<ExtendedTooltip name="ТаблицаИнформационныхБазСсылкаРасширеннаяПодсказка" id="55"/>
+												</LabelField>
+												<LabelField name="ТаблицаИнформационныхБазКонфигурация" id="59">
+													<DataPath>~ТаблицаИнформационныхБаз.Конфигурация</DataPath>
+													<TitleBackColor>style:FormBackColor</TitleBackColor>
+													<VerticalAlign>Center</VerticalAlign>
+													<ShowInFooter>false</ShowInFooter>
+													<Height>2</Height>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<ContextMenu name="ТаблицаИнформационныхБазКонфигурацияКонтекстноеМеню" id="60"/>
+													<ExtendedTooltip name="ТаблицаИнформационныхБазКонфигурацияРасширеннаяПодсказка" id="61"/>
+												</LabelField>
+												<LabelField name="ТаблицаИнформационныхБазНазначение" id="56">
+													<DataPath>ТаблицаИнформационныхБаз.Назначение</DataPath>
+													<TitleBackColor>style:FormBackColor</TitleBackColor>
+													<VerticalAlign>Center</VerticalAlign>
+													<ShowInFooter>false</ShowInFooter>
+													<Height>2</Height>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<ContextMenu name="ТаблицаИнформационныхБазНазначениеКонтекстноеМеню" id="57"/>
+													<ExtendedTooltip name="ТаблицаИнформационныхБазНазначениеРасширеннаяПодсказка" id="58"/>
+												</LabelField>
+												<LabelField name="ТаблицаИнформационныхБазОтветственный" id="116">
+													<DataPath>ТаблицаИнформационныхБаз.Ответственный</DataPath>
+													<VerticalAlign>Center</VerticalAlign>
+													<Height>2</Height>
+													<ContextMenu name="ТаблицаИнформационныхБазОтветственныйКонтекстноеМеню" id="117"/>
+													<ExtendedTooltip name="ТаблицаИнформационныхБазОтветственныйРасширеннаяПодсказка" id="118"/>
+												</LabelField>
+												<LabelField name="ТаблицаИнформационныхБазВладелец" id="279">
+													<DataPath>ТаблицаИнформационныхБаз.Владелец</DataPath>
+													<ContextMenu name="ТаблицаИнформационныхБазВладелецКонтекстноеМеню" id="280"/>
+													<ExtendedTooltip name="ТаблицаИнформационныхБазВладелецРасширеннаяПодсказка" id="281"/>
+												</LabelField>
+												<LabelField name="ТаблицаИнформационныхБазПроект" id="282">
+													<DataPath>ТаблицаИнформационныхБаз.Проект</DataPath>
+													<ContextMenu name="ТаблицаИнформационныхБазПроектКонтекстноеМеню" id="283"/>
+													<ExtendedTooltip name="ТаблицаИнформационныхБазПроектРасширеннаяПодсказка" id="284"/>
+												</LabelField>
+												<PictureField name="ТаблицаИнформационныхБазПолеНастройка" id="65">
+													<DataPath>ТаблицаИнформационныхБаз.ИндексКартинки</DataPath>
+													<Visible>false</Visible>
+													<TitleBackColor>style:FormBackColor</TitleBackColor>
+													<TitleLocation>None</TitleLocation>
+													<CellHyperlink>true</CellHyperlink>
+													<ShowInFooter>false</ShowInFooter>
+													<Height>2</Height>
+													<Hyperlink>true</Hyperlink>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.ВыполнитьЗапуск</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</ValuesPicture>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<ContextMenu name="ТаблицаИнформационныхБазПолеНастройкаКонтекстноеМеню" id="66"/>
+													<ExtendedTooltip name="ТаблицаИнформационныхБазПолеНастройкаРасширеннаяПодсказка" id="67"/>
+												</PictureField>
 											</ChildItems>
 										</Table>
 									</ChildItems>
 								</Page>
-								<Page name="ГруппаПроекты" id="112">
+								<Page name="СтраницаОперацияОжидания" id="123">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа проекты</v8:content>
+											<v8:content>Страница операция ожидания</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа проекты</v8:content>
+											<v8:content>Страница операция ожидания</v8:content>
 										</v8:item>
 									</ToolTip>
-									<ExtendedTooltip name="ГруппаПроектыРасширеннаяПодсказка" id="113"/>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<VerticalAlign>Center</VerticalAlign>
+									<ExtendedTooltip name="СтраницаОперацияОжиданияРасширеннаяПодсказка" id="124"/>
 									<ChildItems>
-										<Table name="ТаблицаПроектов" id="84">
-											<Representation>List</Representation>
-											<CommandBarLocation>None</CommandBarLocation>
-											<ChangeRowSet>false</ChangeRowSet>
-											<ChangeRowOrder>false</ChangeRowOrder>
-											<Width>12</Width>
-											<RowSelectionMode>Row</RowSelectionMode>
-											<Header>false</Header>
-											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
-											<VerticalScrollBar>DontUse</VerticalScrollBar>
-											<HorizontalLines>false</HorizontalLines>
-											<VerticalLines>false</VerticalLines>
-											<InitialTreeView>ExpandAllLevels</InitialTreeView>
-											<DataPath>ТаблицаПроектов</DataPath>
-											<RowPictureDataPath>ТаблицаПроектов.ИндексКартинки</RowPictureDataPath>
-											<RowsPicture>
-												<xr:Ref>CommonPicture.ПроектЖурнал</xr:Ref>
-												<xr:LoadTransparent>false</xr:LoadTransparent>
-											</RowsPicture>
-											<BorderColor>style:FormBackColor</BorderColor>
-											<AutoRefresh>false</AutoRefresh>
-											<AutoRefreshPeriod>60</AutoRefreshPeriod>
-											<Period>
-												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-											</Period>
-											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-											<RestoreCurrentRow>false</RestoreCurrentRow>
-											<TopLevelParent xsi:nil="true"/>
-											<ShowRoot>false</ShowRoot>
-											<AllowRootChoice>false</AllowRootChoice>
-											<UpdateOnDataChange>Auto</UpdateOnDataChange>
-											<ContextMenu name="ТаблицаПроектовКонтекстноеМеню" id="85">
-												<Autofill>false</Autofill>
-												<ChildItems>
-													<Button name="ТаблицаПроектовКонтекстноеМенюЗакрепитьТекущийЭлемент" id="182">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
-														<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="183"/>
-													</Button>
-													<Button name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВверх" id="192">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
-														<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="193"/>
-													</Button>
-													<Button name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВниз" id="190">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
-														<ExtendedTooltip name="ТаблицаПроектовКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="191"/>
-													</Button>
-												</ChildItems>
-											</ContextMenu>
-											<AutoCommandBar name="ТаблицаПроектовКоманднаяПанель" id="86"/>
-											<ExtendedTooltip name="ТаблицаПроектовРасширеннаяПодсказка" id="87"/>
-											<SearchStringAddition name="ТаблицаПроектовСтрокаПоиска" id="88">
-												<AdditionSource>
-													<Item>ТаблицаПроектов</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ТаблицаПроектовСтрокаПоискаКонтекстноеМеню" id="89"/>
-												<ExtendedTooltip name="ТаблицаПроектовСтрокаПоискаРасширеннаяПодсказка" id="90"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ТаблицаПроектовСостояниеПросмотра" id="91">
-												<AdditionSource>
-													<Item>ТаблицаПроектов</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ТаблицаПроектовСостояниеПросмотраКонтекстноеМеню" id="92"/>
-												<ExtendedTooltip name="ТаблицаПроектовСостояниеПросмотраРасширеннаяПодсказка" id="93"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ТаблицаПроектовУправлениеПоиском" id="94">
-												<AdditionSource>
-													<Item>ТаблицаПроектов</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ТаблицаПроектовУправлениеПоискомКонтекстноеМеню" id="95"/>
-												<ExtendedTooltip name="ТаблицаПроектовУправлениеПоискомРасширеннаяПодсказка" id="96"/>
-											</SearchControlAddition>
-											<Events>
-												<Event name="OnActivateCell">ТаблицаПроектовПриАктивизацииЯчейки</Event>
-											</Events>
+										<UsualGroup name="ГруппаОтображениеОжидания" id="131">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отображение ожидания</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа отображение ожидания</v8:content>
+												</v8:item>
+											</ToolTip>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаОтображениеОжиданияРасширеннаяПодсказка" id="132"/>
 											<ChildItems>
-												<ColumnGroup name="ТаблицаПроектовГруппаВертикальная" id="103">
-													<Title>
+												<PictureDecoration name="ДекорацияОжидание" id="128">
+													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Таблица проектов группа вертикальная</v8:content>
+															<v8:content>Ожидание</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<Picture>
+														<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияОжиданиеКонтекстноеМеню" id="129"/>
+													<ExtendedTooltip name="ДекорацияОжиданиеРасширеннаяПодсказка" id="130"/>
+												</PictureDecoration>
+												<LabelDecoration name="НадписьОжидания" id="133">
+													<TextColor>style:ЦветПустойГиперссылки</TextColor>
+													<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Таблица проектов группа вертикальная</v8:content>
-														</v8:item>
-													</ToolTip>
-													<ExtendedTooltip name="ТаблицаПроектовГруппаВертикальнаяРасширеннаяПодсказка" id="104"/>
-													<ChildItems>
-														<ColumnGroup name="ТаблицаПроектовГруппаЭлемент" id="163">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Таблица проектов группа элемент</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Таблица проектов группа элемент</v8:content>
-																</v8:item>
-															</ToolTip>
-															<Group>Horizontal</Group>
-															<ExtendedTooltip name="ТаблицаПроектовГруппаЭлементРасширеннаяПодсказка" id="164"/>
-															<ChildItems>
-																<InputField name="ТаблицаПроектовПроект" id="168">
-																	<DataPath>ТаблицаПроектов.Проект</DataPath>
-																	<HorizontalAlign>Left</HorizontalAlign>
-																	<BorderColor>style:FieldBackColor</BorderColor>
-																	<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
-																	<ContextMenu name="ТаблицаПроектовПроектКонтекстноеМеню" id="169"/>
-																	<ExtendedTooltip name="ТаблицаПроектовПроектРасширеннаяПодсказка" id="170"/>
-																</InputField>
-																<PictureField name="ТаблицаПроектовКартинкаЗакрепить" id="165">
-																	<DataPath>ТаблицаПроектов.ИндексКартинкиЗакрепить</DataPath>
-																	<HorizontalAlign>Right</HorizontalAlign>
-																	<FixingInTable>Right</FixingInTable>
-																	<ValuesPicture>
-																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
-																	</ValuesPicture>
-																	<ContextMenu name="ТаблицаПроектовКартинкаЗакрепитьКонтекстноеМеню" id="166"/>
-																	<ExtendedTooltip name="ТаблицаПроектовКартинкаЗакрепитьРасширеннаяПодсказка" id="167"/>
-																</PictureField>
-															</ChildItems>
-														</ColumnGroup>
-														<LabelField name="ТаблицаПроектовКонтрагент" id="100">
-															<DataPath>ТаблицаПроектов.Контрагент</DataPath>
-															<TextColor>style:NavigationColor</TextColor>
-															<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-															<ContextMenu name="ТаблицаПроектовКонтрагентКонтекстноеМеню" id="101"/>
-															<ExtendedTooltip name="ТаблицаПроектовКонтрагентРасширеннаяПодсказка" id="102"/>
-														</LabelField>
-													</ChildItems>
-												</ColumnGroup>
-											</ChildItems>
-										</Table>
-									</ChildItems>
-								</Page>
-								<Page name="ГруппаИзбранное" id="114">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа избранное</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа избранное</v8:content>
-										</v8:item>
-									</ToolTip>
-									<ExtendedTooltip name="ГруппаИзбранноеРасширеннаяПодсказка" id="115"/>
-									<ChildItems>
-										<Table name="ТаблицаИзбранного" id="198">
-											<Representation>List</Representation>
-											<CommandBarLocation>None</CommandBarLocation>
-											<ChangeRowSet>false</ChangeRowSet>
-											<ChangeRowOrder>false</ChangeRowOrder>
-											<RowSelectionMode>Row</RowSelectionMode>
-											<Header>false</Header>
-											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
-											<VerticalScrollBar>DontUse</VerticalScrollBar>
-											<HorizontalLines>false</HorizontalLines>
-											<VerticalLines>false</VerticalLines>
-											<InitialTreeView>ExpandAllLevels</InitialTreeView>
-											<EnableDrag>true</EnableDrag>
-											<DataPath>ТаблицаИзбранного</DataPath>
-											<RowPictureDataPath>ТаблицаИзбранного.ИндексКартинки</RowPictureDataPath>
-											<RowsPicture>
-												<xr:Ref>CommonPicture.ИзбранноеНабор</xr:Ref>
-												<xr:LoadTransparent>false</xr:LoadTransparent>
-											</RowsPicture>
-											<BorderColor>style:FormBackColor</BorderColor>
-											<AutoRefresh>false</AutoRefresh>
-											<AutoRefreshPeriod>60</AutoRefreshPeriod>
-											<Period>
-												<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-												<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-											</Period>
-											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-											<RestoreCurrentRow>false</RestoreCurrentRow>
-											<TopLevelParent xsi:nil="true"/>
-											<ShowRoot>false</ShowRoot>
-											<AllowRootChoice>false</AllowRootChoice>
-											<UpdateOnDataChange>Auto</UpdateOnDataChange>
-											<ContextMenu name="ТаблицаИзбранногоКонтекстноеМеню" id="199">
-												<Autofill>false</Autofill>
-												<ChildItems>
-													<Button name="ТаблицаИзбранногоКонтекстноеМенюЗакрепитьТекущийЭлемент" id="243">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
-														<ExtendedTooltip name="ТаблицаИзбранногоКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="244"/>
-													</Button>
-													<Button name="ТаблицаИзбранногоКонтекстноеМенюПереместитьЗакрепленноеВверх" id="241">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
-														<ExtendedTooltip name="ТаблицаИзбранногоКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="242"/>
-													</Button>
-													<Button name="ТаблицаИзбранногоКонтекстноеМенюПереместитьЗакрепленноеВниз" id="239">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
-														<ExtendedTooltip name="ТаблицаИзбранногоКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="240"/>
-													</Button>
-												</ChildItems>
-											</ContextMenu>
-											<AutoCommandBar name="ТаблицаИзбранногоКоманднаяПанель" id="200"/>
-											<ExtendedTooltip name="ТаблицаИзбранногоРасширеннаяПодсказка" id="201"/>
-											<SearchStringAddition name="ТаблицаИзбранногоСтрокаПоиска" id="202">
-												<AdditionSource>
-													<Item>ТаблицаИзбранного</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ТаблицаИзбранногоСтрокаПоискаКонтекстноеМеню" id="203"/>
-												<ExtendedTooltip name="ТаблицаИзбранногоСтрокаПоискаРасширеннаяПодсказка" id="204"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ТаблицаИзбранногоСостояниеПросмотра" id="205">
-												<AdditionSource>
-													<Item>ТаблицаИзбранного</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ТаблицаИзбранногоСостояниеПросмотраКонтекстноеМеню" id="206"/>
-												<ExtendedTooltip name="ТаблицаИзбранногоСостояниеПросмотраРасширеннаяПодсказка" id="207"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ТаблицаИзбранногоУправлениеПоиском" id="208">
-												<AdditionSource>
-													<Item>ТаблицаИзбранного</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ТаблицаИзбранногоУправлениеПоискомКонтекстноеМеню" id="209"/>
-												<ExtendedTooltip name="ТаблицаИзбранногоУправлениеПоискомРасширеннаяПодсказка" id="210"/>
-											</SearchControlAddition>
-											<Events>
-												<Event name="DragCheck">ТаблицаИзбранногоПроверкаПеретаскивания</Event>
-												<Event name="OnActivateRow">ТаблицаИзбранногоПриАктивизацииСтроки</Event>
-												<Event name="Drag">ТаблицаИзбранногоПеретаскивание</Event>
-											</Events>
-											<ChildItems>
-												<ColumnGroup name="ТаблицаИзбранногоВертикальная" id="226">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Таблица избранного вертикальная</v8:content>
+															<v8:content>Формирование списка информационных баз</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Таблица избранного вертикальная</v8:content>
-														</v8:item>
-													</ToolTip>
-													<ExtendedTooltip name="ТаблицаИзбранногоВертикальнаяРасширеннаяПодсказка" id="227"/>
-													<ChildItems>
-														<ColumnGroup name="ТаблицаИзбранногоГруппаГоризонтальное" id="228">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Таблица избранного группа горизонтальное</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Таблица избранного группа горизонтальное</v8:content>
-																</v8:item>
-															</ToolTip>
-															<Group>Horizontal</Group>
-															<ExtendedTooltip name="ТаблицаИзбранногоГруппаГоризонтальноеРасширеннаяПодсказка" id="229"/>
-															<ChildItems>
-																<InputField name="ТаблицаИзбранногоГруппаИзбранного" id="223">
-																	<DataPath>ТаблицаИзбранного.ГруппаИзбранных</DataPath>
-																	<BorderColor>style:FieldBackColor</BorderColor>
-																	<Font ref="style:NormalTextFont" height="12" kind="StyleItem"/>
-																	<ContextMenu name="ТаблицаИзбранногоГруппаИзбранногоКонтекстноеМеню" id="224"/>
-																	<ExtendedTooltip name="ТаблицаИзбранногоГруппаИзбранногоРасширеннаяПодсказка" id="225"/>
-																</InputField>
-																<PictureField name="ТаблицаИзбранногоКартинкаЗакрепить" id="214">
-																	<DataPath>ТаблицаИзбранного.ИндексКартинкиЗакрепить</DataPath>
-																	<HorizontalAlign>Right</HorizontalAlign>
-																	<FixingInTable>Right</FixingInTable>
-																	<ValuesPicture>
-																		<xr:Ref>CommonPicture.Закрепить</xr:Ref>
-																		<xr:LoadTransparent>false</xr:LoadTransparent>
-																	</ValuesPicture>
-																	<ContextMenu name="ТаблицаИзбранногоКартинкаЗакрепитьКонтекстноеМеню" id="215"/>
-																	<ExtendedTooltip name="ТаблицаИзбранногоКартинкаЗакрепитьРасширеннаяПодсказка" id="216"/>
-																</PictureField>
-															</ChildItems>
-														</ColumnGroup>
-														<LabelField name="ТаблицаИзбранногоОписание" id="217">
-															<DataPath>ТаблицаИзбранного.Описание</DataPath>
-															<MaxWidth>25</MaxWidth>
-															<TextColor>style:NavigationColor</TextColor>
-															<Font ref="style:NormalTextFont" height="9" bold="false" italic="true" underline="false" strikeout="false" kind="StyleItem"/>
-															<ContextMenu name="ТаблицаИзбранногоОписаниеКонтекстноеМеню" id="218"/>
-															<ExtendedTooltip name="ТаблицаИзбранногоОписаниеРасширеннаяПодсказка" id="219"/>
-														</LabelField>
-													</ChildItems>
-												</ColumnGroup>
+													<ContextMenu name="НадписьОжиданияКонтекстноеМеню" id="134"/>
+													<ExtendedTooltip name="НадписьОжиданияРасширеннаяПодсказка" id="135"/>
+												</LabelDecoration>
 											</ChildItems>
-										</Table>
+										</UsualGroup>
 									</ChildItems>
 								</Page>
 							</ChildItems>
 						</Pages>
 					</ChildItems>
 				</UsualGroup>
-				<Pages name="СтраницыИнформационныхБаз" id="119">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страницы информационных баз</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страницы информационных баз</v8:content>
-						</v8:item>
-					</ToolTip>
-					<PagesRepresentation>None</PagesRepresentation>
-					<ExtendedTooltip name="СтраницыИнформационныхБазРасширеннаяПодсказка" id="120"/>
-					<ChildItems>
-						<Page name="СтраницаИнформационныеБазы" id="121">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страница информационные базы</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страница информационные базы</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="СтраницаИнформационныеБазыРасширеннаяПодсказка" id="122"/>
-							<ChildItems>
-								<UsualGroup name="ГруппаЗаголовокИнформационныеБазы" id="151">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа заголовок кластеры</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа заголовок кластеры</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>AlwaysHorizontal</Group>
-									<HorizontalSpacing>Double</HorizontalSpacing>
-									<Behavior>Usual</Behavior>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаЗаголовокИнформационныеБазыРасширеннаяПодсказка" id="152"/>
-									<ChildItems>
-										<LabelDecoration name="ДекорацияИнформационныеБазы" id="153">
-											<TextColor>style:AccentColor</TextColor>
-											<Font ref="style:NormalTextFont" height="12" bold="false" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Информационные базы</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="ДекорацияИнформационныеБазыКонтекстноеМеню" id="154"/>
-											<ExtendedTooltip name="ДекорацияИнформационныеБазыРасширеннаяПодсказка" id="155"/>
-										</LabelDecoration>
-										<Button name="ДобавитьБазу" id="156">
-											<Type>Hyperlink</Type>
-											<CommandName>Form.Command.ДобавитьБазу</CommandName>
-											<TextColor>style:ЦветПустойГиперссылки</TextColor>
-											<Picture>
-												<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-												<xr:LoadTransparent>false</xr:LoadTransparent>
-											</Picture>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Добавить базу</v8:content>
-												</v8:item>
-											</Title>
-											<ExtendedTooltip name="ДобавитьБазуРасширеннаяПодсказка" id="157"/>
-										</Button>
-										<LabelDecoration name="ДекорацияОтступ" id="256">
-											<Enabled>false</Enabled>
-											<AutoMaxWidth>false</AutoMaxWidth>
-											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="257"/>
-											<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="258"/>
-										</LabelDecoration>
-										<SearchStringAddition name="ПоискВСпискеБаз" id="253">
-											<AdditionSource>
-												<Item>ТаблицаИнформационныхБаз</Item>
-												<Type>SearchStringRepresentation</Type>
-											</AdditionSource>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Поиск в списке баз</v8:content>
-												</v8:item>
-											</Title>
-											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-											<Width>25</Width>
-											<HorizontalStretch>false</HorizontalStretch>
-											<ContextMenu name="ПоискВСпискеБазКонтекстноеМеню" id="254"/>
-											<ExtendedTooltip name="ПоискВСпискеБазРасширеннаяПодсказка" id="255"/>
-										</SearchStringAddition>
-									</ChildItems>
-								</UsualGroup>
-								<Table name="ТаблицаИнформационныхБаз" id="37">
-									<CommandBarLocation>None</CommandBarLocation>
-									<ChangeRowSet>false</ChangeRowSet>
-									<ChangeRowOrder>false</ChangeRowOrder>
-									<RowSelectionMode>Row</RowSelectionMode>
-									<Header>false</Header>
-									<VerticalLines>false</VerticalLines>
-									<EnableStartDrag>true</EnableStartDrag>
-									<DataPath>ТаблицаИнформационныхБаз</DataPath>
-									<RowPictureDataPath>ТаблицаИнформационныхБаз.ИндексКартинки</RowPictureDataPath>
-									<RowsPicture>
-										<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</RowsPicture>
-									<BorderColor>style:FormBackColor</BorderColor>
-									<AutoRefresh>false</AutoRefresh>
-									<AutoRefreshPeriod>120</AutoRefreshPeriod>
-									<Period>
-										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-									</Period>
-									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-									<RestoreCurrentRow>false</RestoreCurrentRow>
-									<TopLevelParent xsi:nil="true"/>
-									<ShowRoot>true</ShowRoot>
-									<AllowRootChoice>false</AllowRootChoice>
-									<UpdateOnDataChange>Auto</UpdateOnDataChange>
-									<ContextMenu name="ТаблицаИнформационныхБазКонтекстноеМеню" id="38">
-										<Autofill>false</Autofill>
-										<ChildItems>
-											<ButtonGroup name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаЗапуск" id="269">
-												<Title>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Таблица информационных баз контекстное меню группа запуск</v8:content>
-													</v8:item>
-												</Title>
-												<ToolTip>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Таблица информационных баз контекстное меню группа запуск</v8:content>
-													</v8:item>
-												</ToolTip>
-												<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаЗапускРасширеннаяПодсказка" id="270"/>
-												<ChildItems>
-													<Button name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьПредприятие" id="259">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ЗапуститьПредприятие</CommandName>
-														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьПредприятиеРасширеннаяПодсказка" id="260"/>
-													</Button>
-													<Button name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьКонфигуратор" id="261">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ЗапуститьКонфигуратор</CommandName>
-														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьКонфигураторРасширеннаяПодсказка" id="262"/>
-													</Button>
-													<Button name="ТаблицаИнформационныхБазКонтекстноеМенюНастройкаЗапускаИБ" id="267">
-														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.НастройкаЗапускаИБ</CommandName>
-														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюНастройкаЗапускаИБРасширеннаяПодсказка" id="268"/>
-													</Button>
-												</ChildItems>
-											</ButtonGroup>
-											<Popup name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаИзбранное" id="263">
-												<Title>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Добавить в избранное</v8:content>
-													</v8:item>
-												</Title>
-												<ToolTip>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Таблица информационных баз контекстное меню группа избранное</v8:content>
-													</v8:item>
-												</ToolTip>
-												<Picture>
-													<xr:Ref>StdPicture.Favorites</xr:Ref>
-													<xr:LoadTransparent>true</xr:LoadTransparent>
-												</Picture>
-												<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаИзбранноеРасширеннаяПодсказка" id="264"/>
-											</Popup>
-											<ButtonGroup name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаПоделиться" id="271">
-												<Title>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Таблица информационных баз контекстное меню группа поделиться</v8:content>
-													</v8:item>
-												</Title>
-												<ToolTip>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Таблица информационных баз контекстное меню группа поделиться</v8:content>
-													</v8:item>
-												</ToolTip>
-												<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаПоделитьсяРасширеннаяПодсказка" id="272"/>
-											</ButtonGroup>
-											<Button name="ТаблицаИнформационныхБазКонтекстноеМенюПоледитьсяИБ" id="265">
-												<Type>CommandBarButton</Type>
-												<CommandName>Form.Command.ПодедитьсяИБ</CommandName>
-												<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюПоледитьсяИБРасширеннаяПодсказка" id="266"/>
-											</Button>
-										</ChildItems>
-									</ContextMenu>
-									<AutoCommandBar name="ТаблицаИнформационныхБазКоманднаяПанель" id="39"/>
-									<ExtendedTooltip name="ТаблицаИнформационныхБазРасширеннаяПодсказка" id="40"/>
-									<SearchStringAddition name="ТаблицаИнформационныхБазСтрокаПоиска" id="41">
-										<AdditionSource>
-											<Item>ТаблицаИнформационныхБаз</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ТаблицаИнформационныхБазСтрокаПоискаКонтекстноеМеню" id="42"/>
-										<ExtendedTooltip name="ТаблицаИнформационныхБазСтрокаПоискаРасширеннаяПодсказка" id="43"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="ТаблицаИнформационныхБазСостояниеПросмотра" id="44">
-										<AdditionSource>
-											<Item>ТаблицаИнформационныхБаз</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ТаблицаИнформационныхБазСостояниеПросмотраКонтекстноеМеню" id="45"/>
-										<ExtendedTooltip name="ТаблицаИнформационныхБазСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="ТаблицаИнформационныхБазУправлениеПоиском" id="47">
-										<AdditionSource>
-											<Item>ТаблицаИнформационныхБаз</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="ТаблицаИнформационныхБазУправлениеПоискомКонтекстноеМеню" id="48"/>
-										<ExtendedTooltip name="ТаблицаИнформационныхБазУправлениеПоискомРасширеннаяПодсказка" id="49"/>
-									</SearchControlAddition>
-									<Events>
-										<Event name="Selection">ТаблицаИнформационныхБазВыбор</Event>
-										<Event name="OnActivateRow">ТаблицаИнформационныхБазПриАктивизацииСтроки</Event>
-										<Event name="DragStart">ТаблицаИнформационныхБазНачалоПеретаскивания</Event>
-									</Events>
-									<ChildItems>
-										<LabelField name="ТаблицаИнформационныхБазСсылка" id="53">
-											<DataPath>ТаблицаИнформационныхБаз.Ссылка</DataPath>
-											<TitleBackColor>style:FormBackColor</TitleBackColor>
-											<VerticalAlign>Center</VerticalAlign>
-											<EditMode>Directly</EditMode>
-											<Height>2</Height>
-											<BorderColor>style:FormBackColor</BorderColor>
-											<ContextMenu name="ТаблицаИнформационныхБазСсылкаКонтекстноеМеню" id="54"/>
-											<ExtendedTooltip name="ТаблицаИнформационныхБазСсылкаРасширеннаяПодсказка" id="55"/>
-										</LabelField>
-										<LabelField name="ТаблицаИнформационныхБазНазначение" id="56">
-											<DataPath>ТаблицаИнформационныхБаз.Назначение</DataPath>
-											<TitleBackColor>style:FormBackColor</TitleBackColor>
-											<VerticalAlign>Center</VerticalAlign>
-											<ShowInFooter>false</ShowInFooter>
-											<Height>2</Height>
-											<BorderColor>style:FormBackColor</BorderColor>
-											<ContextMenu name="ТаблицаИнформационныхБазНазначениеКонтекстноеМеню" id="57"/>
-											<ExtendedTooltip name="ТаблицаИнформационныхБазНазначениеРасширеннаяПодсказка" id="58"/>
-										</LabelField>
-										<LabelField name="ТаблицаИнформационныхБазОтветственный" id="116">
-											<DataPath>ТаблицаИнформационныхБаз.Ответственный</DataPath>
-											<VerticalAlign>Center</VerticalAlign>
-											<Height>2</Height>
-											<ContextMenu name="ТаблицаИнформационныхБазОтветственныйКонтекстноеМеню" id="117"/>
-											<ExtendedTooltip name="ТаблицаИнформационныхБазОтветственныйРасширеннаяПодсказка" id="118"/>
-										</LabelField>
-										<LabelField name="ТаблицаИнформационныхБазКонфигурация" id="59">
-											<DataPath>~ТаблицаИнформационныхБаз.Конфигурация</DataPath>
-											<TitleBackColor>style:FormBackColor</TitleBackColor>
-											<VerticalAlign>Center</VerticalAlign>
-											<ShowInFooter>false</ShowInFooter>
-											<Height>2</Height>
-											<BorderColor>style:FormBackColor</BorderColor>
-											<ContextMenu name="ТаблицаИнформационныхБазКонфигурацияКонтекстноеМеню" id="60"/>
-											<ExtendedTooltip name="ТаблицаИнформационныхБазКонфигурацияРасширеннаяПодсказка" id="61"/>
-										</LabelField>
-										<PictureField name="ТаблицаИнформационныхБазПолеНастройка" id="65">
-											<DataPath>ТаблицаИнформационныхБаз.ИндексКартинки</DataPath>
-											<TitleBackColor>style:FormBackColor</TitleBackColor>
-											<TitleLocation>None</TitleLocation>
-											<CellHyperlink>true</CellHyperlink>
-											<ShowInFooter>false</ShowInFooter>
-											<Height>2</Height>
-											<Hyperlink>true</Hyperlink>
-											<ValuesPicture>
-												<xr:Ref>CommonPicture.ВыполнитьЗапуск</xr:Ref>
-												<xr:LoadTransparent>false</xr:LoadTransparent>
-											</ValuesPicture>
-											<BorderColor>style:FormBackColor</BorderColor>
-											<ContextMenu name="ТаблицаИнформационныхБазПолеНастройкаКонтекстноеМеню" id="66"/>
-											<ExtendedTooltip name="ТаблицаИнформационныхБазПолеНастройкаРасширеннаяПодсказка" id="67"/>
-										</PictureField>
-									</ChildItems>
-								</Table>
-							</ChildItems>
-						</Page>
-						<Page name="СтраницаОперацияОжидания" id="123">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страница операция ожидания</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страница операция ожидания</v8:content>
-								</v8:item>
-							</ToolTip>
-							<HorizontalStretch>true</HorizontalStretch>
-							<VerticalStretch>true</VerticalStretch>
-							<Group>AlwaysHorizontal</Group>
-							<HorizontalAlign>Center</HorizontalAlign>
-							<VerticalAlign>Center</VerticalAlign>
-							<ExtendedTooltip name="СтраницаОперацияОжиданияРасширеннаяПодсказка" id="124"/>
-							<ChildItems>
-								<UsualGroup name="ГруппаОтображениеОжидания" id="131">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отображение ожидания</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа отображение ожидания</v8:content>
-										</v8:item>
-									</ToolTip>
-									<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-									<GroupVerticalAlign>Center</GroupVerticalAlign>
-									<Group>Vertical</Group>
-									<Behavior>Usual</Behavior>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаОтображениеОжиданияРасширеннаяПодсказка" id="132"/>
-									<ChildItems>
-										<PictureDecoration name="ДекорацияОжидание" id="128">
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Ожидание</v8:content>
-												</v8:item>
-											</Title>
-											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
-											<GroupVerticalAlign>Center</GroupVerticalAlign>
-											<Picture>
-												<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
-												<xr:LoadTransparent>false</xr:LoadTransparent>
-											</Picture>
-											<ContextMenu name="ДекорацияОжиданиеКонтекстноеМеню" id="129"/>
-											<ExtendedTooltip name="ДекорацияОжиданиеРасширеннаяПодсказка" id="130"/>
-										</PictureDecoration>
-										<LabelDecoration name="НадписьОжидания" id="133">
-											<TextColor>style:ЦветПустойГиперссылки</TextColor>
-											<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Формирование списка информационных баз</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="НадписьОжиданияКонтекстноеМеню" id="134"/>
-											<ExtendedTooltip name="НадписьОжиданияРасширеннаяПодсказка" id="135"/>
-										</LabelDecoration>
-									</ChildItems>
-								</UsualGroup>
-							</ChildItems>
-						</Page>
-					</ChildItems>
-				</Pages>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -1668,7 +1753,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда проекты</v8:content>
+					<v8:content>Отбор по проектам</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаПроекты</Action>
@@ -1822,7 +1907,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда кластеры</v8:content>
+					<v8:content>Отбор по кластерам</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаКластеры</Action>
@@ -1837,7 +1922,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Команда избранное</v8:content>
+					<v8:content>Отбор по группам избранного</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>КомандаИзбранное</Action>
@@ -1932,6 +2017,21 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>НастройкаЗапускаИБ</Action>
+		</Command>
+		<Command name="КомандаИнформационныеБазы" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные базы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать все информационные базы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаИнформационныеБазы</Action>
 		</Command>
 	</Commands>
 </Form>
