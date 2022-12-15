@@ -932,7 +932,7 @@
 											<VerticalLines>false</VerticalLines>
 											<EnableStartDrag>true</EnableStartDrag>
 											<DataPath>ТаблицаИнформационныхБаз</DataPath>
-											<RowPictureDataPath>ТаблицаИнформационныхБаз.ИндексКартинки</RowPictureDataPath>
+											<RowPictureDataPath>ТаблицаИнформационныхБаз.ИндексКартинкиСтрок</RowPictureDataPath>
 											<RowsPicture>
 												<xr:Ref>CommonPicture.БазаДанных</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -1107,8 +1107,7 @@
 													<ExtendedTooltip name="ТаблицаИнформационныхБазПроектРасширеннаяПодсказка" id="284"/>
 												</LabelField>
 												<PictureField name="ТаблицаИнформационныхБазПолеНастройка" id="65">
-													<DataPath>ТаблицаИнформационныхБаз.ИндексКартинки</DataPath>
-													<Visible>false</Visible>
+													<DataPath>ТаблицаИнформационныхБаз.ИндексКартинкиДопИнформации</DataPath>
 													<TitleBackColor>style:FormBackColor</TitleBackColor>
 													<TitleLocation>None</TitleLocation>
 													<CellHyperlink>true</CellHyperlink>
@@ -1116,7 +1115,7 @@
 													<Height>2</Height>
 													<Hyperlink>true</Hyperlink>
 													<ValuesPicture>
-														<xr:Ref>CommonPicture.ВыполнитьЗапуск</xr:Ref>
+														<xr:Ref>CommonPicture.КоллекцияВидыСобытийЖурналаРегистрации</xr:Ref>
 														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</ValuesPicture>
 													<BorderColor>style:FormBackColor</BorderColor>
@@ -1345,6 +1344,24 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
+	ПроверкиОбъектов.Объект КАК Объект,
+	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ ПроверкиОбъектов.Правило) КАК Правило,
+	МАКСИМУМ(ПроверкиОбъектов.Результат) КАК Результат
+ПОМЕСТИТЬ ВТ_Проверки
+ИЗ
+	РегистрСведений.ПроверкиОбъектов КАК ПроверкиОбъектов
+ГДЕ
+	ПроверкиОбъектов.Объект ССЫЛКА Справочник.ИнформационныеБазы
+
+СГРУППИРОВАТЬ ПО
+	ПроверкиОбъектов.Объект
+
+ИНДЕКСИРОВАТЬ ПО
+	Объект
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
 	СправочникИнформационныеБазы.Ссылка КАК Ссылка,
 	СправочникИнформационныеБазы.ПометкаУдаления КАК ПометкаУдаления,
 	СправочникИнформационныеБазы.Владелец КАК Владелец,
@@ -1370,9 +1387,16 @@
 			ТОГДА 1
 		ИНАЧЕ 2
 	КОНЕЦ КАК ПолеУпорядочивания,
-	0 КАК ИндексКартинки
+	ВЫБОР
+		КОГДА ВТ_Проверки.Правило ЕСТЬ NULL
+			ТОГДА -1
+		ИНАЧЕ ВТ_Проверки.Результат.Порядок
+	КОНЕЦ КАК ИндексКартинкиДопИнформации,
+	0 КАК ИндексКартинкиСтрок
 ИЗ
-	Справочник.ИнформационныеБазы КАК СправочникИнформационныеБазы</QueryText>
+	Справочник.ИнформационныеБазы КАК СправочникИнформационныеБазы
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Проверки КАК ВТ_Проверки
+		ПО (ВТ_Проверки.Объект = СправочникИнформационныеБазы.Ссылка)</QueryText>
 				<MainTable>Catalog.ИнформационныеБазы</MainTable>
 				<ListSettings>
 					<dcsset:filter>
