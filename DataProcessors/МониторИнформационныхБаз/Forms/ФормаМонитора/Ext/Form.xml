@@ -402,6 +402,7 @@
 													<HorizontalLines>false</HorizontalLines>
 													<VerticalLines>false</VerticalLines>
 													<InitialTreeView>ExpandAllLevels</InitialTreeView>
+													<EnableDrag>true</EnableDrag>
 													<DataPath>ТаблицаЭлементовКластера</DataPath>
 													<RowPictureDataPath>ТаблицаЭлементовКластера.ИндексСостояния</RowPictureDataPath>
 													<RowsPicture>
