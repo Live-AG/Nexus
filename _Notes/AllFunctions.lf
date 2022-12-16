@@ -1,0 +1,1894 @@
+﻿{4,
+{49,0,0,0,0,1,0,0,00000000-0000-0000-0000-000000000000,0,
+{1,1,
+{"#","Функции для технического специалиста"}
+},0,0,1,0,1,0,0,0,
+{1,9f2e5ddb-3492-4f5d-8f0d-416b8d1d5c5b,"OnCreateAtServer",1,0,9f2e5ddb-3492-4f5d-8f0d-416b8d1d5c5b,0,1},
+{11,06ee6a21-061e-47f8-81c5-92ae8b8f3b5d,198ea630-fda2-4cda-8a23-f999f4c67ee6,239f0103-8de9-4fdf-b485-eb5531da7e51,3772996b-41f4-4c47-a5a8-ea397db424ae,3f01ed62-97f8-465b-b4f7-6517ac2bc994,5174ad3f-0569-42fd-8adf-011d8206db6c,5d41082e-9619-42ec-b96f-98b082b3a2f0,679b62d9-ff72-4329-bf3a-c0c32b311dd2,71e0226e-ebb2-4e33-8745-0a94a01bbf15,d7e9e72c-8fa7-430c-a3e9-aeadfd57dfc7,f3613d5c-20c6-46e5-b4d5-7d712ece1296},1,
+{22,
+{-1,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},9,"ФормаКоманднаяПанель",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{0,0,1},0,1,0,0,0,3,3,0},1,143c00f7-a42d-4cd7-9189-88e4467dc768,
+{55,
+{98,02023637-7868-4a5f-8576-835a76e0c9ba},0,2,1,
+{0,
+{0,
+{"B",1},0}
+},"Table",0,0,2,
+{1,0},
+{1,0},
+{1,
+{1}
+},0,1,1,0,0,1,0,60,0,20,1,0,0,0,0,1,0,1,2,2,0,0,0,0,0,0,2,0,0,1,1,
+{1,
+{3}
+},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,0,1,19,
+{"S",""},
+{1,1282f000-23b6-4887-87f4-9e8e79db3d32,"TableSelection",1,0,1282f000-23b6-4887-87f4-9e8e79db3d32,0,1},
+{17,01833a5a-6553-4c49-b445-095018107bb5,05468165-f954-45a5-84f2-6641c51f9f23,0ae4bea5-23be-42a7-b69e-97b11b29c453,0d0249a4-2b2f-4fc0-a66f-b36f9494b3cc,2bbe4e12-06d2-409b-a972-eea585125d83,37740564-9e86-44a0-bea9-3f485a5a3f91,49602716-fea6-497f-8047-726404038857,58b2a785-23f6-4b0e-a324-9a1323285595,7b683784-b474-441a-ba63-3d757bd0ffd4,88078230-1f6b-415f-99e4-ad2ff73810cf,8969c93a-23e5-4bef-941d-aaef315858d2,8af6ebff-cd02-4bfe-a984-44a292623708,8d772f97-c0ef-47c0-9cb0-efea28c61341,9ef79140-3de6-436a-8dda-610bb963f5db,b0016a68-ec64-4e6d-b905-c71fd62efc4c,b41f5bbc-ba5d-4888-8cd1-db246a371418,fa51b106-eae6-44c7-8054-76cbb3100603},1,
+{22,
+{99,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"TableКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},1,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{31,
+{103,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"CommandOpen1",
+{1,0},1,
+{1,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},2,1,0,0,2,1,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{4,0,
+{0},"",-1,-1,1,0,""},1,
+{"Pattern"},"",0,0,1,
+{12,
+{109,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"CommandOpen1ExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},
+{"U"},1,0,0,1,0,0,0,3,3,3,0,0,0,0,0,3,1,0},1,0,0,0,3,3,0},1,
+{22,
+{100,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},9,"TableКоманднаяПанель",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{0,0,0},4,a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{31,
+{94,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"CommandOpen",
+{1,0},1,
+{1,409b9a53-7f7e-4178-86c1-33176c7c7a7a},
+{0},2,1,0,0,2,1,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{4,0,
+{0},"",-1,-1,1,0,""},1,
+{"Pattern"},"",0,0,1,
+{12,
+{108,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"CommandOpenExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},
+{"U"},1,0,0,1,0,0,0,3,3,3,0,0,0,0,0,3,1,0},a9f3b1ac-f51b-431e-b102-55a69acdecad,
+{31,
+{114,02023637-7868-4a5f-8576-835a76e0c9ba},0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"FormHelp",
+{1,0},1,
+{0,39bb0fe9-771d-4dd5-8a6e-2d16984523af},
+{0},3,0,0,0,2,1,0,0,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,
+{4,0,
+{0},"",-1,-1,1,0,""},1,
+{"Pattern"},"",2,0,1,
+{12,
+{115,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"FormHelpExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},
+{"U"},1,0,0,1,0,0,0,3,3,3,0,0,0,0,0,3,1,0},c5259a1d-518a-4afd-b98d-0176027e4feb,
+{5,
+{133,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},0,"SearchStr",
+{1,1,
+{"#","Search str"}
+},
+{1,0},1,1,0,1,
+{1,0,2,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,1,0},1,0,0},1,
+{22,
+{134,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,8,"SearchStrКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0,0,3,3,0},1,
+{12,
+{135,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"SearchStrРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},2,
+{98,0},0,3,3,0},c5259a1d-518a-4afd-b98d-0176027e4feb,
+{5,
+{136,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},2,"SearchManagement",
+{1,1,
+{"#","Search management"}
+},
+{1,0},1,1,0,1,
+{1,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,1,0},1,0,0,2},1,
+{22,
+{137,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,8,"SearchManagementКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0,0,3,3,0},1,
+{12,
+{138,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"SearchManagementРасширеннаяПодсказка",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},2,
+{98,2},0,3,3,0},1,0,0,0,3,3,0},1,77ffcc29-7f2d-4223-b22f-19666e7250ba,
+{35,
+{101,02023637-7868-4a5f-8576-835a76e0c9ba},1,0,1,
+{0,
+{0,
+{"B",1},0}
+},2,"Name",1,0,
+{1,0},
+{1,0},
+{2,
+{1},
+{1}
+},
+{0},1,0,2,0,1,
+{1,0},
+{1,0},1,1,0,3,0,3,1,3,0,
+{4,0,
+{0},"",-1,-1,1,0,""},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{32,
+{3,0},0,0,2,2,0,2,2,2,2,2,2,2,2,2,
+{"U"},
+{"U"},"",0,
+{4,0,
+{0},"",-1,-1,1,0,""},0,0,2,3,00000000-0000-0000-0000-000000000000,
+{5006,0},
+{0,0},2,
+{1,0},
+{1,0},2,1,0,
+{"Pattern"},1,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},1,
+{3,0,0},0,
+{1,0},2,0,2,0,1,0,0,1,0,0,0,0,0,0,0,0,0},
+{0,1,0},1,
+{22,
+{102,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,1,
+{0,
+{0,
+{"B",1},0}
+},8,"NameКонтекстноеМеню",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0,0,3,3,0},1,
+{"Pattern"},
+{"Pattern"},"","",
+{0},0,0,1,
+{12,
+{113,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"NameExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},3,3,0,0},0,0,1,0,
+{"Pattern"},"","",0,0,0,1,
+{12,
+{110,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"TableExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},0,2,0,1,
+{5,
+{116,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"TableSearchString",
+{1,0},
+{1,0},1,1,0,1,
+{1,0,2,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,1,0},1,0,0},1,
+{22,
+{117,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,8,"TableSearchStringContextMenu",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0,0,3,3,0},1,
+{12,
+{118,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"TableSearchStringExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},2,
+{98,0},0,3,3,0},1,
+{5,
+{119,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,1,"TableViewStatus",
+{1,0},
+{1,0},1,1,0,1,
+{1,0,2,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{7,3,0,1,100},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e},3,
+{0,1,0},1,0,0},1,
+{22,
+{120,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,8,"TableViewStatusContextMenu",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0,0,3,3,0},1,
+{12,
+{121,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"TableViewStatusExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},2,
+{98,1},0,3,3,0},1,
+{5,
+{122,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,2,"TableSearchControl",
+{1,0},
+{1,0},1,1,0,1,
+{1,0,
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,1,0},1,0,0,2},1,
+{22,
+{123,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,8,"TableSearchControlContextMenu",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{1,1},0,1,0,0,0,3,3,0},1,
+{12,
+{124,02023637-7868-4a5f-8576-835a76e0c9ba},0,0,0,0,"TableSearchControlExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},2,
+{98,2},0,3,3,0},0,1,0,0,1,0,3,3,0,1,0,0,0,0,0,0},"","",1,
+{22,
+{0},0,0,0,7,"Navigator",
+{1,0},
+{1,0},0,1,0,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},0,0,1,0,1,
+{12,
+{0},0,0,0,0,"NavigatorExtendedTooltip",
+{1,0},
+{1,0},1,0,0,2,2,
+{3,4,
+{0}
+},
+{7,3,0,1,100},
+{0,0,0},1,
+{5,0,0,3,0,
+{0,1,0},
+{3,4,
+{0}
+},
+{3,4,
+{0}
+},
+{3,0,
+{0},0,1,0,48312c09-257f-4b29-b280-284dd89efc1e}
+},0,1,2,
+{1,
+{1,0},0},0,0,1,0,0,1,0,3,3,0,0},0,3,3,0},1,"",2,0,0,0,0,0,3,3,0,0,2,100,0,1,0,0,0,
+{49,0}
+},"&AtServer
+Procedure FillTree(Row, TableRows)
+	TableRows.Sort(""Name"");
+	
+	For i = 0 to TableRows.Count() - 1 Do
+		Element = TableRows.Get(i);
+		SubString = Row.GetItems().Add();	
+		SubString.Name = Element.Name;
+		SubString.Form = Element.Form;
+		SubString.Picture = Element.Picture;
+		SubString.Type = Element.Type;
+        If Element.Rows.Count() <> 0 Then
+            FillTree(SubString, Element.Rows);
+        EndIf;
+	EndDo;
+	
+	TableRows.Clear();
+EndProcedure
+	
+&AtServer
+Procedure OnCreateAtServer(Cancel, StandardProcessing)
+	
+	Var ActiveUsers;
+	Var MobileAppBuilder;
+	Var DatabaseCopiesManagementObjects;
+	Var DocumentsPosting;
+	Var ECSRegister;
+	Var EventLog;
+	Var ExtensionsManagement;
+	Var ExternalDataSourcesManagementObjects;
+	Var FullTextSearchCtrl;
+	Var ReferenceFind;
+	Var RemoveMarkedObjects;
+	Var ServersControl;
+	Var StandardDataChangeHistory;
+	Var UserList;
+	Var InfobaseParameters;
+	Var TotalsManagement;
+    Var AdditionalAuthenticationSettings;
+    Var AuthenticationLocks;
+    Var ConfigurationLicense;
+    Var EventLogOptions;
+    Var LicenseAcquisition;
+    Var RegionalInfobaseSettings;
+	
+	VerifyAccessRights(""TechnicalSpecialistMode"", Metadata);
+	
+	Table = New ValueTree;
+	Table.Columns.Add(""Name"");
+	Table.Columns.Add(""Form"");
+	Table.Columns.Add(""Picture"");
+	Table.Columns.Add(""Type"");
+	
+	NeedControlTotals = False;
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Константы'; SYS = 'AllFunctions.Constants'"", ""ru"");
+	Row.Picture = PictureLib.Constant;
+	
+	For i = 0 to Metadata.Constants.Count() - 1 Do
+		Element = Metadata.Constants.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ConstantsForm"";
+			SubString.Picture = PictureLib.Constant;
+			SubString.Type = ""Form"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Справочники'; SYS = 'AllFunctions.References'"", ""ru"");
+	Row.Picture = PictureLib.Catalog;
+	
+	For i = 0 to Metadata.Catalogs.Count() - 1 Do
+		Element = Metadata.Catalogs.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.Catalog;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Документы'; SYS = 'AllFunctions.Documents'"", ""ru"");
+	Row.Picture = PictureLib.Document;
+	
+	For i = 0 to Metadata.Documents.Count() - 1 Do
+		Element = Metadata.Documents.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.Document;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Журналы документов'; SYS = 'AllFunctions.DocJounals'"", ""ru"");
+	Row.Picture = PictureLib.DocumentJournal;
+	
+	For i = 0 to Metadata.DocumentJournals.Count() - 1 Do
+		Element = Metadata.DocumentJournals.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.DocumentJournal;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Отчеты'; SYS = 'AllFunctions.Reports'"", ""ru"");
+	Row.Picture = PictureLib.Report;
+	
+	For i = 0 to Metadata.Reports.Count() - 1 Do
+		Element = Metadata.Reports.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".Form"";
+			SubString.Picture = PictureLib.Report;
+			SubString.Type = ""Form"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Обработки'; SYS = 'AllFunctions.Processings'"", ""ru"");
+	Row.Picture = PictureLib.DataProcessor;
+	
+	For i = 0 to Metadata.DataProcessors.Count() - 1 Do
+		Element = Metadata.DataProcessors.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".Form"";
+			SubString.Picture = PictureLib.DataProcessor;
+			SubString.Type = ""Form"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Планы видов характеристик'; SYS = 'AllFunctions.ПВХ'"", ""ru"");
+	Row.Picture = PictureLib.ChartOfCharacteristicTypes;
+	
+	For i = 0 to Metadata.ChartsOfCharacteristicTypes.Count() - 1 Do
+		Element = Metadata.ChartsOfCharacteristicTypes.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.ChartOfCharacteristicTypes;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Планы счетов'; SYS = 'AllFunctions.ChartsOfAccounts'"", ""ru"");
+	Row.Picture = PictureLib.ChartOfAccounts;
+	
+	For i = 0 to Metadata.ChartsOfAccounts.Count() - 1 Do
+		Element = Metadata.ChartsOfAccounts.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.ChartOfAccounts;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Планы видов расчета'; SYS = 'AllFunctions.CalcKinds'"", ""ru"");
+	Row.Picture = PictureLib.ChartOfCalculationTypes;
+	
+	For i = 0 to Metadata.ChartsOfCalculationTypes.Count() - 1 Do
+		Element = Metadata.ChartsOfCalculationTypes.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.ChartOfCalculationTypes;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Регистры сведений'; SYS = 'AllFunctions.InfoRegs'"", ""ru"");
+	Row.Picture = PictureLib.InformationRegister;
+	
+	For i = 0 to Metadata.InformationRegisters.Count() - 1 Do
+		Element = Metadata.InformationRegisters.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.InformationRegister;
+			SubString.Type = ""ListForm"";
+		EndIf;
+		If (Not NeedControlTotals) And AccessRight(""TotalsControl"", Element) Then
+			NeedControlTotals = True;
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Регистры накопления'; SYS = 'AllFunctions.AccumRegs'"", ""ru"");
+	Row.Picture = PictureLib.AccumulationRegister;
+	
+	For i = 0 to Metadata.AccumulationRegisters.Count() - 1 Do
+		Element = Metadata.AccumulationRegisters.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.AccumulationRegister;
+			SubString.Type = ""ListForm"";
+		EndIf;
+		If (Not NeedControlTotals) And AccessRight(""TotalsControl"", Element) Then
+			NeedControlTotals = True;
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Регистры бухгалтерии'; SYS = 'AllFunctions.AccntRegs'"", ""ru"");
+	Row.Picture = PictureLib.AccountingRegister;
+	
+	For i = 0 to Metadata.AccountingRegisters.Count() - 1 Do
+		Element = Metadata.AccountingRegisters.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.AccountingRegister;
+			SubString.Type = ""ListForm"";
+		EndIf;
+		If (Not NeedControlTotals) And AccessRight(""TotalsControl"", Element) Then
+			NeedControlTotals = True;
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Регистры расчета'; SYS = 'AllFunctions.CalcRegs'"", ""ru"");
+	Row.Picture = PictureLib.CalculationRegister;
+	
+	For i = 0 to Metadata.CalculationRegisters.Count() - 1 Do
+		Element = Metadata.CalculationRegisters.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.CalculationRegister;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Бизнес процессы'; SYS = 'AllFunctions.BP'"", ""ru"");
+	Row.Picture = PictureLib.BusinessProcess;
+	
+	For i = 0 to Metadata.BusinessProcesses.Count() - 1 Do
+		Element = Metadata.BusinessProcesses.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.BusinessProcess;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Задачи'; SYS = 'AllFunctions.Tasks'"", ""ru"");
+	Row.Picture = PictureLib.Task;
+	
+	For i = 0 to Metadata.Tasks.Count() - 1 Do
+		Element = Metadata.Tasks.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.Task;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Внешние источники данных'; SYS = 'AllFunctions.ExternalDataSources'"", ""ru"");
+	Row.Picture = PictureLib.ExternalDataSource;
+	
+	For i = 0 to Metadata.ExternalDataSources.Count() - 1 Do
+		Element = Metadata.ExternalDataSources.Get(i);
+		If AccessRight(""Use"", Element) Then
+			ExternalDataSourceRow = Table.Rows.Add();
+			ExternalDataSourceRow.Name = Element.Presentation();
+			ExternalDataSourceRow.Picture = PictureLib.ExternalDataSource;
+            For Each ExternalDataSourceTableMetadata In Element.Tables Do
+        		If AccessRight(""View"", ExternalDataSourceTableMetadata) Then
+                    ExternalDataSourceTableRow = ExternalDataSourceRow.Rows.Add();
+        			ExternalDataSourceTableRow.Name = ExternalDataSourceTableMetadata.Presentation();
+        			ExternalDataSourceTableRow.Form = ExternalDataSourceTableMetadata.FullName() + "".ListForm"";
+        			ExternalDataSourceTableRow.Picture = PictureLib.ExternalDataSourceTable;
+        			ExternalDataSourceTableRow.Type = ""ListForm"";
+                EndIf;
+			EndDo;
+			Try
+				For Each CubeMetadata In Element.Cubes Do
+	        		If AccessRight(""View"", CubeMetadata) Then
+	                    CubeRow = ExternalDataSourceRow.Rows.Add();
+	        			CubeRow.Name = CubeMetadata.Presentation();
+	        			CubeRow.Form = CubeMetadata.FullName() + "".ListForm"";
+	        			CubeRow.Picture = PictureLib.ExternalDataSourceCube;
+	        			CubeRow.Type = ""ListForm"";
+						
+						For Each DimTableMetadata In CubeMetadata.DimensionTables Do
+			        		If AccessRight(""View"", DimTableMetadata) Then
+			                    DimTableRow = CubeRow.Rows.Add();
+			        			DimTableRow.Name = DimTableMetadata.Presentation();
+			        			DimTableRow.Form = DimTableMetadata.FullName() + "".ListForm"";
+			        			DimTableRow.Picture = PictureLib.ExternalDataSourceCubeDimensionTable;
+			        			DimTableRow.Type = ""ListForm"";
+							EndIf;
+						EndDo;
+					EndIf;
+				EndDo;
+			Except
+			EndTry;
+        EndIf;
+	EndDo;
+    FillTree(Row, Table.Rows);
+    
+    Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Планы обмена'; SYS = 'AllFunctions.DataExchanges'"", ""ru"");
+	Row.Picture = PictureLib.ExchangePlan;
+	
+	For i = 0 to Metadata.ExchangePlans.Count() - 1 Do
+		Element = Metadata.ExchangePlans.Get(i);
+		If AccessRight(""View"", Element) Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = Element.Presentation();
+			SubString.Form = Element.FullName() + "".ListForm"";
+			SubString.Picture = PictureLib.ExchangePlan;
+			SubString.Type = ""ListForm"";
+		EndIf;
+	EndDo;
+	FillTree(Row, Table.Rows);
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////
+	Row = MetadataTree.GetItems().Add();
+	Row.Name = NStr(""ru = 'Стандартные'; SYS = 'AllFunctions.Standard'"", ""ru"");
+	Row.Picture = PictureLib.Form;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""ActiveUsers"", Metadata) Then
+		ActiveUsers = Undefined;
+		Try
+			ActiveUsers = New(""ExternalDataProcessorObject.StandardActiveUsers"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardActiveUsers.epf"", ""StandardActiveUsers"", false);
+				ActiveUsers = New(""ExternalDataProcessorObject.StandardActiveUsers"");
+			Except
+            	Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If ActiveUsers <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Активные пользователи'; SYS = 'AllFunctions.ActiveUsers'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardActiveUsers.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) 
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_6
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_7
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_8
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_9
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_10
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_11
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_12 Then
+		MobileAppBuilder = Undefined;
+		Try
+			MobileAppBuilder = New(""ExternalDataProcessorObject.StandardMobileAppBuilderServiceLoader"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardMobileAppBuilderServiceLoader.epf"", ""StandardMobileAppBuilderServiceLoader"", false);
+				MobileAppBuilder = New(""ExternalDataProcessorObject.StandardMobileAppBuilderServiceLoader"");
+			Except
+				Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If MobileAppBuilder <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Сервис сборки мобильных приложений'; SYS = 'AllFunctions.MobileAppBuilder'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardMobileAppBuilderServiceLoader.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""EventLog"", Metadata) Then
+		EventLog = Undefined;
+		Try
+			EventLog = New(""ExternalDataProcessorObject.StandardEventLog"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardEventLog.epf"", ""StandardEventLog"", false);
+				EventLog = New(""ExternalDataProcessorObject.StandardEventLog"");
+			Except
+            	Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If EventLog <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Журнал регистрации'; SYS = 'AllFunctions.RegJournal'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardEventLog.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		FullTextSearchCtrl = Undefined;
+		Try
+			FullTextSearchCtrl = New(""ExternalDataProcessorObject.StandardFullTextSearchManagement"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardFullTextSearchManagement.epf"", ""StandardFullTextSearchManagement"", false);
+				FullTextSearchCtrl = New(""ExternalDataProcessorObject.StandardFullTextSearchManagement"");
+			Except
+            	Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If FullTextSearchCtrl <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Управление полнотекстовым поиском'; SYS = 'AllFunctions.FullTextSearch'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardFullTextSearchManagement.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	ReferenceFind = Undefined;
+	Try
+		ReferenceFind = New(""ExternalDataProcessorObject.StandardFindByReference"");
+	Except
+		Try
+			ExternalDataProcessors.Connect(""v8res://mngbase/StandardFindByReference.epf"", ""StandardFindByReference"", false);
+			ReferenceFind = New(""ExternalDataProcessorObject.StandardFindByReference"");
+		Except
+			Message(ErrorDescription());
+		EndTry;
+	EndTry;
+	If ReferenceFind <> Undefined Then
+		SubString = Table.Rows.Add();	
+		SubString.Name = NStr(""ru = 'Поиск ссылок на объекты'; SYS = 'AllFunctions.FindObjectsReferences'"", ""ru"");
+		SubString.Form = ""ExternalDataProcessor.StandardFindByReference.Form"";
+		SubString.Picture = PictureLib.Form;
+		SubString.Type = ""ExternalForm"";
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""ExclusiveMode"", Metadata) Then
+		RemoveMarkedObjects = Undefined;
+		Try
+			RemoveMarkedObjects = New(""ExternalDataProcessorObject.StandardDeleteMarkedObjects"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardDeleteMarkedObjects.epf"", ""StandardDeleteMarkedObjects"", false);
+				RemoveMarkedObjects = New(""ExternalDataProcessorObject.StandardDeleteMarkedObjects"");
+			Except
+				Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If RemoveMarkedObjects <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Удаление помеченных объектов'; SYS = 'AllFunctions.DeleteMarkedObjects'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardDeleteMarkedObjects.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	DocumentsPosting = Undefined;
+	Try
+		DocumentsPosting = New(""ExternalDataProcessorObject.StandardDocumentsPosting"");
+	Except
+		Try
+			ExternalDataProcessors.Connect(""v8res://mngbase/StandardDocumentsPosting.epf"", ""StandardDocumentsPosting"", false);
+			DocumentsPosting = New(""ExternalDataProcessorObject.StandardDocumentsPosting"");
+		Except
+			Message(ErrorDescription());
+		EndTry;
+	EndTry;
+	If DocumentsPosting <> Undefined Then
+		SubString = Table.Rows.Add();	
+		SubString.Name = NStr(""ru = 'Проведение документов'; SYS = 'AllFunctions.DocumentPostiong'"", ""ru"");
+		SubString.Form = ""ExternalDataProcessor.StandardDocumentsPosting.Form"";
+		SubString.Picture = PictureLib.Form;
+		SubString.Type = ""ExternalForm"";
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If NeedControlTotals Then
+		TotalsManagement = Undefined;
+		Try
+			TotalsManagement = New(""ExternalDataProcessorObject.StandardTotalsManagement"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardTotalsManagement.epf"", ""StandardTotalsManagement"", false);
+				TotalsManagement = New(""ExternalDataProcessorObject.StandardTotalsManagement"");
+			Except
+				Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If TotalsManagement <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Управление итогами'; SYS = 'AllFunctions.TotalsManagement'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardTotalsManagement.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+    
+	/////////////////////////////////////////////////////////////////////////////////
+    // Работа со вншними источниками данных.
+    ExternalDataSourcesManagementObjects = Undefined;
+    Try
+        ExternalDataSourcesManagementObjects = New(""ExternalDataProcessorObject.StandardExternalDataSourcesManagement"");
+    Except
+        Try
+            ExternalDataProcessors.Connect(""v8res://mngbase/StandardExternalDataSourcesManagement.epf"", ""StandardExternalDataSourcesManagement"", false);
+            ExternalDataSourcesManagementObjects = New(""ExternalDataProcessorObject.StandardExternalDataSourcesManagement"");
+        Except
+            Message(ErrorDescription());
+        EndTry;
+    EndTry;
+    If ExternalDataSourcesManagementObjects <> Undefined Then
+        SubString = Table.Rows.Add();	
+        SubString.Name = NStr(""ru = 'Управление внешними источниками данных'; SYS = 'AllFunctions.StandardExternalDataSourcesManagement'"", ""ru"");
+        SubString.Form = ""ExternalDataProcessor.StandardExternalDataSourcesManagement.Form"";
+        SubString.Picture = PictureLib.Form;
+        SubString.Type = ""ExternalForm"";
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) 
+		Or AccessRight(""DataAdministration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_6
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_7
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_8
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_9
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_10
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_11
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_12
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_13 Then
+			
+			DatabaseCopiesManagementObjects = Undefined;
+		    Try
+		        DatabaseCopiesManagementObjects = New(""ExternalDataProcessorObject.StandardDataBaseCopiesManagement"");
+		    Except
+		        Try
+		            ExternalDataProcessors.Connect(""v8res://mngbase/StandardDataBaseCopiesManagement.epf"", ""StandardDataBaseCopiesManagement"", false);
+		            DatabaseCopiesManagementObjects = New(""ExternalDataProcessorObject.StandardDataBaseCopiesManagement"");
+		        Except
+		            Message(ErrorDescription());
+		        EndTry;
+		    EndTry;
+		    If DatabaseCopiesManagementObjects <> Undefined Then
+		        SubString = Table.Rows.Add();	
+		        SubString.Name = NStr(""ru = 'Управление копиями базы данных'; SYS = 'AllFunctions.StandardDataBaseCopiesManagement'"", ""ru"");
+		        SubString.Form = ""ExternalDataProcessor.StandardDataBaseCopiesManagement.Form"";
+		        SubString.Picture = PictureLib.Form;
+		        SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+  EndIf;
+  
+  /////////////////////////////////////////////////////////////////////////////////
+  If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+      And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+      And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+      And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5 Then
+      
+      AnalyticsSystemManagement = Undefined;
+      Try
+        AnalyticsSystemManagement = New(""ExternalDataProcessorObject.StandardAnalyticsSystemManagement"");
+      Except
+        Try
+          ExternalDataProcessors.Connect(""v8res://mngbase/StandardAnalyticsSystemManagement.epf"", ""StandardAnalyticsSystemManagement"", false);
+          AnalyticsSystemManagement = New(""ExternalDataProcessorObject.StandardAnalyticsSystemManagement"");
+        Except
+          Message(ErrorDescription());
+        EndTry;
+      EndTry;
+      If AnalyticsSystemManagement <> Undefined Then
+        SubString = Table.Rows.Add();	
+        SubString.Name = NStr(""ru = 'Управление системой аналитики'; SYS = 'AllFunctions.AnalyticsSystemManagement'"", ""ru"");
+        SubString.Form = ""ExternalDataProcessor.StandardAnalyticsSystemManagement.Form"";
+        SubString.Picture = PictureLib.Form;
+        SubString.Type = ""ExternalForm"";
+      EndIf;
+    EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""ConfigurationExtensionsAdministration"", Metadata) Then
+		ExtensionsManagement = Undefined;
+		Try
+			ExtensionsManagement = New(""ExternalDataProcessorObject.StandardConfigurationExtensionsManagement"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardConfigurationExtensionsManagement.epf"", ""StandardConfigurationExtensionsManagement"", false);
+				ExtensionsManagement = New(""ExternalDataProcessorObject.StandardConfigurationExtensionsManagement"");
+			Except
+				Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If ExtensionsManagement <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Управление расширениями конфигурации'; SYS = 'AllFunctions.ExtensionsManagement'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardConfigurationExtensionsManagement.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""CollaborationSystemInfoBaseRegistration"", Metadata) AND
+	   InfoBaseUsers.CurrentUser().Name <> """"
+	Then
+		ECSRegister = Undefined;
+		Try
+			ECSRegister = New(""ExternalDataProcessorObject.StandardCollaborationSystemManagement"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardCollaborationSystemManagement.epf"", ""StandardCollaborationSystemManagement"", false);
+				ECSRegister = New(""ExternalDataProcessorObject.StandardCollaborationSystemManagement"");
+			Except
+            	Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If ECSRegister <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Управление системой взаимодействия'; SYS = 'AllFunctions.ColaborationSystemManagement'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardCollaborationSystemManagement.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		ServersControl = Undefined;
+		Try
+			ServersControl = New(""ExternalDataProcessorObject.StandardServersManagement"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardServersManagement.epf"", ""StandardServersManagement"", false);
+				ServersControl = New(""ExternalDataProcessorObject.StandardServersManagement"");
+			Except
+            	Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If ServersControl <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Управление серверами'; SYS = 'AllFunctions.ServersControl'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardServersManagement.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+
+	/////////////////////////////////////////////////////////////////////////////////
+	If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_6
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_7
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_8
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_9
+		And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_10 Then
+			
+		StandardDataChangeHistory = Undefined;
+		Try
+			StandardDataChangeHistory = New(""ExternalDataProcessorObject.StandardDataChangeHistory"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardDataChangeHistory.epf"", ""StandardDataChangeHistory"", false);
+				StandardDataChangeHistory = New(""ExternalDataProcessorObject.StandardDataChangeHistory"");
+			Except
+	        	Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If StandardDataChangeHistory <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'История изменений данных'; SYS = 'AllFunctions.DataChangeHistory'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardDataChangeHistory.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+
+			
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""DataAdministration"", Metadata) Then	
+		ErrorProcessingSettings = Undefined;
+		Try
+			ErrorProcessingSettings = New(""ExternalDataProcessorObject.StandardErrorProcessingSettings"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardErrorProcessingSettings.epf"", ""StandardErrorProcessingSettings"", false);
+				ErrorProcessingSettings = New(""ExternalDataProcessorObject.StandardErrorProcessingSettings"");
+			Except
+            	Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If ErrorProcessingSettings <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Управление настройками обработки ошибок'; SYS = 'AllFunctions.StandardErrorProcessingSettings'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardErrorProcessingSettings.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If  AccessRight(""Administration"", Metadata) 
+		Or AccessRight(""DataAdministration"", Metadata) Then	
+		StandardIntegrationServicesManagment = Undefined;
+		Try
+			StandardIntegrationServicesManagment = New(""ExternalDataProcessorObject.StandardIntegrationServicesManagment"");
+		Except
+			Try
+				ExternalDataProcessors.Connect(""v8res://mngbase/StandardIntegrationServicesManagment.epf"", ""StandardIntegrationServicesManagment"", false);
+				StandardIntegrationServicesManagment = New(""ExternalDataProcessorObject.StandardIntegrationServicesManagment"");
+			Except
+            	Message(ErrorDescription());
+			EndTry;
+		EndTry;
+		If StandardIntegrationServicesManagment <> Undefined Then
+			SubString = Table.Rows.Add();	
+			SubString.Name = NStr(""ru = 'Управление сервисами интеграции'; SYS = 'AllFunctions.StandardIntegrationServicesManagment'"", ""ru"");
+			SubString.Form = ""ExternalDataProcessor.StandardIntegrationServicesManagment.Form"";
+			SubString.Picture = PictureLib.Form;
+			SubString.Type = ""ExternalForm"";
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5 Then
+			
+			UserList = Undefined;
+			Try
+				UserList = New(""ExternalDataProcessorObject.StandardUserList"");
+			Except
+				Try
+					ExternalDataProcessors.Connect(""v8res://mngbase/StandardUserList.epf"", ""StandardUserList"", false);
+					UserList = New(""ExternalDataProcessorObject.StandardUserList"");
+				Except
+	            	Message(ErrorDescription());
+				EndTry;
+			EndTry;
+			If UserList <> Undefined Then
+				SubString = Table.Rows.Add();	
+				SubString.Name = NStr(""ru = 'Пользователи'; SYS = 'AllFunctions.UserList'"", ""ru"");
+				SubString.Form = ""ExternalDataProcessor.StandardUserList.Form"";
+				SubString.Picture = PictureLib.Form;
+				SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_6
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_7
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_8 Then
+			
+			InfobaseParameters = Undefined;
+			Try
+				InfobaseParameters = New(""ExternalDataProcessorObject.StandardInfobaseParameters"");
+			Except
+				Try
+					ExternalDataProcessors.Connect(""v8res://mngbase/StandardInfobaseParameters.epf"", ""StandardInfobaseParameters"", false);
+					InfobaseParameters = New(""ExternalDataProcessorObject.StandardInfobaseParameters"");
+				Except
+	            	Message(ErrorDescription());
+				EndTry;
+			EndTry;
+			If InfobaseParameters <> Undefined Then
+				SubString = Table.Rows.Add();	
+				SubString.Name = NStr(""ru = 'Параметры информационной базы'; SYS = 'AllFunctions.InfobaseParameters'"", ""ru"");
+				SubString.Form = ""ExternalDataProcessor.StandardInfobaseParameters.Form"";
+				SubString.Picture = PictureLib.Form;
+				SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+	EndIf;
+
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5 Then
+			
+			AdditionalAuthenticationSettings = Undefined;
+			Try
+				AdditionalAuthenticationSettings = New(""ExternalDataProcessorObject.StandardAdditionalAuthenticationSettings"");
+			Except
+				Try
+					ExternalDataProcessors.Connect(""v8res://mngbase/StandardAdditionalAuthenticationSettings.epf"", ""StandardAdditionalAuthenticationSettings"", false);
+					AdditionalAuthenticationSettings = New(""ExternalDataProcessorObject.StandardAdditionalAuthenticationSettings"");
+				Except
+	            	Message(ErrorDescription());
+				EndTry;
+			EndTry;
+			If AdditionalAuthenticationSettings <> Undefined Then
+				SubString = Table.Rows.Add();	
+				SubString.Name = NStr(""ru = 'Дополнительные настройки аутентификации'; SYS = 'AllFunctions.AdditionalAuthenticationSettings'"", ""ru"");
+				SubString.Form = ""ExternalDataProcessor.StandardAdditionalAuthenticationSettings.Form"";
+				SubString.Picture = PictureLib.Form;
+				SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5 Then
+			
+			AuthenticationLocks = Undefined;
+			Try
+				AuthenticationLocks = New(""ExternalDataProcessorObject.StandardAuthenticationLocks"");
+			Except
+				Try
+					ExternalDataProcessors.Connect(""v8res://mngbase/StandardAuthenticationLocks.epf"", ""StandardAuthenticationLocks"", false);
+					AuthenticationLocks = New(""ExternalDataProcessorObject.StandardAuthenticationLocks"");
+				Except
+	            	Message(ErrorDescription());
+				EndTry;
+			EndTry;
+			If AuthenticationLocks <> Undefined Then
+				SubString = Table.Rows.Add();	
+				SubString.Name = NStr(""ru = 'Блокировка аутентификации'; SYS = 'AllFunctions.AuthenticationLocks'"", ""ru"");
+				SubString.Form = ""ExternalDataProcessor.StandardAuthenticationLocks.Form"";
+				SubString.Picture = PictureLib.Form;
+				SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5 Then
+			
+			ConfigurationLicense = Undefined;
+			Try
+				ConfigurationLicense = New(""ExternalDataProcessorObject.StandardConfigurationLicense"");
+			Except
+				Try
+					ExternalDataProcessors.Connect(""v8res://mngbase/StandardConfigurationLicense.epf"", ""StandardConfigurationLicense"", false);
+					ConfigurationLicense = New(""ExternalDataProcessorObject.StandardConfigurationLicense"");
+				Except
+	            	Message(ErrorDescription());
+				EndTry;
+			EndTry;
+			If ConfigurationLicense <> Undefined Then
+				SubString = Table.Rows.Add();	
+				SubString.Name = NStr(""ru = 'Лицензирование конфигураций'; SYS = 'AllFunctions.ConfigurationLicense'"", ""ru"");
+				SubString.Form = ""ExternalDataProcessor.StandardConfigurationLicense.Form"";
+				SubString.Picture = PictureLib.Form;
+				SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5 Then
+			
+			EventLogOptions = Undefined;
+			Try
+				EventLogOptions = New(""ExternalDataProcessorObject.StandardEventLogSettings"");
+			Except
+				Try
+					ExternalDataProcessors.Connect(""v8res://mngbase/StandardEventLogSettings.epf"", ""StandardEventLogSettings"", false);
+					EventLogOptions = New(""ExternalDataProcessorObject.StandardEventLogSettings"");
+				Except
+	            	Message(ErrorDescription());
+				EndTry;
+			EndTry;
+			If EventLogOptions <> Undefined Then
+				SubString = Table.Rows.Add();	
+				SubString.Name = NStr(""ru = 'Настройка журнала регистрации'; SYS = 'AllFunctions.EventLogOptions'"", ""ru"");
+				SubString.Form = ""ExternalDataProcessor.StandardEventLogSettings.Form"";
+				SubString.Picture = PictureLib.Form;
+				SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5 Then
+			
+			LicenseAcquisition = Undefined;
+			Try
+				LicenseAcquisition = New(""ExternalDataProcessorObject.StandardLicenseAcquisition"");
+			Except
+				Try
+					ExternalDataProcessors.Connect(""v8res://mngbase/StandardLicenseAcquisition.epf"", ""StandardLicenseAcquisition"", false);
+					LicenseAcquisition = New(""ExternalDataProcessorObject.StandardLicenseAcquisition"");
+				Except
+	            	Message(ErrorDescription());
+				EndTry;
+			EndTry;
+			If LicenseAcquisition <> Undefined Then
+				SubString = Table.Rows.Add();	
+				SubString.Name = NStr(""ru = 'Получение лицензии'; SYS = 'AllFunctions.LicenseAcquisition'"", ""ru"");
+				SubString.Form = ""ExternalDataProcessor.StandardLicenseAcquisition.Form"";
+				SubString.Picture = PictureLib.Form;
+				SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+	EndIf;
+	
+	/////////////////////////////////////////////////////////////////////////////////
+	If AccessRight(""Administration"", Metadata) Then
+		If Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_13
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_2_16
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_1
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_2
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_3
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_4
+			And Metadata.CompatibilityMode <> Metadata.ObjectProperties.CompatibilityMode.Version8_3_5 Then
+			
+			RegionalInfobaseSettings = Undefined;
+			Try
+				RegionalInfobaseSettings = New(""ExternalDataProcessorObject.StandardInfobaseRegionalSettings"");
+			Except
+				Try
+					ExternalDataProcessors.Connect(""v8res://mngbase/StandardInfobaseRegionalSettings.epf"", ""StandardInfobaseRegionalSettings"", false);
+					RegionalInfobaseSettings = New(""ExternalDataProcessorObject.StandardInfobaseRegionalSettings"");
+				Except
+	            	Message(ErrorDescription());
+				EndTry;
+			EndTry;
+			If RegionalInfobaseSettings <> Undefined Then
+				SubString = Table.Rows.Add();	
+				SubString.Name = NStr(""ru = 'Региональные установки информационной базы'; SYS = 'AllFunctions.RegionalInfobaseSettings'"", ""ru"");
+				SubString.Form = ""ExternalDataProcessor.StandardInfobaseRegionalSettings.Form"";
+				SubString.Picture = PictureLib.Form;
+				SubString.Type = ""ExternalForm"";
+			EndIf;
+		EndIf;
+	EndIf;
+	
+	FillTree(Row, Table.Rows);
+EndProcedure
+
+&AtClient
+Procedure CommandOpen()
+	If CanOpenForm() Then
+ 		SaveFormName();
+		Close(True);
+	EndIf;
+EndProcedure
+
+&AtClient
+Procedure CommandCloseCancel()
+	Close(False);
+EndProcedure
+
+&AtClient
+Procedure TableSelection(Item, SelectedRow, Field, StandardProcessing)
+	If CanOpenForm() Then
+		StandardProcessing = False;
+		SaveFormName();
+		Close(True);		
+	EndIf;
+EndProcedure
+
+&AtClient
+Procedure SaveFormName()
+	ThisForm.SelectedForm = Items.Table.CurrentData.Form;
+EndProcedure
+
+&AtClient
+Function CanOpenForm()
+	If Items.Table.CurrentData <> Undefined and Items.Table.CurrentData.Form <> """" Then
+		return true;
+	EndIf;	
+	return false;
+EndFunction
+",
+{4,2,
+{9,
+{1},0,"MetadataTree",
+{1,1,
+{"#","Metadata tree"}
+},
+{"Pattern",
+{"#",e603c0f2-92fb-4d47-8f38-a44a381cf235}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,5,
+{5,1,0,"Name",
+{1,1,
+{"#","Имя"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,2,0,"Form",
+{1,1,
+{"#","Form"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,3,0,"Picture",
+{1,0},
+{"Pattern",
+{"#",e6f51714-91cb-4dce-94fe-90ae3e3e1ad1}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,4,0,"Type",
+{1,1,
+{"#","Type"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{5,5,0,"PictureIndex",
+{1,1,
+{"#","Picture index"}
+},
+{"Pattern",
+{"N",10,0,0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},0},
+{0,0},
+{0,0}
+},
+{9,
+{2},0,"SelectedForm",
+{1,1,
+{"#","Selected form"}
+},
+{"Pattern",
+{"S"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0},
+{0,0},0,0,0,0,
+{0,0},
+{0,0}
+},0,0,
+{#base64:77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxTZXR0
+aW5ncyB4bWxucz0iaHR0cDovL3Y4LjFjLnJ1LzguMS9kYXRhLWNvbXBvc2l0aW9u
+LXN5c3RlbS9zZXR0aW5ncyIgeG1sbnM6ZGNzY29yPSJodHRwOi8vdjguMWMucnUv
+OC4xL2RhdGEtY29tcG9zaXRpb24tc3lzdGVtL2NvcmUiIHhtbG5zOnN0eWxlPSJo
+dHRwOi8vdjguMWMucnUvOC4xL2RhdGEvdWkvc3R5bGUiIHhtbG5zOnN5cz0iaHR0
+cDovL3Y4LjFjLnJ1LzguMS9kYXRhL3VpL2ZvbnRzL3N5c3RlbSIgeG1sbnM6djg9
+Imh0dHA6Ly92OC4xYy5ydS84LjEvZGF0YS9jb3JlIiB4bWxuczp2OHVpPSJodHRw
+Oi8vdjguMWMucnUvOC4xL2RhdGEvdWkiIHhtbG5zOndlYj0iaHR0cDovL3Y4LjFj
+LnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93ZWIiIHhtbG5zOndpbj0iaHR0cDovL3Y4
+LjFjLnJ1LzguMS9kYXRhL3VpL2NvbG9ycy93aW5kb3dzIiB4bWxuczp4cz0iaHR0
+cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDov
+L3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiLz4=}
+},
+{0,0},
+{0,1,
+{9,
+{1,409b9a53-7f7e-4178-86c1-33176c7c7a7a},"CommandOpen",
+{1,1,
+{"#","Открыть"}
+},
+{1,1,
+{"#","Открыть форму"}
+},
+{0,
+{0,
+{"B",1},0}
+},
+{0,0,0},
+{4,1,
+{-7},"",-1,-1,1,0,""},"CommandOpen",3,0,0,
+{0,0},1,0,1,0,0,1}
+},
+{0,0},
+{0,0},0,0}
