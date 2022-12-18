@@ -1373,6 +1373,7 @@
 			<DataProcessor>УдалениеПомеченныхОбъектов</DataProcessor>
 			<DataProcessor>ПанельАдминистрированияNexus</DataProcessor>
 			<DataProcessor>МониторИнформационныхБаз</DataProcessor>
+			<DataProcessor>ОбработчикиСтандартныхСценариев</DataProcessor>
 			<DataProcessor>СДРНавигаторУпр</DataProcessor>
 			<DataProcessor>СДРОбъектУпр</DataProcessor>
 			<DataProcessor>СДРКонсольЗапросовХ</DataProcessor>

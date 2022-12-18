@@ -28,7 +28,6 @@
 				<ExcludedCommand>MoveDown</ExcludedCommand>
 				<ExcludedCommand>MoveUp</ExcludedCommand>
 				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
-				<ExcludedCommand>SearchHistory</ExcludedCommand>
 				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 			</CommandSet>
 			<RowFilter xsi:nil="true"/>

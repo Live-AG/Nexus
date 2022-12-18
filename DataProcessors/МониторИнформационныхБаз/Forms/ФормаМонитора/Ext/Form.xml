@@ -489,6 +489,9 @@
 														<ExtendedTooltip name="ТаблицаЭлементовКластераУправлениеПоискомРасширеннаяПодсказка" id="10"/>
 													</SearchControlAddition>
 													<Events>
+														<Event name="DragCheck">ТаблицаЭлементовКластераПроверкаПеретаскивания</Event>
+														<Event name="Drag">ТаблицаЭлементовКластераПеретаскивание</Event>
+														<Event name="DragEnd">ТаблицаЭлементовКластераОкончаниеПеретаскивания</Event>
 														<Event name="OnActivateCell">ТаблицаЭлементовКластераПриАктивизацииЯчейки</Event>
 													</Events>
 													<ChildItems>

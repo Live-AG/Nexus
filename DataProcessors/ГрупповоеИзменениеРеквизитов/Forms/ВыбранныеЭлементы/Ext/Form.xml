@@ -214,7 +214,6 @@
 						<ExcludedCommand>ListSettings</ExcludedCommand>
 						<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 						<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-						<ExcludedCommand>SearchHistory</ExcludedCommand>
 					</CommandSet>
 					<SearchStringLocation>Top</SearchStringLocation>
 					<SearchControlLocation>None</SearchControlLocation>
