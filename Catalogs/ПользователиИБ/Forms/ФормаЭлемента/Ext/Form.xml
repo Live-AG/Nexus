@@ -578,7 +578,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Редактировать</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>РедактироватьРеквизиты</Action>
 			<Representation>Picture</Representation>
