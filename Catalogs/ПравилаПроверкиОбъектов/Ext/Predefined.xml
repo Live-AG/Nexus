@@ -21,9 +21,21 @@
 		<IsFolder>true</IsFolder>
 		<ChildItems>
 			<Item id="6d540d89-9565-4232-bc31-5056922fee42">
-				<Name>ДоступностьКластера1С</Name>
+				<Name>ДоступностьСервераАдминистрированияКластера</Name>
 				<Code/>
-				<Description>Доступность кластера 1С</Description>
+				<Description>Доступность сервера администрирования кластера</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="1c99c1c7-029d-4fe4-be2e-1e711928d01f">
+				<Name>АвторизацияСервераАдминистрирования</Name>
+				<Code/>
+				<Description>Авторизация сервера администрирования</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="d41f3860-af86-4fac-a9b1-c3bade3ae372">
+				<Name>АвторизацияКластера1С</Name>
+				<Code/>
+				<Description>Авторизация кластера 1С</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
 		</ChildItems>

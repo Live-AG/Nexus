@@ -934,6 +934,7 @@
 			<CommonModule>РаботаСБуферомОбменаКлиентСервер</CommonModule>
 			<CommonModule>РаботаСоСкриптамиСервер</CommonModule>
 			<CommonModule>РаботаСоСкриптамиКлиент</CommonModule>
+			<CommonModule>МониторингСостоянияОбъектов</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>
@@ -1378,6 +1379,7 @@
 			<DataProcessor>СДРОбъектУпр</DataProcessor>
 			<DataProcessor>СДРКонсольЗапросовХ</DataProcessor>
 			<DataProcessor>ИмпортИзActiveDirectory</DataProcessor>
+			<DataProcessor>УправлениеСерверами</DataProcessor>
 			<InformationRegister>СоответствиеПользователейИБ</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
