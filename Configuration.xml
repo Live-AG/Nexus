@@ -934,8 +934,12 @@
 			<CommonModule>РаботаСБуферомОбменаКлиентСервер</CommonModule>
 			<CommonModule>РаботаСоСкриптамиСервер</CommonModule>
 			<CommonModule>РаботаСоСкриптамиКлиент</CommonModule>
+<<<<<<< HEAD
 			<CommonModule>ПроверкаСостоянияОбъектов</CommonModule>
 			<CommonModule>РаботаСДаннымиАвторизации</CommonModule>
+=======
+			<CommonModule>МониторингСостоянияОбъектов</CommonModule>
+>>>>>>> f3f19a63ed53bdfa614d9191f48ffaf36859af97
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<XDTOPackage>ApplicationExtensionsManifest_1_0_0_1</XDTOPackage>
 			<XDTOPackage>ApplicationExtensionsPermissions_1_0_0_1</XDTOPackage>

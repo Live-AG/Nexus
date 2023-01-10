@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
 	<DataProcessor uuid="e753ad00-469c-4cb1-8879-8addc4c42fd7">
@@ -58,4 +59,66 @@
 			<Template>DocumentationLinkTemplate</Template>
 		</ChildObjects>
 	</DataProcessor>
+=======
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<DataProcessor uuid="e753ad00-469c-4cb1-8879-8addc4c42fd7">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.УправлениеСерверами" category="Object">
+				<xr:TypeId>4b6eaf2b-7574-4bbb-96ac-358d50d9514f</xr:TypeId>
+				<xr:ValueId>39210a0f-13bc-45c5-9ef1-1402375b35fa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.УправлениеСерверами" category="Manager">
+				<xr:TypeId>37b0819a-760c-4bc7-bfc1-fddc3e32c2e5</xr:TypeId>
+				<xr:ValueId>5a94c15f-a7aa-499b-a1ba-00d01b92e71e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>УправлениеСерверами</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Управление серверами</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.УправлениеСерверами.Form.MainForm</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>MainForm</Form>
+			<Form>ResourceLimitForm</Form>
+			<Form>SecurityProfileForm</Form>
+			<Form>AllowedInternetResourceForm</Form>
+			<Form>AllowedApplicationForm</Form>
+			<Form>AllowedModuleForm</Form>
+			<Form>AllowedExternalComponentForm</Form>
+			<Form>AllowedComObjectForm</Form>
+			<Form>AllowedDirectoryForm</Form>
+			<Form>InfobaseEditForm</Form>
+			<Form>AssignmentRuleForm</Form>
+			<Form>AuthenticateCentralServerForm</Form>
+			<Form>CounterForm</Form>
+			<Form>ClusterForm</Form>
+			<Form>AuthenticationForm</Form>
+			<Form>InfobaseAuthenticationForm</Form>
+			<Form>SelectDeleteInfobaseModeForm</Form>
+			<Form>SaveSettingsForm</Form>
+			<Form>LoadSettingsForm</Form>
+			<Form>WorkProcessForm</Form>
+			<Form>ClusterManagerForm</Form>
+			<Form>AdministratorForm</Form>
+			<Form>WorkServerForm</Form>
+			<Form>CreateInfobaseForm</Form>
+			<Form>SaveSettingsFormToStorage</Form>
+			<Template>SessionDataCompositionSchema</Template>
+			<Template>CounterValueDataCompositionSchema</Template>
+			<Template>DocumentationLinkTemplate</Template>
+		</ChildObjects>
+	</DataProcessor>
+>>>>>>> f3f19a63ed53bdfa614d9191f48ffaf36859af97
 </MetaDataObject>
