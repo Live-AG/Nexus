@@ -1,0 +1,4752 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление серверами</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">OnOpen</Event>
+		<Event name="BeforeClose">BeforeClose</Event>
+		<Event name="OnCreateAtServer">OnCreateAtServer</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="MainGroup" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Main group</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Main group</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="MainGroupРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<UsualGroup name="TreeSettingsGroup" id="638">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Tree settings group</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Tree settings group</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>Use</ThroughAlign>
+					<ExtendedTooltip name="TreeSettingsGroupРасширеннаяПодсказка" id="639"/>
+					<ChildItems>
+						<UsualGroup name="TreeClusterCommandGroup" id="636">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Tree cluster command group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Tree cluster command group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="TreeClusterCommandGroupРасширеннаяПодсказка" id="637"/>
+							<ChildItems>
+								<Button name="ItemUpdateClusterTreeInfo" id="39">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.UpdateClusterTreeInfo</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Refresh</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ItemUpdateClusterTreeInfoРасширеннаяПодсказка" id="40"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ClusterTree" id="1">
+							<Representation>Tree</Representation>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<SelectionMode>SingleRow</SelectionMode>
+							<RowSelectionMode>Row</RowSelectionMode>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ClusterTree</DataPath>
+							<RowPictureDataPath>ClusterTree.PictureIndex</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Abs>RowsPicture.png</xr:Abs>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
+							<CommandSet>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="ClusterTreeКонтекстноеМеню" id="2">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ClusterTreeContextMenuAuthentication" id="392">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ClusterAuthentication</CommandName>
+										<ExtendedTooltip name="ClusterTreeContextMenuAuthenticationРасширеннаяПодсказка" id="393"/>
+									</Button>
+									<Button name="ClusterTreeContextMenuPartiallyApplyAssignmentRules" id="505">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.PartiallyApplyAssignmentRules</CommandName>
+										<ExtendedTooltip name="ClusterTreeContextMenuPartiallyApplyAssignmentRulesРасширеннаяПодсказка" id="506"/>
+									</Button>
+									<Button name="ClusterTreeContextMenuFullyApplyAssignmentRules" id="507">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.FullyApplyAssignmentRules</CommandName>
+										<ExtendedTooltip name="ClusterTreeContextMenuFullyApplyAssignmentRulesРасширеннаяПодсказка" id="508"/>
+									</Button>
+									<Button name="ClusterTreeContextMenuAdd" id="1015">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ClusterTree.StandardCommand.Add</CommandName>
+										<ExtendedTooltip name="ClusterTreeContextMenuAddРасширеннаяПодсказка" id="1016"/>
+									</Button>
+									<Button name="ClusterTreeContextMenuEdit" id="1017">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ClusterTree.StandardCommand.Change</CommandName>
+										<ExtendedTooltip name="ClusterTreeContextMenuEditРасширеннаяПодсказка" id="1018"/>
+									</Button>
+									<Button name="ClusterTreeContextMenuDelete" id="1019">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Item.ClusterTree.StandardCommand.Delete</CommandName>
+										<ExtendedTooltip name="ClusterTreeContextMenuDeleteРасширеннаяПодсказка" id="1020"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ClusterTreeКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ItemClusterTreeInsert" id="630">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ClusterTree.StandardCommand.Add</CommandName>
+										<TextColor>style:ButtonTextColor</TextColor>
+										<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ItemClusterTreeInsertРасширеннаяПодсказка" id="631"/>
+									</Button>
+									<Button name="ItemClusterTreeEdit" id="632">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<Enabled>false</Enabled>
+										<CommandName>Form.Item.ClusterTree.StandardCommand.Change</CommandName>
+										<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ItemClusterTreeEditРасширеннаяПодсказка" id="633"/>
+									</Button>
+									<Button name="ItemClusterTreeDelete" id="634">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<Enabled>false</Enabled>
+										<CommandName>Form.Item.ClusterTree.StandardCommand.Delete</CommandName>
+										<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ItemClusterTreeDeleteРасширеннаяПодсказка" id="635"/>
+									</Button>
+									<Button name="ItemSaveSettingsInFile" id="642">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.SaveSettingsInFile</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.SaveReportSettings</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ItemSaveSettingsInFileРасширеннаяПодсказка" id="643"/>
+									</Button>
+									<Button name="ItemLoadSettingsFromFile" id="644">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.LoadSettingsFromFile</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.LoadReportSettings</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ItemLoadSettingsFromFileРасширеннаяПодсказка" id="645"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ClusterTreeРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ClusterTreeСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ClusterTree</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ClusterTreeСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ClusterTreeСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ClusterTreeСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ClusterTree</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ClusterTreeСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ClusterTreeСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ClusterTreeУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ClusterTree</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ClusterTreeУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ClusterTreeУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ClusterTreeSelection</Event>
+								<Event name="BeforeAddRow">ClusterTreeBeforeAddRow</Event>
+								<Event name="BeforeDeleteRow">ClusterTreeBeforeDeleteRow</Event>
+								<Event name="OnActivateRow">ClusterTreeOnActivateRow</Event>
+								<Event name="BeforeExpand">ClusterTreeBeforeExpand</Event>
+								<Event name="BeforeRowChange">ClusterTreeBeforeRowChange</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ClusterTreePictureIndex" id="976">
+									<DataPath>ClusterTree.PictureIndex</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ClusterTreePictureIndexКонтекстноеМеню" id="977"/>
+									<ExtendedTooltip name="ClusterTreePictureIndexРасширеннаяПодсказка" id="978"/>
+								</InputField>
+								<InputField name="ClusterTreeName" id="979">
+									<DataPath>ClusterTree.Name</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ClusterTreeNameКонтекстноеМеню" id="980"/>
+									<ExtendedTooltip name="ClusterTreeNameРасширеннаяПодсказка" id="981"/>
+								</InputField>
+								<CheckBoxField name="ClusterTreeItemGroup" id="982">
+									<DataPath>ClusterTree.ItemGroup</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ClusterTreeItemGroupКонтекстноеМеню" id="983"/>
+									<ExtendedTooltip name="ClusterTreeItemGroupРасширеннаяПодсказка" id="984"/>
+								</CheckBoxField>
+								<InputField name="ClusterTreeAdministrationItemType" id="985">
+									<DataPath>ClusterTree.AdministrationItemType</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ClusterTreeAdministrationItemTypeКонтекстноеМеню" id="986"/>
+									<ExtendedTooltip name="ClusterTreeAdministrationItemTypeРасширеннаяПодсказка" id="987"/>
+								</InputField>
+								<InputField name="ClusterTreeLogin" id="988">
+									<DataPath>ClusterTree.Login</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ClusterTreeLoginКонтекстноеМеню" id="989"/>
+									<ExtendedTooltip name="ClusterTreeLoginРасширеннаяПодсказка" id="990"/>
+								</InputField>
+								<InputField name="ClusterTreePassword" id="991">
+									<DataPath>ClusterTree.Password</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ClusterTreePasswordКонтекстноеМеню" id="992"/>
+									<ExtendedTooltip name="ClusterTreePasswordРасширеннаяПодсказка" id="993"/>
+								</InputField>
+								<CheckBoxField name="ClusterTreeAuthenticationCompleted" id="994">
+									<DataPath>ClusterTree.AuthenticationCompleted</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ClusterTreeAuthenticationCompletedКонтекстноеМеню" id="995"/>
+									<ExtendedTooltip name="ClusterTreeAuthenticationCompletedРасширеннаяПодсказка" id="996"/>
+								</CheckBoxField>
+								<LabelField name="ClusterTreeItemUUID" id="997">
+									<DataPath>ClusterTree.ItemUUID</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ClusterTreeItemUUIDКонтекстноеМеню" id="998"/>
+									<ExtendedTooltip name="ClusterTreeItemUUIDРасширеннаяПодсказка" id="999"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<Pages name="TreeItemTablesGroup" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Tree item tables group</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Tree item tables group</v8:content>
+						</v8:item>
+					</ToolTip>
+					<PagesRepresentation>None</PagesRepresentation>
+					<ExtendedTooltip name="TreeItemTablesGroupРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<Page name="EmptyPageGroup" id="487">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Empty page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Empty page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="EmptyPageGroupРасширеннаяПодсказка" id="488"/>
+							<ChildItems>
+								<Table name="ItemEmptyTable" id="489">
+									<Representation>List</Representation>
+									<Enabled>false</Enabled>
+									<Header>false</Header>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>EmptyTable</DataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>CancelSearch</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemEmptyTableКонтекстноеМеню" id="490"/>
+									<AutoCommandBar name="ItemEmptyTableКоманднаяПанель" id="491">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ItemEmptyTableРасширеннаяПодсказка" id="492"/>
+									<SearchStringAddition name="ItemEmptyTableСтрокаПоиска" id="493">
+										<AdditionSource>
+											<Item>ItemEmptyTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemEmptyTableСтрокаПоискаКонтекстноеМеню" id="494"/>
+										<ExtendedTooltip name="ItemEmptyTableСтрокаПоискаРасширеннаяПодсказка" id="495"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemEmptyTableСостояниеПросмотра" id="496">
+										<AdditionSource>
+											<Item>ItemEmptyTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemEmptyTableСостояниеПросмотраКонтекстноеМеню" id="497"/>
+										<ExtendedTooltip name="ItemEmptyTableСостояниеПросмотраРасширеннаяПодсказка" id="498"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemEmptyTableУправлениеПоиском" id="499">
+										<AdditionSource>
+											<Item>ItemEmptyTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemEmptyTableУправлениеПоискомКонтекстноеМеню" id="500"/>
+										<ExtendedTooltip name="ItemEmptyTableУправлениеПоискомРасширеннаяПодсказка" id="501"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ItemEmptyTableNullItem" id="502">
+											<DataPath>EmptyTable.NullItem</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemEmptyTableNullItemКонтекстноеМеню" id="503"/>
+											<ExtendedTooltip name="ItemEmptyTableNullItemРасширеннаяПодсказка" id="504"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ConnectionPageGroup" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Connection page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Connection page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ConnectionPageGroupРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<Table name="ItemConnectionsTable" id="47">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ConnectionsTable</DataPath>
+									<RowPictureDataPath>ConnectionsTable.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemConnectionsTableКонтекстноеМеню" id="48">
+										<ChildItems>
+											<Button name="ItemConnectionTableUpdateTableConnections" id="383">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.UpdateTableConnections</CommandName>
+												<ExtendedTooltip name="ItemConnectionTableUpdateTableConnectionsРасширеннаяПодсказка" id="384"/>
+											</Button>
+											<Button name="ConnectionTableDeleteConnection" id="387">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.DeleteConnection</CommandName>
+												<ExtendedTooltip name="ConnectionTableDeleteConnectionРасширеннаяПодсказка" id="388"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ItemConnectionsTableКоманднаяПанель" id="49"/>
+									<ExtendedTooltip name="ItemConnectionsTableРасширеннаяПодсказка" id="50"/>
+									<SearchStringAddition name="ItemConnectionsTableСтрокаПоиска" id="51">
+										<AdditionSource>
+											<Item>ItemConnectionsTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemConnectionsTableСтрокаПоискаКонтекстноеМеню" id="52"/>
+										<ExtendedTooltip name="ItemConnectionsTableСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemConnectionsTableСостояниеПросмотра" id="54">
+										<AdditionSource>
+											<Item>ItemConnectionsTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemConnectionsTableСостояниеПросмотраКонтекстноеМеню" id="55"/>
+										<ExtendedTooltip name="ItemConnectionsTableСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemConnectionsTableУправлениеПоиском" id="57">
+										<AdditionSource>
+											<Item>ItemConnectionsTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemConnectionsTableУправлениеПоискомКонтекстноеМеню" id="58"/>
+										<ExtendedTooltip name="ItemConnectionsTableУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ItemConnectionsTableBeforeAddRow</Event>
+										<Event name="BeforeDeleteRow">ItemConnectionsTableBeforeDeleteRow</Event>
+										<Event name="BeforeRowChange">ItemConnectionsTableBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ItemConnectionsTableInfobase" id="652">
+											<DataPath>ConnectionsTable.Infobase</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableInfobaseКонтекстноеМеню" id="653"/>
+											<ExtendedTooltip name="ItemConnectionsTableInfobaseРасширеннаяПодсказка" id="654"/>
+										</InputField>
+										<LabelField name="ItemConnectionsTableInfobaseID" id="679">
+											<DataPath>ConnectionsTable.InfobaseID</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableInfobaseIDКонтекстноеМеню" id="680"/>
+											<ExtendedTooltip name="ItemConnectionsTableInfobaseIDРасширеннаяПодсказка" id="681"/>
+										</LabelField>
+										<InputField name="ItemConnectionsTableConnection" id="655">
+											<DataPath>ConnectionsTable.Connection</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableConnectionКонтекстноеМеню" id="656"/>
+											<ExtendedTooltip name="ItemConnectionsTableConnectionРасширеннаяПодсказка" id="657"/>
+										</InputField>
+										<LabelField name="ItemConnectionsTableConnectionID" id="676">
+											<DataPath>ConnectionsTable.ConnectionID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableConnectionIDКонтекстноеМеню" id="677"/>
+											<ExtendedTooltip name="ItemConnectionsTableConnectionIDРасширеннаяПодсказка" id="678"/>
+										</LabelField>
+										<InputField name="ItemConnectionsTableSession" id="658">
+											<DataPath>ConnectionsTable.Session</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableSessionКонтекстноеМеню" id="659"/>
+											<ExtendedTooltip name="ItemConnectionsTableSessionРасширеннаяПодсказка" id="660"/>
+										</InputField>
+										<InputField name="ItemConnectionsTableComputer" id="670">
+											<DataPath>ConnectionsTable.Computer</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableComputerКонтекстноеМеню" id="671"/>
+											<ExtendedTooltip name="ItemConnectionsTableComputerРасширеннаяПодсказка" id="672"/>
+										</InputField>
+										<InputField name="ItemConnectionsTableApplication" id="667">
+											<DataPath>ConnectionsTable.Application</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableApplicationКонтекстноеМеню" id="668"/>
+											<ExtendedTooltip name="ItemConnectionsTableApplicationРасширеннаяПодсказка" id="669"/>
+										</InputField>
+										<InputField name="ItemConnectionsTableStartDate" id="661">
+											<DataPath>ConnectionsTable.StartDate</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableStartDateКонтекстноеМеню" id="662"/>
+											<ExtendedTooltip name="ItemConnectionsTableStartDateРасширеннаяПодсказка" id="663"/>
+										</InputField>
+										<InputField name="ItemConnectionsTableProcessID" id="664">
+											<DataPath>ConnectionsTable.ProcessID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTableProcessIDКонтекстноеМеню" id="665"/>
+											<ExtendedTooltip name="ItemConnectionsTableProcessIDРасширеннаяПодсказка" id="666"/>
+										</InputField>
+										<InputField name="ItemConnectionsTablePictureIndex" id="673">
+											<DataPath>ConnectionsTable.PictureIndex</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemConnectionsTablePictureIndexКонтекстноеМеню" id="674"/>
+											<ExtendedTooltip name="ItemConnectionsTablePictureIndexРасширеннаяПодсказка" id="675"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="SessionPageGroup" id="81">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Session page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Session page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="SessionPageGroupРасширеннаяПодсказка" id="82"/>
+							<ChildItems>
+								<UsualGroup name="SessionSettingsGroup" id="619">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Session settings group</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Session settings group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="SessionSettingsGroupРасширеннаяПодсказка" id="620"/>
+									<ChildItems>
+										<InputField name="ItemSessionSettingsLinkerFilter" id="621">
+											<DataPath>SessionSettingsLinker.Settings.Filter</DataPath>
+											<ContextMenu name="ItemSessionSettingsLinkerFilterКонтекстноеМеню" id="622"/>
+											<ExtendedTooltip name="ItemSessionSettingsLinkerFilterРасширеннаяПодсказка" id="623"/>
+											<Events>
+												<Event name="OnChange">ItemSessionSettingsLinkerFilterOnChange</Event>
+											</Events>
+										</InputField>
+										<InputField name="ItemSessionSettingsLinkerOrder" id="624">
+											<DataPath>SessionSettingsLinker.Settings.Order</DataPath>
+											<ContextMenu name="ItemSessionSettingsLinkerOrderКонтекстноеМеню" id="625"/>
+											<ExtendedTooltip name="ItemSessionSettingsLinkerOrderРасширеннаяПодсказка" id="626"/>
+											<Events>
+												<Event name="OnChange">ItemSessionSettingsLinkerOrderOnChange</Event>
+											</Events>
+										</InputField>
+										<InputField name="ItemSessionSettingsLinkerChoice" id="627">
+											<DataPath>SessionSettingsLinker.Settings.Selection</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбранные поля</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ItemSessionSettingsLinkerChoiceКонтекстноеМеню" id="628"/>
+											<ExtendedTooltip name="ItemSessionSettingsLinkerChoiceРасширеннаяПодсказка" id="629"/>
+											<Events>
+												<Event name="OnChange">ItemSessionSettingsLinkerChoiceOnChange</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="SessionSettringsGroup" id="1025">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Session settrings group</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Session settrings group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="SessionSettringsGroupРасширеннаяПодсказка" id="1026"/>
+									<ChildItems>
+										<UsualGroup name="SessionSettingsButtonGroup" id="1000">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Session settings button group</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Session settings button group</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>AlwaysHorizontal</Group>
+											<HorizontalSpacing>None</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="SessionSettingsButtonGroupРасширеннаяПодсказка" id="1001"/>
+											<ChildItems>
+												<Button name="ItemFirstSessionPage" id="1021">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<CommandName>Form.Command.FirstSessionPage</CommandName>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ItemFirstSessionPageРасширеннаяПодсказка" id="1022"/>
+												</Button>
+												<Button name="ItemPreviousSessionPage" id="1002">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<MaxWidth>9</MaxWidth>
+													<CommandName>Form.Command.PreviousSessionPage</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ItemPreviousSessionPageРасширеннаяПодсказка" id="1003"/>
+												</Button>
+												<LabelDecoration name="ItemSessionPageDecoration" id="1049">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ItemSessionPageDecorationКонтекстноеМеню" id="1050"/>
+													<ExtendedTooltip name="ItemSessionPageDecorationРасширеннаяПодсказка" id="1051"/>
+												</LabelDecoration>
+												<LabelField name="CurrentSessionPageString" id="1052">
+													<DataPath>CurrentSessionPageString</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<Width>3</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="CurrentSessionPageStringКонтекстноеМеню" id="1053"/>
+													<ExtendedTooltip name="CurrentSessionPageStringРасширеннаяПодсказка" id="1054"/>
+												</LabelField>
+												<Button name="ItemNextSessionPage" id="1004">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<CommandName>Form.Command.NextSessionPage</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.MoveRight</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ItemNextSessionPageРасширеннаяПодсказка" id="1005"/>
+												</Button>
+												<Button name="ItemLastSessionPage" id="1023">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<CommandName>Form.Command.LastSessionPage</CommandName>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ItemLastSessionPageРасширеннаяПодсказка" id="1024"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<LabelField name="ItemSessionCount" id="649">
+											<DataPath>SessionCount</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Показаны</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ItemSessionCountКонтекстноеМеню" id="650"/>
+											<ExtendedTooltip name="ItemSessionCountРасширеннаяПодсказка" id="651"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="ItemSessionTable" id="1055">
+									<Representation>List</Representation>
+									<ReadOnly>true</ReadOnly>
+									<RowSelectionMode>Row</RowSelectionMode>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>SessionTable</DataPath>
+									<RowPictureDataPath>SessionTable.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemSessionTableКонтекстноеМеню" id="1056">
+										<ChildItems>
+											<Button name="ItemSessionTableInterruptCurrentServerCall" id="1203">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.InterruptCurrentServerCall</CommandName>
+												<ExtendedTooltip name="ItemSessionTableInterruptCurrentServerCallРасширеннаяПодсказка" id="1204"/>
+											</Button>
+											<Button name="ItemSessionTableTerminateSession" id="1205">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.TerminateSession</CommandName>
+												<ExtendedTooltip name="ItemSessionTableTerminateSessionРасширеннаяПодсказка" id="1206"/>
+											</Button>
+											<Button name="ItemSessionTableUpdateSessionTable" id="1207">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.UpdateSessionTable</CommandName>
+												<Font bold="true" kind="AutoFont"/>
+												<ExtendedTooltip name="ItemSessionTableUpdateSessionTableРасширеннаяПодсказка" id="1208"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ItemSessionTableКоманднаяПанель" id="1057">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ItemSessionTableРасширеннаяПодсказка" id="1058"/>
+									<SearchStringAddition name="ItemSessionTableСтрокаПоиска" id="1059">
+										<AdditionSource>
+											<Item>ItemSessionTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemSessionTableСтрокаПоискаКонтекстноеМеню" id="1060"/>
+										<ExtendedTooltip name="ItemSessionTableСтрокаПоискаРасширеннаяПодсказка" id="1061"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemSessionTableСостояниеПросмотра" id="1062">
+										<AdditionSource>
+											<Item>ItemSessionTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemSessionTableСостояниеПросмотраКонтекстноеМеню" id="1063"/>
+										<ExtendedTooltip name="ItemSessionTableСостояниеПросмотраРасширеннаяПодсказка" id="1064"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemSessionTableУправлениеПоиском" id="1065">
+										<AdditionSource>
+											<Item>ItemSessionTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemSessionTableУправлениеПоискомКонтекстноеМеню" id="1066"/>
+										<ExtendedTooltip name="ItemSessionTableУправлениеПоискомРасширеннаяПодсказка" id="1067"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ItemSessionTableBeforeAddRow</Event>
+										<Event name="BeforeDeleteRow">ItemSessionTableBeforeDeleteRow</Event>
+										<Event name="BeforeRowChange">ItemSessionTableBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ItemSessionTableInfobase" id="1068">
+											<DataPath>SessionTable.Infobase</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableInfobaseКонтекстноеМеню" id="1069"/>
+											<ExtendedTooltip name="ItemSessionTableInfobaseРасширеннаяПодсказка" id="1070"/>
+										</InputField>
+										<InputField name="ItemSessionTableSessionNumber" id="1071">
+											<DataPath>SessionTable.SessionNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableSessionNumberКонтекстноеМеню" id="1072"/>
+											<ExtendedTooltip name="ItemSessionTableSessionNumberРасширеннаяПодсказка" id="1073"/>
+										</InputField>
+										<InputField name="ItemSessionTableBeginTime" id="1074">
+											<DataPath>SessionTable.BeginTime</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableBeginTimeКонтекстноеМеню" id="1075"/>
+											<ExtendedTooltip name="ItemSessionTableBeginTimeРасширеннаяПодсказка" id="1076"/>
+										</InputField>
+										<InputField name="ItemSessionTableLastActivityTime" id="1077">
+											<DataPath>SessionTable.LastActivityTime</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableLastActivityTimeКонтекстноеМеню" id="1078"/>
+											<ExtendedTooltip name="ItemSessionTableLastActivityTimeРасширеннаяПодсказка" id="1079"/>
+										</InputField>
+										<InputField name="ItemSessionTableComputer" id="1080">
+											<DataPath>SessionTable.Computer</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableComputerКонтекстноеМеню" id="1081"/>
+											<ExtendedTooltip name="ItemSessionTableComputerРасширеннаяПодсказка" id="1082"/>
+										</InputField>
+										<InputField name="ItemSessionTableClientIP" id="1209">
+											<DataPath>SessionTable.ClientIP</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>IP клиента</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableClientIPКонтекстноеМеню" id="1210"/>
+											<ExtendedTooltip name="ItemSessionTableClientIPРасширеннаяПодсказка" id="1211"/>
+										</InputField>
+										<InputField name="ItemSessionTableUserName" id="1083">
+											<DataPath>SessionTable.UserName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableUserNameКонтекстноеМеню" id="1084"/>
+											<ExtendedTooltip name="ItemSessionTableUserNameРасширеннаяПодсказка" id="1085"/>
+										</InputField>
+										<LabelField name="ItemSessionTableSessionID" id="1086">
+											<DataPath>SessionTable.SessionID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableSessionIDКонтекстноеМеню" id="1087"/>
+											<ExtendedTooltip name="ItemSessionTableSessionIDРасширеннаяПодсказка" id="1088"/>
+										</LabelField>
+										<InputField name="ItemSessionTableApplicationName" id="1089">
+											<DataPath>SessionTable.ApplicationName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableApplicationNameКонтекстноеМеню" id="1090"/>
+											<ExtendedTooltip name="ItemSessionTableApplicationNameРасширеннаяПодсказка" id="1091"/>
+										</InputField>
+										<InputField name="ItemSessionTableLocale" id="1092">
+											<DataPath>SessionTable.Locale</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableLocaleКонтекстноеМеню" id="1093"/>
+											<ExtendedTooltip name="ItemSessionTableLocaleРасширеннаяПодсказка" id="1094"/>
+										</InputField>
+										<InputField name="ItemSessionTableManagedLockSessionNumber" id="1095">
+											<DataPath>SessionTable.ManagedLockSessionNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableManagedLockSessionNumberКонтекстноеМеню" id="1096"/>
+											<ExtendedTooltip name="ItemSessionTableManagedLockSessionNumberРасширеннаяПодсказка" id="1097"/>
+										</InputField>
+										<InputField name="ItemSessionTableDBMSConnection" id="1098">
+											<DataPath>SessionTable.DBMSConnection</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableDBMSConnectionКонтекстноеМеню" id="1099"/>
+											<ExtendedTooltip name="ItemSessionTableDBMSConnectionРасширеннаяПодсказка" id="1100"/>
+										</InputField>
+										<InputField name="ItemSessionTableDBMSBlockSessionNumber" id="1101">
+											<DataPath>SessionTable.DBMSLockSessionNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableDBMSBlockSessionNumberКонтекстноеМеню" id="1102"/>
+											<ExtendedTooltip name="ItemSessionTableDBMSBlockSessionNumberРасширеннаяПодсказка" id="1103"/>
+										</InputField>
+										<InputField name="ItemSessionTableDBMSCallDurationTotal" id="1104">
+											<DataPath>SessionTable.DBMSCallDurationTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableDBMSCallDurationTotalКонтекстноеМеню" id="1105"/>
+											<ExtendedTooltip name="ItemSessionTableDBMSCallDurationTotalРасширеннаяПодсказка" id="1106"/>
+										</InputField>
+										<InputField name="ItemSessionTableDBMSCallDurationLast5Min" id="1107">
+											<DataPath>SessionTable.DBMSCallDurationLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableDBMSCallDurationLast5MinКонтекстноеМеню" id="1108"/>
+											<ExtendedTooltip name="ItemSessionTableDBMSCallDurationLast5MinРасширеннаяПодсказка" id="1109"/>
+										</InputField>
+										<InputField name="ItemSessionTableDBMSCallDurationCurrent" id="1110">
+											<DataPath>SessionTable.DBMSCallDurationCurrent</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableDBMSCallDurationCurrentКонтекстноеМеню" id="1111"/>
+											<ExtendedTooltip name="ItemSessionTableDBMSCallDurationCurrentРасширеннаяПодсказка" id="1112"/>
+										</InputField>
+										<InputField name="ItemSessionTableDBMSSentReceivedDataSizeLast5Min" id="1113">
+											<DataPath>SessionTable.DBMSSentReceivedDataSizeLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableDBMSSentReceivedDataSizeLast5MinКонтекстноеМеню" id="1114"/>
+											<ExtendedTooltip name="ItemSessionTableDBMSSentReceivedDataSizeLast5MinРасширеннаяПодсказка" id="1115"/>
+										</InputField>
+										<InputField name="ItemSessionTableDBMSSentReceivedDataSizeTotal" id="1116">
+											<DataPath>SessionTable.DBMSSentReceivedDataSizeTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableDBMSSentReceivedDataSizeTotalКонтекстноеМеню" id="1117"/>
+											<ExtendedTooltip name="ItemSessionTableDBMSSentReceivedDataSizeTotalРасширеннаяПодсказка" id="1118"/>
+										</InputField>
+										<InputField name="ItemSessionTableCallDurationCurrent" id="1119">
+											<DataPath>SessionTable.CallDurationCurrent</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCallDurationCurrentКонтекстноеМеню" id="1120"/>
+											<ExtendedTooltip name="ItemSessionTableCallDurationCurrentРасширеннаяПодсказка" id="1121"/>
+										</InputField>
+										<InputField name="ItemSessionTableCallDurationLast5Min" id="1122">
+											<DataPath>SessionTable.CallDurationLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCallDurationLast5MinКонтекстноеМеню" id="1123"/>
+											<ExtendedTooltip name="ItemSessionTableCallDurationLast5MinРасширеннаяПодсказка" id="1124"/>
+										</InputField>
+										<InputField name="ItemSessionTableCallDurationTotal" id="1125">
+											<DataPath>SessionTable.CallDurationTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCallDurationTotalКонтекстноеМеню" id="1126"/>
+											<ExtendedTooltip name="ItemSessionTableCallDurationTotalРасширеннаяПодсказка" id="1127"/>
+										</InputField>
+										<InputField name="ItemSessionTableCallCountLast5Min" id="1128">
+											<DataPath>SessionTable.CallCountLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCallCountLast5MinКонтекстноеМеню" id="1129"/>
+											<ExtendedTooltip name="ItemSessionTableCallCountLast5MinРасширеннаяПодсказка" id="1130"/>
+										</InputField>
+										<InputField name="ItemSessionTableCallCountTotal" id="1131">
+											<DataPath>SessionTable.CallCountTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCallCountTotalКонтекстноеМеню" id="1132"/>
+											<ExtendedTooltip name="ItemSessionTableCallCountTotalРасширеннаяПодсказка" id="1133"/>
+										</InputField>
+										<InputField name="ItemSessionTableClientSentReceivedDataSizeLast5Min" id="1134">
+											<DataPath>SessionTable.ClientSentReceivedDataSizeLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableClientSentReceivedDataSizeLast5MinКонтекстноеМеню" id="1135"/>
+											<ExtendedTooltip name="ItemSessionTableClientSentReceivedDataSizeLast5MinРасширеннаяПодсказка" id="1136"/>
+										</InputField>
+										<InputField name="ItemSessionTableClientSentReceivedDataSize" id="1137">
+											<DataPath>SessionTable.ClientSentReceivedDataSize</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableClientSentReceivedDataSizeКонтекстноеМеню" id="1138"/>
+											<ExtendedTooltip name="ItemSessionTableClientSentReceivedDataSizeРасширеннаяПодсказка" id="1139"/>
+										</InputField>
+										<InputField name="ItemSessionTableMemoryUsageCurrent" id="1140">
+											<DataPath>SessionTable.MemoryUsageCurrent</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableMemoryUsageCurrentКонтекстноеМеню" id="1141"/>
+											<ExtendedTooltip name="ItemSessionTableMemoryUsageCurrentРасширеннаяПодсказка" id="1142"/>
+										</InputField>
+										<InputField name="ItemSessionTableMemoryUsageLast5Min" id="1143">
+											<DataPath>SessionTable.MemoryUsageLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableMemoryUsageLast5MinКонтекстноеМеню" id="1144"/>
+											<ExtendedTooltip name="ItemSessionTableMemoryUsageLast5MinРасширеннаяПодсказка" id="1145"/>
+										</InputField>
+										<InputField name="ItemSessionTableMemoryUsageTotal" id="1146">
+											<DataPath>SessionTable.MemoryUsageTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableMemoryUsageTotalКонтекстноеМеню" id="1147"/>
+											<ExtendedTooltip name="ItemSessionTableMemoryUsageTotalРасширеннаяПодсказка" id="1148"/>
+										</InputField>
+										<InputField name="ItemSessionTableReadDiskDataSizeCurrent" id="1149">
+											<DataPath>SessionTable.ReadDiskDataSizeCurrent</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableReadDiskDataSizeCurrentКонтекстноеМеню" id="1150"/>
+											<ExtendedTooltip name="ItemSessionTableReadDiskDataSizeCurrentРасширеннаяПодсказка" id="1151"/>
+										</InputField>
+										<InputField name="ItemSessionTableReadDiskDataSizeLast5Min" id="1152">
+											<DataPath>SessionTable.ReadDiskDataSizeLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableReadDiskDataSizeLast5MinКонтекстноеМеню" id="1153"/>
+											<ExtendedTooltip name="ItemSessionTableReadDiskDataSizeLast5MinРасширеннаяПодсказка" id="1154"/>
+										</InputField>
+										<InputField name="ItemSessionTableReadDiskDataSizeTotal" id="1155">
+											<DataPath>SessionTable.ReadDiskDataSizeTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableReadDiskDataSizeTotalКонтекстноеМеню" id="1156"/>
+											<ExtendedTooltip name="ItemSessionTableReadDiskDataSizeTotalРасширеннаяПодсказка" id="1157"/>
+										</InputField>
+										<InputField name="ItemSessionTableWriteDiskDataSizeCurrent" id="1158">
+											<DataPath>SessionTable.WriteDiskDataSizeCurrent</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableWriteDiskDataSizeCurrentКонтекстноеМеню" id="1159"/>
+											<ExtendedTooltip name="ItemSessionTableWriteDiskDataSizeCurrentРасширеннаяПодсказка" id="1160"/>
+										</InputField>
+										<InputField name="ItemSessionTableWriteDiskDataSizeLast5Min" id="1161">
+											<DataPath>SessionTable.WriteDiskDataSizeLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableWriteDiskDataSizeLast5MinКонтекстноеМеню" id="1162"/>
+											<ExtendedTooltip name="ItemSessionTableWriteDiskDataSizeLast5MinРасширеннаяПодсказка" id="1163"/>
+										</InputField>
+										<InputField name="ItemSessionTableWriteDiskDataSizeTotal" id="1164">
+											<DataPath>SessionTable.WriteDiskDataSizeTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableWriteDiskDataSizeTotalКонтекстноеМеню" id="1165"/>
+											<ExtendedTooltip name="ItemSessionTableWriteDiskDataSizeTotalРасширеннаяПодсказка" id="1166"/>
+										</InputField>
+										<InputField name="ItemSessionTableLicense" id="1167">
+											<DataPath>SessionTable.License</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableLicenseКонтекстноеМеню" id="1168"/>
+											<ExtendedTooltip name="ItemSessionTableLicenseРасширеннаяПодсказка" id="1169"/>
+										</InputField>
+										<CheckBoxField name="ItemSessionTableHibernateSession" id="1170">
+											<DataPath>SessionTable.HibernateSession</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ItemSessionTableHibernateSessionКонтекстноеМеню" id="1171"/>
+											<ExtendedTooltip name="ItemSessionTableHibernateSessionРасширеннаяПодсказка" id="1172"/>
+										</CheckBoxField>
+										<InputField name="ItemSessionTablePassiveSessionHibernateTime" id="1173">
+											<DataPath>SessionTable.PassiveSessionHibernateTime</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTablePassiveSessionHibernateTimeКонтекстноеМеню" id="1174"/>
+											<ExtendedTooltip name="ItemSessionTablePassiveSessionHibernateTimeРасширеннаяПодсказка" id="1175"/>
+										</InputField>
+										<InputField name="ItemSessionTableHibernateSessionTerminateTime" id="1176">
+											<DataPath>SessionTable.HibernateSessionTerminateTime</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableHibernateSessionTerminateTimeКонтекстноеМеню" id="1177"/>
+											<ExtendedTooltip name="ItemSessionTableHibernateSessionTerminateTimeРасширеннаяПодсказка" id="1178"/>
+										</InputField>
+										<InputField name="ItemSessionTableCurrentServiceName" id="1179">
+											<DataPath>SessionTable.CurrentServiceName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCurrentServiceNameКонтекстноеМеню" id="1180"/>
+											<ExtendedTooltip name="ItemSessionTableCurrentServiceNameРасширеннаяПодсказка" id="1181"/>
+										</InputField>
+										<InputField name="ItemSessionTableServiceCallDurationCurrent" id="1182">
+											<DataPath>SessionTable.ServiceCallDurationCurrent</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableServiceCallDurationCurrentКонтекстноеМеню" id="1183"/>
+											<ExtendedTooltip name="ItemSessionTableServiceCallDurationCurrentРасширеннаяПодсказка" id="1184"/>
+										</InputField>
+										<InputField name="ItemSessionTableServiceCallDurationLast5Min" id="1185">
+											<DataPath>SessionTable.ServiceCallDurationLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableServiceCallDurationLast5MinКонтекстноеМеню" id="1186"/>
+											<ExtendedTooltip name="ItemSessionTableServiceCallDurationLast5MinРасширеннаяПодсказка" id="1187"/>
+										</InputField>
+										<InputField name="ItemSessionTableServiceCallDurationTotal" id="1188">
+											<DataPath>SessionTable.ServiceCallDurationTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableServiceCallDurationTotalКонтекстноеМеню" id="1189"/>
+											<ExtendedTooltip name="ItemSessionTableServiceCallDurationTotalРасширеннаяПодсказка" id="1190"/>
+										</InputField>
+										<InputField name="ItemSessionTableCPUTimeCurrent" id="1191">
+											<DataPath>SessionTable.CPUTimeCurrent</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCPUTimeCurrentКонтекстноеМеню" id="1192"/>
+											<ExtendedTooltip name="ItemSessionTableCPUTimeCurrentРасширеннаяПодсказка" id="1193"/>
+										</InputField>
+										<InputField name="ItemSessionTableCPUTimeLastLast5Min" id="1194">
+											<DataPath>SessionTable.CPUTimeLastLast5Min</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCPUTimeLastLast5MinКонтекстноеМеню" id="1195"/>
+											<ExtendedTooltip name="ItemSessionTableCPUTimeLastLast5MinРасширеннаяПодсказка" id="1196"/>
+										</InputField>
+										<InputField name="ItemSessionTableCPUTimeTotal" id="1197">
+											<DataPath>SessionTable.CPUTimeTotal</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTableCPUTimeTotalКонтекстноеМеню" id="1198"/>
+											<ExtendedTooltip name="ItemSessionTableCPUTimeTotalРасширеннаяПодсказка" id="1199"/>
+										</InputField>
+										<InputField name="ItemSessionTablePictureIndex" id="1200">
+											<DataPath>SessionTable.PictureIndex</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemSessionTablePictureIndexКонтекстноеМеню" id="1201"/>
+											<ExtendedTooltip name="ItemSessionTablePictureIndexРасширеннаяПодсказка" id="1202"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="LocksPageGroup" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Locks page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Locks page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="LocksPageGroupРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<Table name="ItemLocksTable" id="85">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>LocksTable</DataPath>
+									<RowPictureDataPath>LocksTable.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<SearchStringLocation>CommandBar</SearchStringLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemLocksTableКонтекстноеМеню" id="86">
+										<ChildItems>
+											<Button name="LockTableUpdateTableLocks" id="385">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.UpdateTableLocks</CommandName>
+												<Font bold="true" kind="AutoFont"/>
+												<ExtendedTooltip name="LockTableUpdateTableLocksРасширеннаяПодсказка" id="386"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ItemLocksTableКоманднаяПанель" id="87"/>
+									<ExtendedTooltip name="ItemLocksTableРасширеннаяПодсказка" id="88"/>
+									<SearchStringAddition name="ItemLocksTableСтрокаПоиска" id="89">
+										<AdditionSource>
+											<Item>ItemLocksTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemLocksTableСтрокаПоискаКонтекстноеМеню" id="90"/>
+										<ExtendedTooltip name="ItemLocksTableСтрокаПоискаРасширеннаяПодсказка" id="91"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemLocksTableСостояниеПросмотра" id="92">
+										<AdditionSource>
+											<Item>ItemLocksTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemLocksTableСостояниеПросмотраКонтекстноеМеню" id="93"/>
+										<ExtendedTooltip name="ItemLocksTableСостояниеПросмотраРасширеннаяПодсказка" id="94"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemLocksTableУправлениеПоиском" id="95">
+										<AdditionSource>
+											<Item>ItemLocksTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemLocksTableУправлениеПоискомКонтекстноеМеню" id="96"/>
+										<ExtendedTooltip name="ItemLocksTableУправлениеПоискомРасширеннаяПодсказка" id="97"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ItemLocksTableBeforeAddRow</Event>
+										<Event name="BeforeDeleteRow">ItemLocksTableBeforeDeleteRow</Event>
+										<Event name="BeforeRowChange">ItemLocksTableBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ItemLocksTableDescription" id="820">
+											<DataPath>LocksTable.Description</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTableDescriptionКонтекстноеМеню" id="821"/>
+											<ExtendedTooltip name="ItemLocksTableDescriptionРасширеннаяПодсказка" id="822"/>
+										</InputField>
+										<InputField name="ItemLocksTableInfobase" id="829">
+											<DataPath>LocksTable.Infobase</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTableInfobaseКонтекстноеМеню" id="830"/>
+											<ExtendedTooltip name="ItemLocksTableInfobaseРасширеннаяПодсказка" id="831"/>
+										</InputField>
+										<InputField name="ItemLocksTableSessionNumber" id="826">
+											<DataPath>LocksTable.SessionNumber</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTableSessionNumberКонтекстноеМеню" id="827"/>
+											<ExtendedTooltip name="ItemLocksTableSessionNumberРасширеннаяПодсказка" id="828"/>
+										</InputField>
+										<InputField name="ItemLocksTableComputer" id="832">
+											<DataPath>LocksTable.Computer</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTableComputerКонтекстноеМеню" id="833"/>
+											<ExtendedTooltip name="ItemLocksTableComputerРасширеннаяПодсказка" id="834"/>
+										</InputField>
+										<InputField name="ItemLocksTableLockStartTime" id="817">
+											<DataPath>LocksTable.LockStartTime</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTableLockStartTimeКонтекстноеМеню" id="818"/>
+											<ExtendedTooltip name="ItemLocksTableLockStartTimeРасширеннаяПодсказка" id="819"/>
+										</InputField>
+										<InputField name="ItemLocksTableObjectID" id="823">
+											<DataPath>LocksTable.ObjectID</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTableObjectIDКонтекстноеМеню" id="824"/>
+											<ExtendedTooltip name="ItemLocksTableObjectIDРасширеннаяПодсказка" id="825"/>
+										</InputField>
+										<InputField name="ItemLocksTableServer" id="835">
+											<DataPath>LocksTable.Server</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTableServerКонтекстноеМеню" id="836"/>
+											<ExtendedTooltip name="ItemLocksTableServerРасширеннаяПодсказка" id="837"/>
+										</InputField>
+										<InputField name="ItemLocksTableServerPort" id="838">
+											<DataPath>LocksTable.ServerPort</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTableServerPortКонтекстноеМеню" id="839"/>
+											<ExtendedTooltip name="ItemLocksTableServerPortРасширеннаяПодсказка" id="840"/>
+										</InputField>
+										<InputField name="ItemLocksTablePictureIndex" id="841">
+											<DataPath>LocksTable.PictureIndex</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemLocksTablePictureIndexКонтекстноеМеню" id="842"/>
+											<ExtendedTooltip name="ItemLocksTablePictureIndexРасширеннаяПодсказка" id="843"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="LimitPageGroup" id="267">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Limit page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Limit page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="LimitPageGroupРасширеннаяПодсказка" id="268"/>
+							<ChildItems>
+								<Table name="ItemTableLimits" id="269">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>TableLimits</DataPath>
+									<RowPictureDataPath>TableLimits.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemTableLimitsКонтекстноеМеню" id="270"/>
+									<AutoCommandBar name="ItemTableLimitsКоманднаяПанель" id="271"/>
+									<ExtendedTooltip name="ItemTableLimitsРасширеннаяПодсказка" id="272"/>
+									<SearchStringAddition name="ItemTableLimitsСтрокаПоиска" id="273">
+										<AdditionSource>
+											<Item>ItemTableLimits</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemTableLimitsСтрокаПоискаКонтекстноеМеню" id="274"/>
+										<ExtendedTooltip name="ItemTableLimitsСтрокаПоискаРасширеннаяПодсказка" id="275"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemTableLimitsСостояниеПросмотра" id="276">
+										<AdditionSource>
+											<Item>ItemTableLimits</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemTableLimitsСостояниеПросмотраКонтекстноеМеню" id="277"/>
+										<ExtendedTooltip name="ItemTableLimitsСостояниеПросмотраРасширеннаяПодсказка" id="278"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemTableLimitsУправлениеПоиском" id="279">
+										<AdditionSource>
+											<Item>ItemTableLimits</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemTableLimitsУправлениеПоискомКонтекстноеМеню" id="280"/>
+										<ExtendedTooltip name="ItemTableLimitsУправлениеПоискомРасширеннаяПодсказка" id="281"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ItemTableLimitsBeforeAddRow</Event>
+										<Event name="BeforeDeleteRow">ItemTableLimitsBeforeDeleteRow</Event>
+										<Event name="BeforeRowChange">ItemTableLimitsBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ItemTableLimitsName" id="844">
+											<DataPath>TableLimits.Name</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemTableLimitsNameКонтекстноеМеню" id="845"/>
+											<ExtendedTooltip name="ItemTableLimitsNameРасширеннаяПодсказка" id="846"/>
+										</InputField>
+										<InputField name="ItemTableLimitsDescription" id="847">
+											<DataPath>TableLimits.Description</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemTableLimitsDescriptionКонтекстноеМеню" id="848"/>
+											<ExtendedTooltip name="ItemTableLimitsDescriptionРасширеннаяПодсказка" id="849"/>
+										</InputField>
+										<InputField name="ItemTableLimitsCounter" id="850">
+											<DataPath>TableLimits.Counter</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemTableLimitsCounterКонтекстноеМеню" id="851"/>
+											<ExtendedTooltip name="ItemTableLimitsCounterРасширеннаяПодсказка" id="852"/>
+										</InputField>
+										<InputField name="ItemTableLimitsPictureIndex" id="853">
+											<DataPath>TableLimits.PictureIndex</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemTableLimitsPictureIndexКонтекстноеМеню" id="854"/>
+											<ExtendedTooltip name="ItemTableLimitsPictureIndexРасширеннаяПодсказка" id="855"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="StandartInfoPageGroup" id="291">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Standart info page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Standart info page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="StandartInfoPageGroupРасширеннаяПодсказка" id="292"/>
+							<ChildItems>
+								<Table name="ItemStandartInfoTable" id="293">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>StandartInfoTable</DataPath>
+									<RowPictureDataPath>StandartInfoTable.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemStandartInfoTableКонтекстноеМеню" id="294"/>
+									<AutoCommandBar name="ItemStandartInfoTableКоманднаяПанель" id="295"/>
+									<ExtendedTooltip name="ItemStandartInfoTableРасширеннаяПодсказка" id="296"/>
+									<SearchStringAddition name="ItemStandartInfoTableСтрокаПоиска" id="297">
+										<AdditionSource>
+											<Item>ItemStandartInfoTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemStandartInfoTableСтрокаПоискаКонтекстноеМеню" id="298"/>
+										<ExtendedTooltip name="ItemStandartInfoTableСтрокаПоискаРасширеннаяПодсказка" id="299"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemStandartInfoTableСостояниеПросмотра" id="300">
+										<AdditionSource>
+											<Item>ItemStandartInfoTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemStandartInfoTableСостояниеПросмотраКонтекстноеМеню" id="301"/>
+										<ExtendedTooltip name="ItemStandartInfoTableСостояниеПросмотраРасширеннаяПодсказка" id="302"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemStandartInfoTableУправлениеПоиском" id="303">
+										<AdditionSource>
+											<Item>ItemStandartInfoTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemStandartInfoTableУправлениеПоискомКонтекстноеМеню" id="304"/>
+										<ExtendedTooltip name="ItemStandartInfoTableУправлениеПоискомРасширеннаяПодсказка" id="305"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ItemStandartInfoTableBeforeAddRow</Event>
+										<Event name="BeforeDeleteRow">ItemStandartInfoTableBeforeDeleteRow</Event>
+										<Event name="BeforeRowChange">ItemStandartInfoTableBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ItemStandartInfoTableName" id="856">
+											<DataPath>StandartInfoTable.Name</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemStandartInfoTableNameКонтекстноеМеню" id="857"/>
+											<ExtendedTooltip name="ItemStandartInfoTableNameРасширеннаяПодсказка" id="858"/>
+										</InputField>
+										<InputField name="ItemStandartInfoTableDescription" id="859">
+											<DataPath>StandartInfoTable.Description</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemStandartInfoTableDescriptionКонтекстноеМеню" id="860"/>
+											<ExtendedTooltip name="ItemStandartInfoTableDescriptionРасширеннаяПодсказка" id="861"/>
+										</InputField>
+										<InputField name="ItemStandartInfoTablePictureIndex" id="862">
+											<DataPath>StandartInfoTable.PictureIndex</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemStandartInfoTablePictureIndexКонтекстноеМеню" id="863"/>
+											<ExtendedTooltip name="ItemStandartInfoTablePictureIndexРасширеннаяПодсказка" id="864"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="WorkProcessPageGroup" id="312">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Work process page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Work process page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="WorkProcessPageGroupРасширеннаяПодсказка" id="313"/>
+							<ChildItems>
+								<Table name="ItemWorkProcessTable" id="314">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>WorkProcessTable</DataPath>
+									<RowPictureDataPath>WorkProcessTable.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemWorkProcessTableКонтекстноеМеню" id="315"/>
+									<AutoCommandBar name="ItemWorkProcessTableКоманднаяПанель" id="316"/>
+									<ExtendedTooltip name="ItemWorkProcessTableРасширеннаяПодсказка" id="317"/>
+									<SearchStringAddition name="ItemWorkProcessTableСтрокаПоиска" id="318">
+										<AdditionSource>
+											<Item>ItemWorkProcessTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemWorkProcessTableСтрокаПоискаКонтекстноеМеню" id="319"/>
+										<ExtendedTooltip name="ItemWorkProcessTableСтрокаПоискаРасширеннаяПодсказка" id="320"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemWorkProcessTableСостояниеПросмотра" id="321">
+										<AdditionSource>
+											<Item>ItemWorkProcessTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemWorkProcessTableСостояниеПросмотраКонтекстноеМеню" id="322"/>
+										<ExtendedTooltip name="ItemWorkProcessTableСостояниеПросмотраРасширеннаяПодсказка" id="323"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemWorkProcessTableУправлениеПоиском" id="324">
+										<AdditionSource>
+											<Item>ItemWorkProcessTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemWorkProcessTableУправлениеПоискомКонтекстноеМеню" id="325"/>
+										<ExtendedTooltip name="ItemWorkProcessTableУправлениеПоискомРасширеннаяПодсказка" id="326"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ItemWorkProcessTableBeforeAddRow</Event>
+										<Event name="BeforeDeleteRow">ItemWorkProcessTableBeforeDeleteRow</Event>
+										<Event name="BeforeRowChange">ItemWorkProcessTableBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ItemWorkProcessTableComputer" id="865">
+											<DataPath>WorkProcessTable.ComputerName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemWorkProcessTableComputerКонтекстноеМеню" id="866"/>
+											<ExtendedTooltip name="ItemWorkProcessTableComputerРасширеннаяПодсказка" id="867"/>
+										</InputField>
+										<InputField name="ItemWorkProcessTablePort" id="868">
+											<DataPath>WorkProcessTable.Port</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemWorkProcessTablePortКонтекстноеМеню" id="869"/>
+											<ExtendedTooltip name="ItemWorkProcessTablePortРасширеннаяПодсказка" id="870"/>
+										</InputField>
+										<InputField name="ItemWorkProcessTableWorkPrcessStatus" id="871">
+											<DataPath>WorkProcessTable.WorkProcessStatus</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemWorkProcessTableWorkPrcessStatusКонтекстноеМеню" id="872"/>
+											<ExtendedTooltip name="ItemWorkProcessTableWorkPrcessStatusРасширеннаяПодсказка" id="873"/>
+										</InputField>
+										<InputField name="ItemWorkProcessTablePID" id="874">
+											<DataPath>WorkProcessTable.PID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemWorkProcessTablePIDКонтекстноеМеню" id="875"/>
+											<ExtendedTooltip name="ItemWorkProcessTablePIDРасширеннаяПодсказка" id="876"/>
+										</InputField>
+										<InputField name="ItemWorkProcessTableMemoryUsage" id="877">
+											<DataPath>WorkProcessTable.MemoryUsage</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemWorkProcessTableMemoryUsageКонтекстноеМеню" id="878"/>
+											<ExtendedTooltip name="ItemWorkProcessTableMemoryUsageРасширеннаяПодсказка" id="879"/>
+										</InputField>
+										<InputField name="ItemWorkProcessTableAvaliablePerformance" id="880">
+											<DataPath>WorkProcessTable.AvailablePerformance</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemWorkProcessTableAvaliablePerformanceКонтекстноеМеню" id="881"/>
+											<ExtendedTooltip name="ItemWorkProcessTableAvaliablePerformanceРасширеннаяПодсказка" id="882"/>
+										</InputField>
+										<InputField name="ItemWorkProcessTableLicense" id="883">
+											<DataPath>WorkProcessTable.License</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemWorkProcessTableLicenseКонтекстноеМеню" id="884"/>
+											<ExtendedTooltip name="ItemWorkProcessTableLicenseРасширеннаяПодсказка" id="885"/>
+										</InputField>
+										<InputField name="ItemWorkProcessTablePictureIndex" id="886">
+											<DataPath>WorkProcessTable.PictureIndex</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemWorkProcessTablePictureIndexКонтекстноеМеню" id="887"/>
+											<ExtendedTooltip name="ItemWorkProcessTablePictureIndexРасширеннаяПодсказка" id="888"/>
+										</InputField>
+										<CheckBoxField name="ItemWorkProcessTableReserve" id="1212">
+											<DataPath>WorkProcessTable.Reserve</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ItemWorkProcessTableReserveКонтекстноеМеню" id="1213"/>
+											<ExtendedTooltip name="ItemWorkProcessTableReserveРасширеннаяПодсказка" id="1214"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="ClusterManagerPageGroup" id="348">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Cluster manager page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Cluster manager page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ClusterManagerPageGroupРасширеннаяПодсказка" id="349"/>
+							<ChildItems>
+								<Table name="ItemClusterManagerTable" id="350">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ClusterManagerTable</DataPath>
+									<RowPictureDataPath>ClusterManagerTable.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Add</ExcludedCommand>
+										<ExcludedCommand>Change</ExcludedCommand>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemClusterManagerTableКонтекстноеМеню" id="351"/>
+									<AutoCommandBar name="ItemClusterManagerTableКоманднаяПанель" id="352"/>
+									<ExtendedTooltip name="ItemClusterManagerTableРасширеннаяПодсказка" id="353"/>
+									<SearchStringAddition name="ItemClusterManagerTableСтрокаПоиска" id="354">
+										<AdditionSource>
+											<Item>ItemClusterManagerTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemClusterManagerTableСтрокаПоискаКонтекстноеМеню" id="355"/>
+										<ExtendedTooltip name="ItemClusterManagerTableСтрокаПоискаРасширеннаяПодсказка" id="356"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemClusterManagerTableСостояниеПросмотра" id="357">
+										<AdditionSource>
+											<Item>ItemClusterManagerTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemClusterManagerTableСостояниеПросмотраКонтекстноеМеню" id="358"/>
+										<ExtendedTooltip name="ItemClusterManagerTableСостояниеПросмотраРасширеннаяПодсказка" id="359"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemClusterManagerTableУправлениеПоиском" id="360">
+										<AdditionSource>
+											<Item>ItemClusterManagerTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemClusterManagerTableУправлениеПоискомКонтекстноеМеню" id="361"/>
+										<ExtendedTooltip name="ItemClusterManagerTableУправлениеПоискомРасширеннаяПодсказка" id="362"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ItemClusterManagerTableBeforeAddRow</Event>
+										<Event name="BeforeDeleteRow">ItemClusterManagerTableBeforeDeleteRow</Event>
+										<Event name="BeforeRowChange">ItemClusterManagerTableBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ItemClusterManagerTableDescription" id="889">
+											<DataPath>ClusterManagerTable.Description</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemClusterManagerTableDescriptionКонтекстноеМеню" id="890"/>
+											<ExtendedTooltip name="ItemClusterManagerTableDescriptionРасширеннаяПодсказка" id="891"/>
+										</InputField>
+										<InputField name="ItemClusterManagerTableComputer" id="892">
+											<DataPath>ClusterManagerTable.Computer</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemClusterManagerTableComputerКонтекстноеМеню" id="893"/>
+											<ExtendedTooltip name="ItemClusterManagerTableComputerРасширеннаяПодсказка" id="894"/>
+										</InputField>
+										<InputField name="ItemClusterManagerTablePID" id="895">
+											<DataPath>ClusterManagerTable.PID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemClusterManagerTablePIDКонтекстноеМеню" id="896"/>
+											<ExtendedTooltip name="ItemClusterManagerTablePIDРасширеннаяПодсказка" id="897"/>
+										</InputField>
+										<InputField name="ItemClusterManagerTableIPПорт" id="898">
+											<DataPath>ClusterManagerTable.IPПорт</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemClusterManagerTableIPПортКонтекстноеМеню" id="899"/>
+											<ExtendedTooltip name="ItemClusterManagerTableIPПортРасширеннаяПодсказка" id="900"/>
+										</InputField>
+										<InputField name="ItemClusterManagerTablePictureIndex" id="901">
+											<DataPath>ClusterManagerTable.PictureIndex</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemClusterManagerTablePictureIndexКонтекстноеМеню" id="902"/>
+											<ExtendedTooltip name="ItemClusterManagerTablePictureIndexРасширеннаяПодсказка" id="903"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="CounterPageGroup" id="394">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Counter page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Counter page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="CounterPageGroupРасширеннаяПодсказка" id="395"/>
+							<ChildItems>
+								<UsualGroup name="CounterValueSettingsGroup" id="543">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Counter value settings group</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Counter value settings group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="CounterValueSettingsGroupРасширеннаяПодсказка" id="544"/>
+									<ChildItems>
+										<InputField name="ItemCounterValueSettingsLinkerFilter" id="540">
+											<DataPath>CounterValueSettingsLinker.Settings.Filter</DataPath>
+											<ContextMenu name="ItemCounterValueSettingsLinkerFilterКонтекстноеМеню" id="541"/>
+											<ExtendedTooltip name="ItemCounterValueSettingsLinkerFilterРасширеннаяПодсказка" id="542"/>
+											<Events>
+												<Event name="OnChange">ItemCounterValueSettingsLinkerFilterOnChange</Event>
+											</Events>
+										</InputField>
+										<InputField name="ItemCounterValueSettingsLinkerOrder" id="537">
+											<DataPath>CounterValueSettingsLinker.Settings.Order</DataPath>
+											<ContextMenu name="ItemCounterValueSettingsLinkerOrderКонтекстноеМеню" id="538"/>
+											<ExtendedTooltip name="ItemCounterValueSettingsLinkerOrderРасширеннаяПодсказка" id="539"/>
+											<Events>
+												<Event name="OnChange">ItemCounterValueSettingsLinkerOrderOnChange</Event>
+											</Events>
+										</InputField>
+										<InputField name="ItemCounterValueSettingsLinkerChoise" id="545">
+											<DataPath>CounterValueSettingsLinker.Settings.Selection</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбранные поля</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ItemCounterValueSettingsLinkerChoiseКонтекстноеМеню" id="546"/>
+											<ExtendedTooltip name="ItemCounterValueSettingsLinkerChoiseРасширеннаяПодсказка" id="547"/>
+											<Events>
+												<Event name="OnChange">ItemCounterValueSettingsLinkerChoiseOnChange</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="CounterValueSettingsButtonsGroup" id="1029">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Counter value settings buttons group</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Counter value settings buttons group</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="CounterValueSettingsButtonsGroupРасширеннаяПодсказка" id="1030"/>
+									<ChildItems>
+										<UsualGroup name="CounterValueSettingsButtonGroup" id="1033">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кнопок управления</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа кнопок управления</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>false</HorizontalStretch>
+											<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="CounterValueSettingsButtonGroupРасширеннаяПодсказка" id="1034"/>
+											<ChildItems>
+												<Button name="ItemFirstCounterValuePage" id="1035">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<CommandName>Form.Command.FirstCounterValuePage</CommandName>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В начало</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ItemFirstCounterValuePageРасширеннаяПодсказка" id="1036"/>
+												</Button>
+												<Button name="ItemPreviousCounterValuePage" id="1037">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<MaxWidth>9</MaxWidth>
+													<CommandName>Form.Command.PreviousCounterValuePage</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Предыдущая</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ItemPreviousCounterValuePageРасширеннаяПодсказка" id="1038"/>
+												</Button>
+												<LabelDecoration name="ItemCounterPageDecoration" id="1046">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ItemCounterPageDecorationКонтекстноеМеню" id="1047"/>
+													<ExtendedTooltip name="ItemCounterPageDecorationРасширеннаяПодсказка" id="1048"/>
+												</LabelDecoration>
+												<LabelField name="CurrentCounterValuePageString" id="1043">
+													<DataPath>CurrentCounterValuePageString</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>3</MaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<ContextMenu name="CurrentCounterValuePageStringКонтекстноеМеню" id="1044"/>
+													<ExtendedTooltip name="CurrentCounterValuePageStringРасширеннаяПодсказка" id="1045"/>
+												</LabelField>
+												<Button name="ItemNextCounterValuePage" id="1039">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<CommandName>Form.Command.NextCounterValuePage</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.MoveRight</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Следующая</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ItemNextCounterValuePageРасширеннаяПодсказка" id="1040"/>
+												</Button>
+												<Button name="ItemLastCounterValuePage" id="1041">
+													<Type>Hyperlink</Type>
+													<Representation>Text</Representation>
+													<CommandName>Form.Command.LastCounterValuePage</CommandName>
+													<Picture>
+														<xr:Abs>Picture.png</xr:Abs>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В конец</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ItemLastCounterValuePageРасширеннаяПодсказка" id="1042"/>
+												</Button>
+												<LabelField name="ItemCounterValueCount" id="1012">
+													<DataPath>CounterValueCount</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Показаны</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ItemCounterValueCountКонтекстноеМеню" id="1013"/>
+													<ExtendedTooltip name="ItemCounterValueCountРасширеннаяПодсказка" id="1014"/>
+												</LabelField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<Table name="ItemCounterValueTable" id="556">
+									<Representation>List</Representation>
+									<ReadOnly>true</ReadOnly>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>CounterValueTable</DataPath>
+									<RowPictureDataPath>CounterValueTable.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemCounterValueTableКонтекстноеМеню" id="557">
+										<ChildItems>
+											<Button name="ItemCounterValueTableUpdateCounterValueTable" id="617">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.UpdateCounterValueTable</CommandName>
+												<Font bold="true" kind="AutoFont"/>
+												<ExtendedTooltip name="ItemCounterValueTableUpdateCounterValueTableРасширеннаяПодсказка" id="618"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="ItemCounterValueTableКоманднаяПанель" id="558">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ItemCounterValueTableРасширеннаяПодсказка" id="559"/>
+									<SearchStringAddition name="ItemCounterValueTableСтрокаПоиска" id="560">
+										<AdditionSource>
+											<Item>ItemCounterValueTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemCounterValueTableСтрокаПоискаКонтекстноеМеню" id="561"/>
+										<ExtendedTooltip name="ItemCounterValueTableСтрокаПоискаРасширеннаяПодсказка" id="562"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemCounterValueTableСостояниеПросмотра" id="563">
+										<AdditionSource>
+											<Item>ItemCounterValueTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemCounterValueTableСостояниеПросмотраКонтекстноеМеню" id="564"/>
+										<ExtendedTooltip name="ItemCounterValueTableСостояниеПросмотраРасширеннаяПодсказка" id="565"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemCounterValueTableУправлениеПоиском" id="566">
+										<AdditionSource>
+											<Item>ItemCounterValueTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemCounterValueTableУправлениеПоискомКонтекстноеМеню" id="567"/>
+										<ExtendedTooltip name="ItemCounterValueTableУправлениеПоискомРасширеннаяПодсказка" id="568"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ItemCounterValueTableInfobaseName" id="928">
+											<DataPath>CounterValueTable.InfobaseName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableInfobaseNameКонтекстноеМеню" id="929"/>
+											<ExtendedTooltip name="ItemCounterValueTableInfobaseNameРасширеннаяПодсказка" id="930"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableSeparators" id="931">
+											<DataPath>CounterValueTable.Separators</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableSeparatorsКонтекстноеМеню" id="932"/>
+											<ExtendedTooltip name="ItemCounterValueTableSeparatorsРасширеннаяПодсказка" id="933"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableUserName" id="934">
+											<DataPath>CounterValueTable.UserName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableUserNameКонтекстноеМеню" id="935"/>
+											<ExtendedTooltip name="ItemCounterValueTableUserNameРасширеннаяПодсказка" id="936"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableCollectionTime" id="937">
+											<DataPath>CounterValueTable.CollectionTime</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableCollectionTimeКонтекстноеМеню" id="938"/>
+											<ExtendedTooltip name="ItemCounterValueTableCollectionTimeРасширеннаяПодсказка" id="939"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableCallDuration" id="940">
+											<DataPath>CounterValueTable.CallDuration</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableCallDurationКонтекстноеМеню" id="941"/>
+											<ExtendedTooltip name="ItemCounterValueTableCallDurationРасширеннаяПодсказка" id="942"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableCpuTIme" id="943">
+											<DataPath>CounterValueTable.CpuTime</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableCpuTImeКонтекстноеМеню" id="944"/>
+											<ExtendedTooltip name="ItemCounterValueTableCpuTImeРасширеннаяПодсказка" id="945"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableMemoryUsage" id="946">
+											<DataPath>CounterValueTable.MemoryUsage</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableMemoryUsageКонтекстноеМеню" id="947"/>
+											<ExtendedTooltip name="ItemCounterValueTableMemoryUsageРасширеннаяПодсказка" id="948"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableReadDiskDataSize" id="949">
+											<DataPath>CounterValueTable.ReadDiskDataSize</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableReadDiskDataSizeКонтекстноеМеню" id="950"/>
+											<ExtendedTooltip name="ItemCounterValueTableReadDiskDataSizeРасширеннаяПодсказка" id="951"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableWriteDiskDataSize" id="952">
+											<DataPath>CounterValueTable.WriteDiskDataSize</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableWriteDiskDataSizeКонтекстноеМеню" id="953"/>
+											<ExtendedTooltip name="ItemCounterValueTableWriteDiskDataSizeРасширеннаяПодсказка" id="954"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableDBMSCallDuration" id="955">
+											<DataPath>CounterValueTable.DBMSCallDuration</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableDBMSCallDurationКонтекстноеМеню" id="956"/>
+											<ExtendedTooltip name="ItemCounterValueTableDBMSCallDurationРасширеннаяПодсказка" id="957"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableDBMSSentReceivedDataSize" id="958">
+											<DataPath>CounterValueTable.DBMSSentReceivedDataSize</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableDBMSSentReceivedDataSizeКонтекстноеМеню" id="959"/>
+											<ExtendedTooltip name="ItemCounterValueTableDBMSSentReceivedDataSizeРасширеннаяПодсказка" id="960"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableServiceCallDuration" id="961">
+											<DataPath>CounterValueTable.ServiceCallDuration</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableServiceCallDurationКонтекстноеМеню" id="962"/>
+											<ExtendedTooltip name="ItemCounterValueTableServiceCallDurationРасширеннаяПодсказка" id="963"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableCallCount" id="964">
+											<DataPath>CounterValueTable.CallCount</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableCallCountКонтекстноеМеню" id="965"/>
+											<ExtendedTooltip name="ItemCounterValueTableCallCountРасширеннаяПодсказка" id="966"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableActiveSessionCount" id="967">
+											<DataPath>CounterValueTable.ActiveSessionCount</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableActiveSessionCountКонтекстноеМеню" id="968"/>
+											<ExtendedTooltip name="ItemCounterValueTableActiveSessionCountРасширеннаяПодсказка" id="969"/>
+										</InputField>
+										<InputField name="ItemCounterValueTableSessionCount" id="970">
+											<DataPath>CounterValueTable.SessionCount</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTableSessionCountКонтекстноеМеню" id="971"/>
+											<ExtendedTooltip name="ItemCounterValueTableSessionCountРасширеннаяПодсказка" id="972"/>
+										</InputField>
+										<InputField name="ItemCounterValueTablePictureIndex" id="973">
+											<DataPath>CounterValueTable.PictureIndex</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemCounterValueTablePictureIndexКонтекстноеМеню" id="974"/>
+											<ExtendedTooltip name="ItemCounterValueTablePictureIndexРасширеннаяПодсказка" id="975"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+						<Page name="AssignmentRulePageGroup" id="457">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Assignment rule page group</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Assignment rule page group</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="AssignmentRulePageGroupРасширеннаяПодсказка" id="458"/>
+							<ChildItems>
+								<Table name="ItemAssignmentRuleTable" id="459">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>AssignmentRuleTable</DataPath>
+									<RowPictureDataPath>AssignmentRuleTable.PictureIndex</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Abs>RowsPicture.png</xr:Abs>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
+									<CommandSet>
+										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>Delete</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+									</CommandSet>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ItemAssignmentRuleTableКонтекстноеМеню" id="460"/>
+									<AutoCommandBar name="ItemAssignmentRuleTableКоманднаяПанель" id="461"/>
+									<ExtendedTooltip name="ItemAssignmentRuleTableРасширеннаяПодсказка" id="462"/>
+									<SearchStringAddition name="ItemAssignmentRuleTableСтрокаПоиска" id="463">
+										<AdditionSource>
+											<Item>ItemAssignmentRuleTable</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemAssignmentRuleTableСтрокаПоискаКонтекстноеМеню" id="464"/>
+										<ExtendedTooltip name="ItemAssignmentRuleTableСтрокаПоискаРасширеннаяПодсказка" id="465"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ItemAssignmentRuleTableСостояниеПросмотра" id="466">
+										<AdditionSource>
+											<Item>ItemAssignmentRuleTable</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemAssignmentRuleTableСостояниеПросмотраКонтекстноеМеню" id="467"/>
+										<ExtendedTooltip name="ItemAssignmentRuleTableСостояниеПросмотраРасширеннаяПодсказка" id="468"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ItemAssignmentRuleTableУправлениеПоиском" id="469">
+										<AdditionSource>
+											<Item>ItemAssignmentRuleTable</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ItemAssignmentRuleTableУправлениеПоискомКонтекстноеМеню" id="470"/>
+										<ExtendedTooltip name="ItemAssignmentRuleTableУправлениеПоискомРасширеннаяПодсказка" id="471"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ItemAssignmentRuleTableBeforeAddRow</Event>
+										<Event name="BeforeDeleteRow">ItemAssignmentRuleTableBeforeDeleteRow</Event>
+										<Event name="BeforeRowChange">ItemAssignmentRuleTableBeforeRowChange</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ItemAssignmentRuleTablePriority" id="904">
+											<DataPath>AssignmentRuleTable.Priority</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemAssignmentRuleTablePriorityКонтекстноеМеню" id="905"/>
+											<ExtendedTooltip name="ItemAssignmentRuleTablePriorityРасширеннаяПодсказка" id="906"/>
+										</InputField>
+										<InputField name="ItemAssignmentRuleTableObjectType" id="907">
+											<DataPath>AssignmentRuleTable.ObjectType</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemAssignmentRuleTableObjectTypeКонтекстноеМеню" id="908"/>
+											<ExtendedTooltip name="ItemAssignmentRuleTableObjectTypeРасширеннаяПодсказка" id="909"/>
+										</InputField>
+										<InputField name="ItemAssignmentRuleTableAssignmentRuleType" id="910">
+											<DataPath>AssignmentRuleTable.AssignmentRuleType</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemAssignmentRuleTableAssignmentRuleTypeКонтекстноеМеню" id="911"/>
+											<ExtendedTooltip name="ItemAssignmentRuleTableAssignmentRuleTypeРасширеннаяПодсказка" id="912"/>
+										</InputField>
+										<InputField name="ItemAssignmentRuleTableInfoBaseName" id="913">
+											<DataPath>AssignmentRuleTable.InfoBaseName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemAssignmentRuleTableInfoBaseNameКонтекстноеМеню" id="914"/>
+											<ExtendedTooltip name="ItemAssignmentRuleTableInfoBaseNameРасширеннаяПодсказка" id="915"/>
+										</InputField>
+										<InputField name="ItemAssignmentRuleTableAdditionalParameter" id="916">
+											<DataPath>AssignmentRuleTable.AdditionalParameter</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemAssignmentRuleTableAdditionalParameterКонтекстноеМеню" id="917"/>
+											<ExtendedTooltip name="ItemAssignmentRuleTableAdditionalParameterРасширеннаяПодсказка" id="918"/>
+										</InputField>
+										<InputField name="ItemAssignmentRuleTablePictureIndex" id="919">
+											<DataPath>AssignmentRuleTable.PictureIndex</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemAssignmentRuleTablePictureIndexКонтекстноеМеню" id="920"/>
+											<ExtendedTooltip name="ItemAssignmentRuleTablePictureIndexРасширеннаяПодсказка" id="921"/>
+										</InputField>
+										<LabelField name="ItemAssignmentRuleTableAssignmentRuleID" id="922">
+											<DataPath>AssignmentRuleTable.AssignmentRuleID</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemAssignmentRuleTableAssignmentRuleIDКонтекстноеМеню" id="923"/>
+											<ExtendedTooltip name="ItemAssignmentRuleTableAssignmentRuleIDРасширеннаяПодсказка" id="924"/>
+										</LabelField>
+										<InputField name="ItemAssignmentRuleTableObjectName" id="925">
+											<DataPath>AssignmentRuleTable.ObjectName</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ItemAssignmentRuleTableObjectNameКонтекстноеМеню" id="926"/>
+											<ExtendedTooltip name="ItemAssignmentRuleTableObjectNameРасширеннаяПодсказка" id="927"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Object" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Object</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.УправлениеСерверами</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ClusterTree" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Cluster tree</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="PictureIndex" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Name" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ItemGroup" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Item group</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="AdministrationItemType" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Administration item type</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Login" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Login</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Password" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Password</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="AuthenticationCompleted" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Authentication completed</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ItemUUID" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Item UUID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ConnectionTable" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Connection table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Name" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ServerAdministrationAddress" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Server administration address</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ServerAdministrationPort" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Server administration port</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Login" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Login</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Password" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Password</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ConnectionsTable" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Connections table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Infobase" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная база</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Connection" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соединение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Session" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сеанс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="StartDate" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало работы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ProcessID" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ID процесса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Application" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Computer" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ConnectionID" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор соединения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="InfobaseID" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор информационной базы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="LocksTable" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Locks table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="LockStartTime" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время начала блокировки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Description" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Блокировка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ObjectID" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="SessionNumber" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сеанс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Infobase" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная база</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Computer" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Server" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ServerPort" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порт сервера</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="SessionTable" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Session table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Infobase" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная база</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="HibernateSessionTerminateTime" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время завершения спящего сеанса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="PassiveSessionHibernateTime" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время засыпания пассивного сеанса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="BeginTime" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время начала</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="LastActivityTime" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время последней активности</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="CallDurationTotal" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CallDurationLast5Min" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ServiceCallDurationCurrent" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов сервиса текущее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ServiceCallDurationTotal" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов сервисов всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ServiceCallDurationLast5Min" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов сервисов за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSCallDurationTotal" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов СУБД всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSCallDurationLast5Min" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов СУБД за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSCallDurationCurrent" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов СУБД текущее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CallDurationCurrent" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность вызовов текущее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="SessionID" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор сеанса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="UserName" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ApplicationName" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя приложения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="CurrentServiceName" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя текущего сервиса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="CallCountTotal" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество вызовов всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CallCountLast5Min" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество вызовов за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Computer" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="License" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицензия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Locale" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Локализация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="SessionNumber" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер сеанса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>0</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSLockSessionNumber" id="25">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер сеанса блокирующего СУБД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ManagedLockSessionNumber" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер сеанса выполнившего управляемую блокировку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="WriteDiskDataSizeTotal" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных записанных на диск всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="WriteDiskDataSizeLast5Min" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных записанных на диск за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="WriteDiskDataSizeCurrent" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных записанных на диск текущее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ClientSentReceivedDataSize" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных переданных и полученных клиентом</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ClientSentReceivedDataSizeLast5Min" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных переданных и полученных клиентом за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSSentReceivedDataSizeTotal" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных переданных полученных СУБД всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSSentReceivedDataSizeLast5Min" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных переданных полученных СУБД за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ReadDiskDataSizeTotal" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных считанных с диска всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ReadDiskDataSizeLast5Min" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных считанных с диска за 5 минут</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ReadDiskDataSizeCurrent" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объем данных считанных с диска текущее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="MemoryUsageTotal" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Потребление памяти всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="MemoryUsageLast5Min" id="38">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Потребление памяти за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="MemoryUsageCurrent" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Потребление памяти текущее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CPUTimeTotal" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процессорное время всего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CPUTimeLastLast5Min" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процессорное время за 5 мин</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CPUTimeCurrent" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процессорное время текущее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSConnection" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соединение СУБД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="HibernateSession" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спящий сеанс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ClientIP" id="46">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Client IP</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="TableLimits" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Table limits</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Name" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Description" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Counter" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счетчик</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="StandartInfoTable" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Standart info table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Name" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Description" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="WorkProcessTable" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Work process table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ComputerName" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Port" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="WorkProcessStatus" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PID" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="MemoryUsage" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Память КБ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="AvailablePerformance" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступная производительность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="License" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лицензия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Reserve" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Резервный</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ClusterManagerTable" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Cluster manager table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Description" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Computer" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PID" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IPПорт" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>IPПорт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="CounterValueTable" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Counter value table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="InfobaseName" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная база</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Separators" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разделение данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="UserName" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="CollectionTime" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Длительность сбора</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CallDuration" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время вызовов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CpuTime" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процессорное время</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="MemoryUsage" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Память</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ReadDiskDataSize" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чтение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="WriteDiskDataSize" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSCallDuration" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время вызовов СУБД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="DBMSSentReceivedDataSize" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время вызовов СУБД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ServiceCallDuration" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Время вызовов сервисов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="CallCount" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество вызовов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ActiveSessionCount" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество активных сеансов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="SessionCount" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество сеансов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>12</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Picture index</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="AssignmentRuleTable" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Assignment rule table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Priority" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ObjectType" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект требования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="AssignmentRuleType" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип требования</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="InfoBaseName" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационная база</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="AdditionalParameter" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение дополнительного параметра</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="PictureIndex" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс картинки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="AssignmentRuleID" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор требования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ObjectName" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование объекта требования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="EmptyTable" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Empty table</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="NullItem" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Null item</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="SessionSettingsLinker" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Session settings linker</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="CounterValueSettingsLinker" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Counter value settings linker</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="SessionCount" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество сеансов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="MetaPath" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Meta path</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SessionTablePageNumber" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Session table page number</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="SessionStorageAddress" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Session storage address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="TableSessionPageCount" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Table session page count</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CounterValueTablePageNumber" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Counter value table page number</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CounterValueStorageAddress" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Counter value storage address</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CounterValueCount" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Counter value count</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="TableCounterValuePageCount" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Table counter value page count</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CurrentCounterValuePageString" id="26">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="CurrentSessionPageString" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Current session page string</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ClusterUserAuthenticationSettings" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Cluster user authentication settings</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="UpdateClusterTreeInfo" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="TerminateSession" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить сеанс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить сеанс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>TerminateSession</Action>
+		</Command>
+		<Command name="InterruptCurrentServerCall" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прервать текущий серверный вызов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прервать текущий серверный вызов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>InterruptCurrentServerCall</Action>
+		</Command>
+		<Command name="UpdateSessionTable" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>UpdateSessionTable</Action>
+		</Command>
+		<Command name="UpdateTableConnections" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>UpdateTableConnections</Action>
+		</Command>
+		<Command name="UpdateTableLocks" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>UpdateTableLocks</Action>
+		</Command>
+		<Command name="DeleteConnection" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить соединение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить соединение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>DeleteConnection</Action>
+		</Command>
+		<Command name="ClusterAuthentication" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить аутентификацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить аутентификацию в кластере</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ClusterAuthentication</Action>
+		</Command>
+		<Command name="PartiallyApplyAssignmentRules" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить требования назначения функциональности (частичное)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Частичное применение требований назначения функциональности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>PartiallyApplyAssignmentRules</Action>
+		</Command>
+		<Command name="FullyApplyAssignmentRules" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Применить требования назначения функциональности (Полное)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное применение требований назначения функциональности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>FullyApplyAssignmentRules</Action>
+		</Command>
+		<Command name="UpdateCounterValueTable" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>UpdateCounterValueTable</Action>
+		</Command>
+		<Command name="LoadSettingsFromFile" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить настройки из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>LoadSettingsFromFile</Action>
+		</Command>
+		<Command name="SaveSettingsInFile" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить настройки в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>SaveSettingsInFile</Action>
+		</Command>
+		<Command name="PreviousSessionPage" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущая страница</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>PreviousSessionPage</Action>
+		</Command>
+		<Command name="NextSessionPage" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующая страница</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>NextSessionPage</Action>
+		</Command>
+		<Command name="NextCounterValuePage" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующая страница</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>NextCounterValuePage</Action>
+		</Command>
+		<Command name="PreviousCounterValuePage" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущая страница</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>PreviousCounterValuePage</Action>
+		</Command>
+		<Command name="FirstSessionPage" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В начало</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на первую страницу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>FirstSessionPage</Action>
+		</Command>
+		<Command name="LastSessionPage" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В конец</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на последнюю страницу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>LastSessionPage</Action>
+		</Command>
+		<Command name="FirstCounterValuePage" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В начало</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на первую страницу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>FirstCounterValuePage</Action>
+		</Command>
+		<Command name="LastCounterValuePage" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В конец</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на последнюю страницу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>LastCounterValuePage</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<CommandBar>
+			<Item>
+				<Command>Form.Item.ClusterTree.StandardCommand.Add</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Form.Item.ClusterTree.StandardCommand.Change</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Form.Item.ClusterTree.StandardCommand.Delete</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</CommandBar>
+	</CommandInterface>
+</Form>
