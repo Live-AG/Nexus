@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.14">
 	<Item id="69591a42-b496-4979-bf2e-39128e7ede5e">
@@ -13,12 +12,6 @@
 				<Description>Регистрация информационно</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
-			<Item id="7e21ee58-5833-49ea-a70f-e8342a8543fe">
-				<Name>АвторизацияИнформационнойБазы</Name>
-				<Code/>
-				<Description>Авторизация информационной базы</Description>
-				<IsFolder>false</IsFolder>
-			</Item>
 		</ChildItems>
 	</Item>
 	<Item id="85229cbb-e1b1-4190-805d-2ffa9cb934a4">
@@ -47,48 +40,4 @@
 			</Item>
 		</ChildItems>
 	</Item>
-=======
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.13">
-	<Item id="69591a42-b496-4979-bf2e-39128e7ede5e">
-		<Name>ИнформационныеБазы</Name>
-		<Code/>
-		<Description>Информационные базы</Description>
-		<IsFolder>true</IsFolder>
-		<ChildItems>
-			<Item id="ab519074-158f-4d3a-a02c-029f44f4c8f9">
-				<Name>РегистрацияИнформационнойБазы</Name>
-				<Code/>
-				<Description>Регистрация информационно</Description>
-				<IsFolder>false</IsFolder>
-			</Item>
-		</ChildItems>
-	</Item>
-	<Item id="85229cbb-e1b1-4190-805d-2ffa9cb934a4">
-		<Name>Кластеры1С</Name>
-		<Code/>
-		<Description>Кластеры 1С</Description>
-		<IsFolder>true</IsFolder>
-		<ChildItems>
-			<Item id="6d540d89-9565-4232-bc31-5056922fee42">
-				<Name>ДоступностьСервераАдминистрированияКластера</Name>
-				<Code/>
-				<Description>Доступность сервера администрирования кластера</Description>
-				<IsFolder>false</IsFolder>
-			</Item>
-			<Item id="1c99c1c7-029d-4fe4-be2e-1e711928d01f">
-				<Name>АвторизацияСервераАдминистрирования</Name>
-				<Code/>
-				<Description>Авторизация сервера администрирования</Description>
-				<IsFolder>false</IsFolder>
-			</Item>
-			<Item id="d41f3860-af86-4fac-a9b1-c3bade3ae372">
-				<Name>АвторизацияКластера1С</Name>
-				<Code/>
-				<Description>Авторизация кластера 1С</Description>
-				<IsFolder>false</IsFolder>
-			</Item>
-		</ChildItems>
-	</Item>
->>>>>>> f3f19a63ed53bdfa614d9191f48ffaf36859af97
 </PredefinedData>
