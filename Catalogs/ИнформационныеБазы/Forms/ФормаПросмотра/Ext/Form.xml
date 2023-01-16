@@ -1246,6 +1246,9 @@
 															<CheckBoxType>Switcher</CheckBoxType>
 															<ContextMenu name="БлокировкаНачалаСеансовКонтекстноеМеню" id="336"/>
 															<ExtendedTooltip name="БлокировкаНачалаСеансовРасширеннаяПодсказка" id="337"/>
+															<Events>
+																<Event name="OnChange">БлокировкаНачалаСеансовПриИзменении</Event>
+															</Events>
 														</CheckBoxField>
 														<LabelDecoration name="ДекорацияФиксацияВысоты_1" id="357">
 															<Enabled>false</Enabled>
