@@ -1166,13 +1166,6 @@
 									<DataPath>_ЗависимыеОбъекты</DataPath>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>Bottom</SearchStringLocation>
 									<ContextMenu name="_ЗависимыеОбъектыКонтекстноеМеню" id="296">

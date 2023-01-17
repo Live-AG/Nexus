@@ -303,19 +303,7 @@
 								</v8:item>
 							</Title>
 							<CommandSet>
-								<ExcludedCommand>Change</ExcludedCommand>
-								<ExcludedCommand>Copy</ExcludedCommand>
-								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-								<ExcludedCommand>Create</ExcludedCommand>
-								<ExcludedCommand>Delete</ExcludedCommand>
-								<ExcludedCommand>HierarchicalList</ExcludedCommand>
-								<ExcludedCommand>List</ExcludedCommand>
 								<ExcludedCommand>ListSettings</ExcludedCommand>
-								<ExcludedCommand>MoveItem</ExcludedCommand>
-								<ExcludedCommand>OutputList</ExcludedCommand>
-								<ExcludedCommand>Refresh</ExcludedCommand>
-								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
-								<ExcludedCommand>Tree</ExcludedCommand>
 							</CommandSet>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -394,11 +382,7 @@
 								</v8:item>
 							</Title>
 							<CommandSet>
-								<ExcludedCommand>Change</ExcludedCommand>
-								<ExcludedCommand>Copy</ExcludedCommand>
 								<ExcludedCommand>Create</ExcludedCommand>
-								<ExcludedCommand>Delete</ExcludedCommand>
-								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 							</CommandSet>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>

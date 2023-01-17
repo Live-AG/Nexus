@@ -19,16 +19,6 @@
 			<DataPath>_Список</DataPath>
 			<CommandSet>
 				<ExcludedCommand>Add</ExcludedCommand>
-				<ExcludedCommand>Change</ExcludedCommand>
-				<ExcludedCommand>Copy</ExcludedCommand>
-				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-				<ExcludedCommand>Delete</ExcludedCommand>
-				<ExcludedCommand>EndEdit</ExcludedCommand>
-				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
-				<ExcludedCommand>MoveDown</ExcludedCommand>
-				<ExcludedCommand>MoveUp</ExcludedCommand>
-				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
-				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 			</CommandSet>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="_СписокКонтекстноеМеню" id="2"/>

@@ -343,15 +343,6 @@
 															</Title>
 															<CommandSet>
 																<ExcludedCommand>Add</ExcludedCommand>
-																<ExcludedCommand>Change</ExcludedCommand>
-																<ExcludedCommand>EndEdit</ExcludedCommand>
-																<ExcludedCommand>HierarchicalList</ExcludedCommand>
-																<ExcludedCommand>List</ExcludedCommand>
-																<ExcludedCommand>MoveDown</ExcludedCommand>
-																<ExcludedCommand>MoveUp</ExcludedCommand>
-																<ExcludedCommand>SortListAsc</ExcludedCommand>
-																<ExcludedCommand>SortListDesc</ExcludedCommand>
-																<ExcludedCommand>Tree</ExcludedCommand>
 															</CommandSet>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
@@ -504,15 +495,6 @@
 															</Title>
 															<CommandSet>
 																<ExcludedCommand>Add</ExcludedCommand>
-																<ExcludedCommand>Change</ExcludedCommand>
-																<ExcludedCommand>EndEdit</ExcludedCommand>
-																<ExcludedCommand>HierarchicalList</ExcludedCommand>
-																<ExcludedCommand>List</ExcludedCommand>
-																<ExcludedCommand>MoveDown</ExcludedCommand>
-																<ExcludedCommand>MoveUp</ExcludedCommand>
-																<ExcludedCommand>SortListAsc</ExcludedCommand>
-																<ExcludedCommand>SortListDesc</ExcludedCommand>
-																<ExcludedCommand>Tree</ExcludedCommand>
 															</CommandSet>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
@@ -666,15 +648,6 @@
 															</Title>
 															<CommandSet>
 																<ExcludedCommand>Add</ExcludedCommand>
-																<ExcludedCommand>Change</ExcludedCommand>
-																<ExcludedCommand>EndEdit</ExcludedCommand>
-																<ExcludedCommand>HierarchicalList</ExcludedCommand>
-																<ExcludedCommand>List</ExcludedCommand>
-																<ExcludedCommand>MoveDown</ExcludedCommand>
-																<ExcludedCommand>MoveUp</ExcludedCommand>
-																<ExcludedCommand>SortListAsc</ExcludedCommand>
-																<ExcludedCommand>SortListDesc</ExcludedCommand>
-																<ExcludedCommand>Tree</ExcludedCommand>
 															</CommandSet>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>

@@ -11,13 +11,7 @@
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>Bottom</CommandBarLocation>
 	<CommandSet>
-		<ExcludedCommand>Abort</ExcludedCommand>
 		<ExcludedCommand>Close</ExcludedCommand>
-		<ExcludedCommand>Ignore</ExcludedCommand>
-		<ExcludedCommand>No</ExcludedCommand>
-		<ExcludedCommand>OK</ExcludedCommand>
-		<ExcludedCommand>Retry</ExcludedCommand>
-		<ExcludedCommand>Yes</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<HorizontalAlign>Right</HorizontalAlign>
@@ -71,7 +65,6 @@
 					</Title>
 					<CommandSet>
 						<ExcludedCommand>SetPresentation</ExcludedCommand>
-						<ExcludedCommand>UserSettingItemProperties</ExcludedCommand>
 					</CommandSet>
 					<ViewMode>All</ViewMode>
 					<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
@@ -207,13 +200,7 @@
 						</v8:item>
 					</Title>
 					<CommandSet>
-						<ExcludedCommand>CancelSearch</ExcludedCommand>
-						<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
-						<ExcludedCommand>Find</ExcludedCommand>
 						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
-						<ExcludedCommand>ListSettings</ExcludedCommand>
-						<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
-						<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
 					</CommandSet>
 					<SearchStringLocation>Top</SearchStringLocation>
 					<SearchControlLocation>None</SearchControlLocation>

@@ -51,11 +51,6 @@
 					<DataPath>_СписокЗаписей</DataPath>
 					<CommandSet>
 						<ExcludedCommand>Add</ExcludedCommand>
-						<ExcludedCommand>Change</ExcludedCommand>
-						<ExcludedCommand>Copy</ExcludedCommand>
-						<ExcludedCommand>Delete</ExcludedCommand>
-						<ExcludedCommand>EndEdit</ExcludedCommand>
-						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 					</CommandSet>
 					<RowFilter xsi:nil="true"/>
 					<ContextMenu name="_СписокЗаписейКонтекстноеМеню" id="2">
@@ -180,11 +175,6 @@
 					<DataPath>_ДеревоОбъектов</DataPath>
 					<CommandSet>
 						<ExcludedCommand>Add</ExcludedCommand>
-						<ExcludedCommand>Change</ExcludedCommand>
-						<ExcludedCommand>Copy</ExcludedCommand>
-						<ExcludedCommand>Delete</ExcludedCommand>
-						<ExcludedCommand>EndEdit</ExcludedCommand>
-						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 					</CommandSet>
 					<ContextMenu name="_ДеревоОбъектовКонтекстноеМеню" id="24">
 						<ChildItems>

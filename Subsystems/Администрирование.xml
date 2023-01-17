@@ -81,6 +81,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияNexus</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗакрепленныеЭлементы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИмпортИзActiveDirectory</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Лицензии1С</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

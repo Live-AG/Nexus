@@ -103,17 +103,6 @@
 							</RowsPicture>
 							<CommandSet>
 								<ExcludedCommand>Copy</ExcludedCommand>
-								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-								<ExcludedCommand>EndEdit</ExcludedCommand>
-								<ExcludedCommand>HierarchicalList</ExcludedCommand>
-								<ExcludedCommand>List</ExcludedCommand>
-								<ExcludedCommand>MoveDown</ExcludedCommand>
-								<ExcludedCommand>MoveUp</ExcludedCommand>
-								<ExcludedCommand>OutputList</ExcludedCommand>
-								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-								<ExcludedCommand>SortListAsc</ExcludedCommand>
-								<ExcludedCommand>SortListDesc</ExcludedCommand>
-								<ExcludedCommand>Tree</ExcludedCommand>
 							</CommandSet>
 							<ContextMenu name="ClusterTreeКонтекстноеМеню" id="2">
 								<Autofill>false</Autofill>
@@ -344,18 +333,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>CancelSearch</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>OutputList</ExcludedCommand>
-										<ExcludedCommand>SelectAll</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-										<ExcludedCommand>SortListAsc</ExcludedCommand>
-										<ExcludedCommand>SortListDesc</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ItemEmptyTableКонтекстноеМеню" id="490"/>
@@ -432,14 +409,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ItemConnectionsTableКонтекстноеМеню" id="48">
@@ -750,14 +719,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ItemSessionTableКонтекстноеМеню" id="1056">
@@ -1130,13 +1091,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
 									<RowFilter xsi:nil="true"/>
@@ -1275,15 +1229,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>SelectAll</ExcludedCommand>
-										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ItemTableLimitsКонтекстноеМеню" id="270"/>
@@ -1376,16 +1321,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>SelectAll</ExcludedCommand>
-										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ItemStandartInfoTableКонтекстноеМеню" id="294"/>
@@ -1472,16 +1407,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>SelectAll</ExcludedCommand>
-										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ItemWorkProcessTableКонтекстноеМеню" id="315"/>
@@ -1605,16 +1530,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>SelectAll</ExcludedCommand>
-										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ItemClusterManagerTableКонтекстноеМеню" id="351"/>
@@ -2074,14 +1989,6 @@
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>OutputList</ExcludedCommand>
-										<ExcludedCommand>SelectAll</ExcludedCommand>
-										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ItemAssignmentRuleTableКонтекстноеМеню" id="460"/>

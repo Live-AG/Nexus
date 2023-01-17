@@ -67,8 +67,6 @@
 							</Title>
 							<CommandSet>
 								<ExcludedCommand>Change</ExcludedCommand>
-								<ExcludedCommand>EndEdit</ExcludedCommand>
-								<ExcludedCommand>Pickup</ExcludedCommand>
 							</CommandSet>
 							<ContextMenu name="ПользовательскиеНастройкиКонтекстноеМеню" id="5"/>
 							<AutoCommandBar name="ПользовательскиеНастройкиКоманднаяПанель" id="6">
@@ -194,15 +192,6 @@
 							</Title>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
-								<ExcludedCommand>Change</ExcludedCommand>
-								<ExcludedCommand>Copy</ExcludedCommand>
-								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-								<ExcludedCommand>EndEdit</ExcludedCommand>
-								<ExcludedCommand>MoveDown</ExcludedCommand>
-								<ExcludedCommand>MoveUp</ExcludedCommand>
-								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-								<ExcludedCommand>SortListAsc</ExcludedCommand>
-								<ExcludedCommand>SortListDesc</ExcludedCommand>
 							</CommandSet>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ОписаниеВариантовОтчетовКонтекстноеМеню" id="39"/>

@@ -89,11 +89,6 @@
 									<DataPath>ДеревоОбъектов</DataPath>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>HierarchicalList</ExcludedCommand>
-										<ExcludedCommand>List</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>None</SearchStringLocation>
 									<ContextMenu name="ДеревоОбъектовКонтекстноеМеню" id="6">
@@ -1311,13 +1306,6 @@
 									<DataPath>_СписокСеансов</DataPath>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="_СписокСеансовКонтекстноеМеню" id="560"/>
@@ -1596,13 +1584,6 @@
 									<DataPath>_СписокСоединений</DataPath>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 									</CommandSet>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="_СписокСоединенийКонтекстноеМеню" id="657"/>
@@ -1763,7 +1744,6 @@
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>ДеревоНастроек</DataPath>
 							<CommandSet>
-								<ExcludedCommand>HierarchicalList</ExcludedCommand>
 								<ExcludedCommand>List</ExcludedCommand>
 							</CommandSet>
 							<ContextMenu name="ДеревоНастроекКонтекстноеМеню" id="100">
@@ -1839,9 +1819,6 @@
 							<DataPath>ТабНастройки</DataPath>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
-								<ExcludedCommand>Change</ExcludedCommand>
-								<ExcludedCommand>Copy</ExcludedCommand>
-								<ExcludedCommand>EndEdit</ExcludedCommand>
 							</CommandSet>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ТабНастройкиКонтекстноеМеню" id="116"/>

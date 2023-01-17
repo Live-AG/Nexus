@@ -8,7 +8,6 @@
 		</xr:Item>
 	</MobileDeviceCommandBarContent>
 	<CommandSet>
-		<ExcludedCommand>Delete</ExcludedCommand>
 		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -86,7 +85,6 @@
 				</v8:item>
 			</Title>
 			<CommandSet>
-				<ExcludedCommand>Delete</ExcludedCommand>
 				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 			</CommandSet>
 			<SearchStringLocation>CommandBar</SearchStringLocation>

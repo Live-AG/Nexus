@@ -5,8 +5,6 @@
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet>
 		<ExcludedCommand>Change</ExcludedCommand>
-		<ExcludedCommand>Find</ExcludedCommand>
-		<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -97,12 +95,12 @@
 			</Button>
 			<Button name="СписокНайти" id="36">
 				<Type>CommandBarButton</Type>
-				<CommandName>1:c0519548-2a9a-44de-a25e-faf01e089d4d</CommandName>
+				<CommandName>Form.Item.НаборыСвойств.StandardCommand.Find</CommandName>
 				<ExtendedTooltip name="СписокНайтиExtendedTooltip" id="117"/>
 			</Button>
 			<Button name="СписокОтменитьПоиск" id="37">
 				<Type>CommandBarButton</Type>
-				<CommandName>1:44ad3ec9-f3c2-4913-9224-5f9fb6418743</CommandName>
+				<CommandName>Form.Item.НаборыСвойств.StandardCommand.CancelSearch</CommandName>
 				<ExtendedTooltip name="СписокОтменитьПоискExtendedTooltip" id="118"/>
 			</Button>
 			<ButtonGroup name="ГруппаКнопокКопирование" id="177">
@@ -251,9 +249,6 @@
 										</v8:item>
 									</Title>
 									<CommandSet>
-										<ExcludedCommand>CancelSearch</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>Find</ExcludedCommand>
 										<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
 									</CommandSet>
 									<CurrentRowUse>SelectionPresentation</CurrentRowUse>
@@ -455,11 +450,7 @@
 						</v8:item>
 					</Title>
 					<CommandSet>
-						<ExcludedCommand>CancelSearch</ExcludedCommand>
 						<ExcludedCommand>EndEdit</ExcludedCommand>
-						<ExcludedCommand>Find</ExcludedCommand>
-						<ExcludedCommand>SortListAsc</ExcludedCommand>
-						<ExcludedCommand>SortListDesc</ExcludedCommand>
 					</CommandSet>
 					<RowFilter xsi:nil="true"/>
 					<ContextMenu name="СвойстваКонтекстноеМеню" id="39">

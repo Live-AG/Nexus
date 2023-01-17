@@ -100,11 +100,6 @@
 					</Title>
 					<CommandSet>
 						<ExcludedCommand>Delete</ExcludedCommand>
-						<ExcludedCommand>EndEdit</ExcludedCommand>
-						<ExcludedCommand>MoveDown</ExcludedCommand>
-						<ExcludedCommand>MoveUp</ExcludedCommand>
-						<ExcludedCommand>SortListAsc</ExcludedCommand>
-						<ExcludedCommand>SortListDesc</ExcludedCommand>
 					</CommandSet>
 					<CurrentRowUse>SelectionPresentationAndChoice</CurrentRowUse>
 					<RowFilter xsi:nil="true"/>
@@ -237,21 +232,6 @@
 											</Title>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>CheckAll</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>Pickup</ExcludedCommand>
-												<ExcludedCommand>SelectAll</ExcludedCommand>
-												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-												<ExcludedCommand>SortListAsc</ExcludedCommand>
-												<ExcludedCommand>SortListDesc</ExcludedCommand>
-												<ExcludedCommand>UncheckAll</ExcludedCommand>
 											</CommandSet>
 											<ContextMenu name="ПечатныеФормыКонтекстноеМеню" id="83"/>
 											<AutoCommandBar name="ПечатныеФормыКоманднаяПанель" id="84"/>

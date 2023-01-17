@@ -14,19 +14,7 @@
 	<CommandBarLocation>Bottom</CommandBarLocation>
 	<ScalingMode>Compact</ScalingMode>
 	<CommandSet>
-		<ExcludedCommand>Abort</ExcludedCommand>
-		<ExcludedCommand>Cancel</ExcludedCommand>
-		<ExcludedCommand>CustomizeForm</ExcludedCommand>
 		<ExcludedCommand>Help</ExcludedCommand>
-		<ExcludedCommand>Ignore</ExcludedCommand>
-		<ExcludedCommand>No</ExcludedCommand>
-		<ExcludedCommand>OK</ExcludedCommand>
-		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
-		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
-		<ExcludedCommand>RestoreValues</ExcludedCommand>
-		<ExcludedCommand>Retry</ExcludedCommand>
-		<ExcludedCommand>SaveValues</ExcludedCommand>
-		<ExcludedCommand>Yes</ExcludedCommand>
 	</CommandSet>
 	<ShowTitle>false</ShowTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">

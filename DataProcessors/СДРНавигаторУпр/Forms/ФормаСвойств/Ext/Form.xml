@@ -46,7 +46,6 @@
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>ДеревоСвойств</DataPath>
 							<CommandSet>
-								<ExcludedCommand>HierarchicalList</ExcludedCommand>
 								<ExcludedCommand>List</ExcludedCommand>
 							</CommandSet>
 							<ContextMenu name="ДеревоСвойствКонтекстноеМеню" id="2">
@@ -393,13 +392,6 @@
 											<DataPath>ТабРолиСДоступом</DataPath>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ТабРолиСДоступомКонтекстноеМеню" id="310">
@@ -530,12 +522,6 @@
 											<DataPath>_ДоступныеОбъекты</DataPath>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
 											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="_ДоступныеОбъектыКонтекстноеМеню" id="264">
@@ -682,13 +668,6 @@
 											<DataPath>ТабПользователиСДоступом</DataPath>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="ТабПользователиСДоступомКонтекстноеМеню" id="329">
@@ -1503,13 +1482,6 @@
 							<DataPath>_ЗависимыеОбъекты</DataPath>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
-								<ExcludedCommand>Change</ExcludedCommand>
-								<ExcludedCommand>Copy</ExcludedCommand>
-								<ExcludedCommand>Delete</ExcludedCommand>
-								<ExcludedCommand>EndEdit</ExcludedCommand>
-								<ExcludedCommand>MoveDown</ExcludedCommand>
-								<ExcludedCommand>MoveUp</ExcludedCommand>
-								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
 							</CommandSet>
 							<SearchStringLocation>Bottom</SearchStringLocation>
 							<ContextMenu name="_ЗависимыеОбъектыКонтекстноеМеню" id="426"/>

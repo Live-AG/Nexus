@@ -25,7 +25,6 @@
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>ДеревоОбъектов</DataPath>
 			<CommandSet>
-				<ExcludedCommand>HierarchicalList</ExcludedCommand>
 				<ExcludedCommand>List</ExcludedCommand>
 			</CommandSet>
 			<ContextMenu name="ДеревоОбъектовКонтекстноеМеню" id="2"/>
