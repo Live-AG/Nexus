@@ -602,6 +602,7 @@
 			<CommonPicture>ИзменитьЗаготовок</CommonPicture>
 			<CommonPicture>СкопироватьВБуфер</CommonPicture>
 			<CommonPicture>Поделиться</CommonPicture>
+			<CommonPicture>ПоискИнформационныхБаз</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
