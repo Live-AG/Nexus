@@ -11,16 +11,17 @@
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
 <svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
-	 style="enable-background:new 0 0 24 24;" xml:space="preserve">
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448 448"
+	 style="enable-background:new 0 0 448 448;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#808080;}
+	.st0{fill:#3B3B3B;}
 </style>
 <metadata>
 	<sfw  xmlns="&ns_sfw;">
 		<slices></slices>
-		<sliceSourceBounds  bottomLeftOrigin="true" height="2" width="14" x="5" y="11"></sliceSourceBounds>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="71.9" width="416" x="16" y="184.1"></sliceSourceBounds>
 	</sfw>
 </metadata>
-<path class="st0" d="M19,11v2h-6l0,0h-2l0,0H5v-2h6"/>
+<path class="st0" d="M400,192c17.7,0,32,14.3,32,32s-14.3,32-32,32H256l0,0h-64c0,0,0,17.7,0,0l0,0H48c-17.7,0-32-14.3-32-32
+	s14.3-32,32-32"/>
 </svg>

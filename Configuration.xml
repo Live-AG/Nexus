@@ -603,6 +603,7 @@
 			<CommonPicture>СкопироватьВБуфер</CommonPicture>
 			<CommonPicture>Поделиться</CommonPicture>
 			<CommonPicture>ПоискИнформационныхБаз</CommonPicture>
+			<CommonPicture>КартинкаМинус</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>ВерсияРасширений</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>

@@ -20,65 +20,192 @@
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаПериод" id="34">
+		<UsualGroup name="ГруппаПериодБлокировки" id="54">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа1</v8:content>
+					<v8:content>Период блокировки</v8:content>
 				</v8:item>
 			</Title>
-			<Group>AlwaysHorizontal</Group>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа период блокировки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
 			<Behavior>Usual</Behavior>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="35"/>
+			<ExtendedTooltip name="ГруппаПериодБлокировкиРасширеннаяПодсказка" id="55"/>
 			<ChildItems>
-				<InputField name="ПериодБлокировкиНачало" id="1">
-					<DataPath>ПериодБлокировкиНачало</DataPath>
+				<UsualGroup name="ГруппаПериод" id="34">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ThroughAlign>DontUse</ThroughAlign>
+					<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<InputField name="ПериодБлокировкиНачало" id="1">
+							<DataPath>ВремяНачалаБлокировки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>C</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ClearButton>true</ClearButton>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='dd.MM.yy (HH:mm)'</v8:content>
+								</v8:item>
+							</EditFormat>
+							<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+							<ContextMenu name="ПериодБлокировкиНачалоКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ПериодБлокировкиНачалоРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<LabelField name="ДобавляемыйПериодПредставление" id="51">
+							<DataPath>ДобавляемыйПериод</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=0; ЧН='0 мин.'; ЧГ=0; ЧФ='+ Ч мин.'</v8:content>
+								</v8:item>
+							</Format>
+							<TextColor>style:AccentColor</TextColor>
+							<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+							<ContextMenu name="ДобавляемыйПериодПредставлениеКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ДобавляемыйПериодПредставлениеРасширеннаяПодсказка" id="53"/>
+						</LabelField>
+						<InputField name="ПериодБлокировкиКонец" id="16">
+							<DataPath>ВремяОкончанияБлокировки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>по</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ClearButton>true</ClearButton>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='dd.MM.yy (HH:mm)'</v8:content>
+								</v8:item>
+							</EditFormat>
+							<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
+							<ContextMenu name="ПериодБлокировкиКонецКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПериодБлокировкиКонецРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">ПериодБлокировкиКонецПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПолосаПериода" id="45">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Начало блокировки</v8:content>
+							<v8:content>Группа полоса периода</v8:content>
 						</v8:item>
 					</Title>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<HorizontalStretch>true</HorizontalStretch>
-					<ContextMenu name="ПериодБлокировкиНачалоКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="ПериодБлокировкиНачалоРасширеннаяПодсказка" id="3"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа полоса периода</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПолосаПериодаРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<Button name="КнопкаМеньше" id="49">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УменьшитьИнтервал</CommandName>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ExtendedTooltip name="КнопкаМеньшеРасширеннаяПодсказка" id="50"/>
+						</Button>
+						<TrackBarField name="ДобавляемыйПериод" id="40">
+							<DataPath>ДобавляемыйПериод</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<TitleLocation>None</TitleLocation>
+							<MaxValue>180</MaxValue>
+							<Step>10</Step>
+							<LargeStep>60</LargeStep>
+							<MarkingStep>10</MarkingStep>
+							<ContextMenu name="ДобавляемыйПериодКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ДобавляемыйПериодРасширеннаяПодсказка" id="42"/>
+							<Events>
+								<Event name="OnChange">ДобавляемыйПериодПриИзменении</Event>
+							</Events>
+						</TrackBarField>
+						<Button name="КнопкаБольше" id="47">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УвеличитьИнтервал</CommandName>
+							<ShapeRepresentation>None</ShapeRepresentation>
+							<ExtendedTooltip name="КнопкаБольшеРасширеннаяПодсказка" id="48"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПараметры" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры блокировки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<InputField name="КодРазрешения" id="25">
+					<DataPath>КодРазрешенияНачалаСеансов</DataPath>
+					<ContextMenu name="КодРазрешенияКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="КодРазрешенияРасширеннаяПодсказка" id="27"/>
 				</InputField>
-				<InputField name="ПериодБлокировкиКонец" id="16">
-					<DataPath>ПериодБлокировкиКонец</DataPath>
+				<InputField name="ПараметрБлокировки" id="28">
+					<DataPath>ПараметрБлокировки</DataPath>
+					<ContextMenu name="ПараметрБлокировкиКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ПараметрБлокировкиРасширеннаяПодсказка" id="30"/>
+				</InputField>
+				<InputField name="Сообщение" id="31">
+					<DataPath>СообщениеБлокировки</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конец блокировки</v8:content>
+							<v8:content>Сообщение блокировки</v8:content>
 						</v8:item>
 					</Title>
 					<AutoMaxWidth>false</AutoMaxWidth>
-					<HorizontalStretch>true</HorizontalStretch>
-					<ContextMenu name="ПериодБлокировкиКонецКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ПериодБлокировкиКонецРасширеннаяПодсказка" id="18"/>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="СообщениеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="СообщениеРасширеннаяПодсказка" id="33"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="КодРазрешения" id="25">
-			<DataPath>КодРазрешения</DataPath>
-			<ContextMenu name="КодРазрешенияКонтекстноеМеню" id="26"/>
-			<ExtendedTooltip name="КодРазрешенияРасширеннаяПодсказка" id="27"/>
-		</InputField>
-		<InputField name="ПараметрБлокировки" id="28">
-			<DataPath>ПараметрБлокировки</DataPath>
-			<ContextMenu name="ПараметрБлокировкиКонтекстноеМеню" id="29"/>
-			<ExtendedTooltip name="ПараметрБлокировкиРасширеннаяПодсказка" id="30"/>
-		</InputField>
-		<InputField name="Сообщение" id="31">
-			<DataPath>Сообщение</DataPath>
-			<AutoMaxWidth>false</AutoMaxWidth>
-			<MultiLine>true</MultiLine>
-			<ContextMenu name="СообщениеКонтекстноеМеню" id="32"/>
-			<ExtendedTooltip name="СообщениеРасширеннаяПодсказка" id="33"/>
-		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -88,11 +215,11 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="ПериодБлокировкиНачало" id="2">
+		<Attribute name="ВремяНачалаБлокировки" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Период блокировки начало</v8:content>
+					<v8:content>Время начала блокировки</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -102,11 +229,11 @@
 				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ПериодБлокировкиКонец" id="3">
+		<Attribute name="ВремяОкончанияБлокировки" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Период блокировки конец</v8:content>
+					<v8:content>Время окончания блокировки</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -116,11 +243,11 @@
 				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="КодРазрешения" id="4">
+		<Attribute name="КодРазрешенияНачалаСеансов" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Код разрешения</v8:content>
+					<v8:content>Код разрешения начала сеансов</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -146,11 +273,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="Сообщение" id="7">
+		<Attribute name="СообщениеБлокировки" id="7">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сообщение</v8:content>
+					<v8:content>Сообщение блокировки</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -159,6 +286,22 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДобавляемыйПериод" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавляемый период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -170,6 +313,7 @@
 					<v8:content>Установить</v8:content>
 				</v8:item>
 			</Title>
+			<Action>КомандаУстановить</Action>
 		</Command>
 		<Command name="КомандаОтмена" id="2">
 			<Title>
@@ -178,6 +322,144 @@
 					<v8:content>Отмена</v8:content>
 				</v8:item>
 			</Title>
+			<Action>КомандаОтмена</Action>
+		</Command>
+		<Command name="УвеличитьИнтервал" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Увеличить интервал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Увеличить интервал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УвеличитьИнтервал</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="УменьшитьИнтервал" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уменьшить интервал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уменьшить интервал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КартинкаМинус</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УменьшитьИнтервал</Action>
+			<Representation>Picture</Representation>
 		</Command>
 	</Commands>
+	<Parameters>
+		<Parameter name="СтруктураПараметровБлокировки">
+			<Type/>
+		</Parameter>
+	</Parameters>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ЗакрепленныеЭлементы.StandardCommand.OpenByValue.ЭлементЗакрепления</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ЗначенияИзбранных.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ИнформационныеБазы.Command.Пользователи</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ПользователиИнформационныхБаз.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ПроверкиОбъектов.StandardCommand.OpenByValue.Объект</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.СеансыПользователей.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ИнформационныеБазы.Command.События</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.СобытияИнформационныхБаз.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.СтатистикаИспользованияИнформационныхБаз.StandardCommand.OpenByValue.ИнформационнаяБаза</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ТекущиеЗаданияОбъектов.StandardCommand.OpenByValue.ИсточникЗадания</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>Catalog.ИнформационныеБазы.Command.Управление</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
 </Form>

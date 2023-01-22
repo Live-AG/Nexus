@@ -447,21 +447,38 @@
 																<Font bold="true" kind="AutoFont"/>
 																<ExtendedTooltip name="ОбновитьРегистрациюБазРасширеннаяПодсказка" id="172"/>
 															</Button>
-															<Button name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлемент" id="180">
-																<Type>CommandBarButton</Type>
-																<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
-																<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="181"/>
-															</Button>
-															<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверх" id="186">
-																<Type>CommandBarButton</Type>
-																<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
-																<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="187"/>
-															</Button>
-															<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВниз" id="188">
-																<Type>CommandBarButton</Type>
-																<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
-																<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="189"/>
-															</Button>
+															<ButtonGroup name="ТаблицаЭлементовКластераКонтекстноеМенюГруппаЗакрепить" id="290">
+																<Title>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Таблица элементов кластера контекстное меню группа закрепить</v8:content>
+																	</v8:item>
+																</Title>
+																<ToolTip>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Таблица элементов кластера контекстное меню группа закрепить</v8:content>
+																	</v8:item>
+																</ToolTip>
+																<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюГруппаЗакрепитьРасширеннаяПодсказка" id="291"/>
+																<ChildItems>
+																	<Button name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлемент" id="180">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.ЗакрепитьТекущийЭлемент</CommandName>
+																		<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюЗакрепитьТекущийЭлементРасширеннаяПодсказка" id="181"/>
+																	</Button>
+																	<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверх" id="186">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.ПереместитьЗакрепленноеВверх</CommandName>
+																		<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВверхРасширеннаяПодсказка" id="187"/>
+																	</Button>
+																	<Button name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВниз" id="188">
+																		<Type>CommandBarButton</Type>
+																		<CommandName>Form.Command.ПереместитьЗакрепленноеВниз</CommandName>
+																		<ExtendedTooltip name="ТаблицаЭлементовКластераКонтекстноеМенюПереместитьЗакрепленноеВнизРасширеннаяПодсказка" id="189"/>
+																	</Button>
+																</ChildItems>
+															</ButtonGroup>
 														</ChildItems>
 													</ContextMenu>
 													<AutoCommandBar name="ТаблицаЭлементовКластераКоманднаяПанель" id="2"/>

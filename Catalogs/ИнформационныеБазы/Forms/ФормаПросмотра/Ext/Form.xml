@@ -1237,12 +1237,12 @@
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Блокировка соединений</v8:content>
+																	<v8:content> </v8:content>
 																</v8:item>
 															</Title>
-															<TitleTextColor>style:ЦветПустойГиперссылки</TitleTextColor>
+															<TitleTextColor>style:AccentColor</TitleTextColor>
 															<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
-															<TitleLocation>None</TitleLocation>
+															<TitleLocation>Right</TitleLocation>
 															<CheckBoxType>Switcher</CheckBoxType>
 															<ContextMenu name="БлокировкаНачалаСеансовКонтекстноеМеню" id="336"/>
 															<ExtendedTooltip name="БлокировкаНачалаСеансовРасширеннаяПодсказка" id="337"/>
@@ -2208,12 +2208,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="БлокировкаНачалаСеансов" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Блокировка начала сеансов</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -2233,6 +2227,15 @@
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="СтруктураПараметровБлокировки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура параметров блокировки</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
