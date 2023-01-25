@@ -1179,6 +1179,7 @@
 															<v8:content>Группа период жизни</v8:content>
 														</v8:item>
 													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
 													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ExtendedTooltip name="ГруппаБлокировкаНачалаСеансовРасширеннаяПодсказка" id="322"/>
@@ -1242,7 +1243,7 @@
 															</Title>
 															<TitleTextColor>style:AccentColor</TitleTextColor>
 															<TitleFont ref="style:NormalTextFont" height="9" kind="StyleItem"/>
-															<TitleLocation>Right</TitleLocation>
+															<TitleLocation>None</TitleLocation>
 															<CheckBoxType>Switcher</CheckBoxType>
 															<ContextMenu name="БлокировкаНачалаСеансовКонтекстноеМеню" id="336"/>
 															<ExtendedTooltip name="БлокировкаНачалаСеансовРасширеннаяПодсказка" id="337"/>
@@ -1250,6 +1251,16 @@
 																<Event name="OnChange">БлокировкаНачалаСеансовПриИзменении</Event>
 															</Events>
 														</CheckBoxField>
+														<LabelDecoration name="ЗаголовокБлокировки" id="598">
+															<TextColor>style:ГиперссылкаЦвет</TextColor>
+															<Font ref="style:NormalTextFont" height="9" kind="StyleItem"/>
+															<Hyperlink>true</Hyperlink>
+															<ContextMenu name="ЗаголовокБлокировкиКонтекстноеМеню" id="599"/>
+															<ExtendedTooltip name="ЗаголовокБлокировкиРасширеннаяПодсказка" id="600"/>
+															<Events>
+																<Event name="Click">ЗаголовокБлокировкиНажатие</Event>
+															</Events>
+														</LabelDecoration>
 														<LabelDecoration name="ДекорацияФиксацияВысоты_1" id="357">
 															<Enabled>false</Enabled>
 															<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
@@ -1301,6 +1312,7 @@
 															<v8:content>Группа период жизни</v8:content>
 														</v8:item>
 													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
 													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ExtendedTooltip name="ГруппаОбъемБазыРасширеннаяПодсказка" id="383"/>
