@@ -37,6 +37,11 @@
 			</Title>
 			<CommandSet>
 				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>MoveDown</ExcludedCommand>
+				<ExcludedCommand>MoveUp</ExcludedCommand>
 			</CommandSet>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="КлассификаторКонтекстноеМеню" id="18">
@@ -78,7 +83,7 @@
 					</Button>
 					<Button name="КлассификаторКонтекстноеМенюВыделитьВсе" id="42">
 						<Type>CommandBarButton</Type>
-						<CommandName>17:51c99108-107c-43e1-8918-e48835bf2495</CommandName>
+						<CommandName>0</CommandName>
 						<ExtendedTooltip name="КлассификаторКонтекстноеМенюВыделитьВсеExtendedTooltip" id="55"/>
 					</Button>
 				</ChildItems>

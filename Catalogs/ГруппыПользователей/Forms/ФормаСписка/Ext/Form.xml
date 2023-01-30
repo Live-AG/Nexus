@@ -52,6 +52,8 @@
 				</v8:item>
 			</Title>
 			<CommandSet>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
 				<ExcludedCommand>OutputList</ExcludedCommand>
 			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>

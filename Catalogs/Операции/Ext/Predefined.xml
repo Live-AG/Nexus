@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.14">
+	<Item id="02b8e157-6b77-45a8-9d42-916f828251d6">
+		<Name>ЗавершениеРаботыПользователей</Name>
+		<Code>000000001</Code>
+		<Description>Завершение работы пользователей</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="871e6879-dbd4-4c9a-bacf-be3247abdd82">
+		<Name>УстановкаБлокировкиСоединения</Name>
+		<Code>000000002</Code>
+		<Description>Установка блокировки соединения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="39d2a27d-072c-48dc-b316-7cd02fcfef06">
+		<Name>СозданиеИнформационнойБазы</Name>
+		<Code>000000003</Code>
+		<Description>Создание информационной базы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="af3d159c-6db1-494a-91e6-3718fd11e0b8">
+		<Name>УдалениеИнформационнойБазы</Name>
+		<Code>000000004</Code>
+		<Description>Удаление информационной базы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2919048b-b334-4446-87cb-17f0c53e650e">
+		<Name>СнятиеБлокировкиСоединения</Name>
+		<Code>000000005</Code>
+		<Description>Снятие блокировки соединения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3c294af9-fcc5-4ec0-ba0f-9ecf1212d83e">
+		<Name>ВосстановлениеКопииБазы</Name>
+		<Code>000000006</Code>
+		<Description>Восстановление копии базы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bd8cdb76-c9a2-4f52-898b-25178d549a9d">
+		<Name>ОтключениеБазыОтХранилища</Name>
+		<Code>000000007</Code>
+		<Description>Отключение базы от хранилища</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b6e44670-3e19-4677-8a57-1c636c5671b5">
+		<Name>ПодключениеБазыКХранилищу</Name>
+		<Code>000000008</Code>
+		<Description>Подключение базы к хранилищу</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

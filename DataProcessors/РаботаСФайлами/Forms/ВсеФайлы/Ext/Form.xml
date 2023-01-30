@@ -9,7 +9,11 @@
 	<AutoTitle>false</AutoTitle>
 	<AutoURL>false</AutoURL>
 	<CommandSet>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
 		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Refresh</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -166,7 +170,10 @@
 				</v8:item>
 			</Title>
 			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
 			</CommandSet>
 			<SearchStringLocation>None</SearchStringLocation>
 			<ViewStatusLocation>None</ViewStatusLocation>
@@ -191,7 +198,7 @@
 				<ChildItems>
 					<Button name="СписокКонтекстноеМенюИзменить" id="120">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Item.Список.StandardCommand.Change</CommandName>
+						<CommandName>0</CommandName>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
