@@ -21,7 +21,7 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>DataProcessor.ОбработчикиСтандартныхСценариев.Form.ФормаВыполненияСценария</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<ExtendedPresentation/>
@@ -30,6 +30,7 @@
 		<ChildObjects>
 			<Form>ПереносБазыВДругойКластер</Form>
 			<Form>СозданиеНовойБазы</Form>
+			<Form>ФормаВыполненияСценария</Form>
 			<Command uuid="2663a980-9075-486f-8c60-ef2775f1b748">
 				<Properties>
 					<Name>Команда</Name>

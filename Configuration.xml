@@ -235,7 +235,7 @@
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
 			<Subsystem>УправлениеКластерами</Subsystem>
 			<Subsystem>АдминистрированиеПользователей</Subsystem>
-			<Subsystem>РаботаСоСкриптами</Subsystem>
+			<Subsystem>РаботаСоСценарияим</Subsystem>
 			<Subsystem>УчетПроектныхДанных</Subsystem>
 			<Subsystem>МониторингСистем</Subsystem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
@@ -588,7 +588,6 @@
 			<CommonPicture>СерверНабор</CommonPicture>
 			<CommonPicture>РаботаСоСкриптами</CommonPicture>
 			<CommonPicture>ДобавитьНовыйЭлемент</CommonPicture>
-			<CommonPicture>СерверНаборСтатический</CommonPicture>
 			<CommonPicture>ИзбранноеНабор</CommonPicture>
 			<CommonPicture>ИзбранноеГруппы</CommonPicture>
 			<CommonPicture>ПользовательНабор</CommonPicture>

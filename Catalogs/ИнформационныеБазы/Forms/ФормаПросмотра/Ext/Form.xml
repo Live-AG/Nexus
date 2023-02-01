@@ -1994,6 +1994,27 @@
 						</Title>
 					</ExtendedTooltip>
 				</SpreadSheetDocumentField>
+				<LabelField name="ИдентификаторБазы" id="601">
+					<DataPath>Объект.ИдентификаторБазы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ID</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:NormalTextFont" height="8" kind="StyleItem"/>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>25</MaxWidth>
+					<Hiperlink>true</Hiperlink>
+					<TextColor>style:ГиперссылкаЦвет</TextColor>
+					<Font ref="style:NormalTextFont" height="8" kind="StyleItem"/>
+					<ContextMenu name="ИдентификаторБазыКонтекстноеМеню" id="602"/>
+					<ExtendedTooltip name="ИдентификаторБазыРасширеннаяПодсказка" id="603"/>
+					<Events>
+						<Event name="Click">ИдентификаторБазыНажатие</Event>
+					</Events>
+				</LabelField>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
