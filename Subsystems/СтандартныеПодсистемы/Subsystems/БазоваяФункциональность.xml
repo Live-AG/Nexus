@@ -265,7 +265,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СтрелкаВправоЗеленая</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Пустая</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФайловаяСистемаСлужебныйКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">51e1557d-cdb5-41ad-8bfb-1199379d6b70</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СохранитьКак</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПиктограммыТиповДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ТипБулево</xr:Item>

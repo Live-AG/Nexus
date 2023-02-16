@@ -26,6 +26,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.КонтекстВыполненияСкрипта</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополниетельныеЗначенияКонтекста</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПриложениеЗапускаСкрипта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Операции</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

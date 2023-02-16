@@ -251,7 +251,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="ОрганизацияКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="15"/>
@@ -265,7 +265,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="ФамилияКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="ФамилияРасширеннаяПодсказка" id="18"/>
@@ -279,7 +279,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="ИмяКонтекстноеМеню" id="20"/>
 							<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="21"/>
@@ -293,7 +293,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="ОтчествоКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="24"/>
@@ -313,7 +313,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="АдресЭлПочтыКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="АдресЭлПочтыРасширеннаяПодсказка" id="27"/>
@@ -327,7 +327,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="СтранаКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="СтранаРасширеннаяПодсказка" id="30"/>
@@ -363,7 +363,7 @@
 									<ChoiceButton>true</ChoiceButton>
 									<ChoiceButtonPicture>
 										<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</ChoiceButtonPicture>
 									<ContextMenu name="ОбластьКонтекстноеМеню" id="32"/>
 									<ExtendedTooltip name="ОбластьРасширеннаяПодсказка" id="33"/>
@@ -378,7 +378,7 @@
 									<ChoiceButton>true</ChoiceButton>
 									<ChoiceButtonPicture>
 										<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</ChoiceButtonPicture>
 									<ContextMenu name="ИндексКонтекстноеМеню" id="35"/>
 									<ExtendedTooltip name="ИндексРасширеннаяПодсказка" id="36"/>
@@ -394,7 +394,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="РайонКонтекстноеМеню" id="38"/>
 							<ExtendedTooltip name="РайонРасширеннаяПодсказка" id="39"/>
@@ -408,7 +408,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="ГородКонтекстноеМеню" id="41"/>
 							<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="42"/>
@@ -422,7 +422,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="УлицаКонтекстноеМеню" id="44"/>
 							<ExtendedTooltip name="УлицаРасширеннаяПодсказка" id="45"/>
@@ -454,7 +454,7 @@
 									<ChoiceButton>true</ChoiceButton>
 									<ChoiceButtonPicture>
 										<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</ChoiceButtonPicture>
 									<ContextMenu name="ДомКонтекстноеМеню" id="47"/>
 									<ExtendedTooltip name="ДомРасширеннаяПодсказка" id="48"/>
@@ -468,7 +468,7 @@
 									<ChoiceButton>true</ChoiceButton>
 									<ChoiceButtonPicture>
 										<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</ChoiceButtonPicture>
 									<ContextMenu name="КорпусКонтекстноеМеню" id="50"/>
 									<ExtendedTooltip name="КорпусРасширеннаяПодсказка" id="51"/>
@@ -484,7 +484,7 @@
 							<ChoiceButton>true</ChoiceButton>
 							<ChoiceButtonPicture>
 								<xr:Ref>CommonPicture.СкопироватьВБуфер</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ChoiceButtonPicture>
 							<ContextMenu name="КвартираКонтекстноеМеню" id="53"/>
 							<ExtendedTooltip name="КвартираРасширеннаяПодсказка" id="54"/>

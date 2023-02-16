@@ -4,13 +4,6 @@
 	<AutoTitle>false</AutoTitle>
 	<AutoURL>false</AutoURL>
 	<CommandBarLocation>Bottom</CommandBarLocation>
-	<MobileDeviceCommandBarContent>
-		<xr:Item>
-			<xr:Presentation/>
-			<xr:CheckState>0</xr:CheckState>
-			<xr:Value xsi:type="xs:string"/>
-		</xr:Item>
-	</MobileDeviceCommandBarContent>
 	<ReportFormType>Settings</ReportFormType>
 	<AutoShowState>Auto</AutoShowState>
 	<ReportResultViewMode>Auto</ReportResultViewMode>
@@ -155,7 +148,19 @@
 								</v8:item>
 							</Title>
 							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
 								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
 							</CommandSet>
 							<ContextMenu name="СоставГруппировкиКонтекстноеМеню" id="625">
 								<Autofill>false</Autofill>
@@ -461,7 +466,19 @@
 								</v8:item>
 							</Title>
 							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
 								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
 							</CommandSet>
 							<ContextMenu name="ОтборыКонтекстноеМеню" id="343">
 								<Autofill>false</Autofill>
@@ -1020,7 +1037,19 @@
 										</v8:item>
 									</Title>
 									<CommandSet>
+										<ExcludedCommand>Change</ExcludedCommand>
 										<ExcludedCommand>Copy</ExcludedCommand>
+										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+										<ExcludedCommand>EndEdit</ExcludedCommand>
+										<ExcludedCommand>HierarchicalList</ExcludedCommand>
+										<ExcludedCommand>List</ExcludedCommand>
+										<ExcludedCommand>MoveDown</ExcludedCommand>
+										<ExcludedCommand>MoveUp</ExcludedCommand>
+										<ExcludedCommand>OutputList</ExcludedCommand>
+										<ExcludedCommand>SelectAll</ExcludedCommand>
+										<ExcludedCommand>SortListAsc</ExcludedCommand>
+										<ExcludedCommand>SortListDesc</ExcludedCommand>
+										<ExcludedCommand>Tree</ExcludedCommand>
 									</CommandSet>
 									<ContextMenu name="ВыбранныеПоляКонтекстноеМеню" id="231">
 										<Autofill>false</Autofill>
@@ -1391,7 +1420,16 @@
 												</v8:item>
 											</Title>
 											<CommandSet>
+												<ExcludedCommand>Change</ExcludedCommand>
 												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>OutputList</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>SortListAsc</ExcludedCommand>
+												<ExcludedCommand>SortListDesc</ExcludedCommand>
 											</CommandSet>
 											<ContextMenu name="СортировкаКонтекстноеМеню" id="131">
 												<Autofill>false</Autofill>
@@ -1747,7 +1785,20 @@
 								</v8:item>
 							</Title>
 							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
 								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
 							</CommandSet>
 							<ContextMenu name="ОформлениеКонтекстноеМеню" id="839"/>
 							<AutoCommandBar name="ОформлениеКоманднаяПанель" id="840">
@@ -2023,7 +2074,19 @@
 								</v8:item>
 							</Title>
 							<CommandSet>
+								<ExcludedCommand>Change</ExcludedCommand>
 								<ExcludedCommand>Choose</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
 							</CommandSet>
 							<ContextMenu name="СтруктураВариантаКонтекстноеМеню" id="430">
 								<Autofill>false</Autofill>
@@ -5423,10 +5486,6 @@
 					<v8:content>Выбрать период</v8:content>
 				</v8:item>
 			</Title>
-			<Picture>
-				<xr:Ref>0</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
-			</Picture>
 			<Action>Подключаемый_ВыбратьПериод</Action>
 			<Representation>Picture</Representation>
 		</Command>
@@ -5533,10 +5592,6 @@
 					<v8:content>Выбрать период</v8:content>
 				</v8:item>
 			</Title>
-			<Picture>
-				<xr:Ref>0</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
-			</Picture>
 			<Action>Подключаемый_ВыбратьПериод</Action>
 			<Representation>Picture</Representation>
 		</Command>

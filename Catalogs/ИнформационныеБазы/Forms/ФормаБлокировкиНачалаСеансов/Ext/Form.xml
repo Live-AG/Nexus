@@ -71,6 +71,9 @@
 							<Font ref="style:NormalTextFont" height="11" kind="StyleItem"/>
 							<ContextMenu name="ПериодБлокировкиНачалоКонтекстноеМеню" id="2"/>
 							<ExtendedTooltip name="ПериодБлокировкиНачалоРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">ПериодБлокировкиНачалоПриИзменении</Event>
+							</Events>
 						</InputField>
 						<LabelField name="ДобавляемыйПериодПредставление" id="51">
 							<DataPath>ДобавляемыйПериод</DataPath>
@@ -339,7 +342,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ДобавитьНовыйЭлемент</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>УвеличитьИнтервал</Action>
 			<Representation>Picture</Representation>
@@ -359,7 +362,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.КартинкаМинус</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>УменьшитьИнтервал</Action>
 			<Representation>Picture</Representation>

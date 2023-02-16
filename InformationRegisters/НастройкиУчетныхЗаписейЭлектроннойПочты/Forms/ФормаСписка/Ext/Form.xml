@@ -8,6 +8,7 @@
 	</Title>
 	<AutoTitle>false</AutoTitle>
 	<CommandSet>
+		<ExcludedCommand>Copy</ExcludedCommand>
 		<ExcludedCommand>Create</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -42,6 +43,7 @@
 				</v8:item>
 			</Title>
 			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Create</ExcludedCommand>
 			</CommandSet>
 			<SearchStringLocation>None</SearchStringLocation>
