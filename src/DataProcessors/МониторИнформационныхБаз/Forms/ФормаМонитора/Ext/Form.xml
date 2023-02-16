@@ -995,20 +995,23 @@
 														</ToolTip>
 														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаЗапускРасширеннаяПодсказка" id="270"/>
 														<ChildItems>
-															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьПредприятие" id="259">
+															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюСправочникИнформационныеБазыЗапуститьПредприятие" id="294">
 																<Type>CommandBarButton</Type>
-																<CommandName>Form.Command.ЗапуститьПредприятие</CommandName>
-																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьПредприятиеРасширеннаяПодсказка" id="260"/>
+																<CommandName>Catalog.ИнформационныеБазы.Command.ЗапуститьПредприятие</CommandName>
+																<DataPath>Items.ТаблицаИнформационныхБаз.CurrentData.Ссылка</DataPath>
+																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюСправочникИнформационныеБазыЗапуститьПредприятиеРасширеннаяПодсказка" id="295"/>
 															</Button>
-															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьКонфигуратор" id="261">
+															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюСправочникИнформационныеБазыЗапуститьКонфигуратор" id="296">
 																<Type>CommandBarButton</Type>
-																<CommandName>Form.Command.ЗапуститьКонфигуратор</CommandName>
-																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюЗапуститьКонфигураторРасширеннаяПодсказка" id="262"/>
+																<CommandName>Catalog.ИнформационныеБазы.Command.ЗапуститьКонфигуратор</CommandName>
+																<DataPath>Items.ТаблицаИнформационныхБаз.CurrentData.Ссылка</DataPath>
+																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюСправочникИнформационныеБазыЗапуститьКонфигураторРасширеннаяПодсказка" id="297"/>
 															</Button>
-															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюНастройкаЗапускаИБ" id="267">
+															<Button name="ТаблицаИнформационныхБазКонтекстноеМенюСправочникИнформационныеБазыНастройкаЗапускаИБ" id="292">
 																<Type>CommandBarButton</Type>
-																<CommandName>Form.Command.НастройкаЗапускаИБ</CommandName>
-																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюНастройкаЗапускаИБРасширеннаяПодсказка" id="268"/>
+																<CommandName>Catalog.ИнформационныеБазы.Command.НастройкаЗапускаИБ</CommandName>
+																<DataPath>Items.ТаблицаИнформационныхБаз.CurrentData.Ссылка</DataPath>
+																<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюСправочникИнформационныеБазыНастройкаЗапускаИБРасширеннаяПодсказка" id="293"/>
 															</Button>
 														</ChildItems>
 													</ButtonGroup>
@@ -1046,10 +1049,11 @@
 														</ToolTip>
 														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюГруппаПоделитьсяРасширеннаяПодсказка" id="272"/>
 													</ButtonGroup>
-													<Button name="ТаблицаИнформационныхБазКонтекстноеМенюПоледитьсяИБ" id="265">
+													<Button name="ТаблицаИнформационныхБазКонтекстноеМенюСправочникИнформационныеБазыПоделитьсяПодключениемИБ" id="298">
 														<Type>CommandBarButton</Type>
-														<CommandName>Form.Command.ПодедитьсяИБ</CommandName>
-														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюПоледитьсяИБРасширеннаяПодсказка" id="266"/>
+														<CommandName>Catalog.ИнформационныеБазы.Command.ПоделитьсяПодключениемИБ</CommandName>
+														<DataPath>Items.ТаблицаИнформационныхБаз.CurrentData.Ссылка</DataPath>
+														<ExtendedTooltip name="ТаблицаИнформационныхБазКонтекстноеМенюСправочникИнформационныеБазыПоделитьсяПодключениемИБРасширеннаяПодсказка" id="299"/>
 													</Button>
 												</ChildItems>
 											</ContextMenu>
@@ -2018,82 +2022,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьИзбранное</Action>
-		</Command>
-		<Command name="ЗапуститьПредприятие" id="17">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Запустить Предприятие</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Запустить предприятие</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
-			</Picture>
-			<Action>ЗапуститьПредприятие</Action>
-		</Command>
-		<Command name="ЗапуститьКонфигуратор" id="18">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Запустить Конфигуратор</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Запустить конфигуратор</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>CommonPicture.Конфигуратор_ЧБ</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
-			</Picture>
-			<Action>ЗапуститьКонфигуратор</Action>
-		</Command>
-		<Command name="ПодедитьсяИБ" id="19">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Поледиться информационной базой</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Поледиться</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>CommonPicture.Поделиться</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
-			</Picture>
-			<Action>ПодедитьсяИБ</Action>
-		</Command>
-		<Command name="НастройкаЗапускаИБ" id="20">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка запуска</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка запуска ИБ</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Picture>
-				<xr:Ref>StdPicture.Setting</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<Action>НастройкаЗапускаИБ</Action>
 		</Command>
 		<Command name="КомандаИнформационныеБазы" id="21">
 			<Title>

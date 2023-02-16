@@ -1467,7 +1467,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запустить предприятие</v8:content>
+							<v8:content>Запустить Предприятие</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1480,7 +1480,7 @@
 					<Representation>PictureAndText</Representation>
 					<ToolTip/>
 					<Picture>
-						<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+						<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<Shortcut/>
@@ -1493,7 +1493,7 @@
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Запустить конфигуратор</v8:content>
+							<v8:content>Запустить Конфигуратор</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1506,20 +1506,20 @@
 					<Representation>PictureAndText</Representation>
 					<ToolTip/>
 					<Picture>
-						<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+						<xr:Ref>CommonPicture.Конфигуратор_ЧБ</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<Shortcut/>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
 			</Command>
-			<Command uuid="e5136065-e992-4a78-b57c-78d99c9692e1">
+			<Command uuid="d44c4675-edcb-47e8-828c-848701dc57c9">
 				<Properties>
-					<Name>СоздатьЯрлык</Name>
+					<Name>НастройкаЗапускаИБ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Создать ярлык</v8:content>
+							<v8:content>Настройка запуска</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1531,7 +1531,36 @@
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>
 					<ToolTip/>
-					<Picture/>
+					<Picture>
+						<xr:Ref>StdPicture.Setting</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="e5136065-e992-4a78-b57c-78d99c9692e1">
+				<Properties>
+					<Name>ПоделитьсяПодключениемИБ</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поделиться подключением</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.ВыполнитьДействия</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.ИнформационныеБазы</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture>
+						<xr:Ref>CommonPicture.Поделиться</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
 					<Shortcut/>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>

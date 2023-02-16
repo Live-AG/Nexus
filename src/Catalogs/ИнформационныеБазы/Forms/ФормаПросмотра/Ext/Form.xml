@@ -208,6 +208,47 @@
 									<CommandName>Form.Command.уд_Отладка</CommandName>
 									<ExtendedTooltip name="уд_ОтладкаРасширеннаяПодсказка" id="571"/>
 								</Button>
+								<ButtonGroup name="ГруппаЗапускПредприятия" id="612">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа запуск предприятия</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа запуск предприятия</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаЗапускПредприятияРасширеннаяПодсказка" id="613"/>
+									<ChildItems>
+										<Button name="СправочникИнформационныеБазыЗапуститьПредприятие" id="614">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.ИнформационныеБазы.Command.ЗапуститьПредприятие</CommandName>
+											<DataPath>Объект.Ref</DataPath>
+											<ExtendedTooltip name="СправочникИнформационныеБазыЗапуститьПредприятиеРасширеннаяПодсказка" id="615"/>
+										</Button>
+										<Button name="СправочникИнформационныеБазыЗапуститьКонфигуратор" id="616">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.ИнформационныеБазы.Command.ЗапуститьКонфигуратор</CommandName>
+											<DataPath>Объект.Ref</DataPath>
+											<ExtendedTooltip name="СправочникИнформационныеБазыЗапуститьКонфигураторРасширеннаяПодсказка" id="617"/>
+										</Button>
+										<Button name="СправочникИнформационныеБазыНастройкаЗапускаИБ" id="620">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.ИнформационныеБазы.Command.НастройкаЗапускаИБ</CommandName>
+											<DataPath>Объект.Ref</DataPath>
+											<ExtendedTooltip name="СправочникИнформационныеБазыНастройкаЗапускаИБРасширеннаяПодсказка" id="621"/>
+										</Button>
+									</ChildItems>
+								</ButtonGroup>
+								<Button name="СправочникИнформационныеБазыПоделитьсяПодключениемИБ" id="618">
+									<Type>CommandBarButton</Type>
+									<CommandName>Catalog.ИнформационныеБазы.Command.ПоделитьсяПодключениемИБ</CommandName>
+									<DataPath>Объект.Ref</DataPath>
+									<ExtendedTooltip name="СправочникИнформационныеБазыПоделитьсяПодключениемИБРасширеннаяПодсказка" id="619"/>
+								</Button>
 								<Button name="РедактироватьЗаголовок" id="557">
 									<Type>CommandBarButton</Type>
 									<Representation>Picture</Representation>
@@ -2468,6 +2509,82 @@
 				</v8:item>
 			</ToolTip>
 			<Action>уд_Отладка</Action>
+		</Command>
+		<Command name="ЗапуститьКонфигуратор" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить Конфигуратор</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить конфигуратор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Конфигуратор_ЧБ</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗапуститьКонфигуратор</Action>
+		</Command>
+		<Command name="ЗапуститьПредприятие" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить Предприятие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить предприятие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Предприятие_ЧБ</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗапуститьПредприятие</Action>
+		</Command>
+		<Command name="ПоделитьсяПодключениемИБ" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поделиться информационной базой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поледиться</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Поделиться</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоделитьсяПодключениемИБ</Action>
+		</Command>
+		<Command name="НастройкаЗапускаИБ" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка запуска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка запуска ИБ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Setting</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>НастройкаЗапускаИБ</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

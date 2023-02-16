@@ -216,7 +216,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>Catalog.ИнформационныеБазы.Command.СоздатьЯрлык</Command>
+				<Command>Catalog.ИнформационныеБазы.Command.ПоделитьсяПодключениемИБ</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
