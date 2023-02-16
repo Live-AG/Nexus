@@ -929,8 +929,9 @@
 			<CommonModule>ШаблоныСообщенийСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыБСПNexus</CommonModule>
 			<CommonModule>АдминистрированиеИнформационныхБаз</CommonModule>
-			<CommonModule>АдминистрированиеСерверов</CommonModule>
-			<CommonModule>АдминистрированиеСеансов</CommonModule>
+			<CommonModule>удал_АдминистрированиеСерверов</CommonModule>
+			<CommonModule>АдминистрированиеЭлементовКластера</CommonModule>
+			<CommonModule>АдминистрированиеЭлементовКластераПовтИсп</CommonModule>
 			<CommonModule>РегламентныеЗаданияПолученияДанных</CommonModule>
 			<CommonModule>РаботаСБуферомОбменаКлиентСервер</CommonModule>
 			<CommonModule>РаботаСоСкриптамиСервер</CommonModule>
