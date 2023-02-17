@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -jar agent.jar -jnlpUrl http://localhost:8080/manage/computer/local%20agent/jenkins-agent.jnlp -secret 09d5cee2d05e3c0db1fa7d3a4161979f717b2cc7dd6414a8da6adb1d2cf7f1e8 -workDir "C:\Tools\Jenkins-agent"
