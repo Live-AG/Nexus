@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<DataProcessor uuid="c0ee6c4e-fb1c-44c4-8da2-e223fb20b68a">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ПомощникСозданияСкриптов" category="Object">
+				<xr:TypeId>679e95db-c0b2-4993-9d47-25a1cb7bec70</xr:TypeId>
+				<xr:ValueId>d94daa54-a6b0-47f0-9b29-c07d62306f74</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ПомощникСозданияСкриптов" category="Manager">
+				<xr:TypeId>1d8b6988-ee71-4214-a2f3-1769f370f4ba</xr:TypeId>
+				<xr:ValueId>5240968f-c239-4438-b93c-b2a86fc4d62f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПомощникСозданияСкриптов</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помощник создания скриптов</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ПомощникСозданияСкриптов.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Template>_1cv8_8_3_21</Template>
+			<Template>_ibcmd_8_3_21</Template>
+			<Template>_ibsrv_8_3_21</Template>
+			<Template>_rac_8_3_21</Template>
+			<Template>_ring_0_19_5</Template>
+			<Template>_cnvdbfl_8_3_21</Template>
+			<Template>_agent_8_3_21</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>
